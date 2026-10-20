@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="t d">
+<title id="t">Filza settlement split figure</title>
+<desc id="d">A ruled settlement table splits one assumed $280.00 settlement into income of $262.50, the part up to K, and upside of $17.50, the part above K. A two-leg meter shows the per-unit price share as flat bars: income 98.92% and upside 1.08% of the $250.00 spot. Illustrative model values only.</desc>
+<rect width="1200" height="750" fill="#f2eee6"/>
+<rect x="0.00" y="0.00" width="1200.00" height="10.00" fill="#0d0d10" stroke="none"/>
+<rect x="56.00" y="44.00" width="5.70" height="30.00" fill="#0d0d10" stroke="none"/>
+<rect x="56.00" y="44.00" width="30.00" height="4.65" fill="#0d0d10" stroke="none"/>
+<rect x="56.00" y="56.00" width="17.25" height="4.65" fill="#0d0d10" stroke="none"/>
+<rect x="74.30" y="55.55" width="5.55" height="5.55" fill="#ff4d14" stroke="none"/>
+<text x="96.20" y="74.00" fill="#0d0d10" font-family="'Arial Black','Arial Bold',Arial,Helvetica,sans-serif" font-size="21.0" font-weight="900" text-anchor="start">FILZA</text>
+<text x="1144.00" y="70.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="14" font-weight="400" text-anchor="end">FILZA / SOLANA</text>
+<polyline points="56.00,120.00 1144.00,120.00" fill="none" stroke="#2b2b33" stroke-width="2" stroke-linecap="butt"/>
+<rect x="56.00" y="154.00" width="58.00" height="5.00" fill="#ff4d14" stroke="none"/>
+<text x="56.00" y="190.00" fill="#ff4d14" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="13" font-weight="700" text-anchor="start">SURFACE 03 / SETTLEMENT</text>
+<text x="56.00" y="240.00" fill="#0d0d10" font-family="'Arial Black','Arial Bold',Arial,Helvetica,sans-serif" font-size="40" font-weight="900" text-anchor="start">THE SPLIT.</text>
+<text x="56.00" y="274.00" fill="#2b2b33" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" text-anchor="start">One assumed settlement, split at K, and the share each leg carries.</text>
+<rect x="56.00" y="306.00" width="660.00" height="5.00" fill="#0d0d10" stroke="none"/>
+<polyline points="56.00,352.00 716.00,352.00" fill="none" stroke="#0d0d10" stroke-width="2" stroke-linecap="butt"/>
+<text x="82.00" y="338.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="12" font-weight="400" text-anchor="start">SETTLEMENT TABLE / PER UNIT</text>
+<text x="690.00" y="338.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="12" font-weight="400" text-anchor="end">S = $280.00</text>
+<polyline points="56.00,392.00 716.00,392.00" fill="none" stroke="#d3ccbf" stroke-width="1" stroke-linecap="butt"/>
+<text x="84.00" y="378.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="11" font-weight="400" text-anchor="start">COMPONENT</text>
+<text x="300.00" y="378.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="11" font-weight="400" text-anchor="start">FORMULA</text>
+<text x="688.00" y="378.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="11" font-weight="400" text-anchor="end">VALUE</text>
+<polyline points="56.00,472.00 716.00,472.00" fill="none" stroke="#d3ccbf" stroke-width="1" stroke-linecap="butt"/>
+<text x="84.00" y="442.00" fill="#0f8a63" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="17" font-weight="700" text-anchor="start">INCOME</text>
+<text x="300.00" y="441.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="15" font-weight="400" text-anchor="start">min(S, K)</text>
+<text x="688.00" y="442.00" fill="#0d0d10" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="26" font-weight="700" text-anchor="end">$262.50</text>
+<polyline points="56.00,552.00 716.00,552.00" fill="none" stroke="#d3ccbf" stroke-width="1" stroke-linecap="butt"/>
+<text x="84.00" y="522.00" fill="#c81e4a" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="17" font-weight="700" text-anchor="start">UPSIDE</text>
+<text x="300.00" y="521.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="15" font-weight="400" text-anchor="start">max(S - K, 0)</text>
+<text x="688.00" y="522.00" fill="#0d0d10" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="26" font-weight="700" text-anchor="end">$17.50</text>
+<polyline points="56.00,552.00 716.00,552.00" fill="none" stroke="#0d0d10" stroke-width="2" stroke-linecap="butt"/>
+<polyline points="56.00,632.00 716.00,632.00" fill="none" stroke="#d3ccbf" stroke-width="1" stroke-linecap="butt"/>
+<text x="84.00" y="602.00" fill="#0d0d10" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="17" font-weight="700" text-anchor="start">TOTAL</text>
+<text x="300.00" y="601.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="15" font-weight="400" text-anchor="start">S</text>
+<text x="688.00" y="602.00" fill="#0d0d10" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="26" font-weight="700" text-anchor="end">$280.00</text>
+<text x="84.00" y="664.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="11" font-weight="400" text-anchor="start">ILLUSTRATIVE SETTLEMENT / NOT AN AUCTION RESULT</text>
+<rect x="752.00" y="306.00" width="392.00" height="5.00" fill="#0d0d10" stroke="none"/>
+<polyline points="752.00,352.00 1144.00,352.00" fill="none" stroke="#0d0d10" stroke-width="2" stroke-linecap="butt"/>
+<text x="778.00" y="338.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="12" font-weight="400" text-anchor="start">SHARE METER / PER UNIT</text>
+<text x="1118.00" y="338.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="12" font-weight="400" text-anchor="end">OF SPOT</text>
+<rect x="778.00" y="400.00" width="340.00" height="52.00" fill="#ffffff" stroke="#0d0d10" stroke-width="2"/>
+<rect x="780.00" y="402.00" width="332.37" height="48.00" fill="#0f8a63" stroke="none"/>
+<rect x="1112.37" y="402.00" width="3.63" height="48.00" fill="#c81e4a" stroke="none"/>
+<text x="778.00" y="386.00" fill="#0f8a63" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="12" font-weight="700" text-anchor="start">INCOME</text>
+<text x="1118.00" y="386.00" fill="#c81e4a" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="12" font-weight="700" text-anchor="end">UPSIDE</text>
+<polyline points="1116.00,456.00 1116.00,478.00" fill="none" stroke="#c81e4a" stroke-width="1" stroke-linecap="butt"/>
+<text x="778.00" y="500.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="11" font-weight="400" text-anchor="start">INCOME SHARE</text>
+<text x="778.00" y="542.00" fill="#0f8a63" font-family="'Arial Black','Arial Bold',Arial,Helvetica,sans-serif" font-size="34" font-weight="900" text-anchor="start">98.92%</text>
+<text x="778.00" y="566.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="11" font-weight="400" text-anchor="start">$247.29 PER UNIT</text>
+<text x="1118.00" y="500.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="11" font-weight="400" text-anchor="end">UPSIDE SHARE</text>
+<text x="1118.00" y="542.00" fill="#c81e4a" font-family="'Arial Black','Arial Bold',Arial,Helvetica,sans-serif" font-size="34" font-weight="900" text-anchor="end">1.08%</text>
+<text x="1118.00" y="566.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="11" font-weight="400" text-anchor="end">$2.71 PER UNIT</text>
+<polyline points="778.00,590.00 1118.00,590.00" fill="none" stroke="#d3ccbf" stroke-width="1" stroke-linecap="butt"/>
+<text x="778.00" y="616.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="11" font-weight="400" text-anchor="start">SPOT</text>
+<text x="1118.00" y="616.00" fill="#0d0d10" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="13" font-weight="700" text-anchor="end">$250.00</text>
+<text x="778.00" y="640.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="11" font-weight="400" text-anchor="start">INCOME + UPSIDE</text>
+<text x="1118.00" y="640.00" fill="#0d0d10" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="13" font-weight="700" text-anchor="end">$247.29 + $2.71</text>
+<polyline points="778.00,652.00 1118.00,652.00" fill="none" stroke="#d3ccbf" stroke-width="1" stroke-linecap="butt"/>
+<text x="778.00" y="678.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="11" font-weight="400" text-anchor="start">SUM</text>
+<text x="1118.00" y="678.00" fill="#0d0d10" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="13" font-weight="700" text-anchor="end">$250.00</text>
+<polyline points="56.00,700.00 1144.00,700.00" fill="none" stroke="#d3ccbf" stroke-width="1" stroke-linecap="butt"/>
+<text x="56.00" y="730.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="12" font-weight="400" text-anchor="start">ILLUSTRATIVE SPLIT / NO EXECUTION</text>
+<text x="1144.00" y="730.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="12" font-weight="400" text-anchor="end">SAMPLE DATA / NOT LIVE</text>
+</svg>

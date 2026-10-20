@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "status": "preview",
+  "brand": "Filza",
+  "network": "Solana",
+  "token": {
+    "symbol": "FILZA",
+    "status": "proposed-unissued",
+    "contractAddress": null,
+    "quote": null
+  },
+  "watchlist": [
+    {
+      "symbol": "SOL",
+      "quote": null,
+      "priceStatus": "illustrative"
+    },
+    {
+      "symbol": "JUP",
+      "quote": null,
+      "priceStatus": "illustrative"
+    },
+    {
+      "symbol": "BONK",
+      "quote": null,
+      "priceStatus": "illustrative"
+    },
+    {
+      "symbol": "USDC",
+      "quote": null,
+      "priceStatus": "illustrative"
+    }
+  ],
+  "resources": {
+    "domain": "filza.xyz",
+    "handle": "@filza",
+    "status": "targets from a point-in-time availability screen; neither is registered, reserved or owned by this work"
+  },
+  "note": "No market data provider or Solana program integration is configured. Visible prices and markets are local model examples, not live listings.",
+  "disclaimer": "Filza / FILZA is a product preview on Solana. Illustrative values only: no live feed, no wallet action, no custody and no execution. There is no contract address; nothing here is an offer or a solicitation."
+}

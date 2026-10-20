@@ -1,0 +1,23 @@
+{
+  "name": "filza-website",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "assets": "python scripts/generate-assets.py",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node --test scripts/scenario.test.mjs scripts/solana.test.mjs scripts/payoff.test.mjs"
+  },
+  "dependencies": {
+    "@metamask/connect-solana": "^2.1.1",
+    "@wallet-standard/app": "^1.1.1",
+    "lucide-vue-next": "^0.468.0",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "vite": "^6.0.5"
+  }
+}

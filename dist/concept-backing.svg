@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="t d">
+<title id="t">Filza watchlist figure</title>
+<desc id="d">A ruled watchlist ledger panel lists three sample rows: SOL at $182.40, JUP at $1.12 and FILZA, proposed and not issued, at $1.00, with a delta and a state column and a SAMPLE DATA flag. Illustrative rows only; there is no live quote feed.</desc>
+<rect width="1200" height="750" fill="#f2eee6"/>
+<rect x="0.00" y="0.00" width="1200.00" height="10.00" fill="#0d0d10" stroke="none"/>
+<rect x="56.00" y="44.00" width="5.70" height="30.00" fill="#0d0d10" stroke="none"/>
+<rect x="56.00" y="44.00" width="30.00" height="4.65" fill="#0d0d10" stroke="none"/>
+<rect x="56.00" y="56.00" width="17.25" height="4.65" fill="#0d0d10" stroke="none"/>
+<rect x="74.30" y="55.55" width="5.55" height="5.55" fill="#ff4d14" stroke="none"/>
+<text x="96.20" y="74.00" fill="#0d0d10" font-family="'Arial Black','Arial Bold',Arial,Helvetica,sans-serif" font-size="21.0" font-weight="900" text-anchor="start">FILZA</text>
+<text x="1144.00" y="70.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="14" font-weight="400" text-anchor="end">FILZA / SOLANA</text>
+<polyline points="56.00,120.00 1144.00,120.00" fill="none" stroke="#2b2b33" stroke-width="2" stroke-linecap="butt"/>
+<rect x="56.00" y="154.00" width="58.00" height="5.00" fill="#ff4d14" stroke="none"/>
+<text x="56.00" y="190.00" fill="#ff4d14" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="13" font-weight="700" text-anchor="start">SURFACE 01 / WATCHLIST</text>
+<text x="56.00" y="240.00" fill="#0d0d10" font-family="'Arial Black','Arial Bold',Arial,Helvetica,sans-serif" font-size="40" font-weight="900" text-anchor="start">THE BOARD.</text>
+<text x="56.00" y="274.00" fill="#2b2b33" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" text-anchor="start">A ruled ledger of the assets on the board, with mono sample prices.</text>
+<rect x="56.00" y="306.00" width="1088.00" height="5.00" fill="#0d0d10" stroke="none"/>
+<polyline points="56.00,352.00 1144.00,352.00" fill="none" stroke="#0d0d10" stroke-width="2" stroke-linecap="butt"/>
+<text x="82.00" y="338.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="12" font-weight="400" text-anchor="start">WATCHLIST / EXAMPLE</text>
+<rect x="1033.50" y="317.00" width="84.50" height="24.00" fill="#ffffff" stroke="#ff4d14" stroke-width="1"/>
+<text x="1075.75" y="333.00" fill="#ff4d14" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="10" font-weight="700" text-anchor="middle">SAMPLE DATA</text>
+<polyline points="56.00,396.00 1144.00,396.00" fill="none" stroke="#d3ccbf" stroke-width="1" stroke-linecap="butt"/>
+<text x="84.00" y="382.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="11" font-weight="400" text-anchor="start">ASSET</text>
+<text x="270.00" y="382.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="11" font-weight="400" text-anchor="start">NAME</text>
+<text x="860.00" y="382.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="11" font-weight="400" text-anchor="end">PRICE</text>
+<text x="1000.00" y="382.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="11" font-weight="400" text-anchor="end">DELTA 24H</text>
+<text x="1116.00" y="382.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="11" font-weight="400" text-anchor="end">STATE</text>
+<polyline points="56.00,472.00 1144.00,472.00" fill="none" stroke="#d3ccbf" stroke-width="1" stroke-linecap="butt"/>
+<rect x="84.00" y="422.00" width="12.00" height="12.00" fill="#0d0d10" stroke="none"/>
+<text x="112.00" y="446.00" fill="#0d0d10" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="20" font-weight="700" text-anchor="start">SOL</text>
+<text x="270.00" y="445.00" fill="#2b2b33" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="400" text-anchor="start">Solana</text>
+<text x="860.00" y="446.00" fill="#0d0d10" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="20" font-weight="700" text-anchor="end">$182.40</text>
+<text x="1000.00" y="446.00" fill="#0f8a63" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="17" font-weight="400" text-anchor="end">+2.4%</text>
+<text x="1116.00" y="446.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="12" font-weight="700" text-anchor="end">WATCH</text>
+<polyline points="56.00,548.00 1144.00,548.00" fill="none" stroke="#d3ccbf" stroke-width="1" stroke-linecap="butt"/>
+<rect x="84.00" y="498.00" width="12.00" height="12.00" fill="#0d0d10" stroke="none"/>
+<text x="112.00" y="522.00" fill="#0d0d10" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="20" font-weight="700" text-anchor="start">JUP</text>
+<text x="270.00" y="521.00" fill="#2b2b33" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="400" text-anchor="start">Jupiter</text>
+<text x="860.00" y="522.00" fill="#0d0d10" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="20" font-weight="700" text-anchor="end">$1.12</text>
+<text x="1000.00" y="522.00" fill="#c81e4a" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="17" font-weight="400" text-anchor="end">-0.8%</text>
+<text x="1116.00" y="522.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="12" font-weight="700" text-anchor="end">WATCH</text>
+<rect x="57.00" y="548.00" width="1086.00" height="76.00" fill="#f2eee6" stroke="none"/>
+<rect x="57.00" y="548.00" width="4.00" height="76.00" fill="#ff4d14" stroke="none"/>
+<polyline points="56.00,624.00 1144.00,624.00" fill="none" stroke="#d3ccbf" stroke-width="1" stroke-linecap="butt"/>
+<rect x="84.00" y="574.00" width="12.00" height="12.00" fill="#ff4d14" stroke="none"/>
+<text x="112.00" y="598.00" fill="#0d0d10" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="20" font-weight="700" text-anchor="start">FILZA</text>
+<text x="270.00" y="597.00" fill="#2b2b33" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="400" text-anchor="start">Filza</text>
+<text x="860.00" y="598.00" fill="#0d0d10" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="20" font-weight="700" text-anchor="end">$1.00</text>
+<text x="1000.00" y="598.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="17" font-weight="400" text-anchor="end">--</text>
+<text x="1116.00" y="598.00" fill="#ff4d14" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="12" font-weight="700" text-anchor="end">NOT ISSUED</text>
+<text x="84.00" y="660.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="11" font-weight="400" text-anchor="start">ILLUSTRATIVE ROWS / NO LIVE QUOTE FEED</text>
+<text x="1116.00" y="660.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="11" font-weight="400" text-anchor="end">BROWSER-LOCAL WATCHLIST</text>
+<polyline points="56.00,700.00 1144.00,700.00" fill="none" stroke="#d3ccbf" stroke-width="1" stroke-linecap="butt"/>
+<text x="56.00" y="730.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="12" font-weight="400" text-anchor="start">WATCHLIST / ON-CHAIN SYMBOLS, SAMPLE VALUES</text>
+<text x="1144.00" y="730.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="12" font-weight="400" text-anchor="end">SAMPLE DATA / NOT LIVE</text>
+</svg>

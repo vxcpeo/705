@@ -1,0 +1,357 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-19T19:09:13.956Z",
+  "project": {
+    "root": "E:/workspace/chuangye/solana/705/website",
+    "name": "filza-website",
+    "baseUrl": "http://127.0.0.1:4318/"
+  },
+  "passed": true,
+  "thresholds": {
+    "maxStructureSimilarity": 0.5,
+    "maxLandmarkSimilarity": 0.68,
+    "maxClassOverlap": 0.1,
+    "minAccentDistance": 30,
+    "maxContrastFailures": 0,
+    "maxAxeSerious": 0
+  },
+  "gates": {
+    "sourceContract": {
+      "passed": true,
+      "issues": [],
+      "warnings": [],
+      "hash": "3a7f596d88bae2d33fff020c22e6632666384f80cf177291f9a322ccca481ba5"
+    },
+    "skeleton": {
+      "passed": true,
+      "original": {
+        "id": "sidebar-workspace",
+        "family": "shell",
+        "traits": {
+          "sidebar": true,
+          "topbar": false,
+          "cards": true,
+          "hero": true,
+          "table": true,
+          "grid": true,
+          "tabs": true,
+          "modal": true,
+          "charts": true,
+          "sticky": true,
+          "orbital": false,
+          "terminal": true,
+          "bento": false,
+          "ticker": false,
+          "gallery": false
+        }
+      },
+      "current": {
+        "id": "orbital",
+        "family": "spatial",
+        "traits": {
+          "sidebar": true,
+          "topbar": false,
+          "cards": true,
+          "hero": true,
+          "table": true,
+          "grid": true,
+          "tabs": true,
+          "modal": true,
+          "charts": true,
+          "sticky": true,
+          "orbital": true,
+          "terminal": true,
+          "bento": false,
+          "ticker": false,
+          "gallery": true
+        }
+      },
+      "accent": {
+        "original": "#b26a00",
+        "current": "#40b3ff",
+        "deltaE": 111.47,
+        "min": 30
+      }
+    },
+    "pages": [
+      {
+        "route": "/",
+        "passed": true,
+        "skipped": false,
+        "failures": [],
+        "warnings": [
+          "aria attribute changed/removed: aria-label=Filza navigation",
+          "aria attribute changed/removed: aria-label=Site links"
+        ],
+        "structure": {
+          "fingerprintSimilarity": 0.392,
+          "landmarkSimilarity": 0.429,
+          "classOverlap": 0.028
+        },
+        "content": {
+          "missing": [],
+          "extra": [],
+          "numeric": {
+            "baseline": {
+              "tokens": 30,
+              "total": 60
+            },
+            "current": {
+              "tokens": 30,
+              "total": 60
+            }
+          }
+        },
+        "usability": {
+          "passed": true,
+          "failures": [],
+          "warnings": [],
+          "axe": {
+            "serious": [],
+            "moderate": []
+          }
+        },
+        "screenshots": {
+          "desktop": "current/home-desktop.png",
+          "mobile": "current/home-mobile.png"
+        }
+      },
+      {
+        "route": "/app/markets",
+        "passed": true,
+        "skipped": false,
+        "failures": [],
+        "warnings": [
+          "aria attribute changed/removed: aria-label=Filza navigation",
+          "aria attribute changed/removed: aria-label=Site links"
+        ],
+        "structure": {
+          "fingerprintSimilarity": 0.309,
+          "landmarkSimilarity": 0.5,
+          "classOverlap": 0.043
+        },
+        "content": {
+          "missing": [],
+          "extra": [],
+          "numeric": {
+            "baseline": {
+              "tokens": 15,
+              "total": 25
+            },
+            "current": {
+              "tokens": 15,
+              "total": 25
+            }
+          }
+        },
+        "usability": {
+          "passed": true,
+          "failures": [],
+          "warnings": [],
+          "axe": {
+            "serious": [],
+            "moderate": []
+          }
+        },
+        "screenshots": {
+          "desktop": "current/app-markets-desktop.png",
+          "mobile": "current/app-markets-mobile.png"
+        }
+      },
+      {
+        "route": "/docs",
+        "passed": true,
+        "skipped": false,
+        "failures": [],
+        "warnings": [
+          "aria attribute changed/removed: aria-label=Filza navigation",
+          "aria attribute changed/removed: aria-label=Site links"
+        ],
+        "structure": {
+          "fingerprintSimilarity": 0.224,
+          "landmarkSimilarity": 0.571,
+          "classOverlap": 0.036
+        },
+        "content": {
+          "missing": [],
+          "extra": [],
+          "numeric": {
+            "baseline": {
+              "tokens": 19,
+              "total": 36
+            },
+            "current": {
+              "tokens": 19,
+              "total": 36
+            }
+          }
+        },
+        "usability": {
+          "passed": true,
+          "failures": [],
+          "warnings": [],
+          "axe": {
+            "serious": [],
+            "moderate": []
+          }
+        },
+        "screenshots": {
+          "desktop": "current/docs-desktop.png",
+          "mobile": "current/docs-mobile.png"
+        }
+      },
+      {
+        "route": "/privacy",
+        "passed": true,
+        "skipped": false,
+        "failures": [],
+        "warnings": [
+          "aria attribute changed/removed: aria-label=Filza navigation",
+          "aria attribute changed/removed: aria-label=Site links"
+        ],
+        "structure": {
+          "fingerprintSimilarity": 0.343,
+          "landmarkSimilarity": 0.5,
+          "classOverlap": 0.049
+        },
+        "content": {
+          "missing": [],
+          "extra": [],
+          "numeric": {
+            "baseline": {
+              "tokens": 6,
+              "total": 6
+            },
+            "current": {
+              "tokens": 6,
+              "total": 6
+            }
+          }
+        },
+        "usability": {
+          "passed": true,
+          "failures": [],
+          "warnings": [],
+          "axe": {
+            "serious": [],
+            "moderate": []
+          }
+        },
+        "screenshots": {
+          "desktop": "current/privacy-desktop.png",
+          "mobile": "current/privacy-mobile.png"
+        }
+      },
+      {
+        "route": "/signal",
+        "passed": true,
+        "skipped": false,
+        "failures": [],
+        "warnings": [
+          "aria attribute changed/removed: aria-label=Filza navigation",
+          "aria attribute changed/removed: aria-label=Site links"
+        ],
+        "structure": {
+          "fingerprintSimilarity": 0.383,
+          "landmarkSimilarity": 0.429,
+          "classOverlap": 0.048
+        },
+        "content": {
+          "missing": [],
+          "extra": [],
+          "numeric": {
+            "baseline": {
+              "tokens": 11,
+              "total": 12
+            },
+            "current": {
+              "tokens": 11,
+              "total": 12
+            }
+          }
+        },
+        "usability": {
+          "passed": true,
+          "failures": [],
+          "warnings": [],
+          "axe": {
+            "serious": [],
+            "moderate": []
+          }
+        },
+        "screenshots": {
+          "desktop": "current/signal-desktop.png",
+          "mobile": "current/signal-mobile.png"
+        }
+      },
+      {
+        "route": "/terms",
+        "passed": true,
+        "skipped": false,
+        "failures": [],
+        "warnings": [
+          "aria attribute changed/removed: aria-label=Filza navigation",
+          "aria attribute changed/removed: aria-label=Site links"
+        ],
+        "structure": {
+          "fingerprintSimilarity": 0.343,
+          "landmarkSimilarity": 0.5,
+          "classOverlap": 0.049
+        },
+        "content": {
+          "missing": [],
+          "extra": [],
+          "numeric": {
+            "baseline": {
+              "tokens": 6,
+              "total": 6
+            },
+            "current": {
+              "tokens": 6,
+              "total": 6
+            }
+          }
+        },
+        "usability": {
+          "passed": true,
+          "failures": [],
+          "warnings": [],
+          "axe": {
+            "serious": [],
+            "moderate": []
+          }
+        },
+        "screenshots": {
+          "desktop": "current/terms-desktop.png",
+          "mobile": "current/terms-mobile.png"
+        }
+      }
+    ]
+  },
+  "failures": [],
+  "warnings": [
+    "/: aria attribute changed/removed: aria-label=Filza navigation",
+    "/: aria attribute changed/removed: aria-label=Site links",
+    "/app/markets: aria attribute changed/removed: aria-label=Filza navigation",
+    "/app/markets: aria attribute changed/removed: aria-label=Site links",
+    "/docs: aria attribute changed/removed: aria-label=Filza navigation",
+    "/docs: aria attribute changed/removed: aria-label=Site links",
+    "/privacy: aria attribute changed/removed: aria-label=Filza navigation",
+    "/privacy: aria attribute changed/removed: aria-label=Site links",
+    "/signal: aria attribute changed/removed: aria-label=Filza navigation",
+    "/signal: aria attribute changed/removed: aria-label=Site links",
+    "/terms: aria attribute changed/removed: aria-label=Filza navigation",
+    "/terms: aria attribute changed/removed: aria-label=Site links"
+  ],
+  "baseline": {
+    "generatedAt": "2026-10-19T18:47:26.913Z",
+    "routes": [
+      "/",
+      "/app/markets",
+      "/docs",
+      "/privacy",
+      "/signal",
+      "/terms"
+    ]
+  }
+}

@@ -1,0 +1,2198 @@
+{
+  "schemaVersion": 1,
+  "meta": {
+    "projectName": "filza-website",
+    "title": "filza-website",
+    "lang": "en"
+  },
+  "routes": [
+    "/",
+    "/app/markets",
+    "/docs",
+    "/privacy",
+    "/signal",
+    "/terms"
+  ],
+  "visibleText": [
+    {
+      "value": "- preview",
+      "count": 2
+    },
+    {
+      "value": "-90%",
+      "count": 2
+    },
+    {
+      "value": "(Above the cap)",
+      "count": 2
+    },
+    {
+      "value": "(model)",
+      "count": 2
+    },
+    {
+      "value": "(Up to the cap)",
+      "count": 2
+    },
+    {
+      "value": "/ 30 days / model at 25% vol",
+      "count": 2
+    },
+    {
+      "value": "/ cap +",
+      "count": 4
+    },
+    {
+      "value": "/ cap price (K)",
+      "count": 2
+    },
+    {
+      "value": "/ Example quote",
+      "count": 4
+    },
+    {
+      "value": "/ Model notes",
+      "count": 2
+    },
+    {
+      "value": "/ not issued",
+      "count": 2
+    },
+    {
+      "value": "/ paper market",
+      "count": 2
+    },
+    {
+      "value": "/ preview build",
+      "count": 2
+    },
+    {
+      "value": "/ targets, not registered",
+      "count": 2
+    },
+    {
+      "value": "/ unissued",
+      "count": 2
+    },
+    {
+      "value": "/ unit",
+      "count": 4
+    },
+    {
+      "value": "/ USD",
+      "count": 2
+    },
+    {
+      "value": "% / K",
+      "count": 2
+    },
+    {
+      "value": "% / settlement at the sample spot",
+      "count": 2
+    },
+    {
+      "value": "+ premium",
+      "count": 2
+    },
+    {
+      "value": "+100%",
+      "count": 2
+    },
+    {
+      "value": "+5%",
+      "count": 6
+    },
+    {
+      "value": "+5% cap",
+      "count": 2
+    },
+    {
+      "value": "0",
+      "count": 4
+    },
+    {
+      "value": "0%",
+      "count": 4
+    },
+    {
+      "value": "01 / INPUTS",
+      "count": 2
+    },
+    {
+      "value": "02 / REVIEW",
+      "count": 2
+    },
+    {
+      "value": "03 / JOURNAL",
+      "count": 2
+    },
+    {
+      "value": "04",
+      "count": 2
+    },
+    {
+      "value": "10%",
+      "count": 4
+    },
+    {
+      "value": "2%",
+      "count": 2
+    },
+    {
+      "value": "30 days",
+      "count": 2
+    },
+    {
+      "value": "30-day epoch",
+      "count": 2
+    },
+    {
+      "value": "30-day epoch | +5% cap | illustrative values",
+      "count": 2
+    },
+    {
+      "value": "30d",
+      "count": 2
+    },
+    {
+      "value": "5%",
+      "count": 2
+    },
+    {
+      "value": "A 5% auction fee appeared in an earlier reference model. It is only a design assumption and is not active, binding, or a production term.",
+      "count": 2
+    },
+    {
+      "value": "A candidate SPL market unit would need a reliable price source and a USDC liquidity path. Listing, custody, jurisdiction, and program permissions require separate review before production.",
+      "count": 2
+    },
+    {
+      "value": "A clear split.",
+      "count": 2
+    },
+    {
+      "value": "A defined cap sets the split.",
+      "count": 2
+    },
+    {
+      "value": "A defined level.",
+      "count": 2
+    },
+    {
+      "value": "A LITTLE SPACE TO THINK",
+      "count": 2
+    },
+    {
+      "value": "A premium does not remove risk.",
+      "count": 2
+    },
+    {
+      "value": "A production series would need a named feed, market session, fallback behavior, and settlement window. This preview uses local assumptions and performs no oracle reads.",
+      "count": 2
+    },
+    {
+      "value": "All displayed market values are examples. No token or Solana program has been issued by this preview.",
+      "count": 2
+    },
+    {
+      "value": "All examples use a +5% cap, 30-day epoch and 25% model volatility.",
+      "count": 2
+    },
+    {
+      "value": "Amount",
+      "count": 4
+    },
+    {
+      "value": "and",
+      "count": 2
+    },
+    {
+      "value": "Any SPL market unit with a verified price feed and USDC liquidity path may qualify. This preview records no wallet request or listing transaction.",
+      "count": 2
+    },
+    {
+      "value": "are unregistered targets",
+      "count": 2
+    },
+    {
+      "value": "Asset",
+      "count": 4
+    },
+    {
+      "value": "Assets need a verified market path.",
+      "count": 2
+    },
+    {
+      "value": "Back to markets",
+      "count": 2
+    },
+    {
+      "value": "Back to overview",
+      "count": 2
+    },
+    {
+      "value": "breakeven",
+      "count": 2
+    },
+    {
+      "value": "Breakeven",
+      "count": 2
+    },
+    {
+      "value": "Briefing",
+      "count": 2
+    },
+    {
+      "value": "Calculated from your assumptions.",
+      "count": 2
+    },
+    {
+      "value": "Cap",
+      "count": 6
+    },
+    {
+      "value": "Cap +5% / 30-day epoch / model values per unit",
+      "count": 2
+    },
+    {
+      "value": "Cap default",
+      "count": 4
+    },
+    {
+      "value": "Cap K",
+      "count": 2
+    },
+    {
+      "value": "CAP K",
+      "count": 2
+    },
+    {
+      "value": "Cap price K",
+      "count": 2
+    },
+    {
+      "value": "Change in reference value",
+      "count": 2
+    },
+    {
+      "value": "characters remaining",
+      "count": 2
+    },
+    {
+      "value": "Check the numbers.",
+      "count": 2
+    },
+    {
+      "value": "Choose the cap. K is fixed for the epoch.",
+      "count": 2
+    },
+    {
+      "value": "Clear filter",
+      "count": 2
+    },
+    {
+      "value": "Concepts",
+      "count": 2
+    },
+    {
+      "value": "Connect a Solana account to display its public address. This site does not ask for transaction signatures.",
+      "count": 2
+    },
+    {
+      "value": "Connecting…",
+      "count": 2
+    },
+    {
+      "value": "Created",
+      "count": 2
+    },
+    {
+      "value": "Current",
+      "count": 2
+    },
+    {
+      "value": "Delete local record",
+      "count": 2
+    },
+    {
+      "value": "Details",
+      "count": 2
+    },
+    {
+      "value": "Edit",
+      "count": 2
+    },
+    {
+      "value": "Edit inputs",
+      "count": 2
+    },
+    {
+      "value": "Epoch",
+      "count": 4
+    },
+    {
+      "value": "Error 404",
+      "count": 2
+    },
+    {
+      "value": "Exact percentage",
+      "count": 2
+    },
+    {
+      "value": "Example arithmetic only. No live quote is read and no order is placed.",
+      "count": 2
+    },
+    {
+      "value": "Example arithmetic.",
+      "count": 2
+    },
+    {
+      "value": "example at",
+      "count": 4
+    },
+    {
+      "value": "Example quotes / no live feed",
+      "count": 2
+    },
+    {
+      "value": "Example quotes are not live prices.",
+      "count": 2
+    },
+    {
+      "value": "Example series",
+      "count": 2
+    },
+    {
+      "value": "Export JSON",
+      "count": 2
+    },
+    {
+      "value": "Feed",
+      "count": 6
+    },
+    {
+      "value": "Fees",
+      "count": 2
+    },
+    {
+      "value": "Fees, slippage and taxes are excluded. No transaction is created.",
+      "count": 2
+    },
+    {
+      "value": "for “",
+      "count": 2
+    },
+    {
+      "value": "For starting price P0 and cap rate c, K = P0 x (1 + c). At assumed settlement price S, Upside receives max(0, S - K). Income receives value up to K plus any hypothetical auction premium.",
+      "count": 2
+    },
+    {
+      "value": "Four leaves",
+      "count": 2
+    },
+    {
+      "value": "How",
+      "count": 2
+    },
+    {
+      "value": "Hypothetical move",
+      "count": 2
+    },
+    {
+      "value": "if subscribed (model)",
+      "count": 2
+    },
+    {
+      "value": "Illustrative scenario",
+      "count": 2
+    },
+    {
+      "value": "Illustrative values. No live quote, custody, signing or execution.",
+      "count": 4
+    },
+    {
+      "value": "Income",
+      "count": 10
+    },
+    {
+      "value": "INCOME",
+      "count": 4
+    },
+    {
+      "value": "Income /",
+      "count": 2
+    },
+    {
+      "value": "Income / unit",
+      "count": 2
+    },
+    {
+      "value": "Income + Upside",
+      "count": 2
+    },
+    {
+      "value": "Income and Upside describe modeled positions.",
+      "count": 2
+    },
+    {
+      "value": "Income at settlement",
+      "count": 2
+    },
+    {
+      "value": "Income model",
+      "count": 2
+    },
+    {
+      "value": "Income share",
+      "count": 2
+    },
+    {
+      "value": "Income still bears the underlying asset's downside. A premium does not protect the market unit from a price decline.",
+      "count": 2
+    },
+    {
+      "value": "Income still bears underlying downside. Upside may expire without a payoff. Oracle, liquidity, smart contract, counterparty, market, and regulatory risks remain outside this interface.",
+      "count": 2
+    },
+    {
+      "value": "Indicative model values use a 30-day epoch and 25% volatility.",
+      "count": 2
+    },
+    {
+      "value": "Indicative premium",
+      "count": 2
+    },
+    {
+      "value": "Install a wallet, enable its Solana account, then reopen this panel.",
+      "count": 2
+    },
+    {
+      "value": "Interface preview / no live feed",
+      "count": 2
+    },
+    {
+      "value": "is a proposed symbol only; it has not been issued, and no supply or utility is enabled in this preview.",
+      "count": 2
+    },
+    {
+      "value": "is a proposed symbol. No token has been issued and no contract address exists.",
+      "count": 2
+    },
+    {
+      "value": "Journal",
+      "count": 2
+    },
+    {
+      "value": "Journal records stay in this browser's storage.",
+      "count": 2
+    },
+    {
+      "value": "K",
+      "count": 6
+    },
+    {
+      "value": "Keep assumptions in this browser.",
+      "count": 2
+    },
+    {
+      "value": "Keep the record.",
+      "count": 2
+    },
+    {
+      "value": "Leg",
+      "count": 4
+    },
+    {
+      "value": "Limits of this preview",
+      "count": 2
+    },
+    {
+      "value": "Listing",
+      "count": 2
+    },
+    {
+      "value": "Listing intake",
+      "count": 2
+    },
+    {
+      "value": "Local",
+      "count": 2
+    },
+    {
+      "value": "Local interface preview",
+      "count": 2
+    },
+    {
+      "value": "local only",
+      "count": 2
+    },
+    {
+      "value": "LOCAL ONLY",
+      "count": 2
+    },
+    {
+      "value": "Local scenario lab",
+      "count": 2
+    },
+    {
+      "value": "Looking for MetaMask, Phantom, Solflare and other Solana wallets…",
+      "count": 2
+    },
+    {
+      "value": "Market quotes",
+      "count": 2
+    },
+    {
+      "value": "market terminal",
+      "count": 2
+    },
+    {
+      "value": "market unit",
+      "count": 2
+    },
+    {
+      "value": "Markets",
+      "count": 2
+    },
+    {
+      "value": "Mechanism",
+      "count": 2
+    },
+    {
+      "value": "MetaMask",
+      "count": 2
+    },
+    {
+      "value": "MetaMask connector:",
+      "count": 2
+    },
+    {
+      "value": "min(S, K)",
+      "count": 2
+    },
+    {
+      "value": "Mode",
+      "count": 2
+    },
+    {
+      "value": "Model",
+      "count": 6
+    },
+    {
+      "value": "Model / unit",
+      "count": 2
+    },
+    {
+      "value": "Model premium",
+      "count": 2
+    },
+    {
+      "value": "Modelled value",
+      "count": 2
+    },
+    {
+      "value": "Move",
+      "count": 4
+    },
+    {
+      "value": "Network",
+      "count": 4
+    },
+    {
+      "value": "No compatible Solana wallet was detected.",
+      "count": 2
+    },
+    {
+      "value": "No contract address is published or implied.",
+      "count": 2
+    },
+    {
+      "value": "No custody, no signing, no trade execution.",
+      "count": 2
+    },
+    {
+      "value": "No fee is charged by this demo.",
+      "count": 2
+    },
+    {
+      "value": "No live price source is connected.",
+      "count": 2
+    },
+    {
+      "value": "No model markets match “",
+      "count": 2
+    },
+    {
+      "value": "No such leaf.",
+      "count": 2
+    },
+    {
+      "value": "No trade order or private key is requested by this documentation view. External links have their own privacy practices.",
+      "count": 2
+    },
+    {
+      "value": "Not a feed",
+      "count": 2
+    },
+    {
+      "value": "Not a live quote",
+      "count": 2
+    },
+    {
+      "value": "Not live",
+      "count": 2
+    },
+    {
+      "value": "Not required",
+      "count": 2
+    },
+    {
+      "value": "Nothing matches “",
+      "count": 2
+    },
+    {
+      "value": "On chain stats",
+      "count": 2
+    },
+    {
+      "value": "On this page",
+      "count": 2
+    },
+    {
+      "value": "One asset again.",
+      "count": 2
+    },
+    {
+      "value": "Only the selected wallet’s public Solana address is read.",
+      "count": 2
+    },
+    {
+      "value": "Open",
+      "count": 2
+    },
+    {
+      "value": "Open the board",
+      "count": 4
+    },
+    {
+      "value": "Open the journal",
+      "count": 2
+    },
+    {
+      "value": "OPTIONAL",
+      "count": 2
+    },
+    {
+      "value": "Oracle",
+      "count": 2
+    },
+    {
+      "value": "P0 $250 / 5% cap / K $262.50",
+      "count": 2
+    },
+    {
+      "value": "Pair",
+      "count": 4
+    },
+    {
+      "value": "Pairs listed",
+      "count": 2
+    },
+    {
+      "value": "Paper only",
+      "count": 2
+    },
+    {
+      "value": "Per unit /",
+      "count": 2
+    },
+    {
+      "value": "per unit / model at 25% vol / 30 days / the auction sets the price. Values per unit; Income is paid in SPL market units worth min(S, K); the premium goes to subscribers only.",
+      "count": 2
+    },
+    {
+      "value": "per unit; value above the cap is an upside leg priced",
+      "count": 2
+    },
+    {
+      "value": "per unit.",
+      "count": 2
+    },
+    {
+      "value": "Per-unit settlement value, before premium",
+      "count": 2
+    },
+    {
+      "value": "Phantom",
+      "count": 2
+    },
+    {
+      "value": "preview",
+      "count": 2
+    },
+    {
+      "value": "Preview",
+      "count": 4
+    },
+    {
+      "value": "preview / illustrative values / no transactions /",
+      "count": 2
+    },
+    {
+      "value": "Preview build",
+      "count": 2
+    },
+    {
+      "value": "Price a boundary",
+      "count": 2
+    },
+    {
+      "value": "Price the boundary.",
+      "count": 2
+    },
+    {
+      "value": "Privacy",
+      "count": 2
+    },
+    {
+      "value": "Proposed, unissued",
+      "count": 2
+    },
+    {
+      "value": "Put a number behind your next idea. Enter a reference price, explore a hypothetical move, and keep your reasoning close.",
+      "count": 2
+    },
+    {
+      "value": "Quotes are illustrative samples, not a market feed.",
+      "count": 2
+    },
+    {
+      "value": "Read how it works",
+      "count": 2
+    },
+    {
+      "value": "Read listing notes",
+      "count": 2
+    },
+    {
+      "value": "Read the chain.",
+      "count": 2
+    },
+    {
+      "value": "Read the demo privacy notice",
+      "count": 2
+    },
+    {
+      "value": "Read the demo terms",
+      "count": 2
+    },
+    {
+      "value": "Read the limits",
+      "count": 2
+    },
+    {
+      "value": "Recompose unavailable",
+      "count": 2
+    },
+    {
+      "value": "Recomposition would require a wallet transaction. The local preview keeps this action visible while execution remains unavailable.",
+      "count": 2
+    },
+    {
+      "value": "Records",
+      "count": 4
+    },
+    {
+      "value": "Reference",
+      "count": 2
+    },
+    {
+      "value": "Reference amount",
+      "count": 2
+    },
+    {
+      "value": "Reference price",
+      "count": 6
+    },
+    {
+      "value": "Reference value",
+      "count": 2
+    },
+    {
+      "value": "Reset search",
+      "count": 2
+    },
+    {
+      "value": "result",
+      "count": 2
+    },
+    {
+      "value": "Retry saving",
+      "count": 2
+    },
+    {
+      "value": "Review scenario",
+      "count": 2
+    },
+    {
+      "value": "Risks",
+      "count": 2
+    },
+    {
+      "value": "S",
+      "count": 2
+    },
+    {
+      "value": "Sample move",
+      "count": 2
+    },
+    {
+      "value": "Sample quotes, a user-priced model and a browser-local journal. Nothing here is live and nothing is signed.",
+      "count": 2
+    },
+    {
+      "value": "Sample spot",
+      "count": 4
+    },
+    {
+      "value": "Sample tape",
+      "count": 2
+    },
+    {
+      "value": "Sandbox",
+      "count": 2
+    },
+    {
+      "value": "Save to journal",
+      "count": 2
+    },
+    {
+      "value": "Scenario move",
+      "count": 2
+    },
+    {
+      "value": "Scenario value",
+      "count": 4
+    },
+    {
+      "value": "See the split",
+      "count": 2
+    },
+    {
+      "value": "Set a cap, move the settlement slider, and inspect how the illustrative value splits between Income and Upside. No order or wallet action is created.",
+      "count": 2
+    },
+    {
+      "value": "Set your assumption.",
+      "count": 2
+    },
+    {
+      "value": "settlement",
+      "count": 2
+    },
+    {
+      "value": "Settlement",
+      "count": 4
+    },
+    {
+      "value": "Settlement $200",
+      "count": 2
+    },
+    {
+      "value": "Settlement $250",
+      "count": 2
+    },
+    {
+      "value": "Settlement $300",
+      "count": 2
+    },
+    {
+      "value": "settlement partition",
+      "count": 2
+    },
+    {
+      "value": "Settlement price S",
+      "count": 2
+    },
+    {
+      "value": "Settlement split",
+      "count": 2
+    },
+    {
+      "value": "Sheet",
+      "count": 6
+    },
+    {
+      "value": "Skip to content",
+      "count": 2
+    },
+    {
+      "value": "SOLANA /",
+      "count": 2
+    },
+    {
+      "value": "Solflare",
+      "count": 2
+    },
+    {
+      "value": "SPOT",
+      "count": 2
+    },
+    {
+      "value": "Static",
+      "count": 4
+    },
+    {
+      "value": "Static samples",
+      "count": 2
+    },
+    {
+      "value": "Status",
+      "count": 2
+    },
+    {
+      "value": "Stock price",
+      "count": 2
+    },
+    {
+      "value": "Stock, Income and Upside settlement values",
+      "count": 2
+    },
+    {
+      "value": "Storage",
+      "count": 2
+    },
+    {
+      "value": "Stores",
+      "count": 2
+    },
+    {
+      "value": "Suggest a market.",
+      "count": 2
+    },
+    {
+      "value": "symbol is separate.",
+      "count": 2
+    },
+    {
+      "value": "Target",
+      "count": 2
+    },
+    {
+      "value": "Terms",
+      "count": 2
+    },
+    {
+      "value": "Terms for this local preview.",
+      "count": 2
+    },
+    {
+      "value": "That path is not in this preview. Start from the overview or open the board.",
+      "count": 2
+    },
+    {
+      "value": "The board",
+      "count": 2
+    },
+    {
+      "value": "The modeled payoff is max(0, settlement price - K). A buyer's maximum modeled loss is the hypothetical premium paid.",
+      "count": 2
+    },
+    {
+      "value": "The payoff model uses values you enter.",
+      "count": 2
+    },
+    {
+      "value": "The proposed",
+      "count": 2
+    },
+    {
+      "value": "The scenario journal stores its record locally and can export it as JSON. It does not submit a transaction or publish the record on chain.",
+      "count": 2
+    },
+    {
+      "value": "These illustrations describe a product concept, not deployed Solana programs.",
+      "count": 2
+    },
+    {
+      "value": "Thesis note",
+      "count": 2
+    },
+    {
+      "value": "This browser",
+      "count": 2
+    },
+    {
+      "value": "This browser only",
+      "count": 2
+    },
+    {
+      "value": "This is a private what-if calculator. Reference prices are entered by you; they are not live quotes or execution prices.",
+      "count": 2
+    },
+    {
+      "value": "This page describes how this local product demonstration should be read. It is not a production protocol policy, legal agreement, or investment recommendation.",
+      "count": 2
+    },
+    {
+      "value": "This page is a readable product notice for the interface. It does not replace production terms or create a contractual relationship.",
+      "count": 2
+    },
+    {
+      "value": "This preview models an illustrative split around a cap price. It does not custody SPL assets, run an auction, connect an oracle, or settle transactions.",
+      "count": 2
+    },
+    {
+      "value": "Three parts of the model.",
+      "count": 2
+    },
+    {
+      "value": "Token",
+      "count": 2
+    },
+    {
+      "value": "Unit",
+      "count": 8
+    },
+    {
+      "value": "Unit quote",
+      "count": 2
+    },
+    {
+      "value": "units",
+      "count": 2
+    },
+    {
+      "value": "Units",
+      "count": 2
+    },
+    {
+      "value": "Upside",
+      "count": 10
+    },
+    {
+      "value": "UPSIDE",
+      "count": 4
+    },
+    {
+      "value": "Upside / max(S - K, 0)",
+      "count": 2
+    },
+    {
+      "value": "Upside / unit",
+      "count": 2
+    },
+    {
+      "value": "Upside $0",
+      "count": 4
+    },
+    {
+      "value": "Upside $37.50",
+      "count": 2
+    },
+    {
+      "value": "Upside at settlement",
+      "count": 2
+    },
+    {
+      "value": "Upside share",
+      "count": 2
+    },
+    {
+      "value": "USD /",
+      "count": 2
+    },
+    {
+      "value": "Use a Solana wallet with an SPL account. The CA preview never asks for a seed phrase.",
+      "count": 2
+    },
+    {
+      "value": "Value above K.",
+      "count": 2
+    },
+    {
+      "value": "value at settlement",
+      "count": 2
+    },
+    {
+      "value": "Value below the cap is an income leg priced",
+      "count": 2
+    },
+    {
+      "value": "Value up to K, plus any premium.",
+      "count": 2
+    },
+    {
+      "value": "vs spot",
+      "count": 2
+    },
+    {
+      "value": "Wallet",
+      "count": 2
+    },
+    {
+      "value": "works.",
+      "count": 2
+    },
+    {
+      "value": "Your assumptions.",
+      "count": 2
+    },
+    {
+      "value": "Your browser holds the journal state.",
+      "count": 2
+    },
+    {
+      "value": "Your idea.",
+      "count": 2
+    },
+    {
+      "value": "Your local record.",
+      "count": 2
+    },
+    {
+      "value": "YOUR PRIVATE WORKSPACE",
+      "count": 2
+    }
+  ],
+  "hiddenText": [
+    {
+      "value": "Filter the board",
+      "count": 2
+    },
+    {
+      "value": "Illustrative",
+      "count": 2
+    },
+    {
+      "value": "Model market values. Quotes are examples and are not live prices.",
+      "count": 2
+    },
+    {
+      "value": "pairs with modelled unit prices",
+      "count": 2
+    },
+    {
+      "value": "Search markets",
+      "count": 2
+    }
+  ],
+  "attributes": [
+    {
+      "name": "href",
+      "value": "/",
+      "count": 8
+    },
+    {
+      "name": "href",
+      "value": "/app/markets",
+      "count": 4
+    },
+    {
+      "name": "href",
+      "value": "/docs",
+      "count": 2
+    },
+    {
+      "name": "href",
+      "value": "/docs#listing",
+      "count": 2
+    },
+    {
+      "name": "href",
+      "value": "/privacy",
+      "count": 2
+    },
+    {
+      "name": "href",
+      "value": "/signal",
+      "count": 2
+    },
+    {
+      "name": "href",
+      "value": "/terms",
+      "count": 2
+    },
+    {
+      "name": "href",
+      "value": "#main",
+      "count": 2
+    },
+    {
+      "name": "href",
+      "value": "https://metamask.io/download/",
+      "count": 2
+    },
+    {
+      "name": "href",
+      "value": "https://phantom.app/download",
+      "count": 2
+    },
+    {
+      "name": "href",
+      "value": "https://solflare.com/download",
+      "count": 2
+    },
+    {
+      "name": "placeholder",
+      "value": "Filter by symbol",
+      "count": 2
+    },
+    {
+      "name": "placeholder",
+      "value": "Search token or market",
+      "count": 2
+    },
+    {
+      "name": "placeholder",
+      "value": "What would make this move plausible?",
+      "count": 2
+    },
+    {
+      "name": "src",
+      "value": "/icon.svg",
+      "count": 4
+    },
+    {
+      "name": "to",
+      "value": "body",
+      "count": 2
+    }
+  ],
+  "bindings": [
+    {
+      "kind": "asset",
+      "expr": "concept.image",
+      "count": 2
+    },
+    {
+      "kind": "asset",
+      "expr": "wallet.icon",
+      "count": 2
+    },
+    {
+      "kind": "attr",
+      "expr": "`/app/markets/${asset.symbol}`",
+      "count": 4
+    },
+    {
+      "kind": "attr",
+      "expr": "`/app/markets/${item.symbol}`",
+      "count": 2
+    },
+    {
+      "kind": "attr",
+      "expr": "`#${id}`",
+      "count": 2
+    },
+    {
+      "kind": "attr",
+      "expr": "concept.image",
+      "count": 2
+    },
+    {
+      "kind": "attr",
+      "expr": "concept.title",
+      "count": 2
+    },
+    {
+      "kind": "attr",
+      "expr": "item.symbol",
+      "count": 2
+    },
+    {
+      "kind": "attr",
+      "expr": "to",
+      "count": 6
+    },
+    {
+      "kind": "attr",
+      "expr": "wallet.icon",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "(model.incomeShare * 100).toFixed(1)",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "(model.upsideShare * 100).toFixed(1)",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "activeWallet?.name || 'Solana wallet'",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "address",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "address ? 'Wallet connected' : 'Choose a wallet'",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "asset",
+      "count": 8
+    },
+    {
+      "kind": "interpolation",
+      "expr": "asset.initials",
+      "count": 4
+    },
+    {
+      "kind": "interpolation",
+      "expr": "asset.name",
+      "count": 4
+    },
+    {
+      "kind": "interpolation",
+      "expr": "asset.symbol",
+      "count": 4
+    },
+    {
+      "kind": "interpolation",
+      "expr": "body",
+      "count": 4
+    },
+    {
+      "kind": "interpolation",
+      "expr": "brand.asset",
+      "count": 26
+    },
+    {
+      "kind": "interpolation",
+      "expr": "brand.domain",
+      "count": 6
+    },
+    {
+      "kind": "interpolation",
+      "expr": "brand.handle",
+      "count": 4
+    },
+    {
+      "kind": "interpolation",
+      "expr": "brand.name",
+      "count": 6
+    },
+    {
+      "kind": "interpolation",
+      "expr": "brand.network",
+      "count": 20
+    },
+    {
+      "kind": "interpolation",
+      "expr": "brand.supportingLine",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "cap",
+      "count": 10
+    },
+    {
+      "kind": "interpolation",
+      "expr": "change",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "chartDescription",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "concept.description",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "concept.title",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "copy",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "currency(record.basePrice, 4)",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "currency(result.baselineValue, 4)",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "currency(result.basePrice, 4)",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "currency(result.deltaUsd, 4)",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "currency(result.scenarioValue, 4)",
+      "count": 4
+    },
+    {
+      "kind": "interpolation",
+      "expr": "errorMessage",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "errors.amount",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "errors.basePrice",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "errors.movePct",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "errors.note",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "feedback",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "i + 1",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "isSaved ? 'SAVED' : 'NOT SAVED'",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "isSaved ? 'Stored only in this browser.' : 'Export a copy to keep this record.'",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "item.initials",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "item.name",
+      "count": 4
+    },
+    {
+      "kind": "interpolation",
+      "expr": "item.symbol",
+      "count": 6
+    },
+    {
+      "kind": "interpolation",
+      "expr": "label",
+      "count": 8
+    },
+    {
+      "kind": "interpolation",
+      "expr": "legalTitle",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "model.incomeShare >= model.upsideShare ? 'Most of the sample value sits below the cap.' : 'Most of the sample value sits above the cap.'",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "model.incomeShare.toFixed(1)",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "model.upsideShare.toFixed(1)",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "money(asset.payoff.incomePrice)",
+      "count": 4
+    },
+    {
+      "kind": "interpolation",
+      "expr": "money(asset.payoff.upsidePrice)",
+      "count": 4
+    },
+    {
+      "kind": "interpolation",
+      "expr": "money(high - model.strike)",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "money(high)",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "money(item.model.incomePrice)",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "money(item.model.strike)",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "money(item.model.upsidePrice)",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "money(model.breakeven)",
+      "count": 4
+    },
+    {
+      "kind": "interpolation",
+      "expr": "money(model.incomePrice)",
+      "count": 6
+    },
+    {
+      "kind": "interpolation",
+      "expr": "money(model.incomeSettlement)",
+      "count": 4
+    },
+    {
+      "kind": "interpolation",
+      "expr": "money(model.incomeWithPremium)",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "money(model.premium)",
+      "count": 6
+    },
+    {
+      "kind": "interpolation",
+      "expr": "money(model.spot)",
+      "count": 6
+    },
+    {
+      "kind": "interpolation",
+      "expr": "money(model.strike)",
+      "count": 12
+    },
+    {
+      "kind": "interpolation",
+      "expr": "money(model.upsidePrice)",
+      "count": 6
+    },
+    {
+      "kind": "interpolation",
+      "expr": "money(model.upsideSettlement)",
+      "count": 4
+    },
+    {
+      "kind": "interpolation",
+      "expr": "money(row.income)",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "money(row.price)",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "money(row.upside)",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "money(settlement)",
+      "count": 4
+    },
+    {
+      "kind": "interpolation",
+      "expr": "money(tick)",
+      "count": 4
+    },
+    {
+      "kind": "interpolation",
+      "expr": "money(unitPrice * amount)",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "money(unitPrice)",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "movePct",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "new Date(record.createdAt).toLocaleString()",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "note",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "num",
+      "count": 4
+    },
+    {
+      "kind": "interpolation",
+      "expr": "number",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "Number(record.amount).toLocaleString()",
+      "count": 4
+    },
+    {
+      "kind": "interpolation",
+      "expr": "option",
+      "count": 6
+    },
+    {
+      "kind": "interpolation",
+      "expr": "pageTitle",
+      "count": 4
+    },
+    {
+      "kind": "interpolation",
+      "expr": "paragraph",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "pct(item.change)",
+      "count": 4
+    },
+    {
+      "kind": "interpolation",
+      "expr": "pendingWallet ? 'Connecting…' : buttonLabel",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "pendingWallet ? 'Disconnecting…' : 'Disconnect wallet'",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "percent(record.movePct)",
+      "count": 4
+    },
+    {
+      "kind": "interpolation",
+      "expr": "props.query.trim()",
+      "count": 4
+    },
+    {
+      "kind": "interpolation",
+      "expr": "query",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "record.note",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "remaining",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "result.deltaUsd >= 0 ? '+' : ''",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "rows.length",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "rows.length === 1 ? '' : 's'",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "selected",
+      "count": 6
+    },
+    {
+      "kind": "interpolation",
+      "expr": "setupMessage",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "showTable ? 'Chart' : 'Table'",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "side",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "signed(model.spotChangePercent)",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "solanaConfig.cluster.toUpperCase()",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "spot(asset.spot)",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "spot(item.spot)",
+      "count": 4
+    },
+    {
+      "kind": "interpolation",
+      "expr": "stat.detail",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "stat.label",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "storageNotice",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "String(index + 1).padStart(2, '0')",
+      "count": 4
+    },
+    {
+      "kind": "interpolation",
+      "expr": "symbol",
+      "count": 4
+    },
+    {
+      "kind": "interpolation",
+      "expr": "symbol === 'SOL' ? '$182.00' : symbol === 'JUP' ? '$1.12' : symbol === 'BONK' ? '$0.000021' : '$1.00'",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "symbol.slice(0, 1)",
+      "count": 2
+    },
+    {
+      "kind": "interpolation",
+      "expr": "title",
+      "count": 4
+    },
+    {
+      "kind": "interpolation",
+      "expr": "wallet.name",
+      "count": 2
+    },
+    {
+      "kind": "link",
+      "expr": "`/app/markets/${asset.symbol}`",
+      "count": 4
+    },
+    {
+      "kind": "link",
+      "expr": "`/app/markets/${item.symbol}`",
+      "count": 2
+    },
+    {
+      "kind": "link",
+      "expr": "`#${id}`",
+      "count": 2
+    },
+    {
+      "kind": "link",
+      "expr": "to",
+      "count": 6
+    },
+    {
+      "kind": "model",
+      "expr": "amount",
+      "count": 2
+    },
+    {
+      "kind": "model",
+      "expr": "basePrice",
+      "count": 2
+    },
+    {
+      "kind": "model",
+      "expr": "cap",
+      "count": 4
+    },
+    {
+      "kind": "model",
+      "expr": "movePct",
+      "count": 4
+    },
+    {
+      "kind": "model",
+      "expr": "note",
+      "count": 2
+    },
+    {
+      "kind": "model",
+      "expr": "query",
+      "count": 4
+    },
+    {
+      "kind": "model",
+      "expr": "selected",
+      "count": 2
+    },
+    {
+      "kind": "model",
+      "expr": "settlement",
+      "count": 2
+    },
+    {
+      "kind": "model",
+      "expr": "units",
+      "count": 2
+    }
+  ],
+  "events": [
+    {
+      "event": "click",
+      "handler": "changeStage(i)",
+      "count": 2
+    },
+    {
+      "event": "click",
+      "handler": "closeModal",
+      "count": 4
+    },
+    {
+      "event": "click",
+      "handler": "connect(wallet)",
+      "count": 2
+    },
+    {
+      "event": "click",
+      "handler": "disconnect",
+      "count": 2
+    },
+    {
+      "event": "click",
+      "handler": "downloadJournal",
+      "count": 2
+    },
+    {
+      "event": "click",
+      "handler": "edit",
+      "count": 4
+    },
+    {
+      "event": "click",
+      "handler": "emit('navigate', '/app/markets')",
+      "count": 2
+    },
+    {
+      "event": "click",
+      "handler": "emit('navigate', '/risk')",
+      "count": 2
+    },
+    {
+      "event": "click",
+      "handler": "emit('navigate', `/app/markets/${item.symbol}`)",
+      "count": 2
+    },
+    {
+      "event": "click",
+      "handler": "emit('navigate','/')",
+      "count": 2
+    },
+    {
+      "event": "click",
+      "handler": "emit('navigate','/docs#listing')",
+      "count": 2
+    },
+    {
+      "event": "click",
+      "handler": "go('/')",
+      "count": 2
+    },
+    {
+      "event": "click",
+      "handler": "go('/docs')",
+      "count": 2
+    },
+    {
+      "event": "click",
+      "handler": "go('/privacy')",
+      "count": 2
+    },
+    {
+      "event": "click",
+      "handler": "go('/signal')",
+      "count": 2
+    },
+    {
+      "event": "click",
+      "handler": "go('/terms')",
+      "count": 2
+    },
+    {
+      "event": "click",
+      "handler": "navigate('/')",
+      "count": 4
+    },
+    {
+      "event": "click",
+      "handler": "navigate('/app/markets')",
+      "count": 2
+    },
+    {
+      "event": "click",
+      "handler": "navigate(asset.symbol)",
+      "count": 4
+    },
+    {
+      "event": "click",
+      "handler": "navigate(to)",
+      "count": 4
+    },
+    {
+      "event": "click",
+      "handler": "persist",
+      "count": 2
+    },
+    {
+      "event": "click",
+      "handler": "query = ''",
+      "count": 2
+    },
+    {
+      "event": "click",
+      "handler": "railOpen = !railOpen",
+      "count": 2
+    },
+    {
+      "event": "click",
+      "handler": "railOpen = false",
+      "count": 2
+    },
+    {
+      "event": "click",
+      "handler": "removeJournal",
+      "count": 2
+    },
+    {
+      "event": "click",
+      "handler": "resetSearch",
+      "count": 2
+    },
+    {
+      "event": "click",
+      "handler": "save",
+      "count": 2
+    },
+    {
+      "event": "click",
+      "handler": "selected = item.symbol",
+      "count": 4
+    },
+    {
+      "event": "click",
+      "handler": "showFilters = !showFilters",
+      "count": 2
+    },
+    {
+      "event": "click",
+      "handler": "showModal",
+      "count": 2
+    },
+    {
+      "event": "click",
+      "handler": "showTable = !showTable",
+      "count": 2
+    },
+    {
+      "event": "click",
+      "handler": "side = option",
+      "count": 6
+    },
+    {
+      "event": "click",
+      "handler": "to.startsWith('#') ? toBoundary() : emit('navigate', to)",
+      "count": 2
+    },
+    {
+      "event": "click",
+      "handler": "toBoundary",
+      "count": 4
+    },
+    {
+      "event": "keydown",
+      "handler": "closeModal",
+      "count": 2
+    },
+    {
+      "event": "keydown",
+      "handler": "onDialogKeydown",
+      "count": 2
+    },
+    {
+      "event": "submit",
+      "handler": "review",
+      "count": 2
+    }
+  ],
+  "links": [
+    {
+      "kind": "href",
+      "target": "/",
+      "count": 8
+    },
+    {
+      "kind": "href",
+      "target": "/app/markets",
+      "count": 4
+    },
+    {
+      "kind": "href",
+      "target": "/docs",
+      "count": 2
+    },
+    {
+      "kind": "href",
+      "target": "/docs#listing",
+      "count": 2
+    },
+    {
+      "kind": "href",
+      "target": "/privacy",
+      "count": 2
+    },
+    {
+      "kind": "href",
+      "target": "/signal",
+      "count": 2
+    },
+    {
+      "kind": "href",
+      "target": "/terms",
+      "count": 2
+    },
+    {
+      "kind": "href",
+      "target": "#main",
+      "count": 2
+    },
+    {
+      "kind": "href",
+      "target": "https://metamask.io/download/",
+      "count": 2
+    },
+    {
+      "kind": "href",
+      "target": "https://phantom.app/download",
+      "count": 2
+    },
+    {
+      "kind": "href",
+      "target": "https://solflare.com/download",
+      "count": 2
+    },
+    {
+      "kind": "to",
+      "target": "body",
+      "count": 2
+    }
+  ],
+  "assets": [
+    {
+      "kind": "src",
+      "value": "/icon.svg",
+      "count": 4
+    }
+  ],
+  "forms": [
+    {
+      "tag": "input",
+      "name": "",
+      "type": "",
+      "count": 6
+    },
+    {
+      "tag": "input",
+      "name": "",
+      "type": "number",
+      "count": 2
+    },
+    {
+      "tag": "input",
+      "name": "",
+      "type": "range",
+      "count": 8
+    },
+    {
+      "tag": "input",
+      "name": "",
+      "type": "search",
+      "count": 4
+    },
+    {
+      "tag": "select",
+      "name": "",
+      "type": "",
+      "count": 2
+    },
+    {
+      "tag": "textarea",
+      "name": "",
+      "type": "",
+      "count": 2
+    }
+  ],
+  "i18n": [],
+  "i18nKeys": [],
+  "i18nFiles": [],
+  "api": [],
+  "env": []
+}
