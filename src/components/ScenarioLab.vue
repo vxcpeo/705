@@ -19,7 +19,7 @@ const feedback = ref('')
 const storageNotice = ref('')
 const isSaved = ref(false)
 const stages = ['Inputs recorded', 'Assumption reviewed', 'Limits reviewed', 'Review complete']
-const legacyJournalKeys = ['Ivorane:journal:v1', 'Tikriva:journal:v1', 'Orbinza:journal:v1', 'Kovrane:journal:v1', 'kinovra:journal:v1', 'Kinovra:journal:v1', 'Scenarill:journal:v1', 'Solenzi:journal:v1']
+const legacyJournalKeys = ['Ivorane:journal:v1', 'Tikriva:journal:v1', 'Orbinza:journal:v1', 'Kovrane:journal:v1', 'kinovra:journal:v1', 'Kinovra:journal:v1', 'Scenarill:journal:v1', 'Solenzi:journal:v1', 'Filza:journal:v1']
 const input = computed(() => ({ amount: amount.value, basePrice: basePrice.value, movePct: movePct.value, note: note.value }))
 const result = computed(() => record.value ? calculateScenario(record.value) : null)
 const remaining = computed(() => MAX_NOTE_LENGTH - note.value.length)
@@ -122,7 +122,7 @@ function downloadJournal() {
   const url = URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' }))
   const link = document.createElement('a')
   link.href = url
-  link.download = `filza-${record.value.id.toLowerCase()}.json`
+  link.download = `pretiola-${record.value.id.toLowerCase()}.json`
   link.click()
   URL.revokeObjectURL(url)
   feedback.value = 'Journal export prepared.'
@@ -157,93 +157,93 @@ defineExpose({ focusHeading })
 
 <template>
   <section ref="root" class="lab" aria-labelledby="scenario-title">
-    <section class="atlas-scene lab-open">
-      <div class="atlas-scene-in lab-open-in">
-        <p class="atlas-kicker lab-eyebrow"><FlaskConical :size="15" /> YOUR PRIVATE WORKSPACE</p>
-        <h1 id="scenario-title" ref="heading" class="atlas-display lab-display" tabindex="-1">Local scenario lab<span>.</span></h1>
-        <p class="atlas-lead">Put a number behind your next idea. Enter a reference price, explore a hypothetical move, and keep your reasoning close.</p>
-        <p v-if="storageNotice" class="atlas-notice atlas-notice--alert" role="alert">{{ storageNotice }}</p>
-        <p v-if="feedback" class="atlas-notice atlas-notice--ok" role="status">{{ feedback }}</p>
+    <section class="tty-scene log-open">
+      <div class="tty-scene-in log-open-in">
+        <p class="tty-kicker log-eyebrow"><FlaskConical :size="15" /> YOUR PRIVATE WORKSPACE</p>
+        <h1 id="scenario-title" ref="heading" class="tty-display log-display" tabindex="-1">Local scenario lab<span>.</span></h1>
+        <p class="tty-lead">Put a number behind your next idea. Enter a reference price, explore a hypothetical move, and keep your reasoning close.</p>
+        <p v-if="storageNotice" class="tty-notice tty-notice--alert" role="alert">{{ storageNotice }}</p>
+        <p v-if="feedback" class="tty-notice tty-notice--ok" role="status">{{ feedback }}</p>
       </div>
     </section>
 
-    <div v-if="step === 'form'" class="atlas-scene lab-form-scene">
-      <div class="atlas-scene-in lab-form-grid">
-        <form class="atlas-face lab-form" @submit.prevent="review">
-          <div class="atlas-face-head">
-            <div class="lab-face-title"><span class="lab-step">01 / INPUTS</span><h2 class="atlas-h2">Set your assumption.</h2></div>
-            <span class="atlas-pill atlas-pill--beam">LOCAL ONLY</span>
+    <div v-if="step === 'form'" class="tty-scene log-form-scene">
+      <div class="tty-scene-in log-form-grid">
+        <form class="tty-face log-form" @submit.prevent="review">
+          <div class="tty-face-head">
+            <div class="log-face-title"><span class="log-step">01 / INPUTS</span><h2 class="tty-h2">Set your assumption.</h2></div>
+            <span class="tty-pill tty-pill--accent">LOCAL ONLY</span>
           </div>
-          <div class="lab-fields">
-            <div class="lab-pair">
-            <div class="atlas-field">
+          <div class="log-fields">
+            <div class="log-pair">
+            <div class="tty-field">
               <label for="amount">Amount <span>{{ brand.asset }} units</span></label>
-              <input id="amount" class="atlas-input" v-model="amount" inputmode="decimal" :aria-invalid="Boolean(errors.amount)" :aria-describedby="errors.amount ? 'amount-error' : undefined" />
-              <p v-if="errors.amount" id="amount-error" class="lab-error">{{ errors.amount }}</p>
+              <input id="amount" class="tty-input" v-model="amount" inputmode="decimal" :aria-invalid="Boolean(errors.amount)" :aria-describedby="errors.amount ? 'amount-error' : undefined" />
+              <p v-if="errors.amount" id="amount-error" class="log-error">{{ errors.amount }}</p>
             </div>
-            <div class="atlas-field">
+            <div class="tty-field">
               <label for="base-price">Reference price <span>USD / {{ brand.asset }}</span></label>
-              <input id="base-price" class="atlas-input" v-model="basePrice" inputmode="decimal" :aria-invalid="Boolean(errors.basePrice)" :aria-describedby="errors.basePrice ? 'price-error' : undefined" />
-              <p v-if="errors.basePrice" id="price-error" class="lab-error">{{ errors.basePrice }}</p>
+              <input id="base-price" class="tty-input" v-model="basePrice" inputmode="decimal" :aria-invalid="Boolean(errors.basePrice)" :aria-describedby="errors.basePrice ? 'price-error' : undefined" />
+              <p v-if="errors.basePrice" id="price-error" class="log-error">{{ errors.basePrice }}</p>
             </div>
           </div>
-          <div class="atlas-field">
+          <div class="tty-field">
             <label for="move">Hypothetical move <output>{{ movePct }}%</output></label>
-            <input id="move" v-model="movePct" class="atlas-range lab-range" type="range" min="-90" max="100" step="0.5" />
-            <div class="atlas-scale"><span>-90%</span><span>0</span><span>+100%</span></div>
+            <input id="move" v-model="movePct" class="tty-range log-range" type="range" min="-90" max="100" step="0.5" />
+            <div class="tty-scale"><span>-90%</span><span>0</span><span>+100%</span></div>
           </div>
-          <div class="atlas-field">
+          <div class="tty-field">
             <label for="move-text">Exact percentage <span>%</span></label>
-            <input id="move-text" class="atlas-input" v-model="movePct" inputmode="decimal" :aria-invalid="Boolean(errors.movePct)" :aria-describedby="errors.movePct ? 'move-error' : undefined" />
-            <p v-if="errors.movePct" id="move-error" class="lab-error">{{ errors.movePct }}</p>
+            <input id="move-text" class="tty-input" v-model="movePct" inputmode="decimal" :aria-invalid="Boolean(errors.movePct)" :aria-describedby="errors.movePct ? 'move-error' : undefined" />
+            <p v-if="errors.movePct" id="move-error" class="log-error">{{ errors.movePct }}</p>
           </div>
-          <div class="atlas-field">
+          <div class="tty-field">
             <label for="note">Thesis note <span>OPTIONAL</span></label>
-            <textarea id="note" class="atlas-input" v-model="note" :maxlength="MAX_NOTE_LENGTH" :aria-invalid="Boolean(errors.note)" :aria-describedby="errors.note ? 'note-error' : 'note-count'" placeholder="What would make this move plausible?"></textarea>
-            <p v-if="errors.note" id="note-error" class="lab-error">{{ errors.note }}</p>
-            <p id="note-count" class="lab-count">{{ remaining }} characters remaining</p>
+            <textarea id="note" class="tty-input" v-model="note" :maxlength="MAX_NOTE_LENGTH" :aria-invalid="Boolean(errors.note)" :aria-describedby="errors.note ? 'note-error' : 'note-count'" placeholder="What would make this move plausible?"></textarea>
+            <p v-if="errors.note" id="note-error" class="log-error">{{ errors.note }}</p>
+            <p id="note-count" class="log-count">{{ remaining }} characters remaining</p>
           </div>
           </div>
-          <button class="atlas-btn atlas-btn--primary atlas-btn--wide" type="submit">Review scenario <ArrowUpRight :size="17" /></button>
+          <button class="tty-btn tty-btn--primary tty-btn--wide" type="submit">Review scenario <ArrowUpRight :size="17" /></button>
         </form>
 
-        <div class="atlas-face lab-aside">
-          <div class="lab-aside-icon"><ShieldCheck :size="27" /></div>
-          <span class="lab-step">A LITTLE SPACE TO THINK</span>
-          <h2 class="atlas-h2 lab-aside-title">Your idea.<br />Your assumptions.</h2>
-          <p class="lab-aside-copy">This is a private what-if calculator. Reference prices are entered by you; they are not live quotes or execution prices.</p>
-          <dl class="atlas-pairs lab-aside-rows"><div><dt>Asset</dt><dd>{{ brand.asset }} / USD</dd></div><div><dt>Network</dt><dd>{{ brand.network }} - preview</dd></div><div><dt>Wallet</dt><dd>Not required</dd></div><div><dt>Storage</dt><dd>This browser only</dd></div></dl>
-          <p class="lab-aside-foot">Fees, slippage and taxes are excluded. No transaction is created.</p>
+        <div class="tty-face log-aside">
+          <div class="log-aside-icon"><ShieldCheck :size="27" /></div>
+          <span class="log-step">A LITTLE SPACE TO THINK</span>
+          <h2 class="tty-h2 log-aside-title">Your idea.<br />Your assumptions.</h2>
+          <p class="log-aside-copy">This is a private what-if calculator. Reference prices are entered by you; they are not live quotes or execution prices.</p>
+          <dl class="tty-pairs log-aside-rows"><div><dt>Asset</dt><dd>{{ brand.asset }} / USD</dd></div><div><dt>Network</dt><dd>{{ brand.network }} - preview</dd></div><div><dt>Wallet</dt><dd>Not required</dd></div><div><dt>Storage</dt><dd>This browser only</dd></div></dl>
+          <p class="log-aside-foot">Fees, slippage and taxes are excluded. No transaction is created.</p>
         </div>
       </div>
     </div>
 
-    <div v-else-if="step === 'review'" class="atlas-scene lab-record-scene">
-      <div class="atlas-scene-in">
-        <div class="atlas-face lab-record">
-          <div class="atlas-face-head">
-            <div class="lab-face-title"><span class="lab-step">02 / REVIEW</span><h2 class="atlas-h2">Check the numbers.</h2></div>
+    <div v-else-if="step === 'review'" class="tty-scene log-record-scene">
+      <div class="tty-scene-in">
+        <div class="tty-face log-record">
+          <div class="tty-face-head">
+            <div class="log-face-title"><span class="log-step">02 / REVIEW</span><h2 class="tty-h2">Check the numbers.</h2></div>
             <ShieldCheck :size="26" />
           </div>
-          <p class="lab-muted">Calculated from your assumptions.</p>
-          <dl class="atlas-pairs lab-rows"><div><dt>Reference amount</dt><dd>{{ Number(record.amount).toLocaleString() }} {{ brand.asset }}</dd></div><div><dt>Reference price</dt><dd>{{ currency(result.basePrice, 4) }}</dd></div><div><dt>Reference value</dt><dd>{{ currency(result.baselineValue, 4) }}</dd></div><div><dt>Scenario move</dt><dd :class="record.movePct >= 0 ? 'lab-positive' : 'lab-negative'">{{ percent(record.movePct) }}</dd></div><div><dt>Scenario value</dt><dd>{{ currency(result.scenarioValue, 4) }}</dd></div></dl>
-          <div class="lab-delta"><span>Change in reference value</span><strong :class="result.deltaUsd >= 0 ? 'lab-positive' : 'lab-negative'">{{ result.deltaUsd >= 0 ? '+' : '' }}{{ currency(result.deltaUsd, 4) }}</strong></div>
-          <div class="lab-actions"><button class="atlas-btn atlas-btn--primary" @click="save">Save to journal <Check :size="17" /></button><button class="atlas-btn atlas-btn--ghost" @click="edit">Edit inputs</button></div>
+          <p class="log-muted">Calculated from your assumptions.</p>
+          <dl class="tty-pairs log-rows"><div><dt>Reference amount</dt><dd>{{ Number(record.amount).toLocaleString() }} {{ brand.asset }}</dd></div><div><dt>Reference price</dt><dd>{{ currency(result.basePrice, 4) }}</dd></div><div><dt>Reference value</dt><dd>{{ currency(result.baselineValue, 4) }}</dd></div><div><dt>Scenario move</dt><dd :class="record.movePct >= 0 ? 'log-positive' : 'log-negative'">{{ percent(record.movePct) }}</dd></div><div><dt>Scenario value</dt><dd>{{ currency(result.scenarioValue, 4) }}</dd></div></dl>
+          <div class="log-delta"><span>Change in reference value</span><strong :class="result.deltaUsd >= 0 ? 'log-positive' : 'log-negative'">{{ result.deltaUsd >= 0 ? '+' : '' }}{{ currency(result.deltaUsd, 4) }}</strong></div>
+          <div class="log-actions"><button class="tty-btn tty-btn--primary" @click="save">Save to journal <Check :size="17" /></button><button class="tty-btn tty-btn--ghost" @click="edit">Edit inputs</button></div>
         </div>
       </div>
     </div>
 
-    <div v-else class="atlas-scene lab-record-scene">
-      <div class="atlas-scene-in">
-        <div class="atlas-face lab-record">
-          <div class="atlas-face-head">
-            <div class="lab-face-title"><span class="lab-step">03 / JOURNAL</span><h2 class="atlas-h2">Your local record.</h2></div>
-            <span class="lab-badge" :class="{ 'lab-unsaved': !isSaved }"><Check v-if="isSaved" :size="13" />{{ isSaved ? 'SAVED' : 'NOT SAVED' }}</span>
+    <div v-else class="tty-scene log-record-scene">
+      <div class="tty-scene-in">
+        <div class="tty-face log-record">
+          <div class="tty-face-head">
+            <div class="log-face-title"><span class="log-step">03 / JOURNAL</span><h2 class="tty-h2">Your local record.</h2></div>
+            <span class="log-badge" :class="{ 'log-unsaved': !isSaved }"><Check v-if="isSaved" :size="13" />{{ isSaved ? 'SAVED' : 'NOT SAVED' }}</span>
           </div>
-          <div class="lab-stages" role="group" aria-label="Journal review stages"><button v-for="(label, i) in stages" :key="label" :class="{ current: record.stage === i, done: record.stage > i }" :aria-current="record.stage === i ? 'step' : undefined" @click="changeStage(i)"><span class="lab-stage-number"><Check v-if="record.stage > i" :size="13" /><template v-else>{{ i + 1 }}</template></span><span>{{ label }}</span><ChevronRight v-if="i < stages.length - 1" class="lab-stage-arrow" :size="14" /></button></div>
-          <dl class="atlas-pairs lab-rows"><div><dt>Amount</dt><dd>{{ Number(record.amount).toLocaleString() }} {{ brand.asset }}</dd></div><div><dt>Reference price</dt><dd>{{ currency(record.basePrice, 4) }}</dd></div><div><dt>Move</dt><dd :class="record.movePct >= 0 ? 'lab-positive' : 'lab-negative'">{{ percent(record.movePct) }}</dd></div><div><dt>Scenario value</dt><dd>{{ currency(result.scenarioValue, 4) }}</dd></div></dl>
-          <blockquote v-if="record.note">{{ record.note }}</blockquote><p class="lab-muted">Created {{ new Date(record.createdAt).toLocaleString() }}. {{ isSaved ? 'Stored only in this browser.' : 'Export a copy to keep this record.' }}</p>
-          <div class="lab-actions"><button class="atlas-btn atlas-btn--primary" @click="downloadJournal">Export JSON <ArrowDownToLine :size="16" /></button><button v-if="!isSaved" class="atlas-btn atlas-btn--ghost" @click="persist">Retry saving</button><button class="atlas-btn atlas-btn--ghost" @click="edit">Edit</button><button class="lab-delete" @click="removeJournal">Delete local record</button></div>
+          <div class="log-stages" role="group" aria-label="Journal review stages"><button v-for="(label, i) in stages" :key="label" :class="{ current: record.stage === i, done: record.stage > i }" :aria-current="record.stage === i ? 'step' : undefined" @click="changeStage(i)"><span class="log-stage-number"><Check v-if="record.stage > i" :size="13" /><template v-else>{{ i + 1 }}</template></span><span>{{ label }}</span><ChevronRight v-if="i < stages.length - 1" class="log-stage-arrow" :size="14" /></button></div>
+          <dl class="tty-pairs log-rows"><div><dt>Amount</dt><dd>{{ Number(record.amount).toLocaleString() }} {{ brand.asset }}</dd></div><div><dt>Reference price</dt><dd>{{ currency(record.basePrice, 4) }}</dd></div><div><dt>Move</dt><dd :class="record.movePct >= 0 ? 'log-positive' : 'log-negative'">{{ percent(record.movePct) }}</dd></div><div><dt>Scenario value</dt><dd>{{ currency(result.scenarioValue, 4) }}</dd></div></dl>
+          <blockquote v-if="record.note">{{ record.note }}</blockquote><p class="log-muted">Created {{ new Date(record.createdAt).toLocaleString() }}. {{ isSaved ? 'Stored only in this browser.' : 'Export a copy to keep this record.' }}</p>
+          <div class="log-actions"><button class="tty-btn tty-btn--primary" @click="downloadJournal">Export JSON <ArrowDownToLine :size="16" /></button><button v-if="!isSaved" class="tty-btn tty-btn--ghost" @click="persist">Retry saving</button><button class="tty-btn tty-btn--ghost" @click="edit">Edit</button><button class="log-delete" @click="removeJournal">Delete local record</button></div>
         </div>
       </div>
     </div>
@@ -252,84 +252,84 @@ defineExpose({ focusHeading })
 
 <style scoped>
 /* -------------------------------------------------------------------- open */
-.lab-open { padding-bottom: clamp(20px, 2.4vw, 32px); }
-.lab-open-in { display: grid; gap: clamp(12px, 1.6vw, 18px); max-width: 880px; }
-.lab-eyebrow { letter-spacing: 0.18em; }
-.lab-display { font-size: clamp(36px, 5.4vw, 70px); }
-.lab-display span { color: var(--beam); }
-.lab-open-in .atlas-notice { margin-top: 6px; }
+.log-open { padding-bottom: clamp(20px, 2.4vw, 32px); }
+.log-open-in { display: grid; gap: clamp(12px, 1.6vw, 18px); max-width: 880px; }
+.log-eyebrow { letter-spacing: 0.18em; }
+.log-display { font-size: clamp(28px, 3.4vw, 46px); }
+.log-display span { color: var(--accent-safe); }
+.log-open-in .tty-notice { margin-top: 6px; }
 
 /* -------------------------------------------------------------------- form */
-.lab-form-scene { padding-top: clamp(18px, 2vw, 28px); }
-.lab-form-grid {
+.log-form-scene { padding-top: clamp(18px, 2vw, 28px); }
+.log-form-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.5fr) minmax(0, 0.85fr);
   gap: clamp(16px, 2.2vw, 32px);
   align-items: start;
 }
-.lab-form { display: grid; gap: 18px; }
-.lab-aside { display: grid; gap: 12px; align-content: start; }
-.lab-aside-title { font-size: clamp(22px, 2.2vw, 30px); }
-.lab-aside-copy { margin: 0; color: var(--star-mute); font: 400 13px/1.75 var(--font-body); }
-.lab-aside-icon {
+.log-form { display: grid; gap: 18px; }
+.log-aside { display: grid; gap: 12px; align-content: start; }
+.log-aside-title { font-size: clamp(22px, 2.2vw, 30px); }
+.log-aside-copy { margin: 0; color: var(--muted); font: 400 13px/1.75 var(--font-body); }
+.log-aside-icon {
   display: grid;
   place-items: center;
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  background: rgba(64, 179, 255, 0.12);
-  color: var(--beam);
-  box-shadow: inset 0 0 0 1px rgba(64, 179, 255, 0.36), 0 0 30px rgba(64, 179, 255, 0.2);
+  background: rgba(255, 0, 0, 0.12);
+  color: var(--accent-safe);
+  box-shadow: inset 0 0 0 1px rgba(255, 0, 0, 0.36), 0 0 30px rgba(255, 0, 0, 0.2);
 }
-.lab-aside-rows { border-top: 1px solid var(--hair); }
-.lab-aside-foot {
+.log-aside-rows { border-top: 1px solid var(--line); }
+.log-aside-foot {
   margin: 0;
   padding-top: 12px;
-  border-top: 1px solid var(--hair);
-  color: var(--star-faint);
+  border-top: 1px solid var(--line);
+  color: var(--faint);
   font: 400 10px/1.8 var(--font-mono);
 }
-.lab-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
-.lab-fields { display: grid; gap: 16px; min-width: 0; }
-.lab-error { margin: 0; color: var(--rose); font: 400 11px/1.5 var(--font-mono); }
-.lab-count { margin: 0; color: var(--star-faint); font: 400 10px/1.5 var(--font-mono); text-align: right; }
-.lab-range { accent-color: var(--beam); }
-.lab-step {
+.log-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.log-fields { display: grid; gap: 16px; min-width: 0; }
+.log-error { margin: 0; color: var(--rose); font: 400 11px/1.5 var(--font-mono); }
+.log-count { margin: 0; color: var(--faint); font: 400 10px/1.5 var(--font-mono); text-align: right; }
+.log-range { accent-color: var(--accent-safe); }
+.log-step {
   display: block;
-  color: var(--beam);
+  color: var(--accent-safe);
   font: 500 9px/1.4 var(--font-mono);
   letter-spacing: 0.22em;
   text-transform: uppercase;
 }
-.lab-face-title { display: grid; gap: 8px; }
-.lab-face-title h2 { margin: 0; }
+.log-face-title { display: grid; gap: 8px; }
+.log-face-title h2 { margin: 0; }
 
 /* ------------------------------------------------------------------ record */
-.lab-record { display: grid; gap: 16px; max-width: 900px; margin-inline: auto; }
-.lab-muted { margin: 0; color: var(--star-faint); font: 400 11px/1.7 var(--font-mono); }
-.lab-rows { border-top: 1px solid var(--hair); }
-.lab-positive { color: var(--mint); }
-.lab-negative { color: var(--rose); }
-.lab-delta {
+.log-record { display: grid; gap: 16px; max-width: 900px; margin-inline: auto; }
+.log-muted { margin: 0; color: var(--faint); font: 400 11px/1.7 var(--font-mono); }
+.log-rows { border-top: 1px solid var(--line); }
+.log-positive { color: var(--mint); }
+.log-negative { color: var(--rose); }
+.log-delta {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
   flex-wrap: wrap;
   padding: 18px 20px;
-  border-radius: var(--r-md);
-  background: linear-gradient(140deg, rgba(64, 179, 255, 0.12), rgba(167, 139, 250, 0.06));
-  box-shadow: inset 0 0 0 1px var(--hair-2);
+  border-radius: var(--radius-md);
+  background: linear-gradient(140deg, rgba(255, 0, 0, 0.12), rgba(255, 0, 200, 0.06));
+  box-shadow: inset 0 0 0 1px var(--line-2);
 }
-.lab-delta span {
-  color: var(--star-faint);
+.log-delta span {
+  color: var(--faint);
   font: 500 9px/1.4 var(--font-mono);
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
-.lab-delta strong { font: 400 30px/1 var(--font-display); letter-spacing: -0.02em; }
-.lab-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
-.lab-delete {
+.log-delta strong { font: 400 30px/1 var(--font-display); letter-spacing: -0.02em; }
+.log-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.log-delete {
   border: 0;
   border-bottom: 1px solid var(--rose);
   padding: 0 0 3px;
@@ -340,27 +340,27 @@ defineExpose({ focusHeading })
   text-transform: uppercase;
   cursor: pointer;
 }
-.lab-delete:hover { color: var(--star); border-bottom-color: var(--star); }
+.log-delete:hover { color: var(--ink); border-bottom-color: var(--ink); }
 
 /* ------------------------------------------------------------------ stages */
-.lab-stages {
+.log-stages {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1px;
-  border: 1px solid var(--hair);
-  border-radius: var(--r-md);
-  background: var(--hair);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--line);
   overflow: hidden;
 }
-.lab-stages button {
+.log-stages button {
   display: flex;
   align-items: center;
   gap: 9px;
   min-height: 54px;
   padding: 10px 14px;
   border: 0;
-  background: var(--void-2);
-  color: var(--star-faint);
+  background: var(--bg-2);
+  color: var(--faint);
   font: 500 9px/1.3 var(--font-mono);
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -368,10 +368,10 @@ defineExpose({ focusHeading })
   cursor: pointer;
   transition: background-color 160ms var(--ease), color 160ms var(--ease);
 }
-.lab-stages button:hover { background: var(--deck-2); color: var(--star); }
-.lab-stages button.done { color: var(--mint); }
-.lab-stages button.current { background: rgba(64, 179, 255, 0.16); color: var(--beam); }
-.lab-stage-number {
+.log-stages button:hover { background: var(--surface-2); color: var(--ink); }
+.log-stages button.done { color: var(--mint); }
+.log-stages button.current { background: rgba(255, 0, 0, 0.16); color: var(--accent-safe); }
+.log-stage-number {
   display: grid;
   place-items: center;
   flex: none;
@@ -381,14 +381,14 @@ defineExpose({ focusHeading })
   box-shadow: inset 0 0 0 1px currentColor;
   font: 500 10px/1 var(--font-mono);
 }
-.lab-stage-arrow { margin-left: auto; opacity: 0.55; }
-.lab-badge {
+.log-stage-arrow { margin-left: auto; opacity: 0.55; }
+.log-badge {
   display: inline-flex;
   align-items: center;
   gap: 7px;
   flex: none;
   padding: 6px 12px;
-  border-radius: var(--r-pill);
+  border-radius: var(--radius-pill);
   background: rgba(92, 225, 160, 0.12);
   color: var(--mint);
   font: 500 9px/1 var(--font-mono);
@@ -396,26 +396,26 @@ defineExpose({ focusHeading })
   text-transform: uppercase;
   white-space: nowrap;
 }
-.lab-unsaved { background: rgba(242, 201, 76, 0.12); color: var(--amber); }
-.lab-record blockquote {
+.log-unsaved { background: rgba(242, 201, 76, 0.12); color: var(--amber); }
+.log-record blockquote {
   margin: 0;
   padding: 16px 18px;
-  border: 1px solid var(--hair);
-  border-left: 2px solid var(--beam);
-  border-radius: 0 var(--r-sm) var(--r-sm) 0;
-  background: var(--void-2);
-  color: var(--star-2);
+  border: 1px solid var(--line);
+  border-left: 2px solid var(--accent);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  background: var(--bg-2);
+  color: var(--ink-2);
   font: 400 13px/1.75 var(--font-body);
   white-space: pre-wrap;
 }
 
 /* -------------------------------------------------------------- responsive */
 @media (max-width: 1000px) {
-  .lab-form-grid { grid-template-columns: minmax(0, 1fr); }
+  .log-form-grid { grid-template-columns: minmax(0, 1fr); }
 }
 @media (max-width: 640px) {
-  .lab-pair { grid-template-columns: minmax(0, 1fr); }
-  .lab-stages { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .lab-stage-arrow { display: none; }
+  .log-pair { grid-template-columns: minmax(0, 1fr); }
+  .log-stages { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .log-stage-arrow { display: none; }
 }
 </style>

@@ -17,7 +17,7 @@ const DEFAULT_RPC_URLS = Object.freeze({
   localnet: 'http://127.0.0.1:8899',
 })
 
-// No mint is bundled until an official Filza CA is published and verified.
+// No mint is bundled until an official Pretiola CA is published and verified.
 const DEFAULT_TOKEN_MINTS = Object.freeze({
   'mainnet-beta': null,
   devnet: null,
@@ -208,7 +208,7 @@ export async function initializeSolanaWallets({ metaMaskInitializer = createMeta
       try {
         const network = cluster === 'mainnet-beta' ? 'mainnet' : cluster
         metaMaskClient = await metaMaskInitializer({
-          dapp: { name: 'Filza', url: window.location.origin },
+          dapp: { name: 'Pretiola', url: window.location.origin },
           api: { supportedNetworks: network === 'localnet' ? {} : { [network]: rpcUrl } },
           analytics: { enabled: false },
         })

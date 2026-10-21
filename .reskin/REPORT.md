@@ -1,4 +1,4 @@
-# Reskin report — Filza, Orbit Atlas
+# Reskin report — Pretiola, Abyss Console
 
 Generated: 2026-10-20 (Asia/Shanghai) · Project: `website/` (Vue 3.5 + Vite 6)
 Verification: **PASS** — `node scripts/verify.mjs check` exit 0, 6/6 routes.
@@ -7,132 +7,144 @@ Verification: **PASS** — `node scripts/verify.mjs check` exit 0, 6/6 routes.
 
 | | |
 |---|---|
-| Style | **Cosmos Orbit** (`cosmos-orbit`, spatial-futurist) |
-| Source DNA | <https://cosmos.network> — live sampled (2350 ms), not copied |
-| Bundled catalog | not used (9/10 references sampled live; `arbitrum.io` returned 403) |
-| Accent | `#40b3ff` — 111.5 ΔE from the original `#b26a00` (minimum 30) |
-| Ground | `#000000` void, `#12121e` decks, hairline `#262536` |
-| Type | geometric display (Century Gothic / Futura stack), Segoe UI body, Cascadia Mono micro-labels |
-| Shape | pill controls, 28 px plates, orbit rings, conic-gradient halo, star dust |
+| Style | **Abyss Liquidity** (`aave-abyss`, dark-technical) |
+| Source DNA | <https://aave.com> — live sampled (3459 ms), not copied |
+| Bundled catalog | not used (8/10 references sampled live; `arbitrum.io` returned 403, `sui.io` timed out) |
+| Accent | `#ff0000` — 144.6 ΔE from the original `#40b3ff` (minimum 30) |
+| Ground | `#000000` abyss, `#0d141b` / `#111a24` decks, hairline `#1e2a36` |
+| Type | Trebuchet MS display at weight 650 / tracking −0.035em, Segoe UI body, Cascadia Mono labels |
+| Shape | 10–16 px corners, flat beats, one accent glow, fine console grid |
 
-Only abstract DNA was used: palette, typography mood, shape language, texture and
+Only abstract DNA was used: palette, typography mood, shape language, texture, density and
 motion. No reference logo, image, font file, copy or code was taken.
 
 ## Skeleton: what replaced what
 
-Original archetype `sidebar-workspace` / `shell`: a 252 px fixed left rail with the
-route list, a dark 44 px telemetry strip, then a 12-column ruled sheet on paper.
+Original archetype `orbital` / `spatial`: a 252 px floating pill dock at the bottom of the
+viewport, a sticky mast with a telemetry ribbon, and routes built as full-bleed scenes on a
+star field with orbit rings and a conic halo.
 
-New skeleton — Gallery Scroll scenes on a spatial stage (detector: `orbital`, family
-`spatial`, because the Cosmos direction contributes the concentric core):
+New skeleton — **Terminal Console** (`terminal-console` / `linear`):
 
-- **Navigation** moved from a permanent left rail to a floating pill dock fixed at the
-  bottom of the viewport: six numbered links with label and note, horizontally
-  scrollable below 900 px. A sticky mast now carries identity, telemetry and the
-  wallet / board actions only.
-- **Every route is a vertical sequence of full-bleed scenes** separated by a single
-  hairline instead of a 12-column ruled grid; the opening scene is a display-type
-  panel with orbit rings and a soft conic halo.
-- **Metrics became typographic facts** (the 6-cell ribbon, the 2×4 split readout, the
-  4-cell sheet facts) rather than table cells.
-- **Rails**: the sample tape and the on-page index are horizontal snap rails.
-- **Footer** absorbed the old rail readout (Feed / Unit / Stores / Target) and the
-  tiny disclaimer as a station readout.
-- Landmark sequence collapsed from `aside, nav, main, header, aside, footer, nav`
-  to `header, nav, main, footer` (`/docs` keeps its on-page index as a second nav).
+- **Navigation** moved from a floating pill dock to a numbered **command rail inside the
+  console**, left of the data stage; the current command is marked with a red left rule.
+  Below 860 px the rail becomes a horizontal command strip behind an `aria-expanded` toggle
+  in the command line (Escape closes it, focus returns to the toggle).
+- **Status strip** at the top of the console: brand, Mode/Network/Unit/Records and the
+  target-domain readout, 30 px high, sticky.
+- **Command line** under it: a prompt, the terminal identity copy, the wallet and board
+  actions, and the navigation toggle.
+- **Every route is a command line plus a pane deck**: two-track console panes instead of
+  full-bleed scenes. The board and unit quote now sit side by side on `/`; `/app/markets`
+  puts the table left and a facts rail right; `/docs` puts a sticky in-page index left and
+  the prose right; `/signal` keeps the step form and the assumption/record panel as two
+  panes.
+- **Landmark sequence** collapsed from `header, nav, main, footer` to `main, nav` (the nav
+  sits inside the console main, after the status strip), so the landmark similarity is
+  0.25–0.40.
+- The star field, orbit rings, conic halo, floating dock, mast ribbon and scene chrome were
+  deleted from the source.
 
 ### Structure measurements (gate ≤ threshold)
 
-| Route | DOM fingerprint | Landmark LCS | Class overlap | Axe serious | Contrast |
+| Route | DOM fingerprint (≤0.50) | Landmark LCS (≤0.68) | Class overlap (≤0.10) | Axe serious | Contrast |
 |---|---:|---:|---:|---:|---:|
-| `/` | 0.392 (≤0.50) | 0.429 (≤0.68) | 0.028 (≤0.10) | 0 | 0/199 |
-| `/app/markets` | 0.309 | 0.500 | 0.043 | 0 | 0/132 |
-| `/docs` | 0.224 | 0.571 | 0.036 | 0 | 0/148 |
-| `/privacy` | 0.343 | 0.500 | 0.049 | 0 | 0/56 |
-| `/signal` | 0.383 | 0.429 | 0.048 | 0 | 0/81 |
-| `/terms` | 0.343 | 0.500 | 0.049 | 0 | 0/56 |
+| `/` | 0.113 | 0.25 | 0.056 | 0 | 0/199 |
+| `/app/markets` | 0.126 | 0.25 | 0.046 | 0 | 0/132 |
+| `/docs` | 0.121 | 0.40 | 0.046 | 0 | 0/148 |
+| `/privacy` | 0.118 | 0.25 | 0.067 | 0 | 0/56 |
+| `/signal` | 0.131 | 0.25 | 0.058 | 0 | 0/81 |
+| `/terms` | 0.118 | 0.25 | 0.067 | 0 | 0/56 |
 
 Baseline screenshots are in `.reskin/baseline/`, reskinned ones in `.reskin/current/`
-(`*-desktop.png` 1440×900 full page, `*-mobile.png` 390×844). Extra viewport-level
-evidence captured during review: `.reskin/views/` (top / mid / end at 1440 and 390)
-and `.reskin/flows/` (review and journal steps, wallet dialog, filtered board, table
-toggle, phone telemetry drawer, uncaptured routes).
+(`*-desktop.png` 1440×900 full page, `*-mobile.png` 390×844). Plain **viewport** captures at
+the top of each route are in `.reskin/views/` (`home-top-desktop`, `home-scrolled-desktop`,
+`markets-top-desktop`, `docs-top-desktop`, `signal-top-desktop`, `home-top-mobile`,
+`markets-top-mobile`); these show where the sticky strip really sits, because `fullPage`
+stitching paints fixed/sticky elements at the scroll position used for the last slice.
 
 ## Content contract
 
-`3a7f596d88bae2d33fff020c22e6632666384f80cf177291f9a322ccca481ba5` — **unchanged**.
+`081faeac66dd7468c844126e52f97a3dbe75ceaac7dc1957a980213acc8d2978` — **unchanged**
+(336 static text tokens, 214 bindings, 46 handlers; 0 issues, 0 additive warnings).
 
-Every visible word multiset per route is byte-identical to the baseline (236 / 143 /
-321 / 133 / 142 / 121 word tokens at 1440 px). No copy was added, removed, rewritten,
-reordered in a way that changes tokens, translated or hidden:
+Every rendered visible word multiset per route is byte-identical to the baseline
+(236 / 143 / 321 / 133 / 142 / 121 word tokens at 1440 px), and the numeric token totals are
+unchanged (60 / 25 / 36 / 6 / 12 / 6). No copy was added, removed, rewritten, translated or
+hidden:
 
-- Only presentation changed. No `text-transform` trick was needed because the audit
-  reads authored text nodes; case is unchanged anyway.
-- The only 12 warnings are two aria-labels that describe obsolete navigation
-  (`Filza navigation` → the dock is labelled `Primary`; `Site links` → the colophon
-  links are now a plain list). Both are accessibility names, not visible copy.
+- Only presentation changed. The content was moved between panes, given new landmarks and
+  new markup, never retyped.
 - Every route, link target, binding, event handler, form field, asset source, meta
-  title/description, document language and i18n value is preserved. `document.title`
-  still renders `Overview / Filza`, `Markets / Filza`, … exactly as before.
+  title/description, document language and i18n value is preserved. `document.title` still
+  renders `Overview / Pretiola`, `Markets / Pretiola`, … exactly as before.
+- The screen-reader-only strings (`Filter the board`, `Search markets`, `Illustrative`,
+  the caption fragments) stay in the same visibility class; the source contract confirms
+  they are still `hiddenText`, not visible copy.
 
 ## Files changed
 
 | File | Change |
 |---|---|
-| `src/reskin.css` | **new** global system: tokens, reset, mast, dock, scenes, plates, tables, forms, notices, colophon, breakpoints, reduced-motion guard |
-| `src/styles.css` | **deleted** (paper-and-rule ledger system, 646 lines) |
-| `src/mobile.css` | **deleted** (empty placeholder) |
-| `src/main.js` | imports `reskin.css` only |
-| `src/App.vue` | new shell: mast + telemetry ribbon + floating dock + stage + station footer; drawer state replaces the rail toggle |
-| `src/components/HomePage.vue` | eight scenes, orbit rings, quote readout column, tape rail, 2×2 briefing |
-| `src/components/MarketWorkspace.vue` | opening scene, fact ribbon, passport plate, leaf plates, filter rail |
-| `src/components/MarketTable.vue` | `atlas-table` deck, stats grid, mobile card rail, footnote |
-| `src/components/PayoffExplorer.vue` | dial column, instrument card, chart/table toggle, position meters |
-| `src/components/DocsPage.vue` | pill index rail, mechanism steps, inverted concept plates, prose constellation |
-| `src/components/ScenarioLab.vue` | field deck, aside plate, record plate with stage track |
-| `src/components/SolanaWalletButton.vue` | hatch dialog with pill wallet options |
-| `index.html` | `theme-color` → `#05060d`, added `color-scheme: dark` (title, description, icons untouched) |
+| `src/console.css` | **new** global system: Abyss tokens, reset, status strip, command line, command rail, deck, panes, hint strip, colophon, typography, surfaces, pills, buttons, switch, fact grid, key-value, tables, forms, notices, responsive, reduced-motion |
+| `src/reskin.css` | **deleted** (the previous Orbit Atlas global layer) |
+| `src/main.js` | imports `console.css` only |
+| `src/App.vue` | new shell: status strip + command line + command rail + stage + hint strip + colophon; drawer state replaces the dock; Escape closes the drawer and returns focus to the toggle |
+| `src/components/HomePage.vue` | command block + pane deck (board | unit quote), then split, tape, briefing, limits as console blocks |
+| `src/components/MarketWorkspace.vue` | opening + pane deck: filters/table | facts rail; detail and leaf routes keep a left pane |
+| `src/components/MarketTable.vue` | console data grid: mono headers, tabular numbers, state pills, mobile card rail retained |
+| `src/components/PayoffExplorer.vue` | dial column + instrument sheet; chart/table toggle retained |
+| `src/components/DocsPage.vue` | document console: sticky in-page index rail + prose column |
+| `src/components/ScenarioLab.vue` | field deck + assumption/record pane; step track retained |
+| `src/components/SolanaWalletButton.vue` | console sheet dialog |
+| `index.html` | `theme-color` → `#000000` (title, description, icons untouched) |
 
-Script logic was not changed except presentational wiring: the dock replaced the
-rail so `App.vue` keeps `pathname`, `navigate`, `popState`, `scrollToHash`, the title
-watch, and the Escape-to-close behaviour (now closing the telemetry drawer); the
-wallet dialog's focus selector follows the renamed close button.
+All old class namespaces (`atlas-`, `deck-`, `quay-`, `board-`, `opt-`, `leaf-`, `lab-`,
+`port-`) and design-token names (`--void`, `--deck`, `--star`, `--beam`, `--hair`, `--r-*`, …)
+are gone; the new namespaces are `tty-`, `pag-`, `wrk-`, `tbl-`, `pfx-`, `doc-`, `log-`,
+`wal-` with `--bg`, `--surface`, `--ink`, `--accent`, `--line`, `--radius-*`.
 
 ## Accessibility and responsiveness
 
 - axe WCAG 2.0/2.1/2.2 A+AA: **0 serious/critical and 0 moderate** on all six routes.
-- Contrast: 0 failures on 199 / 132 / 148 / 56 / 81 / 56 measured text/background pairs
-  (the old build had 38 failures on `/` alone). Body text ≥ 12 px, most ≥ 13 px.
-- Keyboard: 8 sampled tab stops all show a 2 px `#40b3ff` focus ring; skip link first,
-  then brand, wallet, board, dock links; `:focus-visible` never removed.
-- One `h1` per route, headings unchanged in level; all inputs keep their labels
-  (0 labelled-field issues), every image has `alt` (0 issues), every control has an
-  accessible name (0 issues).
-- Mobile navigation: all six route targets are reachable at 390 px in the dock
-  (no hamburger required); the telemetry drawer is an `aria-expanded` disclosure.
-- No horizontal document overflow at 390 px on any route (`scrollWidth == clientWidth`).
+- Contrast: 0 failures on 199 / 132 / 148 / 56 / 81 / 56 measured text/background pairs.
+  Text accents use `--accent-safe` (`#ff5f5f`) on dark surfaces; `--accent` is reserved for
+  fills, rules and large shapes.
+- Keyboard: 8/8 sampled tab stops on `/` show a visible 2 px focus ring; skip link first.
+- One `h1` per route, heading order unchanged, every input labelled, every image has `alt`,
+  every control has an accessible name.
+- Mobile navigation: all six route targets are reachable at 390 px through the command
+  drawer; no horizontal document overflow on any route (`scrollWidth == clientWidth`).
 - `prefers-reduced-motion` disables transitions, animations and smooth scrolling.
 
-Interaction checks run in the real browser (`.reskin/flows/`): scenario form →
-review → journal with `Filza:journal:v1` persistence, wallet dialog open/Escape-close
-with focus returned, board search + empty state + reset, chart/table toggle, dock
-navigation with browser back, phone telemetry drawer. No console or page errors.
+## Interaction checks (real browser)
+
+`.reskin/tools/smoke.mjs` drives the production preview through the Chrome DevTools
+protocol; all 11 checks pass:
+
+- `/signal` loads; the scenario form accepts values; **Review scenario** renders
+  "Check the numbers."; **Save to journal** renders "Your local record.".
+- `/` renders the console shell; the rail link reaches `/app/markets`; the board search shows
+  its empty state and **Reset search** restores the table.
+- The wallet dialog opens and closes; `/app/markets/SOL` renders the detail pane; the payoff
+  **Table/Chart** toggle shows the settlement table.
 
 ## Notes and limitations
 
-- The project contains a stale duplicate of the whole site in `website/a705/`. The
-  inventory scans it, so it still contributes `sidebar`/`terminal` signals to the
-  archetype classifier (hence `orbital`, not `gallery-scroll`). It was left untouched;
-  the shipped UI in `src/` renders no `<aside>` and no left rail.
-- Dynamic routes `/app/markets/:symbol`, plus `/risk`, `/stats` and the 404 leaf, are
-  not part of the six captured routes (they have no static `href`). They were built
-  with the same system and checked manually: correct titles/h1, no overflow, no
-  console errors (`.reskin/flows/extra-*.png`).
-- The three `/concept-*.webp` plates are supplied brand art and stay byte-identical in
-  the DOM; they are inverted with a CSS filter so the paper-drawn plates read as night
-  charts inside the dark deck. The site icon `/icon.svg` is likewise an existing asset
-  and was not redrawn.
-- `verify.mjs` screenshots use `fullPage`, which paints the fixed dock at the position
-  it had during stitching; `.reskin/views/*-top.png` shows where the dock really sits.
+- Dynamic routes `/app/markets/:symbol`, `/risk`, `/stats` and the 404 leaf are not part of
+  the six captured routes (no static `href` for the 404, and `/risk` is a nav command).
+  The detail route and the 404 block were checked in the smoke run and with viewport capture;
+  no console errors.
+- The home board table keeps its internal horizontal scroll at 390 px (it has seven columns).
+  The page itself never overflows; the dedicated `/app/markets` board renders the mobile card
+  rail instead.
+- The concept figures and the site icon are brand assets from the rebrand and were not
+  redrawn; they are displayed as-is inside the new sheets.
+- Two pre-existing model outputs are unchanged by the reskin (and by the content lock):
+  the settlement readout prints `incomeShare * 100` (9891.6 %) exactly as the baseline did.
+  Changing the binding would be a content change; it is recorded here instead.
+- `verify.mjs` full-page screenshots paint the sticky status strip at the stitch position;
+  `.reskin/views/*-top.png` are the plain viewport captures that show the real layout.
 
-> The UI was rebuilt around **Cosmos Orbit** / **Gallery Scroll**; the original **sidebar-workspace** shell and palette were removed while the content contract stayed byte-for-byte intact.
+> The UI was rebuilt around **Abyss Liquidity** / **Terminal Console**; the original **orbital**
+> shell and palette were removed while the content contract stayed byte-for-byte intact.

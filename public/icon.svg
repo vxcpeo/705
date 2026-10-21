@@ -1,9 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-labelledby="t d">
-<title id="t">Filza mark</title>
-<desc id="d">The Filza folio: an F cut from ledger rules — a full-height ink stem, a full-width top rule and a shorter middle rule that ends in a flare-orange node — on a paper ground.</desc>
+<title id="t">Pretiola mark</title>
+<desc id="d">The Pretiola pip: a P struck from ledger rules — a full-height ink stem, a squared top rule that turns into the bowl wall, a middle rule that closes the bowl, and a flare-orange pip set just past it — on a paper ground.</desc>
 <rect width="64" height="64" fill="#f2eee6"/>
-<rect x="6.00" y="6.00" width="9.88" height="52.00" fill="#0d0d10" stroke="none"/>
-<rect x="6.00" y="6.00" width="52.00" height="8.06" fill="#0d0d10" stroke="none"/>
-<rect x="6.00" y="26.80" width="29.90" height="8.06" fill="#0d0d10" stroke="none"/>
-<rect x="37.72" y="26.02" width="9.62" height="9.62" fill="#ff4d14" stroke="none"/>
+<rect x="8.21" y="6.00" width="9.88" height="52.00" fill="#0d0d10" stroke="none"/>
+<rect x="8.21" y="6.00" width="36.40" height="7.80" fill="#0d0d10" stroke="none"/>
+<rect x="36.81" y="6.00" width="7.80" height="28.08" fill="#0d0d10" stroke="none"/>
+<rect x="8.21" y="26.28" width="36.40" height="7.80" fill="#0d0d10" stroke="none"/>
+<rect x="46.43" y="25.50" width="9.36" height="9.36" fill="#ff4d14" stroke="none"/>
 </svg>

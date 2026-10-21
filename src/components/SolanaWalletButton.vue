@@ -36,7 +36,7 @@ function showModal() {
   setupMessage.value = ''
   wallets.value = getSolanaWallets()
   discovering.value = true
-  void nextTick(() => dialogPanel.value?.querySelector('.port-close')?.focus())
+  void nextTick(() => dialogPanel.value?.querySelector('.wal-close')?.focus())
   void initializeSolanaWallets()
     .then((available) => {
       wallets.value = available
@@ -133,8 +133,8 @@ onBeforeUnmount(() => {
   <div class="port">
     <button
       type="button"
-      class="atlas-btn port-trigger"
-      :class="{ 'is-linked': address }"
+      class="tty-btn wal-trigger"
+      :class="{ 'linked': address }"
       :aria-haspopup="'dialog'"
       :aria-expanded="modalOpen"
       :disabled="Boolean(pendingWallet)"
@@ -145,43 +145,43 @@ onBeforeUnmount(() => {
     </button>
 
     <Teleport to="body">
-      <div v-if="modalOpen" class="port-scrim" @click.self="closeModal" @keydown.esc.stop="closeModal">
-        <section ref="dialogPanel" class="port-dialog" role="dialog" aria-modal="true" aria-labelledby="wallet-dialog-title" tabindex="-1" @keydown.stop="onDialogKeydown">
-          <header class="port-head">
-            <div class="port-head-copy">
-              <span class="port-eyebrow">SOLANA / {{ solanaConfig.cluster.toUpperCase() }}</span>
-              <h2 id="wallet-dialog-title" class="atlas-h2 port-title">{{ address ? 'Wallet connected' : 'Choose a wallet' }}</h2>
+      <div v-if="modalOpen" class="wal-scrim" @click.self="closeModal" @keydown.esc.stop="closeModal">
+        <section ref="dialogPanel" class="wal-dialog" role="dialog" aria-modal="true" aria-labelledby="wallet-dialog-title" tabindex="-1" @keydown.stop="onDialogKeydown">
+          <header class="wal-head">
+            <div class="wal-head-copy">
+              <span class="wal-eyebrow">SOLANA / {{ solanaConfig.cluster.toUpperCase() }}</span>
+              <h2 id="wallet-dialog-title" class="tty-h2 wal-title">{{ address ? 'Wallet connected' : 'Choose a wallet' }}</h2>
             </div>
-            <button class="port-close" type="button" aria-label="Close wallet dialog" @click="closeModal"><X :size="18" /></button>
+            <button class="wal-close" type="button" aria-label="Close wallet dialog" @click="closeModal"><X :size="18" /></button>
           </header>
 
-          <div class="port-body">
-            <div v-if="address" class="port-account">
-              <span class="port-account-name"><Wallet :size="16" /> {{ activeWallet?.name || 'Solana wallet' }}</span>
+          <div class="wal-body">
+            <div v-if="address" class="wal-account">
+              <span class="wal-account-name"><Wallet :size="16" /> {{ activeWallet?.name || 'Solana wallet' }}</span>
               <code>{{ address }}</code>
-              <button class="atlas-btn atlas-btn--ghost atlas-btn--wide port-disconnect" type="button" :disabled="Boolean(pendingWallet)" @click="disconnect">
+              <button class="tty-btn tty-btn--ghost tty-btn--wide wal-disconnect" type="button" :disabled="Boolean(pendingWallet)" @click="disconnect">
                 {{ pendingWallet ? 'Disconnecting…' : 'Disconnect wallet' }}
               </button>
             </div>
 
             <template v-else>
-              <p class="port-copy">Connect a Solana account to display its public address. This site does not ask for transaction signatures.</p>
-              <p class="atlas-notice atlas-notice--ok port-network"><ShieldCheck :size="15" /> Use a Solana wallet with an SPL account. The CA preview never asks for a seed phrase.</p>
+              <p class="wal-copy">Connect a Solana account to display its public address. This site does not ask for transaction signatures.</p>
+              <p class="tty-notice tty-notice--ok wal-network"><ShieldCheck :size="15" /> Use a Solana wallet with an SPL account. The CA preview never asks for a seed phrase.</p>
 
-              <p v-if="discovering" class="atlas-notice port-discovery" role="status">Looking for MetaMask, Phantom, Solflare and other Solana wallets…</p>
-              <div v-else-if="wallets.length" class="port-options" aria-label="Available Solana wallets">
-                <button v-for="wallet in wallets" :key="wallet.name" class="port-option" type="button" :disabled="Boolean(pendingWallet)" @click="connect(wallet)">
-                  <img v-if="wallet.icon" class="port-option-icon" :src="wallet.icon" alt="" />
-                  <span v-else class="port-option-icon port-option-placeholder"><Wallet :size="18" /></span>
-                  <span class="port-option-name">{{ wallet.name }}</span>
-                  <span v-if="pendingWallet === wallet.name" class="port-option-state">Connecting…</span>
-                  <ExternalLink v-else :size="15" class="port-option-arrow" />
+              <p v-if="discovering" class="tty-notice wal-discovery" role="status">Looking for MetaMask, Phantom, Solflare and other Solana wallets…</p>
+              <div v-else-if="wallets.length" class="wal-options" aria-label="Available Solana wallets">
+                <button v-for="wallet in wallets" :key="wallet.name" class="wal-option" type="button" :disabled="Boolean(pendingWallet)" @click="connect(wallet)">
+                  <img v-if="wallet.icon" class="wal-option-icon" :src="wallet.icon" alt="" />
+                  <span v-else class="wal-option-icon wal-option-placeholder"><Wallet :size="18" /></span>
+                  <span class="wal-option-name">{{ wallet.name }}</span>
+                  <span v-if="pendingWallet === wallet.name" class="wal-option-state">Connecting…</span>
+                  <ExternalLink v-else :size="15" class="wal-option-arrow" />
                 </button>
               </div>
-              <div v-else class="port-empty">
+              <div v-else class="wal-empty">
                 <p>No compatible Solana wallet was detected.</p>
-                <p class="port-empty-help">Install a wallet, enable its Solana account, then reopen this panel.</p>
-                <div class="port-install">
+                <p class="wal-empty-help">Install a wallet, enable its Solana account, then reopen this panel.</p>
+                <div class="wal-install">
                   <a href="https://metamask.io/download/" target="_blank" rel="noreferrer">MetaMask <ExternalLink :size="12" /></a>
                   <a href="https://phantom.app/download" target="_blank" rel="noreferrer">Phantom <ExternalLink :size="12" /></a>
                   <a href="https://solflare.com/download" target="_blank" rel="noreferrer">Solflare <ExternalLink :size="12" /></a>
@@ -189,9 +189,9 @@ onBeforeUnmount(() => {
               </div>
             </template>
 
-            <p v-if="errorMessage" class="atlas-notice atlas-notice--alert port-error" role="alert">{{ errorMessage }}</p>
-            <p v-if="setupMessage" class="atlas-notice atlas-notice--flag port-setup" role="status">MetaMask connector: {{ setupMessage }}</p>
-            <p class="port-foot">Only the selected wallet’s public Solana address is read.</p>
+            <p v-if="errorMessage" class="tty-notice tty-notice--alert wal-error" role="alert">{{ errorMessage }}</p>
+            <p v-if="setupMessage" class="tty-notice tty-notice--flag wal-setup" role="status">MetaMask connector: {{ setupMessage }}</p>
+            <p class="wal-foot">Only the selected wallet’s public Solana address is read.</p>
           </div>
         </section>
       </div>
@@ -202,17 +202,17 @@ onBeforeUnmount(() => {
 <style scoped>
 /* ----------------------------------------------------------------- trigger */
 .port { min-width: 0; }
-.port-trigger { box-shadow: none; }
-.port-trigger.is-linked {
+.wal-trigger { box-shadow: none; }
+.wal-trigger.linked {
   border-color: transparent;
-  background: var(--beam);
-  color: #04060d;
-  box-shadow: 0 0 24px rgba(64, 179, 255, 0.35);
+  background: var(--accent);
+  color: #050608;
+  box-shadow: 0 0 24px rgba(255, 0, 0, 0.35);
 }
-.port-trigger.is-linked:hover { background: #6bc4ff; border-color: transparent; }
+.wal-trigger.linked:hover { background: #ff6b6b; border-color: transparent; }
 
 /* ------------------------------------------------------------------- scrim */
-.port-scrim {
+.wal-scrim {
   position: fixed;
   inset: 0;
   z-index: 120;
@@ -224,163 +224,163 @@ onBeforeUnmount(() => {
 }
 
 /* ------------------------------------------------------------------ dialog */
-.port-dialog {
+.wal-dialog {
   width: min(100%, 480px);
   max-height: min(760px, calc(100vh - 44px));
   overflow: auto;
-  border: 1px solid var(--hair-2);
-  border-radius: var(--r-lg);
-  background: linear-gradient(180deg, var(--deck-2), var(--void-2) 60%);
-  box-shadow: 0 0 0 1px rgba(64, 179, 255, 0.08), 0 40px 90px rgba(0, 0, 0, 0.8), var(--glow);
+  border: 1px solid var(--line-2);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(180deg, var(--surface-2), var(--bg-2) 60%);
+  box-shadow: 0 0 0 1px rgba(255, 0, 0, 0.08), 0 40px 90px rgba(0, 0, 0, 0.8), var(--glow);
   outline: 0;
 }
-.port-head {
+.wal-head {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   gap: 16px;
   padding: 22px 22px 18px;
-  border-bottom: 1px solid var(--hair);
+  border-bottom: 1px solid var(--line);
 }
-.port-head-copy { display: grid; gap: 9px; min-width: 0; }
-.port-eyebrow {
+.wal-head-copy { display: grid; gap: 9px; min-width: 0; }
+.wal-eyebrow {
   display: block;
-  color: var(--beam);
+  color: var(--accent-safe);
   font: 500 9px/1.4 var(--font-mono);
   letter-spacing: 0.22em;
   text-transform: uppercase;
 }
-.port-title { font-size: clamp(22px, 2.4vw, 28px); }
-.port-close {
+.wal-title { font-size: clamp(22px, 2.4vw, 28px); }
+.wal-close {
   display: grid;
   place-items: center;
   flex: none;
   width: 36px;
   height: 36px;
-  border: 1px solid var(--hair-2);
+  border: 1px solid var(--line-2);
   border-radius: 50%;
   background: transparent;
-  color: var(--star);
+  color: var(--ink);
   cursor: pointer;
   transition: color 160ms var(--ease), border-color 160ms var(--ease), background-color 160ms var(--ease);
 }
-.port-close:hover { color: var(--beam); border-color: var(--beam); background: rgba(64, 179, 255, 0.12); }
+.wal-close:hover { color: var(--accent-safe); border-color: var(--accent-safe); background: rgba(255, 0, 0, 0.12); }
 
-.port-body { display: grid; gap: 14px; padding: 20px 22px 22px; }
-.port-copy { margin: 0; color: var(--star-mute); font: 400 14px/1.7 var(--font-body); }
-.port-network { margin: 0; }
+.wal-body { display: grid; gap: 14px; padding: 20px 22px 22px; }
+.wal-copy { margin: 0; color: var(--muted); font: 400 14px/1.7 var(--font-body); }
+.wal-network { margin: 0; }
 
 /* ------------------------------------------------------------------ wallets */
-.port-options { display: grid; gap: 8px; }
-.port-option {
+.wal-options { display: grid; gap: 8px; }
+.wal-option {
   display: flex;
   align-items: center;
   gap: 12px;
   min-height: 56px;
   padding: 9px 14px;
-  border: 1px solid var(--hair-2);
-  border-radius: var(--r-pill);
-  background: rgba(11, 12, 21, 0.8);
-  color: var(--star);
+  border: 1px solid var(--line-2);
+  border-radius: var(--radius-pill);
+  background: rgba(10, 14, 20, 0.8);
+  color: var(--ink);
   text-align: left;
   cursor: pointer;
   transition: border-color 160ms var(--ease), background-color 160ms var(--ease);
 }
-.port-option:hover:not(:disabled) { border-color: var(--beam); background: rgba(64, 179, 255, 0.1); }
-.port-option:disabled { opacity: 0.5; cursor: not-allowed; }
-.port-option-icon {
+.wal-option:hover:not(:disabled) { border-color: var(--accent-safe); background: rgba(255, 0, 0, 0.1); }
+.wal-option:disabled { opacity: 0.5; cursor: not-allowed; }
+.wal-option-icon {
   display: grid;
   place-items: center;
   flex: none;
   width: 34px;
   height: 34px;
   border-radius: 50%;
-  background: var(--deck-3);
-  box-shadow: inset 0 0 0 1px var(--hair-2);
+  background: var(--surface-3);
+  box-shadow: inset 0 0 0 1px var(--line-2);
 }
-img.port-option-icon { object-fit: contain; padding: 5px; }
-.port-option-placeholder { color: var(--star-mute); }
-.port-option-name { flex: 1 1 auto; min-width: 0; font: 500 13px/1.3 var(--font-mono); }
-.port-option-state {
-  color: var(--star-faint);
+img.wal-option-icon { object-fit: contain; padding: 5px; }
+.wal-option-placeholder { color: var(--muted); }
+.wal-option-name { flex: 1 1 auto; min-width: 0; font: 500 13px/1.3 var(--font-mono); }
+.wal-option-state {
+  color: var(--faint);
   font: 500 9px/1 var(--font-mono);
   letter-spacing: 0.18em;
   text-transform: uppercase;
 }
-.port-option-arrow { flex: none; color: var(--star-faint); }
+.wal-option-arrow { flex: none; color: var(--faint); }
 
 /* ------------------------------------------------------------------ account */
-.port-account {
+.wal-account {
   display: grid;
   gap: 12px;
   padding: 16px;
-  border: 1px solid var(--hair);
-  border-radius: var(--r-md);
-  background: rgba(11, 12, 21, 0.8);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: rgba(10, 14, 20, 0.8);
 }
-.port-account-name {
+.wal-account-name {
   display: inline-flex;
   align-items: center;
   gap: 9px;
-  color: var(--star-2);
+  color: var(--ink-2);
   font: 500 10px/1 var(--font-mono);
   letter-spacing: 0.16em;
   text-transform: uppercase;
 }
-.port-account code {
+.wal-account code {
   display: block;
   padding: 10px 12px;
-  border-radius: var(--r-sm);
-  background: var(--void-2);
-  color: var(--star);
+  border-radius: var(--radius-sm);
+  background: var(--bg-2);
+  color: var(--ink);
   font: 400 12px/1.6 var(--font-mono);
   word-break: break-all;
 }
-.port-disconnect { justify-self: start; }
+.wal-disconnect { justify-self: start; }
 
 /* -------------------------------------------------------------------- empty */
-.port-empty {
+.wal-empty {
   display: grid;
   gap: 10px;
   padding: 16px;
-  border: 1px solid var(--hair);
-  border-radius: var(--r-md);
-  background: rgba(11, 12, 21, 0.8);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: rgba(10, 14, 20, 0.8);
 }
-.port-empty p { margin: 0; color: var(--star-2); font: 400 13px/1.7 var(--font-body); }
-.port-empty-help { color: var(--star-mute) !important; font: 400 11px/1.7 var(--font-mono) !important; }
-.port-install { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
-.port-install a {
+.wal-empty p { margin: 0; color: var(--ink-2); font: 400 13px/1.7 var(--font-body); }
+.wal-empty-help { color: var(--muted) !important; font: 400 11px/1.7 var(--font-mono) !important; }
+.wal-install { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+.wal-install a {
   display: inline-flex;
   align-items: center;
   gap: 7px;
   padding: 9px 13px;
-  border: 1px solid var(--hair-2);
-  border-radius: var(--r-pill);
+  border: 1px solid var(--line-2);
+  border-radius: var(--radius-pill);
   background: transparent;
-  color: var(--star-2);
+  color: var(--ink-2);
   font: 500 9px/1 var(--font-mono);
   letter-spacing: 0.16em;
   text-transform: uppercase;
   text-decoration: none;
   transition: color 160ms var(--ease), border-color 160ms var(--ease);
 }
-.port-install a:hover { color: var(--beam); border-color: var(--beam); }
+.wal-install a:hover { color: var(--accent-safe); border-color: var(--accent-safe); }
 
-.port-discovery { margin: 0; }
-.port-error { margin: 0; }
-.port-setup { margin: 0; }
-.port-foot {
+.wal-discovery { margin: 0; }
+.wal-error { margin: 0; }
+.wal-setup { margin: 0; }
+.wal-foot {
   margin: 2px 0 0;
   padding-top: 14px;
-  border-top: 1px solid var(--hair);
-  color: var(--star-faint);
+  border-top: 1px solid var(--line);
+  color: var(--faint);
   font: 400 10px/1.8 var(--font-mono);
 }
 
 @media (max-width: 480px) {
-  .port-scrim { padding: 0; place-items: stretch; }
-  .port-dialog {
+  .wal-scrim { padding: 0; place-items: stretch; }
+  .wal-dialog {
     width: 100%;
     max-height: 100vh;
     max-height: 100dvh;

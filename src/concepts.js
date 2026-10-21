@@ -1,4 +1,4 @@
-// Filza / illustrative mechanics for the Solana market model.
+// Pretiola / illustrative mechanics for the Solana market model.
 export const concepts = [
   {
     id: 'backing',

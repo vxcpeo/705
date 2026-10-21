@@ -1,14 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="t d">
-<title id="t">Filza watchlist figure</title>
-<desc id="d">A ruled watchlist ledger panel lists three sample rows: SOL at $182.40, JUP at $1.12 and FILZA, proposed and not issued, at $1.00, with a delta and a state column and a SAMPLE DATA flag. Illustrative rows only; there is no live quote feed.</desc>
+<title id="t">Pretiola watchlist figure</title>
+<desc id="d">A ruled watchlist ledger panel lists three sample rows: SOL at $182.40, JUP at $1.12 and PRETIOLA, proposed and not issued, at $1.00, with a delta and a state column and a SAMPLE DATA flag. Illustrative rows only; there is no live quote feed.</desc>
 <rect width="1200" height="750" fill="#f2eee6"/>
 <rect x="0.00" y="0.00" width="1200.00" height="10.00" fill="#0d0d10" stroke="none"/>
-<rect x="56.00" y="44.00" width="5.70" height="30.00" fill="#0d0d10" stroke="none"/>
-<rect x="56.00" y="44.00" width="30.00" height="4.65" fill="#0d0d10" stroke="none"/>
-<rect x="56.00" y="56.00" width="17.25" height="4.65" fill="#0d0d10" stroke="none"/>
-<rect x="74.30" y="55.55" width="5.55" height="5.55" fill="#ff4d14" stroke="none"/>
-<text x="96.20" y="74.00" fill="#0d0d10" font-family="'Arial Black','Arial Bold',Arial,Helvetica,sans-serif" font-size="21.0" font-weight="900" text-anchor="start">FILZA</text>
-<text x="1144.00" y="70.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="14" font-weight="400" text-anchor="end">FILZA / SOLANA</text>
+<rect x="57.27" y="44.00" width="5.70" height="30.00" fill="#0d0d10" stroke="none"/>
+<rect x="57.27" y="44.00" width="21.00" height="4.50" fill="#0d0d10" stroke="none"/>
+<rect x="73.78" y="44.00" width="4.50" height="16.20" fill="#0d0d10" stroke="none"/>
+<rect x="57.27" y="55.70" width="21.00" height="4.50" fill="#0d0d10" stroke="none"/>
+<rect x="79.33" y="55.25" width="5.40" height="5.40" fill="#ff4d14" stroke="none"/>
+<text x="96.20" y="74.00" fill="#0d0d10" font-family="'Arial Black','Arial Bold',Arial,Helvetica,sans-serif" font-size="21.0" font-weight="900" text-anchor="start">PRETIOLA</text>
+<text x="1144.00" y="70.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="14" font-weight="400" text-anchor="end">PRETIOLA / SOLANA</text>
 <polyline points="56.00,120.00 1144.00,120.00" fill="none" stroke="#2b2b33" stroke-width="2" stroke-linecap="butt"/>
 <rect x="56.00" y="154.00" width="58.00" height="5.00" fill="#ff4d14" stroke="none"/>
 <text x="56.00" y="190.00" fill="#ff4d14" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="13" font-weight="700" text-anchor="start">SURFACE 01 / WATCHLIST</text>
@@ -43,8 +44,8 @@
 <rect x="57.00" y="548.00" width="4.00" height="76.00" fill="#ff4d14" stroke="none"/>
 <polyline points="56.00,624.00 1144.00,624.00" fill="none" stroke="#d3ccbf" stroke-width="1" stroke-linecap="butt"/>
 <rect x="84.00" y="574.00" width="12.00" height="12.00" fill="#ff4d14" stroke="none"/>
-<text x="112.00" y="598.00" fill="#0d0d10" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="20" font-weight="700" text-anchor="start">FILZA</text>
-<text x="270.00" y="597.00" fill="#2b2b33" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="400" text-anchor="start">Filza</text>
+<text x="112.00" y="598.00" fill="#0d0d10" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="20" font-weight="700" text-anchor="start">PRETIOLA</text>
+<text x="270.00" y="597.00" fill="#2b2b33" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="400" text-anchor="start">Pretiola</text>
 <text x="860.00" y="598.00" fill="#0d0d10" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="20" font-weight="700" text-anchor="end">$1.00</text>
 <text x="1000.00" y="598.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="17" font-weight="400" text-anchor="end">--</text>
 <text x="1116.00" y="598.00" fill="#ff4d14" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="12" font-weight="700" text-anchor="end">NOT ISSUED</text>

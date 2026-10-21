@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-19T19:09:13.956Z",
+  "generatedAt": "2026-10-20T15:52:57.056Z",
   "project": {
     "root": "E:/workspace/chuangye/solana/705/website",
-    "name": "filza-website",
+    "name": "pretiola-website",
     "baseUrl": "http://127.0.0.1:4318/"
   },
   "passed": true,
@@ -20,39 +20,18 @@
       "passed": true,
       "issues": [],
       "warnings": [],
-      "hash": "3a7f596d88bae2d33fff020c22e6632666384f80cf177291f9a322ccca481ba5"
+      "hash": "081faeac66dd7468c844126e52f97a3dbe75ceaac7dc1957a980213acc8d2978"
     },
     "skeleton": {
       "passed": true,
       "original": {
-        "id": "sidebar-workspace",
-        "family": "shell",
-        "traits": {
-          "sidebar": true,
-          "topbar": false,
-          "cards": true,
-          "hero": true,
-          "table": true,
-          "grid": true,
-          "tabs": true,
-          "modal": true,
-          "charts": true,
-          "sticky": true,
-          "orbital": false,
-          "terminal": true,
-          "bento": false,
-          "ticker": false,
-          "gallery": false
-        }
-      },
-      "current": {
         "id": "orbital",
         "family": "spatial",
         "traits": {
-          "sidebar": true,
+          "sidebar": false,
           "topbar": false,
           "cards": true,
-          "hero": true,
+          "hero": false,
           "table": true,
           "grid": true,
           "tabs": true,
@@ -66,10 +45,31 @@
           "gallery": true
         }
       },
+      "current": {
+        "id": "terminal-console",
+        "family": "linear",
+        "traits": {
+          "sidebar": false,
+          "topbar": false,
+          "cards": true,
+          "hero": false,
+          "table": true,
+          "grid": true,
+          "tabs": true,
+          "modal": true,
+          "charts": true,
+          "sticky": true,
+          "orbital": false,
+          "terminal": true,
+          "bento": false,
+          "ticker": false,
+          "gallery": false
+        }
+      },
       "accent": {
-        "original": "#b26a00",
-        "current": "#40b3ff",
-        "deltaE": 111.47,
+        "original": "#40b3ff",
+        "current": "#ff0000",
+        "deltaE": 144.6,
         "min": 30
       }
     },
@@ -79,14 +79,11 @@
         "passed": true,
         "skipped": false,
         "failures": [],
-        "warnings": [
-          "aria attribute changed/removed: aria-label=Filza navigation",
-          "aria attribute changed/removed: aria-label=Site links"
-        ],
+        "warnings": [],
         "structure": {
-          "fingerprintSimilarity": 0.392,
-          "landmarkSimilarity": 0.429,
-          "classOverlap": 0.028
+          "fingerprintSimilarity": 0.113,
+          "landmarkSimilarity": 0.25,
+          "classOverlap": 0.056
         },
         "content": {
           "missing": [],
@@ -121,14 +118,11 @@
         "passed": true,
         "skipped": false,
         "failures": [],
-        "warnings": [
-          "aria attribute changed/removed: aria-label=Filza navigation",
-          "aria attribute changed/removed: aria-label=Site links"
-        ],
+        "warnings": [],
         "structure": {
-          "fingerprintSimilarity": 0.309,
-          "landmarkSimilarity": 0.5,
-          "classOverlap": 0.043
+          "fingerprintSimilarity": 0.126,
+          "landmarkSimilarity": 0.25,
+          "classOverlap": 0.046
         },
         "content": {
           "missing": [],
@@ -163,14 +157,11 @@
         "passed": true,
         "skipped": false,
         "failures": [],
-        "warnings": [
-          "aria attribute changed/removed: aria-label=Filza navigation",
-          "aria attribute changed/removed: aria-label=Site links"
-        ],
+        "warnings": [],
         "structure": {
-          "fingerprintSimilarity": 0.224,
-          "landmarkSimilarity": 0.571,
-          "classOverlap": 0.036
+          "fingerprintSimilarity": 0.121,
+          "landmarkSimilarity": 0.4,
+          "classOverlap": 0.046
         },
         "content": {
           "missing": [],
@@ -205,14 +196,11 @@
         "passed": true,
         "skipped": false,
         "failures": [],
-        "warnings": [
-          "aria attribute changed/removed: aria-label=Filza navigation",
-          "aria attribute changed/removed: aria-label=Site links"
-        ],
+        "warnings": [],
         "structure": {
-          "fingerprintSimilarity": 0.343,
-          "landmarkSimilarity": 0.5,
-          "classOverlap": 0.049
+          "fingerprintSimilarity": 0.118,
+          "landmarkSimilarity": 0.25,
+          "classOverlap": 0.067
         },
         "content": {
           "missing": [],
@@ -247,14 +235,11 @@
         "passed": true,
         "skipped": false,
         "failures": [],
-        "warnings": [
-          "aria attribute changed/removed: aria-label=Filza navigation",
-          "aria attribute changed/removed: aria-label=Site links"
-        ],
+        "warnings": [],
         "structure": {
-          "fingerprintSimilarity": 0.383,
-          "landmarkSimilarity": 0.429,
-          "classOverlap": 0.048
+          "fingerprintSimilarity": 0.131,
+          "landmarkSimilarity": 0.25,
+          "classOverlap": 0.058
         },
         "content": {
           "missing": [],
@@ -289,14 +274,11 @@
         "passed": true,
         "skipped": false,
         "failures": [],
-        "warnings": [
-          "aria attribute changed/removed: aria-label=Filza navigation",
-          "aria attribute changed/removed: aria-label=Site links"
-        ],
+        "warnings": [],
         "structure": {
-          "fingerprintSimilarity": 0.343,
-          "landmarkSimilarity": 0.5,
-          "classOverlap": 0.049
+          "fingerprintSimilarity": 0.118,
+          "landmarkSimilarity": 0.25,
+          "classOverlap": 0.067
         },
         "content": {
           "missing": [],
@@ -329,22 +311,9 @@
     ]
   },
   "failures": [],
-  "warnings": [
-    "/: aria attribute changed/removed: aria-label=Filza navigation",
-    "/: aria attribute changed/removed: aria-label=Site links",
-    "/app/markets: aria attribute changed/removed: aria-label=Filza navigation",
-    "/app/markets: aria attribute changed/removed: aria-label=Site links",
-    "/docs: aria attribute changed/removed: aria-label=Filza navigation",
-    "/docs: aria attribute changed/removed: aria-label=Site links",
-    "/privacy: aria attribute changed/removed: aria-label=Filza navigation",
-    "/privacy: aria attribute changed/removed: aria-label=Site links",
-    "/signal: aria attribute changed/removed: aria-label=Filza navigation",
-    "/signal: aria attribute changed/removed: aria-label=Site links",
-    "/terms: aria attribute changed/removed: aria-label=Filza navigation",
-    "/terms: aria attribute changed/removed: aria-label=Site links"
-  ],
+  "warnings": [],
   "baseline": {
-    "generatedAt": "2026-10-19T18:47:26.913Z",
+    "generatedAt": "2026-10-20T15:35:15.460Z",
     "routes": [
       "/",
       "/app/markets",

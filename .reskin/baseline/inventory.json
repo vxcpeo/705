@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-19T18:46:57.213Z",
+  "generatedAt": "2026-10-20T15:34:31.658Z",
   "project": {
     "root": "E:/workspace/chuangye/solana/705/website",
-    "name": "filza-website",
+    "name": "pretiola-website",
     "vueVersion": "^3.5.13",
     "nuxt": false,
     "dependencies": [
@@ -25,14 +25,14 @@
     "frameworks": []
   },
   "stats": {
-    "filesScanned": 26,
-    "vueFiles": 16,
+    "filesScanned": 15,
+    "vueFiles": 8,
     "routes": 6,
-    "staticTextTokens": 672,
-    "bindingTokens": 428,
-    "eventTokens": 92,
-    "classNames": 301,
-    "colors": 66
+    "staticTextTokens": 336,
+    "bindingTokens": 214,
+    "eventTokens": 46,
+    "classNames": 350,
+    "colors": 93
   },
   "routes": [
     {
@@ -67,106 +67,122 @@
   ],
   "unresolvedRoutes": [],
   "archetype": {
-    "id": "sidebar-workspace",
-    "family": "shell",
+    "id": "orbital",
+    "family": "spatial",
     "traits": {
-      "sidebar": true,
+      "sidebar": false,
       "topbar": false,
       "cards": true,
-      "hero": true,
+      "hero": false,
       "table": true,
       "grid": true,
       "tabs": true,
       "modal": true,
       "charts": true,
       "sticky": true,
-      "orbital": false,
+      "orbital": true,
       "terminal": true,
       "bento": false,
       "ticker": false,
-      "gallery": false
+      "gallery": true
     }
   },
   "palette": [
     {
-      "hex": "#ffffff",
-      "count": 16
+      "hex": "#40b3ff",
+      "count": 28
     },
     {
-      "hex": "#0d0d10",
-      "count": 8
+      "hex": "#04060d",
+      "count": 13
     },
     {
-      "hex": "#3a3a44",
-      "count": 6
+      "hex": "#0b0c15",
+      "count": 11
     },
     {
-      "hex": "#f2eee6",
-      "count": 4
+      "hex": "#000000",
+      "count": 5
     },
     {
-      "hex": "#0f8a63",
+      "hex": "#5ce1a0",
+      "count": 5
+    },
+    {
+      "hex": "#12121e",
+      "count": 3
+    },
+    {
+      "hex": "#6bc4ff",
+      "count": 3
+    },
+    {
+      "hex": "#a78bfa",
+      "count": 3
+    },
+    {
+      "hex": "#03040a",
       "count": 2
     },
     {
-      "hex": "#1f4fe0",
+      "hex": "#05060d",
       "count": 2
     },
     {
-      "hex": "#2b2b33",
+      "hex": "#191927",
       "count": 2
     },
     {
-      "hex": "#33333c",
+      "hex": "#f2c94c",
       "count": 2
     },
     {
-      "hex": "#4a4a55",
+      "hex": "#f5f4fa",
       "count": 2
     },
     {
-      "hex": "#6f6a60",
+      "hex": "#ff8a8a",
       "count": 2
     },
     {
-      "hex": "#948d80",
-      "count": 2
+      "hex": "#0a0616",
+      "count": 1
     },
     {
-      "hex": "#a9a49a",
-      "count": 2
+      "hex": "#0a2c44",
+      "count": 1
     },
     {
-      "hex": "#b26a00",
-      "count": 2
+      "hex": "#1b6ea8",
+      "count": 1
     },
     {
-      "hex": "#c81e4a",
-      "count": 2
+      "hex": "#262536",
+      "count": 1
     },
     {
-      "hex": "#d3ccbf",
-      "count": 2
+      "hex": "#34334a",
+      "count": 1
     },
     {
-      "hex": "#d8ece4",
-      "count": 2
+      "hex": "#45445f",
+      "count": 1
     },
     {
-      "hex": "#e2dcd0",
-      "count": 2
+      "hex": "#8e8ca3",
+      "count": 1
     },
     {
-      "hex": "#e7e1d5",
-      "count": 2
+      "hex": "#a9a7bd",
+      "count": 1
     },
     {
-      "hex": "#f7dcd3",
-      "count": 2
+      "hex": "#b9a2ff",
+      "count": 1
     },
     {
-      "hex": "#ff4d14",
-      "count": 2
+      "hex": "#d7d5e4",
+      "count": 1
     }
   ],
   "fonts": [],
@@ -176,417 +192,465 @@
     ">",
     ">=",
     "?",
-    "address",
-    "asset-detail",
-    "asset-link",
-    "band-income",
-    "band-upside",
-    "board",
-    "brief",
-    "btn",
-    "btn-flare",
-    "btn-full",
-    "btn-primary",
-    "btn-quiet",
-    "cap-control",
-    "cap-copy",
-    "cap-explanation",
-    "cap-lead",
-    "cap-ticks",
-    "cap-value",
-    "card-icon",
-    "cell-label",
-    "cell-note",
-    "cell-value",
-    "cells",
-    "chart-axis",
-    "chart-disclaimer",
-    "chart-grid",
-    "chart-heading",
-    "chart-legend",
-    "chip",
-    "chip-flare",
-    "col-a1",
-    "col-a2",
-    "col-b1",
-    "col-b2",
-    "col-c1",
-    "col-c2",
-    "colophon",
-    "colophon-brand",
-    "concept-card",
-    "concept-figure",
-    "concept-grid",
-    "concept-index",
-    "connected:",
-    "control-label",
-    "current-label",
+    "atlas-brand",
+    "atlas-brand-copy",
+    "atlas-btn",
+    "atlas-btn--accent",
+    "atlas-btn--ghost",
+    "atlas-btn--primary",
+    "atlas-btn--wide",
+    "atlas-colophon",
+    "atlas-colophon-brand",
+    "atlas-colophon-copy",
+    "atlas-colophon-in",
+    "atlas-colophon-links",
+    "atlas-colophon-top",
+    "atlas-combo",
+    "atlas-display",
+    "atlas-dock",
+    "atlas-dock-link",
+    "atlas-face",
+    "atlas-face--halo",
+    "atlas-face-head",
+    "atlas-facts",
+    "atlas-facts--stack",
+    "atlas-field",
+    "atlas-field-label",
+    "atlas-h2",
+    "atlas-h3",
+    "atlas-head--row",
+    "atlas-input",
+    "atlas-kicker",
+    "atlas-label",
+    "atlas-lead",
+    "atlas-link",
+    "atlas-lost",
+    "atlas-lost-cta",
+    "atlas-mast",
+    "atlas-mast-actions",
+    "atlas-mast-id",
+    "atlas-mast-more",
+    "atlas-mast-open",
+    "atlas-mast-scrim",
+    "atlas-meta",
+    "atlas-note",
+    "atlas-notice",
+    "atlas-notice--alert",
+    "atlas-notice--flag",
+    "atlas-notice--ok",
+    "atlas-num",
+    "atlas-pairs",
+    "atlas-pill",
+    "atlas-pill--beam",
+    "atlas-range",
+    "atlas-ribbon",
+    "atlas-ribbon-cell",
+    "atlas-ribbon-cell--wide",
+    "atlas-ribbon-tail",
+    "atlas-root",
+    "atlas-scale",
+    "atlas-scene",
+    "atlas-scene-in",
+    "atlas-skip",
+    "atlas-stack",
+    "atlas-stage",
+    "atlas-station",
+    "atlas-switch",
+    "atlas-table",
+    "atlas-table-wrap",
+    "atlas-tiny",
+    "atlas-wallet",
+    "board-block",
+    "board-cap",
+    "board-card",
+    "board-card-copy",
+    "board-card-values",
+    "board-deck",
+    "board-dot",
+    "board-empty",
+    "board-epoch",
+    "board-feed",
+    "board-foot",
+    "board-grid",
+    "board-head",
+    "board-preview-badge",
+    "board-quote-tag",
+    "board-rail",
+    "board-search-state",
+    "board-stats",
+    "board-stats-grid",
+    "board-stats-line",
+    "board-stats-note",
+    "board-table-wrap",
+    "board-token",
+    "board-token-mark",
+    "board-token-name",
+    "board-toolbar",
+    "board-value",
+    "board-value--income",
+    "board-value--upside",
     "current:",
-    "detail-figure",
-    "detail-grid",
-    "detail-mark",
-    "detail-metrics",
-    "detail-payoff",
-    "disclosure",
-    "docs-content",
-    "docs-hero",
-    "docs-layout",
-    "docs-page",
-    "docs-section",
-    "docs-toc",
+    "deck",
+    "deck-board",
+    "deck-board-table",
+    "deck-board-wrap",
+    "deck-brief",
+    "deck-brief-scene",
+    "deck-core",
+    "deck-empty",
+    "deck-fact-list",
+    "deck-facts",
+    "deck-foot-note",
+    "deck-head",
+    "deck-limits",
+    "deck-limits-cta",
+    "deck-limits-face",
+    "deck-limits-list",
+    "deck-open",
+    "deck-open-actions",
+    "deck-open-copy",
+    "deck-open-in",
+    "deck-open-note",
+    "deck-open-side",
+    "deck-orbit",
+    "deck-quote",
+    "deck-quote-body",
+    "deck-quote-copy",
+    "deck-quote-face",
+    "deck-quote-in",
+    "deck-quote-line",
+    "deck-quote-tag",
+    "deck-readout",
+    "deck-ring",
+    "deck-ring--a",
+    "deck-ring--b",
+    "deck-ring--c",
+    "deck-rowlink",
+    "deck-search",
+    "deck-split",
+    "deck-split-figure",
+    "deck-split-grid",
+    "deck-split-readout",
+    "deck-tape",
+    "deck-tape-scene",
+    "deck-token",
+    "deck-token-mark",
+    "deck-token-name",
+    "deck-tools",
+    "deck-total",
     "done:",
-    "editorial",
-    "empty",
-    "empty-market-state",
-    "endpoint",
-    "epoch-value",
-    "eyebrow",
-    "feed-dot",
-    "field-group",
-    "figure-axis",
-    "figure-band",
-    "figure-cap",
-    "figure-grid",
-    "figure-label",
-    "figure-tick",
-    "figure-value",
-    "filter-button",
-    "filter-details",
-    "filters",
-    "flabel",
-    "foot-note",
-    "formrow",
-    "formula-card",
-    "formula-cells",
-    "formula-label",
-    "h1",
-    "h2",
-    "h3",
     "i",
     "i,",
-    "income",
-    "income-card",
-    "income-endpoint",
-    "income-line",
-    "income-point",
-    "income-value",
-    "input",
-    "is-end",
+    "is-anchor-end",
     "is-hold",
     "is-income",
     "item.change",
-    "kick",
-    "kick-ink",
-    "lede",
-    "ledger",
-    "legacy-anchor",
-    "legal-actions",
-    "legal-copy",
-    "legal-page",
-    "legend-income",
-    "legend-stock",
-    "legend-upside",
-    "loadrail-cell",
-    "loadrail-inner",
-    "market-cards",
-    "market-feed-note",
-    "market-mobile-card",
-    "market-stats",
-    "market-table",
-    "market-table-footnote",
-    "market-table-heading",
-    "market-table-section",
-    "market-table-toolbar",
-    "mast",
-    "mast-actions",
-    "mast-head",
-    "mast-note",
-    "mast-side",
-    "mechanism-list",
-    "mobile-asset-copy",
-    "mobile-asset-values",
-    "model-note",
-    "model-value",
+    "lab",
+    "lab-actions",
+    "lab-aside",
+    "lab-aside-copy",
+    "lab-aside-foot",
+    "lab-aside-icon",
+    "lab-aside-rows",
+    "lab-aside-title",
+    "lab-badge",
+    "lab-count",
+    "lab-delete",
+    "lab-delta",
+    "lab-display",
+    "lab-error",
+    "lab-eyebrow",
+    "lab-face-title",
+    "lab-fields",
+    "lab-form",
+    "lab-form-grid",
+    "lab-form-scene",
+    "lab-muted",
+    "lab-open",
+    "lab-open-in",
+    "lab-pair",
+    "lab-range",
+    "lab-record",
+    "lab-record-scene",
+    "lab-rows",
+    "lab-stage-arrow",
+    "lab-stage-number",
+    "lab-stages",
+    "lab-step",
+    "leaf",
+    "leaf-anchor",
+    "leaf-body",
+    "leaf-card",
+    "leaf-card-index",
+    "leaf-cards",
+    "leaf-display",
+    "leaf-figure",
+    "leaf-formula",
+    "leaf-formula-cells",
+    "leaf-formula-label",
+    "leaf-index",
+    "leaf-index-label",
+    "leaf-index-rail",
+    "leaf-index-scene",
+    "leaf-intro",
+    "leaf-leaf",
+    "leaf-leaf-link",
+    "leaf-legal",
+    "leaf-legal-actions",
+    "leaf-legal-copy",
+    "leaf-legal-in",
+    "leaf-open",
+    "leaf-open-in",
+    "leaf-open-note",
+    "leaf-prose",
+    "leaf-role",
+    "leaf-role-label",
+    "leaf-role-label--income",
+    "leaf-role-label--upside",
+    "leaf-roles",
+    "leaf-section",
+    "leaf-section-head",
+    "leaf-split",
+    "leaf-split-copy",
+    "leaf-step-number",
+    "leaf-steps",
     "model.spotChangePercent",
-    "notfound",
-    "notice",
-    "notice-alert",
-    "notice-flag",
-    "notice-ok",
-    "num",
-    "panel",
-    "panel-body",
-    "panel-head",
-    "panel-ink",
-    "payoff",
-    "payoff-chart",
-    "payoff-display",
-    "payoff-layout",
-    "payoff-table",
-    "payoff-table-wrap",
-    "payoff-visual",
-    "position-card",
-    "position-label",
-    "position-mark",
-    "position-meters",
-    "position-price",
-    "position-track",
-    "preview-badge",
-    "prose-section",
-    "quote-label",
-    "rail",
-    "rail-actions",
-    "rail-foot",
-    "rail-head",
-    "rail-line",
-    "rail-mark",
-    "rail-nav",
-    "rail-readout",
-    "rail-scrim",
-    "rail-tiny",
-    "rail-wallet",
-    "railtoggle",
-    "range",
-    "range-scale",
-    "range-track",
-    "range-wrap",
-    "readout",
+    "opt",
+    "opt-axis",
+    "opt-cap-label",
+    "opt-chart",
+    "opt-chart-card",
+    "opt-chart-head",
+    "opt-chart-titles",
+    "opt-control",
+    "opt-control-label",
+    "opt-copy",
+    "opt-current",
+    "opt-dial",
+    "opt-disclaimer",
+    "opt-display",
+    "opt-dot-income",
+    "opt-dot-upside",
+    "opt-endpoint",
+    "opt-grid",
+    "opt-grid-lines",
+    "opt-instrument",
+    "opt-lead",
+    "opt-legend",
+    "opt-legend-income",
+    "opt-legend-stock",
+    "opt-legend-upside",
+    "opt-line-income",
+    "opt-line-stock",
+    "opt-line-upside",
+    "opt-meter",
+    "opt-meter--income",
+    "opt-meter--upside",
+    "opt-meter-label",
+    "opt-meter-mark",
+    "opt-meter-price",
+    "opt-meter-track",
+    "opt-meters",
+    "opt-model-note",
+    "opt-range",
+    "opt-range-track",
+    "opt-settle",
+    "opt-settle-label",
+    "opt-settle-line",
+    "opt-strike",
+    "opt-table",
+    "opt-table-wrap",
+    "opt-ticks",
+    "opt-toggle",
+    "opt-value-label",
+    "opt-value-row",
+    "opt-values",
+    "plot-axis",
+    "plot-band-a",
+    "plot-band-b",
+    "plot-band-label",
+    "plot-cap",
+    "plot-cap-label",
+    "plot-grid",
+    "plot-tick",
+    "plot-value",
+    "port",
+    "port-account",
+    "port-account-name",
+    "port-body",
+    "port-close",
+    "port-copy",
+    "port-dialog",
+    "port-disconnect",
+    "port-discovery",
+    "port-empty",
+    "port-empty-help",
+    "port-error",
+    "port-eyebrow",
+    "port-foot",
+    "port-head",
+    "port-head-copy",
+    "port-install",
+    "port-network",
+    "port-option",
+    "port-option-arrow",
+    "port-option-icon",
+    "port-option-name",
+    "port-option-placeholder",
+    "port-option-state",
+    "port-options",
+    "port-scrim",
+    "port-setup",
+    "port-title",
+    "port-trigger",
+    "quay",
+    "quay-back",
+    "quay-board",
+    "quay-detail",
+    "quay-detail-figure",
+    "quay-detail-grid",
+    "quay-detail-head",
+    "quay-display",
+    "quay-facts",
+    "quay-facts-scene",
+    "quay-filter-details",
+    "quay-filter-toggle",
+    "quay-filters",
+    "quay-leaf",
+    "quay-leaf-copy",
+    "quay-leaf-cta",
+    "quay-leaf-face",
+    "quay-leaf-mark",
+    "quay-mark",
+    "quay-open",
+    "quay-open-copy",
+    "quay-open-in",
+    "quay-passport",
+    "quay-passport-name",
+    "quay-passport-note",
+    "quay-passport-rows",
+    "quay-passport-top",
+    "quay-search",
+    "quay-side",
     "record.movePct",
     "record.stage",
-    "reference-label",
     "result.deltaUsd",
-    "role-card",
-    "role-grid",
-    "role-label",
-    "rowlink",
-    "scenario-lab",
-    "search",
-    "search-state",
-    "section-head",
-    "section-heading",
-    "section-meta",
-    "section-tools",
-    "seg",
-    "settlement-card",
-    "settlement-control",
-    "settlement-label",
-    "settlement-label-row",
-    "settlement-line",
-    "settlement-values",
-    "sheet",
-    "sheet-body",
-    "shell",
-    "shell-main",
-    "side-tabs",
-    "skip-link",
-    "sl-actions",
-    "sl-aside",
-    "sl-aside-foot",
-    "sl-aside-icon",
-    "sl-aside-rows",
-    "sl-badge",
-    "sl-card",
-    "sl-card-heading",
-    "sl-char-count",
-    "sl-delete",
-    "sl-delta",
-    "sl-error",
-    "sl-eyebrow",
-    "sl-field-pair",
-    "sl-form",
-    "sl-header",
-    "sl-journal",
-    "sl-layout",
-    "sl-muted",
-    "sl-range",
-    "sl-review",
-    "sl-review-rows",
-    "sl-stage-arrow",
-    "sl-stage-number",
-    "sl-stage-track",
-    "sl-step",
-    "sl-summary",
-    "solana-wallet-backdrop",
-    "solana-wallet-control",
-    "solana-wallet-dialog",
-    "split-figure",
-    "split-grid",
-    "split-readout",
-    "split-section",
     "sr-only",
-    "stats-heading",
-    "stats-note",
-    "step-number",
-    "stock-endpoint",
-    "stock-line",
-    "strike-line",
-    "strip",
-    "strip-hide-sm",
-    "strip-section",
-    "strip-tail",
-    "table-intro",
-    "table-scroll",
-    "table-toggle",
-    "tape",
-    "text-link",
-    "toc-label",
-    "token",
-    "token-mark",
-    "token-name",
-    "total",
-    "upside",
-    "upside-card",
-    "upside-endpoint",
-    "upside-line",
-    "upside-point",
-    "upside-value",
-    "value-label",
-    "value-row",
-    "wallet-account-card",
-    "wallet-account-name",
-    "wallet-button",
-    "wallet-dialog-close",
-    "wallet-dialog-copy",
-    "wallet-dialog-error",
-    "wallet-dialog-footnote",
-    "wallet-dialog-header",
-    "wallet-dialog-setup",
-    "wallet-disconnect",
-    "wallet-discovery",
-    "wallet-empty-help",
-    "wallet-empty-state",
-    "wallet-install-links",
-    "wallet-network-note",
-    "wallet-option",
-    "wallet-option-arrow",
-    "wallet-option-icon",
-    "wallet-option-name",
-    "wallet-option-placeholder",
-    "wallet-option-state",
-    "wallet-options",
-    "workspace",
-    "workspace-back",
-    "workspace-card",
-    "workspace-card-body",
-    "workspace-facts",
-    "workspace-head",
-    "workspace-title",
     "}"
   ],
   "designSignals": {
     "frameworks": [],
     "cssVars": [
-      "--alert",
-      "--card",
+      "--accent",
+      "--amber",
+      "--beam",
+      "--beam-2",
       "--cols",
-      "--display",
-      "--faint",
-      "--fg",
-      "--fg-2",
-      "--flag",
-      "--flare",
-      "--gutter",
+      "--deck",
+      "--deck-2",
+      "--deck-3",
+      "--dock-h",
+      "--dur",
+      "--ease",
+      "--fit",
+      "--font-body",
+      "--font-display",
+      "--font-mono",
+      "--ghost",
+      "--glow",
       "--hair",
-      "--hair-soft",
-      "--hair-w",
-      "--ink",
-      "--ledger",
-      "--lift-1",
-      "--lift-2",
-      "--lift-3",
-      "--mono",
-      "--muted",
-      "--on-ink",
-      "--on-ink-2",
-      "--paper",
-      "--radius",
-      "--rail",
-      "--rule",
-      "--rule-w",
-      "--sans",
-      "--signal",
-      "--strip-h",
-      "--sunken"
+      "--hair-2",
+      "--label-track",
+      "--mint",
+      "--pad",
+      "--primary",
+      "--r-lg",
+      "--r-md",
+      "--r-pill",
+      "--r-sm",
+      "--rose",
+      "--star",
+      "--star-2",
+      "--star-faint",
+      "--star-mute",
+      "--void",
+      "--void-2"
     ],
     "colorVars": [
       {
-        "name": "--alert",
-        "value": "#c81e4a"
+        "name": "--accent",
+        "value": "#40b3ff"
       },
       {
-        "name": "--card",
-        "value": "#ffffff"
+        "name": "--amber",
+        "value": "#f2c94c"
       },
       {
-        "name": "--faint",
-        "value": "#948d80"
+        "name": "--beam",
+        "value": "#40b3ff"
       },
       {
-        "name": "--fg",
-        "value": "#0d0d10"
+        "name": "--beam-2",
+        "value": "#a78bfa"
       },
       {
-        "name": "--fg-2",
-        "value": "#4a4a55"
+        "name": "--deck",
+        "value": "#0b0c15"
       },
       {
-        "name": "--flag",
-        "value": "#b26a00"
+        "name": "--deck-2",
+        "value": "#12121e"
       },
       {
-        "name": "--flare",
-        "value": "#ff4d14"
+        "name": "--deck-3",
+        "value": "#191927"
       },
       {
         "name": "--hair",
-        "value": "#d3ccbf"
+        "value": "#262536"
       },
       {
-        "name": "--hair-soft",
-        "value": "#e2dcd0"
+        "name": "--hair-2",
+        "value": "#34334a"
       },
       {
-        "name": "--ink",
-        "value": "#0d0d10"
+        "name": "--mint",
+        "value": "#5ce1a0"
       },
       {
-        "name": "--ledger",
-        "value": "#0f8a63"
+        "name": "--rose",
+        "value": "#ff8a8a"
       },
       {
-        "name": "--muted",
-        "value": "#6f6a60"
+        "name": "--star",
+        "value": "#f5f4fa"
       },
       {
-        "name": "--on-ink",
-        "value": "#f2eee6"
+        "name": "--star-2",
+        "value": "#d7d5e4"
       },
       {
-        "name": "--on-ink-2",
-        "value": "#a9a49a"
+        "name": "--star-faint",
+        "value": "#8e8ca3"
       },
       {
-        "name": "--paper",
-        "value": "#f2eee6"
+        "name": "--star-mute",
+        "value": "#a9a7bd"
       },
       {
-        "name": "--rule",
-        "value": "#2b2b33"
+        "name": "--void",
+        "value": "#000000"
       },
       {
-        "name": "--signal",
-        "value": "#1f4fe0"
-      },
-      {
-        "name": "--sunken",
-        "value": "#e7e1d5"
+        "name": "--void-2",
+        "value": "#05060d"
       }
     ],
     "mediaQueries": [
+      "@media (max-width: 1000px)",
       "@media (max-width: 1080px)",
       "@media (max-width: 1100px)",
       "@media (max-width: 1180px)",
-      "@media (max-width: 360px)",
       "@media (max-width: 480px)",
       "@media (max-width: 520px)",
       "@media (max-width: 580px)",
@@ -595,129 +659,116 @@
       "@media (max-width: 720px)",
       "@media (max-width: 780px)",
       "@media (max-width: 860px)",
-      "@media (max-width: 980px)",
+      "@media (max-width: 900px)",
       "@media (prefers-reduced-motion: reduce)"
     ],
     "darkMode": false
   },
   "structure": {
     "tagCounts": {
-      "a": 44,
-      "arrowdown": 2,
-      "arrowdowntoline": 2,
-      "arrowleft": 2,
-      "arrowright": 14,
-      "arrowup": 2,
-      "arrowupright": 4,
-      "article": 4,
-      "aside": 8,
-      "b": 38,
-      "blockquote": 2,
-      "br": 14,
-      "button": 54,
-      "caption": 6,
-      "check": 6,
-      "chevronright": 2,
-      "circle": 10,
-      "code": 2,
-      "dd": 102,
-      "desc": 4,
-      "div": 332,
-      "dl": 22,
-      "docspage": 2,
-      "dt": 92,
-      "em": 6,
-      "externallink": 12,
-      "figcaption": 4,
-      "figure": 4,
-      "flaskconical": 2,
-      "footer": 2,
-      "form": 2,
-      "g": 12,
-      "h1": 12,
-      "h2": 54,
-      "h3": 8,
-      "header": 12,
-      "homepage": 2,
-      "i": 18,
-      "img": 8,
-      "input": 20,
-      "label": 24,
-      "li": 24,
-      "line": 16,
-      "main": 2,
-      "markettable": 2,
-      "marketworkspace": 2,
-      "menu": 2,
-      "nav": 6,
-      "ol": 4,
-      "option": 2,
-      "output": 8,
-      "p": 176,
-      "path": 6,
-      "payoffexplorer": 2,
-      "rect": 4,
-      "scenariolab": 2,
-      "search": 2,
-      "section": 56,
-      "select": 2,
-      "shieldcheck": 6,
-      "slidershorizontal": 2,
-      "small": 26,
-      "solanawalletbutton": 2,
-      "span": 176,
-      "strong": 16,
-      "svg": 4,
-      "table": 6,
-      "tbody": 6,
-      "td": 28,
-      "teleport": 2,
-      "template": 8,
-      "text": 32,
-      "textarea": 2,
-      "th": 34,
-      "thead": 6,
-      "title": 4,
-      "tr": 14,
-      "trendingup": 2,
-      "ul": 8,
-      "wallet": 6,
-      "walletcards": 2,
-      "x": 4
+      "a": 22,
+      "activity": 1,
+      "arrowdown": 1,
+      "arrowdowntoline": 1,
+      "arrowleft": 1,
+      "arrowright": 7,
+      "arrowup": 1,
+      "arrowupright": 2,
+      "article": 2,
+      "b": 19,
+      "blockquote": 1,
+      "br": 7,
+      "button": 27,
+      "caption": 3,
+      "check": 3,
+      "chevronright": 1,
+      "circle": 5,
+      "code": 1,
+      "dd": 51,
+      "desc": 2,
+      "div": 208,
+      "dl": 11,
+      "docspage": 1,
+      "dt": 46,
+      "em": 3,
+      "externallink": 6,
+      "figcaption": 2,
+      "figure": 2,
+      "flaskconical": 1,
+      "footer": 1,
+      "form": 1,
+      "g": 6,
+      "h1": 6,
+      "h2": 27,
+      "h3": 4,
+      "header": 2,
+      "homepage": 1,
+      "i": 10,
+      "img": 4,
+      "input": 10,
+      "label": 12,
+      "li": 13,
+      "line": 8,
+      "main": 1,
+      "markettable": 1,
+      "marketworkspace": 1,
+      "nav": 2,
+      "ol": 2,
+      "option": 1,
+      "output": 4,
+      "p": 88,
+      "path": 3,
+      "payoffexplorer": 1,
+      "rect": 2,
+      "scenariolab": 1,
+      "search": 1,
+      "section": 25,
+      "select": 1,
+      "shieldcheck": 3,
+      "slidershorizontal": 1,
+      "small": 13,
+      "solanawalletbutton": 1,
+      "span": 91,
+      "strong": 8,
+      "svg": 2,
+      "table": 3,
+      "tbody": 3,
+      "td": 14,
+      "teleport": 1,
+      "template": 5,
+      "text": 16,
+      "textarea": 1,
+      "th": 17,
+      "thead": 3,
+      "title": 2,
+      "tr": 7,
+      "trendingup": 1,
+      "ul": 5,
+      "wallet": 3,
+      "walletcards": 1,
+      "x": 1
     },
     "depthHistogram": {
-      "0": 20,
-      "1": 64,
-      "2": 132,
-      "3": 284,
-      "4": 354,
-      "5": 356,
-      "6": 246,
-      "7": 142,
-      "8": 60,
-      "9": 14,
-      "10": 12,
-      "11": 2
+      "0": 9,
+      "1": 29,
+      "2": 47,
+      "3": 77,
+      "4": 134,
+      "5": 185,
+      "6": 249,
+      "7": 98,
+      "8": 31,
+      "9": 17,
+      "10": 3
     },
-    "maxDepth": 11,
+    "maxDepth": 10,
     "topLevelTags": [
       "a",
       "div",
-      "section",
-      "section",
+      "div",
       "div",
       "section",
-      "section",
-      "section",
-      "section",
       "div",
-      "a",
-      "div",
-      "section",
-      "section",
-      "div",
-      "section",
-      "section",
       "section",
       "section",
       "div"
@@ -725,42 +776,20 @@
     "skeletonSample": [
       "a",
       "div",
-      "  button",
-      "  aside",
+      "  header",
       "    div",
       "      a",
       "        img",
       "        span",
       "      p",
       "        br",
-      "    nav",
+      "    div",
+      "      solanawalletbutton",
       "      a",
-      "        b",
-      "        span",
-      "        small",
-      "    div",
-      "      div",
-      "        solanawalletbutton",
-      "        a",
-      "      dl",
-      "        div",
-      "          dt",
-      "          dd",
-      "        div",
-      "          dt",
-      "          dd",
-      "        div",
-      "          dt",
-      "          dd",
-      "        div",
-      "          dt",
-      "          dd",
-      "      p",
-      "  div",
-      "    div",
       "      button",
-      "        x",
-      "        menu",
+      "        activity",
+      "    button",
+      "    div",
       "      span",
       "        i",
       "        b",
@@ -771,85 +800,107 @@
       "      span",
       "        b",
       "      span",
-      "    main",
-      "      homepage",
-      "      marketworkspace",
-      "      scenariolab",
-      "      docspage",
-      "      section",
+      "  nav",
+      "    a",
+      "      b",
+      "      span",
+      "      small",
+      "  main",
+      "    homepage",
+      "    marketworkspace",
+      "    scenariolab",
+      "    docspage",
+      "    section",
+      "      div",
       "        p",
       "        h1",
       "        p",
       "        p",
       "          a",
-      "      footer",
+      "    footer",
+      "      div",
       "        div",
-      "          img",
-      "          b",
+      "          div",
+      "            img",
+      "            b",
+      "          p",
+      "          ul",
+      "            li",
+      "              a",
+      "        dl",
+      "          div",
+      "            dt",
+      "            dd",
+      "          div",
+      "            dt",
+      "            dd",
+      "          div",
+      "            dt",
+      "            dd",
+      "          div",
+      "            dt",
+      "            dd",
       "        p",
-      "        nav",
-      "          a",
-      "section",
-      "  header",
-      "    p",
-      "    h1",
-      "    p",
-      "  div",
-      "    p",
+      "div",
+      "  section",
       "    div",
-      "      a",
-      "        arrowright",
-      "      a",
-      "        arrowright",
-      "section",
-      "  header",
-      "    p",
-      "    h1",
-      "    p",
-      "    p",
-      "  div",
-      "    nav",
       "      p",
-      "      a",
-      "        b",
-      "        span",
+      "      h1",
+      "      p",
+      "  section",
       "    div",
-      "      section",
+      "      div",
       "        p",
-      "        ol",
-      "          li",
-      "            span",
-      "            div",
-      "              h2",
+      "      div",
+      "        a",
+      "          arrowright",
+      "        a",
+      "          arrowright",
+      "  template",
+      "    section",
+      "      div",
+      "        p",
+      "        h1",
+      "        p",
+      "        p",
+      "    section",
+      "      div",
+      "        nav",
+      "          p",
+      "          div",
+      "            a",
+      "              b",
+      "              span",
+      "    section",
+      "      div",
+      "        div",
+      "          p",
+      "          ol",
+      "            li",
+      "              span",
+      "              div",
+      "                h2",
+      "                p",
+      "          div",
+      "            article",
+      "              p",
+      "              h3",
+      "              p",
+      "            article",
+      "              p",
+      "              h3",
       "              p",
       "        div",
-      "          article",
+      "          div",
       "            p",
-      "            h3",
-      "            p",
-      "          article",
-      "            p",
-      "            h3",
-      "            p",
-      "      section",
-      "        div",
-      "          p",
-      "          h2",
-      "          p",
-      "        ul",
-      "          li",
-      "            figure",
-      "              img",
-      "              figcaption",
-      "                span",
-      "                h3"
+      "            h2"
     ]
   },
   "contentContract": {
     "schemaVersion": 1,
     "meta": {
-      "projectName": "filza-website",
-      "title": "filza-website",
+      "projectName": "pretiola-website",
+      "title": "pretiola-website",
       "lang": "en"
     },
     "routes": [
@@ -863,2140 +914,2140 @@
     "visibleText": [
       {
         "value": "- preview",
-        "count": 2
+        "count": 1
       },
       {
         "value": "-90%",
-        "count": 2
+        "count": 1
       },
       {
         "value": "(Above the cap)",
-        "count": 2
+        "count": 1
       },
       {
         "value": "(model)",
-        "count": 2
+        "count": 1
       },
       {
         "value": "(Up to the cap)",
-        "count": 2
+        "count": 1
       },
       {
         "value": "/ 30 days / model at 25% vol",
-        "count": 2
+        "count": 1
       },
       {
         "value": "/ cap +",
-        "count": 4
+        "count": 2
       },
       {
         "value": "/ cap price (K)",
-        "count": 2
+        "count": 1
       },
       {
         "value": "/ Example quote",
-        "count": 4
+        "count": 2
       },
       {
         "value": "/ Model notes",
-        "count": 2
+        "count": 1
       },
       {
         "value": "/ not issued",
-        "count": 2
+        "count": 1
       },
       {
         "value": "/ paper market",
-        "count": 2
+        "count": 1
       },
       {
         "value": "/ preview build",
-        "count": 2
+        "count": 1
       },
       {
         "value": "/ targets, not registered",
-        "count": 2
+        "count": 1
       },
       {
         "value": "/ unissued",
-        "count": 2
+        "count": 1
       },
       {
         "value": "/ unit",
-        "count": 4
+        "count": 2
       },
       {
         "value": "/ USD",
-        "count": 2
+        "count": 1
       },
       {
         "value": "% / K",
-        "count": 2
+        "count": 1
       },
       {
         "value": "% / settlement at the sample spot",
-        "count": 2
+        "count": 1
       },
       {
         "value": "+ premium",
-        "count": 2
+        "count": 1
       },
       {
         "value": "+100%",
-        "count": 2
+        "count": 1
       },
       {
         "value": "+5%",
-        "count": 6
+        "count": 3
       },
       {
         "value": "+5% cap",
-        "count": 2
+        "count": 1
       },
       {
         "value": "0",
-        "count": 4
+        "count": 2
       },
       {
         "value": "0%",
-        "count": 4
+        "count": 2
       },
       {
         "value": "01 / INPUTS",
-        "count": 2
+        "count": 1
       },
       {
         "value": "02 / REVIEW",
-        "count": 2
+        "count": 1
       },
       {
         "value": "03 / JOURNAL",
-        "count": 2
+        "count": 1
       },
       {
         "value": "04",
-        "count": 2
+        "count": 1
       },
       {
         "value": "10%",
-        "count": 4
+        "count": 2
       },
       {
         "value": "2%",
-        "count": 2
+        "count": 1
       },
       {
         "value": "30 days",
-        "count": 2
+        "count": 1
       },
       {
         "value": "30-day epoch",
-        "count": 2
+        "count": 1
       },
       {
         "value": "30-day epoch | +5% cap | illustrative values",
-        "count": 2
+        "count": 1
       },
       {
         "value": "30d",
-        "count": 2
+        "count": 1
       },
       {
         "value": "5%",
-        "count": 2
+        "count": 1
       },
       {
         "value": "A 5% auction fee appeared in an earlier reference model. It is only a design assumption and is not active, binding, or a production term.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "A candidate SPL market unit would need a reliable price source and a USDC liquidity path. Listing, custody, jurisdiction, and program permissions require separate review before production.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "A clear split.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "A defined cap sets the split.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "A defined level.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "A LITTLE SPACE TO THINK",
-        "count": 2
+        "count": 1
       },
       {
         "value": "A premium does not remove risk.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "A production series would need a named feed, market session, fallback behavior, and settlement window. This preview uses local assumptions and performs no oracle reads.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "All displayed market values are examples. No token or Solana program has been issued by this preview.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "All examples use a +5% cap, 30-day epoch and 25% model volatility.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Amount",
-        "count": 4
+        "count": 2
       },
       {
         "value": "and",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Any SPL market unit with a verified price feed and USDC liquidity path may qualify. This preview records no wallet request or listing transaction.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "are unregistered targets",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Asset",
-        "count": 4
+        "count": 2
       },
       {
         "value": "Assets need a verified market path.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Back to markets",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Back to overview",
-        "count": 2
+        "count": 1
       },
       {
         "value": "breakeven",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Breakeven",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Briefing",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Calculated from your assumptions.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Cap",
-        "count": 6
+        "count": 3
       },
       {
         "value": "Cap +5% / 30-day epoch / model values per unit",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Cap default",
-        "count": 4
+        "count": 2
       },
       {
         "value": "Cap K",
-        "count": 2
+        "count": 1
       },
       {
         "value": "CAP K",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Cap price K",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Change in reference value",
-        "count": 2
+        "count": 1
       },
       {
         "value": "characters remaining",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Check the numbers.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Choose the cap. K is fixed for the epoch.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Clear filter",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Concepts",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Connect a Solana account to display its public address. This site does not ask for transaction signatures.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Connecting…",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Created",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Current",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Delete local record",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Details",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Edit",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Edit inputs",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Epoch",
-        "count": 4
+        "count": 2
       },
       {
         "value": "Error 404",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Exact percentage",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Example arithmetic only. No live quote is read and no order is placed.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Example arithmetic.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "example at",
-        "count": 4
+        "count": 2
       },
       {
         "value": "Example quotes / no live feed",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Example quotes are not live prices.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Example series",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Export JSON",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Feed",
-        "count": 6
+        "count": 3
       },
       {
         "value": "Fees",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Fees, slippage and taxes are excluded. No transaction is created.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "for “",
-        "count": 2
+        "count": 1
       },
       {
         "value": "For starting price P0 and cap rate c, K = P0 x (1 + c). At assumed settlement price S, Upside receives max(0, S - K). Income receives value up to K plus any hypothetical auction premium.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Four leaves",
-        "count": 2
+        "count": 1
       },
       {
         "value": "How",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Hypothetical move",
-        "count": 2
+        "count": 1
       },
       {
         "value": "if subscribed (model)",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Illustrative scenario",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Illustrative values. No live quote, custody, signing or execution.",
-        "count": 4
+        "count": 2
       },
       {
         "value": "Income",
-        "count": 10
+        "count": 5
       },
       {
         "value": "INCOME",
-        "count": 4
+        "count": 2
       },
       {
         "value": "Income /",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Income / unit",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Income + Upside",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Income and Upside describe modeled positions.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Income at settlement",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Income model",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Income share",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Income still bears the underlying asset's downside. A premium does not protect the market unit from a price decline.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Income still bears underlying downside. Upside may expire without a payoff. Oracle, liquidity, smart contract, counterparty, market, and regulatory risks remain outside this interface.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Indicative model values use a 30-day epoch and 25% volatility.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Indicative premium",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Install a wallet, enable its Solana account, then reopen this panel.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Interface preview / no live feed",
-        "count": 2
+        "count": 1
       },
       {
         "value": "is a proposed symbol only; it has not been issued, and no supply or utility is enabled in this preview.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "is a proposed symbol. No token has been issued and no contract address exists.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Journal",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Journal records stay in this browser's storage.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "K",
-        "count": 6
+        "count": 3
       },
       {
         "value": "Keep assumptions in this browser.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Keep the record.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Leg",
-        "count": 4
+        "count": 2
       },
       {
         "value": "Limits of this preview",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Listing",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Listing intake",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Local",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Local interface preview",
-        "count": 2
+        "count": 1
       },
       {
         "value": "local only",
-        "count": 2
+        "count": 1
       },
       {
         "value": "LOCAL ONLY",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Local scenario lab",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Looking for MetaMask, Phantom, Solflare and other Solana wallets…",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Market quotes",
-        "count": 2
+        "count": 1
       },
       {
         "value": "market terminal",
-        "count": 2
+        "count": 1
       },
       {
         "value": "market unit",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Markets",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Mechanism",
-        "count": 2
+        "count": 1
       },
       {
         "value": "MetaMask",
-        "count": 2
+        "count": 1
       },
       {
         "value": "MetaMask connector:",
-        "count": 2
+        "count": 1
       },
       {
         "value": "min(S, K)",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Mode",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Model",
-        "count": 6
+        "count": 3
       },
       {
         "value": "Model / unit",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Model premium",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Modelled value",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Move",
-        "count": 4
+        "count": 2
       },
       {
         "value": "Network",
-        "count": 4
+        "count": 2
       },
       {
         "value": "No compatible Solana wallet was detected.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "No contract address is published or implied.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "No custody, no signing, no trade execution.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "No fee is charged by this demo.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "No live price source is connected.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "No model markets match “",
-        "count": 2
+        "count": 1
       },
       {
         "value": "No such leaf.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "No trade order or private key is requested by this documentation view. External links have their own privacy practices.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Not a feed",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Not a live quote",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Not live",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Not required",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Nothing matches “",
-        "count": 2
+        "count": 1
       },
       {
         "value": "On chain stats",
-        "count": 2
+        "count": 1
       },
       {
         "value": "On this page",
-        "count": 2
+        "count": 1
       },
       {
         "value": "One asset again.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Only the selected wallet’s public Solana address is read.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Open",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Open the board",
-        "count": 4
+        "count": 2
       },
       {
         "value": "Open the journal",
-        "count": 2
+        "count": 1
       },
       {
         "value": "OPTIONAL",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Oracle",
-        "count": 2
+        "count": 1
       },
       {
         "value": "P0 $250 / 5% cap / K $262.50",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Pair",
-        "count": 4
+        "count": 2
       },
       {
         "value": "Pairs listed",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Paper only",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Per unit /",
-        "count": 2
+        "count": 1
       },
       {
         "value": "per unit / model at 25% vol / 30 days / the auction sets the price. Values per unit; Income is paid in SPL market units worth min(S, K); the premium goes to subscribers only.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "per unit; value above the cap is an upside leg priced",
-        "count": 2
+        "count": 1
       },
       {
         "value": "per unit.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Per-unit settlement value, before premium",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Phantom",
-        "count": 2
+        "count": 1
       },
       {
         "value": "preview",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Preview",
-        "count": 4
+        "count": 2
       },
       {
         "value": "preview / illustrative values / no transactions /",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Preview build",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Price a boundary",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Price the boundary.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Privacy",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Proposed, unissued",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Put a number behind your next idea. Enter a reference price, explore a hypothetical move, and keep your reasoning close.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Quotes are illustrative samples, not a market feed.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Read how it works",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Read listing notes",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Read the chain.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Read the demo privacy notice",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Read the demo terms",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Read the limits",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Recompose unavailable",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Recomposition would require a wallet transaction. The local preview keeps this action visible while execution remains unavailable.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Records",
-        "count": 4
+        "count": 2
       },
       {
         "value": "Reference",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Reference amount",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Reference price",
-        "count": 6
+        "count": 3
       },
       {
         "value": "Reference value",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Reset search",
-        "count": 2
+        "count": 1
       },
       {
         "value": "result",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Retry saving",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Review scenario",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Risks",
-        "count": 2
+        "count": 1
       },
       {
         "value": "S",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Sample move",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Sample quotes, a user-priced model and a browser-local journal. Nothing here is live and nothing is signed.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Sample spot",
-        "count": 4
+        "count": 2
       },
       {
         "value": "Sample tape",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Sandbox",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Save to journal",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Scenario move",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Scenario value",
-        "count": 4
+        "count": 2
       },
       {
         "value": "See the split",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Set a cap, move the settlement slider, and inspect how the illustrative value splits between Income and Upside. No order or wallet action is created.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Set your assumption.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "settlement",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Settlement",
-        "count": 4
+        "count": 2
       },
       {
         "value": "Settlement $200",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Settlement $250",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Settlement $300",
-        "count": 2
+        "count": 1
       },
       {
         "value": "settlement partition",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Settlement price S",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Settlement split",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Sheet",
-        "count": 6
+        "count": 3
       },
       {
         "value": "Skip to content",
-        "count": 2
+        "count": 1
       },
       {
         "value": "SOLANA /",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Solflare",
-        "count": 2
+        "count": 1
       },
       {
         "value": "SPOT",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Static",
-        "count": 4
+        "count": 2
       },
       {
         "value": "Static samples",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Status",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Stock price",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Stock, Income and Upside settlement values",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Storage",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Stores",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Suggest a market.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "symbol is separate.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Target",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Terms",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Terms for this local preview.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "That path is not in this preview. Start from the overview or open the board.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "The board",
-        "count": 2
+        "count": 1
       },
       {
         "value": "The modeled payoff is max(0, settlement price - K). A buyer's maximum modeled loss is the hypothetical premium paid.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "The payoff model uses values you enter.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "The proposed",
-        "count": 2
+        "count": 1
       },
       {
         "value": "The scenario journal stores its record locally and can export it as JSON. It does not submit a transaction or publish the record on chain.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "These illustrations describe a product concept, not deployed Solana programs.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Thesis note",
-        "count": 2
+        "count": 1
       },
       {
         "value": "This browser",
-        "count": 2
+        "count": 1
       },
       {
         "value": "This browser only",
-        "count": 2
+        "count": 1
       },
       {
         "value": "This is a private what-if calculator. Reference prices are entered by you; they are not live quotes or execution prices.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "This page describes how this local product demonstration should be read. It is not a production protocol policy, legal agreement, or investment recommendation.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "This page is a readable product notice for the interface. It does not replace production terms or create a contractual relationship.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "This preview models an illustrative split around a cap price. It does not custody SPL assets, run an auction, connect an oracle, or settle transactions.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Three parts of the model.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Token",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Unit",
-        "count": 8
+        "count": 4
       },
       {
         "value": "Unit quote",
-        "count": 2
+        "count": 1
       },
       {
         "value": "units",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Units",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Upside",
-        "count": 10
+        "count": 5
       },
       {
         "value": "UPSIDE",
-        "count": 4
+        "count": 2
       },
       {
         "value": "Upside / max(S - K, 0)",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Upside / unit",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Upside $0",
-        "count": 4
+        "count": 2
       },
       {
         "value": "Upside $37.50",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Upside at settlement",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Upside share",
-        "count": 2
+        "count": 1
       },
       {
         "value": "USD /",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Use a Solana wallet with an SPL account. The CA preview never asks for a seed phrase.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Value above K.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "value at settlement",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Value below the cap is an income leg priced",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Value up to K, plus any premium.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "vs spot",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Wallet",
-        "count": 2
+        "count": 1
       },
       {
         "value": "works.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Your assumptions.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Your browser holds the journal state.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Your idea.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Your local record.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "YOUR PRIVATE WORKSPACE",
-        "count": 2
+        "count": 1
       }
     ],
     "hiddenText": [
       {
         "value": "Filter the board",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Illustrative",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Model market values. Quotes are examples and are not live prices.",
-        "count": 2
+        "count": 1
       },
       {
         "value": "pairs with modelled unit prices",
-        "count": 2
+        "count": 1
       },
       {
         "value": "Search markets",
-        "count": 2
+        "count": 1
       }
     ],
     "attributes": [
       {
         "name": "href",
         "value": "/",
-        "count": 8
+        "count": 4
       },
       {
         "name": "href",
         "value": "/app/markets",
-        "count": 4
+        "count": 2
       },
       {
         "name": "href",
         "value": "/docs",
-        "count": 2
+        "count": 1
       },
       {
         "name": "href",
         "value": "/docs#listing",
-        "count": 2
+        "count": 1
       },
       {
         "name": "href",
         "value": "/privacy",
-        "count": 2
+        "count": 1
       },
       {
         "name": "href",
         "value": "/signal",
-        "count": 2
+        "count": 1
       },
       {
         "name": "href",
         "value": "/terms",
-        "count": 2
+        "count": 1
       },
       {
         "name": "href",
         "value": "#main",
-        "count": 2
+        "count": 1
       },
       {
         "name": "href",
         "value": "https://metamask.io/download/",
-        "count": 2
+        "count": 1
       },
       {
         "name": "href",
         "value": "https://phantom.app/download",
-        "count": 2
+        "count": 1
       },
       {
         "name": "href",
         "value": "https://solflare.com/download",
-        "count": 2
+        "count": 1
       },
       {
         "name": "placeholder",
         "value": "Filter by symbol",
-        "count": 2
+        "count": 1
       },
       {
         "name": "placeholder",
         "value": "Search token or market",
-        "count": 2
+        "count": 1
       },
       {
         "name": "placeholder",
         "value": "What would make this move plausible?",
-        "count": 2
+        "count": 1
       },
       {
         "name": "src",
         "value": "/icon.svg",
-        "count": 4
+        "count": 2
       },
       {
         "name": "to",
         "value": "body",
-        "count": 2
+        "count": 1
       }
     ],
     "bindings": [
       {
         "kind": "asset",
         "expr": "concept.image",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "asset",
         "expr": "wallet.icon",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "attr",
         "expr": "`/app/markets/${asset.symbol}`",
-        "count": 4
+        "count": 2
       },
       {
         "kind": "attr",
         "expr": "`/app/markets/${item.symbol}`",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "attr",
         "expr": "`#${id}`",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "attr",
         "expr": "concept.image",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "attr",
         "expr": "concept.title",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "attr",
         "expr": "item.symbol",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "attr",
         "expr": "to",
-        "count": 6
+        "count": 3
       },
       {
         "kind": "attr",
         "expr": "wallet.icon",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "(model.incomeShare * 100).toFixed(1)",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "(model.upsideShare * 100).toFixed(1)",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "activeWallet?.name || 'Solana wallet'",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "address",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "address ? 'Wallet connected' : 'Choose a wallet'",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "asset",
-        "count": 8
+        "count": 4
       },
       {
         "kind": "interpolation",
         "expr": "asset.initials",
-        "count": 4
+        "count": 2
       },
       {
         "kind": "interpolation",
         "expr": "asset.name",
-        "count": 4
+        "count": 2
       },
       {
         "kind": "interpolation",
         "expr": "asset.symbol",
-        "count": 4
+        "count": 2
       },
       {
         "kind": "interpolation",
         "expr": "body",
-        "count": 4
+        "count": 2
       },
       {
         "kind": "interpolation",
         "expr": "brand.asset",
-        "count": 26
+        "count": 13
       },
       {
         "kind": "interpolation",
         "expr": "brand.domain",
-        "count": 6
+        "count": 3
       },
       {
         "kind": "interpolation",
         "expr": "brand.handle",
-        "count": 4
+        "count": 2
       },
       {
         "kind": "interpolation",
         "expr": "brand.name",
-        "count": 6
+        "count": 3
       },
       {
         "kind": "interpolation",
         "expr": "brand.network",
-        "count": 20
-      },
-      {
-        "kind": "interpolation",
-        "expr": "brand.supportingLine",
-        "count": 2
-      },
-      {
-        "kind": "interpolation",
-        "expr": "cap",
         "count": 10
       },
       {
         "kind": "interpolation",
+        "expr": "brand.supportingLine",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "cap",
+        "count": 5
+      },
+      {
+        "kind": "interpolation",
         "expr": "change",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "chartDescription",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "concept.description",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "concept.title",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "copy",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "currency(record.basePrice, 4)",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "currency(result.baselineValue, 4)",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "currency(result.basePrice, 4)",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "currency(result.deltaUsd, 4)",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "currency(result.scenarioValue, 4)",
-        "count": 4
+        "count": 2
       },
       {
         "kind": "interpolation",
         "expr": "errorMessage",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "errors.amount",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "errors.basePrice",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "errors.movePct",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "errors.note",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "feedback",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "i + 1",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "isSaved ? 'SAVED' : 'NOT SAVED'",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "isSaved ? 'Stored only in this browser.' : 'Export a copy to keep this record.'",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "item.initials",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "item.name",
-        "count": 4
+        "count": 2
       },
       {
         "kind": "interpolation",
         "expr": "item.symbol",
-        "count": 6
+        "count": 3
       },
       {
         "kind": "interpolation",
         "expr": "label",
-        "count": 8
+        "count": 4
       },
       {
         "kind": "interpolation",
         "expr": "legalTitle",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "model.incomeShare >= model.upsideShare ? 'Most of the sample value sits below the cap.' : 'Most of the sample value sits above the cap.'",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "model.incomeShare.toFixed(1)",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "model.upsideShare.toFixed(1)",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "money(asset.payoff.incomePrice)",
-        "count": 4
+        "count": 2
       },
       {
         "kind": "interpolation",
         "expr": "money(asset.payoff.upsidePrice)",
-        "count": 4
+        "count": 2
       },
       {
         "kind": "interpolation",
         "expr": "money(high - model.strike)",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "money(high)",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "money(item.model.incomePrice)",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "money(item.model.strike)",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "money(item.model.upsidePrice)",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "money(model.breakeven)",
-        "count": 4
+        "count": 2
       },
       {
         "kind": "interpolation",
         "expr": "money(model.incomePrice)",
-        "count": 6
+        "count": 3
       },
       {
         "kind": "interpolation",
         "expr": "money(model.incomeSettlement)",
-        "count": 4
+        "count": 2
       },
       {
         "kind": "interpolation",
         "expr": "money(model.incomeWithPremium)",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "money(model.premium)",
-        "count": 6
+        "count": 3
       },
       {
         "kind": "interpolation",
         "expr": "money(model.spot)",
-        "count": 6
+        "count": 3
       },
       {
         "kind": "interpolation",
         "expr": "money(model.strike)",
-        "count": 12
+        "count": 6
       },
       {
         "kind": "interpolation",
         "expr": "money(model.upsidePrice)",
-        "count": 6
+        "count": 3
       },
       {
         "kind": "interpolation",
         "expr": "money(model.upsideSettlement)",
-        "count": 4
+        "count": 2
       },
       {
         "kind": "interpolation",
         "expr": "money(row.income)",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "money(row.price)",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "money(row.upside)",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "money(settlement)",
-        "count": 4
+        "count": 2
       },
       {
         "kind": "interpolation",
         "expr": "money(tick)",
-        "count": 4
+        "count": 2
       },
       {
         "kind": "interpolation",
         "expr": "money(unitPrice * amount)",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "money(unitPrice)",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "movePct",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "new Date(record.createdAt).toLocaleString()",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "note",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "num",
-        "count": 4
+        "count": 2
       },
       {
         "kind": "interpolation",
         "expr": "number",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "Number(record.amount).toLocaleString()",
-        "count": 4
+        "count": 2
       },
       {
         "kind": "interpolation",
         "expr": "option",
-        "count": 6
+        "count": 3
       },
       {
         "kind": "interpolation",
         "expr": "pageTitle",
-        "count": 4
+        "count": 2
       },
       {
         "kind": "interpolation",
         "expr": "paragraph",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "pct(item.change)",
-        "count": 4
+        "count": 2
       },
       {
         "kind": "interpolation",
         "expr": "pendingWallet ? 'Connecting…' : buttonLabel",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "pendingWallet ? 'Disconnecting…' : 'Disconnect wallet'",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "percent(record.movePct)",
-        "count": 4
+        "count": 2
       },
       {
         "kind": "interpolation",
         "expr": "props.query.trim()",
-        "count": 4
+        "count": 2
       },
       {
         "kind": "interpolation",
         "expr": "query",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "record.note",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "remaining",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "result.deltaUsd >= 0 ? '+' : ''",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "rows.length",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "rows.length === 1 ? '' : 's'",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "selected",
-        "count": 6
+        "count": 3
       },
       {
         "kind": "interpolation",
         "expr": "setupMessage",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "showTable ? 'Chart' : 'Table'",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "side",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "signed(model.spotChangePercent)",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "solanaConfig.cluster.toUpperCase()",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "spot(asset.spot)",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "spot(item.spot)",
-        "count": 4
+        "count": 2
       },
       {
         "kind": "interpolation",
         "expr": "stat.detail",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "stat.label",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "storageNotice",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "String(index + 1).padStart(2, '0')",
-        "count": 4
+        "count": 2
       },
       {
         "kind": "interpolation",
         "expr": "symbol",
-        "count": 4
+        "count": 2
       },
       {
         "kind": "interpolation",
         "expr": "symbol === 'SOL' ? '$182.00' : symbol === 'JUP' ? '$1.12' : symbol === 'BONK' ? '$0.000021' : '$1.00'",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "symbol.slice(0, 1)",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "interpolation",
         "expr": "title",
-        "count": 4
+        "count": 2
       },
       {
         "kind": "interpolation",
         "expr": "wallet.name",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "link",
         "expr": "`/app/markets/${asset.symbol}`",
-        "count": 4
+        "count": 2
       },
       {
         "kind": "link",
         "expr": "`/app/markets/${item.symbol}`",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "link",
         "expr": "`#${id}`",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "link",
         "expr": "to",
-        "count": 6
+        "count": 3
       },
       {
         "kind": "model",
         "expr": "amount",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "model",
         "expr": "basePrice",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "model",
         "expr": "cap",
-        "count": 4
+        "count": 2
       },
       {
         "kind": "model",
         "expr": "movePct",
-        "count": 4
+        "count": 2
       },
       {
         "kind": "model",
         "expr": "note",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "model",
         "expr": "query",
-        "count": 4
+        "count": 2
       },
       {
         "kind": "model",
         "expr": "selected",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "model",
         "expr": "settlement",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "model",
         "expr": "units",
-        "count": 2
+        "count": 1
       }
     ],
     "events": [
       {
         "event": "click",
         "handler": "changeStage(i)",
-        "count": 2
+        "count": 1
       },
       {
         "event": "click",
         "handler": "closeModal",
-        "count": 4
+        "count": 2
       },
       {
         "event": "click",
         "handler": "connect(wallet)",
-        "count": 2
+        "count": 1
       },
       {
         "event": "click",
         "handler": "disconnect",
-        "count": 2
+        "count": 1
       },
       {
         "event": "click",
         "handler": "downloadJournal",
-        "count": 2
+        "count": 1
       },
       {
         "event": "click",
         "handler": "edit",
-        "count": 4
+        "count": 2
       },
       {
         "event": "click",
         "handler": "emit('navigate', '/app/markets')",
-        "count": 2
+        "count": 1
       },
       {
         "event": "click",
         "handler": "emit('navigate', '/risk')",
-        "count": 2
+        "count": 1
       },
       {
         "event": "click",
         "handler": "emit('navigate', `/app/markets/${item.symbol}`)",
-        "count": 2
+        "count": 1
       },
       {
         "event": "click",
         "handler": "emit('navigate','/')",
-        "count": 2
+        "count": 1
       },
       {
         "event": "click",
         "handler": "emit('navigate','/docs#listing')",
-        "count": 2
+        "count": 1
       },
       {
         "event": "click",
         "handler": "go('/')",
-        "count": 2
+        "count": 1
       },
       {
         "event": "click",
         "handler": "go('/docs')",
-        "count": 2
+        "count": 1
       },
       {
         "event": "click",
         "handler": "go('/privacy')",
-        "count": 2
+        "count": 1
       },
       {
         "event": "click",
         "handler": "go('/signal')",
-        "count": 2
+        "count": 1
       },
       {
         "event": "click",
         "handler": "go('/terms')",
-        "count": 2
+        "count": 1
       },
       {
         "event": "click",
         "handler": "navigate('/')",
-        "count": 4
+        "count": 2
       },
       {
         "event": "click",
         "handler": "navigate('/app/markets')",
-        "count": 2
+        "count": 1
       },
       {
         "event": "click",
         "handler": "navigate(asset.symbol)",
-        "count": 4
+        "count": 2
       },
       {
         "event": "click",
         "handler": "navigate(to)",
-        "count": 4
+        "count": 2
       },
       {
         "event": "click",
         "handler": "persist",
-        "count": 2
+        "count": 1
       },
       {
         "event": "click",
         "handler": "query = ''",
-        "count": 2
+        "count": 1
       },
       {
         "event": "click",
         "handler": "railOpen = !railOpen",
-        "count": 2
+        "count": 1
       },
       {
         "event": "click",
         "handler": "railOpen = false",
-        "count": 2
+        "count": 1
       },
       {
         "event": "click",
         "handler": "removeJournal",
-        "count": 2
+        "count": 1
       },
       {
         "event": "click",
         "handler": "resetSearch",
-        "count": 2
+        "count": 1
       },
       {
         "event": "click",
         "handler": "save",
-        "count": 2
+        "count": 1
       },
       {
         "event": "click",
         "handler": "selected = item.symbol",
-        "count": 4
+        "count": 2
       },
       {
         "event": "click",
         "handler": "showFilters = !showFilters",
-        "count": 2
+        "count": 1
       },
       {
         "event": "click",
         "handler": "showModal",
-        "count": 2
+        "count": 1
       },
       {
         "event": "click",
         "handler": "showTable = !showTable",
-        "count": 2
+        "count": 1
       },
       {
         "event": "click",
         "handler": "side = option",
-        "count": 6
+        "count": 3
       },
       {
         "event": "click",
         "handler": "to.startsWith('#') ? toBoundary() : emit('navigate', to)",
-        "count": 2
+        "count": 1
       },
       {
         "event": "click",
         "handler": "toBoundary",
-        "count": 4
+        "count": 2
       },
       {
         "event": "keydown",
         "handler": "closeModal",
-        "count": 2
+        "count": 1
       },
       {
         "event": "keydown",
         "handler": "onDialogKeydown",
-        "count": 2
+        "count": 1
       },
       {
         "event": "submit",
         "handler": "review",
-        "count": 2
+        "count": 1
       }
     ],
     "links": [
       {
         "kind": "href",
         "target": "/",
-        "count": 8
-      },
-      {
-        "kind": "href",
-        "target": "/app/markets",
         "count": 4
       },
       {
         "kind": "href",
-        "target": "/docs",
+        "target": "/app/markets",
         "count": 2
+      },
+      {
+        "kind": "href",
+        "target": "/docs",
+        "count": 1
       },
       {
         "kind": "href",
         "target": "/docs#listing",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "href",
         "target": "/privacy",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "href",
         "target": "/signal",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "href",
         "target": "/terms",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "href",
         "target": "#main",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "href",
         "target": "https://metamask.io/download/",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "href",
         "target": "https://phantom.app/download",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "href",
         "target": "https://solflare.com/download",
-        "count": 2
+        "count": 1
       },
       {
         "kind": "to",
         "target": "body",
-        "count": 2
+        "count": 1
       }
     ],
     "assets": [
       {
         "kind": "src",
         "value": "/icon.svg",
-        "count": 4
+        "count": 2
       }
     ],
     "forms": [
@@ -3004,37 +3055,37 @@
         "tag": "input",
         "name": "",
         "type": "",
-        "count": 6
+        "count": 3
       },
       {
         "tag": "input",
         "name": "",
         "type": "number",
-        "count": 2
+        "count": 1
       },
       {
         "tag": "input",
         "name": "",
         "type": "range",
-        "count": 8
+        "count": 4
       },
       {
         "tag": "input",
         "name": "",
         "type": "search",
-        "count": 4
+        "count": 2
       },
       {
         "tag": "select",
         "name": "",
         "type": "",
-        "count": 2
+        "count": 1
       },
       {
         "tag": "textarea",
         "name": "",
         "type": "",
-        "count": 2
+        "count": 1
       }
     ],
     "i18n": [],
@@ -3043,5 +3094,5 @@
     "api": [],
     "env": []
   },
-  "contentContractHash": "3a7f596d88bae2d33fff020c22e6632666384f80cf177291f9a322ccca481ba5"
+  "contentContractHash": "081faeac66dd7468c844126e52f97a3dbe75ceaac7dc1957a980213acc8d2978"
 }

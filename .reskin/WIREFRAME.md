@@ -1,56 +1,79 @@
-# Wiring plan — Orbit Atlas (committed before implementation)
+# Wireframe — Abyss Console (Pretiola)
 
-Style: **Cosmos Orbit** (`cosmos-orbit`), skeleton target: **Gallery Scroll / spatial**.
-Original: `sidebar-workspace` / `shell` — a fixed left rail plus a ruled paper sheet.
+Selected automatically: **Abyss Liquidity** (`aave-abyss`, dark-technical) with the
+**Terminal Console** (`terminal-console`, linear) skeleton. Original skeleton: `orbital`
+(spatial) — a floating pill dock, a sticky mast and full-bleed scenes on a star field.
+Source DNA sampled live from <https://aave.com> (3459 ms); only abstract palette, type,
+shape, density and motion were taken.
 
-## New shell
+This wireframe is the commitment. Every route uses the console archetype; there is no
+fallback shell.
 
-| Region | Element | Replaces |
-|---|---|---|
-| Identity | `header.atlas-mast` (sticky): brand lockup, 2-line build line, telemetry ribbon, wallet + open-board actions | `.rail` head, `.rail-foot`, `.strip` |
-| Navigation | `nav.atlas-dock`: floating pill dock, fixed bottom centre, 6 route links with number, label and note; horizontally scrollable on phones | `.rail-nav` |
-| Stage | `main.atlas-stage`: sequence of `.atlas-scene` blocks separated by one hairline | `.sheet` + 12-column `.editorial` grid |
-| Station data | `footer.atlas-colophon`: brand, figure list, station readout `dl`, tiny disclaimer | `.rail-readout`, `.rail-tiny`, `.colophon` |
-| Mobile drawer | `button.atlas-mast-more` reveals the telemetry ribbon; `.atlas-mast-scrim` closes it | `.railtoggle` + `.rail-scrim` |
+## 1. Shell — `App.vue`
 
-Landmarks go from `aside > nav > main > header > aside > footer > nav` to
-`header > nav > main > footer` (`/docs` adds the on-page index as a second `nav`).
+```
+<main class="tty-console" id="main">
+  <div class="tty-status">            status strip, 30px, sticky
+    brand link · Mode/Network/Unit/Records · handle + domain targets
+  </div>
+  <div class="tty-command">           command line
+    prompt + "network market terminal / Preview build"   wallet · Open the board · nav toggle
+  </div>
+  <div class="tty-deck">              two-track console
+    <nav class="tty-nav">             command rail (01-06), current command marked
+    <div class="tty-stage">           route content
+      <route component>
+      <colophon>
+    </div>
+  </div>
+  <div class="tty-hint">              station readout + disclaimer
+</main>
+```
 
-## Route → composition
+- Landmarks: `main` then `nav` inside it. No `header`, no floating dock, no `aside`.
+- Navigation pattern: a vertical command rail of numbered commands with their notes, inside
+  the console. Below 860px the rail becomes a horizontal command strip behind an
+  `aria-expanded` toggle in the command line (Escape closes it).
+- Mobile: one column; the status cells collapse at 560px; the hint strip stacks.
 
-| Route | Scenes |
+## 2. Route mapping
+
+| Route | New composition (regions) |
 |---|---|
-| `/` | 01 opening (display headline + orbit rings + CTA column) · 02 metric ribbon (6 facts) · 03 board (switch + search + table) · 04 unit quote (readout column + control card) · 05 settlement split (`#cap`: figure + 2×4 readout) · 06 sample tape (snap rail) · 07 briefing (2×2 link plates) · 08 limits (halo panel) |
-| `/app/markets` | opening + back link · sheet facts (4) · board branch: filters rail + `MarketTable` (head, stats, table, card rail, footnote) · leaf branch for launchpad/recompose · passport + payoff branch for an asset |
-| `/docs` | opening · on-page index as a horizontal pill rail · mechanism (steps + two role plates) · concepts (three inverted plates) · settlement (copy + formula) · eight prose leaves in a 2-column constellation · legacy anchors |
-| `/risk`, `/terms`, `/privacy` | opening + quoted prose column + two actions |
-| `/signal` | opening · form scene (field column + `atlas-face` form, aside plate) · record scenes for review and journal |
+| `/` | command block (kicker, h1, lead, actions, note) → metric strip → **pane deck**: left = board table with its filter/switch toolbar, right = unit-quote form and readout → settlement split → sample tape → briefing → limits |
+| `/app/markets` | command block → **pane deck**: left = filters + market table (`Market quotes`, stats band), right = sheet-facts rail → colophon |
+| `/app/markets/:symbol` | command block → **pane deck**: left = passport + payoff explorer, right = facts rail |
+| `/signal` | command block → **pane deck**: left = step form, right = assumption panel / review record / journal record |
+| `/docs` | command block → **document console**: left = in-page index (sticky), right = mechanism, concepts, settlement, prose leaves |
+| `/privacy`, `/terms` | command block → legal copy block → actions; same console shell |
+| 404 | console error block inside the stage |
 
-## Component decisions
+## 3. Components
 
-| Old | New |
-|---|---|
-| `App.vue` shell (rail + strip) | rewritten: mast, dock, stage, colophon |
-| `HomePage` mast + 12-col editorial | rewritten as eight scenes |
-| `MarketWorkspace` header + `cells` + `panel` cards | rewritten as scenes + passports |
-| `MarketTable` `ledger`, `market-cards`, `cells` | rewritten: `atlas-table` + card rail, stats grid |
-| `PayoffExplorer` `panel` + `chart-*` | rewritten: dial column + instrument card + meters |
-| `DocsPage` sticky TOC + ruled sheet | rewritten: pill index + leaves |
-| `ScenarioLab` `sl-*` two-column | rewritten: field deck + aside plate + record plate |
-| `SolanaWalletButton` ink sheet dialog | rewritten: rounded hatch dialog with pill options |
-| `src/styles.css`, `src/mobile.css` | deleted; replaced by `src/reskin.css` |
+- `App.vue` — rewritten shell (status strip, command line, command rail, stage, hint strip,
+  colophon). Script logic kept: `pathname`, `navigate`, `popState`, `scrollToHash`, title
+  watch, Escape handling (now closing the command drawer).
+- `HomePage.vue` — hero retained as the command block; board and quote moved into a two-track
+  deck; settlement split, tape, briefing and limits follow as console blocks.
+- `MarketWorkspace.vue` — opening + deck: table left, facts rail right; detail/leaf routes
+  keep their own left pane.
+- `MarketTable.vue` — data grid restyled (mono headers, tabular numbers, state pills, mobile
+  card rail retained).
+- `PayoffExplorer.vue` — dial column + instrument card, chart/table toggle retained.
+- `DocsPage.vue` — in-page index becomes a sticky left rail; prose becomes the right column.
+- `ScenarioLab.vue` — field deck + assumption/record panel, step track retained.
+- `SolanaWalletButton.vue` — dialog restyled to a console sheet.
 
-Content-only children (SVG payoff figure, concept plates, all form fields, all
-copy) are kept verbatim; only wrappers, class names and layout change.
+## 4. CSS architecture
 
-## Tokens and breakpoints
-
-- `src/reskin.css` defines `--void / --deck / --star / --beam / --hair / --glow`,
-  `--r-pill / --r-lg / --r-md / --r-sm`, `--font-display / --font-body / --font-mono`,
-  `--pad`, `--fit`, `--dock-h`, `--ease`.
-- Breakpoints: 1180 (fact grid → 3), 1080–1100 (split scenes stack), 1000 (form stacks),
-  900 (mast compacts, ribbon → drawer, dock notes hidden, 2-col → 1-col),
-  780/640/620 (tables and pairs stack), 580 (market cards replace the table),
-  520–480 (meters and dialog go full width).
-- Motion: 180–420 ms with `cubic-bezier(.16, 1, .3, 1)`, all non-essential motion
-  guarded by `prefers-reduced-motion`.
+- `src/console.css` — the single global layer: tokens (Abyss), reset/base type, console shell,
+  deck/rail/pane layout, typography, surface, pills, buttons, switch, fact grid, key/value,
+  rails, tables, forms, notices, colophon, responsive rules, reduced-motion guard.
+- `src/reskin.css` — deleted (old global layer, no longer imported).
+- Component `<style scoped>` blocks remain, renamed to the new token/class names; they carry
+  component-specific layout only.
+- New namespace: `tty-` (shell/primitives), `pag-` (home), `wrk-` (markets), `tbl-` (table),
+  `pfx-` (payoff), `doc-` (docs), `log-` (scenario), `wal-` (wallet). No original class or
+  token name survives.
+- Breakpoints: 1080px (deck collapses), 900px (docs index becomes a strip), 860px (rail becomes
+  a drawer), 560px (status cells collapse).

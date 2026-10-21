@@ -1,4 +1,4 @@
-"""Generate Filza's website identity artwork and concept figures.
+"""Generate Pretiola's website identity artwork and concept figures.
 
 The palette, the mark geometry and the dual PNG/SVG writer all come from
 ``twitter/brandkit.py``; this module only composes scenes, so the site art and
@@ -90,9 +90,9 @@ def save_raster(scene: Scene, path: Path) -> Path:
 def icon() -> Path:
     """64x64 mark at full bleed with a small paper margin, legible at 16px."""
     s = Scene(64, 64, f"{BRAND} mark",
-              "The Filza folio: an F cut from ledger rules — a full-height ink stem, a "
-              "full-width top rule and a shorter middle rule that ends in a flare-orange "
-              "node — on a paper ground.")
+              "The Pretiola pip: a P struck from ledger rules — a full-height ink stem, a "
+              "squared top rule that turns into the bowl wall, a middle rule that closes "
+              "the bowl, and a flare-orange pip set just past it — on a paper ground.")
     s.mark(32, 32, 52)  # 6px of paper on every side
     return save_vector(s, PUBLIC / "icon.svg")
 
@@ -162,7 +162,7 @@ def concept_backing() -> Scene:
         "A ruled ledger of the assets on the board, with mono sample prices.",
         f"{BRAND} watchlist figure",
         "A ruled watchlist ledger panel lists three sample rows: SOL at $182.40, JUP at "
-        "$1.12 and FILZA, proposed and not issued, at $1.00, with a delta and a state "
+        "$1.12 and PRETIOLA, proposed and not issued, at $1.00, with a delta and a state "
         "column and a SAMPLE DATA flag. Illustrative rows only; there is no live quote "
         "feed.")
     x, y, w = 56, 306, 1088
@@ -362,7 +362,7 @@ def og_image() -> Scene:
     s.grid(824, 158, 320, 320, step=32, color=HAIR)
     s.rect(824, 158, 320, 5, FLARE)
     s.mark(984, 318, 200)
-    s.text(984, 452, "THE FILZA FOLIO", 13, RULE, "mono", "center")
+    s.text(984, 452, "THE PRETIOLA PIP", 13, RULE, "mono", "center")
 
     s.box(56, 158, 58, 5, FLARE)
     s.text(56, 232, "READ THE CHAIN.", 54, INK, "display")

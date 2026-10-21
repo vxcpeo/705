@@ -73,7 +73,7 @@ test('journal round trip preserves the entered assumptions and review stage', ()
   assert.equal(restored.migrated, false)
   assert.deepEqual(restored.value, original)
   assert.deepEqual(calculateScenario(restored.value), calculateScenario(inputs))
-  assert.equal(original.asset, 'FILZA')
+  assert.equal(original.asset, 'PRETIOLA')
   assert.equal(original.id, 'MK-TEST01')
   assert.equal(original.schemaVersion, SCHEMA_VERSION)
   assert.equal(original.basePrice, 0.0248)
@@ -96,19 +96,19 @@ test('old placeholder journal converts its value into a user-entered assumption'
   assert.equal(restored.valid, true)
   assert.equal(restored.migrated, true)
   assert.equal(restored.value.id, 'MK-OLD01')
-  assert.equal(restored.value.asset, 'FILZA')
+  assert.equal(restored.value.asset, 'PRETIOLA')
   assert.equal(restored.value.basePrice, 0.0248)
   assert.equal('snapshot' in restored.value, false)
   assert.equal(validateJournalRecord(old).valid, false)
 })
 
-test('current-version legacy brand records normalize once into the Filza identity', () => {
-  for (const asset of ['TKVA', 'IVRN']) {
+test('current-version legacy brand records normalize once into the Pretiola identity', () => {
+  for (const asset of ['TKVA', 'IVRN', 'FILZA']) {
     const older = { ...createJournalRecord(inputs, options), asset, id: 'OB-TEST01' }
     const restored = restoreJournalRecord(older)
     assert.equal(restored.valid, true)
     assert.equal(restored.migrated, true)
-    assert.equal(restored.value.asset, 'FILZA')
+    assert.equal(restored.value.asset, 'PRETIOLA')
     assert.equal(restored.value.id, 'MK-TEST01')
     assert.equal(restoreJournalRecord(restored.value).migrated, false)
   }

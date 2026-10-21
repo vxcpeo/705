@@ -1,6 +1,6 @@
-# Reskin inventory — filza-website
+# Reskin inventory — pretiola-website
 
-Generated: 2026-10-19T18:46:57.213Z
+Generated: 2026-10-20T15:49:48.246Z
 
 ## Project
 
@@ -11,16 +11,16 @@ Generated: 2026-10-19T18:46:57.213Z
 | Package manager | npm |
 | Nuxt | no |
 | CSS frameworks | none detected |
-| Files scanned | 26 (16 SFCs) |
+| Files scanned | 15 (8 SFCs) |
 
 ## Original skeleton
 
-- Archetype: **sidebar-workspace** (shell)
-- Traits: sidebar, cards, hero, table, grid, tabs, modal, charts, sticky, terminal
-- Max template depth: 11
-- Top-level tags: a, div, section, section, div, section, section, section, section, div, a, div, section, section, div, section, section, section, section, div
+- Archetype: **terminal-console** (linear)
+- Traits: cards, table, grid, tabs, modal, charts, sticky, terminal
+- Max template depth: 12
+- Top-level tags: a, div, div, div, section, div, section, section, div
 
-The replacement skeleton must not be `sidebar-workspace` and must not be in the same family (`shell`).
+The replacement skeleton must not be `terminal-console` and must not be in the same family (`linear`).
 
 ## Routes
 
@@ -33,14 +33,14 @@ The replacement skeleton must not be `sidebar-workspace` and must not be in the 
 
 ## Palette (most used first)
 
-`#ffffff` (16) · `#0d0d10` (8) · `#3a3a44` (6) · `#f2eee6` (4) · `#0f8a63` (2) · `#1f4fe0` (2) · `#2b2b33` (2) · `#33333c` (2) · `#4a4a55` (2) · `#6f6a60` (2)
+`#ff0000` (20) · `#050608` (14) · `#0a0e14` (7) · `#000000` (5) · `#0d141b` (5) · `#5ce1a0` (4) · `#ff00c8` (3) · `#ff6b6b` (3) · `#121a24` (2) · `#182533` (2)
 
 ## Content lock
 
-- Static visible text tokens: **672**
-- Binding expressions: **428**
-- Event handlers: **92**
-- Contract hash: `3a7f596d88bae2d33fff020c22e6632666384f80cf177291f9a322ccca481ba5`
+- Static visible text tokens: **336**
+- Binding expressions: **214**
+- Event handlers: **46**
+- Contract hash: `081faeac66dd7468c844126e52f97a3dbe75ceaac7dc1957a980213acc8d2978`
 
 Everything in `.reskin/content-contract.json` is immutable: visible copy, placeholders, labels, routes, link targets, asset sources, bindings, handlers, API endpoints and i18n values. A reskin may move these tokens to new markup but may not rewrite, remove or hide them.
 

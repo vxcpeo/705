@@ -70,7 +70,7 @@ async function popState() {
 function onKeydown(event) {
   if (event.key === 'Escape' && railOpen.value) {
     railOpen.value = false
-    document.querySelector('.atlas-mast-more')?.focus()
+    document.querySelector('.tty-command-more')?.focus()
   }
 }
 
@@ -95,92 +95,104 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <a class="atlas-skip" href="#main">Skip to content</a>
+  <a class="tty-skip" href="#main">Skip to content</a>
 
-  <div class="atlas-root">
-    <header class="atlas-mast">
-      <div class="atlas-mast-id">
-        <a class="atlas-brand" href="/" :aria-label="`${brand.name} overview`" @click.prevent="navigate('/')">
-          <img src="/icon.svg" alt="" width="34" height="34" decoding="async" aria-hidden="true" />
+  <div class="tty-frame">
+    <main id="main" class="tty-console">
+      <div class="tty-status">
+        <a class="tty-status-brand" href="/" :aria-label="`${brand.name} overview`" @click.prevent="navigate('/')">
+          <img src="/icon.svg" alt="" width="18" height="18" decoding="async" aria-hidden="true" />
           <span>{{ brand.name }}</span>
         </a>
-        <p class="atlas-brand-copy">{{ brand.network }} market terminal<br />Preview build</p>
-      </div>
-
-      <div class="atlas-mast-actions">
-        <SolanaWalletButton class="atlas-wallet" />
-        <a class="atlas-btn atlas-btn--ghost atlas-mast-open" href="/app/markets" @click.prevent="navigate('/app/markets')">Open the board</a>
-        <button class="atlas-mast-more" type="button" :aria-expanded="railOpen" aria-controls="atlas-ribbon"
-                :aria-label="railOpen ? 'Close telemetry' : 'Open telemetry'" @click="railOpen = !railOpen">
-          <Activity :size="17" />
-        </button>
-      </div>
-
-      <button v-if="railOpen" class="atlas-mast-scrim" type="button" tabindex="-1" aria-hidden="true" @click="railOpen = false"></button>
-
-      <div id="atlas-ribbon" class="atlas-ribbon" :class="{ 'is-open': railOpen }" role="status" aria-label="Build status">
-        <span class="atlas-ribbon-cell"><i aria-hidden="true"></i>Mode <b>Preview</b></span>
-        <span class="atlas-ribbon-cell atlas-ribbon-cell--wide">Network <b>{{ brand.network }}</b></span>
-        <span class="atlas-ribbon-cell atlas-ribbon-cell--wide">Unit <b>{{ brand.asset }} / not issued</b></span>
-        <span class="atlas-ribbon-cell">Records <b>local only</b></span>
-        <span class="atlas-ribbon-tail">{{ brand.handle }} / {{ brand.domain }} / targets, not registered</span>
-      </div>
-    </header>
-
-    <nav class="atlas-dock" aria-label="Primary">
-      <a v-for="[num, label, to, note] in nav" :key="to" class="atlas-dock-link" :href="to"
-         :aria-current="isCurrent(to) ? 'page' : undefined" @click.prevent="navigate(to)">
-        <b>{{ num }}</b><span>{{ label }}</span><small>{{ note }}</small>
-      </a>
-    </nav>
-
-    <main id="main" class="atlas-stage">
-      <HomePage v-if="pathname === '/'" @navigate="navigate" />
-      <MarketWorkspace v-else-if="appPage" :path="pathname" @navigate="navigate" />
-      <ScenarioLab v-else-if="pathname === '/signal'" />
-      <DocsPage v-else-if="['/docs', '/risk', '/terms', '/privacy'].includes(pathname)" :path="pathname" @navigate="navigate" />
-      <section v-else class="atlas-scene">
-        <div class="atlas-scene-in atlas-stack atlas-lost">
-          <p class="atlas-kicker">Error 404</p>
-          <h1 class="atlas-display" tabindex="-1">No such leaf.</h1>
-          <p class="atlas-lead">That path is not in this preview. Start from the overview or open the board.</p>
-          <p class="atlas-lost-cta"><a class="atlas-btn atlas-btn--primary" href="/" @click.prevent="navigate('/')">Back to overview</a></p>
+        <div class="tty-status-cells" role="status" aria-label="Build status">
+          <span class="tty-status-cell"><i aria-hidden="true"></i>Mode <b>Preview</b></span>
+          <span class="tty-status-cell">Network <b>{{ brand.network }}</b></span>
+          <span class="tty-status-cell">Unit <b>{{ brand.asset }} / not issued</b></span>
+          <span class="tty-status-cell">Records <b>local only</b></span>
         </div>
-      </section>
+        <span class="tty-status-tail">{{ brand.handle }} / {{ brand.domain }} / targets, not registered</span>
+      </div>
 
-      <footer class="atlas-colophon">
-        <div class="atlas-colophon-in">
-          <div class="atlas-colophon-top">
-            <div class="atlas-colophon-brand">
-              <img src="/icon.svg" alt="" width="24" height="24" decoding="async" aria-hidden="true" />
-              <b>{{ brand.name }}</b>
+      <div class="tty-command">
+        <div class="tty-command-line">
+          <span class="tty-prompt" aria-hidden="true">&#10095;</span>
+          <p class="tty-command-copy">{{ brand.network }} market terminal<br />Preview build</p>
+        </div>
+        <div class="tty-command-actions">
+          <SolanaWalletButton class="tty-wallet" />
+          <a class="tty-btn tty-btn--ghost" href="/app/markets" @click.prevent="navigate('/app/markets')">Open the board</a>
+          <button class="tty-command-more" type="button" :aria-expanded="railOpen" aria-controls="tty-commands"
+                  :aria-label="railOpen ? 'Close navigation' : 'Open navigation'" @click="railOpen = !railOpen">
+            <Activity :size="17" />
+          </button>
+        </div>
+      </div>
+
+      <button v-if="railOpen" class="tty-nav-scrim" type="button" tabindex="-1" aria-hidden="true" @click="railOpen = false"></button>
+
+      <div class="tty-deck">
+        <nav id="tty-commands" class="tty-nav" :class="{ open: railOpen }" aria-label="Primary">
+          <a v-for="[num, label, to, note] in nav" :key="to" class="tty-nav-link" :href="to"
+             :aria-current="isCurrent(to) ? 'page' : undefined" @click.prevent="navigate(to)">
+            <b>{{ num }}</b><span>{{ label }}</span><small>{{ note }}</small>
+          </a>
+        </nav>
+
+        <div class="tty-stage">
+          <HomePage v-if="pathname === '/'" @navigate="navigate" />
+          <MarketWorkspace v-else-if="appPage" :path="pathname" @navigate="navigate" />
+          <ScenarioLab v-else-if="pathname === '/signal'" />
+          <DocsPage v-else-if="['/docs', '/risk', '/terms', '/privacy'].includes(pathname)" :path="pathname" @navigate="navigate" />
+          <section v-else class="tty-scene">
+            <div class="tty-scene-in tty-stack tty-lost">
+              <p class="tty-kicker">Error 404</p>
+              <h1 class="tty-display" tabindex="-1">No such leaf.</h1>
+              <p class="tty-lead">That path is not in this preview. Start from the overview or open the board.</p>
+              <p class="tty-lost-cta"><a class="tty-btn tty-btn--primary" href="/" @click.prevent="navigate('/')">Back to overview</a></p>
             </div>
-            <p class="atlas-colophon-copy">{{ brand.network }} preview / illustrative values / no transactions / {{ brand.handle }} and {{ brand.domain }} are unregistered targets</p>
-            <ul class="atlas-colophon-links">
-              <li v-for="[label, to] in colophonLinks" :key="to"><a :href="to" @click.prevent="navigate(to)">{{ label }}</a></li>
-            </ul>
+          </section>
+
+          <div class="tty-colophon">
+            <div class="tty-colophon-in">
+              <div class="tty-colophon-top">
+                <div class="tty-colophon-brand">
+                  <img src="/icon.svg" alt="" width="20" height="20" decoding="async" aria-hidden="true" />
+                  <b>{{ brand.name }}</b>
+                </div>
+                <p class="tty-colophon-copy">{{ brand.network }} preview / illustrative values / no transactions / {{ brand.handle }} and {{ brand.domain }} are unregistered targets</p>
+                <ul class="tty-colophon-links">
+                  <li v-for="[label, to] in colophonLinks" :key="to"><a :href="to" @click.prevent="navigate(to)">{{ label }}</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
-
-          <dl class="atlas-station">
-            <div><dt>Feed</dt><dd class="is-hold">Static samples</dd></div>
-            <div><dt>Unit</dt><dd>{{ brand.asset }} / unissued</dd></div>
-            <div><dt>Stores</dt><dd>This browser</dd></div>
-            <div><dt>Target</dt><dd>{{ brand.domain }}</dd></div>
-          </dl>
-
-          <p class="atlas-tiny">Illustrative values. No live quote, custody, signing or execution.</p>
         </div>
-      </footer>
+      </div>
+
+      <div class="tty-hint">
+        <dl class="tty-station">
+          <div><dt>Feed</dt><dd class="is-hold">Static samples</dd></div>
+          <div><dt>Unit</dt><dd>{{ brand.asset }} / unissued</dd></div>
+          <div><dt>Stores</dt><dd>This browser</dd></div>
+          <div><dt>Target</dt><dd>{{ brand.domain }}</dd></div>
+        </dl>
+        <p class="tty-tiny">Illustrative values. No live quote, custody, signing or execution.</p>
+      </div>
     </main>
   </div>
 </template>
 
 <style scoped>
-.atlas-lost { max-width: 62ch; }
-.atlas-lost-cta { margin: 8px 0 0; }
-.atlas-wallet :deep(.atlas-btn) { width: 100%; }
+.tty-lost { max-width: 62ch; padding-block: 24px; }
+.tty-lost-cta { margin: 8px 0 0; }
+.tty-wallet :deep(.tty-btn) { width: 100%; }
 
-@media (max-width: 720px) {
-  .atlas-mast-open { display: none; }
+@media (max-width: 860px) {
+  .tty-nav { display: none; }
+  .tty-nav.open { display: flex; }
+  .tty-command-more { display: grid; }
+}
+@media (min-width: 861px) {
+  .tty-nav-scrim { display: none; }
 }
 </style>

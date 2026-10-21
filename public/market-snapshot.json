@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "status": "preview",
-  "brand": "Filza",
+  "brand": "Pretiola",
   "network": "Solana",
   "token": {
-    "symbol": "FILZA",
+    "symbol": "PRETIOLA",
     "status": "proposed-unissued",
     "contractAddress": null,
     "quote": null
@@ -32,10 +32,10 @@
     }
   ],
   "resources": {
-    "domain": "filza.xyz",
-    "handle": "@filza",
+    "domain": "pretiola.xyz",
+    "handle": "@pretiola",
     "status": "targets from a point-in-time availability screen; neither is registered, reserved or owned by this work"
   },
   "note": "No market data provider or Solana program integration is configured. Visible prices and markets are local model examples, not live listings.",
-  "disclaimer": "Filza / FILZA is a product preview on Solana. Illustrative values only: no live feed, no wallet action, no custody and no execution. There is no contract address; nothing here is an offer or a solicitation."
+  "disclaimer": "Pretiola / PRETIOLA is a product preview on Solana. Illustrative values only: no live feed, no wallet action, no custody and no execution. There is no contract address; nothing here is an offer or a solicitation."
 }
