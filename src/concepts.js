@@ -1,4 +1,4 @@
-// Pretiola / illustrative mechanics for the Solana market model.
+// Librova / illustrative mechanics for the Solana market model.
 export const concepts = [
   {
     id: 'backing',

@@ -1,18 +1,18 @@
-"""Generate Pretiola's website identity artwork and concept figures.
+"""Generate Librova's website identity artwork and concept figures.
 
 The palette, the mark geometry and the dual PNG/SVG writer all come from
 ``twitter/brandkit.py``; this module only composes scenes, so the site art and
 the X art cannot drift apart. Nothing here re-draws the mark or hardcodes a
 brand colour.
 
-Design language: light paper ground, full-bleed ink rules, hairline registration
-grids, flat state colour. No gradients, no glow, no rounded corners.
+Design language: sky-white ground, soft blue gradients, rounded panels, hairline
+rules and tidal arcs. Product screenshots come from ``twitter/ui/``.
 
 Writes into ``website/public/``:
 
-  icon.svg                 64x64    the mark alone, vector, full bleed
-  apple-icon.png          180x180   paper ground, ink rules, centred mark
-  favicon-32.png           32x32    the apple icon at tab size
+  icon.svg                 64x64    the gradient tile with the reversed mark, vector
+  apple-icon.png          180x180   the same tile at app-icon size
+  favicon-32.png           32x32    the same tile at tab size
   og-image.jpg + .svg    1200x630   link card
   concept-backing.*      1200x750   watchlist ledger figure
   concept-cap.*          1200x750   payoff boundary figure
@@ -21,7 +21,7 @@ Writes into ``website/public/``:
 
 Every scene carries a <title> and a <desc>. Both the raster and the editable
 vector file are rewritten on each run, so re-running this script reproduces the
-whole asset set byte for byte.
+whole asset set.
 
 Run:  python website/scripts/generate-assets.py
 """
@@ -36,14 +36,15 @@ WEBSITE = HERE.parent                            # website
 PROJECT = WEBSITE.parent                         # project root
 PUBLIC = WEBSITE / "public"
 TWITTER = PROJECT / "twitter"
+UI = TWITTER / "ui"
 
 if not (TWITTER / "brandkit.py").is_file():
     raise SystemExit(f"shared brand renderer missing: {TWITTER / 'brandkit.py'}")
 sys.path.insert(0, str(TWITTER))
 
-from brandkit import (ALERT, BRAND, CARD, DOMAIN, FLARE, HAIR, HANDLE,  # noqa: E402
-                      INK, LEDGER, NETWORK, PAPER, RULE, SIGNAL, SUPPORTING,
-                      TAGLINE, TICKER, Scene)
+from brandkit import (ACCENT, ACCENT_DEEP, ACCENT_PALE, BG, BRAND, DOMAIN,  # noqa: E402
+                      HANDLE, INK, INK_SOFT, LINE, LINE_STRONG, MUTED, NETWORK,
+                      SKY, SUCCESS, SUPPORTING, TAGLINE, TICKER, Scene, mark_parts)
 
 # --------------------------------------------------------------- sample data
 # The figures are labelled SAMPLE DATA throughout. These numbers are this app's
@@ -61,218 +62,206 @@ UPSIDE_SHARE = "1.08"      # % of spot
 
 SAMPLE_FLAG = "SAMPLE DATA"
 FOOT_RIGHT = "SAMPLE DATA / NOT LIVE"
-FOOT_RULE_Y = 700
+FOOT_RULE_Y = 690
 
 # ------------------------------------------------------------------- writers
 def save_vector(scene: Scene, path: Path) -> Path:
-    """Write the SVG half of a scene and nothing else.
-
-    ``brandkit.Scene.save`` can skip the vector twin but always rasterises, and
-    the icon is the one piece delivered as vector only, so this serialises the
-    same document without the raster step.
-    """
+    """Write the SVG half of a scene and nothing else."""
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text("\n".join(scene.svg + ["</svg>"]) + "\n", encoding="utf-8")
+    doc = scene.svg[:2] + ([f'<defs>{"".join(scene.defs)}</defs>'] if scene.defs else []) + scene.svg[2:]
+    path.write_text("\n".join(doc + ["</svg>"]) + "\n", encoding="utf-8")
     return path
 
 
 def save_raster(scene: Scene, path: Path) -> Path:
-    """Raster-only write, for pieces that carry no editable vector twin.
-
-    ``icon.svg`` is the vector master for the mark, so the two icon PNGs are
-    written with ``vector=False`` rather than leaving a duplicate scene file.
-    """
     return scene.save(path, vector=False)
+
+
+def ground(s: Scene) -> None:
+    s.vgrad(0, 0, s.w, s.h, "#f7fbff", "#ffffff")
+    s.vgrad(0, 0, s.w, int(s.h * 0.34), SKY, "#ffffff", opacity=0.9)
+    for i, d in enumerate((1000, 760, 520)):
+        s.ring(s.w * 0.96, s.h * 0.94, d, ACCENT_PALE, 2, 0.45 - i * 0.1)
 
 
 # ------------------------------------------------------------------ identity
 def icon() -> Path:
-    """64x64 mark at full bleed with a small paper margin, legible at 16px."""
     s = Scene(64, 64, f"{BRAND} mark",
-              "The Pretiola pip: a P struck from ledger rules — a full-height ink stem, a "
-              "squared top rule that turns into the bowl wall, a middle rule that closes "
-              "the bowl, and a flare-orange pip set just past it — on a paper ground.")
-    s.mark(32, 32, 52)  # 6px of paper on every side
+              "The Librova corner - an L struck from rounded ledger bars with a pale "
+              "pip - reversed out of a blue gradient tile.")
+    s.tile_mark(0, 0, 64, r=15)
     return save_vector(s, PUBLIC / "icon.svg")
 
 
-def icon_tile(size: int, label: str) -> Scene:
-    """Paper ground, an ink rule top and bottom, and the mark centred."""
-    s = Scene(size, size, f"{BRAND} {label}",
-              f"The {BRAND} mark centred between two full-width ink rules on a paper ground.")
-    rule = max(3, round(size * 0.044))
-    s.rect(0, 0, size, rule, INK)
-    s.rect(0, size - rule, size, rule, INK)
-    s.mark(size / 2, size / 2, (size - 2 * rule) * 0.78)
+def icon_tile(size: int) -> Scene:
+    s = Scene(size, size, f"{BRAND} app icon",
+              f"The {BRAND} gradient tile with the reversed mark, at {size} pixels.")
+    s.tile_mark(0, 0, size, r=size * 0.235)
     return s
 
 
 # ------------------------------------------------------------- figure frame
 def figure(kicker: str, title: str, sub: str, alt_title: str, alt: str) -> Scene:
-    """The shared 1200x750 frame used by all three concept figures."""
     s = Scene(1200, 750, alt_title, alt)
-    s.rect(0, 0, 1200, 10, INK)
-    s.lockup(56, 74, 30, baseline=True)
-    s.text(1144, 70, f"{TICKER} / {NETWORK.upper()}", 14, RULE, "mono", "right")
-    s.line([(56, 120), (1144, 120)], RULE, 2)
-    s.box(56, 154, 58, 5, FLARE)
-    s.text(56, 190, kicker, 13, FLARE, "mono-bold")
-    s.text(56, 240, title, 40, INK, "display")
-    s.text(56, 274, sub, 16, RULE, "regular")
+    ground(s)
+    s.lockup(56, 76, 30, baseline=True)
+    s.text(1144, 70, f"{TICKER} / {NETWORK.upper()}", 13, MUTED, "mono", "right")
+    s.line([(56, 118), (1144, 118)], LINE, 1)
+    s.rect(56, 150, 42, 5, fill=ACCENT, r=2.5)
+    s.text(56, 188, kicker, 13, ACCENT_DEEP, "mono-bold")
+    s.text(56, 238, title, 40, INK, "display")
+    s.text(56, 272, sub, 15, MUTED)
     return s
 
 
 def figure_foot(s: Scene, note: str) -> None:
-    s.line([(56, FOOT_RULE_Y), (1144, FOOT_RULE_Y)], HAIR, 1)
-    s.text(56, 730, note, 12, RULE, "mono")
-    s.text(1144, 730, FOOT_RIGHT, 12, RULE, "mono", "right")
+    s.line([(56, FOOT_RULE_Y), (1144, FOOT_RULE_Y)], LINE, 1)
+    s.text(56, 722, note, 11, MUTED, "mono")
+    s.text(1144, 722, FOOT_RIGHT, 11, MUTED, "mono", "right")
 
 
-def panel_head(s: Scene, x: float, y: float, w: float, label: str,
-               right: str | None = None, chip: str | None = None,
-               head_h: float = 46) -> float:
-    """Ink bar plus ruled head band. Returns the head band's bottom edge."""
-    s.rect(x, y, w, 5, INK)
-    s.line([(x, y + head_h), (x + w, y + head_h)], INK, 2)
-    s.text(x + 26, y + 32, label, 12, RULE, "mono")
+def panel(s: Scene, x: float, y: float, w: float, h: float, label: str,
+          right: str | None = None, chip: str | None = None) -> float:
+    s.rect(x, y, w, h, fill="#ffffff", stroke=LINE, r=18)
+    s.vgrad(x, y, w, 54, "#f4f9ff", "#ffffff", r=18)
+    s.line([(x, y + 54), (x + w, y + 54)], LINE, 1)
+    s.text(x + 24, y + 33, label, 11, MUTED, "mono")
     if chip:
-        chip_w = s.text_width(chip, 10, "mono-bold") + 24
-        s.rect(x + w - 26 - chip_w, y + 11, chip_w, 24, CARD, FLARE, 1)
-        s.text(x + w - 26 - chip_w / 2, y + 27, chip, 10, FLARE, "mono-bold", "center")
+        cw = s.text_width(chip, 10, "mono-bold") + 26
+        s.rect(x + w - 24 - cw, y + 15, cw, 26, fill="#eef7ff", stroke=LINE, r=13)
+        s.circle(x + w - 24 - cw + 13, y + 28, 6, ACCENT)
+        s.text(x + w - 24 - cw + 22, y + 32, chip, 10, ACCENT_DEEP, "mono-bold")
     elif right:
-        s.text(x + w - 26, y + 32, right, 12, RULE, "mono", "right")
-    return y + head_h
+        s.text(x + w - 24, y + 33, right, 11, MUTED, "mono", "right")
+    return y + 54
 
 
 def cell(s: Scene, x: float, y: float, w: float, h: float, label: str,
          value: str, note: str, value_color: str = INK) -> None:
-    """Ruled stat cell, the figure-sized version of the site's .cells block."""
-    s.rect(x, y, w, h, CARD, RULE, 2)
-    s.text(x + 22, y + 34, label, 11, RULE, "mono")
-    s.text(x + 22, y + 82, value, 30, value_color, "display")
-    s.text(x + 22, y + 104, note, 10, RULE, "mono")
+    s.rect(x, y, w, h, fill="#ffffff", stroke=LINE, r=16)
+    s.text(x + 20, y + 30, label, 10, MUTED, "mono")
+    s.text(x + 20, y + 72, value, 28, value_color, "display")
+    s.text(x + 20, y + 94, note, 9, MUTED, "mono")
 
 
 # ------------------------------------------------------------ concept figures
 def concept_backing() -> Scene:
-    """Watchlist concept: a ruled ledger with three sample rows."""
     s = figure(
         "SURFACE 01 / WATCHLIST", "THE BOARD.",
-        "A ruled ledger of the assets on the board, with mono sample prices.",
+        "A watchlist with sample prices beside a sandbox unit quote.",
         f"{BRAND} watchlist figure",
-        "A ruled watchlist ledger panel lists three sample rows: SOL at $182.40, JUP at "
-        "$1.12 and PRETIOLA, proposed and not issued, at $1.00, with a delta and a state "
-        "column and a SAMPLE DATA flag. Illustrative rows only; there is no live quote "
-        "feed.")
-    x, y, w = 56, 306, 1088
-    head = panel_head(s, x, y, w, "WATCHLIST / EXAMPLE", chip=SAMPLE_FLAG)
+        "A light watchlist panel lists three sample rows: SOL at $182.40, JUP at "
+        "$1.12 and LIBROVA, proposed and not issued, at $1.00, with a delta and a "
+        "state column and a SAMPLE DATA flag. Illustrative rows only; no live quote.")
+    x, y, w, h = 56, 300, 700, 360
+    head = panel(s, x, y, w, h, "WATCHLIST / EXAMPLE", chip=SAMPLE_FLAG)
 
-    # column header band
-    header = head + 44
-    s.line([(x, header), (x + w, header)], HAIR, 1)
-    for cx, label, align in ((84, "ASSET", "left"), (270, "NAME", "left"),
-                             (860, "PRICE", "right"), (1000, "DELTA 24H", "right"),
-                             (1116, "STATE", "right")):
-        s.text(cx, header - 14, label, 11, RULE, "mono", align)
+    header = head + 40
+    s.line([(x, header), (x + w, header)], LINE, 1)
+    for cx, label, align in ((80, "ASSET", "left"), (210, "NAME", "left"),
+                             (500, "PRICE", "right"), (610, "DELTA 24H", "right"),
+                             (x + w - 24, "STATE", "right")):
+        s.text(cx, header - 12, label, 10, MUTED, "mono", align)
 
-    rows = (
-        ("SOL", "Solana", "$182.40", "+2.4%", "WATCH", LEDGER),
-        ("JUP", "Jupiter", "$1.12", "-0.8%", "WATCH", ALERT),
-        (TICKER, BRAND, "$1.00", "--", "NOT ISSUED", RULE),
-    )
+    rows = (("SOL", "Solana", "$182.40", "+2.4%", "WATCH", SUCCESS),
+            ("JUP", "Jupiter", "$1.12", "-0.8%", "WATCH", ACCENT_DEEP),
+            (TICKER, BRAND, "$1.00", "--", "NOT ISSUED", MUTED))
     for i, (sym, name, price, delta, state, tone) in enumerate(rows):
-        ry = header + i * 76
+        ry = header + i * 78
         marked = sym == TICKER
         if marked:
-            s.rect(x + 1, ry, w - 2, 76, PAPER)
-            s.rect(x + 1, ry, 4, 76, FLARE)
-        s.line([(x, ry + 76), (x + w, ry + 76)], HAIR, 1)
-        s.box(84, ry + 26, 12, 12, FLARE if marked else INK)
-        s.text(112, ry + 50, sym, 20, INK, "mono-bold")
-        s.text(270, ry + 49, name, 18, RULE, "regular")
-        s.text(860, ry + 50, price, 20, INK, "mono-bold", "right")
-        s.text(1000, ry + 50, delta, 17, tone, "mono", "right")
-        s.text(1116, ry + 50, state, 12, FLARE if marked else RULE, "mono-bold", "right")
+            s.rect(x + 1, ry, w - 2, 78, fill="#f4f9ff", r=0)
+            s.rect(x + 1, ry, 4, 78, fill=ACCENT)
+        s.line([(x, ry + 78), (x + w, ry + 78)], LINE, 1)
+        s.circle(88, ry + 32, 22, ACCENT if marked else "#e8f3ff")
+        s.text(88, ry + 38, sym[0], 11, "#ffffff" if marked else INK_SOFT,
+               "mono-bold", "center")
+        s.text(112, ry + 50, sym, 17, INK, "mono-bold")
+        s.text(210, ry + 49, name, 16, INK_SOFT)
+        s.text(500, ry + 50, price, 18, INK, "mono-bold", "right")
+        s.text(610, ry + 50, delta, 15, tone, "mono", "right")
+        s.text(x + w - 24, ry + 50, state, 11, ACCENT_DEEP if marked else MUTED,
+               "mono-bold", "right")
 
-    foot = header + 3 * 76
-    s.text(84, foot + 36, "ILLUSTRATIVE ROWS / NO LIVE QUOTE FEED", 11, RULE, "mono")
-    s.text(1116, foot + 36, "BROWSER-LOCAL WATCHLIST", 11, RULE, "mono", "right")
+    foot = header + 3 * 78
+    s.text(80, foot + 34, "ILLUSTRATIVE ROWS / NO LIVE QUOTE FEED", 10, MUTED, "mono")
+    s.text(x + w - 24, foot + 34, "BROWSER-LOCAL WATCHLIST", 10, MUTED, "mono", "right")
+
+    qx, qy, qw, qh = 776, 300, 368, 360
+    s.vgrad(qx, qy, qw, qh, ACCENT_DEEP, ACCENT, r=20)
+    s.text(qx + 26, qy + 46, "UNIT QUOTE / SANDBOX", 11, ACCENT_PALE, "mono-bold")
+    s.text(qx + 26, qy + 112, "Modelled value", 12, ACCENT_PALE, "mono")
+    s.text(qx + 26, qy + 166, "$180.42", 42, "#ffffff", "display")
+    s.line([(qx + 26, qy + 196), (qx + qw - 26, qy + 196)], "#ffffff")
+    for i, (label, value) in enumerate((("SAMPLE SPOT", "$182.40"),
+                                        ("CAP PRICE K", "$191.52"),
+                                        ("LEG", "Income"))):
+        ry = qy + 232 + i * 38
+        s.text(qx + 26, ry, label, 10, ACCENT_PALE, "mono")
+        s.text(qx + qw - 26, ry, value, 13, "#ffffff", "mono-bold", "right")
 
     figure_foot(s, "WATCHLIST / ON-CHAIN SYMBOLS, SAMPLE VALUES")
     return s
 
 
 def concept_cap() -> Scene:
-    """Cap concept: a value axis, the flare cap line K, income below and upside above."""
     s = figure(
         "SURFACE 02 / CAP MODEL", "THE BOUNDARY.",
         "Cap K splits per-unit value: income below the line, upside above it.",
         f"{BRAND} payoff boundary figure",
-        "A ruled value axis carries a flare cap line marked K at $262.50. The area below "
-        "K is labelled INCOME at $247.29 per unit and the area above it UPSIDE at $2.71 "
-        "per unit, with an ink price path running from the $250.00 spot to the assumed "
-        "$280.00 settlement. Illustrative model values only.")
-    x, y, w, h = 56, 306, 700, 378
-    head = panel_head(s, x, y, w, "VALUE AXIS / PER UNIT", chip=SAMPLE_FLAG)
+        "A light value axis carries an accent cap line marked K at $262.50. The area "
+        "below K is labelled INCOME at $247.29 per unit and the area above it UPSIDE "
+        "at $2.71 per unit, with an ink price path from the $250.00 spot to the "
+        "assumed $280.00 settlement. Illustrative model values only.")
+    x, y, w, h = 56, 300, 700, 360
+    head = panel(s, x, y, w, h, "VALUE AXIS / PER UNIT", chip=SAMPLE_FLAG)
 
-    axis_x, plot_top, plot_bottom = 170, 372, 666
-    right = x + w - 28                                   # 728
-    step = (plot_bottom - plot_top) / 50.0               # $235..$285 over the plot
+    axis_x, plot_top, plot_bottom = 150, 372, 640
+    right = x + w - 26
+    step = (plot_bottom - plot_top) / 50.0
 
     def axis_y(value: float) -> float:
         return plot_bottom - (value - 235.0) * step
 
     y_k, y_s, y_spot = axis_y(262.5), axis_y(280.0), axis_y(250.0)
 
-    # income area sits on paper; the upside area keeps the card ground.
-    # A flat colour edge marks each side of K.
-    s.rect(axis_x + 1, y_k + 1, right - axis_x - 1, plot_bottom - y_k - 1, PAPER)
-    s.rect(axis_x + 1, y_k + 1, 5, plot_bottom - y_k - 1, LEDGER)
-    s.rect(axis_x + 1, y_s + 1, 5, y_k - y_s - 2, ALERT)
+    s.vgrad(axis_x, y_k, right - axis_x, plot_bottom - y_k, "#f4f9ff", "#e8f3ff", opacity=0.9)
+    s.rect(axis_x, y_k, 4, plot_bottom - y_k, fill=SUCCESS)
+    s.rect(axis_x, y_s, 4, y_k - y_s, fill=ACCENT)
 
-    # value axis and rulings
-    for value, color in ((285.0, HAIR), (280.0, HAIR), (270.0, HAIR),
-                         (250.0, HAIR), (240.0, HAIR)):
+    for value in (285.0, 280.0, 270.0, 250.0, 240.0):
         gy = axis_y(value)
-        s.line([(axis_x, gy), (right, gy)], color, 1)
-        s.text(axis_x - 16, gy + 4, f"${value:,.2f}".replace(".00", ""), 11, RULE,
+        s.line([(axis_x, gy), (right, gy)], LINE, 1)
+        s.text(axis_x - 14, gy + 4, f"${value:,.2f}".replace(".00", ""), 10, MUTED,
                "mono", "right")
-    s.text(axis_x - 16, y_k + 4, CAP_K, 11, FLARE, "mono-bold", "right")
-    s.line([(axis_x, plot_top), (axis_x, plot_bottom)], INK, 2)
-    s.line([(axis_x, plot_bottom), (right, plot_bottom)], INK, 2)
+    s.text(axis_x - 14, y_k + 4, CAP_K, 10, ACCENT_DEEP, "mono-bold", "right")
+    s.line([(axis_x, plot_top), (axis_x, plot_bottom)], LINE_STRONG, 1.5)
+    s.line([(axis_x, plot_bottom), (right, plot_bottom)], LINE_STRONG, 1.5)
 
-    # the settlement reference and the flare cap line
-    s.line([(axis_x, y_s), (right, y_s)], SIGNAL, 2)
-    s.text(right, y_s - 10, f"S / {SETTLEMENT}", 12, SIGNAL, "mono-bold", "right")
-    s.line([(axis_x, y_k), (right, y_k)], FLARE, 3)
-    s.text(right, y_k - 12, f"K / {CAP_K}", 12, FLARE, "mono-bold", "right")
+    s.line([(axis_x, y_s), (right, y_s)], ACCENT_DEEP, 1.5, dash="5 5")
+    s.text(right, y_s - 10, f"S / {SETTLEMENT}", 10, ACCENT_DEEP, "mono-bold", "right")
+    s.line([(axis_x, y_k), (right, y_k)], ACCENT, 2.5)
+    s.text(right, y_k - 10, f"K / {CAP_K}", 10, ACCENT_DEEP, "mono-bold", "right")
 
-    # per-unit model price inside each area
-    s.text(200, y_k + 40, "INCOME", 13, LEDGER, "mono-bold")
-    s.text(200, y_k + 92, INCOME_PRICE, 34, INK, "display")
-    s.text(200 + s.text_width(INCOME_PRICE, 34, "display") + 16, y_k + 92,
-           "PER UNIT", 10, RULE, "mono")
-    s.text(200, y_k + 118, "VALUE UP TO K", 10, RULE, "mono")
+    s.text(176, y_k + 40, "INCOME", 12, SUCCESS, "mono-bold")
+    s.text(176, y_k + 84, INCOME_PRICE, 30, INK, "display")
+    s.text(176, y_k + 106, "VALUE UP TO K / PER UNIT", 9, MUTED, "mono")
+    s.text(176, y_s + 26, "UPSIDE", 11, ACCENT_DEEP, "mono-bold")
+    s.text(176, y_s + 70, UPSIDE_PRICE, 26, INK, "display")
+    s.text(176, y_s + 88, "VALUE ABOVE K / PER UNIT", 8, MUTED, "mono")
 
-    s.text(200, y_s + 36, "UPSIDE", 13, ALERT, "mono-bold")
-    s.text(200, y_s + 84, UPSIDE_PRICE, 34, INK, "display")
-    s.text(200 + s.text_width(UPSIDE_PRICE, 34, "display") + 16, y_s + 84,
-           "PER UNIT", 10, RULE, "mono")
+    path = [(430, y_spot), (490, y_spot - 8), (540, y_spot - 26), (585, y_spot - 56),
+            (630, y_spot - 94), (666, y_spot - 134), (right - 6, y_s)]
+    s.line(path, INK, 2.5)
+    s.circle(430, y_spot, 9, INK)
+    s.circle(right - 6, y_s, 10, ACCENT)
+    s.text(430, y_spot + 26, f"SPOT / {SPOT}", 10, MUTED, "mono")
 
-    # the price path: spot, rising through K, to the assumed settlement
-    path = [(420, y_spot), (480, y_spot - 8), (530, y_spot - 26), (575, y_spot - 56),
-            (620, y_spot - 94), (660, y_spot - 134), (700, y_s)]
-    s.line(path, INK, 3)
-    s.box(415, y_spot - 5, 10, 10, INK)
-    s.box(694, y_s - 6, 12, 12, FLARE)
-    s.text(420, y_spot + 28, f"SPOT / {SPOT}", 11, RULE, "mono")
-
-    # right column: the cap, the settlement and the summed per-unit price
-    cx, cw, ch = 784, 360, 120
-    cell(s, cx, 306, cw, ch, "CAP K", CAP_K, "SPOT x 1.05 / USER SET", FLARE)
-    cell(s, cx, 435, cw, ch, "SETTLEMENT S", SETTLEMENT, "ASSUMED / USER ENTERED", SIGNAL)
-    cell(s, cx, 564, cw, ch, "SPOT PRICE / PER UNIT", SPOT,
+    cx, cw, ch = 784, 360, 112
+    cell(s, cx, 300, cw, ch, "CAP K", CAP_K, "SPOT x 1.05 / USER SET", ACCENT_DEEP)
+    cell(s, cx, 424, cw, ch, "SETTLEMENT S", SETTLEMENT, "ASSUMED / USER ENTERED", ACCENT_DEEP)
+    cell(s, cx, 548, cw, ch, "SPOT PRICE / PER UNIT", SPOT,
          f"{INCOME_PRICE} INCOME + {UPSIDE_PRICE} UPSIDE")
 
     figure_foot(s, "ILLUSTRATIVE MODEL / NO LIVE QUOTE")
@@ -280,68 +269,64 @@ def concept_cap() -> Scene:
 
 
 def concept_settlement() -> Scene:
-    """Settlement concept: a ruled table plus a two-leg share meter."""
     s = figure(
         "SURFACE 03 / SETTLEMENT", "THE SPLIT.",
         "One assumed settlement, split at K, and the share each leg carries.",
         f"{BRAND} settlement split figure",
-        "A ruled settlement table splits one assumed $280.00 settlement into income of "
+        "A light settlement table splits one assumed $280.00 settlement into income of "
         "$262.50, the part up to K, and upside of $17.50, the part above K. A two-leg "
-        "meter shows the per-unit price share as flat bars: income 98.92% and upside "
-        "1.08% of the $250.00 spot. Illustrative model values only.")
-    tx, ty, tw, th = 56, 306, 660, 378
-    head = panel_head(s, tx, ty, tw, "SETTLEMENT TABLE / PER UNIT", right=f"S = {SETTLEMENT}")
+        "meter shows the per-unit price share as rounded bars: income 98.92% and "
+        "upside 1.08% of the $250.00 spot. Illustrative model values only.")
+    tx, ty, tw, th = 56, 300, 648, 360
+    head = panel(s, tx, ty, tw, th, "SETTLEMENT TABLE / PER UNIT", right=f"S = {SETTLEMENT}")
 
-    header = head + 40
-    s.line([(tx, header), (tx + tw, header)], HAIR, 1)
-    for cx, label, align in ((84, "COMPONENT", "left"), (300, "FORMULA", "left"),
-                             (688, "VALUE", "right")):
-        s.text(cx, header - 14, label, 11, RULE, "mono", align)
+    header = head + 38
+    s.line([(tx, header), (tx + tw, header)], LINE, 1)
+    for cx, label, align in ((80, "COMPONENT", "left"), (286, "FORMULA", "left"),
+                             (tx + tw - 24, "VALUE", "right")):
+        s.text(cx, header - 12, label, 10, MUTED, "mono", align)
 
-    rows = (("INCOME", "min(S, K)", INCOME_SETTLE, LEDGER),
-            ("UPSIDE", "max(S - K, 0)", UPSIDE_SETTLE, ALERT),
+    rows = (("INCOME", "min(S, K)", INCOME_SETTLE, SUCCESS),
+            ("UPSIDE", "max(S - K, 0)", UPSIDE_SETTLE, ACCENT_DEEP),
             ("TOTAL", "S", SETTLEMENT, INK))
     for i, (name, formula, value, tone) in enumerate(rows):
-        ry = header + i * 80
+        ry = header + i * 76
         if i == len(rows) - 1:
-            s.line([(tx, ry), (tx + tw, ry)], INK, 2)
-        s.line([(tx, ry + 80), (tx + tw, ry + 80)], HAIR, 1)
-        s.text(84, ry + 50, name, 17, tone, "mono-bold")
-        s.text(300, ry + 49, formula, 15, RULE, "mono")
-        s.text(688, ry + 50, value, 26, INK, "mono-bold", "right")
+            s.line([(tx, ry), (tx + tw, ry)], INK, 1.5)
+        s.line([(tx, ry + 76), (tx + tw, ry + 76)], LINE, 1)
+        s.text(80, ry + 48, name, 15, tone, "mono-bold")
+        s.text(286, ry + 48, formula, 13, MUTED, "mono")
+        s.text(tx + tw - 24, ry + 48, value, 22, INK, "mono-bold", "right")
 
-    s.text(84, header + 3 * 80 + 32, "ILLUSTRATIVE SETTLEMENT / NOT AN AUCTION RESULT",
-           11, RULE, "mono")
+    s.text(80, header + 3 * 76 + 30, "ILLUSTRATIVE SETTLEMENT / NOT AN AUCTION RESULT",
+           10, MUTED, "mono")
 
-    # two-leg meter: flat filled bars, true proportions
-    mx, my, mw, mh = 752, 306, 392, 378
-    panel_head(s, mx, my, mw, "SHARE METER / PER UNIT", right="OF SPOT")
-    bar_x, bar_y, bar_w, bar_h = 778, 400, 340, 52
+    mx, my, mw, mh = 724, 300, 420, 360
+    panel(s, mx, my, mw, mh, "SHARE METER / PER UNIT", right="OF SPOT")
+    bar_x, bar_y, bar_w, bar_h = 754, 404, 360, 46
     income_w = round(bar_w - 4, 4) * (float(INCOME_SHARE) / 100.0)
-    s.rect(bar_x, bar_y, bar_w, bar_h, CARD, INK, 2)
-    s.rect(bar_x + 2, bar_y + 2, income_w, bar_h - 4, LEDGER)
-    s.rect(bar_x + 2 + income_w, bar_y + 2, bar_w - 4 - income_w, bar_h - 4, ALERT)
-    s.text(bar_x, bar_y - 14, "INCOME", 12, LEDGER, "mono-bold")
-    s.text(bar_x + bar_w, bar_y - 14, "UPSIDE", 12, ALERT, "mono-bold", "right")
-    s.line([(bar_x + bar_w - 2, bar_y + bar_h + 4), (bar_x + bar_w - 2, bar_y + bar_h + 26)],
-           ALERT, 1)
+    s.rect(bar_x, bar_y, bar_w, bar_h, fill="#eef7ff", stroke=LINE, r=23)
+    s.rect(bar_x + 2, bar_y + 2, max(28, income_w), bar_h - 4, fill=SUCCESS, r=21)
+    s.circle(bar_x + 2 + max(28, income_w) + 4, bar_y + bar_h / 2, 18, ACCENT)
 
-    s.text(bar_x, 500, "INCOME SHARE", 11, RULE, "mono")
-    s.text(bar_x, 542, f"{INCOME_SHARE}%", 34, LEDGER, "display")
-    s.text(bar_x, 566, f"{INCOME_PRICE} PER UNIT", 11, RULE, "mono")
-    s.text(bar_x + bar_w, 500, "UPSIDE SHARE", 11, RULE, "mono", "right")
-    s.text(bar_x + bar_w, 542, f"{UPSIDE_SHARE}%", 34, ALERT, "display", "right")
-    s.text(bar_x + bar_w, 566, f"{UPSIDE_PRICE} PER UNIT", 11, RULE, "mono", "right")
+    s.text(bar_x, bar_y - 14, "INCOME", 11, SUCCESS, "mono-bold")
+    s.text(bar_x + bar_w, bar_y - 14, "UPSIDE", 11, ACCENT_DEEP, "mono-bold", "right")
 
-    s.line([(bar_x, 590), (bar_x + bar_w, 590)], HAIR, 1)
-    s.text(bar_x, 616, "SPOT", 11, RULE, "mono")
-    s.text(bar_x + bar_w, 616, SPOT, 13, INK, "mono-bold", "right")
-    s.text(bar_x, 640, "INCOME + UPSIDE", 11, RULE, "mono")
-    s.text(bar_x + bar_w, 640, f"{INCOME_PRICE} + {UPSIDE_PRICE}", 13, INK, "mono-bold",
-           "right")
-    s.line([(bar_x, 652), (bar_x + bar_w, 652)], HAIR, 1)
-    s.text(bar_x, 678, "SUM", 11, RULE, "mono")
-    s.text(bar_x + bar_w, 678, SPOT, 13, INK, "mono-bold", "right")
+    s.text(bar_x, bar_y + 96, "INCOME SHARE", 10, MUTED, "mono")
+    s.text(bar_x, bar_y + 134, f"{INCOME_SHARE}%", 30, SUCCESS, "display")
+    s.text(bar_x, bar_y + 156, f"{INCOME_PRICE} PER UNIT", 10, MUTED, "mono")
+    s.text(bar_x + bar_w, bar_y + 96, "UPSIDE SHARE", 10, MUTED, "mono", "right")
+    s.text(bar_x + bar_w, bar_y + 134, f"{UPSIDE_SHARE}%", 30, ACCENT_DEEP, "display", "right")
+    s.text(bar_x + bar_w, bar_y + 156, f"{UPSIDE_PRICE} PER UNIT", 10, MUTED, "mono", "right")
+
+    s.line([(bar_x, bar_y + 184), (bar_x + bar_w, bar_y + 184)], LINE, 1)
+    for i, (label, value) in enumerate((("SPOT", SPOT),
+                                        ("INCOME + UPSIDE", f"{INCOME_PRICE} + {UPSIDE_PRICE}"),
+                                        ("SUM", SPOT))):
+        ry = bar_y + 216 + i * 30
+        s.text(bar_x, ry, label, 10, MUTED, "mono")
+        s.text(bar_x + bar_w, ry, value, 11, INK, "mono-bold", "right")
+        s.line([(bar_x, ry + 12), (bar_x + bar_w, ry + 12)], LINE, 1)
 
     figure_foot(s, "ILLUSTRATIVE SPLIT / NO EXECUTION")
     return s
@@ -349,32 +334,23 @@ def concept_settlement() -> Scene:
 
 # ------------------------------------------------------------------ og card
 def og_image() -> Scene:
-    """1200x630 link card: lockup, the primary line and a framed mark panel."""
     s = Scene(1200, 630, f"{BRAND} | {NETWORK} market terminal",
               f"{TAGLINE} {SUPPORTING}")
-    s.rect(0, 0, 1200, 8, INK)
-    s.lockup(56, 72, 28, baseline=True)
-    s.text(1144, 68, HANDLE, 14, RULE, "mono", "right")
-    s.line([(56, 112), (1144, 112)], RULE, 2)
-
-    # framed registration grid holding the mark
-    s.rect(824, 158, 320, 320, CARD, RULE, 2)
-    s.grid(824, 158, 320, 320, step=32, color=HAIR)
-    s.rect(824, 158, 320, 5, FLARE)
-    s.mark(984, 318, 200)
-    s.text(984, 452, "THE PRETIOLA PIP", 13, RULE, "mono", "center")
-
-    s.box(56, 158, 58, 5, FLARE)
-    s.text(56, 232, "READ THE CHAIN.", 54, INK, "display")
-    s.text(56, 288, "PRICE THE BOUNDARY.", 54, INK, "display")
-    s.text(56, 372, "KEEP THE RECORD.", 34, FLARE, "display")
-    s.text(56, 420, "WATCHLIST / PAYOFF BOUNDARY / RESEARCH JOURNAL", 13, RULE, "mono")
-    s.line([(56, 452), (780, 452)], HAIR, 1)
-
-    s.line([(56, 546), (1144, 546)], RULE, 2)
-    s.text(56, 584, DOMAIN, 13, RULE, "mono")
-    s.text(600, 584, f"{TICKER} / PROPOSED, NOT ISSUED", 13, RULE, "mono", "center")
-    s.text(1144, 584, f"{NETWORK} / market terminal preview", 13, RULE, "mono", "right")
+    ground(s)
+    s.lockup(56, 74, 30, baseline=True)
+    s.text(1144, 68, HANDLE, 13, MUTED, "mono", "right")
+    s.line([(56, 112), (1144, 112)], LINE, 1)
+    s.text(58, 152, "SOLANA MARKET TERMINAL / PREVIEW", 12, MUTED, "mono")
+    s.text(56, 232, "Read the chain.", 44, INK, "display")
+    s.text(56, 288, "Price the boundary.", 44, INK, "display")
+    s.text(56, 358, "Keep the record.", 42, ACCENT_DEEP, "display")
+    s.text(58, 404, "Watchlists / payoff boundary / browser-local journal", 15, MUTED)
+    s.browser(UI / "home-top-1440.png", 648, 156, 496, 300, r=16,
+              crop=(0, 0, 1440, 870), chrome=True, url="librova.xyz")
+    s.line([(56, 546), (1144, 546)], LINE, 1)
+    s.text(56, 582, DOMAIN, 12, MUTED, "mono")
+    s.text(600, 582, f"{TICKER} / PROPOSED, NOT ISSUED", 12, MUTED, "mono", "center")
+    s.text(1144, 582, f"{NETWORK} / market terminal preview", 12, MUTED, "mono", "right")
     return s
 
 
@@ -421,8 +397,8 @@ def generate() -> int:
     PUBLIC.mkdir(parents=True, exist_ok=True)
     written: list[Path] = [
         icon(),
-        save_raster(icon_tile(180, "app icon"), PUBLIC / "apple-icon.png"),
-        save_raster(icon_tile(32, "tab icon"), PUBLIC / "favicon-32.png"),
+        save_raster(icon_tile(180), PUBLIC / "apple-icon.png"),
+        save_raster(icon_tile(32), PUBLIC / "favicon-32.png"),
     ]
     og_image().save(PUBLIC / "og-image.jpg")
     written += [PUBLIC / "og-image.jpg", PUBLIC / "og-image.svg"]
@@ -438,12 +414,6 @@ def generate() -> int:
     for path in sorted(written):
         print(f"  {path.name:<26} {path.stat().st_size:>9,d} bytes")
     print(f"{len(written)} files, {sum(p.stat().st_size for p in written):,d} bytes total.")
-
-    produced = {p.name for p in written}
-    stale = sorted(p.name for p in PUBLIC.iterdir()
-                   if p.is_file() and p.name not in produced)
-    if stale:
-        print("Present in public/ but not written by this script: " + ", ".join(stale))
     return 0
 
 

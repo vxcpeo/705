@@ -26,6 +26,7 @@ history: Civonra
 history: Nodelira
 history: Ivorane
 history: Filza
+history: Pretiola
 
 # Current brand (exactly one)
-current: Pretiola
+current: Librova

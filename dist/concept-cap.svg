@@ -1,69 +1,73 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="t d">
-<title id="t">Pretiola payoff boundary figure</title>
-<desc id="d">A ruled value axis carries a flare cap line marked K at $262.50. The area below K is labelled INCOME at $247.29 per unit and the area above it UPSIDE at $2.71 per unit, with an ink price path running from the $250.00 spot to the assumed $280.00 settlement. Illustrative model values only.</desc>
-<rect width="1200" height="750" fill="#f2eee6"/>
-<rect x="0.00" y="0.00" width="1200.00" height="10.00" fill="#0d0d10" stroke="none"/>
-<rect x="57.27" y="44.00" width="5.70" height="30.00" fill="#0d0d10" stroke="none"/>
-<rect x="57.27" y="44.00" width="21.00" height="4.50" fill="#0d0d10" stroke="none"/>
-<rect x="73.78" y="44.00" width="4.50" height="16.20" fill="#0d0d10" stroke="none"/>
-<rect x="57.27" y="55.70" width="21.00" height="4.50" fill="#0d0d10" stroke="none"/>
-<rect x="79.33" y="55.25" width="5.40" height="5.40" fill="#ff4d14" stroke="none"/>
-<text x="96.20" y="74.00" fill="#0d0d10" font-family="'Arial Black','Arial Bold',Arial,Helvetica,sans-serif" font-size="21.0" font-weight="900" text-anchor="start">PRETIOLA</text>
-<text x="1144.00" y="70.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="14" font-weight="400" text-anchor="end">PRETIOLA / SOLANA</text>
-<polyline points="56.00,120.00 1144.00,120.00" fill="none" stroke="#2b2b33" stroke-width="2" stroke-linecap="butt"/>
-<rect x="56.00" y="154.00" width="58.00" height="5.00" fill="#ff4d14" stroke="none"/>
-<text x="56.00" y="190.00" fill="#ff4d14" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="13" font-weight="700" text-anchor="start">SURFACE 02 / CAP MODEL</text>
-<text x="56.00" y="240.00" fill="#0d0d10" font-family="'Arial Black','Arial Bold',Arial,Helvetica,sans-serif" font-size="40" font-weight="900" text-anchor="start">THE BOUNDARY.</text>
-<text x="56.00" y="274.00" fill="#2b2b33" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" text-anchor="start">Cap K splits per-unit value: income below the line, upside above it.</text>
-<rect x="56.00" y="306.00" width="700.00" height="5.00" fill="#0d0d10" stroke="none"/>
-<polyline points="56.00,352.00 756.00,352.00" fill="none" stroke="#0d0d10" stroke-width="2" stroke-linecap="butt"/>
-<text x="82.00" y="338.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="12" font-weight="400" text-anchor="start">VALUE AXIS / PER UNIT</text>
-<rect x="645.50" y="317.00" width="84.50" height="24.00" fill="#ffffff" stroke="#ff4d14" stroke-width="1"/>
-<text x="687.75" y="333.00" fill="#ff4d14" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="10" font-weight="700" text-anchor="middle">SAMPLE DATA</text>
-<rect x="171.00" y="505.30" width="557.00" height="160.70" fill="#f2eee6" stroke="none"/>
-<rect x="171.00" y="505.30" width="5.00" height="160.70" fill="#0f8a63" stroke="none"/>
-<rect x="171.00" y="402.40" width="5.00" height="100.90" fill="#c81e4a" stroke="none"/>
-<polyline points="170.00,372.00 728.00,372.00" fill="none" stroke="#d3ccbf" stroke-width="1" stroke-linecap="butt"/>
-<text x="154.00" y="376.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="11" font-weight="400" text-anchor="end">$285</text>
-<polyline points="170.00,401.40 728.00,401.40" fill="none" stroke="#d3ccbf" stroke-width="1" stroke-linecap="butt"/>
-<text x="154.00" y="405.40" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="11" font-weight="400" text-anchor="end">$280</text>
-<polyline points="170.00,460.20 728.00,460.20" fill="none" stroke="#d3ccbf" stroke-width="1" stroke-linecap="butt"/>
-<text x="154.00" y="464.20" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="11" font-weight="400" text-anchor="end">$270</text>
-<polyline points="170.00,577.80 728.00,577.80" fill="none" stroke="#d3ccbf" stroke-width="1" stroke-linecap="butt"/>
-<text x="154.00" y="581.80" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="11" font-weight="400" text-anchor="end">$250</text>
-<polyline points="170.00,636.60 728.00,636.60" fill="none" stroke="#d3ccbf" stroke-width="1" stroke-linecap="butt"/>
-<text x="154.00" y="640.60" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="11" font-weight="400" text-anchor="end">$240</text>
-<text x="154.00" y="508.30" fill="#ff4d14" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="11" font-weight="700" text-anchor="end">$262.50</text>
-<polyline points="170.00,372.00 170.00,666.00" fill="none" stroke="#0d0d10" stroke-width="2" stroke-linecap="butt"/>
-<polyline points="170.00,666.00 728.00,666.00" fill="none" stroke="#0d0d10" stroke-width="2" stroke-linecap="butt"/>
-<polyline points="170.00,401.40 728.00,401.40" fill="none" stroke="#1f4fe0" stroke-width="2" stroke-linecap="butt"/>
-<text x="728.00" y="391.40" fill="#1f4fe0" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="12" font-weight="700" text-anchor="end">S / $280.00</text>
-<polyline points="170.00,504.30 728.00,504.30" fill="none" stroke="#ff4d14" stroke-width="3" stroke-linecap="butt"/>
-<text x="728.00" y="492.30" fill="#ff4d14" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="12" font-weight="700" text-anchor="end">K / $262.50</text>
-<text x="200.00" y="544.30" fill="#0f8a63" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="13" font-weight="700" text-anchor="start">INCOME</text>
-<text x="200.00" y="596.30" fill="#0d0d10" font-family="'Arial Black','Arial Bold',Arial,Helvetica,sans-serif" font-size="34" font-weight="900" text-anchor="start">$247.29</text>
-<text x="362.50" y="596.30" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="10" font-weight="400" text-anchor="start">PER UNIT</text>
-<text x="200.00" y="622.30" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="10" font-weight="400" text-anchor="start">VALUE UP TO K</text>
-<text x="200.00" y="437.40" fill="#c81e4a" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="13" font-weight="700" text-anchor="start">UPSIDE</text>
-<text x="200.00" y="485.40" fill="#0d0d10" font-family="'Arial Black','Arial Bold',Arial,Helvetica,sans-serif" font-size="34" font-weight="900" text-anchor="start">$2.71</text>
-<text x="317.50" y="485.40" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="10" font-weight="400" text-anchor="start">PER UNIT</text>
-<polyline points="420.00,577.80 480.00,569.80 530.00,551.80 575.00,521.80 620.00,483.80 660.00,443.80 700.00,401.40" fill="none" stroke="#0d0d10" stroke-width="3" stroke-linecap="butt"/>
-<rect x="415.00" y="572.80" width="10.00" height="10.00" fill="#0d0d10" stroke="none"/>
-<rect x="694.00" y="395.40" width="12.00" height="12.00" fill="#ff4d14" stroke="none"/>
-<text x="420.00" y="605.80" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="11" font-weight="400" text-anchor="start">SPOT / $250.00</text>
-<rect x="784.00" y="306.00" width="360.00" height="120.00" fill="#ffffff" stroke="#2b2b33" stroke-width="2"/>
-<text x="806.00" y="340.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="11" font-weight="400" text-anchor="start">CAP K</text>
-<text x="806.00" y="388.00" fill="#ff4d14" font-family="'Arial Black','Arial Bold',Arial,Helvetica,sans-serif" font-size="30" font-weight="900" text-anchor="start">$262.50</text>
-<text x="806.00" y="410.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="10" font-weight="400" text-anchor="start">SPOT x 1.05 / USER SET</text>
-<rect x="784.00" y="435.00" width="360.00" height="120.00" fill="#ffffff" stroke="#2b2b33" stroke-width="2"/>
-<text x="806.00" y="469.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="11" font-weight="400" text-anchor="start">SETTLEMENT S</text>
-<text x="806.00" y="517.00" fill="#1f4fe0" font-family="'Arial Black','Arial Bold',Arial,Helvetica,sans-serif" font-size="30" font-weight="900" text-anchor="start">$280.00</text>
-<text x="806.00" y="539.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="10" font-weight="400" text-anchor="start">ASSUMED / USER ENTERED</text>
-<rect x="784.00" y="564.00" width="360.00" height="120.00" fill="#ffffff" stroke="#2b2b33" stroke-width="2"/>
-<text x="806.00" y="598.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="11" font-weight="400" text-anchor="start">SPOT PRICE / PER UNIT</text>
-<text x="806.00" y="646.00" fill="#0d0d10" font-family="'Arial Black','Arial Bold',Arial,Helvetica,sans-serif" font-size="30" font-weight="900" text-anchor="start">$250.00</text>
-<text x="806.00" y="668.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="10" font-weight="400" text-anchor="start">$247.29 INCOME + $2.71 UPSIDE</text>
-<polyline points="56.00,700.00 1144.00,700.00" fill="none" stroke="#d3ccbf" stroke-width="1" stroke-linecap="butt"/>
-<text x="56.00" y="730.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="12" font-weight="400" text-anchor="start">ILLUSTRATIVE MODEL / NO LIVE QUOTE</text>
-<text x="1144.00" y="730.00" fill="#2b2b33" font-family="'Consolas','SFMono-Regular',Menlo,monospace" font-size="12" font-weight="400" text-anchor="end">SAMPLE DATA / NOT LIVE</text>
+<title id="t">Librova payoff boundary figure</title>
+<defs><linearGradient id="d1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7fbff"/><stop offset="1" stop-color="#ffffff"/></linearGradient><linearGradient id="d2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8f3ff"/><stop offset="1" stop-color="#ffffff"/></linearGradient><linearGradient id="d3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f9ff"/><stop offset="1" stop-color="#ffffff"/></linearGradient><linearGradient id="d4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f9ff"/><stop offset="1" stop-color="#e8f3ff"/></linearGradient></defs>
+<desc id="d">A light value axis carries an accent cap line marked K at $262.50. The area below K is labelled INCOME at $247.29 per unit and the area above it UPSIDE at $2.71 per unit, with an ink price path from the $250.00 spot to the assumed $280.00 settlement. Illustrative model values only.</desc>
+<rect width="1200" height="750" fill="#ffffff"/>
+<rect x="0.00" y="0.00" width="1200.00" height="750.00" rx="0.00" fill="url(#d1)"/>
+<rect x="0.00" y="0.00" width="1200.00" height="255.00" rx="0.00" fill="url(#d2)" opacity="0.9"/>
+<circle cx="1152.00" cy="705.00" r="500.00" fill="none" stroke="#bfe0ff" stroke-width="2" opacity="0.45"/>
+<circle cx="1152.00" cy="705.00" r="380.00" fill="none" stroke="#bfe0ff" stroke-width="2" opacity="0.35"/>
+<circle cx="1152.00" cy="705.00" r="260.00" fill="none" stroke="#bfe0ff" stroke-width="2" opacity="0.25"/>
+<rect x="56.90" y="46.00" width="6.00" height="30.00" rx="3.00" fill="#081b2b" stroke="none"/>
+<rect x="56.90" y="70.00" width="20.40" height="6.00" rx="3.00" fill="#081b2b" stroke="none"/>
+<circle cx="82.10" cy="73.00" r="3.00" fill="#298dff"/>
+<text x="98.00" y="69.40" fill="#081b2b" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="23.400000000000002" font-weight="700" text-anchor="start">LIBROVA</text>
+<text x="1144.00" y="70.00" fill="#5b7185" font-family="Consolas,'Cascadia Mono',monospace" font-size="13" font-weight="400" text-anchor="end">LIBROVA / SOLANA</text>
+<polyline points="56.00,118.00 1144.00,118.00" fill="none" stroke="#d8e7f5" stroke-width="1" stroke-linecap="round"/>
+<rect x="56.00" y="150.00" width="42.00" height="5.00" rx="2.50" fill="#298dff" stroke="none"/>
+<text x="56.00" y="188.00" fill="#0d71e3" font-family="Consolas,'Cascadia Mono',monospace" font-size="13" font-weight="700" text-anchor="start">SURFACE 02 / CAP MODEL</text>
+<text x="56.00" y="238.00" fill="#081b2b" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="40" font-weight="700" text-anchor="start">THE BOUNDARY.</text>
+<text x="56.00" y="272.00" fill="#5b7185" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="400" text-anchor="start">Cap K splits per-unit value: income below the line, upside above it.</text>
+<rect x="56.00" y="300.00" width="700.00" height="360.00" rx="18.00" fill="#ffffff" stroke="#d8e7f5" stroke-width="1"/>
+<rect x="56.00" y="300.00" width="700.00" height="54.00" rx="18.00" fill="url(#d3)"/>
+<polyline points="56.00,354.00 756.00,354.00" fill="none" stroke="#d8e7f5" stroke-width="1" stroke-linecap="round"/>
+<text x="80.00" y="333.00" fill="#5b7185" font-family="Consolas,'Cascadia Mono',monospace" font-size="11" font-weight="400" text-anchor="start">VALUE AXIS / PER UNIT</text>
+<rect x="645.50" y="315.00" width="86.50" height="26.00" rx="13.00" fill="#eef7ff" stroke="#d8e7f5" stroke-width="1"/>
+<circle cx="658.50" cy="328.00" r="3.00" fill="#298dff"/>
+<text x="667.50" y="332.00" fill="#0d71e3" font-family="Consolas,'Cascadia Mono',monospace" font-size="10" font-weight="700" text-anchor="start">SAMPLE DATA</text>
+<rect x="150.00" y="492.60" width="580.00" height="147.40" rx="0.00" fill="url(#d4)" opacity="0.9"/>
+<rect x="150.00" y="492.60" width="4.00" height="147.40" rx="0.00" fill="#087a55" stroke="none"/>
+<rect x="150.00" y="398.80" width="4.00" height="93.80" rx="0.00" fill="#298dff" stroke="none"/>
+<polyline points="150.00,372.00 730.00,372.00" fill="none" stroke="#d8e7f5" stroke-width="1" stroke-linecap="round"/>
+<text x="136.00" y="376.00" fill="#5b7185" font-family="Consolas,'Cascadia Mono',monospace" font-size="10" font-weight="400" text-anchor="end">$285</text>
+<polyline points="150.00,398.80 730.00,398.80" fill="none" stroke="#d8e7f5" stroke-width="1" stroke-linecap="round"/>
+<text x="136.00" y="402.80" fill="#5b7185" font-family="Consolas,'Cascadia Mono',monospace" font-size="10" font-weight="400" text-anchor="end">$280</text>
+<polyline points="150.00,452.40 730.00,452.40" fill="none" stroke="#d8e7f5" stroke-width="1" stroke-linecap="round"/>
+<text x="136.00" y="456.40" fill="#5b7185" font-family="Consolas,'Cascadia Mono',monospace" font-size="10" font-weight="400" text-anchor="end">$270</text>
+<polyline points="150.00,559.60 730.00,559.60" fill="none" stroke="#d8e7f5" stroke-width="1" stroke-linecap="round"/>
+<text x="136.00" y="563.60" fill="#5b7185" font-family="Consolas,'Cascadia Mono',monospace" font-size="10" font-weight="400" text-anchor="end">$250</text>
+<polyline points="150.00,613.20 730.00,613.20" fill="none" stroke="#d8e7f5" stroke-width="1" stroke-linecap="round"/>
+<text x="136.00" y="617.20" fill="#5b7185" font-family="Consolas,'Cascadia Mono',monospace" font-size="10" font-weight="400" text-anchor="end">$240</text>
+<text x="136.00" y="496.60" fill="#0d71e3" font-family="Consolas,'Cascadia Mono',monospace" font-size="10" font-weight="700" text-anchor="end">$262.50</text>
+<polyline points="150.00,372.00 150.00,640.00" fill="none" stroke="#b7d3ec" stroke-width="1.5" stroke-linecap="round"/>
+<polyline points="150.00,640.00 730.00,640.00" fill="none" stroke="#b7d3ec" stroke-width="1.5" stroke-linecap="round"/>
+<polyline points="150.00,398.80 730.00,398.80" fill="none" stroke="#0d71e3" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 5"/>
+<text x="730.00" y="388.80" fill="#0d71e3" font-family="Consolas,'Cascadia Mono',monospace" font-size="10" font-weight="700" text-anchor="end">S / $280.00</text>
+<polyline points="150.00,492.60 730.00,492.60" fill="none" stroke="#298dff" stroke-width="2.5" stroke-linecap="round"/>
+<text x="730.00" y="482.60" fill="#0d71e3" font-family="Consolas,'Cascadia Mono',monospace" font-size="10" font-weight="700" text-anchor="end">K / $262.50</text>
+<text x="176.00" y="532.60" fill="#087a55" font-family="Consolas,'Cascadia Mono',monospace" font-size="12" font-weight="700" text-anchor="start">INCOME</text>
+<text x="176.00" y="576.60" fill="#081b2b" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="30" font-weight="700" text-anchor="start">$247.29</text>
+<text x="176.00" y="598.60" fill="#5b7185" font-family="Consolas,'Cascadia Mono',monospace" font-size="9" font-weight="400" text-anchor="start">VALUE UP TO K / PER UNIT</text>
+<text x="176.00" y="424.80" fill="#0d71e3" font-family="Consolas,'Cascadia Mono',monospace" font-size="11" font-weight="700" text-anchor="start">UPSIDE</text>
+<text x="176.00" y="468.80" fill="#081b2b" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="700" text-anchor="start">$2.71</text>
+<text x="176.00" y="486.80" fill="#5b7185" font-family="Consolas,'Cascadia Mono',monospace" font-size="8" font-weight="400" text-anchor="start">VALUE ABOVE K / PER UNIT</text>
+<polyline points="430.00,559.60 490.00,551.60 540.00,533.60 585.00,503.60 630.00,465.60 666.00,425.60 724.00,398.80" fill="none" stroke="#081b2b" stroke-width="2.5" stroke-linecap="round"/>
+<circle cx="430.00" cy="559.60" r="4.50" fill="#081b2b"/>
+<circle cx="724.00" cy="398.80" r="5.00" fill="#298dff"/>
+<text x="430.00" y="585.60" fill="#5b7185" font-family="Consolas,'Cascadia Mono',monospace" font-size="10" font-weight="400" text-anchor="start">SPOT / $250.00</text>
+<rect x="784.00" y="300.00" width="360.00" height="112.00" rx="16.00" fill="#ffffff" stroke="#d8e7f5" stroke-width="1"/>
+<text x="804.00" y="330.00" fill="#5b7185" font-family="Consolas,'Cascadia Mono',monospace" font-size="10" font-weight="400" text-anchor="start">CAP K</text>
+<text x="804.00" y="372.00" fill="#0d71e3" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="28" font-weight="700" text-anchor="start">$262.50</text>
+<text x="804.00" y="394.00" fill="#5b7185" font-family="Consolas,'Cascadia Mono',monospace" font-size="9" font-weight="400" text-anchor="start">SPOT x 1.05 / USER SET</text>
+<rect x="784.00" y="424.00" width="360.00" height="112.00" rx="16.00" fill="#ffffff" stroke="#d8e7f5" stroke-width="1"/>
+<text x="804.00" y="454.00" fill="#5b7185" font-family="Consolas,'Cascadia Mono',monospace" font-size="10" font-weight="400" text-anchor="start">SETTLEMENT S</text>
+<text x="804.00" y="496.00" fill="#0d71e3" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="28" font-weight="700" text-anchor="start">$280.00</text>
+<text x="804.00" y="518.00" fill="#5b7185" font-family="Consolas,'Cascadia Mono',monospace" font-size="9" font-weight="400" text-anchor="start">ASSUMED / USER ENTERED</text>
+<rect x="784.00" y="548.00" width="360.00" height="112.00" rx="16.00" fill="#ffffff" stroke="#d8e7f5" stroke-width="1"/>
+<text x="804.00" y="578.00" fill="#5b7185" font-family="Consolas,'Cascadia Mono',monospace" font-size="10" font-weight="400" text-anchor="start">SPOT PRICE / PER UNIT</text>
+<text x="804.00" y="620.00" fill="#081b2b" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="28" font-weight="700" text-anchor="start">$250.00</text>
+<text x="804.00" y="642.00" fill="#5b7185" font-family="Consolas,'Cascadia Mono',monospace" font-size="9" font-weight="400" text-anchor="start">$247.29 INCOME + $2.71 UPSIDE</text>
+<polyline points="56.00,690.00 1144.00,690.00" fill="none" stroke="#d8e7f5" stroke-width="1" stroke-linecap="round"/>
+<text x="56.00" y="722.00" fill="#5b7185" font-family="Consolas,'Cascadia Mono',monospace" font-size="11" font-weight="400" text-anchor="start">ILLUSTRATIVE MODEL / NO LIVE QUOTE</text>
+<text x="1144.00" y="722.00" fill="#5b7185" font-family="Consolas,'Cascadia Mono',monospace" font-size="11" font-weight="400" text-anchor="end">SAMPLE DATA / NOT LIVE</text>
 </svg>

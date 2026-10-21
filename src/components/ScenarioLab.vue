@@ -19,7 +19,7 @@ const feedback = ref('')
 const storageNotice = ref('')
 const isSaved = ref(false)
 const stages = ['Inputs recorded', 'Assumption reviewed', 'Limits reviewed', 'Review complete']
-const legacyJournalKeys = ['Ivorane:journal:v1', 'Tikriva:journal:v1', 'Orbinza:journal:v1', 'Kovrane:journal:v1', 'kinovra:journal:v1', 'Kinovra:journal:v1', 'Scenarill:journal:v1', 'Solenzi:journal:v1', 'Filza:journal:v1']
+const legacyJournalKeys = ['Ivorane:journal:v1', 'Tikriva:journal:v1', 'Orbinza:journal:v1', 'Kovrane:journal:v1', 'kinovra:journal:v1', 'Kinovra:journal:v1', 'Scenarill:journal:v1', 'Solenzi:journal:v1', 'Filza:journal:v1', 'Pretiola:journal:v1']
 const input = computed(() => ({ amount: amount.value, basePrice: basePrice.value, movePct: movePct.value, note: note.value }))
 const result = computed(() => record.value ? calculateScenario(record.value) : null)
 const remaining = computed(() => MAX_NOTE_LENGTH - note.value.length)
@@ -122,7 +122,7 @@ function downloadJournal() {
   const url = URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' }))
   const link = document.createElement('a')
   link.href = url
-  link.download = `pretiola-${record.value.id.toLowerCase()}.json`
+  link.download = `librova-${record.value.id.toLowerCase()}.json`
   link.click()
   URL.revokeObjectURL(url)
   feedback.value = 'Journal export prepared.'
@@ -156,194 +156,235 @@ defineExpose({ focusHeading })
 </script>
 
 <template>
-  <section ref="root" class="lab" aria-labelledby="scenario-title">
-    <section class="tty-scene log-open">
-      <div class="tty-scene-in log-open-in">
-        <p class="tty-kicker log-eyebrow"><FlaskConical :size="15" /> YOUR PRIVATE WORKSPACE</p>
-        <h1 id="scenario-title" ref="heading" class="tty-display log-display" tabindex="-1">Local scenario lab<span>.</span></h1>
-        <p class="tty-lead">Put a number behind your next idea. Enter a reference price, explore a hypothetical move, and keep your reasoning close.</p>
-        <p v-if="storageNotice" class="tty-notice tty-notice--alert" role="alert">{{ storageNotice }}</p>
-        <p v-if="feedback" class="tty-notice tty-notice--ok" role="status">{{ feedback }}</p>
-      </div>
+  <section ref="root" class="lagoon" aria-labelledby="scenario-title">
+    <section class="tide-band tide-band--first lagoon-open">
+      <p class="tide-kicker"><FlaskConical :size="14" /> YOUR PRIVATE WORKSPACE</p>
+      <h1 id="scenario-title" ref="heading" class="tide-display lagoon-display" tabindex="-1">Local scenario lab<span>.</span></h1>
+      <p class="tide-lead">Put a number behind your next idea. Enter a reference price, explore a hypothetical move, and keep your reasoning close.</p>
+      <p v-if="storageNotice" class="tide-notice tide-notice--alert" role="alert">{{ storageNotice }}</p>
+      <p v-if="feedback" class="tide-notice tide-notice--ok" role="status">{{ feedback }}</p>
     </section>
 
-    <div v-if="step === 'form'" class="tty-scene log-form-scene">
-      <div class="tty-scene-in log-form-grid">
-        <form class="tty-face log-form" @submit.prevent="review">
-          <div class="tty-face-head">
-            <div class="log-face-title"><span class="log-step">01 / INPUTS</span><h2 class="tty-h2">Set your assumption.</h2></div>
-            <span class="tty-pill tty-pill--accent">LOCAL ONLY</span>
+    <div v-if="step === 'form'" class="tide-band lagoon-form-band">
+      <div class="lagoon-form-grid">
+        <form class="lagoon-form" @submit.prevent="review">
+          <div class="lagoon-form-head">
+            <div class="lagoon-face-title"><span class="lagoon-step">01 / INPUTS</span><h2 class="tide-h2">Set your assumption.</h2></div>
+            <span class="tide-pill tide-pill--accent">LOCAL ONLY</span>
           </div>
-          <div class="log-fields">
-            <div class="log-pair">
-            <div class="tty-field">
+          <div class="lagoon-fields">
+            <div class="lagoon-pair">
+            <div class="tide-field">
               <label for="amount">Amount <span>{{ brand.asset }} units</span></label>
-              <input id="amount" class="tty-input" v-model="amount" inputmode="decimal" :aria-invalid="Boolean(errors.amount)" :aria-describedby="errors.amount ? 'amount-error' : undefined" />
-              <p v-if="errors.amount" id="amount-error" class="log-error">{{ errors.amount }}</p>
+              <input id="amount" class="tide-input" v-model="amount" inputmode="decimal" :aria-invalid="Boolean(errors.amount)" :aria-describedby="errors.amount ? 'amount-error' : undefined" />
+              <p v-if="errors.amount" id="amount-error" class="lagoon-error">{{ errors.amount }}</p>
             </div>
-            <div class="tty-field">
+            <div class="tide-field">
               <label for="base-price">Reference price <span>USD / {{ brand.asset }}</span></label>
-              <input id="base-price" class="tty-input" v-model="basePrice" inputmode="decimal" :aria-invalid="Boolean(errors.basePrice)" :aria-describedby="errors.basePrice ? 'price-error' : undefined" />
-              <p v-if="errors.basePrice" id="price-error" class="log-error">{{ errors.basePrice }}</p>
+              <input id="base-price" class="tide-input" v-model="basePrice" inputmode="decimal" :aria-invalid="Boolean(errors.basePrice)" :aria-describedby="errors.basePrice ? 'price-error' : undefined" />
+              <p v-if="errors.basePrice" id="price-error" class="lagoon-error">{{ errors.basePrice }}</p>
             </div>
           </div>
-          <div class="tty-field">
+          <div class="tide-field">
             <label for="move">Hypothetical move <output>{{ movePct }}%</output></label>
-            <input id="move" v-model="movePct" class="tty-range log-range" type="range" min="-90" max="100" step="0.5" />
-            <div class="tty-scale"><span>-90%</span><span>0</span><span>+100%</span></div>
+            <input id="move" v-model="movePct" class="tide-range" type="range" min="-90" max="100" step="0.5" />
+            <div class="tide-scale"><span>-90%</span><span>0</span><span>+100%</span></div>
           </div>
-          <div class="tty-field">
+          <div class="tide-field">
             <label for="move-text">Exact percentage <span>%</span></label>
-            <input id="move-text" class="tty-input" v-model="movePct" inputmode="decimal" :aria-invalid="Boolean(errors.movePct)" :aria-describedby="errors.movePct ? 'move-error' : undefined" />
-            <p v-if="errors.movePct" id="move-error" class="log-error">{{ errors.movePct }}</p>
+            <input id="move-text" class="tide-input" v-model="movePct" inputmode="decimal" :aria-invalid="Boolean(errors.movePct)" :aria-describedby="errors.movePct ? 'move-error' : undefined" />
+            <p v-if="errors.movePct" id="move-error" class="lagoon-error">{{ errors.movePct }}</p>
           </div>
-          <div class="tty-field">
+          <div class="tide-field">
             <label for="note">Thesis note <span>OPTIONAL</span></label>
-            <textarea id="note" class="tty-input" v-model="note" :maxlength="MAX_NOTE_LENGTH" :aria-invalid="Boolean(errors.note)" :aria-describedby="errors.note ? 'note-error' : 'note-count'" placeholder="What would make this move plausible?"></textarea>
-            <p v-if="errors.note" id="note-error" class="log-error">{{ errors.note }}</p>
-            <p id="note-count" class="log-count">{{ remaining }} characters remaining</p>
+            <textarea id="note" class="tide-input" v-model="note" :maxlength="MAX_NOTE_LENGTH" :aria-invalid="Boolean(errors.note)" :aria-describedby="errors.note ? 'note-error' : 'note-count'" placeholder="What would make this move plausible?"></textarea>
+            <p v-if="errors.note" id="note-error" class="lagoon-error">{{ errors.note }}</p>
+            <p id="note-count" class="lagoon-count">{{ remaining }} characters remaining</p>
           </div>
           </div>
-          <button class="tty-btn tty-btn--primary tty-btn--wide" type="submit">Review scenario <ArrowUpRight :size="17" /></button>
+          <button class="tide-btn tide-btn--primary tide-btn--wide" type="submit">Review scenario <ArrowUpRight :size="17" /></button>
         </form>
 
-        <div class="tty-face log-aside">
-          <div class="log-aside-icon"><ShieldCheck :size="27" /></div>
-          <span class="log-step">A LITTLE SPACE TO THINK</span>
-          <h2 class="tty-h2 log-aside-title">Your idea.<br />Your assumptions.</h2>
-          <p class="log-aside-copy">This is a private what-if calculator. Reference prices are entered by you; they are not live quotes or execution prices.</p>
-          <dl class="tty-pairs log-aside-rows"><div><dt>Asset</dt><dd>{{ brand.asset }} / USD</dd></div><div><dt>Network</dt><dd>{{ brand.network }} - preview</dd></div><div><dt>Wallet</dt><dd>Not required</dd></div><div><dt>Storage</dt><dd>This browser only</dd></div></dl>
-          <p class="log-aside-foot">Fees, slippage and taxes are excluded. No transaction is created.</p>
+        <div class="lagoon-aside">
+          <div class="lagoon-aside-icon"><ShieldCheck :size="26" /></div>
+          <span class="lagoon-step">A LITTLE SPACE TO THINK</span>
+          <h2 class="tide-h2 lagoon-aside-title">Your idea.<br />Your assumptions.</h2>
+          <p class="lagoon-aside-copy">This is a private what-if calculator. Reference prices are entered by you; they are not live quotes or execution prices.</p>
+          <dl class="lagoon-aside-rows"><div><dt>Asset</dt><dd>{{ brand.asset }} / USD</dd></div><div><dt>Network</dt><dd>{{ brand.network }} - preview</dd></div><div><dt>Wallet</dt><dd>Not required</dd></div><div><dt>Storage</dt><dd>This browser only</dd></div></dl>
+          <p class="lagoon-aside-foot">Fees, slippage and taxes are excluded. No transaction is created.</p>
         </div>
       </div>
     </div>
 
-    <div v-else-if="step === 'review'" class="tty-scene log-record-scene">
-      <div class="tty-scene-in">
-        <div class="tty-face log-record">
-          <div class="tty-face-head">
-            <div class="log-face-title"><span class="log-step">02 / REVIEW</span><h2 class="tty-h2">Check the numbers.</h2></div>
-            <ShieldCheck :size="26" />
-          </div>
-          <p class="log-muted">Calculated from your assumptions.</p>
-          <dl class="tty-pairs log-rows"><div><dt>Reference amount</dt><dd>{{ Number(record.amount).toLocaleString() }} {{ brand.asset }}</dd></div><div><dt>Reference price</dt><dd>{{ currency(result.basePrice, 4) }}</dd></div><div><dt>Reference value</dt><dd>{{ currency(result.baselineValue, 4) }}</dd></div><div><dt>Scenario move</dt><dd :class="record.movePct >= 0 ? 'log-positive' : 'log-negative'">{{ percent(record.movePct) }}</dd></div><div><dt>Scenario value</dt><dd>{{ currency(result.scenarioValue, 4) }}</dd></div></dl>
-          <div class="log-delta"><span>Change in reference value</span><strong :class="result.deltaUsd >= 0 ? 'log-positive' : 'log-negative'">{{ result.deltaUsd >= 0 ? '+' : '' }}{{ currency(result.deltaUsd, 4) }}</strong></div>
-          <div class="log-actions"><button class="tty-btn tty-btn--primary" @click="save">Save to journal <Check :size="17" /></button><button class="tty-btn tty-btn--ghost" @click="edit">Edit inputs</button></div>
+    <div v-else-if="step === 'review'" class="tide-band lagoon-record-band">
+      <div class="lagoon-record">
+        <div class="lagoon-record-head">
+          <div class="lagoon-face-title"><span class="lagoon-step">02 / REVIEW</span><h2 class="tide-h2">Check the numbers.</h2></div>
+          <ShieldCheck :size="24" />
         </div>
+        <p class="lagoon-muted">Calculated from your assumptions.</p>
+        <dl class="lagoon-rows"><div><dt>Reference amount</dt><dd>{{ Number(record.amount).toLocaleString() }} {{ brand.asset }}</dd></div><div><dt>Reference price</dt><dd>{{ currency(result.basePrice, 4) }}</dd></div><div><dt>Reference value</dt><dd>{{ currency(result.baselineValue, 4) }}</dd></div><div><dt>Scenario move</dt><dd :class="record.movePct >= 0 ? 'lagoon-positive' : 'lagoon-negative'">{{ percent(record.movePct) }}</dd></div><div><dt>Scenario value</dt><dd>{{ currency(result.scenarioValue, 4) }}</dd></div></dl>
+        <div class="lagoon-delta"><span>Change in reference value</span><strong :class="result.deltaUsd >= 0 ? 'lagoon-positive' : 'lagoon-negative'">{{ result.deltaUsd >= 0 ? '+' : '' }}{{ currency(result.deltaUsd, 4) }}</strong></div>
+        <div class="lagoon-actions"><button class="tide-btn tide-btn--primary" @click="save">Save to journal <Check :size="17" /></button><button class="tide-btn tide-btn--ghost" @click="edit">Edit inputs</button></div>
       </div>
     </div>
 
-    <div v-else class="tty-scene log-record-scene">
-      <div class="tty-scene-in">
-        <div class="tty-face log-record">
-          <div class="tty-face-head">
-            <div class="log-face-title"><span class="log-step">03 / JOURNAL</span><h2 class="tty-h2">Your local record.</h2></div>
-            <span class="log-badge" :class="{ 'log-unsaved': !isSaved }"><Check v-if="isSaved" :size="13" />{{ isSaved ? 'SAVED' : 'NOT SAVED' }}</span>
-          </div>
-          <div class="log-stages" role="group" aria-label="Journal review stages"><button v-for="(label, i) in stages" :key="label" :class="{ current: record.stage === i, done: record.stage > i }" :aria-current="record.stage === i ? 'step' : undefined" @click="changeStage(i)"><span class="log-stage-number"><Check v-if="record.stage > i" :size="13" /><template v-else>{{ i + 1 }}</template></span><span>{{ label }}</span><ChevronRight v-if="i < stages.length - 1" class="log-stage-arrow" :size="14" /></button></div>
-          <dl class="tty-pairs log-rows"><div><dt>Amount</dt><dd>{{ Number(record.amount).toLocaleString() }} {{ brand.asset }}</dd></div><div><dt>Reference price</dt><dd>{{ currency(record.basePrice, 4) }}</dd></div><div><dt>Move</dt><dd :class="record.movePct >= 0 ? 'log-positive' : 'log-negative'">{{ percent(record.movePct) }}</dd></div><div><dt>Scenario value</dt><dd>{{ currency(result.scenarioValue, 4) }}</dd></div></dl>
-          <blockquote v-if="record.note">{{ record.note }}</blockquote><p class="log-muted">Created {{ new Date(record.createdAt).toLocaleString() }}. {{ isSaved ? 'Stored only in this browser.' : 'Export a copy to keep this record.' }}</p>
-          <div class="log-actions"><button class="tty-btn tty-btn--primary" @click="downloadJournal">Export JSON <ArrowDownToLine :size="16" /></button><button v-if="!isSaved" class="tty-btn tty-btn--ghost" @click="persist">Retry saving</button><button class="tty-btn tty-btn--ghost" @click="edit">Edit</button><button class="log-delete" @click="removeJournal">Delete local record</button></div>
+    <div v-else class="tide-band lagoon-record-band">
+      <div class="lagoon-record">
+        <div class="lagoon-record-head">
+          <div class="lagoon-face-title"><span class="lagoon-step">03 / JOURNAL</span><h2 class="tide-h2">Your local record.</h2></div>
+          <span class="lagoon-badge" :class="{ 'lagoon-unsaved': !isSaved }"><Check v-if="isSaved" :size="13" />{{ isSaved ? 'SAVED' : 'NOT SAVED' }}</span>
         </div>
+        <div class="lagoon-stages" role="group" aria-label="Journal review stages"><button v-for="(label, i) in stages" :key="label" :class="{ current: record.stage === i, done: record.stage > i }" :aria-current="record.stage === i ? 'step' : undefined" @click="changeStage(i)"><span class="lagoon-stage-number"><Check v-if="record.stage > i" :size="13" /><template v-else>{{ i + 1 }}</template></span><span>{{ label }}</span><ChevronRight v-if="i < stages.length - 1" class="lagoon-stage-arrow" :size="14" /></button></div>
+        <dl class="lagoon-rows"><div><dt>Amount</dt><dd>{{ Number(record.amount).toLocaleString() }} {{ brand.asset }}</dd></div><div><dt>Reference price</dt><dd>{{ currency(record.basePrice, 4) }}</dd></div><div><dt>Move</dt><dd :class="record.movePct >= 0 ? 'lagoon-positive' : 'lagoon-negative'">{{ percent(record.movePct) }}</dd></div><div><dt>Scenario value</dt><dd>{{ currency(result.scenarioValue, 4) }}</dd></div></dl>
+        <blockquote v-if="record.note">{{ record.note }}</blockquote><p class="lagoon-muted">Created {{ new Date(record.createdAt).toLocaleString() }}. {{ isSaved ? 'Stored only in this browser.' : 'Export a copy to keep this record.' }}</p>
+        <div class="lagoon-actions"><button class="tide-btn tide-btn--primary" @click="downloadJournal">Export JSON <ArrowDownToLine :size="16" /></button><button v-if="!isSaved" class="tide-btn tide-btn--ghost" @click="persist">Retry saving</button><button class="tide-btn tide-btn--ghost" @click="edit">Edit</button><button class="lagoon-delete" @click="removeJournal">Delete local record</button></div>
       </div>
     </div>
   </section>
 </template>
 
 <style scoped>
-/* -------------------------------------------------------------------- open */
-.log-open { padding-bottom: clamp(20px, 2.4vw, 32px); }
-.log-open-in { display: grid; gap: clamp(12px, 1.6vw, 18px); max-width: 880px; }
-.log-eyebrow { letter-spacing: 0.18em; }
-.log-display { font-size: clamp(28px, 3.4vw, 46px); }
-.log-display span { color: var(--accent-safe); }
-.log-open-in .tty-notice { margin-top: 6px; }
-
-/* -------------------------------------------------------------------- form */
-.log-form-scene { padding-top: clamp(18px, 2vw, 28px); }
-.log-form-grid {
+/* ---------------------------------------------------------------- opening */
+.lagoon { display: grid; grid-template-columns: minmax(0, 1fr); }
+.lagoon > * { min-width: 0; }
+.lagoon-open {
   display: grid;
-  grid-template-columns: minmax(0, 1.5fr) minmax(0, 0.85fr);
-  gap: clamp(16px, 2.2vw, 32px);
+  gap: 12px;
+  max-width: 780px;
+  padding-block-end: clamp(20px, 2.6vw, 32px);
+}
+.lagoon-display { font-size: clamp(32px, 4.6vw, 54px); }
+.lagoon-display span { color: var(--accent-deep); }
+.lagoon-open .tide-notice { margin-block-start: 6px; }
+.lagoon-form-band { padding-block-start: clamp(10px, 1.4vw, 16px); }
+.lagoon-form-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  gap: clamp(18px, 2.6vw, 34px);
   align-items: start;
 }
-.log-form { display: grid; gap: 18px; }
-.log-aside { display: grid; gap: 12px; align-content: start; }
-.log-aside-title { font-size: clamp(22px, 2.2vw, 30px); }
-.log-aside-copy { margin: 0; color: var(--muted); font: 400 13px/1.75 var(--font-body); }
-.log-aside-icon {
+
+/* ------------------------------------------------------------------- form */
+.lagoon-form {
+  display: grid;
+  gap: 18px;
+  padding: clamp(18px, 2.4vw, 28px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+}
+.lagoon-form-head { display: flex; align-items: start; justify-content: space-between; gap: 14px; flex-wrap: wrap; }
+.lagoon-face-title { display: grid; gap: 8px; }
+.lagoon-step {
+  display: block;
+  color: var(--accent-deep);
+  font: 600 9px/1.4 var(--font-mono);
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+.lagoon-fields { display: grid; gap: 16px; min-width: 0; }
+.lagoon-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.lagoon-error { color: var(--danger); font: 400 11px/1.5 var(--font-mono); }
+.lagoon-count { color: var(--muted); font: 400 10px/1.5 var(--font-mono); text-align: end; }
+.lagoon-form textarea.tide-input { min-height: 104px; resize: vertical; font-family: var(--font-body); font-size: 13px; line-height: 1.6; }
+
+/* ------------------------------------------------------------------ aside */
+.lagoon-aside {
+  display: grid;
+  gap: 12px;
+  align-content: start;
+  padding: clamp(18px, 2.4vw, 26px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background:
+    radial-gradient(420px 220px at 100% 0%, rgba(41, 141, 255, .16), transparent 70%),
+    var(--surface-soft);
+}
+.lagoon-aside-icon {
   display: grid;
   place-items: center;
   width: 52px;
   height: 52px;
-  border-radius: 50%;
-  background: rgba(255, 0, 0, 0.12);
+  border-radius: 18px;
+  background: var(--surface);
   color: var(--accent-safe);
-  box-shadow: inset 0 0 0 1px rgba(255, 0, 0, 0.36), 0 0 30px rgba(255, 0, 0, 0.2);
+  box-shadow: inset 0 0 0 1px var(--line), 0 10px 24px rgba(30, 111, 217, .12);
 }
-.log-aside-rows { border-top: 1px solid var(--line); }
-.log-aside-foot {
-  margin: 0;
-  padding-top: 12px;
-  border-top: 1px solid var(--line);
-  color: var(--faint);
-  font: 400 10px/1.8 var(--font-mono);
+.lagoon-aside-title { font-size: clamp(22px, 2.2vw, 30px); }
+.lagoon-aside-copy { color: var(--ink-soft); font: 400 13px/1.7 var(--font-body); }
+.lagoon-aside-rows { display: grid; border-block-start: 1px solid var(--line); }
+.lagoon-aside-rows > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 14px;
+  padding-block: 10px;
+  border-block-end: 1px solid var(--line);
 }
-.log-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
-.log-fields { display: grid; gap: 16px; min-width: 0; }
-.log-error { margin: 0; color: var(--rose); font: 400 11px/1.5 var(--font-mono); }
-.log-count { margin: 0; color: var(--faint); font: 400 10px/1.5 var(--font-mono); text-align: right; }
-.log-range { accent-color: var(--accent-safe); }
-.log-step {
-  display: block;
-  color: var(--accent-safe);
-  font: 500 9px/1.4 var(--font-mono);
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-}
-.log-face-title { display: grid; gap: 8px; }
-.log-face-title h2 { margin: 0; }
+.lagoon-aside-rows dt { color: var(--muted); font: 500 10px/1.5 var(--font-mono); letter-spacing: .1em; text-transform: uppercase; }
+.lagoon-aside-rows dd { font: 600 12px/1.5 var(--font-mono); }
+.lagoon-aside-foot { color: var(--muted); font: 400 10px/1.7 var(--font-mono); }
 
-/* ------------------------------------------------------------------ record */
-.log-record { display: grid; gap: 16px; max-width: 900px; margin-inline: auto; }
-.log-muted { margin: 0; color: var(--faint); font: 400 11px/1.7 var(--font-mono); }
-.log-rows { border-top: 1px solid var(--line); }
-.log-positive { color: var(--mint); }
-.log-negative { color: var(--rose); }
-.log-delta {
+/* ----------------------------------------------------------------- record */
+.lagoon-record-band { padding-block-start: clamp(10px, 1.4vw, 16px); }
+.lagoon-record {
+  display: grid;
+  gap: 16px;
+  max-width: 860px;
+  padding: clamp(18px, 2.6vw, 30px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(560px 280px at 100% 0%, rgba(41, 141, 255, .1), transparent 70%),
+    var(--surface);
+  box-shadow: var(--shadow);
+}
+.lagoon-record-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.lagoon-record-head svg { color: var(--accent-safe); }
+.lagoon-muted { color: var(--muted); font: 400 11px/1.7 var(--font-mono); }
+.lagoon-rows { display: grid; border-block-start: 1px solid var(--line); }
+.lagoon-rows > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  padding-block: 11px;
+  border-block-end: 1px solid var(--line);
+}
+.lagoon-rows dt { color: var(--muted); font: 500 10px/1.5 var(--font-mono); letter-spacing: .1em; text-transform: uppercase; }
+.lagoon-rows dd { font: 600 13px/1.5 var(--font-mono); }
+.lagoon-positive { color: var(--success); }
+.lagoon-negative { color: var(--danger); }
+.lagoon-delta {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
   flex-wrap: wrap;
   padding: 18px 20px;
+  border: 1px solid var(--line);
   border-radius: var(--radius-md);
-  background: linear-gradient(140deg, rgba(255, 0, 0, 0.12), rgba(255, 0, 200, 0.06));
-  box-shadow: inset 0 0 0 1px var(--line-2);
+  background: linear-gradient(120deg, rgba(41, 141, 255, .12), rgba(41, 141, 255, .03));
 }
-.log-delta span {
-  color: var(--faint);
-  font: 500 9px/1.4 var(--font-mono);
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-}
-.log-delta strong { font: 400 30px/1 var(--font-display); letter-spacing: -0.02em; }
-.log-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
-.log-delete {
+.lagoon-delta span { color: var(--muted); font: 600 9px/1.4 var(--font-mono); letter-spacing: .18em; text-transform: uppercase; }
+.lagoon-delta strong { font: 600 30px/1 var(--font-display); letter-spacing: -.03em; }
+.lagoon-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.lagoon-delete {
   border: 0;
-  border-bottom: 1px solid var(--rose);
+  border-block-end: 1px solid var(--danger);
   padding: 0 0 3px;
   background: none;
-  color: var(--rose);
-  font: 500 9px/1.6 var(--font-mono);
-  letter-spacing: 0.2em;
+  color: var(--danger);
+  font: 600 9px/1.6 var(--font-mono);
+  letter-spacing: .18em;
   text-transform: uppercase;
-  cursor: pointer;
 }
-.log-delete:hover { color: var(--ink); border-bottom-color: var(--ink); }
+.lagoon-delete:hover { color: var(--ink); border-block-end-color: var(--ink); }
 
-/* ------------------------------------------------------------------ stages */
-.log-stages {
+/* ----------------------------------------------------------------- stages */
+.lagoon-stages {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1px;
@@ -352,26 +393,25 @@ defineExpose({ focusHeading })
   background: var(--line);
   overflow: hidden;
 }
-.log-stages button {
+.lagoon-stages button {
   display: flex;
   align-items: center;
   gap: 9px;
-  min-height: 54px;
+  min-height: 52px;
   padding: 10px 14px;
   border: 0;
-  background: var(--bg-2);
-  color: var(--faint);
-  font: 500 9px/1.3 var(--font-mono);
-  letter-spacing: 0.12em;
+  background: var(--surface);
+  color: var(--muted);
+  font: 600 9px/1.3 var(--font-mono);
+  letter-spacing: .1em;
   text-transform: uppercase;
-  text-align: left;
-  cursor: pointer;
-  transition: background-color 160ms var(--ease), color 160ms var(--ease);
+  text-align: start;
+  transition: background-color var(--motion-duration) var(--motion-ease), color var(--motion-duration) var(--motion-ease);
 }
-.log-stages button:hover { background: var(--surface-2); color: var(--ink); }
-.log-stages button.done { color: var(--mint); }
-.log-stages button.current { background: rgba(255, 0, 0, 0.16); color: var(--accent-safe); }
-.log-stage-number {
+.lagoon-stages button:hover { background: var(--surface-alt); color: var(--ink); }
+.lagoon-stages button.done { color: var(--success); }
+.lagoon-stages button.current { background: #e3f0ff; color: var(--accent-deep); }
+.lagoon-stage-number {
   display: grid;
   place-items: center;
   flex: none;
@@ -379,43 +419,42 @@ defineExpose({ focusHeading })
   height: 24px;
   border-radius: 50%;
   box-shadow: inset 0 0 0 1px currentColor;
-  font: 500 10px/1 var(--font-mono);
+  font: 600 10px/1 var(--font-mono);
 }
-.log-stage-arrow { margin-left: auto; opacity: 0.55; }
-.log-badge {
+.lagoon-stage-arrow { margin-inline-start: auto; opacity: .5; }
+.lagoon-badge {
   display: inline-flex;
   align-items: center;
   gap: 7px;
   flex: none;
   padding: 6px 12px;
-  border-radius: var(--radius-pill);
-  background: rgba(92, 225, 160, 0.12);
-  color: var(--mint);
-  font: 500 9px/1 var(--font-mono);
-  letter-spacing: 0.18em;
+  border-radius: 999px;
+  background: rgba(8, 122, 85, .1);
+  color: var(--success);
+  font: 600 9px/1 var(--font-mono);
+  letter-spacing: .16em;
   text-transform: uppercase;
   white-space: nowrap;
 }
-.log-unsaved { background: rgba(242, 201, 76, 0.12); color: var(--amber); }
-.log-record blockquote {
-  margin: 0;
+.lagoon-unsaved { background: rgba(138, 90, 0, .1); color: var(--warning); }
+.lagoon-record blockquote {
   padding: 16px 18px;
   border: 1px solid var(--line);
-  border-left: 2px solid var(--accent);
+  border-inline-start: 3px solid var(--accent);
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-  background: var(--bg-2);
-  color: var(--ink-2);
+  background: var(--surface-soft);
+  color: var(--ink-soft);
   font: 400 13px/1.75 var(--font-body);
   white-space: pre-wrap;
 }
 
 /* -------------------------------------------------------------- responsive */
-@media (max-width: 1000px) {
-  .log-form-grid { grid-template-columns: minmax(0, 1fr); }
+@media (max-width: 1080px) {
+  .lagoon-form-grid { grid-template-columns: minmax(0, 1fr); }
 }
 @media (max-width: 640px) {
-  .log-pair { grid-template-columns: minmax(0, 1fr); }
-  .log-stages { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .log-stage-arrow { display: none; }
+  .lagoon-pair { grid-template-columns: minmax(0, 1fr); }
+  .lagoon-stages { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .lagoon-stage-arrow { display: none; }
 }
 </style>

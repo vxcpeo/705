@@ -52,74 +52,67 @@ function go(to) { emit('navigate', to) }
 </script>
 
 <template>
-  <div class="leaf">
-    <section v-if="legalPage" class="tty-scene doc-open">
-      <div class="tty-scene-in doc-open-in">
-        <p class="tty-kicker">Local interface preview</p>
-        <h1 class="tty-display doc-display" tabindex="-1">{{ legalTitle }}</h1>
-        <p class="tty-lead">This page describes how this local product demonstration should be read. It is not a production protocol policy, legal agreement, or investment recommendation.</p>
-      </div>
+  <div class="strand">
+    <section v-if="legalPage" class="tide-band tide-band--first strand-open">
+      <p class="tide-kicker">Local interface preview</p>
+      <h1 class="tide-display strand-display" tabindex="-1">{{ legalTitle }}</h1>
+      <p class="tide-lead">This page describes how this local product demonstration should be read. It is not a production protocol policy, legal agreement, or investment recommendation.</p>
     </section>
 
-    <section v-if="legalPage" class="tty-scene doc-legal">
-      <div class="tty-scene-in doc-legal-in">
-        <div class="doc-legal-copy">
-          <p v-for="paragraph in legalBody" :key="paragraph">{{ paragraph }}</p>
-        </div>
-        <div class="doc-legal-actions">
-          <a class="tty-btn tty-btn--primary" href="/docs" @click.prevent="go('/docs')">Read how it works <ArrowRight :size="15" /></a>
-          <a class="tty-btn tty-btn--ghost" href="/" @click.prevent="go('/')">Back to markets <ArrowRight :size="14" /></a>
-        </div>
+    <section v-if="legalPage" class="tide-band strand-legal">
+      <div class="strand-legal-copy">
+        <p v-for="paragraph in legalBody" :key="paragraph">{{ paragraph }}</p>
+      </div>
+      <div class="strand-legal-actions">
+        <a class="tide-btn tide-btn--primary" href="/docs" @click.prevent="go('/docs')">Read how it works <ArrowRight :size="15" /></a>
+        <a class="tide-btn tide-btn--ghost" href="/" @click.prevent="go('/')">Back to markets <ArrowRight :size="14" /></a>
       </div>
     </section>
 
     <template v-else>
-      <section class="tty-scene doc-open">
-        <div class="tty-scene-in doc-open-in">
-          <p class="tty-kicker">{{ brand.network }} / Model notes</p>
-          <h1 class="tty-display doc-display" tabindex="-1">How {{ brand.name }} works.</h1>
-          <p class="tty-lead">This preview models an illustrative split around a cap price. It does not custody SPL assets, run an auction, connect an oracle, or settle transactions.</p>
-          <p class="tty-note doc-open-note">All displayed market values are examples. No token or Solana program has been issued by this preview.</p>
-        </div>
+      <section class="tide-band tide-band--first strand-open">
+        <p class="tide-kicker">{{ brand.network }} / Model notes</p>
+        <h1 class="tide-display strand-display" tabindex="-1">How {{ brand.name }} works.</h1>
+        <p class="tide-lead">This preview models an illustrative split around a cap price. It does not custody SPL assets, run an auction, connect an oracle, or settle transactions.</p>
+        <p class="tide-note strand-open-note">All displayed market values are examples. No token or Solana program has been issued by this preview.</p>
       </section>
 
-      <div class="doc-console">
-        <nav class="doc-index" aria-label="On this page">
-          <p class="doc-index-label">On this page</p>
-          <div class="doc-index-rail">
+      <div class="strand-doc">
+        <nav class="strand-index" aria-label="On this page">
+          <p class="strand-index-label">On this page</p>
+          <div class="strand-index-rail">
             <a v-for="([id, label], index) in sections" :key="id" :href="`#${id}`"><b>{{ String(index + 1).padStart(2, '0') }}</b><span>{{ label }}</span></a>
           </div>
         </nav>
 
-        <div class="doc-body">
-          <div class="tty-scene-in">
-          <div id="mechanism" class="doc-section">
-            <p class="tty-kicker">Mechanism</p>
-            <ol class="doc-steps">
+        <div class="strand-body">
+          <div id="mechanism" class="strand-section">
+            <p class="tide-kicker">Mechanism</p>
+            <ol class="strand-steps">
               <li v-for="[number, title, body] in steps" :key="number">
-                <span class="doc-step-number">{{ number }}</span>
-                <div><h2 class="tty-h3">{{ title }}</h2><p>{{ body }}</p></div>
+                <span class="strand-step-number">{{ number }}</span>
+                <div><h2 class="tide-h3">{{ title }}</h2><p>{{ body }}</p></div>
               </li>
             </ol>
-            <div class="doc-roles">
-              <article class="tty-face doc-role"><p class="doc-role-label doc-role-label--income">Income</p><h3 class="tty-h3">Value up to K, plus any premium.</h3><p>Income still bears the underlying asset's downside. A premium does not protect the market unit from a price decline.</p></article>
-              <article class="tty-face doc-role"><p class="doc-role-label doc-role-label--upside">Upside</p><h3 class="tty-h3">Value above K.</h3><p>The modeled payoff is max(0, settlement price - K). A buyer's maximum modeled loss is the hypothetical premium paid.</p></article>
+            <div class="strand-roles">
+              <article class="strand-role"><p class="strand-role-label strand-role-label--income">Income</p><h3 class="tide-h3">Value up to K, plus any premium.</h3><p>Income still bears the underlying asset's downside. A premium does not protect the market unit from a price decline.</p></article>
+              <article class="strand-role"><p class="strand-role-label strand-role-label--upside">Upside</p><h3 class="tide-h3">Value above K.</h3><p>The modeled payoff is max(0, settlement price - K). A buyer's maximum modeled loss is the hypothetical premium paid.</p></article>
             </div>
           </div>
 
-          <div id="concepts" class="doc-section">
-            <div class="doc-section-head">
-              <p class="tty-kicker">Concepts</p>
-              <h2 class="tty-h2">Three parts of the model.</h2>
-              <p class="doc-intro">These illustrations describe a product concept, not deployed Solana programs.</p>
+          <div id="concepts" class="strand-section">
+            <div class="strand-section-head">
+              <p class="tide-kicker">Concepts</p>
+              <h2 class="tide-h2">Three parts of the model.</h2>
+              <p class="strand-intro">These illustrations describe a product concept, not deployed Solana programs.</p>
             </div>
-            <ul class="doc-cards">
-              <li v-for="(concept, index) in concepts" :id="`concept-${concept.id}`" :key="concept.id" class="doc-card">
-                <figure class="doc-figure">
+            <ul class="strand-cards">
+              <li v-for="(concept, index) in concepts" :id="`concept-${concept.id}`" :key="concept.id" class="strand-card">
+                <figure class="strand-figure">
                   <img :src="concept.image" :alt="concept.title" width="1200" height="750" loading="lazy" />
                   <figcaption>
-                    <span class="doc-card-index">{{ String(index + 1).padStart(2, '0') }}</span>
-                    <h3 class="tty-h3">{{ concept.title }}</h3>
+                    <span class="strand-card-index">{{ String(index + 1).padStart(2, '0') }}</span>
+                    <h3 class="tide-h3">{{ concept.title }}</h3>
                     <p>{{ concept.description }}</p>
                   </figcaption>
                 </figure>
@@ -127,35 +120,34 @@ function go(to) { emit('navigate', to) }
             </ul>
           </div>
 
-          <div id="settlement" class="doc-section doc-split">
-            <div class="doc-split-copy">
-              <p class="tty-kicker">Settlement</p>
-              <h2 class="tty-h2">A defined cap sets the split.</h2>
+          <div id="settlement" class="strand-section strand-split">
+            <div class="strand-split-copy">
+              <p class="tide-kicker">Settlement</p>
+              <h2 class="tide-h2">A defined cap sets the split.</h2>
               <p>For starting price P0 and cap rate c, K = P0 x (1 + c). At assumed settlement price S, Upside receives max(0, S - K). Income receives value up to K plus any hypothetical auction premium.</p>
             </div>
-            <div class="tty-face doc-formula">
-              <p class="doc-formula-label">Illustrative scenario</p>
+            <div class="strand-formula">
+              <p class="strand-formula-label">Illustrative scenario</p>
               <strong>P0 $250 / 5% cap / K $262.50</strong>
-              <dl class="tty-facts tty-facts--stack doc-formula-cells"><div><dt>Settlement $200</dt><dd>Upside $0</dd></div><div><dt>Settlement $250</dt><dd>Upside $0</dd></div><div><dt>Settlement $300</dt><dd>Upside $37.50</dd></div></dl>
+              <dl class="strand-formula-cells"><div><dt>Settlement $200</dt><dd>Upside $0</dd></div><div><dt>Settlement $250</dt><dd>Upside $0</dd></div><div><dt>Settlement $300</dt><dd>Upside $37.50</dd></div></dl>
             </div>
           </div>
 
-          <div class="doc-prose">
-            <div id="oracle" class="doc-leaf"><p class="tty-kicker">Oracle</p><h2 class="tty-h2">No live price source is connected.</h2><p>A production series would need a named feed, market session, fallback behavior, and settlement window. This preview uses local assumptions and performs no oracle reads.</p></div>
-            <div id="fees" class="doc-leaf"><p class="tty-kicker">Fees</p><h2 class="tty-h2">No fee is charged by this demo.</h2><p>A 5% auction fee appeared in an earlier reference model. It is only a design assumption and is not active, binding, or a production term.</p></div>
-            <div id="listing" class="doc-leaf"><p class="tty-kicker">Listing</p><h2 class="tty-h2">Assets need a verified market path.</h2><p>A candidate SPL market unit would need a reliable price source and a USDC liquidity path. Listing, custody, jurisdiction, and program permissions require separate review before production.</p></div>
-            <div id="risks" class="doc-leaf"><p class="tty-kicker">Risks</p><h2 class="tty-h2">A premium does not remove risk.</h2><p>Income still bears underlying downside. Upside may expire without a payoff. Oracle, liquidity, smart contract, counterparty, market, and regulatory risks remain outside this interface.</p></div>
-            <div id="token" class="doc-leaf"><p class="tty-kicker">Token</p><h2 class="tty-h2">The proposed {{ brand.asset }} symbol is separate.</h2><p>Income and Upside describe modeled positions. {{ brand.asset }} is a proposed symbol only; it has not been issued, and no supply or utility is enabled in this preview.</p></div>
-            <div id="documents" class="doc-leaf"><p class="tty-kicker">Journal</p><h2 class="tty-h2">Keep assumptions in this browser.</h2><p>The scenario journal stores its record locally and can export it as JSON. It does not submit a transaction or publish the record on chain.</p><a class="tty-link doc-doc-link" href="/signal" @click.prevent="go('/signal')">Open the journal <ArrowRight :size="14" /></a></div>
-            <div id="terms" class="doc-leaf"><p class="tty-kicker">Terms</p><h2 class="tty-h2">Terms for this local preview.</h2><p>This page is a readable product notice for the interface. It does not replace production terms or create a contractual relationship.</p><a class="tty-link doc-doc-link" href="/terms" @click.prevent="go('/terms')">Read the demo terms <ExternalLink :size="13" /></a></div>
-            <div id="privacy" class="doc-leaf"><p class="tty-kicker">Privacy</p><h2 class="tty-h2">Your browser holds the journal state.</h2><p>No trade order or private key is requested by this documentation view. External links have their own privacy practices.</p><a class="tty-link doc-doc-link" href="/privacy" @click.prevent="go('/privacy')">Read the demo privacy notice <ExternalLink :size="13" /></a></div>
+          <div class="strand-prose">
+            <div id="oracle" class="strand-leaf"><p class="tide-kicker">Oracle</p><h2 class="tide-h2">No live price source is connected.</h2><p>A production series would need a named feed, market session, fallback behavior, and settlement window. This preview uses local assumptions and performs no oracle reads.</p></div>
+            <div id="fees" class="strand-leaf"><p class="tide-kicker">Fees</p><h2 class="tide-h2">No fee is charged by this demo.</h2><p>A 5% auction fee appeared in an earlier reference model. It is only a design assumption and is not active, binding, or a production term.</p></div>
+            <div id="listing" class="strand-leaf"><p class="tide-kicker">Listing</p><h2 class="tide-h2">Assets need a verified market path.</h2><p>A candidate SPL market unit would need a reliable price source and a USDC liquidity path. Listing, custody, jurisdiction, and program permissions require separate review before production.</p></div>
+            <div id="risks" class="strand-leaf"><p class="tide-kicker">Risks</p><h2 class="tide-h2">A premium does not remove risk.</h2><p>Income still bears underlying downside. Upside may expire without a payoff. Oracle, liquidity, smart contract, counterparty, market, and regulatory risks remain outside this interface.</p></div>
+            <div id="token" class="strand-leaf"><p class="tide-kicker">Token</p><h2 class="tide-h2">The proposed {{ brand.asset }} symbol is separate.</h2><p>Income and Upside describe modeled positions. {{ brand.asset }} is a proposed symbol only; it has not been issued, and no supply or utility is enabled in this preview.</p></div>
+            <div id="documents" class="strand-leaf"><p class="tide-kicker">Journal</p><h2 class="tide-h2">Keep assumptions in this browser.</h2><p>The scenario journal stores its record locally and can export it as JSON. It does not submit a transaction or publish the record on chain.</p><a class="tide-link" href="/signal" @click.prevent="go('/signal')">Open the journal <ArrowRight :size="14" /></a></div>
+            <div id="terms" class="strand-leaf"><p class="tide-kicker">Terms</p><h2 class="tide-h2">Terms for this local preview.</h2><p>This page is a readable product notice for the interface. It does not replace production terms or create a contractual relationship.</p><a class="tide-link" href="/terms" @click.prevent="go('/terms')">Read the demo terms <ExternalLink :size="13" /></a></div>
+            <div id="privacy" class="strand-leaf"><p class="tide-kicker">Privacy</p><h2 class="tide-h2">Your browser holds the journal state.</h2><p>No trade order or private key is requested by this documentation view. External links have their own privacy practices.</p><a class="tide-link" href="/privacy" @click.prevent="go('/privacy')">Read the demo privacy notice <ExternalLink :size="13" /></a></div>
           </div>
 
-          <div id="overview" class="doc-anchor" aria-label="Legacy overview anchor"></div>
-          <div id="scenario" class="doc-anchor" aria-label="Legacy scenario anchor"></div>
-          <div id="journal" class="doc-anchor" aria-label="Legacy journal anchor"></div>
-          <div id="limits" class="doc-anchor" aria-label="Legacy limits anchor"></div>
-          </div>
+          <div id="overview" class="strand-anchor" aria-label="Legacy overview anchor"></div>
+          <div id="scenario" class="strand-anchor" aria-label="Legacy scenario anchor"></div>
+          <div id="journal" class="strand-anchor" aria-label="Legacy journal anchor"></div>
+          <div id="limits" class="strand-anchor" aria-label="Legacy limits anchor"></div>
         </div>
       </div>
     </template>
@@ -163,227 +155,170 @@ function go(to) { emit('navigate', to) }
 </template>
 
 <style scoped>
-/* -------------------------------------------------------------------- open */
-.doc-open { padding-bottom: clamp(22px, 2.6vw, 36px); }
-.doc-open-in { display: grid; gap: clamp(12px, 1.6vw, 20px); max-width: 900px; }
-.doc-display { font-size: clamp(28px, 3.4vw, 44px); }
-.doc-open-note { margin-top: 4px; }
-
-/* ------------------------------------------------------------------- index */
-.doc-console {
+/* ---------------------------------------------------------------- opening */
+.strand { display: grid; grid-template-columns: minmax(0, 1fr); }
+.strand > * { min-width: 0; }
+.strand-open {
   display: grid;
-  grid-template-columns: 208px minmax(0, 1fr);
+  gap: 12px;
+  padding-block-end: clamp(20px, 2.6vw, 32px);
+}
+.strand-display { font-size: clamp(32px, 4.8vw, 56px); }
+.strand-open-note { padding-block-start: 4px; }
+
+/* ------------------------------------------------------------------ legal */
+.strand-legal {
+  display: grid;
+  gap: 22px;
+  max-width: 820px;
+}
+.strand-legal-copy { display: grid; gap: 14px; color: var(--ink-soft); font: 400 15px/1.75 var(--font-body); }
+.strand-legal-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+
+/* --------------------------------------------------------------- document */
+.strand-doc {
+  display: grid;
+  grid-template-columns: minmax(180px, 3fr) minmax(0, 9fr);
+  gap: clamp(20px, 3vw, 40px);
   align-items: start;
-  border-top: 1px solid var(--line);
+  padding-block-start: clamp(8px, 1.4vw, 16px);
 }
-.doc-index {
+.strand-index {
   position: sticky;
-  top: calc(var(--strip-h) + 8px);
+  inset-block-start: 20px;
   display: grid;
-  gap: 8px;
-  align-content: start;
-  padding: clamp(18px, 2vw, 28px) 14px clamp(18px, 2vw, 28px) var(--gutter);
-  border-right: 1px solid var(--line);
+  gap: 10px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface-soft);
 }
-.doc-index-label {
-  margin: 0 0 2px;
-  color: var(--faint);
-  font: 500 9px/1.4 var(--font-mono);
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-}
-.doc-index-rail { display: grid; gap: 2px; }
-.doc-index-rail a {
-  display: grid;
-  grid-template-columns: 22px minmax(0, 1fr);
-  align-items: baseline;
-  gap: 6px;
-  padding: 5px 7px;
-  border-left: 2px solid transparent;
+.strand-index-label {
   color: var(--muted);
-  font: 500 10px/1.5 var(--font-mono);
-  letter-spacing: 0.1em;
+  font: 600 9px/1.4 var(--font-mono);
+  letter-spacing: .16em;
   text-transform: uppercase;
-  text-decoration: none;
-  transition: color 160ms var(--ease), background-color 160ms var(--ease);
 }
-.doc-index-rail a b { color: var(--faint); font-weight: 500; }
-.doc-index-rail a:hover {
-  color: var(--ink);
-  background: rgba(255, 255, 255, 0.04);
-}
-.doc-index-rail a:hover b { color: var(--accent-safe); }
-
-/* -------------------------------------------------------------------- body */
-.doc-body { padding: clamp(18px, 2.2vw, 30px) var(--gutter); }
-.doc-section { display: grid; gap: clamp(16px, 1.8vw, 24px); padding-bottom: clamp(34px, 4vw, 56px); scroll-margin-top: 130px; }
-.doc-section + .doc-section { padding-top: clamp(34px, 4vw, 56px); border-top: 1px solid var(--line); }
-.doc-section h2 { margin: 0; }
-.doc-section-head { display: grid; gap: 10px; }
-.doc-intro { margin: 0; color: var(--muted); font: 400 14px/1.7 var(--font-body); }
-
-/* ------------------------------------------------------------------- steps */
-.doc-steps {
+.strand-index-rail { display: grid; gap: 1px; }
+.strand-index-rail a {
   display: grid;
-  gap: 0;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  border-top: 1px solid var(--line);
+  grid-template-columns: 26px minmax(0, 1fr);
+  gap: 8px;
+  align-items: baseline;
+  padding: 7px 8px;
+  border-radius: 8px;
+  color: var(--ink-soft);
+  font: 500 12px/1.4 var(--font-body);
+  text-decoration: none;
+  transition: background-color var(--motion-duration) var(--motion-ease), color var(--motion-duration) var(--motion-ease);
 }
-.doc-steps li {
+.strand-index-rail a:hover { background: var(--surface-alt); color: var(--accent-deep); }
+.strand-index-rail b { color: var(--muted); font: 500 9px/1.5 var(--font-mono); letter-spacing: .06em; }
+
+.strand-body { display: grid; gap: clamp(28px, 4vw, 48px); min-width: 0; }
+.strand-section { display: grid; gap: 16px; scroll-margin-block-start: 24px; }
+.strand-section-head { display: grid; gap: 8px; }
+.strand-intro { color: var(--muted); font: 400 13px/1.7 var(--font-body); }
+
+/* ------------------------------------------------------------------ steps */
+.strand-steps { display: grid; gap: 0; border-block-start: 1px solid var(--line); }
+.strand-steps li {
   display: grid;
   grid-template-columns: 44px minmax(0, 1fr);
   gap: 16px;
-  padding: 16px 0;
-  border-bottom: 1px solid var(--line);
+  padding-block: 15px;
+  border-block-end: 1px solid var(--line);
 }
-.doc-steps h2 { margin: 0 0 5px; }
-.doc-steps p { margin: 0; max-width: 72ch; color: var(--muted); font: 400 13px/1.7 var(--font-body); }
-.doc-step-number {
-  color: var(--accent-safe);
-  font: 500 11px/1.7 var(--font-mono);
-  letter-spacing: 0.16em;
-}
+.strand-step-number { color: var(--accent-safe); font: 600 12px/1.6 var(--font-mono); letter-spacing: .08em; }
+.strand-steps p { margin-block-start: 4px; color: var(--ink-soft); font: 400 14px/1.7 var(--font-body); }
 
-.doc-roles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
-.doc-role { display: grid; gap: 10px; align-content: start; }
-.doc-role-label {
-  margin: 0;
-  font: 500 9px/1.4 var(--font-mono);
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-}
-.doc-role-label--income { color: var(--mint); }
-.doc-role-label--upside { color: var(--accent-2); }
-.doc-role h3 { margin: 0; }
-.doc-role p { margin: 0; color: var(--muted); font: 400 13px/1.7 var(--font-body); }
-
-/* ------------------------------------------------------------------ cards */
-.doc-cards {
+.strand-roles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.strand-role {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.doc-card { min-width: 0; }
-.doc-figure {
-  display: grid;
-  margin: 0;
-  height: 100%;
+  gap: 8px;
+  padding: 18px;
   border: 1px solid var(--line);
-  border-radius: var(--radius-lg);
-  background: linear-gradient(180deg, var(--surface-2), var(--bg-2));
-  overflow: hidden;
+  border-radius: var(--radius-md);
+  background: linear-gradient(170deg, var(--surface), var(--surface-soft));
 }
-.doc-figure img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 10;
-  object-fit: contain;
-  border-bottom: 1px solid var(--line);
-  background: radial-gradient(120% 100% at 50% 0%, rgba(255, 0, 0, 0.1), transparent 70%);
-  /* The supplied plates were drawn on paper. Inverted they read as night-chart
-     proofs of the same drawing, so the illustration stays inside the deck. */
-  filter: invert(0.93) hue-rotate(178deg) saturate(1.15) brightness(0.94) contrast(1.02);
-  transition: filter 320ms var(--ease);
-}
-.doc-figure:hover img { filter: invert(0.9) hue-rotate(178deg) saturate(1.3) brightness(1.02) contrast(1.02); }
-.doc-figure figcaption { padding: 18px 20px 22px; }
-.doc-card-index {
-  display: block;
-  margin-bottom: 8px;
-  color: var(--accent-safe);
-  font: 500 9px/1 var(--font-mono);
-  letter-spacing: 0.22em;
-}
-.doc-figure h3 { margin: 0 0 8px; }
-.doc-figure p { margin: 0; color: var(--muted); font: 400 12px/1.7 var(--font-body); }
-
-/* ------------------------------------------------------------------ split */
-.doc-split { grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); align-items: start; }
-.doc-split-copy { display: grid; gap: 10px; }
-.doc-split-copy p:last-child { margin: 0; max-width: 68ch; color: var(--muted); font: 400 14px/1.75 var(--font-body); }
-.doc-formula { display: grid; gap: 14px; align-content: start; }
-.doc-formula-label {
-  margin: 0;
-  color: var(--faint);
-  font: 500 9px/1.4 var(--font-mono);
-  letter-spacing: 0.2em;
+.strand-role p { color: var(--muted); font: 400 13px/1.7 var(--font-body); }
+.strand-role-label {
+  font: 600 9px/1.4 var(--font-mono);
+  letter-spacing: .16em;
   text-transform: uppercase;
 }
-.doc-formula strong {
-  display: block;
-  font: 500 14px/1.6 var(--font-mono);
-  font-variant-numeric: tabular-nums;
-  color: var(--ink);
-}
-.doc-formula-cells { border: 0; background: none; }
+.strand-role-label--income { color: var(--success); }
+.strand-role-label--upside { color: var(--accent-safe); }
 
-/* ------------------------------------------------------------------- prose */
-.doc-prose {
+/* ---------------------------------------------------------------- concepts */
+.strand-cards { display: grid; gap: 18px; }
+.strand-card { scroll-margin-block-start: 24px; }
+.strand-figure {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1px;
-  margin-top: clamp(34px, 4vw, 56px);
-  border-top: 1px solid var(--line);
-  background: var(--line);
+  gap: 14px;
+  padding: clamp(12px, 1.6vw, 18px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface);
 }
-.doc-leaf {
+.strand-figure img { width: 100%; height: auto; border-radius: var(--radius-sm); border: 1px solid var(--line); }
+.strand-figure figcaption { display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 4px 14px; align-items: baseline; }
+.strand-card-index { color: var(--accent-deep); font: 600 11px/1.5 var(--font-mono); letter-spacing: .1em; grid-row: span 2; }
+.strand-figure figcaption p { color: var(--muted); font: 400 13px/1.7 var(--font-body); }
+
+/* --------------------------------------------------------------- settlement */
+.strand-split { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: clamp(18px, 2.6vw, 32px); align-items: start; }
+.strand-split-copy { display: grid; gap: 10px; }
+.strand-split-copy p { color: var(--ink-soft); font: 400 14px/1.75 var(--font-body); }
+.strand-formula {
   display: grid;
   gap: 10px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface-soft);
+}
+.strand-formula-label { color: var(--muted); font: 600 9px/1.4 var(--font-mono); letter-spacing: .16em; text-transform: uppercase; }
+.strand-formula strong { color: var(--ink); font: 600 16px/1.4 var(--font-display); letter-spacing: -.01em; }
+.strand-formula-cells { display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius-sm); overflow: hidden; }
+.strand-formula-cells > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 10px 12px;
+  background: var(--surface);
+}
+.strand-formula-cells dt { color: var(--ink-soft); font: 500 11px/1.5 var(--font-mono); }
+.strand-formula-cells dd { color: var(--ink); font: 600 12px/1.5 var(--font-mono); }
+
+/* ------------------------------------------------------------------ prose */
+.strand-prose { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.strand-leaf {
+  display: grid;
+  gap: 8px;
   align-content: start;
-  min-width: 0;
-  padding: clamp(20px, 2.4vw, 34px);
-  background: var(--bg-2);
-  scroll-margin-top: 130px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  scroll-margin-block-start: 24px;
 }
-.doc-leaf h2 { margin: 0; font-size: clamp(20px, 1.9vw, 27px); }
-.doc-leaf p:last-child { margin: 0; color: var(--muted); font: 400 13px/1.75 var(--font-body); }
-.doc-doc-link { margin-top: 4px; }
-
-.doc-anchor { height: 1px; scroll-margin-top: 130px; }
-
-/* ------------------------------------------------------------------- legal */
-.doc-legal-in { display: grid; gap: clamp(20px, 2.4vw, 32px); max-width: 780px; }
-.doc-legal-copy { display: grid; gap: 16px; }
-.doc-legal-copy p {
-  margin: 0;
-  color: var(--ink-2);
-  font: 400 15px/1.85 var(--font-body);
-  padding-left: 20px;
-  border-left: 1px solid var(--line-2);
-}
-.doc-legal-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.strand-leaf p { color: var(--muted); font: 400 13px/1.7 var(--font-body); }
+.strand-leaf .tide-link { margin-block-start: 4px; }
+.strand-anchor { position: absolute; width: 1px; height: 1px; overflow: hidden; }
 
 /* -------------------------------------------------------------- responsive */
 @media (max-width: 1080px) {
-  .doc-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .doc-roles { grid-template-columns: minmax(0, 1fr); }
-  .doc-split { grid-template-columns: minmax(0, 1fr); }
+  .strand-doc { grid-template-columns: minmax(0, 1fr); }
+  .strand-index { position: static; }
+  .strand-index-rail { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
-@media (max-width: 900px) {
-  .doc-console { grid-template-columns: minmax(0, 1fr); }
-  .doc-index {
-    position: static;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    gap: 4px 8px;
-    padding: 10px var(--gutter);
-    border-right: 0;
-    border-bottom: 1px solid var(--line);
-  }
-  .doc-index-label { margin: 0 8px 0 0; }
-  .doc-index-rail { display: flex; flex-wrap: wrap; gap: 2px 6px; }
-  .doc-index-rail a { border-left: 0; padding: 4px 6px; }
+@media (max-width: 780px) {
+  .strand-roles, .strand-split, .strand-prose { grid-template-columns: minmax(0, 1fr); }
 }
-@media (max-width: 860px) {
-  .doc-prose { grid-template-columns: minmax(0, 1fr); }
-  .doc-cards { grid-template-columns: minmax(0, 1fr); }
-  .doc-legal-actions { display: grid; }
-  .doc-legal-actions .tty-btn { width: 100%; }
+@media (max-width: 520px) {
+  .strand-index-rail { grid-template-columns: minmax(0, 1fr); }
+  .strand-steps li { grid-template-columns: 32px minmax(0, 1fr); }
 }
 </style>

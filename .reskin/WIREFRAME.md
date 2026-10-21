@@ -1,79 +1,65 @@
-# Wireframe — Abyss Console (Pretiola)
+# Wireframe — Tidal Sui / Split Stage
 
-Selected automatically: **Abyss Liquidity** (`aave-abyss`, dark-technical) with the
-**Terminal Console** (`terminal-console`, linear) skeleton. Original skeleton: `orbital`
-(spatial) — a floating pill dock, a sticky mast and full-bleed scenes on a star field.
-Source DNA sampled live from <https://aave.com> (3459 ms); only abstract palette, type,
-shape, density and motion were taken.
+Project: `website/` (Vue 3.5 + Vite 6). Baseline archetype: `terminal-console` (linear).
+New archetype: `split-stage` (spatial). No persistent status strip, no command rail, no
+two-track console panes, no hint bar pinned under a console.
 
-This wireframe is the commitment. Every route uses the console archetype; there is no
-fallback shell.
+## New shell — `src/App.vue` (class namespace `tide-`)
 
-## 1. Shell — `App.vue`
+Desktop (>= 1080 px): a single asymmetric split, `grid-template-columns: minmax(320px, 42fr) minmax(0, 58fr)`.
 
-```
-<main class="tty-console" id="main">
-  <div class="tty-status">            status strip, 30px, sticky
-    brand link · Mode/Network/Unit/Records · handle + domain targets
-  </div>
-  <div class="tty-command">           command line
-    prompt + "network market terminal / Preview build"   wallet · Open the board · nav toggle
-  </div>
-  <div class="tty-deck">              two-track console
-    <nav class="tty-nav">             command rail (01-06), current command marked
-    <div class="tty-stage">           route content
-      <route component>
-      <colophon>
-    </div>
-  </div>
-  <div class="tty-hint">              station readout + disclaimer
-</main>
-```
+| Region | Holds |
+| --- | --- |
+| `header.tide-mast` (sticky, 100vh, left column) | brand lockup (`icon.svg` + `{{ brand.name }}`), build line, vertical route index (`nav`), instrument block (Mode / Network / Unit / Records + handle-domain tail), actions (wallet, "Open the board"), colophon + footer links |
+| `main.tide-stage` (right column) | the route component, then a full-width proof band carrying the Feed / Unit / Stores / Target facts and the disclaimer |
 
-- Landmarks: `main` then `nav` inside it. No `header`, no floating dock, no `aside`.
-- Navigation pattern: a vertical command rail of numbered commands with their notes, inside
-  the console. Below 860px the rail becomes a horizontal command strip behind an
-  `aria-expanded` toggle in the command line (Escape closes it).
-- Mobile: one column; the status cells collapse at 560px; the hint strip stacks.
+Mobile (< 1080 px): the mast becomes a compact header (brand + actions + index disclosure
+button with `aria-expanded`); the index becomes a horizontally scrollable strip under the
+header; the instrument block and colophon move below the stage content. The split is not
+preserved. The sticky column is only sticky at >= 1080 px and has its own scroll if short.
 
-## 2. Route mapping
+Navigation pattern: vertical index in the narrative column, numbered 01–06, each line carrying
+the route label and its existing note; the current route is marked with a filled accent bar and
+`aria-current`. No horizontal top bar on desktop. On mobile the same index becomes a strip
+behind the disclosure.
 
-| Route | New composition (regions) |
-|---|---|
-| `/` | command block (kicker, h1, lead, actions, note) → metric strip → **pane deck**: left = board table with its filter/switch toolbar, right = unit-quote form and readout → settlement split → sample tape → briefing → limits |
-| `/app/markets` | command block → **pane deck**: left = filters + market table (`Market quotes`, stats band), right = sheet-facts rail → colophon |
-| `/app/markets/:symbol` | command block → **pane deck**: left = passport + payoff explorer, right = facts rail |
-| `/signal` | command block → **pane deck**: left = step form, right = assumption panel / review record / journal record |
-| `/docs` | command block → **document console**: left = in-page index (sticky), right = mechanism, concepts, settlement, prose leaves |
-| `/privacy`, `/terms` | command block → legal copy block → actions; same console shell |
-| 404 | console error block inside the stage |
+## Route compositions (`main` content)
 
-## 3. Components
+| Route | Composition |
+| --- | --- |
+| `/` HomePage | 8/4 shoreline opening (headline left, supporting copy + actions right), annotated six-cell gauge band, then a 7/5 board band (watchlist ledger left, sandbox unit quote right), a settlement split figure + readout, a horizontal sample tape, a numbered briefing ledger, and a full-bleed limits band |
+| `/app/markets` (+ detail, launchpad, auctions, recompose) | opening band with a large page title and back link; filters as a command row; board as a 8/4 split (data table left, annotated facts rail right); asset detail as 5/7 (passport left, payoff instrument right); leaf routes as a single centred sheet |
+| `/docs` | opening thesis; then a 3/9 document split: sticky in-page index in the margin, prose column right; concept figures as full-width annotated plates |
+| `/signal` ScenarioLab | opening thesis; 7/5 form split (field deck left, assumption panel right); review and journal steps as a single record sheet with the step track |
+| `/terms`, `/privacy`, `/risk` | opening thesis; prose column with an actions row, no nested split |
+| 404 | single centred sheet |
 
-- `App.vue` — rewritten shell (status strip, command line, command rail, stage, hint strip,
-  colophon). Script logic kept: `pathname`, `navigate`, `popState`, `scrollToHash`, title
-  watch, Escape handling (now closing the command drawer).
-- `HomePage.vue` — hero retained as the command block; board and quote moved into a two-track
-  deck; settlement split, tape, briefing and limits follow as console blocks.
-- `MarketWorkspace.vue` — opening + deck: table left, facts rail right; detail/leaf routes
-  keep their own left pane.
-- `MarketTable.vue` — data grid restyled (mono headers, tabular numbers, state pills, mobile
-  card rail retained).
-- `PayoffExplorer.vue` — dial column + instrument card, chart/table toggle retained.
-- `DocsPage.vue` — in-page index becomes a sticky left rail; prose becomes the right column.
-- `ScenarioLab.vue` — field deck + assumption/record panel, step track retained.
-- `SolanaWalletButton.vue` — dialog restyled to a console sheet.
+## Component mapping
 
-## 4. CSS architecture
+- `src/console.css` → **deleted**; replaced by `src/tide.css` (tokens, reset, shell split, type,
+  primitives: buttons, inputs, tables, notices, facts, pills, figures, reduced motion).
+- New shell: `App.vue` (mast + stage + proof band). Old status strip, command line, command
+  rail, hint strip and two-track console deck removed.
+- Kept as content-only children (script blocks unchanged): `HomePage.vue`, `MarketWorkspace.vue`,
+  `MarketTable.vue`, `PayoffExplorer.vue`, `ScenarioLab.vue`, `DocsPage.vue`,
+  `SolanaWalletButton.vue`. Each template is re-laid-out; each scoped stylesheet is replaced.
+- `index.html`: `theme-color` and `color-scheme` switch to the light Tidal tokens; title,
+  description, icons and social metadata untouched.
 
-- `src/console.css` — the single global layer: tokens (Abyss), reset/base type, console shell,
-  deck/rail/pane layout, typography, surface, pills, buttons, switch, fact grid, key/value,
-  rails, tables, forms, notices, colophon, responsive rules, reduced-motion guard.
-- `src/reskin.css` — deleted (old global layer, no longer imported).
-- Component `<style scoped>` blocks remain, renamed to the new token/class names; they carry
-  component-specific layout only.
-- New namespace: `tty-` (shell/primitives), `pag-` (home), `wrk-` (markets), `tbl-` (table),
-  `pfx-` (payoff), `doc-` (docs), `log-` (scenario), `wal-` (wallet). No original class or
-  token name survives.
-- Breakpoints: 1080px (deck collapses), 900px (docs index becomes a strip), 860px (rail becomes
-  a drawer), 560px (status cells collapse).
+## Tokens and breakpoints
+
+`src/tide.css` defines `--tide-*` custom properties from STYLE.md (`--bg`, `--surface`,
+`--ink`, `--muted`, `--accent`, `--accent-safe`, `--accent-2`, `--line`, `--radius-*`,
+`--shadow`, `--motion-*`), typography from the Sui direction, and the shell grid.
+
+Breakpoints: 1180 px (split ratio tightens), 1080 px (split becomes one column, mast becomes
+header, index becomes strip), 760 px (bands stack, tables become labelled rows), 520 px (form
+pairs single column, gauges two columns). Every route must render without horizontal overflow
+at 390 px.
+
+## Content protection
+
+Every static string, binding, handler, route, source, form signature and link target comes from
+the existing templates and is moved verbatim. Script blocks are not edited except for the one
+presentational selector in `App.vue` (`onKeydown` focus target), which keeps the same focus
+behaviour. No new visible copy.

@@ -36,7 +36,7 @@ function showModal() {
   setupMessage.value = ''
   wallets.value = getSolanaWallets()
   discovering.value = true
-  void nextTick(() => dialogPanel.value?.querySelector('.wal-close')?.focus())
+  void nextTick(() => dialogPanel.value?.querySelector('.dock-close')?.focus())
   void initializeSolanaWallets()
     .then((available) => {
       wallets.value = available
@@ -130,58 +130,58 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div class="port">
+  <div class="dock">
     <button
       type="button"
-      class="tty-btn wal-trigger"
-      :class="{ 'linked': address }"
+      class="tide-btn dock-trigger"
+      :class="{ 'is-linked': address }"
       :aria-haspopup="'dialog'"
       :aria-expanded="modalOpen"
       :disabled="Boolean(pendingWallet)"
       @click="showModal"
     >
-      <Wallet :size="16" />
+      <Wallet :size="15" />
       {{ pendingWallet ? 'Connecting…' : buttonLabel }}
     </button>
 
     <Teleport to="body">
-      <div v-if="modalOpen" class="wal-scrim" @click.self="closeModal" @keydown.esc.stop="closeModal">
-        <section ref="dialogPanel" class="wal-dialog" role="dialog" aria-modal="true" aria-labelledby="wallet-dialog-title" tabindex="-1" @keydown.stop="onDialogKeydown">
-          <header class="wal-head">
-            <div class="wal-head-copy">
-              <span class="wal-eyebrow">SOLANA / {{ solanaConfig.cluster.toUpperCase() }}</span>
-              <h2 id="wallet-dialog-title" class="tty-h2 wal-title">{{ address ? 'Wallet connected' : 'Choose a wallet' }}</h2>
+      <div v-if="modalOpen" class="dock-scrim" @click.self="closeModal" @keydown.esc.stop="closeModal">
+        <section ref="dialogPanel" class="dock-dialog" role="dialog" aria-modal="true" aria-labelledby="wallet-dialog-title" tabindex="-1" @keydown.stop="onDialogKeydown">
+          <header class="dock-head">
+            <div class="dock-head-copy">
+              <span class="dock-eyebrow">SOLANA / {{ solanaConfig.cluster.toUpperCase() }}</span>
+              <h2 id="wallet-dialog-title" class="tide-h2 dock-title">{{ address ? 'Wallet connected' : 'Choose a wallet' }}</h2>
             </div>
-            <button class="wal-close" type="button" aria-label="Close wallet dialog" @click="closeModal"><X :size="18" /></button>
+            <button class="dock-close" type="button" aria-label="Close wallet dialog" @click="closeModal"><X :size="18" /></button>
           </header>
 
-          <div class="wal-body">
-            <div v-if="address" class="wal-account">
-              <span class="wal-account-name"><Wallet :size="16" /> {{ activeWallet?.name || 'Solana wallet' }}</span>
+          <div class="dock-body">
+            <div v-if="address" class="dock-account">
+              <span class="dock-account-name"><Wallet :size="16" /> {{ activeWallet?.name || 'Solana wallet' }}</span>
               <code>{{ address }}</code>
-              <button class="tty-btn tty-btn--ghost tty-btn--wide wal-disconnect" type="button" :disabled="Boolean(pendingWallet)" @click="disconnect">
+              <button class="tide-btn tide-btn--ghost tide-btn--wide dock-disconnect" type="button" :disabled="Boolean(pendingWallet)" @click="disconnect">
                 {{ pendingWallet ? 'Disconnecting…' : 'Disconnect wallet' }}
               </button>
             </div>
 
             <template v-else>
-              <p class="wal-copy">Connect a Solana account to display its public address. This site does not ask for transaction signatures.</p>
-              <p class="tty-notice tty-notice--ok wal-network"><ShieldCheck :size="15" /> Use a Solana wallet with an SPL account. The CA preview never asks for a seed phrase.</p>
+              <p class="dock-copy">Connect a Solana account to display its public address. This site does not ask for transaction signatures.</p>
+              <p class="tide-notice tide-notice--ok dock-network"><ShieldCheck :size="15" /> Use a Solana wallet with an SPL account. The CA preview never asks for a seed phrase.</p>
 
-              <p v-if="discovering" class="tty-notice wal-discovery" role="status">Looking for MetaMask, Phantom, Solflare and other Solana wallets…</p>
-              <div v-else-if="wallets.length" class="wal-options" aria-label="Available Solana wallets">
-                <button v-for="wallet in wallets" :key="wallet.name" class="wal-option" type="button" :disabled="Boolean(pendingWallet)" @click="connect(wallet)">
-                  <img v-if="wallet.icon" class="wal-option-icon" :src="wallet.icon" alt="" />
-                  <span v-else class="wal-option-icon wal-option-placeholder"><Wallet :size="18" /></span>
-                  <span class="wal-option-name">{{ wallet.name }}</span>
-                  <span v-if="pendingWallet === wallet.name" class="wal-option-state">Connecting…</span>
-                  <ExternalLink v-else :size="15" class="wal-option-arrow" />
+              <p v-if="discovering" class="tide-notice dock-discovery" role="status">Looking for MetaMask, Phantom, Solflare and other Solana wallets…</p>
+              <div v-else-if="wallets.length" class="dock-options" aria-label="Available Solana wallets">
+                <button v-for="wallet in wallets" :key="wallet.name" class="dock-option" type="button" :disabled="Boolean(pendingWallet)" @click="connect(wallet)">
+                  <img v-if="wallet.icon" class="dock-option-icon" :src="wallet.icon" alt="" />
+                  <span v-else class="dock-option-icon dock-option-placeholder"><Wallet :size="18" /></span>
+                  <span class="dock-option-name">{{ wallet.name }}</span>
+                  <span v-if="pendingWallet === wallet.name" class="dock-option-state">Connecting…</span>
+                  <ExternalLink v-else :size="15" class="dock-option-arrow" />
                 </button>
               </div>
-              <div v-else class="wal-empty">
+              <div v-else class="dock-empty">
                 <p>No compatible Solana wallet was detected.</p>
-                <p class="wal-empty-help">Install a wallet, enable its Solana account, then reopen this panel.</p>
-                <div class="wal-install">
+                <p class="dock-empty-help">Install a wallet, enable its Solana account, then reopen this panel.</p>
+                <div class="dock-install">
                   <a href="https://metamask.io/download/" target="_blank" rel="noreferrer">MetaMask <ExternalLink :size="12" /></a>
                   <a href="https://phantom.app/download" target="_blank" rel="noreferrer">Phantom <ExternalLink :size="12" /></a>
                   <a href="https://solflare.com/download" target="_blank" rel="noreferrer">Solflare <ExternalLink :size="12" /></a>
@@ -189,9 +189,9 @@ onBeforeUnmount(() => {
               </div>
             </template>
 
-            <p v-if="errorMessage" class="tty-notice tty-notice--alert wal-error" role="alert">{{ errorMessage }}</p>
-            <p v-if="setupMessage" class="tty-notice tty-notice--flag wal-setup" role="status">MetaMask connector: {{ setupMessage }}</p>
-            <p class="wal-foot">Only the selected wallet’s public Solana address is read.</p>
+            <p v-if="errorMessage" class="tide-notice tide-notice--alert dock-error" role="alert">{{ errorMessage }}</p>
+            <p v-if="setupMessage" class="tide-notice tide-notice--flag dock-setup" role="status">MetaMask connector: {{ setupMessage }}</p>
+            <p class="dock-foot">Only the selected wallet’s public Solana address is read.</p>
           </div>
         </section>
       </div>
@@ -200,192 +200,116 @@ onBeforeUnmount(() => {
 </template>
 
 <style scoped>
-/* ----------------------------------------------------------------- trigger */
-.port { min-width: 0; }
-.wal-trigger { box-shadow: none; }
-.wal-trigger.linked {
-  border-color: transparent;
-  background: var(--accent);
-  color: #050608;
-  box-shadow: 0 0 24px rgba(255, 0, 0, 0.35);
-}
-.wal-trigger.linked:hover { background: #ff6b6b; border-color: transparent; }
+.dock { display: inline-flex; }
+.dock-trigger { gap: 7px; }
+.dock-trigger.is-linked { border-color: var(--accent); color: var(--accent-safe); }
 
-/* ------------------------------------------------------------------- scrim */
-.wal-scrim {
+/* ----------------------------------------------------------------- dialog */
+.dock-scrim {
   position: fixed;
   inset: 0;
-  z-index: 120;
+  z-index: 50;
   display: grid;
   place-items: center;
-  padding: 22px;
-  background: rgba(3, 4, 10, 0.78);
-  backdrop-filter: blur(10px);
+  padding: 20px;
+  background: rgba(8, 27, 43, .38);
+  backdrop-filter: blur(3px);
 }
-
-/* ------------------------------------------------------------------ dialog */
-.wal-dialog {
-  width: min(100%, 480px);
-  max-height: min(760px, calc(100vh - 44px));
-  overflow: auto;
-  border: 1px solid var(--line-2);
+.dock-dialog {
+  width: min(460px, 100%);
+  max-height: min(86vh, 720px);
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  border: 1px solid var(--line);
   border-radius: var(--radius-lg);
-  background: linear-gradient(180deg, var(--surface-2), var(--bg-2) 60%);
-  box-shadow: 0 0 0 1px rgba(255, 0, 0, 0.08), 0 40px 90px rgba(0, 0, 0, 0.8), var(--glow);
-  outline: 0;
+  background: var(--surface);
+  box-shadow: 0 40px 90px rgba(8, 27, 43, .28);
+  overflow: hidden;
 }
-.wal-head {
+.dock-head {
   display: flex;
-  align-items: flex-start;
+  align-items: start;
   justify-content: space-between;
   gap: 16px;
-  padding: 22px 22px 18px;
-  border-bottom: 1px solid var(--line);
+  padding: 20px 22px 16px;
+  border-block-end: 1px solid var(--line);
+  background:
+    radial-gradient(320px 160px at 100% 0%, rgba(41, 141, 255, .16), transparent 70%),
+    var(--surface);
 }
-.wal-head-copy { display: grid; gap: 9px; min-width: 0; }
-.wal-eyebrow {
-  display: block;
-  color: var(--accent-safe);
-  font: 500 9px/1.4 var(--font-mono);
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-}
-.wal-title { font-size: clamp(22px, 2.4vw, 28px); }
-.wal-close {
-  display: grid;
-  place-items: center;
-  flex: none;
-  width: 36px;
-  height: 36px;
-  border: 1px solid var(--line-2);
-  border-radius: 50%;
-  background: transparent;
-  color: var(--ink);
-  cursor: pointer;
-  transition: color 160ms var(--ease), border-color 160ms var(--ease), background-color 160ms var(--ease);
-}
-.wal-close:hover { color: var(--accent-safe); border-color: var(--accent-safe); background: rgba(255, 0, 0, 0.12); }
-
-.wal-body { display: grid; gap: 14px; padding: 20px 22px 22px; }
-.wal-copy { margin: 0; color: var(--muted); font: 400 14px/1.7 var(--font-body); }
-.wal-network { margin: 0; }
-
-/* ------------------------------------------------------------------ wallets */
-.wal-options { display: grid; gap: 8px; }
-.wal-option {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  min-height: 56px;
-  padding: 9px 14px;
-  border: 1px solid var(--line-2);
-  border-radius: var(--radius-pill);
-  background: rgba(10, 14, 20, 0.8);
-  color: var(--ink);
-  text-align: left;
-  cursor: pointer;
-  transition: border-color 160ms var(--ease), background-color 160ms var(--ease);
-}
-.wal-option:hover:not(:disabled) { border-color: var(--accent-safe); background: rgba(255, 0, 0, 0.1); }
-.wal-option:disabled { opacity: 0.5; cursor: not-allowed; }
-.wal-option-icon {
+.dock-head-copy { display: grid; gap: 6px; }
+.dock-eyebrow { color: var(--accent-safe); font: 600 9px/1.4 var(--font-mono); letter-spacing: .18em; }
+.dock-title { font-size: 24px; }
+.dock-close {
   display: grid;
   place-items: center;
   flex: none;
   width: 34px;
   height: 34px;
-  border-radius: 50%;
-  background: var(--surface-3);
-  box-shadow: inset 0 0 0 1px var(--line-2);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--ink-soft);
 }
-img.wal-option-icon { object-fit: contain; padding: 5px; }
-.wal-option-placeholder { color: var(--muted); }
-.wal-option-name { flex: 1 1 auto; min-width: 0; font: 500 13px/1.3 var(--font-mono); }
-.wal-option-state {
-  color: var(--faint);
-  font: 500 9px/1 var(--font-mono);
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-}
-.wal-option-arrow { flex: none; color: var(--faint); }
+.dock-close:hover { border-color: var(--accent); color: var(--accent-safe); }
 
-/* ------------------------------------------------------------------ account */
-.wal-account {
+.dock-body {
   display: grid;
   gap: 12px;
-  padding: 16px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-md);
-  background: rgba(10, 14, 20, 0.8);
+  padding: 18px 22px 22px;
+  overflow: auto;
 }
-.wal-account-name {
-  display: inline-flex;
-  align-items: center;
-  gap: 9px;
-  color: var(--ink-2);
-  font: 500 10px/1 var(--font-mono);
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-}
-.wal-account code {
+.dock-copy { color: var(--ink-soft); font: 400 13px/1.7 var(--font-body); }
+.dock-network { display: flex; gap: 8px; align-items: start; }
+.dock-account { display: grid; gap: 10px; }
+.dock-account-name { display: inline-flex; align-items: center; gap: 8px; font: 600 13px/1.4 var(--font-body); }
+.dock-account code {
   display: block;
   padding: 10px 12px;
+  border: 1px solid var(--line);
   border-radius: var(--radius-sm);
-  background: var(--bg-2);
-  color: var(--ink);
-  font: 400 12px/1.6 var(--font-mono);
+  background: var(--surface-soft);
+  color: var(--ink-soft);
+  font: 500 11px/1.6 var(--font-mono);
   word-break: break-all;
 }
-.wal-disconnect { justify-self: start; }
-
-/* -------------------------------------------------------------------- empty */
-.wal-empty {
-  display: grid;
-  gap: 10px;
-  padding: 16px;
+.dock-options { display: grid; gap: 8px; }
+.dock-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 14px;
   border: 1px solid var(--line);
-  border-radius: var(--radius-md);
-  background: rgba(10, 14, 20, 0.8);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  text-align: start;
+  transition: border-color var(--motion-duration) var(--motion-ease), background-color var(--motion-duration) var(--motion-ease);
 }
-.wal-empty p { margin: 0; color: var(--ink-2); font: 400 13px/1.7 var(--font-body); }
-.wal-empty-help { color: var(--muted) !important; font: 400 11px/1.7 var(--font-mono) !important; }
-.wal-install { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
-.wal-install a {
+.dock-option:hover { border-color: var(--accent); background: var(--surface-soft); }
+.dock-option-icon { width: 26px; height: 26px; border-radius: 8px; object-fit: contain; }
+.dock-option-placeholder { display: grid; place-items: center; background: var(--surface-alt); color: var(--accent-safe); }
+.dock-option-name { font: 600 13px/1.4 var(--font-body); }
+.dock-option-state { margin-inline-start: auto; color: var(--muted); font: 500 10px/1.4 var(--font-mono); }
+.dock-option-arrow { margin-inline-start: auto; color: var(--muted); }
+.dock-empty { display: grid; gap: 6px; padding: 14px; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--surface-soft); }
+.dock-empty p { font: 400 13px/1.6 var(--font-body); }
+.dock-empty-help { color: var(--muted); }
+.dock-install { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-block-start: 4px; }
+.dock-install a {
   display: inline-flex;
   align-items: center;
-  gap: 7px;
-  padding: 9px 13px;
-  border: 1px solid var(--line-2);
-  border-radius: var(--radius-pill);
-  background: transparent;
-  color: var(--ink-2);
-  font: 500 9px/1 var(--font-mono);
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
+  gap: 5px;
+  color: var(--accent-safe);
+  font: 600 11px/1.6 var(--font-mono);
+  letter-spacing: .04em;
   text-decoration: none;
-  transition: color 160ms var(--ease), border-color 160ms var(--ease);
+  border-block-end: 1px solid rgba(13, 113, 227, .3);
 }
-.wal-install a:hover { color: var(--accent-safe); border-color: var(--accent-safe); }
+.dock-foot { color: var(--muted); font: 400 10px/1.7 var(--font-mono); }
+.dock-error, .dock-setup, .dock-discovery { margin: 0; }
 
-.wal-discovery { margin: 0; }
-.wal-error { margin: 0; }
-.wal-setup { margin: 0; }
-.wal-foot {
-  margin: 2px 0 0;
-  padding-top: 14px;
-  border-top: 1px solid var(--line);
-  color: var(--faint);
-  font: 400 10px/1.8 var(--font-mono);
-}
-
-@media (max-width: 480px) {
-  .wal-scrim { padding: 0; place-items: stretch; }
-  .wal-dialog {
-    width: 100%;
-    max-height: 100vh;
-    max-height: 100dvh;
-    border: 0;
-    border-radius: 0;
-  }
+@media (max-width: 520px) {
+  .dock-scrim { padding: 10px; align-items: end; }
+  .dock-dialog { border-end-start-radius: 22px; border-end-end-radius: 22px; max-height: 88vh; }
 }
 </style>

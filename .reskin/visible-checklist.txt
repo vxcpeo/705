@@ -1,0 +1,285 @@
+5x	Income
+5x	Upside
+4x	Unit
+3x	+5%
+3x	Cap
+3x	Feed
+3x	K
+3x	Model
+3x	Reference price
+3x	Sheet
+2x	/ Example quote
+2x	/ cap +
+2x	/ unit
+2x	0
+2x	0%
+2x	10%
+2x	Amount
+2x	Asset
+2x	Cap default
+2x	Epoch
+2x	INCOME
+2x	Illustrative values. No live quote, custody, signing or execution.
+2x	Leg
+2x	Move
+2x	Network
+2x	Open the board
+2x	Pair
+2x	Preview
+2x	Records
+2x	Sample spot
+2x	Scenario value
+2x	Settlement
+2x	Static
+2x	UPSIDE
+2x	Upside $0
+2x	example at
+1x	% / K
+1x	% / settlement at the sample spot
+1x	(Above the cap)
+1x	(Up to the cap)
+1x	(model)
+1x	+ premium
+1x	+100%
+1x	+5% cap
+1x	- preview
+1x	-90%
+1x	/ 30 days / model at 25% vol
+1x	/ Model notes
+1x	/ USD
+1x	/ cap price (K)
+1x	/ not issued
+1x	/ paper market
+1x	/ preview build
+1x	/ targets, not registered
+1x	/ unissued
+1x	01 / INPUTS
+1x	02 / REVIEW
+1x	03 / JOURNAL
+1x	04
+1x	2%
+1x	30 days
+1x	30-day epoch
+1x	30-day epoch | +5% cap | illustrative values
+1x	30d
+1x	5%
+1x	A 5% auction fee appeared in an earlier reference model. It is only a design assumption and is not active, binding, or a production term.
+1x	A LITTLE SPACE TO THINK
+1x	A candidate SPL market unit would need a reliable price source and a USDC liquidity path. Listing, custody, jurisdiction, and program permissions require separate review before production.
+1x	A clear split.
+1x	A defined cap sets the split.
+1x	A defined level.
+1x	A premium does not remove risk.
+1x	A production series would need a named feed, market session, fallback behavior, and settlement window. This preview uses local assumptions and performs no oracle reads.
+1x	All displayed market values are examples. No token or Solana program has been issued by this preview.
+1x	All examples use a +5% cap, 30-day epoch and 25% model volatility.
+1x	Any SPL market unit with a verified price feed and USDC liquidity path may qualify. This preview records no wallet request or listing transaction.
+1x	Assets need a verified market path.
+1x	Back to markets
+1x	Back to overview
+1x	Breakeven
+1x	Briefing
+1x	CAP K
+1x	Calculated from your assumptions.
+1x	Cap +5% / 30-day epoch / model values per unit
+1x	Cap K
+1x	Cap price K
+1x	Change in reference value
+1x	Check the numbers.
+1x	Choose the cap. K is fixed for the epoch.
+1x	Clear filter
+1x	Concepts
+1x	Connect a Solana account to display its public address. This site does not ask for transaction signatures.
+1x	Connecting…
+1x	Created
+1x	Current
+1x	Delete local record
+1x	Details
+1x	Edit
+1x	Edit inputs
+1x	Error 404
+1x	Exact percentage
+1x	Example arithmetic only. No live quote is read and no order is placed.
+1x	Example arithmetic.
+1x	Example quotes / no live feed
+1x	Example quotes are not live prices.
+1x	Example series
+1x	Export JSON
+1x	Fees
+1x	Fees, slippage and taxes are excluded. No transaction is created.
+1x	For starting price P0 and cap rate c, K = P0 x (1 + c). At assumed settlement price S, Upside receives max(0, S - K). Income receives value up to K plus any hypothetical auction premium.
+1x	Four leaves
+1x	How
+1x	Hypothetical move
+1x	Illustrative scenario
+1x	Income + Upside
+1x	Income /
+1x	Income / unit
+1x	Income and Upside describe modeled positions.
+1x	Income at settlement
+1x	Income model
+1x	Income share
+1x	Income still bears the underlying asset's downside. A premium does not protect the market unit from a price decline.
+1x	Income still bears underlying downside. Upside may expire without a payoff. Oracle, liquidity, smart contract, counterparty, market, and regulatory risks remain outside this interface.
+1x	Indicative model values use a 30-day epoch and 25% volatility.
+1x	Indicative premium
+1x	Install a wallet, enable its Solana account, then reopen this panel.
+1x	Interface preview / no live feed
+1x	Journal
+1x	Journal records stay in this browser's storage.
+1x	Keep assumptions in this browser.
+1x	Keep the record.
+1x	LOCAL ONLY
+1x	Limits of this preview
+1x	Listing
+1x	Listing intake
+1x	Local
+1x	Local interface preview
+1x	Local scenario lab
+1x	Looking for MetaMask, Phantom, Solflare and other Solana wallets…
+1x	Market quotes
+1x	Markets
+1x	Mechanism
+1x	MetaMask
+1x	MetaMask connector:
+1x	Mode
+1x	Model / unit
+1x	Model premium
+1x	Modelled value
+1x	No compatible Solana wallet was detected.
+1x	No contract address is published or implied.
+1x	No custody, no signing, no trade execution.
+1x	No fee is charged by this demo.
+1x	No live price source is connected.
+1x	No model markets match “
+1x	No such leaf.
+1x	No trade order or private key is requested by this documentation view. External links have their own privacy practices.
+1x	Not a feed
+1x	Not a live quote
+1x	Not live
+1x	Not required
+1x	Nothing matches “
+1x	OPTIONAL
+1x	On chain stats
+1x	On this page
+1x	One asset again.
+1x	Only the selected wallet’s public Solana address is read.
+1x	Open
+1x	Open the journal
+1x	Oracle
+1x	P0 $250 / 5% cap / K $262.50
+1x	Pairs listed
+1x	Paper only
+1x	Per unit /
+1x	Per-unit settlement value, before premium
+1x	Phantom
+1x	Preview build
+1x	Price a boundary
+1x	Price the boundary.
+1x	Privacy
+1x	Proposed, unissued
+1x	Put a number behind your next idea. Enter a reference price, explore a hypothetical move, and keep your reasoning close.
+1x	Quotes are illustrative samples, not a market feed.
+1x	Read how it works
+1x	Read listing notes
+1x	Read the chain.
+1x	Read the demo privacy notice
+1x	Read the demo terms
+1x	Read the limits
+1x	Recompose unavailable
+1x	Recomposition would require a wallet transaction. The local preview keeps this action visible while execution remains unavailable.
+1x	Reference
+1x	Reference amount
+1x	Reference value
+1x	Reset search
+1x	Retry saving
+1x	Review scenario
+1x	Risks
+1x	S
+1x	SOLANA /
+1x	SPOT
+1x	Sample move
+1x	Sample quotes, a user-priced model and a browser-local journal. Nothing here is live and nothing is signed.
+1x	Sample tape
+1x	Sandbox
+1x	Save to journal
+1x	Scenario move
+1x	See the split
+1x	Set a cap, move the settlement slider, and inspect how the illustrative value splits between Income and Upside. No order or wallet action is created.
+1x	Set your assumption.
+1x	Settlement $200
+1x	Settlement $250
+1x	Settlement $300
+1x	Settlement price S
+1x	Settlement split
+1x	Skip to content
+1x	Solflare
+1x	Static samples
+1x	Status
+1x	Stock price
+1x	Stock, Income and Upside settlement values
+1x	Storage
+1x	Stores
+1x	Suggest a market.
+1x	Target
+1x	Terms
+1x	Terms for this local preview.
+1x	That path is not in this preview. Start from the overview or open the board.
+1x	The board
+1x	The modeled payoff is max(0, settlement price - K). A buyer's maximum modeled loss is the hypothetical premium paid.
+1x	The payoff model uses values you enter.
+1x	The proposed
+1x	The scenario journal stores its record locally and can export it as JSON. It does not submit a transaction or publish the record on chain.
+1x	These illustrations describe a product concept, not deployed Solana programs.
+1x	Thesis note
+1x	This browser
+1x	This browser only
+1x	This is a private what-if calculator. Reference prices are entered by you; they are not live quotes or execution prices.
+1x	This page describes how this local product demonstration should be read. It is not a production protocol policy, legal agreement, or investment recommendation.
+1x	This page is a readable product notice for the interface. It does not replace production terms or create a contractual relationship.
+1x	This preview models an illustrative split around a cap price. It does not custody SPL assets, run an auction, connect an oracle, or settle transactions.
+1x	Three parts of the model.
+1x	Token
+1x	USD /
+1x	Unit quote
+1x	Units
+1x	Upside $37.50
+1x	Upside / max(S - K, 0)
+1x	Upside / unit
+1x	Upside at settlement
+1x	Upside share
+1x	Use a Solana wallet with an SPL account. The CA preview never asks for a seed phrase.
+1x	Value above K.
+1x	Value below the cap is an income leg priced
+1x	Value up to K, plus any premium.
+1x	Wallet
+1x	YOUR PRIVATE WORKSPACE
+1x	Your assumptions.
+1x	Your browser holds the journal state.
+1x	Your idea.
+1x	Your local record.
+1x	and
+1x	are unregistered targets
+1x	breakeven
+1x	characters remaining
+1x	for “
+1x	if subscribed (model)
+1x	is a proposed symbol only; it has not been issued, and no supply or utility is enabled in this preview.
+1x	is a proposed symbol. No token has been issued and no contract address exists.
+1x	local only
+1x	market terminal
+1x	market unit
+1x	min(S, K)
+1x	per unit / model at 25% vol / 30 days / the auction sets the price. Values per unit; Income is paid in SPL market units worth min(S, K); the premium goes to subscribers only.
+1x	per unit.
+1x	per unit; value above the cap is an upside leg priced
+1x	preview
+1x	preview / illustrative values / no transactions /
+1x	result
+1x	settlement
+1x	settlement partition
+1x	symbol is separate.
+1x	units
+1x	value at settlement
+1x	vs spot
+1x	works.

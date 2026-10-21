@@ -22,3 +22,43 @@
   VITE v6.4.3  ready in 715 ms
 
   ➜  Local:   http://127.0.0.1:52273/
+
+> pretiola-website@1.0.0 dev
+> vite --host 127.0.0.1 --port 64094 --host 127.0.0.1
+
+
+  VITE v6.4.3  ready in 736 ms
+
+  ➜  Local:   http://127.0.0.1:64094/
+
+> librova-website@1.0.0 dev
+> vite --host 127.0.0.1 --port 50580 --host 127.0.0.1
+
+
+  VITE v6.4.3  ready in 667 ms
+
+  ➜  Local:   http://127.0.0.1:50580/
+
+> librova-website@1.0.0 dev
+> vite --host 127.0.0.1 --port 50927 --host 127.0.0.1
+
+
+  VITE v6.4.3  ready in 657 ms
+
+  ➜  Local:   http://127.0.0.1:50927/
+
+> librova-website@1.0.0 dev
+> vite --host 127.0.0.1 --port 64779 --host 127.0.0.1
+
+
+  VITE v6.4.3  ready in 818 ms
+
+  ➜  Local:   http://127.0.0.1:64779/
+
+> librova-website@1.0.0 dev
+> vite --host 127.0.0.1 --port 53739 --host 127.0.0.1
+
+
+  VITE v6.4.3  ready in 840 ms
+
+  ➜  Local:   http://127.0.0.1:53739/

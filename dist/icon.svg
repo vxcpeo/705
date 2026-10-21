@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-labelledby="t d">
-<title id="t">Pretiola mark</title>
-<desc id="d">The Pretiola pip: a P struck from ledger rules — a full-height ink stem, a squared top rule that turns into the bowl wall, a middle rule that closes the bowl, and a flare-orange pip set just past it — on a paper ground.</desc>
-<rect width="64" height="64" fill="#f2eee6"/>
-<rect x="8.21" y="6.00" width="9.88" height="52.00" fill="#0d0d10" stroke="none"/>
-<rect x="8.21" y="6.00" width="36.40" height="7.80" fill="#0d0d10" stroke="none"/>
-<rect x="36.81" y="6.00" width="7.80" height="28.08" fill="#0d0d10" stroke="none"/>
-<rect x="8.21" y="26.28" width="36.40" height="7.80" fill="#0d0d10" stroke="none"/>
-<rect x="46.43" y="25.50" width="9.36" height="9.36" fill="#ff4d14" stroke="none"/>
+<title id="t">Librova mark</title>
+<defs><linearGradient id="d1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0d71e3"/><stop offset="1" stop-color="#298dff"/></linearGradient></defs>
+<desc id="d">The Librova corner - an L struck from rounded ledger bars with a pale pip - reversed out of a blue gradient tile.</desc>
+<rect width="64" height="64" fill="#ffffff"/>
+<rect x="0.00" y="0.00" width="64.00" height="64.00" rx="15.00" fill="url(#d1)"/>
+<rect x="13.35" y="12.16" width="7.94" height="39.68" rx="3.97" fill="#ffffff" stroke="none"/>
+<rect x="13.35" y="43.90" width="26.98" height="7.94" rx="3.97" fill="#ffffff" stroke="none"/>
+<circle cx="46.68" cy="47.87" r="3.97" fill="#bfe0ff"/>
 </svg>

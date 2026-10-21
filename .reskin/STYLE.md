@@ -1,32 +1,32 @@
-# Reskin art direction — Abyss Liquidity
+# Reskin art direction — Tidal Sui
 
 > Selected automatically. Do not ask the user to confirm or choose another direction.
 
-- **Style DNA:** `aave-abyss` (dark-technical)
-- **Skeleton:** `terminal-console` (linear)
-- **Seed:** `5902b4b4657cb2253f673a94d07b2bcf97fb8a88437de26dcbcb4a64dbee3bf8`
-- **Source DNA:** [https://aave.com](https://aave.com)
-- **Live sampled:** yes — https://aave.com (3459 ms)
-- **Original:** orbital / light / accent #40b3ff
+- **Style DNA:** `sui-tidal` (clean-fintech)
+- **Skeleton:** `split-stage` (spatial)
+- **Seed:** `65b75ce24ae00e3f2abc73152a5f8e467036bc8b3667fab2f7df6950ca1b701d`
+- **Source DNA:** [https://sui.io](https://sui.io)
+- **Live sampled:** yes — https://sui.io (3545 ms)
+- **Original:** terminal-console / light / accent #ff0000
 
 ## Why this direction
 
-The selector sampled 8/10 blockchain references, scored every direction for perceptual distance from the original accent (#40b3ff) and background (#f5f4fa), added a deterministic seed jitter, and chose Abyss Liquidity because it is 145 ΔE away from the original accent and pairs with Terminal Console, a linear skeleton rather than the original orbital.
+The selector sampled 4/10 blockchain references, scored every direction for perceptual distance from the original accent (#ff0000) and background (#000000), added a deterministic seed jitter, and chose Tidal Sui because it is 146 ΔE away from the original accent and pairs with Split Stage, a spatial skeleton rather than the original terminal-console.
 
 ## Live reference sampling
 
 | Style | URL | Result | Accent sampled | Ground sampled |
 |---|---|---|---|---|
-| ethereum-paper | https://ethereum.org | ok (2601 ms) | #0c5681 | #ffffff |
-| base-cobalt | https://www.base.org | ok (3159 ms) | #0000ff | #dde3e9 |
-| polygon-agora | https://polygon.technology | ok (3439 ms) | #670de5 | #000000 |
-| solana-spectrum | https://solana.com | ok (6289 ms) | #9945ff | #000000 |
-| aave-abyss | https://aave.com | ok (3459 ms) | #ff0000 | #000000 |
+| base-cobalt | https://www.base.org | ok (1351 ms) | #0000ff | #dde3e9 |
+| polygon-agora | https://polygon.technology | ok (6173 ms) | #670de5 | #000000 |
+| solana-spectrum | https://solana.com | failed: timeout | — | — |
+| ethereum-paper | https://ethereum.org | failed: timeout | — | — |
+| optimism-poster | https://www.optimism.io | failed: timeout | — | — |
 | arbitrum-signal | https://arbitrum.io | failed: HTTP 403 | — | — |
-| uniswap-bubblegum | https://uniswap.org | ok (5363 ms) | — | #ffffff |
-| cosmos-orbit | https://cosmos.network | ok (4443 ms) | #40b3ff | #000000 |
-| sui-tidal | https://sui.io | failed: timeout | — | — |
-| optimism-poster | https://www.optimism.io | ok (13334 ms) | #ff0421 | #fafaf9 |
+| cosmos-orbit | https://cosmos.network | ok (4175 ms) | #40b3ff | #000000 |
+| uniswap-bubblegum | https://uniswap.org | failed: timeout | — | — |
+| aave-abyss | https://aave.com | failed: timeout | — | — |
+| sui-tidal | https://sui.io | ok (3545 ms) | #298dff | #ffffff |
 
 Live sampling is evidence, not a copy target. Never download or reuse a reference site's logo, imagery, copy, or code. Use only the abstract tokens below.
 
@@ -34,66 +34,66 @@ Live sampling is evidence, not a copy target. Never download or reuse a referenc
 
 | Candidate | Score | Accent ΔE from original | Layout | Live |
 |---|---:|---:|---|---|
-| Abyss Liquidity | 0.8546 | 144.6 | terminal-console | yes |
-| Spectrum Terminal | 0.8525 | 85.1 | terminal-console | yes |
-| Poster Optimism | 0.8412 | 135.8 | ticker-stage | yes |
-| Agora Violet | 0.8091 | 85.4 | documentary | yes |
-| Cobalt Blueprint | 0.7843 | 112.4 | command-rail | yes |
-| Paper Protocol | 0.5737 | 39.1 | documentary | yes |
-| Bubblegum Exchange | 0.5557 | 96.1 | bento-canvas | yes |
-| Signal Navy | 0.4208 | 12.8 | command-rail | no |
-| Tidal Sui | 0.4138 | 37.8 | split-stage | no |
-| Cosmos Orbit | 0.4109 | 0 | documentary | yes |
+| Tidal Sui | 0.9655 | 146.2 | split-stage | yes |
+| Paper Protocol | 0.9448 | 136.1 | documentary | no |
+| Bubblegum Exchange | 0.8905 | 64.4 | bento-canvas | no |
+| Cobalt Blueprint | 0.8742 | 176.3 | bento-canvas | yes |
+| Agora Violet | 0.8656 | 145 | orbital | yes |
+| Abyss Liquidity | 0.8612 | 100.5 | orbital | no |
+| Spectrum Terminal | 0.8585 | 121.2 | gallery-scroll | no |
+| Cosmos Orbit | 0.8429 | 144.6 | orbital | yes |
+| Signal Navy | 0.8266 | 136.8 | bento-canvas | no |
+| Poster Optimism | 0.6317 | 38.9 | gallery-scroll | no |
 
 ## Skeleton brief
 
-**Terminal Console** — thin status bar at the very top; monospace micro-labels and tabular data everywhere; dense two-pane console with a resizable-feeling gutter; no marketing hero; the data is the hero; bottom command hint strip.
+**Split Stage** — asymmetric 5/7 or 4/8 split with a sticky narrative column; one side scrolls independently; no top navigation bar; a vertical index sits in the sticky column; headline and primary action share the left stage; data is presented as an annotated ledger, not a card grid.
 
-Navigation: Top status bar with route names as commands; keyboard shortcuts shown; a command palette is the primary way to move.
+Navigation: Vertical index in the sticky column; on mobile it becomes a horizontally scrollable index strip above the content.
 
 Structure:
-1. 24-32px status bar
-1. command/title line
-1. dense 3-pane console: filters, data, detail
-1. bottom hint strip
+1. sticky 42% narrative column with brand, route index and page thesis
+1. scrolling 58% data stage
+1. full-width proof band below the split
+1. footer set inside the narrative column
 
-Content mapping: Preserve every table row and label. Turn filters into console chips, metrics into sparkline headers, forms into inline command rows. Detail panel shows the selected row's existing fields.
+Content mapping: The sticky column carries brand, route index, page title and the primary action. The scrolling stage carries the table/list/form. Secondary metrics become annotated rows rather than cards.
 
-Recipe: `.statusbar{position:sticky;top:0;display:flex;justify-content:space-between;padding:6px 12px;border-bottom:1px solid var(--line);font:11px/1.4 var(--font-mono)}.console{display:grid;grid-template-columns:200px minmax(0,1fr) 280px;min-height:calc(100vh - 64px)}.pane+.pane{border-left:1px solid var(--line)}.console table{font-variant-numeric:tabular-nums}`
+Recipe: `.split{display:grid;grid-template-columns:minmax(300px,42fr) minmax(0,58fr);min-height:100vh}.narrative{position:sticky;top:0;height:100vh;display:flex;flex-direction:column;justify-content:space-between;padding:clamp(24px,4vw,64px)}.stage{min-height:100vh;padding:clamp(24px,5vw,80px) clamp(20px,5vw,90px)}`
 
-Risks: dense does not mean tiny: body text must stay >=14px and contrast >=4.5; three panes collapse badly on mobile; use a single column + drawer
+Risks: sticky column must not hide content on short screens; mobile must not preserve the split
 
 ## Design tokens
 
 ```css
 :root {
-  --bg: #000000;
-  --surface: #111A24;
-  --surface-alt: #182533;
-  --ink: #F4F7FA;
-  --muted: #8FA3B5;
-  --accent: #ff0000;
-  --accent-safe: #ff0000;
-  --accent-2: #ff00ff;
-  --line: #1E2A36;
-  --success: #5CE1A0;
-  --danger: #FF7A7A;
-  --warning: #F2C94C;
+  --bg: #ffffff;
+  --surface: #FFFFFF;
+  --surface-alt: #E8F3FF;
+  --ink: #081B2B;
+  --muted: #5B7185;
+  --accent: #298dff;
+  --accent-safe: #0d71e3;
+  --accent-2: #4DA2FF;
+  --line: #D8E7F5;
+  --success: #087A55;
+  --danger: #B42318;
+  --warning: #8A5A00;
 
-  --font-display: "Trebuchet MS", "Segoe UI", sans-serif;
+  --font-display: "Segoe UI Variable Display", "Segoe UI", "Helvetica Neue", sans-serif;
   --font-body: "Segoe UI", "Helvetica Neue", sans-serif;
   --font-mono: "Cascadia Mono", ui-monospace, monospace;
-  --display-weight: 650;
-  --display-tracking: -0.035em;
-  --label-tracking: 0.1em;
+  --display-weight: 600;
+  --display-tracking: -0.04em;
+  --label-tracking: 0.06em;
 
-  --radius-sm: 10px;
-  --radius-md: 16px;
-  --radius-lg: 24px;
-  --border: 1px solid rgba(143, 163, 181, 0.18);
-  --shadow: 0 26px 70px rgba(0, 0, 0, 0.5);
+  --radius-sm: 12px;
+  --radius-md: 22px;
+  --radius-lg: 36px;
+  --border: 1px solid var(--line);
+  --shadow: 0 24px 60px rgba(30, 111, 217, 0.1);
 
-  --motion-duration: 240ms;
+  --motion-duration: 260ms;
   --motion-ease: cubic-bezier(.22,1,.36,1);
   --space-1: clamp(4px, .35vw, 6px);
   --space-2: clamp(8px, .7vw, 12px);
@@ -108,18 +108,18 @@ Risks: dense does not mean tiny: body text must stay >=14px and contrast >=4.5; 
 
 ## Component grammar
 
-- Surface: 1px solid rgba(143, 163, 181, 0.18); radius 16px; shadow 0 26px 70px rgba(0, 0, 0, 0.5).
-- Type: display **"Trebuchet MS", "Segoe UI", sans-serif** at weight 650, tracking -0.035em; body **"Segoe UI", "Helvetica Neue", sans-serif**; numerals and micro-labels **"Cascadia Mono", ui-monospace, monospace**.
-- Texture: liquid glass, teal-magenta glow, fine grid, data sparklines.
-- Motion: fluid, 240ms, cubic-bezier(.22,1,.36,1). Always wrap non-essential motion in `@media (prefers-reduced-motion: no-preference)`.
-- Density: comfortable. Keep body text >= 14px and body contrast >= 4.5:1.
+- Surface: 1px solid var(--line); radius 22px; shadow 0 24px 60px rgba(30, 111, 217, 0.1).
+- Type: display **"Segoe UI Variable Display", "Segoe UI", "Helvetica Neue", sans-serif** at weight 600, tracking -0.04em; body **"Segoe UI", "Helvetica Neue", sans-serif**; numerals and micro-labels **"Cascadia Mono", ui-monospace, monospace**.
+- Texture: tidal curves, soft caustics, aqua gradients, floating rounded panels.
+- Motion: fluid, 260ms, cubic-bezier(.22,1,.36,1). Always wrap non-essential motion in `@media (prefers-reduced-motion: no-preference)`.
+- Density: airy. Keep body text >= 14px and body contrast >= 4.5:1.
 - Use `--accent-safe` for text and icons on `--bg`; use `--accent` for fills and large shapes.
 
 ## Originality guard
 
 The replacement must satisfy all of these:
 
-1. The source inventory archetype is `orbital`; the new skeleton is `terminal-console`. Do not fall back to the old shell during implementation.
+1. The source inventory archetype is `terminal-console`; the new skeleton is `split-stage`. Do not fall back to the old shell during implementation.
 2. Do not reuse any original class name, CSS selector, design token name, or original accent family.
 3. Rewrite templates, not only CSS. Every route must visibly use the new skeleton.
 4. Keep every token in `.reskin/content-contract.json`; move it, never rewrite it.
@@ -127,4 +127,4 @@ The replacement must satisfy all of these:
 
 ## Commit statement
 
-Use this sentence in the final report: "The UI was rebuilt around Abyss Liquidity / Terminal Console; the original orbital shell and palette were removed while the content contract stayed byte-for-byte intact."
+Use this sentence in the final report: "The UI was rebuilt around Tidal Sui / Split Stage; the original terminal-console shell and palette were removed while the content contract stayed byte-for-byte intact."

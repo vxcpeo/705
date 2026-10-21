@@ -1,6 +1,6 @@
 <script setup>
 import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
-import { Activity } from 'lucide-vue-next'
+import { Menu } from 'lucide-vue-next'
 import HomePage from './components/HomePage.vue'
 import MarketWorkspace from './components/MarketWorkspace.vue'
 import DocsPage from './components/DocsPage.vue'
@@ -70,7 +70,7 @@ async function popState() {
 function onKeydown(event) {
   if (event.key === 'Escape' && railOpen.value) {
     railOpen.value = false
-    document.querySelector('.tty-command-more')?.focus()
+    document.querySelector('.tide-index-toggle')?.focus()
   }
 }
 
@@ -95,104 +95,95 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <a class="tty-skip" href="#main">Skip to content</a>
+  <a class="tide-skip" href="#main">Skip to content</a>
 
-  <div class="tty-frame">
-    <main id="main" class="tty-console">
-      <div class="tty-status">
-        <a class="tty-status-brand" href="/" :aria-label="`${brand.name} overview`" @click.prevent="navigate('/')">
-          <img src="/icon.svg" alt="" width="18" height="18" decoding="async" aria-hidden="true" />
-          <span>{{ brand.name }}</span>
+  <div class="tide-shell">
+    <button v-if="railOpen" class="tide-scrim" type="button" tabindex="-1" aria-hidden="true" @click="railOpen = false"></button>
+    <header class="tide-mast">
+      <div class="tide-mast-top">
+        <a class="tide-brand" href="/" :aria-label="`${brand.name} overview`" @click.prevent="navigate('/')">
+          <img src="/icon.svg" alt="" width="34" height="34" decoding="async" aria-hidden="true" />
+          <b>{{ brand.name }}</b>
         </a>
-        <div class="tty-status-cells" role="status" aria-label="Build status">
-          <span class="tty-status-cell"><i aria-hidden="true"></i>Mode <b>Preview</b></span>
-          <span class="tty-status-cell">Network <b>{{ brand.network }}</b></span>
-          <span class="tty-status-cell">Unit <b>{{ brand.asset }} / not issued</b></span>
-          <span class="tty-status-cell">Records <b>local only</b></span>
-        </div>
-        <span class="tty-status-tail">{{ brand.handle }} / {{ brand.domain }} / targets, not registered</span>
-      </div>
-
-      <div class="tty-command">
-        <div class="tty-command-line">
-          <span class="tty-prompt" aria-hidden="true">&#10095;</span>
-          <p class="tty-command-copy">{{ brand.network }} market terminal<br />Preview build</p>
-        </div>
-        <div class="tty-command-actions">
-          <SolanaWalletButton class="tty-wallet" />
-          <a class="tty-btn tty-btn--ghost" href="/app/markets" @click.prevent="navigate('/app/markets')">Open the board</a>
-          <button class="tty-command-more" type="button" :aria-expanded="railOpen" aria-controls="tty-commands"
+        <div class="tide-mast-actions">
+          <SolanaWalletButton class="tide-wallet" />
+          <a class="tide-btn tide-btn--primary" href="/app/markets" @click.prevent="navigate('/app/markets')">Open the board</a>
+          <button class="tide-btn tide-btn--quiet tide-index-toggle" type="button" :aria-expanded="railOpen" aria-controls="tide-index"
                   :aria-label="railOpen ? 'Close navigation' : 'Open navigation'" @click="railOpen = !railOpen">
-            <Activity :size="17" />
+            <Menu :size="16" />
           </button>
         </div>
       </div>
 
-      <button v-if="railOpen" class="tty-nav-scrim" type="button" tabindex="-1" aria-hidden="true" @click="railOpen = false"></button>
+      <p class="tide-mast-line">{{ brand.network }} market terminal<br />Preview build</p>
 
-      <div class="tty-deck">
-        <nav id="tty-commands" class="tty-nav" :class="{ open: railOpen }" aria-label="Primary">
-          <a v-for="[num, label, to, note] in nav" :key="to" class="tty-nav-link" :href="to"
-             :aria-current="isCurrent(to) ? 'page' : undefined" @click.prevent="navigate(to)">
-            <b>{{ num }}</b><span>{{ label }}</span><small>{{ note }}</small>
-          </a>
-        </nav>
+      <nav id="tide-index" class="tide-index" :class="{ 'is-open': railOpen }" aria-label="Primary">
+        <a v-for="[num, label, to, note] in nav" :key="to" class="tide-index-link" :href="to"
+           :aria-current="isCurrent(to) ? 'page' : undefined" @click.prevent="navigate(to)">
+          <b>{{ num }}</b><span>{{ label }}</span><small>{{ note }}</small>
+        </a>
+      </nav>
 
-        <div class="tty-stage">
-          <HomePage v-if="pathname === '/'" @navigate="navigate" />
-          <MarketWorkspace v-else-if="appPage" :path="pathname" @navigate="navigate" />
-          <ScenarioLab v-else-if="pathname === '/signal'" />
-          <DocsPage v-else-if="['/docs', '/risk', '/terms', '/privacy'].includes(pathname)" :path="pathname" @navigate="navigate" />
-          <section v-else class="tty-scene">
-            <div class="tty-scene-in tty-stack tty-lost">
-              <p class="tty-kicker">Error 404</p>
-              <h1 class="tty-display" tabindex="-1">No such leaf.</h1>
-              <p class="tty-lead">That path is not in this preview. Start from the overview or open the board.</p>
-              <p class="tty-lost-cta"><a class="tty-btn tty-btn--primary" href="/" @click.prevent="navigate('/')">Back to overview</a></p>
-            </div>
-          </section>
+      <dl class="tide-instrument">
+        <div class="tide-instrument-row"><dt>Mode</dt><dd><b>Preview</b></dd></div>
+        <div class="tide-instrument-row"><dt>Network</dt><dd><b>{{ brand.network }}</b></dd></div>
+        <div class="tide-instrument-row"><dt>Unit</dt><dd><b>{{ brand.asset }}</b> / not issued</dd></div>
+        <div class="tide-instrument-row"><dt>Records</dt><dd><b>local only</b></dd></div>
+      </dl>
+      <p class="tide-mast-tail">{{ brand.handle }} / {{ brand.domain }} / targets, not registered</p>
 
-          <div class="tty-colophon">
-            <div class="tty-colophon-in">
-              <div class="tty-colophon-top">
-                <div class="tty-colophon-brand">
-                  <img src="/icon.svg" alt="" width="20" height="20" decoding="async" aria-hidden="true" />
-                  <b>{{ brand.name }}</b>
-                </div>
-                <p class="tty-colophon-copy">{{ brand.network }} preview / illustrative values / no transactions / {{ brand.handle }} and {{ brand.domain }} are unregistered targets</p>
-                <ul class="tty-colophon-links">
-                  <li v-for="[label, to] in colophonLinks" :key="to"><a :href="to" @click.prevent="navigate(to)">{{ label }}</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
+      <div class="tide-mast-foot">
+        <div class="tide-foot-brand">
+          <img src="/icon.svg" alt="" width="20" height="20" decoding="async" aria-hidden="true" />
+          <b>{{ brand.name }}</b>
         </div>
+        <p class="tide-foot-copy">{{ brand.network }} preview / illustrative values / no transactions / {{ brand.handle }} and {{ brand.domain }} are unregistered targets</p>
+        <ul class="tide-foot-links">
+          <li v-for="[label, to] in colophonLinks" :key="to"><a :href="to" @click.prevent="navigate(to)">{{ label }}</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main id="main" class="tide-stage">
+      <div class="tide-stage-inner">
+        <HomePage v-if="pathname === '/'" @navigate="navigate" />
+        <MarketWorkspace v-else-if="appPage" :path="pathname" @navigate="navigate" />
+        <ScenarioLab v-else-if="pathname === '/signal'" />
+        <DocsPage v-else-if="['/docs', '/risk', '/terms', '/privacy'].includes(pathname)" :path="pathname" @navigate="navigate" />
+        <section v-else class="tide-band tide-band--first">
+          <div class="wave-notfound">
+            <p class="tide-kicker">Error 404</p>
+            <h1 class="tide-display" tabindex="-1">No such leaf.</h1>
+            <p class="tide-lead">That path is not in this preview. Start from the overview or open the board.</p>
+            <p class="wave-notfound-cta"><a class="tide-btn tide-btn--primary" href="/" @click.prevent="navigate('/')">Back to overview</a></p>
+          </div>
+        </section>
       </div>
 
-      <div class="tty-hint">
-        <dl class="tty-station">
-          <div><dt>Feed</dt><dd class="is-hold">Static samples</dd></div>
+      <div class="tide-proof">
+        <dl>
+          <div><dt>Feed</dt><dd>Static samples</dd></div>
           <div><dt>Unit</dt><dd>{{ brand.asset }} / unissued</dd></div>
           <div><dt>Stores</dt><dd>This browser</dd></div>
           <div><dt>Target</dt><dd>{{ brand.domain }}</dd></div>
         </dl>
-        <p class="tty-tiny">Illustrative values. No live quote, custody, signing or execution.</p>
+        <p>Illustrative values. No live quote, custody, signing or execution.</p>
       </div>
     </main>
   </div>
 </template>
 
 <style scoped>
-.tty-lost { max-width: 62ch; padding-block: 24px; }
-.tty-lost-cta { margin: 8px 0 0; }
-.tty-wallet :deep(.tty-btn) { width: 100%; }
+.wave-notfound { max-width: 62ch; padding-block: clamp(30px, 8vh, 90px); }
+.wave-notfound-cta { margin-block-start: 16px; }
+.tide-wallet :deep(.tide-btn) { width: 100%; }
 
-@media (max-width: 860px) {
-  .tty-nav { display: none; }
-  .tty-nav.open { display: flex; }
-  .tty-command-more { display: grid; }
+@media (max-width: 1080px) {
+  .tide-mast-top { display: flex; align-items: center; gap: 10px; }
+  .tide-brand { flex: 1 1 auto; }
 }
-@media (min-width: 861px) {
-  .tty-nav-scrim { display: none; }
+@media (max-width: 640px) {
+  .tide-mast-actions { flex-wrap: wrap; }
+  .tide-brand small { display: none; }
 }
 </style>

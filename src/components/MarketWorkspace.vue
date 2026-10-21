@@ -20,252 +20,257 @@ const copy = computed(() => ({ Markets: 'Scan defined-cap series and compare the
 </script>
 
 <template>
-  <div class="quay">
-    <!-- opening scene -->
-    <section class="tty-scene wrk-open">
-      <div class="tty-scene-in wrk-open-in">
-        <div class="wrk-open-copy">
-          <p class="tty-kicker">{{ brand.network }} / paper market</p>
-          <h1 class="tty-display wrk-display" tabindex="-1">{{ pageTitle }}</h1>
-          <p class="tty-lead">{{ copy }}</p>
-        </div>
-        <a class="tty-btn tty-btn--ghost wrk-back" href="/" @click.prevent="emit('navigate','/')"><ArrowLeft :size="15" /> Markets</a>
+  <div class="shoal">
+    <!-- opening band -->
+    <section class="tide-band tide-band--first shoal-open">
+      <div class="shoal-open-copy">
+        <p class="tide-kicker">{{ brand.network }} / paper market</p>
+        <h1 class="tide-display shoal-display" tabindex="-1">{{ pageTitle }}</h1>
+        <p class="tide-lead">{{ copy }}</p>
       </div>
+      <a class="tide-btn tide-btn--ghost shoal-back" href="/" @click.prevent="emit('navigate','/')"><ArrowLeft :size="15" /> Markets</a>
     </section>
 
-    <div class="wrk-deck">
-      <div class="wrk-main">
-
     <!-- asset detail -->
-    <section v-if="symbol" class="tty-scene wrk-detail">
-      <div class="tty-scene-in">
-        <div class="wrk-detail-head">
-          <h2 class="tty-h2">{{ symbol }} / {{ brand.network }}</h2>
-          <p class="tty-meta">30-day epoch | +5% cap | illustrative values</p>
+    <section v-if="symbol" class="tide-band shoal-detail">
+      <div class="shoal-detail-head">
+        <h2 class="tide-h2">{{ symbol }} / {{ brand.network }}</h2>
+        <p class="tide-meta">30-day epoch | +5% cap | illustrative values</p>
+      </div>
+      <div class="shoal-detail-grid">
+        <div class="shoal-passport">
+          <div class="shoal-spec-top">
+            <span class="shoal-mark" aria-hidden="true">{{ symbol.slice(0, 1) }}</span>
+            <span class="shoal-spec-name"><b>{{ symbol }}</b><small>Example series</small></span>
+            <span class="tide-pill tide-pill--accent"><i aria-hidden="true"></i>Paper only</span>
+          </div>
+          <dl class="shoal-spec-rows">
+            <div><dt>Reference</dt><dd>{{ symbol === 'SOL' ? '$182.00' : symbol === 'JUP' ? '$1.12' : symbol === 'BONK' ? '$0.000021' : '$1.00' }}</dd></div>
+            <div><dt>Income model</dt><dd class="shoal-inc">+5% cap</dd></div>
+            <div><dt>Settlement</dt><dd>Not live</dd></div>
+          </dl>
+          <p class="tide-note">Illustrative values. No live quote, custody, signing or execution.</p>
         </div>
-        <div class="wrk-detail-grid">
-          <div class="tty-face wrk-passport">
-            <div class="wrk-spec-top">
-              <span class="wrk-mark" aria-hidden="true">{{ symbol.slice(0, 1) }}</span>
-              <span class="wrk-spec-name"><b>{{ symbol }}</b><small>Example series</small></span>
-              <span class="tty-pill tty-pill--accent"><i aria-hidden="true"></i>Paper only</span>
-            </div>
-            <dl class="tty-pairs wrk-spec-rows">
-              <div><dt>Reference</dt><dd>{{ symbol === 'SOL' ? '$182.00' : symbol === 'JUP' ? '$1.12' : symbol === 'BONK' ? '$0.000021' : '$1.00' }}</dd></div>
-              <div><dt>Income model</dt><dd class="inc">+5% cap</dd></div>
-              <div><dt>Settlement</dt><dd>Not live</dd></div>
-            </dl>
-            <p class="tty-note wrk-spec-note">Illustrative values. No live quote, custody, signing or execution.</p>
-          </div>
-          <div class="wrk-detail-figure">
-            <PayoffExplorer :spot="symbol === 'SOL' ? 182 : symbol === 'JUP' ? 1.12 : symbol === 'BONK' ? 0.000021 : 1" :asset="symbol" />
-          </div>
+        <div class="shoal-detail-figure">
+          <PayoffExplorer :spot="symbol === 'SOL' ? 182 : symbol === 'JUP' ? 1.12 : symbol === 'BONK' ? 0.000021 : 1" :asset="symbol" />
         </div>
       </div>
     </section>
 
     <!-- launchpad leaf -->
-    <section v-else-if="pageTitle === 'Launchpad'" class="tty-scene wrk-leaf">
-      <div class="tty-scene-in">
-        <div class="tty-face tty-face--halo wrk-doc-face">
-          <div class="tty-face-head">
-            <h2 class="tty-h2">Suggest a market.</h2>
-            <span class="tty-pill"><i aria-hidden="true"></i>Listing intake</span>
-          </div>
-          <span class="wrk-doc-mark"><WalletCards :size="19" /></span>
-          <p class="wrk-doc-copy">Any SPL market unit with a verified price feed and USDC liquidity path may qualify. This preview records no wallet request or listing transaction.</p>
-          <a class="tty-btn tty-btn--primary wrk-doc-cta" href="/docs#listing" @click.prevent="emit('navigate','/docs#listing')">Read listing notes <ArrowUpRight :size="15" /></a>
+    <section v-else-if="pageTitle === 'Launchpad'" class="tide-band shoal-leaf">
+      <div class="shoal-leaf-sheet">
+        <div class="shoal-leaf-head">
+          <h2 class="tide-h2">Suggest a market.</h2>
+          <span class="tide-pill"><i aria-hidden="true"></i>Listing intake</span>
         </div>
+        <span class="shoal-leaf-mark"><WalletCards :size="20" /></span>
+        <p class="shoal-leaf-copy">Any SPL market unit with a verified price feed and USDC liquidity path may qualify. This preview records no wallet request or listing transaction.</p>
+        <a class="tide-btn tide-btn--primary" href="/docs#listing" @click.prevent="emit('navigate','/docs#listing')">Read listing notes <ArrowUpRight :size="15" /></a>
       </div>
     </section>
 
     <!-- recompose leaf -->
-    <section v-else-if="pageTitle === 'Recompose'" class="tty-scene wrk-leaf">
-      <div class="tty-scene-in">
-        <div class="tty-face tty-face--halo wrk-doc-face">
-          <div class="tty-face-head">
-            <h2 class="tty-h2">One asset again.</h2>
-            <span class="tty-pill"><i aria-hidden="true"></i>Income + Upside</span>
-          </div>
-          <span class="wrk-doc-mark"><TrendingUp :size="19" /></span>
-          <p class="wrk-doc-copy">Recomposition would require a wallet transaction. The local preview keeps this action visible while execution remains unavailable.</p>
-          <button class="tty-btn" type="button" disabled>Recompose unavailable</button>
+    <section v-else-if="pageTitle === 'Recompose'" class="tide-band shoal-leaf">
+      <div class="shoal-leaf-sheet">
+        <div class="shoal-leaf-head">
+          <h2 class="tide-h2">One asset again.</h2>
+          <span class="tide-pill"><i aria-hidden="true"></i>Income + Upside</span>
         </div>
+        <span class="shoal-leaf-mark"><TrendingUp :size="20" /></span>
+        <p class="shoal-leaf-copy">Recomposition would require a wallet transaction. The local preview keeps this action visible while execution remains unavailable.</p>
+        <button class="tide-btn" type="button" disabled>Recompose unavailable</button>
       </div>
     </section>
 
     <!-- board -->
-    <template v-else>
-      <section class="tty-scene wrk-board">
-        <div class="tty-scene-in">
-          <!-- MarketTable renders its own section head ("Market quotes") plus the -->
-          <!-- stats band, so the workspace does not repeat a heading here. -->
-          <div class="wrk-filters">
-            <label class="wrk-search">
-              <Search :size="15" />
-              <span class="visually-hidden">Search markets</span>
-              <input v-model="query" class="tty-input" type="search" placeholder="Search token or market" />
-            </label>
-            <div class="tty-switch wrk-side" aria-label="Position type">
-              <button v-for="option in ['All','Income','Upside']" :key="option" type="button" :aria-pressed="side === option" :class="{ 'on': side === option }" @click="side = option">{{ option }}</button>
-            </div>
-            <button class="tty-btn wrk-filter-toggle" type="button" :aria-expanded="showFilters" @click="showFilters = !showFilters"><SlidersHorizontal :size="15" /> Details</button>
-          </div>
-          <p v-if="showFilters" class="tty-notice tty-notice--flag wrk-filter-details">All examples use a +5% cap, 30-day epoch and 25% model volatility.</p>
+    <section v-else class="tide-band shoal-board">
+      <div class="shoal-tools">
+        <label class="shoal-search">
+          <Search :size="15" />
+          <span class="visually-hidden">Search markets</span>
+          <input v-model="query" class="tide-input" type="search" placeholder="Search token or market" />
+        </label>
+        <div class="tide-switch shoal-side" aria-label="Position type">
+          <button v-for="option in ['All','Income','Upside']" :key="option" type="button" :aria-pressed="side === option" :class="{ 'is-on': side === option }" @click="side = option">{{ option }}</button>
+        </div>
+        <button class="tide-btn tide-btn--quiet shoal-filter-toggle" type="button" :aria-expanded="showFilters" @click="showFilters = !showFilters"><SlidersHorizontal :size="15" /> Details</button>
+      </div>
+      <p v-if="showFilters" class="tide-notice tide-notice--flag shoal-filter-details">All examples use a +5% cap, 30-day epoch and 25% model volatility.</p>
 
+      <div class="shoal-deck">
+        <div class="shoal-main">
           <MarketTable :query="query" :side="side" @reset="query = ''" @navigate="to => emit('navigate',to)" />
         </div>
-      </section>
-    </template>
+        <aside class="shoal-rail" aria-label="Market facts">
+          <dl class="shoal-facts">
+            <div><dt>Sheet</dt><dd>{{ pageTitle }}</dd><dd>{{ brand.network }} preview</dd></div>
+            <div><dt>Cap default</dt><dd>+5%</dd><dd>30-day epoch</dd></div>
+            <div><dt>Feed</dt><dd>Static</dd><dd>Not a live quote</dd></div>
+            <div><dt>Unit</dt><dd>{{ brand.asset }}*</dd><dd>Proposed, unissued</dd></div>
+          </dl>
+        </aside>
       </div>
-
-      <div class="wrk-rail">
-        <section class="tty-scene wrk-facts-scene">
-          <div class="tty-scene-in">
-            <dl class="tty-facts wrk-facts">
-              <div><dt>Sheet</dt><dd>{{ pageTitle }}</dd><dd>{{ brand.network }} preview</dd></div>
-              <div><dt>Cap default</dt><dd>+5%</dd><dd>30-day epoch</dd></div>
-              <div><dt>Feed</dt><dd>Static</dd><dd>Not a live quote</dd></div>
-              <div><dt>Unit</dt><dd>{{ brand.asset }}*</dd><dd>Proposed, unissued</dd></div>
-            </dl>
-          </div>
-        </section>
-      </div>
-    </div>
+    </section>
   </div>
 </template>
 
 <style scoped>
-/* ------------------------------------------------------------------ opening */
-.wrk-open { padding-bottom: clamp(28px, 3.4vw, 48px); }
-.wrk-open-in {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 26px;
-  align-items: start;
+/* ---------------------------------------------------------------- opening */
+.shoal { display: grid; grid-template-columns: minmax(0, 1fr); }
+.shoal > * { min-width: 0; }
+.shoal-open {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding-block-end: clamp(22px, 3vw, 34px);
 }
-.wrk-open-copy { display: grid; gap: clamp(12px, 1.6vw, 20px); min-width: 0; }
-.wrk-display { font-size: clamp(30px, 3.6vw, 46px); }
-.wrk-back { justify-self: end; margin-top: 4px; flex: none; }
+.shoal-open-copy { display: grid; gap: 10px; max-width: 46ch; }
+.shoal-display { font-size: clamp(34px, 5vw, 58px); margin-block-start: 4px; }
+.shoal-open-copy .tide-lead { margin-block-start: 0; }
+.shoal-back { flex: none; }
 
-/* -------------------------------------------------------------------- facts */
-.wrk-facts-scene { padding-block: clamp(24px, 2.8vw, 38px); }
-.wrk-facts { --cols: 4; }
-
-/* ------------------------------------------------------------------- detail */
-.wrk-detail-head {
+/* ----------------------------------------------------------------- detail */
+.shoal-detail-head {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  gap: 20px;
+  gap: 18px;
   flex-wrap: wrap;
-  margin-bottom: clamp(18px, 2vw, 28px);
+  margin-block-end: clamp(16px, 2vw, 24px);
 }
-.wrk-detail-grid {
+.shoal-detail-grid {
   display: grid;
-  grid-template-columns: minmax(0, 300px) minmax(0, 1fr);
-  gap: clamp(18px, 2.4vw, 36px);
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(18px, 2.4vw, 30px);
   align-items: start;
 }
-.wrk-passport { display: grid; gap: 18px; align-content: start; }
-.wrk-spec-top { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
-.wrk-mark {
+.shoal-passport {
+  max-width: 520px;
+  display: grid;
+  gap: 16px;
+  padding: clamp(16px, 2vw, 22px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: linear-gradient(170deg, var(--surface), var(--surface-soft));
+  box-shadow: var(--shadow-soft);
+}
+.shoal-spec-top { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.shoal-mark {
   display: grid;
   place-items: center;
   flex: none;
   width: 46px;
   height: 46px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 32% 28%, #ff6b6b, #a30000 68%, #2a0303);
-  color: #050608;
-  font: 500 15px/1 var(--font-mono);
-  box-shadow: 0 0 34px rgba(255, 0, 0, 0.42);
+  border-radius: 15px;
+  background: var(--accent-safe);
+  color: #fff;
+  font: 600 16px/1 var(--font-mono);
+  box-shadow: 0 10px 24px rgba(13, 113, 227, .28);
 }
-.wrk-spec-name { display: grid; gap: 2px; margin-right: auto; min-width: 0; }
-.wrk-spec-name b { font: 400 22px/1.1 var(--font-display); letter-spacing: 0.01em; }
-.wrk-spec-name small { color: var(--faint); font: 400 10px/1.4 var(--font-mono); letter-spacing: 0.14em; text-transform: uppercase; }
-.wrk-spec-rows { border-top: 1px solid var(--line); }
-.wrk-spec-rows dd.inc { color: var(--mint); }
-.wrk-spec-note { padding-top: 14px; border-top: 1px solid var(--line); }
-.wrk-detail-figure { min-width: 0; }
+.shoal-spec-name { display: grid; gap: 2px; margin-inline-end: auto; }
+.shoal-spec-name b { font: 600 22px/1.1 var(--font-display); letter-spacing: -.02em; }
+.shoal-spec-name small { color: var(--muted); font: 500 10px/1.4 var(--font-mono); letter-spacing: .12em; text-transform: uppercase; }
+.shoal-spec-rows { display: grid; }
+.shoal-spec-rows > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  padding-block: 11px;
+  border-block-end: 1px solid var(--line);
+}
+.shoal-spec-rows dt { color: var(--muted); font: 500 10px/1.5 var(--font-mono); letter-spacing: .1em; text-transform: uppercase; }
+.shoal-spec-rows dd { font: 600 13px/1.5 var(--font-mono); }
+.shoal-spec-rows dd.shoal-inc { color: var(--success); }
+.shoal-detail-figure { min-width: 0; }
 
-/* --------------------------------------------------------------------- leaf */
-.wrk-doc-face {
+/* ------------------------------------------------------------------- leaf */
+.shoal-leaf-sheet {
   display: grid;
   gap: 16px;
   justify-items: start;
-  max-width: 860px;
-  margin-inline: auto;
+  max-width: 720px;
+  padding: clamp(20px, 3vw, 34px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(480px 240px at 100% 0%, rgba(41, 141, 255, .14), transparent 70%),
+    var(--surface);
+  box-shadow: var(--shadow);
 }
-.wrk-doc-mark {
+.shoal-leaf-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; width: 100%; }
+.shoal-leaf-mark {
   display: grid;
   place-items: center;
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
-  background: rgba(255, 0, 0, 0.12);
-  color: var(--accent-safe);
-  box-shadow: inset 0 0 0 1px rgba(255, 0, 0, 0.4);
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  background: var(--surface-alt);
+  color: var(--accent-deep);
+  box-shadow: inset 0 0 0 1px var(--line);
 }
-.wrk-doc-copy {
-  margin: 0;
-  max-width: 62ch;
-  color: var(--muted);
-  font: 400 14px/1.7 var(--font-body);
-}
-.wrk-doc-cta { margin-top: 4px; }
+.shoal-leaf-copy { max-width: 60ch; color: var(--ink-soft); font: 400 14px/1.7 var(--font-body); }
 
-/* -------------------------------------------------------------------- board */
-.wrk-filters {
+/* ------------------------------------------------------------------ board */
+.shoal-tools {
   display: flex;
   align-items: center;
   gap: 12px;
   flex-wrap: wrap;
-  margin-bottom: clamp(16px, 2vw, 24px);
+  margin-block-end: 16px;
 }
-.wrk-search {
+.shoal-search {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 9px;
   flex: 1 1 260px;
-  max-width: 380px;
-  color: var(--faint);
+  max-width: 400px;
+  color: var(--muted);
 }
-.wrk-search .tty-input { min-height: 44px; }
-.wrk-side { flex: none; }
-.wrk-filter-toggle { margin-left: auto; }
-.wrk-filter-details { margin-bottom: 18px; }
+.shoal-search .tide-input { min-height: 42px; font-family: var(--font-body); font-size: 13px; }
+.shoal-side { flex: none; }
+.shoal-filter-toggle { margin-inline-start: auto; }
+.shoal-filter-details { margin-block-end: 18px; }
 
-/* --------------------------------------------------------------- pane deck */
-.wrk-deck {
+.shoal-deck {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 300px);
-  align-items: stretch;
-  border-top: 1px solid var(--line);
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(14px, 2vw, 20px);
+  align-items: start;
 }
-.wrk-main { min-width: 0; }
-.wrk-main > .tty-scene { border-bottom: 0; }
-.wrk-rail {
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  border-left: 1px solid var(--line);
-  background: rgba(13, 20, 27, 0.35);
+.shoal-main { min-width: 0; }
+.shoal-rail {
+  order: -1;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface-soft);
+  overflow: hidden;
 }
-.wrk-facts { --cols: 1; border-top: 0; border-bottom: 0; }
-.wrk-rail .wrk-facts > * + * { border-top: 1px solid var(--line); }
+.shoal-facts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.shoal-facts > div {
+  display: grid;
+  gap: 4px;
+  padding: 14px 16px;
+  border-inline-end: 1px solid var(--line);
+}
+.shoal-facts > div:last-child { border-inline-end: 0; }
+.shoal-facts dt { color: var(--muted); font: 600 9px/1.4 var(--font-mono); letter-spacing: .12em; text-transform: uppercase; }
+.shoal-facts dd { color: var(--ink); font: 600 15px/1.35 var(--font-display); letter-spacing: -.01em; }
+.shoal-facts dd + dd { color: var(--muted); font: 400 10px/1.5 var(--font-mono); }
 
-/* ---------------------------------------------------------------- responsive */
-@media (max-width: 1080px) {
-  .wrk-detail-grid { grid-template-columns: minmax(0, 1fr); }
-  .wrk-deck { grid-template-columns: minmax(0, 1fr); }
-  .wrk-rail { border-left: 0; border-top: 1px solid var(--line); }
-  .wrk-facts { --cols: 2; }
+/* -------------------------------------------------------------- responsive */
+@media (max-width: 1180px) {
+  .shoal-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .shoal-facts > div:nth-child(odd) { border-inline-end: 1px solid var(--line); }
+  .shoal-facts > div:nth-child(-n+2) { border-block-end: 1px solid var(--line); }
 }
-@media (max-width: 900px) {
-  .wrk-open-in { grid-template-columns: minmax(0, 1fr); }
-  .wrk-back { justify-self: start; }
-  .wrk-search { max-width: none; flex: 1 1 100%; }
-  .wrk-filter-toggle { margin-left: 0; }
+@media (max-width: 760px) {
+  .shoal-search { max-width: none; flex: 1 1 100%; }
+  .shoal-filter-toggle { margin-inline-start: 0; }
+  .shoal-facts { grid-template-columns: minmax(0, 1fr); }
+  .shoal-facts > div:nth-child(odd) { border-inline-end: 0; }
 }
 </style>

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "label": "baseline",
-  "generatedAt": "2026-10-20T15:35:15.460Z",
+  "generatedAt": "2026-10-21T12:40:00.441Z",
   "baseUrl": "http://127.0.0.1:4317/",
   "browser": {
     "executablePath": "C:\\Users\\Administrator\\AppData\\Local\\ms-playwright\\chromium-1247\\chrome-win64\\chrome.exe",
@@ -15,10 +15,10 @@
       "status": 200,
       "desktop": {
         "meta": {
-          "title": "Overview / Pretiola",
+          "title": "Overview / Librova",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 2953,
+          "bodyTextLength": 2943,
           "scrollWidth": 1440,
           "clientWidth": 1440,
           "focusableCount": 45
@@ -441,6 +441,22 @@
             "count": 2
           },
           {
+            "word": "librova",
+            "count": 2
+          },
+          {
+            "word": "Librova",
+            "count": 2
+          },
+          {
+            "word": "LIBROVA",
+            "count": 5
+          },
+          {
+            "word": "librova.xyz",
+            "count": 3
+          },
+          {
             "word": "limits",
             "count": 1
           },
@@ -599,22 +615,6 @@
           {
             "word": "premium",
             "count": 1
-          },
-          {
-            "word": "pretiola",
-            "count": 2
-          },
-          {
-            "word": "Pretiola",
-            "count": 2
-          },
-          {
-            "word": "PRETIOLA",
-            "count": 5
-          },
-          {
-            "word": "pretiola.xyz",
-            "count": 3
           },
           {
             "word": "preview",
@@ -975,6 +975,10 @@
             "count": 1
           },
           {
+            "key": "aria-label=Librova overview",
+            "count": 1
+          },
+          {
             "key": "aria-label=Open the BONK sheet",
             "count": 1
           },
@@ -996,10 +1000,6 @@
           },
           {
             "key": "aria-label=Position type",
-            "count": 1
-          },
-          {
-            "key": "aria-label=Pretiola overview",
             "count": 1
           },
           {
@@ -1095,118 +1095,59 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "atlas-brand",
-          "atlas-brand-copy",
-          "atlas-btn",
-          "atlas-btn--accent",
-          "atlas-btn--ghost",
-          "atlas-btn--primary",
-          "atlas-btn--wide",
-          "atlas-colophon",
-          "atlas-colophon-brand",
-          "atlas-colophon-copy",
-          "atlas-colophon-in",
-          "atlas-colophon-links",
-          "atlas-colophon-top",
-          "atlas-combo",
-          "atlas-display",
-          "atlas-dock",
-          "atlas-dock-link",
-          "atlas-face",
-          "atlas-face--halo",
-          "atlas-face-head",
-          "atlas-facts",
-          "atlas-field",
-          "atlas-field-label",
-          "atlas-h2",
-          "atlas-head--row",
-          "atlas-input",
-          "atlas-kicker",
-          "atlas-lead",
-          "atlas-mast",
-          "atlas-mast-actions",
-          "atlas-mast-id",
-          "atlas-mast-open",
-          "atlas-meta",
-          "atlas-note",
-          "atlas-num",
-          "atlas-pairs",
-          "atlas-pill",
-          "atlas-pill--beam",
-          "atlas-range",
-          "atlas-ribbon",
-          "atlas-ribbon-cell",
-          "atlas-ribbon-cell--wide",
-          "atlas-ribbon-tail",
-          "atlas-root",
-          "atlas-scale",
-          "atlas-scene",
-          "atlas-scene-in",
-          "atlas-skip",
-          "atlas-stage",
-          "atlas-station",
-          "atlas-switch",
-          "atlas-table",
-          "atlas-table-wrap",
-          "atlas-tiny",
-          "atlas-wallet",
           "deck",
-          "deck-board",
-          "deck-board-table",
-          "deck-board-wrap",
-          "deck-brief",
-          "deck-brief-scene",
-          "deck-core",
-          "deck-fact-list",
-          "deck-facts",
-          "deck-foot-note",
-          "deck-head",
-          "deck-limits",
-          "deck-limits-cta",
-          "deck-limits-face",
-          "deck-limits-list",
-          "deck-open",
-          "deck-open-actions",
-          "deck-open-copy",
-          "deck-open-in",
-          "deck-open-note",
-          "deck-open-side",
-          "deck-orbit",
-          "deck-quote",
-          "deck-quote-body",
-          "deck-quote-copy",
-          "deck-quote-face",
-          "deck-quote-in",
-          "deck-quote-line",
-          "deck-quote-tag",
-          "deck-readout",
-          "deck-ring",
-          "deck-ring--a",
-          "deck-ring--b",
-          "deck-ring--c",
-          "deck-rowlink",
-          "deck-search",
-          "deck-split",
-          "deck-split-figure",
-          "deck-split-grid",
-          "deck-split-readout",
-          "deck-tape",
-          "deck-tape-scene",
-          "deck-token",
-          "deck-token-mark",
-          "deck-token-name",
-          "deck-tools",
-          "deck-total",
-          "is-anchor-end",
-          "is-chord",
-          "is-fall",
+          "down",
+          "end",
           "is-hold",
-          "is-lit",
-          "is-loud",
-          "is-rise",
+          "loud",
           "lucide",
           "lucide-arrow-right-icon",
           "lucide-wallet-icon",
+          "on",
+          "pag-board",
+          "pag-brief",
+          "pag-brief-scene",
+          "pag-col",
+          "pag-col--main",
+          "pag-col--rail",
+          "pag-deck",
+          "pag-fact-list",
+          "pag-facts",
+          "pag-foot-note",
+          "pag-head",
+          "pag-limits",
+          "pag-limits-cta",
+          "pag-limits-face",
+          "pag-limits-list",
+          "pag-open",
+          "pag-open-actions",
+          "pag-open-copy",
+          "pag-open-in",
+          "pag-open-note",
+          "pag-open-side",
+          "pag-quote",
+          "pag-quote-body",
+          "pag-quote-copy",
+          "pag-quote-face",
+          "pag-quote-in",
+          "pag-quote-line",
+          "pag-quote-tag",
+          "pag-readout",
+          "pag-rowlink",
+          "pag-search",
+          "pag-split",
+          "pag-split-figure",
+          "pag-split-grid",
+          "pag-split-readout",
+          "pag-tape",
+          "pag-tape-scene",
+          "pag-tbl-table",
+          "pag-tbl-wrap",
+          "pag-token",
+          "pag-token-mark",
+          "pag-token-name",
+          "pag-tools",
+          "pag-total",
           "plot-band-a",
           "plot-band-b",
           "plot-band-label",
@@ -1215,231 +1156,294 @@
           "plot-tick",
           "plot-value",
           "port",
-          "port-trigger",
-          "sr-only"
+          "sel",
+          "tty-btn",
+          "tty-btn--accent",
+          "tty-btn--ghost",
+          "tty-btn--primary",
+          "tty-btn--wide",
+          "tty-colophon",
+          "tty-colophon-brand",
+          "tty-colophon-copy",
+          "tty-colophon-in",
+          "tty-colophon-links",
+          "tty-colophon-top",
+          "tty-combo",
+          "tty-command",
+          "tty-command-actions",
+          "tty-command-copy",
+          "tty-command-line",
+          "tty-console",
+          "tty-deck",
+          "tty-display",
+          "tty-face",
+          "tty-face--halo",
+          "tty-face-head",
+          "tty-facts",
+          "tty-field",
+          "tty-field-label",
+          "tty-frame",
+          "tty-h2",
+          "tty-head--row",
+          "tty-hint",
+          "tty-input",
+          "tty-kicker",
+          "tty-lead",
+          "tty-meta",
+          "tty-nav",
+          "tty-nav-link",
+          "tty-note",
+          "tty-num",
+          "tty-pairs",
+          "tty-pill",
+          "tty-pill--accent",
+          "tty-prompt",
+          "tty-range",
+          "tty-scale",
+          "tty-scene",
+          "tty-scene-in",
+          "tty-skip",
+          "tty-stage",
+          "tty-station",
+          "tty-status",
+          "tty-status-brand",
+          "tty-status-cell",
+          "tty-status-cells",
+          "tty-status-tail",
+          "tty-switch",
+          "tty-table",
+          "tty-table-wrap",
+          "tty-tiny",
+          "tty-wallet",
+          "up",
+          "visually-hidden",
+          "wal-trigger"
         ],
         "fingerprint": [
-          "a@11:0",
-          "a@11:1",
-          "a@11:3",
-          "a@14:0",
+          "a@13:0",
+          "a@13:1",
+          "a@13:3",
+          "a@18:0",
           "a@4:0",
-          "a@6:3",
-          "a@7:0",
           "a@7:2",
-          "b@10:0",
+          "a@8:0",
+          "a@8:3",
           "b@12:0",
-          "b@13:0",
-          "b@16:0",
-          "b@7:0",
-          "b@8:0",
-          "button@10:0",
-          "button@11:0",
-          "button@11:1",
-          "button@11:4+",
+          "b@14:0",
+          "b@17:0",
+          "b@20:0",
+          "b@9:0",
           "button@12:0",
           "button@13:0",
-          "button@14:2",
-          "button@8:1",
-          "caption@11:0",
-          "dd@10:0",
-          "dd@11:0",
-          "dd@12:0",
+          "button@13:4+",
+          "button@15:1",
+          "button@16:0",
+          "button@17:0",
+          "button@18:2",
+          "button@9:1",
+          "caption@15:0",
+          "dd@13:0",
+          "dd@14:0",
+          "dd@16:0",
+          "dd@9:0",
           "div@10:1",
           "div@10:2",
-          "div@10:4+",
+          "div@10:3",
           "div@11:2",
           "div@11:3",
+          "div@12:1",
           "div@12:2",
+          "div@12:3",
+          "div@13:1",
+          "div@13:2",
+          "div@13:4+",
+          "div@14:2",
+          "div@14:4+",
+          "div@15:2",
+          "div@15:3",
+          "div@16:2",
           "div@3:2",
-          "div@4:3",
+          "div@4:1",
           "div@6:2",
           "div@6:3",
-          "div@6:4+",
-          "div@7:1",
+          "div@7:2",
           "div@7:3",
+          "div@7:4+",
           "div@8:1",
           "div@8:2",
-          "div@8:3",
           "div@8:4+",
           "div@9:1",
           "div@9:2",
-          "div@9:3",
-          "div@9:4+",
-          "dl@10:4+",
-          "dl@8:4+",
-          "dl@9:4+",
-          "dt@10:0",
-          "dt@11:0",
-          "dt@12:0",
-          "em@11:0",
-          "em@12:0",
+          "dl@11:4+",
+          "dl@12:4+",
+          "dl@14:4+",
+          "dl@7:4+",
+          "dt@13:0",
+          "dt@14:0",
+          "dt@16:0",
+          "dt@9:0",
           "em@13:0",
-          "figcaption@11:0",
-          "figure@10:2",
-          "footer@6:1",
-          "g@12:4+",
-          "h1@10:3",
-          "h2@10:0",
-          "h2@11:0",
-          "header@5:3",
-          "i@11:0",
-          "i@12:0",
-          "i@8:0",
+          "em@14:0",
+          "em@15:0",
+          "figcaption@13:0",
+          "figure@12:2",
+          "g@14:4+",
+          "h1@12:3",
+          "h2@12:0",
+          "h2@13:0",
+          "h2@14:0",
+          "i@14:0",
+          "i@15:0",
           "i@9:0",
-          "img@10:0",
+          "img@12:0",
           "img@8:0",
-          "input@12:0",
-          "input@13:0",
-          "label@11:2",
-          "label@12:0",
-          "label@12:1",
-          "li@10:1",
-          "li@11:0",
-          "main@5:2",
-          "nav@5:4+",
-          "ol@9:4+",
-          "output@13:0",
-          "p@10:0",
-          "p@10:2",
-          "p@7:1",
-          "p@8:0",
-          "p@9:0",
-          "path@10:0",
-          "path@13:0",
-          "rect@12:0",
-          "section@7:1",
-          "section@7:2",
-          "select@12:4+",
-          "small@12:0",
-          "small@16:0",
-          "small@7:0",
-          "span@10:1",
-          "span@11:0",
-          "span@12:0",
-          "span@12:2",
-          "span@13:0",
+          "input@16:0",
+          "input@17:0",
+          "label@15:2",
+          "label@16:0",
+          "label@16:1",
+          "li@12:1",
+          "li@13:0",
+          "main@5:4+",
+          "nav@7:4+",
+          "ol@11:4+",
+          "output@17:0",
+          "p@11:0",
+          "p@12:0",
+          "p@13:0",
+          "p@14:0",
+          "p@14:2",
+          "p@7:0",
+          "p@8:1",
+          "path@11:0",
+          "path@15:0",
+          "path@17:0",
+          "rect@14:0",
+          "section@11:1",
+          "section@9:1",
+          "select@16:4+",
+          "small@14:0",
+          "small@20:0",
+          "small@9:0",
+          "span@14:1",
+          "span@14:2",
           "span@15:0",
-          "span@15:2",
+          "span@16:0",
+          "span@16:2",
+          "span@17:0",
+          "span@19:0",
+          "span@19:2",
           "span@7:0",
-          "span@7:1",
-          "span@7:2",
           "span@8:0",
+          "span@8:1",
+          "span@8:2",
           "span@9:0",
-          "strong@11:0",
-          "strong@13:0",
-          "svg@11:4+",
-          "svg@12:2",
-          "svg@9:2",
-          "table@10:3",
-          "tbody@11:4+",
-          "td@13:0",
-          "td@13:1",
-          "text@12:0",
-          "th@13:0",
-          "th@13:1",
-          "thead@11:1",
-          "tr@12:4+",
-          "ul@10:4+",
-          "ul@9:4+"
+          "strong@15:0",
+          "svg@10:2",
+          "svg@13:4+",
+          "svg@14:2",
+          "svg@16:2",
+          "table@14:3",
+          "tbody@15:4+",
+          "td@17:0",
+          "td@17:1",
+          "text@14:0",
+          "th@17:0",
+          "th@17:1",
+          "thead@15:1",
+          "tr@16:4+",
+          "ul@11:4+",
+          "ul@12:4+"
         ],
         "landmarks": [
           {
-            "tag": "header",
+            "tag": "main",
             "role": "",
-            "top": 0,
+            "top": -319,
             "left": 0,
             "width": 1440,
-            "height": 101
+            "height": 3335
           },
           {
             "tag": "nav",
             "role": "",
-            "top": 825,
-            "left": 377,
-            "width": 686,
-            "height": 61
-          },
-          {
-            "tag": "main",
-            "role": "",
-            "top": 101,
-            "left": 0,
-            "width": 1440,
-            "height": 4130
-          },
-          {
-            "tag": "footer",
-            "role": "",
-            "top": 3836,
-            "left": 0,
-            "width": 1440,
-            "height": 292
+            "top": -224,
+            "left": 1,
+            "width": 212,
+            "height": 3143
           }
         ],
         "colors": [
           {
-            "hex": "#f5f4fa",
-            "count": 224
+            "hex": "#f4f7fa",
+            "count": 221
           },
           {
-            "hex": "#8e8ca3",
-            "count": 78
+            "hex": "#8698a9",
+            "count": 77
           },
           {
-            "hex": "#a9a7bd",
-            "count": 34
+            "hex": "#9fb1c1",
+            "count": 48
           },
           {
-            "hex": "#05060d",
-            "count": 22
+            "hex": "#05080c",
+            "count": 21
           },
           {
-            "hex": "#40b3ff",
-            "count": 17
-          },
-          {
-            "hex": "#d7d5e4",
+            "hex": "#d7dde4",
             "count": 13
           },
           {
-            "hex": "#04060d",
+            "hex": "#ff5f5f",
+            "count": 13
+          },
+          {
+            "hex": "#ff0000",
+            "count": 9
+          },
+          {
+            "hex": "#050608",
             "count": 8
           },
           {
-            "hex": "#5ce1a0",
-            "count": 8
+            "hex": "#0a0e14",
+            "count": 5
           },
           {
-            "hex": "#0b0c15",
-            "count": 6
-          },
-          {
-            "hex": "#191927",
+            "hex": "#111a24",
             "count": 4
           },
           {
-            "hex": "#262536",
+            "hex": "#182533",
+            "count": 4
+          },
+          {
+            "hex": "#1e2a36",
+            "count": 4
+          },
+          {
+            "hex": "#0d141b",
             "count": 3
           },
           {
-            "hex": "#ff8a8a",
+            "hex": "#000000",
             "count": 2
-          },
-          {
-            "hex": "#0a0616",
-            "count": 1
           },
           {
             "hex": "#3b3b3b",
             "count": 1
           },
           {
-            "hex": "#a78bfa",
+            "hex": "#5ce1a0",
             "count": 1
           },
           {
-            "hex": "#f2c94c",
+            "hex": "#ff00c8",
+            "count": 1
+          },
+          {
+            "hex": "#ff8ce6",
             "count": 1
           }
         ],
@@ -1479,47 +1483,30 @@
           "/",
           "/app/markets",
           "/docs",
-          "/privacy",
           "/risk",
-          "/signal",
-          "/terms"
+          "/signal"
         ],
         "overflow": {
           "documentOverflow": false,
           "offenders": [
             {
-              "selector": "div.deck > section.atlas-scene.deck-open > div.deck-orbit",
-              "right": 1555,
-              "width": 680
+              "selector": "figure.pag-split-figure > svg > rect.plot-band-a",
+              "right": 49501,
+              "width": 49193
             },
             {
-              "selector": "section.atlas-scene.deck-open > div.deck-orbit > span.deck-ring.deck-ring--a",
-              "right": 1555,
-              "width": 680
+              "selector": "figure.pag-split-figure > svg > rect.plot-band-b",
+              "right": 50040,
+              "width": 539
             },
             {
-              "selector": "section.atlas-scene.deck-open > div.deck-orbit > span.deck-ring.deck-ring--b",
-              "right": 1474,
-              "width": 517
+              "selector": "figure.pag-split-figure > svg > text.plot-cap-label",
+              "right": 49588,
+              "width": 79
             },
             {
-              "selector": "figure.deck-split-figure > svg > rect.plot-band-a",
-              "right": 54714,
-              "width": 54567
-            },
-            {
-              "selector": "figure.deck-split-figure > svg > rect.plot-band-b",
-              "right": 55312,
-              "width": 598
-            },
-            {
-              "selector": "figure.deck-split-figure > svg > text.plot-cap-label",
-              "right": 54811,
-              "width": 88
-            },
-            {
-              "selector": "figure.deck-split-figure > svg > text.plot-tick",
-              "right": 54718,
+              "selector": "figure.pag-split-figure > svg > text.plot-tick",
+              "right": 49504,
               "width": 6
             }
           ]
@@ -1539,13 +1526,13 @@
       },
       "mobile": {
         "meta": {
-          "title": "Overview / Pretiola",
+          "title": "Overview / Librova",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 2731,
+          "bodyTextLength": 2694,
           "scrollWidth": 390,
           "clientWidth": 390,
-          "focusableCount": 45
+          "focusableCount": 39
         },
         "words": [
           {
@@ -1618,27 +1605,19 @@
           },
           {
             "word": "01",
-            "count": 2
+            "count": 1
           },
           {
             "word": "02",
-            "count": 2
+            "count": 1
           },
           {
             "word": "03",
-            "count": 2
+            "count": 1
           },
           {
             "word": "04",
-            "count": 3
-          },
-          {
-            "word": "05",
-            "count": 1
-          },
-          {
-            "word": "06",
-            "count": 1
+            "count": 2
           },
           {
             "word": "1.34%",
@@ -1730,7 +1709,7 @@
           },
           {
             "word": "Board",
-            "count": 3
+            "count": 2
           },
           {
             "word": "Bonk",
@@ -1746,7 +1725,7 @@
           },
           {
             "word": "Boundary",
-            "count": 2
+            "count": 1
           },
           {
             "word": "Breakeven",
@@ -1770,7 +1749,7 @@
           },
           {
             "word": "build",
-            "count": 1
+            "count": 2
           },
           {
             "word": "cap",
@@ -1930,7 +1909,7 @@
           },
           {
             "word": "Journal",
-            "count": 4
+            "count": 3
           },
           {
             "word": "JUP",
@@ -1961,12 +1940,28 @@
             "count": 2
           },
           {
+            "word": "librova",
+            "count": 1
+          },
+          {
+            "word": "Librova",
+            "count": 2
+          },
+          {
+            "word": "LIBROVA",
+            "count": 4
+          },
+          {
+            "word": "librova.xyz",
+            "count": 2
+          },
+          {
             "word": "limits",
             "count": 1
           },
           {
             "word": "Limits",
-            "count": 3
+            "count": 2
           },
           {
             "word": "listed",
@@ -1982,7 +1977,7 @@
           },
           {
             "word": "market",
-            "count": 2
+            "count": 3
           },
           {
             "word": "maths",
@@ -2073,10 +2068,6 @@
             "count": 1
           },
           {
-            "word": "Overview",
-            "count": 1
-          },
-          {
             "word": "pair",
             "count": 1
           },
@@ -2105,24 +2096,12 @@
             "count": 1
           },
           {
-            "word": "pretiola",
-            "count": 1
-          },
-          {
-            "word": "Pretiola",
-            "count": 2
-          },
-          {
-            "word": "PRETIOLA",
-            "count": 4
-          },
-          {
-            "word": "pretiola.xyz",
-            "count": 2
-          },
-          {
             "word": "preview",
             "count": 4
+          },
+          {
+            "word": "Preview",
+            "count": 1
           },
           {
             "word": "price",
@@ -2182,7 +2161,7 @@
           },
           {
             "word": "Reference",
-            "count": 3
+            "count": 2
           },
           {
             "word": "research",
@@ -2262,7 +2241,7 @@
           },
           {
             "word": "Solana",
-            "count": 5
+            "count": 6
           },
           {
             "word": "split",
@@ -2322,7 +2301,7 @@
           },
           {
             "word": "terminal",
-            "count": 1
+            "count": 2
           },
           {
             "word": "Terms",
@@ -2463,7 +2442,11 @@
         ],
         "attrs": [
           {
-            "key": "aria-label=Open telemetry",
+            "key": "aria-label=Librova overview",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Open navigation",
             "count": 1
           },
           {
@@ -2491,14 +2474,6 @@
             "count": 1
           },
           {
-            "key": "aria-label=Pretiola overview",
-            "count": 1
-          },
-          {
-            "key": "aria-label=Primary",
-            "count": 1
-          },
-          {
             "key": "aria-label=SOL settlement partition at a 5 percent cap",
             "count": 1
           },
@@ -2510,15 +2485,11 @@
         "links": [
           {
             "href": "/",
-            "count": 2
-          },
-          {
-            "href": "/#cap",
             "count": 1
           },
           {
             "href": "/app/markets",
-            "count": 4
+            "count": 3
           },
           {
             "href": "/app/markets/BONK",
@@ -2538,7 +2509,7 @@
           },
           {
             "href": "/docs",
-            "count": 3
+            "count": 2
           },
           {
             "href": "/privacy",
@@ -2546,11 +2517,11 @@
           },
           {
             "href": "/risk",
-            "count": 2
+            "count": 1
           },
           {
             "href": "/signal",
-            "count": 3
+            "count": 2
           },
           {
             "href": "/terms",
@@ -2587,114 +2558,60 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "atlas-brand",
-          "atlas-btn",
-          "atlas-btn--accent",
-          "atlas-btn--ghost",
-          "atlas-btn--primary",
-          "atlas-btn--wide",
-          "atlas-colophon",
-          "atlas-colophon-brand",
-          "atlas-colophon-copy",
-          "atlas-colophon-in",
-          "atlas-colophon-links",
-          "atlas-colophon-top",
-          "atlas-combo",
-          "atlas-display",
-          "atlas-dock",
-          "atlas-dock-link",
-          "atlas-face",
-          "atlas-face--halo",
-          "atlas-face-head",
-          "atlas-facts",
-          "atlas-field",
-          "atlas-field-label",
-          "atlas-h2",
-          "atlas-head--row",
-          "atlas-input",
-          "atlas-kicker",
-          "atlas-lead",
-          "atlas-mast",
-          "atlas-mast-actions",
-          "atlas-mast-id",
-          "atlas-mast-more",
-          "atlas-meta",
-          "atlas-note",
-          "atlas-num",
-          "atlas-pairs",
-          "atlas-pill",
-          "atlas-pill--beam",
-          "atlas-range",
-          "atlas-root",
-          "atlas-scale",
-          "atlas-scene",
-          "atlas-scene-in",
-          "atlas-skip",
-          "atlas-stage",
-          "atlas-station",
-          "atlas-switch",
-          "atlas-table",
-          "atlas-table-wrap",
-          "atlas-tiny",
-          "atlas-wallet",
           "deck",
-          "deck-board",
-          "deck-board-table",
-          "deck-board-wrap",
-          "deck-brief",
-          "deck-brief-scene",
-          "deck-core",
-          "deck-fact-list",
-          "deck-facts",
-          "deck-foot-note",
-          "deck-head",
-          "deck-limits",
-          "deck-limits-cta",
-          "deck-limits-face",
-          "deck-limits-list",
-          "deck-open",
-          "deck-open-actions",
-          "deck-open-copy",
-          "deck-open-in",
-          "deck-open-note",
-          "deck-open-side",
-          "deck-orbit",
-          "deck-quote",
-          "deck-quote-body",
-          "deck-quote-copy",
-          "deck-quote-face",
-          "deck-quote-in",
-          "deck-quote-line",
-          "deck-quote-tag",
-          "deck-readout",
-          "deck-ring",
-          "deck-ring--a",
-          "deck-ring--b",
-          "deck-ring--c",
-          "deck-rowlink",
-          "deck-search",
-          "deck-split",
-          "deck-split-figure",
-          "deck-split-grid",
-          "deck-split-readout",
-          "deck-tape",
-          "deck-tape-scene",
-          "deck-token",
-          "deck-token-mark",
-          "deck-token-name",
-          "deck-tools",
-          "deck-total",
-          "is-anchor-end",
-          "is-chord",
-          "is-fall",
+          "down",
+          "end",
           "is-hold",
-          "is-lit",
-          "is-loud",
-          "is-rise",
+          "loud",
           "lucide",
           "lucide-activity-icon",
           "lucide-arrow-right-icon",
           "lucide-wallet-icon",
+          "on",
+          "pag-board",
+          "pag-brief",
+          "pag-brief-scene",
+          "pag-col",
+          "pag-col--main",
+          "pag-col--rail",
+          "pag-deck",
+          "pag-fact-list",
+          "pag-facts",
+          "pag-foot-note",
+          "pag-head",
+          "pag-limits",
+          "pag-limits-cta",
+          "pag-limits-face",
+          "pag-limits-list",
+          "pag-open",
+          "pag-open-actions",
+          "pag-open-copy",
+          "pag-open-in",
+          "pag-open-note",
+          "pag-open-side",
+          "pag-quote",
+          "pag-quote-body",
+          "pag-quote-copy",
+          "pag-quote-face",
+          "pag-quote-in",
+          "pag-quote-line",
+          "pag-quote-tag",
+          "pag-readout",
+          "pag-rowlink",
+          "pag-search",
+          "pag-split",
+          "pag-split-figure",
+          "pag-split-grid",
+          "pag-split-readout",
+          "pag-tape",
+          "pag-tape-scene",
+          "pag-tbl-table",
+          "pag-tbl-wrap",
+          "pag-token",
+          "pag-token-mark",
+          "pag-token-name",
+          "pag-tools",
+          "pag-total",
           "plot-band-a",
           "plot-band-b",
           "plot-band-label",
@@ -2703,232 +2620,275 @@
           "plot-tick",
           "plot-value",
           "port",
-          "port-trigger",
-          "sr-only"
+          "sel",
+          "tty-btn",
+          "tty-btn--accent",
+          "tty-btn--ghost",
+          "tty-btn--primary",
+          "tty-btn--wide",
+          "tty-colophon",
+          "tty-colophon-brand",
+          "tty-colophon-copy",
+          "tty-colophon-in",
+          "tty-colophon-links",
+          "tty-colophon-top",
+          "tty-combo",
+          "tty-command",
+          "tty-command-actions",
+          "tty-command-copy",
+          "tty-command-line",
+          "tty-command-more",
+          "tty-console",
+          "tty-deck",
+          "tty-display",
+          "tty-face",
+          "tty-face--halo",
+          "tty-face-head",
+          "tty-facts",
+          "tty-field",
+          "tty-field-label",
+          "tty-frame",
+          "tty-h2",
+          "tty-head--row",
+          "tty-hint",
+          "tty-input",
+          "tty-kicker",
+          "tty-lead",
+          "tty-meta",
+          "tty-note",
+          "tty-num",
+          "tty-pairs",
+          "tty-pill",
+          "tty-pill--accent",
+          "tty-prompt",
+          "tty-range",
+          "tty-scale",
+          "tty-scene",
+          "tty-scene-in",
+          "tty-skip",
+          "tty-stage",
+          "tty-station",
+          "tty-status",
+          "tty-status-brand",
+          "tty-switch",
+          "tty-table",
+          "tty-table-wrap",
+          "tty-tiny",
+          "tty-wallet",
+          "up",
+          "visually-hidden",
+          "wal-trigger"
         ],
         "fingerprint": [
-          "a@11:0",
-          "a@11:1",
-          "a@11:3",
-          "a@14:0",
+          "a@13:0",
+          "a@13:1",
+          "a@13:3",
+          "a@18:0",
           "a@4:0",
-          "a@6:3",
           "a@7:2",
-          "b@10:0",
           "b@12:0",
-          "b@13:0",
-          "b@16:0",
-          "b@7:0",
-          "button@10:0",
-          "button@11:0",
-          "button@11:1",
-          "button@11:4+",
+          "b@14:0",
+          "b@17:0",
+          "b@20:0",
           "button@12:0",
           "button@13:0",
-          "button@14:2",
-          "button@7:1",
+          "button@13:4+",
+          "button@15:1",
+          "button@16:0",
+          "button@17:0",
+          "button@18:2",
           "button@8:1",
-          "caption@11:0",
-          "dd@10:0",
-          "dd@11:0",
-          "dd@12:0",
+          "button@9:1",
+          "caption@15:0",
+          "dd@13:0",
+          "dd@14:0",
+          "dd@16:0",
+          "dd@9:0",
           "div@10:1",
           "div@10:2",
-          "div@10:4+",
+          "div@10:3",
           "div@11:2",
           "div@11:3",
+          "div@12:1",
           "div@12:2",
+          "div@12:3",
+          "div@13:1",
+          "div@13:2",
+          "div@13:4+",
+          "div@14:2",
+          "div@14:4+",
+          "div@15:2",
+          "div@15:3",
+          "div@16:2",
           "div@3:2",
-          "div@4:3",
+          "div@4:1",
           "div@6:2",
           "div@6:3",
-          "div@6:4+",
-          "div@7:1",
+          "div@7:2",
           "div@7:3",
           "div@8:1",
           "div@8:2",
-          "div@8:3",
           "div@8:4+",
           "div@9:1",
           "div@9:2",
-          "div@9:3",
-          "div@9:4+",
-          "dl@10:4+",
-          "dl@8:4+",
-          "dl@9:4+",
-          "dt@10:0",
-          "dt@11:0",
-          "dt@12:0",
-          "em@11:0",
-          "em@12:0",
+          "dl@11:4+",
+          "dl@12:4+",
+          "dl@14:4+",
+          "dl@7:4+",
+          "dt@13:0",
+          "dt@14:0",
+          "dt@16:0",
+          "dt@9:0",
           "em@13:0",
-          "figcaption@11:0",
-          "figure@10:2",
-          "footer@6:1",
-          "g@12:4+",
-          "h1@10:3",
-          "h2@10:0",
-          "h2@11:0",
-          "header@5:3",
-          "i@11:0",
-          "i@12:0",
-          "i@9:0",
-          "img@10:0",
+          "em@14:0",
+          "em@15:0",
+          "figcaption@13:0",
+          "figure@12:2",
+          "g@14:4+",
+          "h1@12:3",
+          "h2@12:0",
+          "h2@13:0",
+          "h2@14:0",
+          "i@14:0",
+          "i@15:0",
+          "img@12:0",
           "img@8:0",
-          "input@12:0",
-          "input@13:0",
-          "label@11:2",
-          "label@12:0",
-          "label@12:1",
-          "li@10:1",
-          "li@11:0",
-          "main@5:2",
-          "nav@5:4+",
-          "ol@9:4+",
-          "output@13:0",
-          "p@10:0",
-          "p@10:2",
-          "p@8:0",
-          "p@9:0",
+          "input@16:0",
+          "input@17:0",
+          "label@15:2",
+          "label@16:0",
+          "label@16:1",
+          "li@12:1",
+          "li@13:0",
+          "main@5:4+",
+          "ol@11:4+",
+          "output@17:0",
+          "p@11:0",
+          "p@12:0",
+          "p@13:0",
+          "p@14:0",
+          "p@14:2",
+          "p@7:0",
+          "p@8:1",
           "path@10:0",
-          "path@13:0",
-          "path@9:0",
-          "rect@12:0",
-          "section@7:1",
-          "section@7:2",
-          "select@12:4+",
-          "small@12:0",
-          "small@16:0",
-          "span@10:1",
-          "span@11:0",
-          "span@12:0",
-          "span@12:2",
-          "span@13:0",
+          "path@11:0",
+          "path@15:0",
+          "path@17:0",
+          "rect@14:0",
+          "section@11:1",
+          "section@9:1",
+          "select@16:4+",
+          "small@14:0",
+          "small@20:0",
+          "span@14:1",
+          "span@14:2",
           "span@15:0",
-          "span@15:2",
-          "span@7:0",
+          "span@16:0",
+          "span@16:2",
+          "span@17:0",
+          "span@19:0",
+          "span@19:2",
           "span@8:0",
-          "span@9:0",
-          "strong@11:0",
-          "strong@13:0",
-          "svg@11:4+",
-          "svg@12:2",
-          "svg@8:1",
-          "svg@9:2",
-          "table@10:3",
-          "tbody@11:4+",
-          "td@13:0",
-          "td@13:1",
-          "text@12:0",
-          "th@13:0",
-          "th@13:1",
-          "thead@11:1",
-          "tr@12:4+",
-          "ul@10:4+",
-          "ul@9:4+"
+          "strong@15:0",
+          "svg@10:2",
+          "svg@13:4+",
+          "svg@14:2",
+          "svg@16:2",
+          "svg@9:1",
+          "table@14:3",
+          "tbody@15:4+",
+          "td@17:0",
+          "td@17:1",
+          "text@14:0",
+          "th@17:0",
+          "th@17:1",
+          "thead@15:1",
+          "tr@16:4+",
+          "ul@11:4+",
+          "ul@12:4+"
         ],
         "landmarks": [
           {
-            "tag": "header",
+            "tag": "main",
             "role": "",
             "top": 0,
             "left": 0,
             "width": 390,
-            "height": 64
-          },
-          {
-            "tag": "nav",
-            "role": "",
-            "top": 784,
-            "left": 8,
-            "width": 374,
-            "height": 46
-          },
-          {
-            "tag": "main",
-            "role": "",
-            "top": 64,
-            "left": 0,
-            "width": 390,
-            "height": 4974
-          },
-          {
-            "tag": "footer",
-            "role": "",
-            "top": 4565,
-            "left": 0,
-            "width": 390,
-            "height": 379
+            "height": 4695
           }
         ],
         "colors": [
           {
-            "hex": "#f5f4fa",
-            "count": 223
+            "hex": "#f4f7fa",
+            "count": 217
           },
           {
-            "hex": "#8e8ca3",
-            "count": 70
+            "hex": "#8698a9",
+            "count": 65
           },
           {
-            "hex": "#a9a7bd",
-            "count": 28
+            "hex": "#9fb1c1",
+            "count": 32
           },
           {
-            "hex": "#05060d",
-            "count": 22
+            "hex": "#05080c",
+            "count": 21
           },
           {
-            "hex": "#40b3ff",
-            "count": 17
-          },
-          {
-            "hex": "#d7d5e4",
+            "hex": "#d7dde4",
             "count": 12
           },
           {
-            "hex": "#04060d",
+            "hex": "#ff5f5f",
+            "count": 12
+          },
+          {
+            "hex": "#050608",
             "count": 8
           },
           {
-            "hex": "#0b0c15",
-            "count": 7
+            "hex": "#ff0000",
+            "count": 8
           },
           {
-            "hex": "#5ce1a0",
-            "count": 7
+            "hex": "#0a0e14",
+            "count": 5
           },
           {
-            "hex": "#191927",
+            "hex": "#111a24",
             "count": 4
           },
           {
-            "hex": "#262536",
+            "hex": "#182533",
+            "count": 4
+          },
+          {
+            "hex": "#1e2a36",
+            "count": 4
+          },
+          {
+            "hex": "#0d141b",
             "count": 3
           },
           {
-            "hex": "#ff8a8a",
+            "hex": "#000000",
             "count": 2
-          },
-          {
-            "hex": "#0a0616",
-            "count": 1
           },
           {
             "hex": "#3b3b3b",
             "count": 1
           },
           {
-            "hex": "#a78bfa",
+            "hex": "#ff00c8",
             "count": 1
           },
           {
-            "hex": "#f2c94c",
+            "hex": "#ff8ce6",
             "count": 1
           }
         ],
         "contrast": [],
-        "contrastChecked": 182,
+        "contrastChecked": 171,
         "headings": [
           {
             "tag": "h1",
@@ -2959,57 +2919,49 @@
             "text": "Limits of this preview"
           }
         ],
-        "navTargets": [
-          "/",
-          "/app/markets",
-          "/docs",
-          "/privacy",
-          "/risk",
-          "/signal",
-          "/terms"
-        ],
+        "navTargets": [],
         "overflow": {
           "documentOverflow": false,
           "offenders": [
             {
-              "selector": "div.atlas-root > nav.atlas-dock > a.atlas-dock-link",
-              "right": 491,
-              "width": 98
+              "selector": "div.tty-scene-in > div.tty-table-wrap.pag-tbl-wrap > table.tty-table.pag-tbl-table",
+              "right": 734,
+              "width": 720
             },
             {
-              "selector": "nav.atlas-dock > a.atlas-dock-link > b",
-              "right": 418,
-              "width": 13
+              "selector": "div.tty-table-wrap.pag-tbl-wrap > table.tty-table.pag-tbl-table > thead",
+              "right": 734,
+              "width": 720
             },
             {
-              "selector": "nav.atlas-dock > a.atlas-dock-link > span",
-              "right": 478,
-              "width": 52
+              "selector": "table.tty-table.pag-tbl-table > thead > tr",
+              "right": 734,
+              "width": 720
             },
             {
-              "selector": "div.atlas-root > nav.atlas-dock > a.atlas-dock-link",
-              "right": 573,
-              "width": 78
+              "selector": "thead > tr > th.loud",
+              "right": 512,
+              "width": 147
             },
             {
-              "selector": "nav.atlas-dock > a.atlas-dock-link > b",
-              "right": 520,
-              "width": 13
+              "selector": "thead > tr > th",
+              "right": 659,
+              "width": 147
             },
             {
-              "selector": "nav.atlas-dock > a.atlas-dock-link > span",
-              "right": 560,
-              "width": 32
+              "selector": "thead > tr > th",
+              "right": 734,
+              "width": 75
             },
             {
-              "selector": "div.deck > section.atlas-scene.deck-open > div.deck-orbit",
-              "right": 460,
-              "width": 304
+              "selector": "div.tty-table-wrap.pag-tbl-wrap > table.tty-table.pag-tbl-table > tbody",
+              "right": 734,
+              "width": 720
             },
             {
-              "selector": "section.atlas-scene.deck-open > div.deck-orbit > span.deck-ring.deck-ring--a",
-              "right": 460,
-              "width": 304
+              "selector": "table.tty-table.pag-tbl-table > tbody > tr.sel",
+              "right": 734,
+              "width": 720
             }
           ]
         }
@@ -3020,13 +2972,13 @@
           "",
           "/",
           "/app/markets",
-          "/signal",
-          "/docs",
-          "/risk",
           "/app/markets/SOL",
           "/app/markets/JUP",
           "/app/markets/BONK",
           "/app/markets/USDC",
+          "/signal",
+          "/docs",
+          "/risk",
           "/terms",
           "/privacy"
         ],
@@ -3039,19 +2991,19 @@
             "text": "SKIP TO CONTENT",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(64, 179, 255)",
+            "outlineColor": "rgb(255, 95, 95)",
             "boxShadow": "none",
-            "borderColor": "rgb(4, 6, 13)",
-            "backgroundColor": "rgb(64, 179, 255)"
+            "borderColor": "rgb(5, 6, 8)",
+            "backgroundColor": "rgb(255, 0, 0)"
           },
           {
             "tag": "a",
-            "text": "Pretiola overview",
+            "text": "Librova overview",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(64, 179, 255)",
+            "outlineColor": "rgb(255, 95, 95)",
             "boxShadow": "none",
-            "borderColor": "rgb(245, 244, 250)",
+            "borderColor": "rgb(244, 247, 250)",
             "backgroundColor": "rgba(0, 0, 0, 0)"
           },
           {
@@ -3059,9 +3011,9 @@
             "text": "CONNECT WALLET",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(64, 179, 255)",
+            "outlineColor": "rgb(255, 95, 95)",
             "boxShadow": "none",
-            "borderColor": "rgb(52, 51, 74)",
+            "borderColor": "rgb(42, 59, 76)",
             "backgroundColor": "rgba(0, 0, 0, 0)"
           },
           {
@@ -3069,9 +3021,9 @@
             "text": "OPEN THE BOARD",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(64, 179, 255)",
+            "outlineColor": "rgb(255, 95, 95)",
             "boxShadow": "none",
-            "borderColor": "rgb(52, 51, 74)",
+            "borderColor": "rgb(42, 59, 76)",
             "backgroundColor": "rgba(0, 0, 0, 0)"
           },
           {
@@ -3079,19 +3031,19 @@
             "text": "01 Overview TAPE",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(64, 179, 255)",
-            "boxShadow": "rgba(64, 179, 255, 0.42) 0px 0px 0px 1px inset",
-            "borderColor": "rgb(245, 244, 250)",
-            "backgroundColor": "rgba(64, 179, 255, 0.14)"
+            "outlineColor": "rgb(255, 95, 95)",
+            "boxShadow": "none",
+            "borderColor": "rgb(244, 247, 250) rgb(244, 247, 250) rgb(244, 247, 250) rgb(255, 95, 95)",
+            "backgroundColor": "rgba(255, 0, 0, 0.08)"
           },
           {
             "tag": "a",
             "text": "02 Board WATCHLIST",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(64, 179, 255)",
+            "outlineColor": "rgb(255, 95, 95)",
             "boxShadow": "none",
-            "borderColor": "rgb(169, 167, 189)",
+            "borderColor": "rgb(159, 177, 193) rgb(159, 177, 193) rgb(159, 177, 193) rgba(0, 0, 0, 0)",
             "backgroundColor": "rgba(0, 0, 0, 0)"
           },
           {
@@ -3099,9 +3051,9 @@
             "text": "03 Journal LOCAL",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(64, 179, 255)",
+            "outlineColor": "rgb(255, 95, 95)",
             "boxShadow": "none",
-            "borderColor": "rgb(169, 167, 189)",
+            "borderColor": "rgb(159, 177, 193) rgb(159, 177, 193) rgb(159, 177, 193) rgba(0, 0, 0, 0)",
             "backgroundColor": "rgba(0, 0, 0, 0)"
           },
           {
@@ -3109,9 +3061,9 @@
             "text": "04 Reference METHOD",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(64, 179, 255)",
+            "outlineColor": "rgb(255, 95, 95)",
             "boxShadow": "none",
-            "borderColor": "rgb(169, 167, 189)",
+            "borderColor": "rgb(159, 177, 193) rgb(159, 177, 193) rgb(159, 177, 193) rgba(0, 0, 0, 0)",
             "backgroundColor": "rgba(0, 0, 0, 0)"
           }
         ],
@@ -3125,10 +3077,10 @@
       "status": 200,
       "desktop": {
         "meta": {
-          "title": "Markets / Pretiola",
+          "title": "Markets / Librova",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 1685,
+          "bodyTextLength": 1677,
           "scrollWidth": 1440,
           "clientWidth": 1440,
           "focusableCount": 26
@@ -3387,6 +3339,22 @@
             "count": 1
           },
           {
+            "word": "librova",
+            "count": 2
+          },
+          {
+            "word": "Librova",
+            "count": 2
+          },
+          {
+            "word": "LIBROVA",
+            "count": 3
+          },
+          {
+            "word": "librova.xyz",
+            "count": 3
+          },
+          {
             "word": "Limits",
             "count": 2
           },
@@ -3485,22 +3453,6 @@
           {
             "word": "Premium",
             "count": 1
-          },
-          {
-            "word": "pretiola",
-            "count": 2
-          },
-          {
-            "word": "Pretiola",
-            "count": 2
-          },
-          {
-            "word": "PRETIOLA",
-            "count": 3
-          },
-          {
-            "word": "pretiola.xyz",
-            "count": 3
           },
           {
             "word": "preview",
@@ -3713,6 +3665,10 @@
             "count": 1
           },
           {
+            "key": "aria-label=Librova overview",
+            "count": 1
+          },
+          {
             "key": "aria-label=On chain stats preview",
             "count": 1
           },
@@ -3734,10 +3690,6 @@
           },
           {
             "key": "aria-label=Position type",
-            "count": 1
-          },
-          {
-            "key": "aria-label=Pretiola overview",
             "count": 1
           },
           {
@@ -3813,277 +3765,285 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "atlas-brand",
-          "atlas-brand-copy",
-          "atlas-btn",
-          "atlas-btn--ghost",
-          "atlas-colophon",
-          "atlas-colophon-brand",
-          "atlas-colophon-copy",
-          "atlas-colophon-in",
-          "atlas-colophon-links",
-          "atlas-colophon-top",
-          "atlas-display",
-          "atlas-dock",
-          "atlas-dock-link",
-          "atlas-facts",
-          "atlas-h2",
-          "atlas-input",
-          "atlas-kicker",
-          "atlas-label",
-          "atlas-lead",
-          "atlas-mast",
-          "atlas-mast-actions",
-          "atlas-mast-id",
-          "atlas-mast-open",
-          "atlas-meta",
-          "atlas-num",
-          "atlas-pill",
-          "atlas-pill--beam",
-          "atlas-ribbon",
-          "atlas-ribbon-cell",
-          "atlas-ribbon-cell--wide",
-          "atlas-ribbon-tail",
-          "atlas-root",
-          "atlas-scene",
-          "atlas-scene-in",
-          "atlas-skip",
-          "atlas-stage",
-          "atlas-station",
-          "atlas-switch",
-          "atlas-table",
-          "atlas-table-wrap",
-          "atlas-tiny",
-          "atlas-wallet",
-          "board-block",
-          "board-cap",
-          "board-deck",
-          "board-dot",
-          "board-epoch",
-          "board-feed",
-          "board-foot",
-          "board-grid",
-          "board-head",
-          "board-preview-badge",
-          "board-quote-tag",
-          "board-stats",
-          "board-stats-grid",
-          "board-stats-line",
-          "board-stats-note",
-          "board-table-wrap",
-          "board-token",
-          "board-token-mark",
-          "board-token-name",
-          "board-toolbar",
-          "board-value",
-          "board-value--income",
-          "board-value--upside",
           "is-hold",
-          "is-lit",
           "lucide",
           "lucide-arrow-left-icon",
           "lucide-search-icon",
           "lucide-sliders-horizontal-icon",
           "lucide-wallet-icon",
+          "on",
           "port",
-          "port-trigger",
           "quay",
-          "quay-back",
-          "quay-board",
-          "quay-display",
-          "quay-facts",
-          "quay-facts-scene",
-          "quay-filter-toggle",
-          "quay-filters",
-          "quay-open",
-          "quay-open-copy",
-          "quay-open-in",
-          "quay-search",
-          "quay-side",
-          "sr-only"
+          "tbl-block",
+          "tbl-cap",
+          "tbl-deck",
+          "tbl-dot",
+          "tbl-epoch",
+          "tbl-feed",
+          "tbl-foot",
+          "tbl-grid",
+          "tbl-head",
+          "tbl-preview-badge",
+          "tbl-quote-tag",
+          "tbl-stats",
+          "tbl-stats-grid",
+          "tbl-stats-line",
+          "tbl-stats-note",
+          "tbl-table-wrap",
+          "tbl-token",
+          "tbl-token-mark",
+          "tbl-token-name",
+          "tbl-toolbar",
+          "tbl-value",
+          "tbl-value--income",
+          "tbl-value--upside",
+          "tty-btn",
+          "tty-btn--ghost",
+          "tty-colophon",
+          "tty-colophon-brand",
+          "tty-colophon-copy",
+          "tty-colophon-in",
+          "tty-colophon-links",
+          "tty-colophon-top",
+          "tty-command",
+          "tty-command-actions",
+          "tty-command-copy",
+          "tty-command-line",
+          "tty-console",
+          "tty-deck",
+          "tty-display",
+          "tty-facts",
+          "tty-frame",
+          "tty-h2",
+          "tty-hint",
+          "tty-input",
+          "tty-kicker",
+          "tty-label",
+          "tty-lead",
+          "tty-meta",
+          "tty-nav",
+          "tty-nav-link",
+          "tty-num",
+          "tty-pill",
+          "tty-pill--accent",
+          "tty-prompt",
+          "tty-scene",
+          "tty-scene-in",
+          "tty-skip",
+          "tty-stage",
+          "tty-station",
+          "tty-status",
+          "tty-status-brand",
+          "tty-status-cell",
+          "tty-status-cells",
+          "tty-status-tail",
+          "tty-switch",
+          "tty-table",
+          "tty-table-wrap",
+          "tty-tiny",
+          "tty-wallet",
+          "visually-hidden",
+          "wal-trigger",
+          "wrk-back",
+          "wrk-board",
+          "wrk-deck",
+          "wrk-display",
+          "wrk-facts",
+          "wrk-facts-scene",
+          "wrk-filter-toggle",
+          "wrk-filters",
+          "wrk-main",
+          "wrk-open",
+          "wrk-open-copy",
+          "wrk-open-in",
+          "wrk-rail",
+          "wrk-search",
+          "wrk-side"
         ],
         "fingerprint": [
-          "a@11:0",
-          "a@16:2",
+          "a@11:1",
+          "a@13:0",
+          "a@20:2",
           "a@4:0",
-          "a@6:3",
-          "a@7:0",
           "a@7:2",
-          "a@9:1",
-          "b@10:0",
-          "b@18:0",
-          "b@7:0",
-          "b@8:0",
-          "button@10:1",
-          "button@11:0",
-          "button@8:1",
-          "caption@13:0",
-          "circle@12:0",
-          "dd@10:0",
-          "dd@11:0",
-          "dd@14:0",
+          "a@8:0",
+          "a@8:3",
+          "b@12:0",
+          "b@22:0",
+          "b@9:0",
+          "button@14:1",
+          "button@15:0",
+          "button@9:1",
+          "caption@17:0",
+          "circle@16:0",
+          "dd@15:0",
+          "dd@18:0",
+          "dd@9:0",
+          "div@10:1",
           "div@10:2",
           "div@10:3",
-          "div@10:4+",
-          "div@11:1",
           "div@11:2",
+          "div@11:3",
+          "div@12:1",
+          "div@12:2",
           "div@13:3",
+          "div@14:2",
+          "div@14:3",
+          "div@14:4+",
+          "div@15:1",
+          "div@15:2",
+          "div@17:3",
           "div@3:2",
-          "div@4:3",
+          "div@4:1",
           "div@6:2",
           "div@6:3",
-          "div@6:4+",
-          "div@7:1",
+          "div@7:2",
           "div@7:3",
+          "div@7:4+",
           "div@8:1",
           "div@8:2",
-          "div@8:3",
+          "div@9:1",
           "div@9:2",
-          "div@9:3",
-          "dl@12:4+",
-          "dl@8:4+",
-          "dl@9:4+",
-          "dt@10:0",
-          "dt@11:0",
-          "dt@14:1",
-          "footer@6:1",
-          "h1@10:0",
-          "h2@11:0",
-          "header@5:3",
-          "i@17:0",
-          "i@8:0",
-          "img@10:0",
+          "dl@13:4+",
+          "dl@16:4+",
+          "dl@7:4+",
+          "dt@15:0",
+          "dt@18:1",
+          "dt@9:0",
+          "h1@12:0",
+          "h2@15:0",
+          "i@21:0",
+          "i@9:0",
+          "img@12:0",
           "img@8:0",
-          "input@11:0",
-          "label@10:3",
-          "li@10:1",
-          "main@5:2",
-          "nav@5:4+",
-          "p@10:0",
-          "p@11:1",
+          "input@15:0",
+          "label@14:3",
+          "li@12:1",
+          "main@5:4+",
+          "nav@7:4+",
+          "p@11:0",
           "p@12:0",
-          "p@12:2",
-          "p@7:1",
-          "p@8:0",
-          "p@9:0",
-          "path@10:0",
+          "p@15:1",
+          "p@16:0",
+          "p@16:2",
+          "p@7:0",
+          "p@8:1",
           "path@11:0",
-          "path@12:0",
-          "section@7:1",
-          "section@9:2",
-          "small@16:0",
-          "small@18:0",
-          "small@7:0",
-          "span@11:0",
-          "span@12:0",
-          "span@13:0",
+          "path@13:0",
+          "path@16:0",
+          "section@11:1",
+          "section@13:2",
+          "section@9:1",
+          "small@20:0",
+          "small@22:0",
+          "small@9:0",
           "span@15:0",
           "span@16:0",
-          "span@16:1",
           "span@17:0",
-          "span@17:2",
+          "span@19:0",
+          "span@20:0",
+          "span@20:1",
+          "span@21:0",
+          "span@21:2",
           "span@7:0",
-          "span@7:1",
-          "span@7:2",
           "span@8:0",
+          "span@8:1",
+          "span@8:2",
+          "span@9:0",
           "svg@10:2",
-          "svg@11:2",
-          "svg@11:4+",
-          "svg@9:2",
-          "table@12:3",
-          "tbody@13:4+",
-          "td@15:1",
-          "td@15:2",
-          "th@15:0",
-          "thead@13:1",
-          "tr@14:4+",
-          "ul@9:4+"
+          "svg@12:2",
+          "svg@15:2",
+          "svg@15:4+",
+          "table@16:3",
+          "tbody@17:4+",
+          "td@19:1",
+          "td@19:2",
+          "th@19:0",
+          "thead@17:1",
+          "tr@18:4+",
+          "ul@11:4+"
         ],
         "landmarks": [
           {
-            "tag": "header",
+            "tag": "main",
             "role": "",
-            "top": 0,
+            "top": -3,
             "left": 0,
             "width": 1440,
-            "height": 101
+            "height": 1293
           },
           {
             "tag": "nav",
             "role": "",
-            "top": 825,
-            "left": 377,
-            "width": 686,
-            "height": 61
-          },
-          {
-            "tag": "main",
-            "role": "",
-            "top": 89,
-            "left": 0,
-            "width": 1440,
-            "height": 1698
-          },
-          {
-            "tag": "footer",
-            "role": "",
-            "top": 1391,
-            "left": 0,
-            "width": 1440,
-            "height": 292
+            "top": 92,
+            "left": 1,
+            "width": 212,
+            "height": 1102
           }
         ],
         "colors": [
           {
-            "hex": "#f5f4fa",
-            "count": 125
+            "hex": "#f4f7fa",
+            "count": 122
           },
           {
-            "hex": "#8e8ca3",
-            "count": 65
+            "hex": "#8698a9",
+            "count": 64
           },
           {
-            "hex": "#a9a7bd",
-            "count": 30
+            "hex": "#9fb1c1",
+            "count": 45
           },
           {
-            "hex": "#d7d5e4",
+            "hex": "#d7dde4",
             "count": 19
           },
           {
-            "hex": "#191927",
+            "hex": "#182533",
             "count": 12
           },
           {
-            "hex": "#40b3ff",
-            "count": 12
-          },
-          {
-            "hex": "#05060d",
-            "count": 9
-          },
-          {
-            "hex": "#a78bfa",
+            "hex": "#05080c",
             "count": 8
           },
           {
-            "hex": "#5ce1a0",
-            "count": 6
+            "hex": "#ff00c8",
+            "count": 8
           },
           {
-            "hex": "#0b0c15",
+            "hex": "#ff5f5f",
+            "count": 8
+          },
+          {
+            "hex": "#ff0000",
+            "count": 7
+          },
+          {
+            "hex": "#111a24",
+            "count": 4
+          },
+          {
+            "hex": "#0d141b",
             "count": 3
           },
           {
-            "hex": "#262536",
+            "hex": "#1e2a36",
+            "count": 3
+          },
+          {
+            "hex": "#000000",
             "count": 2
           },
           {
-            "hex": "#04060d",
+            "hex": "#0a0e14",
+            "count": 2
+          },
+          {
+            "hex": "#050608",
             "count": 1
           },
           {
-            "hex": "#f2c94c",
+            "hex": "#5ce1a0",
             "count": 1
           }
         ],
@@ -4103,10 +4063,8 @@
           "/",
           "/app/markets",
           "/docs",
-          "/privacy",
           "/risk",
-          "/signal",
-          "/terms"
+          "/signal"
         ],
         "overflow": {
           "documentOverflow": false,
@@ -4127,13 +4085,13 @@
       },
       "mobile": {
         "meta": {
-          "title": "Markets / Pretiola",
+          "title": "Markets / Librova",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 1296,
+          "bodyTextLength": 1261,
           "scrollWidth": 390,
           "clientWidth": 390,
-          "focusableCount": 26
+          "focusableCount": 20
         },
         "words": [
           {
@@ -4158,30 +4116,6 @@
           },
           {
             "word": "$180.03",
-            "count": 1
-          },
-          {
-            "word": "01",
-            "count": 1
-          },
-          {
-            "word": "02",
-            "count": 1
-          },
-          {
-            "word": "03",
-            "count": 1
-          },
-          {
-            "word": "04",
-            "count": 1
-          },
-          {
-            "word": "05",
-            "count": 1
-          },
-          {
-            "word": "06",
             "count": 1
           },
           {
@@ -4222,7 +4156,7 @@
           },
           {
             "word": "Board",
-            "count": 2
+            "count": 1
           },
           {
             "word": "Bonk",
@@ -4233,11 +4167,11 @@
             "count": 1
           },
           {
-            "word": "Boundary",
+            "word": "browser",
             "count": 1
           },
           {
-            "word": "browser",
+            "word": "build",
             "count": 1
           },
           {
@@ -4338,7 +4272,7 @@
           },
           {
             "word": "Journal",
-            "count": 2
+            "count": 1
           },
           {
             "word": "JUP",
@@ -4353,8 +4287,24 @@
             "count": 1
           },
           {
-            "word": "Limits",
+            "word": "librova",
+            "count": 1
+          },
+          {
+            "word": "Librova",
             "count": 2
+          },
+          {
+            "word": "LIBROVA",
+            "count": 2
+          },
+          {
+            "word": "librova.xyz",
+            "count": 2
+          },
+          {
+            "word": "Limits",
+            "count": 1
           },
           {
             "word": "live",
@@ -4362,7 +4312,7 @@
           },
           {
             "word": "market",
-            "count": 2
+            "count": 3
           },
           {
             "word": "Market",
@@ -4417,10 +4367,6 @@
             "count": 1
           },
           {
-            "word": "Overview",
-            "count": 1
-          },
-          {
             "word": "paper",
             "count": 1
           },
@@ -4433,28 +4379,12 @@
             "count": 1
           },
           {
-            "word": "pretiola",
-            "count": 1
-          },
-          {
-            "word": "Pretiola",
-            "count": 2
-          },
-          {
-            "word": "PRETIOLA",
-            "count": 2
-          },
-          {
-            "word": "pretiola.xyz",
-            "count": 2
-          },
-          {
             "word": "preview",
             "count": 3
           },
           {
             "word": "Preview",
-            "count": 4
+            "count": 5
           },
           {
             "word": "prices",
@@ -4482,7 +4412,7 @@
           },
           {
             "word": "Reference",
-            "count": 2
+            "count": 1
           },
           {
             "word": "S",
@@ -4526,7 +4456,7 @@
           },
           {
             "word": "Solana",
-            "count": 4
+            "count": 5
           },
           {
             "word": "Static",
@@ -4546,6 +4476,10 @@
           },
           {
             "word": "targets",
+            "count": 1
+          },
+          {
+            "word": "terminal",
             "count": 1
           },
           {
@@ -4627,6 +4561,10 @@
         ],
         "attrs": [
           {
+            "key": "aria-label=Librova overview",
+            "count": 1
+          },
+          {
             "key": "aria-label=Market cards",
             "count": 1
           },
@@ -4635,19 +4573,11 @@
             "count": 1
           },
           {
-            "key": "aria-label=Open telemetry",
+            "key": "aria-label=Open navigation",
             "count": 1
           },
           {
             "key": "aria-label=Position type",
-            "count": 1
-          },
-          {
-            "key": "aria-label=Pretiola overview",
-            "count": 1
-          },
-          {
-            "key": "aria-label=Primary",
             "count": 1
           },
           {
@@ -4658,15 +4588,11 @@
         "links": [
           {
             "href": "/",
-            "count": 3
-          },
-          {
-            "href": "/#cap",
-            "count": 1
+            "count": 2
           },
           {
             "href": "/app/markets",
-            "count": 2
+            "count": 1
           },
           {
             "href": "/app/markets/BONK",
@@ -4686,7 +4612,7 @@
           },
           {
             "href": "/docs",
-            "count": 2
+            "count": 1
           },
           {
             "href": "/privacy",
@@ -4694,11 +4620,11 @@
           },
           {
             "href": "/risk",
-            "count": 2
+            "count": 1
           },
           {
             "href": "/signal",
-            "count": 2
+            "count": 1
           },
           {
             "href": "/terms",
@@ -4719,59 +4645,7 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "atlas-brand",
-          "atlas-btn",
-          "atlas-btn--ghost",
-          "atlas-colophon",
-          "atlas-colophon-brand",
-          "atlas-colophon-copy",
-          "atlas-colophon-in",
-          "atlas-colophon-links",
-          "atlas-colophon-top",
-          "atlas-display",
-          "atlas-dock",
-          "atlas-dock-link",
-          "atlas-facts",
-          "atlas-h2",
-          "atlas-input",
-          "atlas-kicker",
-          "atlas-label",
-          "atlas-lead",
-          "atlas-mast",
-          "atlas-mast-actions",
-          "atlas-mast-id",
-          "atlas-mast-more",
-          "atlas-meta",
-          "atlas-pill",
-          "atlas-pill--beam",
-          "atlas-root",
-          "atlas-scene",
-          "atlas-scene-in",
-          "atlas-skip",
-          "atlas-stage",
-          "atlas-station",
-          "atlas-switch",
-          "atlas-tiny",
-          "atlas-wallet",
-          "board-block",
-          "board-card",
-          "board-card-copy",
-          "board-card-values",
-          "board-deck",
-          "board-dot",
-          "board-feed",
-          "board-foot",
-          "board-head",
-          "board-preview-badge",
-          "board-rail",
-          "board-stats",
-          "board-stats-grid",
-          "board-stats-line",
-          "board-stats-note",
-          "board-token-mark",
-          "board-toolbar",
           "is-hold",
-          "is-lit",
           "lucide",
           "lucide-activity-icon",
           "lucide-arrow-left-icon",
@@ -4779,199 +4653,245 @@
           "lucide-search-icon",
           "lucide-sliders-horizontal-icon",
           "lucide-wallet-icon",
+          "on",
           "port",
-          "port-trigger",
           "quay",
-          "quay-back",
-          "quay-board",
-          "quay-display",
-          "quay-facts",
-          "quay-facts-scene",
-          "quay-filter-toggle",
-          "quay-filters",
-          "quay-open",
-          "quay-open-copy",
-          "quay-open-in",
-          "quay-search",
-          "quay-side",
-          "sr-only"
+          "tbl-block",
+          "tbl-card",
+          "tbl-card-copy",
+          "tbl-card-values",
+          "tbl-deck",
+          "tbl-dot",
+          "tbl-feed",
+          "tbl-foot",
+          "tbl-head",
+          "tbl-preview-badge",
+          "tbl-rail",
+          "tbl-stats",
+          "tbl-stats-grid",
+          "tbl-stats-line",
+          "tbl-stats-note",
+          "tbl-token-mark",
+          "tbl-toolbar",
+          "tty-btn",
+          "tty-btn--ghost",
+          "tty-colophon",
+          "tty-colophon-brand",
+          "tty-colophon-copy",
+          "tty-colophon-in",
+          "tty-colophon-links",
+          "tty-colophon-top",
+          "tty-command",
+          "tty-command-actions",
+          "tty-command-copy",
+          "tty-command-line",
+          "tty-command-more",
+          "tty-console",
+          "tty-deck",
+          "tty-display",
+          "tty-facts",
+          "tty-frame",
+          "tty-h2",
+          "tty-hint",
+          "tty-input",
+          "tty-kicker",
+          "tty-label",
+          "tty-lead",
+          "tty-meta",
+          "tty-pill",
+          "tty-pill--accent",
+          "tty-prompt",
+          "tty-scene",
+          "tty-scene-in",
+          "tty-skip",
+          "tty-stage",
+          "tty-station",
+          "tty-status",
+          "tty-status-brand",
+          "tty-switch",
+          "tty-tiny",
+          "tty-wallet",
+          "visually-hidden",
+          "wal-trigger",
+          "wrk-back",
+          "wrk-board",
+          "wrk-deck",
+          "wrk-display",
+          "wrk-facts",
+          "wrk-facts-scene",
+          "wrk-filter-toggle",
+          "wrk-filters",
+          "wrk-main",
+          "wrk-open",
+          "wrk-open-copy",
+          "wrk-open-in",
+          "wrk-rail",
+          "wrk-search",
+          "wrk-side"
         ],
         "fingerprint": [
-          "a@11:0",
-          "a@12:3",
+          "a@11:1",
+          "a@13:0",
+          "a@16:3",
           "a@4:0",
-          "a@6:3",
           "a@7:2",
-          "a@9:1",
-          "b@10:0",
-          "b@14:0",
-          "b@15:0",
-          "b@7:0",
-          "button@10:1",
-          "button@11:0",
-          "button@7:1",
+          "b@12:0",
+          "b@18:0",
+          "b@19:0",
+          "button@14:1",
+          "button@15:0",
           "button@8:1",
-          "circle@12:0",
-          "dd@10:0",
-          "dd@11:0",
-          "dd@14:0",
+          "button@9:1",
+          "circle@16:0",
+          "dd@15:0",
+          "dd@18:0",
+          "dd@9:0",
+          "div@10:1",
           "div@10:2",
           "div@10:3",
-          "div@10:4+",
-          "div@11:1",
           "div@11:2",
-          "div@11:4+",
+          "div@11:3",
+          "div@12:1",
+          "div@12:2",
           "div@13:3",
+          "div@14:2",
+          "div@14:3",
+          "div@14:4+",
+          "div@15:1",
+          "div@15:2",
+          "div@15:4+",
+          "div@17:3",
           "div@3:2",
-          "div@4:3",
+          "div@4:1",
           "div@6:2",
           "div@6:3",
-          "div@7:1",
+          "div@7:2",
           "div@7:3",
           "div@8:1",
           "div@8:2",
-          "div@8:3",
+          "div@9:1",
           "div@9:2",
-          "div@9:3",
-          "dl@12:4+",
-          "dl@8:4+",
-          "dl@9:4+",
-          "dt@10:0",
-          "dt@11:0",
-          "dt@14:1",
-          "footer@6:1",
-          "h1@10:0",
-          "h2@11:0",
-          "header@5:3",
-          "img@10:0",
+          "dl@13:4+",
+          "dl@16:4+",
+          "dl@7:4+",
+          "dt@15:0",
+          "dt@18:1",
+          "dt@9:0",
+          "h1@12:0",
+          "h2@15:0",
+          "img@12:0",
           "img@8:0",
-          "input@11:0",
-          "label@10:3",
-          "li@10:1",
-          "main@5:2",
-          "nav@5:4+",
-          "p@10:0",
-          "p@11:1",
+          "input@15:0",
+          "label@14:3",
+          "li@12:1",
+          "main@5:4+",
+          "p@11:0",
           "p@12:0",
-          "p@12:2",
-          "p@8:0",
-          "p@9:0",
+          "p@15:1",
+          "p@16:0",
+          "p@16:2",
+          "p@7:0",
+          "p@8:1",
           "path@10:0",
           "path@11:0",
-          "path@12:0",
-          "path@15:0",
-          "path@9:0",
-          "section@7:1",
-          "section@9:2",
-          "small@14:0",
-          "small@15:0",
-          "span@11:0",
-          "span@12:0",
-          "span@13:0",
-          "span@13:2",
-          "span@13:3",
-          "span@14:2",
+          "path@13:0",
+          "path@16:0",
+          "path@19:0",
+          "section@11:1",
+          "section@13:2",
+          "section@9:1",
+          "small@18:0",
+          "small@19:0",
           "span@15:0",
-          "span@7:0",
+          "span@16:0",
+          "span@17:0",
+          "span@17:2",
+          "span@17:3",
+          "span@18:2",
+          "span@19:0",
           "span@8:0",
           "svg@10:2",
-          "svg@11:2",
-          "svg@11:4+",
-          "svg@14:2",
-          "svg@8:1",
-          "svg@9:2",
-          "ul@9:4+"
+          "svg@12:2",
+          "svg@15:2",
+          "svg@15:4+",
+          "svg@18:2",
+          "svg@9:1",
+          "ul@11:4+"
         ],
         "landmarks": [
           {
-            "tag": "header",
+            "tag": "main",
             "role": "",
             "top": 0,
             "left": 0,
             "width": 390,
-            "height": 64
-          },
-          {
-            "tag": "nav",
-            "role": "",
-            "top": 784,
-            "left": 8,
-            "width": 374,
-            "height": 46
-          },
-          {
-            "tag": "main",
-            "role": "",
-            "top": 64,
-            "left": 0,
-            "width": 390,
-            "height": 1880
-          },
-          {
-            "tag": "footer",
-            "role": "",
-            "top": 1471,
-            "left": 0,
-            "width": 390,
-            "height": 379
+            "height": 1832
           }
         ],
         "colors": [
           {
-            "hex": "#f5f4fa",
-            "count": 103
+            "hex": "#f4f7fa",
+            "count": 97
           },
           {
-            "hex": "#8e8ca3",
-            "count": 59
+            "hex": "#8698a9",
+            "count": 54
           },
           {
-            "hex": "#a9a7bd",
-            "count": 20
+            "hex": "#9fb1c1",
+            "count": 25
           },
           {
-            "hex": "#05060d",
-            "count": 13
+            "hex": "#05080c",
+            "count": 12
           },
           {
-            "hex": "#d7d5e4",
+            "hex": "#d7dde4",
             "count": 10
           },
           {
-            "hex": "#191927",
+            "hex": "#182533",
             "count": 8
           },
           {
-            "hex": "#40b3ff",
-            "count": 8
+            "hex": "#ff5f5f",
+            "count": 7
           },
           {
-            "hex": "#5ce1a0",
-            "count": 5
-          },
-          {
-            "hex": "#0b0c15",
+            "hex": "#111a24",
             "count": 4
           },
           {
-            "hex": "#a78bfa",
+            "hex": "#ff00c8",
             "count": 4
           },
           {
-            "hex": "#262536",
+            "hex": "#0d141b",
+            "count": 3
+          },
+          {
+            "hex": "#1e2a36",
+            "count": 3
+          },
+          {
+            "hex": "#000000",
             "count": 2
           },
           {
-            "hex": "#04060d",
-            "count": 1
+            "hex": "#0a0e14",
+            "count": 2
           },
           {
-            "hex": "#f2c94c",
+            "hex": "#ff0000",
+            "count": 2
+          },
+          {
+            "hex": "#050608",
             "count": 1
           }
         ],
         "contrast": [],
-        "contrastChecked": 96,
+        "contrastChecked": 85,
         "headings": [
           {
             "tag": "h1",
@@ -4982,49 +4902,10 @@
             "text": "Market quotes"
           }
         ],
-        "navTargets": [
-          "/",
-          "/app/markets",
-          "/docs",
-          "/privacy",
-          "/risk",
-          "/signal",
-          "/terms"
-        ],
+        "navTargets": [],
         "overflow": {
           "documentOverflow": false,
-          "offenders": [
-            {
-              "selector": "div.atlas-root > nav.atlas-dock > a.atlas-dock-link",
-              "right": 491,
-              "width": 98
-            },
-            {
-              "selector": "nav.atlas-dock > a.atlas-dock-link > b",
-              "right": 418,
-              "width": 13
-            },
-            {
-              "selector": "nav.atlas-dock > a.atlas-dock-link > span",
-              "right": 478,
-              "width": 52
-            },
-            {
-              "selector": "div.atlas-root > nav.atlas-dock > a.atlas-dock-link",
-              "right": 573,
-              "width": 78
-            },
-            {
-              "selector": "nav.atlas-dock > a.atlas-dock-link > b",
-              "right": 520,
-              "width": 13
-            },
-            {
-              "selector": "nav.atlas-dock > a.atlas-dock-link > span",
-              "right": 560,
-              "width": 32
-            }
-          ]
+          "offenders": []
         }
       },
       "mobileNav": {
@@ -5032,14 +4913,14 @@
         "targets": [
           "",
           "/",
-          "/app/markets",
-          "/signal",
-          "/docs",
-          "/risk",
           "/app/markets/SOL",
           "/app/markets/JUP",
           "/app/markets/BONK",
           "/app/markets/USDC",
+          "/app/markets",
+          "/signal",
+          "/docs",
+          "/risk",
           "/terms",
           "/privacy"
         ],
@@ -5052,10 +4933,10 @@
       "status": 200,
       "desktop": {
         "meta": {
-          "title": "Reference / Pretiola",
+          "title": "Reference / Librova",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 4474,
+          "bodyTextLength": 4464,
           "scrollWidth": 1440,
           "clientWidth": 1440,
           "focusableCount": 30
@@ -5614,6 +5495,22 @@
             "count": 1
           },
           {
+            "word": "librova",
+            "count": 2
+          },
+          {
+            "word": "Librova",
+            "count": 3
+          },
+          {
+            "word": "LIBROVA",
+            "count": 4
+          },
+          {
+            "word": "librova.xyz",
+            "count": 3
+          },
+          {
             "word": "Limits",
             "count": 2
           },
@@ -5844,22 +5741,6 @@
           {
             "word": "premium",
             "count": 7
-          },
-          {
-            "word": "pretiola",
-            "count": 2
-          },
-          {
-            "word": "Pretiola",
-            "count": 3
-          },
-          {
-            "word": "PRETIOLA",
-            "count": 4
-          },
-          {
-            "word": "pretiola.xyz",
-            "count": 3
           },
           {
             "word": "preview",
@@ -6380,11 +6261,11 @@
             "count": 1
           },
           {
-            "key": "aria-label=On this page",
+            "key": "aria-label=Librova overview",
             "count": 1
           },
           {
-            "key": "aria-label=Pretiola overview",
+            "key": "aria-label=On this page",
             "count": 1
           },
           {
@@ -6479,253 +6360,253 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "atlas-brand",
-          "atlas-brand-copy",
-          "atlas-btn",
-          "atlas-btn--ghost",
-          "atlas-colophon",
-          "atlas-colophon-brand",
-          "atlas-colophon-copy",
-          "atlas-colophon-in",
-          "atlas-colophon-links",
-          "atlas-colophon-top",
-          "atlas-display",
-          "atlas-dock",
-          "atlas-dock-link",
-          "atlas-face",
-          "atlas-facts",
-          "atlas-facts--stack",
-          "atlas-h2",
-          "atlas-h3",
-          "atlas-kicker",
-          "atlas-lead",
-          "atlas-link",
-          "atlas-mast",
-          "atlas-mast-actions",
-          "atlas-mast-id",
-          "atlas-mast-open",
-          "atlas-note",
-          "atlas-ribbon",
-          "atlas-ribbon-cell",
-          "atlas-ribbon-cell--wide",
-          "atlas-ribbon-tail",
-          "atlas-root",
-          "atlas-scene",
-          "atlas-scene-in",
-          "atlas-skip",
-          "atlas-stage",
-          "atlas-station",
-          "atlas-tiny",
-          "atlas-wallet",
+          "doc-anchor",
+          "doc-body",
+          "doc-card",
+          "doc-card-index",
+          "doc-cards",
+          "doc-console",
+          "doc-display",
+          "doc-doc-link",
+          "doc-figure",
+          "doc-formula",
+          "doc-formula-cells",
+          "doc-formula-label",
+          "doc-index",
+          "doc-index-label",
+          "doc-index-rail",
+          "doc-intro",
+          "doc-leaf",
+          "doc-open",
+          "doc-open-in",
+          "doc-open-note",
+          "doc-prose",
+          "doc-role",
+          "doc-role-label",
+          "doc-role-label--income",
+          "doc-role-label--upside",
+          "doc-roles",
+          "doc-section",
+          "doc-section-head",
+          "doc-split",
+          "doc-split-copy",
+          "doc-step-number",
+          "doc-steps",
           "is-hold",
           "leaf",
-          "leaf-anchor",
-          "leaf-body",
-          "leaf-card",
-          "leaf-card-index",
-          "leaf-cards",
-          "leaf-display",
-          "leaf-figure",
-          "leaf-formula",
-          "leaf-formula-cells",
-          "leaf-formula-label",
-          "leaf-index",
-          "leaf-index-label",
-          "leaf-index-rail",
-          "leaf-index-scene",
-          "leaf-intro",
-          "leaf-leaf",
-          "leaf-leaf-link",
-          "leaf-open",
-          "leaf-open-in",
-          "leaf-open-note",
-          "leaf-prose",
-          "leaf-role",
-          "leaf-role-label",
-          "leaf-role-label--income",
-          "leaf-role-label--upside",
-          "leaf-roles",
-          "leaf-section",
-          "leaf-section-head",
-          "leaf-split",
-          "leaf-split-copy",
-          "leaf-step-number",
-          "leaf-steps",
           "lucide",
           "lucide-arrow-right-icon",
           "lucide-external-link-icon",
           "lucide-wallet-icon",
           "port",
-          "port-trigger"
+          "tty-btn",
+          "tty-btn--ghost",
+          "tty-colophon",
+          "tty-colophon-brand",
+          "tty-colophon-copy",
+          "tty-colophon-in",
+          "tty-colophon-links",
+          "tty-colophon-top",
+          "tty-command",
+          "tty-command-actions",
+          "tty-command-copy",
+          "tty-command-line",
+          "tty-console",
+          "tty-deck",
+          "tty-display",
+          "tty-face",
+          "tty-facts",
+          "tty-facts--stack",
+          "tty-frame",
+          "tty-h2",
+          "tty-h3",
+          "tty-hint",
+          "tty-kicker",
+          "tty-lead",
+          "tty-link",
+          "tty-nav",
+          "tty-nav-link",
+          "tty-note",
+          "tty-prompt",
+          "tty-scene",
+          "tty-scene-in",
+          "tty-skip",
+          "tty-stage",
+          "tty-station",
+          "tty-status",
+          "tty-status-brand",
+          "tty-status-cell",
+          "tty-status-cells",
+          "tty-status-tail",
+          "tty-tiny",
+          "tty-wallet",
+          "wal-trigger"
         ],
         "fingerprint": [
-          "a@11:0",
-          "a@11:1",
-          "a@11:2",
+          "a@12:2",
+          "a@13:0",
+          "a@14:1",
           "a@4:0",
-          "a@6:3",
-          "a@7:0",
           "a@7:2",
-          "article@11:3",
-          "b@10:0",
+          "a@8:0",
+          "a@8:3",
+          "article@14:3",
           "b@12:0",
-          "b@7:0",
-          "b@8:0",
-          "button@8:1",
-          "dd@10:0",
-          "dd@13:0",
-          "div@10:2",
+          "b@13:0",
+          "b@9:0",
+          "button@9:1",
+          "dd@16:0",
+          "dd@9:0",
+          "div@10:1",
           "div@10:3",
           "div@10:4+",
+          "div@11:2",
+          "div@11:4+",
+          "div@12:0",
           "div@12:2",
+          "div@12:3",
+          "div@12:4+",
+          "div@13:2",
+          "div@13:3",
+          "div@13:4+",
+          "div@15:2",
           "div@3:2",
-          "div@4:3",
+          "div@4:1",
           "div@6:2",
           "div@6:3",
-          "div@6:4+",
-          "div@7:1",
+          "div@7:2",
           "div@7:3",
+          "div@7:4+",
           "div@8:1",
-          "div@8:3",
-          "div@8:4+",
-          "div@9:0",
+          "div@8:2",
+          "div@9:1",
           "div@9:2",
-          "div@9:3",
-          "div@9:4+",
-          "dl@11:3",
-          "dl@8:4+",
-          "dt@10:0",
-          "dt@13:0",
-          "figcaption@13:3",
-          "figure@12:2",
-          "footer@6:1",
-          "h1@9:0",
-          "h2@11:0",
-          "h2@13:0",
-          "h3@12:0",
-          "h3@14:0",
-          "header@5:3",
-          "i@8:0",
-          "img@10:0",
-          "img@13:0",
+          "dl@14:3",
+          "dl@7:4+",
+          "dt@16:0",
+          "dt@9:0",
+          "figcaption@16:3",
+          "figure@15:2",
+          "h1@11:0",
+          "h2@14:0",
+          "h2@16:0",
+          "h3@15:0",
+          "h3@17:0",
+          "i@9:0",
+          "img@12:0",
+          "img@16:0",
           "img@8:0",
-          "li@10:1",
-          "li@11:1",
-          "li@11:2",
-          "main@5:2",
-          "nav@5:4+",
-          "nav@9:2",
-          "ol@10:4+",
-          "p@10:0",
+          "li@12:1",
+          "li@14:1",
+          "li@14:2",
+          "main@5:4+",
+          "nav@10:2",
+          "nav@7:4+",
+          "ol@13:4+",
           "p@11:0",
-          "p@12:0",
           "p@13:0",
           "p@14:0",
-          "p@7:1",
-          "p@8:0",
-          "p@9:0",
-          "path@10:0",
-          "path@13:0",
-          "section@7:1",
-          "small@7:0",
-          "span@12:0",
-          "span@14:0",
+          "p@15:0",
+          "p@16:0",
+          "p@17:0",
+          "p@7:0",
+          "p@8:1",
+          "path@11:0",
+          "path@16:0",
+          "section@9:1",
+          "small@9:0",
+          "span@13:0",
+          "span@15:0",
+          "span@17:0",
           "span@7:0",
-          "span@7:1",
-          "span@7:2",
           "span@8:0",
-          "strong@11:0",
-          "svg@12:2",
-          "svg@12:3",
-          "svg@9:2",
-          "ul@10:3",
-          "ul@9:4+"
+          "span@8:1",
+          "span@8:2",
+          "span@9:0",
+          "strong@14:0",
+          "svg@10:2",
+          "svg@15:2",
+          "svg@15:3",
+          "ul@11:4+",
+          "ul@13:3"
         ],
         "landmarks": [
           {
-            "tag": "header",
-            "role": "",
-            "top": 0,
-            "left": 0,
-            "width": 1440,
-            "height": 101
-          },
-          {
-            "tag": "nav",
-            "role": "",
-            "top": 825,
-            "left": 377,
-            "width": 686,
-            "height": 61
-          },
-          {
             "tag": "main",
             "role": "",
-            "top": 15,
+            "top": -53,
             "left": 0,
             "width": 1440,
-            "height": 3594
+            "height": 3460
           },
           {
             "tag": "nav",
             "role": "",
-            "top": 400,
-            "left": 80,
-            "width": 1280,
-            "height": 65
+            "top": 42,
+            "left": 1,
+            "width": 212,
+            "height": 3269
           },
           {
-            "tag": "footer",
+            "tag": "nav",
             "role": "",
-            "top": 3213,
-            "left": 0,
-            "width": 1440,
-            "height": 292
+            "top": 336,
+            "left": 213,
+            "width": 208,
+            "height": 374
           }
         ],
         "colors": [
           {
-            "hex": "#f5f4fa",
-            "count": 126
+            "hex": "#f4f7fa",
+            "count": 115
           },
           {
-            "hex": "#a9a7bd",
-            "count": 64
+            "hex": "#9fb1c1",
+            "count": 80
           },
           {
-            "hex": "#40b3ff",
-            "count": 36
+            "hex": "#8698a9",
+            "count": 35
           },
           {
-            "hex": "#8e8ca3",
-            "count": 36
+            "hex": "#ff5f5f",
+            "count": 35
           },
           {
-            "hex": "#0b0c15",
-            "count": 12
+            "hex": "#05080c",
+            "count": 8
           },
           {
-            "hex": "#05060d",
-            "count": 9
-          },
-          {
-            "hex": "#d7d5e4",
+            "hex": "#111a24",
             "count": 4
           },
           {
-            "hex": "#04060d",
-            "count": 1
+            "hex": "#d7dde4",
+            "count": 4
           },
           {
-            "hex": "#262536",
+            "hex": "#000000",
+            "count": 2
+          },
+          {
+            "hex": "#0d141b",
+            "count": 2
+          },
+          {
+            "hex": "#1e2a36",
+            "count": 2
+          },
+          {
+            "hex": "#ff0000",
+            "count": 2
+          },
+          {
+            "hex": "#050608",
             "count": 1
           },
           {
             "hex": "#5ce1a0",
-            "count": 1
-          },
-          {
-            "hex": "#f2c94c",
             "count": 1
           }
         ],
@@ -6734,7 +6615,7 @@
         "headings": [
           {
             "tag": "h1",
-            "text": "How Pretiola works."
+            "text": "How Librova works."
           },
           {
             "tag": "h2",
@@ -6802,7 +6683,7 @@
           },
           {
             "tag": "h2",
-            "text": "The proposed PRETIOLA symbol is separate."
+            "text": "The proposed LIBROVA symbol is separate."
           },
           {
             "tag": "h2",
@@ -6822,10 +6703,8 @@
           "/",
           "/app/markets",
           "/docs",
-          "/privacy",
           "/risk",
-          "/signal",
-          "/terms"
+          "/signal"
         ],
         "overflow": {
           "documentOverflow": false,
@@ -6846,13 +6725,13 @@
       },
       "mobile": {
         "meta": {
-          "title": "Reference / Pretiola",
+          "title": "Reference / Librova",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 4252,
+          "bodyTextLength": 4215,
           "scrollWidth": 390,
           "clientWidth": 390,
-          "focusableCount": 30
+          "focusableCount": 24
         },
         "words": [
           {
@@ -6881,27 +6760,27 @@
           },
           {
             "word": "01",
-            "count": 4
+            "count": 3
           },
           {
             "word": "02",
-            "count": 4
+            "count": 3
           },
           {
             "word": "03",
-            "count": 4
+            "count": 3
           },
           {
             "word": "04",
-            "count": 3
+            "count": 2
           },
           {
             "word": "05",
-            "count": 3
+            "count": 2
           },
           {
             "word": "06",
-            "count": 2
+            "count": 1
           },
           {
             "word": "07",
@@ -7061,14 +6940,10 @@
           },
           {
             "word": "Board",
-            "count": 2
-          },
-          {
-            "word": "boundary",
             "count": 1
           },
           {
-            "word": "Boundary",
+            "word": "boundary",
             "count": 1
           },
           {
@@ -7077,7 +6952,7 @@
           },
           {
             "word": "build",
-            "count": 1
+            "count": 2
           },
           {
             "word": "buyer's",
@@ -7377,7 +7252,7 @@
           },
           {
             "word": "Journal",
-            "count": 4
+            "count": 3
           },
           {
             "word": "JSON",
@@ -7400,8 +7275,24 @@
             "count": 1
           },
           {
-            "word": "Limits",
+            "word": "librova",
+            "count": 1
+          },
+          {
+            "word": "Librova",
+            "count": 3
+          },
+          {
+            "word": "LIBROVA",
+            "count": 3
+          },
+          {
+            "word": "librova.xyz",
             "count": 2
+          },
+          {
+            "word": "Limits",
+            "count": 1
           },
           {
             "word": "links",
@@ -7433,7 +7324,7 @@
           },
           {
             "word": "market",
-            "count": 9
+            "count": 10
           },
           {
             "word": "matching",
@@ -7548,10 +7439,6 @@
             "count": 1
           },
           {
-            "word": "Overview",
-            "count": 1
-          },
-          {
             "word": "own",
             "count": 1
           },
@@ -7620,24 +7507,12 @@
             "count": 7
           },
           {
-            "word": "pretiola",
-            "count": 1
-          },
-          {
-            "word": "Pretiola",
-            "count": 3
-          },
-          {
-            "word": "PRETIOLA",
-            "count": 3
-          },
-          {
-            "word": "pretiola.xyz",
-            "count": 2
-          },
-          {
             "word": "preview",
             "count": 7
+          },
+          {
+            "word": "Preview",
+            "count": 1
           },
           {
             "word": "price",
@@ -7733,7 +7608,7 @@
           },
           {
             "word": "Reference",
-            "count": 2
+            "count": 1
           },
           {
             "word": "regulatory",
@@ -7873,7 +7748,7 @@
           },
           {
             "word": "Solana",
-            "count": 4
+            "count": 5
           },
           {
             "word": "source",
@@ -7941,6 +7816,10 @@
           },
           {
             "word": "term",
+            "count": 1
+          },
+          {
+            "word": "terminal",
             "count": 1
           },
           {
@@ -8130,38 +8009,30 @@
             "count": 1
           },
           {
+            "key": "aria-label=Librova overview",
+            "count": 1
+          },
+          {
             "key": "aria-label=On this page",
             "count": 1
           },
           {
-            "key": "aria-label=Open telemetry",
-            "count": 1
-          },
-          {
-            "key": "aria-label=Pretiola overview",
-            "count": 1
-          },
-          {
-            "key": "aria-label=Primary",
+            "key": "aria-label=Open navigation",
             "count": 1
           }
         ],
         "links": [
           {
             "href": "/",
-            "count": 2
-          },
-          {
-            "href": "/#cap",
             "count": 1
           },
           {
             "href": "/app/markets",
-            "count": 2
+            "count": 1
           },
           {
             "href": "/docs",
-            "count": 2
+            "count": 1
           },
           {
             "href": "/privacy",
@@ -8169,11 +8040,11 @@
           },
           {
             "href": "/risk",
-            "count": 2
+            "count": 1
           },
           {
             "href": "/signal",
-            "count": 3
+            "count": 2
           },
           {
             "href": "/terms",
@@ -8233,248 +8104,238 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "atlas-brand",
-          "atlas-btn",
-          "atlas-colophon",
-          "atlas-colophon-brand",
-          "atlas-colophon-copy",
-          "atlas-colophon-in",
-          "atlas-colophon-links",
-          "atlas-colophon-top",
-          "atlas-display",
-          "atlas-dock",
-          "atlas-dock-link",
-          "atlas-face",
-          "atlas-facts",
-          "atlas-facts--stack",
-          "atlas-h2",
-          "atlas-h3",
-          "atlas-kicker",
-          "atlas-lead",
-          "atlas-link",
-          "atlas-mast",
-          "atlas-mast-actions",
-          "atlas-mast-id",
-          "atlas-mast-more",
-          "atlas-note",
-          "atlas-root",
-          "atlas-scene",
-          "atlas-scene-in",
-          "atlas-skip",
-          "atlas-stage",
-          "atlas-station",
-          "atlas-tiny",
-          "atlas-wallet",
+          "doc-anchor",
+          "doc-body",
+          "doc-card",
+          "doc-card-index",
+          "doc-cards",
+          "doc-console",
+          "doc-display",
+          "doc-doc-link",
+          "doc-figure",
+          "doc-formula",
+          "doc-formula-cells",
+          "doc-formula-label",
+          "doc-index",
+          "doc-index-label",
+          "doc-index-rail",
+          "doc-intro",
+          "doc-leaf",
+          "doc-open",
+          "doc-open-in",
+          "doc-open-note",
+          "doc-prose",
+          "doc-role",
+          "doc-role-label",
+          "doc-role-label--income",
+          "doc-role-label--upside",
+          "doc-roles",
+          "doc-section",
+          "doc-section-head",
+          "doc-split",
+          "doc-split-copy",
+          "doc-step-number",
+          "doc-steps",
           "is-hold",
           "leaf",
-          "leaf-anchor",
-          "leaf-body",
-          "leaf-card",
-          "leaf-card-index",
-          "leaf-cards",
-          "leaf-display",
-          "leaf-figure",
-          "leaf-formula",
-          "leaf-formula-cells",
-          "leaf-formula-label",
-          "leaf-index",
-          "leaf-index-label",
-          "leaf-index-rail",
-          "leaf-index-scene",
-          "leaf-intro",
-          "leaf-leaf",
-          "leaf-leaf-link",
-          "leaf-open",
-          "leaf-open-in",
-          "leaf-open-note",
-          "leaf-prose",
-          "leaf-role",
-          "leaf-role-label",
-          "leaf-role-label--income",
-          "leaf-role-label--upside",
-          "leaf-roles",
-          "leaf-section",
-          "leaf-section-head",
-          "leaf-split",
-          "leaf-split-copy",
-          "leaf-step-number",
-          "leaf-steps",
           "lucide",
           "lucide-activity-icon",
           "lucide-arrow-right-icon",
           "lucide-external-link-icon",
           "lucide-wallet-icon",
           "port",
-          "port-trigger"
+          "tty-btn",
+          "tty-colophon",
+          "tty-colophon-brand",
+          "tty-colophon-copy",
+          "tty-colophon-in",
+          "tty-colophon-links",
+          "tty-colophon-top",
+          "tty-command",
+          "tty-command-actions",
+          "tty-command-copy",
+          "tty-command-line",
+          "tty-command-more",
+          "tty-console",
+          "tty-deck",
+          "tty-display",
+          "tty-face",
+          "tty-facts",
+          "tty-facts--stack",
+          "tty-frame",
+          "tty-h2",
+          "tty-h3",
+          "tty-hint",
+          "tty-kicker",
+          "tty-lead",
+          "tty-link",
+          "tty-note",
+          "tty-prompt",
+          "tty-scene",
+          "tty-scene-in",
+          "tty-skip",
+          "tty-stage",
+          "tty-station",
+          "tty-status",
+          "tty-status-brand",
+          "tty-tiny",
+          "tty-wallet",
+          "wal-trigger"
         ],
         "fingerprint": [
-          "a@11:0",
-          "a@11:1",
-          "a@11:2",
+          "a@12:2",
+          "a@13:0",
+          "a@14:1",
           "a@4:0",
-          "a@6:3",
           "a@7:2",
-          "article@11:3",
-          "b@10:0",
+          "article@14:3",
           "b@12:0",
-          "b@7:0",
-          "button@7:1",
+          "b@13:0",
           "button@8:1",
-          "dd@10:0",
-          "dd@13:0",
-          "div@10:2",
+          "button@9:1",
+          "dd@16:0",
+          "dd@9:0",
+          "div@10:1",
           "div@10:3",
           "div@10:4+",
+          "div@11:2",
+          "div@11:4+",
+          "div@12:0",
           "div@12:2",
+          "div@12:3",
+          "div@12:4+",
+          "div@13:2",
+          "div@13:3",
+          "div@13:4+",
+          "div@15:2",
           "div@3:2",
-          "div@4:3",
+          "div@4:1",
           "div@6:2",
           "div@6:3",
-          "div@7:1",
+          "div@7:2",
           "div@7:3",
           "div@8:1",
-          "div@8:3",
-          "div@8:4+",
-          "div@9:0",
+          "div@8:2",
+          "div@9:1",
           "div@9:2",
-          "div@9:3",
-          "div@9:4+",
-          "dl@11:3",
-          "dl@8:4+",
-          "dt@10:0",
-          "dt@13:0",
-          "figcaption@13:3",
-          "figure@12:2",
-          "footer@6:1",
-          "h1@9:0",
-          "h2@11:0",
-          "h2@13:0",
-          "h3@12:0",
-          "h3@14:0",
-          "header@5:3",
-          "img@10:0",
-          "img@13:0",
+          "dl@14:3",
+          "dl@7:4+",
+          "dt@16:0",
+          "dt@9:0",
+          "figcaption@16:3",
+          "figure@15:2",
+          "h1@11:0",
+          "h2@14:0",
+          "h2@16:0",
+          "h3@15:0",
+          "h3@17:0",
+          "img@12:0",
+          "img@16:0",
           "img@8:0",
-          "li@10:1",
-          "li@11:1",
-          "li@11:2",
-          "main@5:2",
-          "nav@5:4+",
-          "nav@9:2",
-          "ol@10:4+",
-          "p@10:0",
+          "li@12:1",
+          "li@14:1",
+          "li@14:2",
+          "main@5:4+",
+          "nav@10:2",
+          "ol@13:4+",
           "p@11:0",
-          "p@12:0",
           "p@13:0",
           "p@14:0",
-          "p@8:0",
-          "p@9:0",
+          "p@15:0",
+          "p@16:0",
+          "p@17:0",
+          "p@7:0",
+          "p@8:1",
           "path@10:0",
-          "path@13:0",
-          "path@9:0",
-          "section@7:1",
-          "span@12:0",
-          "span@14:0",
-          "span@7:0",
+          "path@11:0",
+          "path@16:0",
+          "section@9:1",
+          "span@13:0",
+          "span@15:0",
+          "span@17:0",
           "span@8:0",
-          "strong@11:0",
-          "svg@12:2",
-          "svg@12:3",
-          "svg@8:1",
-          "svg@9:2",
-          "ul@10:3",
-          "ul@9:4+"
+          "strong@14:0",
+          "svg@10:2",
+          "svg@15:2",
+          "svg@15:3",
+          "svg@9:1",
+          "ul@11:4+",
+          "ul@13:3"
         ],
         "landmarks": [
           {
-            "tag": "header",
+            "tag": "main",
             "role": "",
             "top": 0,
             "left": 0,
             "width": 390,
-            "height": 64
+            "height": 5351
           },
           {
             "tag": "nav",
             "role": "",
-            "top": 784,
-            "left": 8,
-            "width": 374,
-            "height": 46
-          },
-          {
-            "tag": "main",
-            "role": "",
-            "top": 64,
+            "top": 329,
             "left": 0,
             "width": 390,
-            "height": 5376
-          },
-          {
-            "tag": "nav",
-            "role": "",
-            "top": 340,
-            "left": 18,
-            "width": 354,
-            "height": 65
-          },
-          {
-            "tag": "footer",
-            "role": "",
-            "top": 4968,
-            "left": 0,
-            "width": 390,
-            "height": 379
+            "height": 111
           }
         ],
         "colors": [
           {
-            "hex": "#f5f4fa",
-            "count": 125
+            "hex": "#f4f7fa",
+            "count": 111
           },
           {
-            "hex": "#a9a7bd",
-            "count": 58
+            "hex": "#9fb1c1",
+            "count": 64
           },
           {
-            "hex": "#40b3ff",
-            "count": 36
+            "hex": "#ff5f5f",
+            "count": 34
           },
           {
-            "hex": "#8e8ca3",
-            "count": 28
+            "hex": "#8698a9",
+            "count": 23
           },
           {
-            "hex": "#0b0c15",
-            "count": 13
+            "hex": "#05080c",
+            "count": 8
           },
           {
-            "hex": "#05060d",
-            "count": 9
+            "hex": "#111a24",
+            "count": 4
           },
           {
-            "hex": "#d7d5e4",
+            "hex": "#d7dde4",
             "count": 3
           },
           {
-            "hex": "#04060d",
+            "hex": "#000000",
+            "count": 2
+          },
+          {
+            "hex": "#0d141b",
+            "count": 2
+          },
+          {
+            "hex": "#1e2a36",
+            "count": 2
+          },
+          {
+            "hex": "#050608",
             "count": 1
           },
           {
-            "hex": "#262536",
-            "count": 1
-          },
-          {
-            "hex": "#f2c94c",
+            "hex": "#ff0000",
             "count": 1
           }
         ],
         "contrast": [],
-        "contrastChecked": 131,
+        "contrastChecked": 120,
         "headings": [
           {
             "tag": "h1",
-            "text": "How Pretiola works."
+            "text": "How Librova works."
           },
           {
             "tag": "h2",
@@ -8542,7 +8403,7 @@
           },
           {
             "tag": "h2",
-            "text": "The proposed PRETIOLA symbol is separate."
+            "text": "The proposed LIBROVA symbol is separate."
           },
           {
             "tag": "h2",
@@ -8558,59 +8419,11 @@
           }
         ],
         "navTargets": [
-          "",
-          "/",
-          "/app/markets",
-          "/docs",
-          "/privacy",
-          "/risk",
-          "/signal",
-          "/terms"
+          ""
         ],
         "overflow": {
           "documentOverflow": false,
-          "offenders": [
-            {
-              "selector": "div.atlas-root > nav.atlas-dock > a.atlas-dock-link",
-              "right": 491,
-              "width": 98
-            },
-            {
-              "selector": "nav.atlas-dock > a.atlas-dock-link > b",
-              "right": 418,
-              "width": 13
-            },
-            {
-              "selector": "nav.atlas-dock > a.atlas-dock-link > span",
-              "right": 478,
-              "width": 52
-            },
-            {
-              "selector": "div.atlas-root > nav.atlas-dock > a.atlas-dock-link",
-              "right": 573,
-              "width": 78
-            },
-            {
-              "selector": "nav.atlas-dock > a.atlas-dock-link > b",
-              "right": 520,
-              "width": 13
-            },
-            {
-              "selector": "nav.atlas-dock > a.atlas-dock-link > span",
-              "right": 560,
-              "width": 32
-            },
-            {
-              "selector": "nav.leaf-index > div.leaf-index-rail > a",
-              "right": 485,
-              "width": 95
-            },
-            {
-              "selector": "div.leaf-index-rail > a > b",
-              "right": 419,
-              "width": 14
-            }
-          ]
+          "offenders": []
         }
       },
       "mobileNav": {
@@ -8618,12 +8431,12 @@
         "targets": [
           "",
           "/",
-          "/app/markets",
           "/signal",
-          "/docs",
-          "/risk",
           "/terms",
-          "/privacy"
+          "/privacy",
+          "/app/markets",
+          "/docs",
+          "/risk"
         ],
         "reachable": true
       }
@@ -8634,10 +8447,10 @@
       "status": 200,
       "desktop": {
         "meta": {
-          "title": "Privacy / Pretiola",
+          "title": "Privacy / Librova",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 1182,
+          "bodyTextLength": 1175,
           "scrollWidth": 1440,
           "clientWidth": 1440,
           "focusableCount": 18
@@ -8852,6 +8665,22 @@
             "count": 1
           },
           {
+            "word": "librova",
+            "count": 2
+          },
+          {
+            "word": "Librova",
+            "count": 2
+          },
+          {
+            "word": "LIBROVA",
+            "count": 2
+          },
+          {
+            "word": "librova.xyz",
+            "count": 3
+          },
+          {
             "word": "Limits",
             "count": 2
           },
@@ -8954,22 +8783,6 @@
           {
             "word": "policy",
             "count": 1
-          },
-          {
-            "word": "pretiola",
-            "count": 2
-          },
-          {
-            "word": "Pretiola",
-            "count": 2
-          },
-          {
-            "word": "PRETIOLA",
-            "count": 2
-          },
-          {
-            "word": "pretiola.xyz",
-            "count": 3
           },
           {
             "word": "preview",
@@ -9182,7 +8995,7 @@
             "count": 1
           },
           {
-            "key": "aria-label=Pretiola overview",
+            "key": "aria-label=Librova overview",
             "count": 1
           },
           {
@@ -9233,175 +9046,171 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "atlas-brand",
-          "atlas-brand-copy",
-          "atlas-btn",
-          "atlas-btn--ghost",
-          "atlas-btn--primary",
-          "atlas-colophon",
-          "atlas-colophon-brand",
-          "atlas-colophon-copy",
-          "atlas-colophon-in",
-          "atlas-colophon-links",
-          "atlas-colophon-top",
-          "atlas-display",
-          "atlas-dock",
-          "atlas-dock-link",
-          "atlas-kicker",
-          "atlas-lead",
-          "atlas-mast",
-          "atlas-mast-actions",
-          "atlas-mast-id",
-          "atlas-mast-open",
-          "atlas-ribbon",
-          "atlas-ribbon-cell",
-          "atlas-ribbon-cell--wide",
-          "atlas-ribbon-tail",
-          "atlas-root",
-          "atlas-scene",
-          "atlas-scene-in",
-          "atlas-skip",
-          "atlas-stage",
-          "atlas-station",
-          "atlas-tiny",
-          "atlas-wallet",
+          "doc-display",
+          "doc-legal",
+          "doc-legal-actions",
+          "doc-legal-copy",
+          "doc-legal-in",
+          "doc-open",
+          "doc-open-in",
           "is-hold",
           "leaf",
-          "leaf-display",
-          "leaf-legal",
-          "leaf-legal-actions",
-          "leaf-legal-copy",
-          "leaf-legal-in",
-          "leaf-open",
-          "leaf-open-in",
           "lucide",
           "lucide-arrow-right-icon",
           "lucide-wallet-icon",
           "port",
-          "port-trigger"
+          "tty-btn",
+          "tty-btn--ghost",
+          "tty-btn--primary",
+          "tty-colophon",
+          "tty-colophon-brand",
+          "tty-colophon-copy",
+          "tty-colophon-in",
+          "tty-colophon-links",
+          "tty-colophon-top",
+          "tty-command",
+          "tty-command-actions",
+          "tty-command-copy",
+          "tty-command-line",
+          "tty-console",
+          "tty-deck",
+          "tty-display",
+          "tty-frame",
+          "tty-hint",
+          "tty-kicker",
+          "tty-lead",
+          "tty-nav",
+          "tty-nav-link",
+          "tty-prompt",
+          "tty-scene",
+          "tty-scene-in",
+          "tty-skip",
+          "tty-stage",
+          "tty-station",
+          "tty-status",
+          "tty-status-brand",
+          "tty-status-cell",
+          "tty-status-cells",
+          "tty-status-tail",
+          "tty-tiny",
+          "tty-wallet",
+          "wal-trigger"
         ],
         "fingerprint": [
-          "a@10:1",
-          "a@11:0",
+          "a@12:1",
+          "a@13:0",
           "a@4:0",
-          "a@6:3",
-          "a@7:0",
           "a@7:2",
-          "b@10:0",
-          "b@7:0",
-          "b@8:0",
-          "button@8:1",
-          "dd@10:0",
+          "a@8:0",
+          "a@8:3",
+          "b@12:0",
+          "b@9:0",
+          "button@9:1",
+          "dd@9:0",
+          "div@10:2",
+          "div@10:3",
+          "div@11:2",
           "div@3:2",
-          "div@4:3",
+          "div@4:1",
           "div@6:2",
           "div@6:3",
-          "div@6:4+",
-          "div@7:1",
+          "div@7:2",
           "div@7:3",
+          "div@7:4+",
+          "div@8:1",
           "div@8:2",
-          "div@8:3",
-          "div@9:2",
-          "dl@8:4+",
-          "dt@10:0",
-          "footer@6:1",
-          "h1@9:0",
-          "header@5:3",
-          "i@8:0",
-          "img@10:0",
+          "div@9:1",
+          "dl@7:4+",
+          "dt@9:0",
+          "h1@11:0",
+          "i@9:0",
+          "img@12:0",
           "img@8:0",
-          "li@10:1",
-          "main@5:2",
-          "nav@5:4+",
-          "p@10:0",
-          "p@7:1",
-          "p@8:0",
-          "p@9:0",
-          "path@10:0",
-          "path@12:0",
-          "section@7:1",
-          "small@7:0",
+          "li@12:1",
+          "main@5:4+",
+          "nav@7:4+",
+          "p@11:0",
+          "p@12:0",
+          "p@7:0",
+          "p@8:1",
+          "path@11:0",
+          "path@14:0",
+          "section@9:1",
+          "small@9:0",
           "span@7:0",
-          "span@7:1",
-          "span@7:2",
           "span@8:0",
-          "svg@11:2",
-          "svg@9:2",
-          "ul@9:4+"
+          "span@8:1",
+          "span@8:2",
+          "span@9:0",
+          "svg@10:2",
+          "svg@13:2",
+          "ul@11:4+"
         ],
         "landmarks": [
           {
-            "tag": "header",
+            "tag": "main",
             "role": "",
             "top": 0,
             "left": 0,
             "width": 1440,
-            "height": 101
+            "height": 900
           },
           {
             "tag": "nav",
             "role": "",
-            "top": 825,
-            "left": 377,
-            "width": 686,
-            "height": 61
-          },
-          {
-            "tag": "main",
-            "role": "",
             "top": 95,
-            "left": 0,
-            "width": 1440,
-            "height": 1065
-          },
-          {
-            "tag": "footer",
-            "role": "",
-            "top": 764,
-            "left": 0,
-            "width": 1440,
-            "height": 292
+            "left": 1,
+            "width": 212,
+            "height": 709
           }
         ],
         "colors": [
           {
-            "hex": "#f5f4fa",
-            "count": 47
+            "hex": "#9fb1c1",
+            "count": 39
           },
           {
-            "hex": "#a9a7bd",
-            "count": 23
+            "hex": "#f4f7fa",
+            "count": 37
           },
           {
-            "hex": "#8e8ca3",
-            "count": 19
+            "hex": "#8698a9",
+            "count": 18
           },
           {
-            "hex": "#d7d5e4",
+            "hex": "#d7dde4",
             "count": 9
           },
           {
-            "hex": "#40b3ff",
-            "count": 5
-          },
-          {
-            "hex": "#04060d",
+            "hex": "#050608",
             "count": 4
           },
           {
-            "hex": "#05060d",
-            "count": 1
+            "hex": "#111a24",
+            "count": 4
           },
           {
-            "hex": "#0b0c15",
+            "hex": "#ff0000",
+            "count": 3
+          },
+          {
+            "hex": "#ff5f5f",
+            "count": 3
+          },
+          {
+            "hex": "#000000",
+            "count": 2
+          },
+          {
+            "hex": "#0d141b",
+            "count": 2
+          },
+          {
+            "hex": "#1e2a36",
             "count": 1
           },
           {
             "hex": "#5ce1a0",
-            "count": 1
-          },
-          {
-            "hex": "#f2c94c",
             "count": 1
           }
         ],
@@ -9417,10 +9226,8 @@
           "/",
           "/app/markets",
           "/docs",
-          "/privacy",
           "/risk",
-          "/signal",
-          "/terms"
+          "/signal"
         ],
         "overflow": {
           "documentOverflow": false,
@@ -9441,39 +9248,15 @@
       },
       "mobile": {
         "meta": {
-          "title": "Privacy / Pretiola",
+          "title": "Privacy / Librova",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 960,
+          "bodyTextLength": 926,
           "scrollWidth": 390,
           "clientWidth": 390,
-          "focusableCount": 18
+          "focusableCount": 12
         },
         "words": [
-          {
-            "word": "01",
-            "count": 1
-          },
-          {
-            "word": "02",
-            "count": 1
-          },
-          {
-            "word": "03",
-            "count": 1
-          },
-          {
-            "word": "04",
-            "count": 1
-          },
-          {
-            "word": "05",
-            "count": 1
-          },
-          {
-            "word": "06",
-            "count": 1
-          },
           {
             "word": "a",
             "count": 3
@@ -9504,15 +9287,15 @@
           },
           {
             "word": "Board",
-            "count": 2
-          },
-          {
-            "word": "Boundary",
             "count": 1
           },
           {
             "word": "browser",
             "count": 2
+          },
+          {
+            "word": "build",
+            "count": 1
           },
           {
             "word": "by",
@@ -9628,7 +9411,7 @@
           },
           {
             "word": "Journal",
-            "count": 2
+            "count": 1
           },
           {
             "word": "keeps",
@@ -9643,8 +9426,24 @@
             "count": 1
           },
           {
-            "word": "Limits",
+            "word": "librova",
+            "count": 1
+          },
+          {
+            "word": "Librova",
             "count": 2
+          },
+          {
+            "word": "LIBROVA",
+            "count": 1
+          },
+          {
+            "word": "librova.xyz",
+            "count": 2
+          },
+          {
+            "word": "Limits",
+            "count": 1
           },
           {
             "word": "links",
@@ -9660,6 +9459,10 @@
           },
           {
             "word": "Local",
+            "count": 1
+          },
+          {
+            "word": "market",
             "count": 1
           },
           {
@@ -9691,10 +9494,6 @@
             "count": 1
           },
           {
-            "word": "Overview",
-            "count": 1
-          },
-          {
             "word": "own",
             "count": 1
           },
@@ -9719,24 +9518,12 @@
             "count": 1
           },
           {
-            "word": "pretiola",
-            "count": 1
-          },
-          {
-            "word": "Pretiola",
-            "count": 2
-          },
-          {
-            "word": "PRETIOLA",
-            "count": 1
-          },
-          {
-            "word": "pretiola.xyz",
-            "count": 2
-          },
-          {
             "word": "preview",
             "count": 2
+          },
+          {
+            "word": "Preview",
+            "count": 1
           },
           {
             "word": "Privacy",
@@ -9780,7 +9567,7 @@
           },
           {
             "word": "Reference",
-            "count": 2
+            "count": 1
           },
           {
             "word": "samples",
@@ -9812,7 +9599,7 @@
           },
           {
             "word": "Solana",
-            "count": 1
+            "count": 2
           },
           {
             "word": "state",
@@ -9836,6 +9623,10 @@
           },
           {
             "word": "targets",
+            "count": 1
+          },
+          {
+            "word": "terminal",
             "count": 1
           },
           {
@@ -9917,34 +9708,26 @@
         ],
         "attrs": [
           {
-            "key": "aria-label=Open telemetry",
+            "key": "aria-label=Librova overview",
             "count": 1
           },
           {
-            "key": "aria-label=Pretiola overview",
-            "count": 1
-          },
-          {
-            "key": "aria-label=Primary",
+            "key": "aria-label=Open navigation",
             "count": 1
           }
         ],
         "links": [
           {
             "href": "/",
-            "count": 3
-          },
-          {
-            "href": "/#cap",
-            "count": 1
-          },
-          {
-            "href": "/app/markets",
             "count": 2
           },
           {
+            "href": "/app/markets",
+            "count": 1
+          },
+          {
             "href": "/docs",
-            "count": 3
+            "count": 2
           },
           {
             "href": "/privacy",
@@ -9952,11 +9735,11 @@
           },
           {
             "href": "/risk",
-            "count": 2
+            "count": 1
           },
           {
             "href": "/signal",
-            "count": 2
+            "count": 1
           },
           {
             "href": "/terms",
@@ -9972,216 +9755,163 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "atlas-brand",
-          "atlas-btn",
-          "atlas-btn--ghost",
-          "atlas-btn--primary",
-          "atlas-colophon",
-          "atlas-colophon-brand",
-          "atlas-colophon-copy",
-          "atlas-colophon-in",
-          "atlas-colophon-links",
-          "atlas-colophon-top",
-          "atlas-display",
-          "atlas-dock",
-          "atlas-dock-link",
-          "atlas-kicker",
-          "atlas-lead",
-          "atlas-mast",
-          "atlas-mast-actions",
-          "atlas-mast-id",
-          "atlas-mast-more",
-          "atlas-root",
-          "atlas-scene",
-          "atlas-scene-in",
-          "atlas-skip",
-          "atlas-stage",
-          "atlas-station",
-          "atlas-tiny",
-          "atlas-wallet",
+          "doc-display",
+          "doc-legal",
+          "doc-legal-actions",
+          "doc-legal-copy",
+          "doc-legal-in",
+          "doc-open",
+          "doc-open-in",
           "is-hold",
           "leaf",
-          "leaf-display",
-          "leaf-legal",
-          "leaf-legal-actions",
-          "leaf-legal-copy",
-          "leaf-legal-in",
-          "leaf-open",
-          "leaf-open-in",
           "lucide",
           "lucide-activity-icon",
           "lucide-arrow-right-icon",
           "lucide-wallet-icon",
           "port",
-          "port-trigger"
+          "tty-btn",
+          "tty-btn--ghost",
+          "tty-btn--primary",
+          "tty-colophon",
+          "tty-colophon-brand",
+          "tty-colophon-copy",
+          "tty-colophon-in",
+          "tty-colophon-links",
+          "tty-colophon-top",
+          "tty-command",
+          "tty-command-actions",
+          "tty-command-copy",
+          "tty-command-line",
+          "tty-command-more",
+          "tty-console",
+          "tty-deck",
+          "tty-display",
+          "tty-frame",
+          "tty-hint",
+          "tty-kicker",
+          "tty-lead",
+          "tty-prompt",
+          "tty-scene",
+          "tty-scene-in",
+          "tty-skip",
+          "tty-stage",
+          "tty-station",
+          "tty-status",
+          "tty-status-brand",
+          "tty-tiny",
+          "tty-wallet",
+          "wal-trigger"
         ],
         "fingerprint": [
-          "a@10:1",
-          "a@11:0",
+          "a@12:1",
+          "a@13:0",
           "a@4:0",
-          "a@6:3",
           "a@7:2",
-          "b@10:0",
-          "b@7:0",
-          "button@7:1",
+          "b@12:0",
           "button@8:1",
-          "dd@10:0",
+          "button@9:1",
+          "dd@9:0",
+          "div@10:2",
+          "div@10:3",
+          "div@11:2",
           "div@3:2",
-          "div@4:3",
+          "div@4:1",
           "div@6:2",
           "div@6:3",
-          "div@7:1",
+          "div@7:2",
           "div@7:3",
+          "div@8:1",
           "div@8:2",
-          "div@8:3",
-          "div@9:2",
-          "dl@8:4+",
-          "dt@10:0",
-          "footer@6:1",
-          "h1@9:0",
-          "header@5:3",
-          "img@10:0",
+          "div@9:1",
+          "dl@7:4+",
+          "dt@9:0",
+          "h1@11:0",
+          "img@12:0",
           "img@8:0",
-          "li@10:1",
-          "main@5:2",
-          "nav@5:4+",
-          "p@10:0",
-          "p@8:0",
-          "p@9:0",
+          "li@12:1",
+          "main@5:4+",
+          "p@11:0",
+          "p@12:0",
+          "p@7:0",
+          "p@8:1",
           "path@10:0",
-          "path@12:0",
-          "path@9:0",
-          "section@7:1",
-          "span@7:0",
+          "path@11:0",
+          "path@14:0",
+          "section@9:1",
           "span@8:0",
-          "svg@11:2",
-          "svg@8:1",
-          "svg@9:2",
-          "ul@9:4+"
+          "svg@10:2",
+          "svg@13:2",
+          "svg@9:1",
+          "ul@11:4+"
         ],
         "landmarks": [
           {
-            "tag": "header",
+            "tag": "main",
             "role": "",
             "top": 0,
             "left": 0,
             "width": 390,
-            "height": 64
-          },
-          {
-            "tag": "nav",
-            "role": "",
-            "top": 784,
-            "left": 8,
-            "width": 374,
-            "height": 46
-          },
-          {
-            "tag": "main",
-            "role": "",
-            "top": 64,
-            "left": 0,
-            "width": 390,
-            "height": 1128
-          },
-          {
-            "tag": "footer",
-            "role": "",
-            "top": 719,
-            "left": 0,
-            "width": 390,
-            "height": 379
+            "height": 1055
           }
         ],
         "colors": [
           {
-            "hex": "#f5f4fa",
-            "count": 46
+            "hex": "#f4f7fa",
+            "count": 33
           },
           {
-            "hex": "#a9a7bd",
-            "count": 17
+            "hex": "#9fb1c1",
+            "count": 23
           },
           {
-            "hex": "#8e8ca3",
-            "count": 11
-          },
-          {
-            "hex": "#d7d5e4",
+            "hex": "#d7dde4",
             "count": 8
           },
           {
-            "hex": "#40b3ff",
-            "count": 5
+            "hex": "#8698a9",
+            "count": 6
           },
           {
-            "hex": "#04060d",
+            "hex": "#050608",
             "count": 4
           },
           {
-            "hex": "#0b0c15",
+            "hex": "#111a24",
+            "count": 4
+          },
+          {
+            "hex": "#000000",
             "count": 2
           },
           {
-            "hex": "#05060d",
-            "count": 1
+            "hex": "#0d141b",
+            "count": 2
           },
           {
-            "hex": "#f2c94c",
+            "hex": "#ff0000",
+            "count": 2
+          },
+          {
+            "hex": "#ff5f5f",
+            "count": 2
+          },
+          {
+            "hex": "#1e2a36",
             "count": 1
           }
         ],
         "contrast": [],
-        "contrastChecked": 39,
+        "contrastChecked": 28,
         "headings": [
           {
             "tag": "h1",
             "text": "Privacy notice."
           }
         ],
-        "navTargets": [
-          "/",
-          "/app/markets",
-          "/docs",
-          "/privacy",
-          "/risk",
-          "/signal",
-          "/terms"
-        ],
+        "navTargets": [],
         "overflow": {
           "documentOverflow": false,
-          "offenders": [
-            {
-              "selector": "div.atlas-root > nav.atlas-dock > a.atlas-dock-link",
-              "right": 491,
-              "width": 98
-            },
-            {
-              "selector": "nav.atlas-dock > a.atlas-dock-link > b",
-              "right": 418,
-              "width": 13
-            },
-            {
-              "selector": "nav.atlas-dock > a.atlas-dock-link > span",
-              "right": 478,
-              "width": 52
-            },
-            {
-              "selector": "div.atlas-root > nav.atlas-dock > a.atlas-dock-link",
-              "right": 573,
-              "width": 78
-            },
-            {
-              "selector": "nav.atlas-dock > a.atlas-dock-link > b",
-              "right": 520,
-              "width": 13
-            },
-            {
-              "selector": "nav.atlas-dock > a.atlas-dock-link > span",
-              "right": 560,
-              "width": 32
-            }
-          ]
+          "offenders": []
         }
       },
       "mobileNav": {
@@ -10189,9 +9919,9 @@
         "targets": [
           "",
           "/",
+          "/docs",
           "/app/markets",
           "/signal",
-          "/docs",
           "/risk",
           "/terms",
           "/privacy"
@@ -10205,10 +9935,10 @@
       "status": 200,
       "desktop": {
         "meta": {
-          "title": "Journal / Pretiola",
+          "title": "Journal / Librova",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 1354,
+          "bodyTextLength": 1344,
           "scrollWidth": 1440,
           "clientWidth": 1440,
           "focusableCount": 22
@@ -10427,6 +10157,22 @@
             "count": 1
           },
           {
+            "word": "librova",
+            "count": 2
+          },
+          {
+            "word": "Librova",
+            "count": 2
+          },
+          {
+            "word": "LIBROVA",
+            "count": 5
+          },
+          {
+            "word": "librova.xyz",
+            "count": 3
+          },
+          {
             "word": "Limits",
             "count": 2
           },
@@ -10529,22 +10275,6 @@
           {
             "word": "percentage",
             "count": 1
-          },
-          {
-            "word": "pretiola",
-            "count": 2
-          },
-          {
-            "word": "Pretiola",
-            "count": 2
-          },
-          {
-            "word": "PRETIOLA",
-            "count": 5
-          },
-          {
-            "word": "pretiola.xyz",
-            "count": 3
           },
           {
             "word": "preview",
@@ -10789,7 +10519,7 @@
             "count": 1
           },
           {
-            "key": "aria-label=Pretiola overview",
+            "key": "aria-label=Librova overview",
             "count": 1
           },
           {
@@ -10857,226 +10587,230 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "atlas-brand",
-          "atlas-brand-copy",
-          "atlas-btn",
-          "atlas-btn--ghost",
-          "atlas-btn--primary",
-          "atlas-btn--wide",
-          "atlas-colophon",
-          "atlas-colophon-brand",
-          "atlas-colophon-copy",
-          "atlas-colophon-in",
-          "atlas-colophon-links",
-          "atlas-colophon-top",
-          "atlas-display",
-          "atlas-dock",
-          "atlas-dock-link",
-          "atlas-face",
-          "atlas-face-head",
-          "atlas-field",
-          "atlas-h2",
-          "atlas-input",
-          "atlas-kicker",
-          "atlas-lead",
-          "atlas-mast",
-          "atlas-mast-actions",
-          "atlas-mast-id",
-          "atlas-mast-open",
-          "atlas-pairs",
-          "atlas-pill",
-          "atlas-pill--beam",
-          "atlas-range",
-          "atlas-ribbon",
-          "atlas-ribbon-cell",
-          "atlas-ribbon-cell--wide",
-          "atlas-ribbon-tail",
-          "atlas-root",
-          "atlas-scale",
-          "atlas-scene",
-          "atlas-scene-in",
-          "atlas-skip",
-          "atlas-stage",
-          "atlas-station",
-          "atlas-tiny",
-          "atlas-wallet",
           "is-hold",
           "lab",
-          "lab-aside",
-          "lab-aside-copy",
-          "lab-aside-foot",
-          "lab-aside-icon",
-          "lab-aside-rows",
-          "lab-aside-title",
-          "lab-count",
-          "lab-display",
-          "lab-eyebrow",
-          "lab-face-title",
-          "lab-fields",
-          "lab-form",
-          "lab-form-grid",
-          "lab-form-scene",
-          "lab-open",
-          "lab-open-in",
-          "lab-pair",
-          "lab-range",
-          "lab-step",
+          "log-aside",
+          "log-aside-copy",
+          "log-aside-foot",
+          "log-aside-icon",
+          "log-aside-rows",
+          "log-aside-title",
+          "log-count",
+          "log-display",
+          "log-eyebrow",
+          "log-face-title",
+          "log-fields",
+          "log-form",
+          "log-form-grid",
+          "log-form-scene",
+          "log-open",
+          "log-open-in",
+          "log-pair",
+          "log-range",
+          "log-step",
           "lucide",
           "lucide-arrow-up-right-icon",
           "lucide-flask-conical-icon",
           "lucide-shield-check-icon",
           "lucide-wallet-icon",
           "port",
-          "port-trigger"
+          "tty-btn",
+          "tty-btn--ghost",
+          "tty-btn--primary",
+          "tty-btn--wide",
+          "tty-colophon",
+          "tty-colophon-brand",
+          "tty-colophon-copy",
+          "tty-colophon-in",
+          "tty-colophon-links",
+          "tty-colophon-top",
+          "tty-command",
+          "tty-command-actions",
+          "tty-command-copy",
+          "tty-command-line",
+          "tty-console",
+          "tty-deck",
+          "tty-display",
+          "tty-face",
+          "tty-face-head",
+          "tty-field",
+          "tty-frame",
+          "tty-h2",
+          "tty-hint",
+          "tty-input",
+          "tty-kicker",
+          "tty-lead",
+          "tty-nav",
+          "tty-nav-link",
+          "tty-pairs",
+          "tty-pill",
+          "tty-pill--accent",
+          "tty-prompt",
+          "tty-range",
+          "tty-scale",
+          "tty-scene",
+          "tty-scene-in",
+          "tty-skip",
+          "tty-stage",
+          "tty-station",
+          "tty-status",
+          "tty-status-brand",
+          "tty-status-cell",
+          "tty-status-cells",
+          "tty-status-tail",
+          "tty-tiny",
+          "tty-wallet",
+          "wal-trigger"
         ],
         "fingerprint": [
-          "a@11:0",
+          "a@13:0",
           "a@4:0",
-          "a@6:3",
-          "a@7:0",
           "a@7:2",
-          "b@10:0",
-          "b@7:0",
-          "b@8:0",
-          "button@10:1",
-          "button@8:1",
-          "dd@10:0",
-          "dd@12:0",
-          "div@10:1",
+          "a@8:0",
+          "a@8:3",
+          "b@12:0",
+          "b@9:0",
+          "button@12:1",
+          "button@9:1",
+          "dd@14:0",
+          "dd@9:0",
           "div@10:2",
-          "div@10:4+",
+          "div@10:3",
           "div@11:2",
-          "div@11:3",
+          "div@11:4+",
+          "div@12:1",
           "div@12:2",
-          "div@12:3",
+          "div@12:4+",
+          "div@13:2",
+          "div@13:3",
+          "div@14:2",
+          "div@14:3",
           "div@3:2",
-          "div@4:3",
+          "div@4:1",
           "div@6:2",
           "div@6:3",
-          "div@6:4+",
-          "div@7:1",
+          "div@7:2",
           "div@7:3",
+          "div@7:4+",
+          "div@8:1",
           "div@8:2",
-          "div@8:3",
-          "div@9:2",
-          "div@9:4+",
-          "dl@10:4+",
-          "dl@8:4+",
-          "dt@10:0",
-          "dt@12:0",
-          "footer@6:1",
-          "form@9:3",
-          "h1@9:1",
-          "h2@10:1",
-          "h2@12:0",
-          "header@5:3",
-          "i@8:0",
-          "img@10:0",
+          "div@9:1",
+          "dl@12:4+",
+          "dl@7:4+",
+          "dt@14:0",
+          "dt@9:0",
+          "form@11:3",
+          "h1@11:1",
+          "h2@12:1",
+          "h2@14:0",
+          "i@9:0",
+          "img@12:0",
           "img@8:0",
-          "input@12:0",
-          "input@13:0",
-          "label@12:1",
-          "label@13:1",
-          "li@10:1",
-          "main@5:2",
-          "nav@5:4+",
-          "output@13:0",
-          "p@10:0",
+          "input@14:0",
+          "input@15:0",
+          "label@14:1",
+          "label@15:1",
+          "li@12:1",
+          "main@5:4+",
+          "nav@7:4+",
+          "output@15:0",
+          "p@11:0",
+          "p@11:1",
           "p@12:0",
-          "p@7:1",
-          "p@8:0",
-          "p@9:0",
-          "p@9:1",
-          "path@10:0",
+          "p@14:0",
+          "p@7:0",
+          "p@8:1",
           "path@11:0",
-          "path@12:0",
-          "section@6:2",
-          "section@7:1",
-          "small@7:0",
-          "span@10:0",
-          "span@11:0",
+          "path@13:0",
+          "path@14:0",
+          "section@8:2",
+          "section@9:1",
+          "small@9:0",
           "span@12:0",
           "span@13:0",
           "span@14:0",
+          "span@15:0",
+          "span@16:0",
           "span@7:0",
-          "span@7:1",
-          "span@7:2",
           "span@8:0",
-          "svg@10:3",
-          "svg@11:2",
-          "svg@9:2",
-          "textarea@12:0",
-          "ul@9:4+"
+          "span@8:1",
+          "span@8:2",
+          "span@9:0",
+          "svg@10:2",
+          "svg@12:3",
+          "svg@13:2",
+          "textarea@14:0",
+          "ul@11:4+"
         ],
         "landmarks": [
           {
-            "tag": "header",
+            "tag": "main",
             "role": "",
-            "top": 0,
+            "top": -18,
             "left": 0,
             "width": 1440,
-            "height": 101
+            "height": 1215
           },
           {
             "tag": "nav",
             "role": "",
-            "top": 825,
-            "left": 377,
-            "width": 686,
-            "height": 61
-          },
-          {
-            "tag": "main",
-            "role": "",
-            "top": -3,
-            "left": 0,
-            "width": 1440,
-            "height": 1401
-          },
-          {
-            "tag": "footer",
-            "role": "",
-            "top": 1002,
-            "left": 0,
-            "width": 1440,
-            "height": 292
+            "top": 77,
+            "left": 1,
+            "width": 212,
+            "height": 1024
           }
         ],
         "colors": [
           {
-            "hex": "#f5f4fa",
-            "count": 72
+            "hex": "#f4f7fa",
+            "count": 62
           },
           {
-            "hex": "#8e8ca3",
-            "count": 39
+            "hex": "#9fb1c1",
+            "count": 40
           },
           {
-            "hex": "#a9a7bd",
-            "count": 24
+            "hex": "#8698a9",
+            "count": 38
           },
           {
-            "hex": "#40b3ff",
-            "count": 16
+            "hex": "#ff5f5f",
+            "count": 13
           },
           {
-            "hex": "#04060d",
+            "hex": "#050608",
             "count": 5
           },
           {
-            "hex": "#0b0c15",
-            "count": 5
-          },
-          {
-            "hex": "#d7d5e4",
+            "hex": "#0a0e14",
             "count": 4
           },
           {
-            "hex": "#05060d",
+            "hex": "#111a24",
+            "count": 4
+          },
+          {
+            "hex": "#d7dde4",
+            "count": 4
+          },
+          {
+            "hex": "#ff0000",
+            "count": 4
+          },
+          {
+            "hex": "#000000",
+            "count": 2
+          },
+          {
+            "hex": "#0d141b",
+            "count": 2
+          },
+          {
+            "hex": "#182533",
             "count": 1
           },
           {
-            "hex": "#191927",
+            "hex": "#1e2a36",
             "count": 1
           },
           {
@@ -11085,10 +10819,6 @@
           },
           {
             "hex": "#5ce1a0",
-            "count": 1
-          },
-          {
-            "hex": "#f2c94c",
             "count": 1
           }
         ],
@@ -11112,10 +10842,8 @@
           "/",
           "/app/markets",
           "/docs",
-          "/privacy",
           "/risk",
-          "/signal",
-          "/terms"
+          "/signal"
         ],
         "overflow": {
           "documentOverflow": false,
@@ -11136,13 +10864,13 @@
       },
       "mobile": {
         "meta": {
-          "title": "Journal / Pretiola",
+          "title": "Journal / Librova",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 1132,
+          "bodyTextLength": 1095,
           "scrollWidth": 390,
           "clientWidth": 390,
-          "focusableCount": 22
+          "focusableCount": 16
         },
         "words": [
           {
@@ -11151,26 +10879,6 @@
           },
           {
             "word": "01",
-            "count": 2
-          },
-          {
-            "word": "02",
-            "count": 1
-          },
-          {
-            "word": "03",
-            "count": 1
-          },
-          {
-            "word": "04",
-            "count": 1
-          },
-          {
-            "word": "05",
-            "count": 1
-          },
-          {
-            "word": "06",
             "count": 1
           },
           {
@@ -11227,15 +10935,15 @@
           },
           {
             "word": "Board",
-            "count": 2
-          },
-          {
-            "word": "Boundary",
             "count": 1
           },
           {
             "word": "browser",
             "count": 2
+          },
+          {
+            "word": "build",
+            "count": 1
           },
           {
             "word": "by",
@@ -11331,7 +11039,7 @@
           },
           {
             "word": "Journal",
-            "count": 2
+            "count": 1
           },
           {
             "word": "keep",
@@ -11342,8 +11050,24 @@
             "count": 1
           },
           {
-            "word": "Limits",
+            "word": "librova",
+            "count": 1
+          },
+          {
+            "word": "Librova",
             "count": 2
+          },
+          {
+            "word": "LIBROVA",
+            "count": 4
+          },
+          {
+            "word": "librova.xyz",
+            "count": 2
+          },
+          {
+            "word": "Limits",
+            "count": 1
           },
           {
             "word": "LITTLE",
@@ -11359,6 +11083,10 @@
           },
           {
             "word": "LOCAL",
+            "count": 1
+          },
+          {
+            "word": "market",
             "count": 1
           },
           {
@@ -11414,32 +11142,16 @@
             "count": 2
           },
           {
-            "word": "Overview",
-            "count": 1
-          },
-          {
             "word": "percentage",
             "count": 1
           },
           {
-            "word": "pretiola",
-            "count": 1
-          },
-          {
-            "word": "Pretiola",
-            "count": 2
-          },
-          {
-            "word": "PRETIOLA",
-            "count": 4
-          },
-          {
-            "word": "pretiola.xyz",
-            "count": 2
-          },
-          {
             "word": "preview",
             "count": 2
+          },
+          {
+            "word": "Preview",
+            "count": 1
           },
           {
             "word": "price",
@@ -11483,7 +11195,7 @@
           },
           {
             "word": "Reference",
-            "count": 4
+            "count": 3
           },
           {
             "word": "remaining",
@@ -11523,7 +11235,7 @@
           },
           {
             "word": "Solana",
-            "count": 2
+            "count": 3
           },
           {
             "word": "SPACE",
@@ -11551,6 +11263,10 @@
           },
           {
             "word": "taxes",
+            "count": 1
+          },
+          {
+            "word": "terminal",
             "count": 1
           },
           {
@@ -11648,15 +11364,11 @@
         ],
         "attrs": [
           {
-            "key": "aria-label=Open telemetry",
+            "key": "aria-label=Librova overview",
             "count": 1
           },
           {
-            "key": "aria-label=Pretiola overview",
-            "count": 1
-          },
-          {
-            "key": "aria-label=Primary",
+            "key": "aria-label=Open navigation",
             "count": 1
           },
           {
@@ -11667,19 +11379,15 @@
         "links": [
           {
             "href": "/",
-            "count": 2
-          },
-          {
-            "href": "/#cap",
             "count": 1
           },
           {
             "href": "/app/markets",
-            "count": 2
+            "count": 1
           },
           {
             "href": "/docs",
-            "count": 2
+            "count": 1
           },
           {
             "href": "/privacy",
@@ -11687,11 +11395,11 @@
           },
           {
             "href": "/risk",
-            "count": 2
+            "count": 1
           },
           {
             "href": "/signal",
-            "count": 2
+            "count": 1
           },
           {
             "href": "/terms",
@@ -11720,64 +11428,27 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "atlas-brand",
-          "atlas-btn",
-          "atlas-btn--primary",
-          "atlas-btn--wide",
-          "atlas-colophon",
-          "atlas-colophon-brand",
-          "atlas-colophon-copy",
-          "atlas-colophon-in",
-          "atlas-colophon-links",
-          "atlas-colophon-top",
-          "atlas-display",
-          "atlas-dock",
-          "atlas-dock-link",
-          "atlas-face",
-          "atlas-face-head",
-          "atlas-field",
-          "atlas-h2",
-          "atlas-input",
-          "atlas-kicker",
-          "atlas-lead",
-          "atlas-mast",
-          "atlas-mast-actions",
-          "atlas-mast-id",
-          "atlas-mast-more",
-          "atlas-pairs",
-          "atlas-pill",
-          "atlas-pill--beam",
-          "atlas-range",
-          "atlas-root",
-          "atlas-scale",
-          "atlas-scene",
-          "atlas-scene-in",
-          "atlas-skip",
-          "atlas-stage",
-          "atlas-station",
-          "atlas-tiny",
-          "atlas-wallet",
           "is-hold",
           "lab",
-          "lab-aside",
-          "lab-aside-copy",
-          "lab-aside-foot",
-          "lab-aside-icon",
-          "lab-aside-rows",
-          "lab-aside-title",
-          "lab-count",
-          "lab-display",
-          "lab-eyebrow",
-          "lab-face-title",
-          "lab-fields",
-          "lab-form",
-          "lab-form-grid",
-          "lab-form-scene",
-          "lab-open",
-          "lab-open-in",
-          "lab-pair",
-          "lab-range",
-          "lab-step",
+          "log-aside",
+          "log-aside-copy",
+          "log-aside-foot",
+          "log-aside-icon",
+          "log-aside-rows",
+          "log-aside-title",
+          "log-count",
+          "log-display",
+          "log-eyebrow",
+          "log-face-title",
+          "log-fields",
+          "log-form",
+          "log-form-grid",
+          "log-form-scene",
+          "log-open",
+          "log-open-in",
+          "log-pair",
+          "log-range",
+          "log-step",
           "lucide",
           "lucide-activity-icon",
           "lucide-arrow-up-right-icon",
@@ -11785,164 +11456,191 @@
           "lucide-shield-check-icon",
           "lucide-wallet-icon",
           "port",
-          "port-trigger"
+          "tty-btn",
+          "tty-btn--primary",
+          "tty-btn--wide",
+          "tty-colophon",
+          "tty-colophon-brand",
+          "tty-colophon-copy",
+          "tty-colophon-in",
+          "tty-colophon-links",
+          "tty-colophon-top",
+          "tty-command",
+          "tty-command-actions",
+          "tty-command-copy",
+          "tty-command-line",
+          "tty-command-more",
+          "tty-console",
+          "tty-deck",
+          "tty-display",
+          "tty-face",
+          "tty-face-head",
+          "tty-field",
+          "tty-frame",
+          "tty-h2",
+          "tty-hint",
+          "tty-input",
+          "tty-kicker",
+          "tty-lead",
+          "tty-pairs",
+          "tty-pill",
+          "tty-pill--accent",
+          "tty-prompt",
+          "tty-range",
+          "tty-scale",
+          "tty-scene",
+          "tty-scene-in",
+          "tty-skip",
+          "tty-stage",
+          "tty-station",
+          "tty-status",
+          "tty-status-brand",
+          "tty-tiny",
+          "tty-wallet",
+          "wal-trigger"
         ],
         "fingerprint": [
-          "a@11:0",
+          "a@13:0",
           "a@4:0",
-          "a@6:3",
           "a@7:2",
-          "b@10:0",
-          "b@7:0",
-          "button@10:1",
-          "button@7:1",
+          "b@12:0",
+          "button@12:1",
           "button@8:1",
-          "dd@10:0",
-          "dd@12:0",
-          "div@10:1",
+          "button@9:1",
+          "dd@14:0",
+          "dd@9:0",
           "div@10:2",
-          "div@10:4+",
+          "div@10:3",
           "div@11:2",
-          "div@11:3",
+          "div@11:4+",
+          "div@12:1",
           "div@12:2",
-          "div@12:3",
+          "div@12:4+",
+          "div@13:2",
+          "div@13:3",
+          "div@14:2",
+          "div@14:3",
           "div@3:2",
-          "div@4:3",
+          "div@4:1",
           "div@6:2",
           "div@6:3",
-          "div@7:1",
+          "div@7:2",
           "div@7:3",
+          "div@8:1",
           "div@8:2",
-          "div@8:3",
-          "div@9:2",
-          "div@9:4+",
-          "dl@10:4+",
-          "dl@8:4+",
-          "dt@10:0",
-          "dt@12:0",
-          "footer@6:1",
-          "form@9:3",
-          "h1@9:1",
-          "h2@10:1",
-          "h2@12:0",
-          "header@5:3",
-          "img@10:0",
+          "div@9:1",
+          "dl@12:4+",
+          "dl@7:4+",
+          "dt@14:0",
+          "dt@9:0",
+          "form@11:3",
+          "h1@11:1",
+          "h2@12:1",
+          "h2@14:0",
+          "img@12:0",
           "img@8:0",
-          "input@12:0",
-          "input@13:0",
-          "label@12:1",
-          "label@13:1",
-          "li@10:1",
-          "main@5:2",
-          "nav@5:4+",
-          "output@13:0",
-          "p@10:0",
+          "input@14:0",
+          "input@15:0",
+          "label@14:1",
+          "label@15:1",
+          "li@12:1",
+          "main@5:4+",
+          "output@15:0",
+          "p@11:0",
+          "p@11:1",
           "p@12:0",
-          "p@8:0",
-          "p@9:0",
-          "p@9:1",
+          "p@14:0",
+          "p@7:0",
+          "p@8:1",
           "path@10:0",
           "path@11:0",
-          "path@12:0",
-          "path@9:0",
-          "section@6:2",
-          "section@7:1",
-          "span@10:0",
-          "span@11:0",
+          "path@13:0",
+          "path@14:0",
+          "section@8:2",
+          "section@9:1",
           "span@12:0",
           "span@13:0",
           "span@14:0",
-          "span@7:0",
+          "span@15:0",
+          "span@16:0",
           "span@8:0",
-          "svg@10:3",
-          "svg@11:2",
-          "svg@8:1",
-          "svg@9:2",
-          "textarea@12:0",
-          "ul@9:4+"
+          "svg@10:2",
+          "svg@12:3",
+          "svg@13:2",
+          "svg@9:1",
+          "textarea@14:0",
+          "ul@11:4+"
         ],
         "landmarks": [
           {
-            "tag": "header",
+            "tag": "main",
             "role": "",
             "top": 0,
             "left": 0,
             "width": 390,
-            "height": 64
-          },
-          {
-            "tag": "nav",
-            "role": "",
-            "top": 784,
-            "left": 8,
-            "width": 374,
-            "height": 46
-          },
-          {
-            "tag": "main",
-            "role": "",
-            "top": 64,
-            "left": 0,
-            "width": 390,
-            "height": 1919
-          },
-          {
-            "tag": "footer",
-            "role": "",
-            "top": 1510,
-            "left": 0,
-            "width": 390,
-            "height": 379
+            "height": 1850
           }
         ],
         "colors": [
           {
-            "hex": "#f5f4fa",
-            "count": 71
+            "hex": "#f4f7fa",
+            "count": 58
           },
           {
-            "hex": "#8e8ca3",
-            "count": 31
+            "hex": "#8698a9",
+            "count": 26
           },
           {
-            "hex": "#a9a7bd",
-            "count": 18
+            "hex": "#9fb1c1",
+            "count": 24
           },
           {
-            "hex": "#40b3ff",
-            "count": 16
+            "hex": "#ff5f5f",
+            "count": 12
           },
           {
-            "hex": "#0b0c15",
-            "count": 6
-          },
-          {
-            "hex": "#04060d",
+            "hex": "#050608",
             "count": 5
           },
           {
-            "hex": "#d7d5e4",
+            "hex": "#0a0e14",
+            "count": 4
+          },
+          {
+            "hex": "#111a24",
+            "count": 4
+          },
+          {
+            "hex": "#d7dde4",
             "count": 3
           },
           {
-            "hex": "#05060d",
+            "hex": "#ff0000",
+            "count": 3
+          },
+          {
+            "hex": "#000000",
+            "count": 2
+          },
+          {
+            "hex": "#0d141b",
+            "count": 2
+          },
+          {
+            "hex": "#182533",
             "count": 1
           },
           {
-            "hex": "#191927",
+            "hex": "#1e2a36",
             "count": 1
           },
           {
             "hex": "#3b3b3b",
             "count": 1
-          },
-          {
-            "hex": "#f2c94c",
-            "count": 1
           }
         ],
         "contrast": [],
-        "contrastChecked": 64,
+        "contrastChecked": 53,
         "headings": [
           {
             "tag": "h1",
@@ -11957,49 +11655,10 @@
             "text": "Your idea. Your assumptions."
           }
         ],
-        "navTargets": [
-          "/",
-          "/app/markets",
-          "/docs",
-          "/privacy",
-          "/risk",
-          "/signal",
-          "/terms"
-        ],
+        "navTargets": [],
         "overflow": {
           "documentOverflow": false,
-          "offenders": [
-            {
-              "selector": "div.atlas-root > nav.atlas-dock > a.atlas-dock-link",
-              "right": 491,
-              "width": 98
-            },
-            {
-              "selector": "nav.atlas-dock > a.atlas-dock-link > b",
-              "right": 418,
-              "width": 13
-            },
-            {
-              "selector": "nav.atlas-dock > a.atlas-dock-link > span",
-              "right": 478,
-              "width": 52
-            },
-            {
-              "selector": "div.atlas-root > nav.atlas-dock > a.atlas-dock-link",
-              "right": 573,
-              "width": 78
-            },
-            {
-              "selector": "nav.atlas-dock > a.atlas-dock-link > b",
-              "right": 520,
-              "width": 13
-            },
-            {
-              "selector": "nav.atlas-dock > a.atlas-dock-link > span",
-              "right": 560,
-              "width": 32
-            }
-          ]
+          "offenders": []
         }
       },
       "mobileNav": {
@@ -12023,10 +11682,10 @@
       "status": 200,
       "desktop": {
         "meta": {
-          "title": "Terms / Pretiola",
+          "title": "Terms / Librova",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 1225,
+          "bodyTextLength": 1217,
           "scrollWidth": 1440,
           "clientWidth": 1440,
           "focusableCount": 18
@@ -12221,6 +11880,22 @@
             "count": 1
           },
           {
+            "word": "librova",
+            "count": 2
+          },
+          {
+            "word": "Librova",
+            "count": 3
+          },
+          {
+            "word": "LIBROVA",
+            "count": 2
+          },
+          {
+            "word": "librova.xyz",
+            "count": 3
+          },
+          {
             "word": "Limits",
             "count": 2
           },
@@ -12307,22 +11982,6 @@
           {
             "word": "policy",
             "count": 1
-          },
-          {
-            "word": "pretiola",
-            "count": 2
-          },
-          {
-            "word": "Pretiola",
-            "count": 3
-          },
-          {
-            "word": "PRETIOLA",
-            "count": 2
-          },
-          {
-            "word": "pretiola.xyz",
-            "count": 3
           },
           {
             "word": "preview",
@@ -12523,7 +12182,7 @@
             "count": 1
           },
           {
-            "key": "aria-label=Pretiola overview",
+            "key": "aria-label=Librova overview",
             "count": 1
           },
           {
@@ -12574,175 +12233,171 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "atlas-brand",
-          "atlas-brand-copy",
-          "atlas-btn",
-          "atlas-btn--ghost",
-          "atlas-btn--primary",
-          "atlas-colophon",
-          "atlas-colophon-brand",
-          "atlas-colophon-copy",
-          "atlas-colophon-in",
-          "atlas-colophon-links",
-          "atlas-colophon-top",
-          "atlas-display",
-          "atlas-dock",
-          "atlas-dock-link",
-          "atlas-kicker",
-          "atlas-lead",
-          "atlas-mast",
-          "atlas-mast-actions",
-          "atlas-mast-id",
-          "atlas-mast-open",
-          "atlas-ribbon",
-          "atlas-ribbon-cell",
-          "atlas-ribbon-cell--wide",
-          "atlas-ribbon-tail",
-          "atlas-root",
-          "atlas-scene",
-          "atlas-scene-in",
-          "atlas-skip",
-          "atlas-stage",
-          "atlas-station",
-          "atlas-tiny",
-          "atlas-wallet",
+          "doc-display",
+          "doc-legal",
+          "doc-legal-actions",
+          "doc-legal-copy",
+          "doc-legal-in",
+          "doc-open",
+          "doc-open-in",
           "is-hold",
           "leaf",
-          "leaf-display",
-          "leaf-legal",
-          "leaf-legal-actions",
-          "leaf-legal-copy",
-          "leaf-legal-in",
-          "leaf-open",
-          "leaf-open-in",
           "lucide",
           "lucide-arrow-right-icon",
           "lucide-wallet-icon",
           "port",
-          "port-trigger"
+          "tty-btn",
+          "tty-btn--ghost",
+          "tty-btn--primary",
+          "tty-colophon",
+          "tty-colophon-brand",
+          "tty-colophon-copy",
+          "tty-colophon-in",
+          "tty-colophon-links",
+          "tty-colophon-top",
+          "tty-command",
+          "tty-command-actions",
+          "tty-command-copy",
+          "tty-command-line",
+          "tty-console",
+          "tty-deck",
+          "tty-display",
+          "tty-frame",
+          "tty-hint",
+          "tty-kicker",
+          "tty-lead",
+          "tty-nav",
+          "tty-nav-link",
+          "tty-prompt",
+          "tty-scene",
+          "tty-scene-in",
+          "tty-skip",
+          "tty-stage",
+          "tty-station",
+          "tty-status",
+          "tty-status-brand",
+          "tty-status-cell",
+          "tty-status-cells",
+          "tty-status-tail",
+          "tty-tiny",
+          "tty-wallet",
+          "wal-trigger"
         ],
         "fingerprint": [
-          "a@10:1",
-          "a@11:0",
+          "a@12:1",
+          "a@13:0",
           "a@4:0",
-          "a@6:3",
-          "a@7:0",
           "a@7:2",
-          "b@10:0",
-          "b@7:0",
-          "b@8:0",
-          "button@8:1",
-          "dd@10:0",
+          "a@8:0",
+          "a@8:3",
+          "b@12:0",
+          "b@9:0",
+          "button@9:1",
+          "dd@9:0",
+          "div@10:2",
+          "div@10:3",
+          "div@11:2",
           "div@3:2",
-          "div@4:3",
+          "div@4:1",
           "div@6:2",
           "div@6:3",
-          "div@6:4+",
-          "div@7:1",
+          "div@7:2",
           "div@7:3",
+          "div@7:4+",
+          "div@8:1",
           "div@8:2",
-          "div@8:3",
-          "div@9:2",
-          "dl@8:4+",
-          "dt@10:0",
-          "footer@6:1",
-          "h1@9:0",
-          "header@5:3",
-          "i@8:0",
-          "img@10:0",
+          "div@9:1",
+          "dl@7:4+",
+          "dt@9:0",
+          "h1@11:0",
+          "i@9:0",
+          "img@12:0",
           "img@8:0",
-          "li@10:1",
-          "main@5:2",
-          "nav@5:4+",
-          "p@10:0",
-          "p@7:1",
-          "p@8:0",
-          "p@9:0",
-          "path@10:0",
-          "path@12:0",
-          "section@7:1",
-          "small@7:0",
+          "li@12:1",
+          "main@5:4+",
+          "nav@7:4+",
+          "p@11:0",
+          "p@12:0",
+          "p@7:0",
+          "p@8:1",
+          "path@11:0",
+          "path@14:0",
+          "section@9:1",
+          "small@9:0",
           "span@7:0",
-          "span@7:1",
-          "span@7:2",
           "span@8:0",
-          "svg@11:2",
-          "svg@9:2",
-          "ul@9:4+"
+          "span@8:1",
+          "span@8:2",
+          "span@9:0",
+          "svg@10:2",
+          "svg@13:2",
+          "ul@11:4+"
         ],
         "landmarks": [
           {
-            "tag": "header",
+            "tag": "main",
             "role": "",
             "top": 0,
             "left": 0,
             "width": 1440,
-            "height": 101
+            "height": 900
           },
           {
             "tag": "nav",
             "role": "",
-            "top": 825,
-            "left": 377,
-            "width": 686,
-            "height": 61
-          },
-          {
-            "tag": "main",
-            "role": "",
-            "top": 85,
-            "left": 0,
-            "width": 1440,
-            "height": 1065
-          },
-          {
-            "tag": "footer",
-            "role": "",
-            "top": 754,
-            "left": 0,
-            "width": 1440,
-            "height": 292
+            "top": 95,
+            "left": 1,
+            "width": 212,
+            "height": 709
           }
         ],
         "colors": [
           {
-            "hex": "#f5f4fa",
-            "count": 47
+            "hex": "#9fb1c1",
+            "count": 39
           },
           {
-            "hex": "#a9a7bd",
-            "count": 23
+            "hex": "#f4f7fa",
+            "count": 37
           },
           {
-            "hex": "#8e8ca3",
-            "count": 19
+            "hex": "#8698a9",
+            "count": 18
           },
           {
-            "hex": "#d7d5e4",
+            "hex": "#d7dde4",
             "count": 9
           },
           {
-            "hex": "#40b3ff",
-            "count": 5
-          },
-          {
-            "hex": "#04060d",
+            "hex": "#050608",
             "count": 4
           },
           {
-            "hex": "#05060d",
-            "count": 1
+            "hex": "#111a24",
+            "count": 4
           },
           {
-            "hex": "#0b0c15",
+            "hex": "#ff0000",
+            "count": 3
+          },
+          {
+            "hex": "#ff5f5f",
+            "count": 3
+          },
+          {
+            "hex": "#000000",
+            "count": 2
+          },
+          {
+            "hex": "#0d141b",
+            "count": 2
+          },
+          {
+            "hex": "#1e2a36",
             "count": 1
           },
           {
             "hex": "#5ce1a0",
-            "count": 1
-          },
-          {
-            "hex": "#f2c94c",
             "count": 1
           }
         ],
@@ -12758,10 +12413,8 @@
           "/",
           "/app/markets",
           "/docs",
-          "/privacy",
           "/risk",
-          "/signal",
-          "/terms"
+          "/signal"
         ],
         "overflow": {
           "documentOverflow": false,
@@ -12782,39 +12435,15 @@
       },
       "mobile": {
         "meta": {
-          "title": "Terms / Pretiola",
+          "title": "Terms / Librova",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 1003,
+          "bodyTextLength": 968,
           "scrollWidth": 390,
           "clientWidth": 390,
-          "focusableCount": 18
+          "focusableCount": 12
         },
         "words": [
-          {
-            "word": "01",
-            "count": 1
-          },
-          {
-            "word": "02",
-            "count": 1
-          },
-          {
-            "word": "03",
-            "count": 1
-          },
-          {
-            "word": "04",
-            "count": 1
-          },
-          {
-            "word": "05",
-            "count": 1
-          },
-          {
-            "word": "06",
-            "count": 1
-          },
           {
             "word": "a",
             "count": 3
@@ -12849,10 +12478,6 @@
           },
           {
             "word": "Board",
-            "count": 2
-          },
-          {
-            "word": "Boundary",
             "count": 1
           },
           {
@@ -12861,7 +12486,7 @@
           },
           {
             "word": "build",
-            "count": 1
+            "count": 2
           },
           {
             "word": "Connect",
@@ -12957,7 +12582,7 @@
           },
           {
             "word": "Journal",
-            "count": 2
+            "count": 1
           },
           {
             "word": "lab",
@@ -12968,8 +12593,24 @@
             "count": 1
           },
           {
-            "word": "Limits",
+            "word": "librova",
+            "count": 1
+          },
+          {
+            "word": "Librova",
+            "count": 3
+          },
+          {
+            "word": "LIBROVA",
+            "count": 1
+          },
+          {
+            "word": "librova.xyz",
             "count": 2
+          },
+          {
+            "word": "Limits",
+            "count": 1
           },
           {
             "word": "live",
@@ -12981,6 +12622,10 @@
           },
           {
             "word": "Local",
+            "count": 1
+          },
+          {
+            "word": "market",
             "count": 1
           },
           {
@@ -13016,10 +12661,6 @@
             "count": 1
           },
           {
-            "word": "Overview",
-            "count": 1
-          },
-          {
             "word": "page",
             "count": 1
           },
@@ -13028,24 +12669,12 @@
             "count": 1
           },
           {
-            "word": "pretiola",
-            "count": 1
-          },
-          {
-            "word": "Pretiola",
-            "count": 3
-          },
-          {
-            "word": "PRETIOLA",
-            "count": 1
-          },
-          {
-            "word": "pretiola.xyz",
-            "count": 2
-          },
-          {
             "word": "preview",
             "count": 2
+          },
+          {
+            "word": "Preview",
+            "count": 1
           },
           {
             "word": "Prices",
@@ -13089,7 +12718,7 @@
           },
           {
             "word": "Reference",
-            "count": 2
+            "count": 1
           },
           {
             "word": "references",
@@ -13125,7 +12754,7 @@
           },
           {
             "word": "Solana",
-            "count": 1
+            "count": 2
           },
           {
             "word": "Static",
@@ -13141,6 +12770,10 @@
           },
           {
             "word": "targets",
+            "count": 1
+          },
+          {
+            "word": "terminal",
             "count": 1
           },
           {
@@ -13214,34 +12847,26 @@
         ],
         "attrs": [
           {
-            "key": "aria-label=Open telemetry",
+            "key": "aria-label=Librova overview",
             "count": 1
           },
           {
-            "key": "aria-label=Pretiola overview",
-            "count": 1
-          },
-          {
-            "key": "aria-label=Primary",
+            "key": "aria-label=Open navigation",
             "count": 1
           }
         ],
         "links": [
           {
             "href": "/",
-            "count": 3
-          },
-          {
-            "href": "/#cap",
-            "count": 1
-          },
-          {
-            "href": "/app/markets",
             "count": 2
           },
           {
+            "href": "/app/markets",
+            "count": 1
+          },
+          {
             "href": "/docs",
-            "count": 3
+            "count": 2
           },
           {
             "href": "/privacy",
@@ -13249,11 +12874,11 @@
           },
           {
             "href": "/risk",
-            "count": 2
+            "count": 1
           },
           {
             "href": "/signal",
-            "count": 2
+            "count": 1
           },
           {
             "href": "/terms",
@@ -13269,216 +12894,163 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "atlas-brand",
-          "atlas-btn",
-          "atlas-btn--ghost",
-          "atlas-btn--primary",
-          "atlas-colophon",
-          "atlas-colophon-brand",
-          "atlas-colophon-copy",
-          "atlas-colophon-in",
-          "atlas-colophon-links",
-          "atlas-colophon-top",
-          "atlas-display",
-          "atlas-dock",
-          "atlas-dock-link",
-          "atlas-kicker",
-          "atlas-lead",
-          "atlas-mast",
-          "atlas-mast-actions",
-          "atlas-mast-id",
-          "atlas-mast-more",
-          "atlas-root",
-          "atlas-scene",
-          "atlas-scene-in",
-          "atlas-skip",
-          "atlas-stage",
-          "atlas-station",
-          "atlas-tiny",
-          "atlas-wallet",
+          "doc-display",
+          "doc-legal",
+          "doc-legal-actions",
+          "doc-legal-copy",
+          "doc-legal-in",
+          "doc-open",
+          "doc-open-in",
           "is-hold",
           "leaf",
-          "leaf-display",
-          "leaf-legal",
-          "leaf-legal-actions",
-          "leaf-legal-copy",
-          "leaf-legal-in",
-          "leaf-open",
-          "leaf-open-in",
           "lucide",
           "lucide-activity-icon",
           "lucide-arrow-right-icon",
           "lucide-wallet-icon",
           "port",
-          "port-trigger"
+          "tty-btn",
+          "tty-btn--ghost",
+          "tty-btn--primary",
+          "tty-colophon",
+          "tty-colophon-brand",
+          "tty-colophon-copy",
+          "tty-colophon-in",
+          "tty-colophon-links",
+          "tty-colophon-top",
+          "tty-command",
+          "tty-command-actions",
+          "tty-command-copy",
+          "tty-command-line",
+          "tty-command-more",
+          "tty-console",
+          "tty-deck",
+          "tty-display",
+          "tty-frame",
+          "tty-hint",
+          "tty-kicker",
+          "tty-lead",
+          "tty-prompt",
+          "tty-scene",
+          "tty-scene-in",
+          "tty-skip",
+          "tty-stage",
+          "tty-station",
+          "tty-status",
+          "tty-status-brand",
+          "tty-tiny",
+          "tty-wallet",
+          "wal-trigger"
         ],
         "fingerprint": [
-          "a@10:1",
-          "a@11:0",
+          "a@12:1",
+          "a@13:0",
           "a@4:0",
-          "a@6:3",
           "a@7:2",
-          "b@10:0",
-          "b@7:0",
-          "button@7:1",
+          "b@12:0",
           "button@8:1",
-          "dd@10:0",
+          "button@9:1",
+          "dd@9:0",
+          "div@10:2",
+          "div@10:3",
+          "div@11:2",
           "div@3:2",
-          "div@4:3",
+          "div@4:1",
           "div@6:2",
           "div@6:3",
-          "div@7:1",
+          "div@7:2",
           "div@7:3",
+          "div@8:1",
           "div@8:2",
-          "div@8:3",
-          "div@9:2",
-          "dl@8:4+",
-          "dt@10:0",
-          "footer@6:1",
-          "h1@9:0",
-          "header@5:3",
-          "img@10:0",
+          "div@9:1",
+          "dl@7:4+",
+          "dt@9:0",
+          "h1@11:0",
+          "img@12:0",
           "img@8:0",
-          "li@10:1",
-          "main@5:2",
-          "nav@5:4+",
-          "p@10:0",
-          "p@8:0",
-          "p@9:0",
+          "li@12:1",
+          "main@5:4+",
+          "p@11:0",
+          "p@12:0",
+          "p@7:0",
+          "p@8:1",
           "path@10:0",
-          "path@12:0",
-          "path@9:0",
-          "section@7:1",
-          "span@7:0",
+          "path@11:0",
+          "path@14:0",
+          "section@9:1",
           "span@8:0",
-          "svg@11:2",
-          "svg@8:1",
-          "svg@9:2",
-          "ul@9:4+"
+          "svg@10:2",
+          "svg@13:2",
+          "svg@9:1",
+          "ul@11:4+"
         ],
         "landmarks": [
           {
-            "tag": "header",
+            "tag": "main",
             "role": "",
             "top": 0,
             "left": 0,
             "width": 390,
-            "height": 64
-          },
-          {
-            "tag": "nav",
-            "role": "",
-            "top": 784,
-            "left": 8,
-            "width": 374,
-            "height": 46
-          },
-          {
-            "tag": "main",
-            "role": "",
-            "top": 64,
-            "left": 0,
-            "width": 390,
-            "height": 1128
-          },
-          {
-            "tag": "footer",
-            "role": "",
-            "top": 719,
-            "left": 0,
-            "width": 390,
-            "height": 379
+            "height": 1083
           }
         ],
         "colors": [
           {
-            "hex": "#f5f4fa",
-            "count": 46
+            "hex": "#f4f7fa",
+            "count": 33
           },
           {
-            "hex": "#a9a7bd",
-            "count": 17
+            "hex": "#9fb1c1",
+            "count": 23
           },
           {
-            "hex": "#8e8ca3",
-            "count": 11
-          },
-          {
-            "hex": "#d7d5e4",
+            "hex": "#d7dde4",
             "count": 8
           },
           {
-            "hex": "#40b3ff",
-            "count": 5
+            "hex": "#8698a9",
+            "count": 6
           },
           {
-            "hex": "#04060d",
+            "hex": "#050608",
             "count": 4
           },
           {
-            "hex": "#0b0c15",
+            "hex": "#111a24",
+            "count": 4
+          },
+          {
+            "hex": "#000000",
             "count": 2
           },
           {
-            "hex": "#05060d",
-            "count": 1
+            "hex": "#0d141b",
+            "count": 2
           },
           {
-            "hex": "#f2c94c",
+            "hex": "#ff0000",
+            "count": 2
+          },
+          {
+            "hex": "#ff5f5f",
+            "count": 2
+          },
+          {
+            "hex": "#1e2a36",
             "count": 1
           }
         ],
         "contrast": [],
-        "contrastChecked": 39,
+        "contrastChecked": 28,
         "headings": [
           {
             "tag": "h1",
             "text": "Terms of this demo."
           }
         ],
-        "navTargets": [
-          "/",
-          "/app/markets",
-          "/docs",
-          "/privacy",
-          "/risk",
-          "/signal",
-          "/terms"
-        ],
+        "navTargets": [],
         "overflow": {
           "documentOverflow": false,
-          "offenders": [
-            {
-              "selector": "div.atlas-root > nav.atlas-dock > a.atlas-dock-link",
-              "right": 491,
-              "width": 98
-            },
-            {
-              "selector": "nav.atlas-dock > a.atlas-dock-link > b",
-              "right": 418,
-              "width": 13
-            },
-            {
-              "selector": "nav.atlas-dock > a.atlas-dock-link > span",
-              "right": 478,
-              "width": 52
-            },
-            {
-              "selector": "div.atlas-root > nav.atlas-dock > a.atlas-dock-link",
-              "right": 573,
-              "width": 78
-            },
-            {
-              "selector": "nav.atlas-dock > a.atlas-dock-link > b",
-              "right": 520,
-              "width": 13
-            },
-            {
-              "selector": "nav.atlas-dock > a.atlas-dock-link > span",
-              "right": 560,
-              "width": 32
-            }
-          ]
+          "offenders": []
         }
       },
       "mobileNav": {
@@ -13486,9 +13058,9 @@
         "targets": [
           "",
           "/",
+          "/docs",
           "/app/markets",
           "/signal",
-          "/docs",
           "/risk",
           "/terms",
           "/privacy"
@@ -13497,5 +13069,5 @@
       }
     }
   },
-  "inventoryHash": "081faeac66dd7468c844126e52f97a3dbe75ceaac7dc1957a980213acc8d2978"
+  "inventoryHash": "3d00ded2cdd47802617906eea285edc387a2bb8d4e6c483f87aba609740953d5"
 }
