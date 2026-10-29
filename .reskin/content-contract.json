@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "meta": {
-    "projectName": "librova-website",
-    "title": "librova-website",
+    "projectName": "tabuline-website",
+    "title": "tabuline-website",
     "lang": "en"
   },
   "routes": [

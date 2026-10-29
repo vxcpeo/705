@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-labelledby="t d">
-<title id="t">Librova mark</title>
-<defs><linearGradient id="d1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0d71e3"/><stop offset="1" stop-color="#298dff"/></linearGradient></defs>
-<desc id="d">The Librova corner - an L struck from rounded ledger bars with a pale pip - reversed out of a blue gradient tile.</desc>
-<rect width="64" height="64" fill="#ffffff"/>
+<title id="t">Tabuline mark</title>
+<defs><linearGradient id="d1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0000b3"/><stop offset="1" stop-color="#0000ff"/></linearGradient></defs>
+<desc id="d">The Tabuline line - a header rule, a column stem and a pale node - reversed out of a blue gradient tile.</desc>
+<rect width="64" height="64" fill="#f4f5f2"/>
 <rect x="0.00" y="0.00" width="64.00" height="64.00" rx="15.00" fill="url(#d1)"/>
-<rect x="13.35" y="12.16" width="7.94" height="39.68" rx="3.97" fill="#ffffff" stroke="none"/>
-<rect x="13.35" y="43.90" width="26.98" height="7.94" rx="3.97" fill="#ffffff" stroke="none"/>
-<circle cx="46.68" cy="47.87" r="3.97" fill="#bfe0ff"/>
+<rect x="12.16" y="12.16" width="39.68" height="7.94" rx="3.97" fill="#ffffff" stroke="none"/>
+<rect x="28.03" y="12.16" width="7.94" height="26.98" rx="3.97" fill="#ffffff" stroke="none"/>
+<circle cx="32.00" cy="46.68" r="5.16" fill="#c9c9ff"/>
 </svg>

@@ -27,6 +27,7 @@ history: Nodelira
 history: Ivorane
 history: Filza
 history: Pretiola
+history: Librova
 
 # Current brand (exactly one)
-current: Librova
+current: Tabuline

@@ -1,32 +1,32 @@
-# Reskin art direction — Tidal Sui
+# Reskin art direction — Cobalt Blueprint
 
 > Selected automatically. Do not ask the user to confirm or choose another direction.
 
-- **Style DNA:** `sui-tidal` (clean-fintech)
+- **Style DNA:** `base-cobalt` (optimistic-modern)
 - **Skeleton:** `split-stage` (spatial)
-- **Seed:** `65b75ce24ae00e3f2abc73152a5f8e467036bc8b3667fab2f7df6950ca1b701d`
-- **Source DNA:** [https://sui.io](https://sui.io)
-- **Live sampled:** yes — https://sui.io (3545 ms)
-- **Original:** terminal-console / light / accent #ff0000
+- **Seed:** `fe2cf41a35033175bf1bae4511ae0e66a76f3a0eab24a9ea7a4e8e76a6a05300`
+- **Source DNA:** [https://www.base.org](https://www.base.org)
+- **Live sampled:** yes — https://www.base.org (5980 ms)
+- **Original:** sidebar-workspace / light / accent #298dff
 
 ## Why this direction
 
-The selector sampled 4/10 blockchain references, scored every direction for perceptual distance from the original accent (#ff0000) and background (#000000), added a deterministic seed jitter, and chose Tidal Sui because it is 146 ΔE away from the original accent and pairs with Split Stage, a spatial skeleton rather than the original terminal-console.
+The selector sampled 9/10 blockchain references, scored every direction for perceptual distance from the original accent (#298dff) and background (#ffffff), added a deterministic seed jitter, and chose Cobalt Blueprint because it is 84 ΔE away from the original accent and pairs with Split Stage, a spatial skeleton rather than the original sidebar-workspace.
 
 ## Live reference sampling
 
 | Style | URL | Result | Accent sampled | Ground sampled |
 |---|---|---|---|---|
-| base-cobalt | https://www.base.org | ok (1351 ms) | #0000ff | #dde3e9 |
-| polygon-agora | https://polygon.technology | ok (6173 ms) | #670de5 | #000000 |
-| solana-spectrum | https://solana.com | failed: timeout | — | — |
-| ethereum-paper | https://ethereum.org | failed: timeout | — | — |
-| optimism-poster | https://www.optimism.io | failed: timeout | — | — |
+| base-cobalt | https://www.base.org | ok (5980 ms) | #0000ff | #dde3e9 |
+| solana-spectrum | https://solana.com | ok (6178 ms) | #9945ff | #000000 |
+| polygon-agora | https://polygon.technology | ok (6497 ms) | #670de5 | #000000 |
+| ethereum-paper | https://ethereum.org | ok (6868 ms) | #0c5681 | #ffffff |
 | arbitrum-signal | https://arbitrum.io | failed: HTTP 403 | — | — |
-| cosmos-orbit | https://cosmos.network | ok (4175 ms) | #40b3ff | #000000 |
-| uniswap-bubblegum | https://uniswap.org | failed: timeout | — | — |
-| aave-abyss | https://aave.com | failed: timeout | — | — |
-| sui-tidal | https://sui.io | ok (3545 ms) | #298dff | #ffffff |
+| aave-abyss | https://aave.com | ok (6117 ms) | #ff0000 | #000000 |
+| cosmos-orbit | https://cosmos.network | ok (5816 ms) | #40b3ff | #000000 |
+| optimism-poster | https://www.optimism.io | ok (8697 ms) | #ff0421 | #fafaf9 |
+| uniswap-bubblegum | https://uniswap.org | ok (10281 ms) | — | #ffffff |
+| sui-tidal | https://sui.io | ok (9709 ms) | #298dff | #ffffff |
 
 Live sampling is evidence, not a copy target. Never download or reuse a reference site's logo, imagery, copy, or code. Use only the abstract tokens below.
 
@@ -34,16 +34,16 @@ Live sampling is evidence, not a copy target. Never download or reuse a referenc
 
 | Candidate | Score | Accent ΔE from original | Layout | Live |
 |---|---:|---:|---|---|
-| Tidal Sui | 0.9655 | 146.2 | split-stage | yes |
-| Paper Protocol | 0.9448 | 136.1 | documentary | no |
-| Bubblegum Exchange | 0.8905 | 64.4 | bento-canvas | no |
-| Cobalt Blueprint | 0.8742 | 176.3 | bento-canvas | yes |
-| Agora Violet | 0.8656 | 145 | orbital | yes |
-| Abyss Liquidity | 0.8612 | 100.5 | orbital | no |
-| Spectrum Terminal | 0.8585 | 121.2 | gallery-scroll | no |
-| Cosmos Orbit | 0.8429 | 144.6 | orbital | yes |
-| Signal Navy | 0.8266 | 136.8 | bento-canvas | no |
-| Poster Optimism | 0.6317 | 38.9 | gallery-scroll | no |
+| Cobalt Blueprint | 0.9125 | 83.9 | split-stage | yes |
+| Bubblegum Exchange | 0.878 | 90.9 | split-stage | yes |
+| Abyss Liquidity | 0.8671 | 148.1 | terminal-console | yes |
+| Poster Optimism | 0.8375 | 139.1 | ticker-stage | yes |
+| Spectrum Terminal | 0.8289 | 58.9 | ticker-stage | yes |
+| Agora Violet | 0.7817 | 59.4 | orbital | yes |
+| Signal Navy | 0.7293 | 38.7 | terminal-console | no |
+| Cosmos Orbit | 0.7221 | 28.8 | documentary | yes |
+| Paper Protocol | 0.7108 | 45.3 | documentary | yes |
+| Tidal Sui | 0.4026 | 11.2 | split-stage | yes |
 
 ## Skeleton brief
 
@@ -67,34 +67,34 @@ Risks: sticky column must not hide content on short screens; mobile must not pre
 
 ```css
 :root {
-  --bg: #ffffff;
+  --bg: #dde3e9;
   --surface: #FFFFFF;
-  --surface-alt: #E8F3FF;
-  --ink: #081B2B;
-  --muted: #5B7185;
-  --accent: #298dff;
-  --accent-safe: #0d71e3;
-  --accent-2: #4DA2FF;
-  --line: #D8E7F5;
-  --success: #087A55;
-  --danger: #B42318;
-  --warning: #8A5A00;
+  --surface-alt: #EFEFEA;
+  --ink: #0A0B0D;
+  --muted: #6F6F6F;
+  --accent: #0000ff;
+  --accent-safe: #0000ff;
+  --accent-2: #7575FF;
+  --line: #E2E2DC;
+  --success: #00875A;
+  --danger: #C4320A;
+  --warning: #9A6700;
 
-  --font-display: "Segoe UI Variable Display", "Segoe UI", "Helvetica Neue", sans-serif;
-  --font-body: "Segoe UI", "Helvetica Neue", sans-serif;
-  --font-mono: "Cascadia Mono", ui-monospace, monospace;
-  --display-weight: 600;
-  --display-tracking: -0.04em;
-  --label-tracking: 0.06em;
+  --font-display: "Inter Tight", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Inter", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "Geist Mono", "Cascadia Mono", ui-monospace, monospace;
+  --display-weight: 620;
+  --display-tracking: -0.035em;
+  --label-tracking: 0.08em;
 
-  --radius-sm: 12px;
-  --radius-md: 22px;
-  --radius-lg: 36px;
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 30px;
   --border: 1px solid var(--line);
-  --shadow: 0 24px 60px rgba(30, 111, 217, 0.1);
+  --shadow: 0 24px 60px rgba(10, 11, 13, 0.08);
 
-  --motion-duration: 260ms;
-  --motion-ease: cubic-bezier(.22,1,.36,1);
+  --motion-duration: 170ms;
+  --motion-ease: cubic-bezier(.2,.8,.2,1);
   --space-1: clamp(4px, .35vw, 6px);
   --space-2: clamp(8px, .7vw, 12px);
   --space-3: clamp(14px, 1.2vw, 20px);
@@ -108,10 +108,10 @@ Risks: sticky column must not hide content on short screens; mobile must not pre
 
 ## Component grammar
 
-- Surface: 1px solid var(--line); radius 22px; shadow 0 24px 60px rgba(30, 111, 217, 0.1).
-- Type: display **"Segoe UI Variable Display", "Segoe UI", "Helvetica Neue", sans-serif** at weight 600, tracking -0.04em; body **"Segoe UI", "Helvetica Neue", sans-serif**; numerals and micro-labels **"Cascadia Mono", ui-monospace, monospace**.
-- Texture: tidal curves, soft caustics, aqua gradients, floating rounded panels.
-- Motion: fluid, 260ms, cubic-bezier(.22,1,.36,1). Always wrap non-essential motion in `@media (prefers-reduced-motion: no-preference)`.
+- Surface: 1px solid var(--line); radius 18px; shadow 0 24px 60px rgba(10, 11, 13, 0.08).
+- Type: display **"Inter Tight", "Segoe UI", system-ui, sans-serif** at weight 620, tracking -0.035em; body **"Inter", "Segoe UI", system-ui, sans-serif**; numerals and micro-labels **"Geist Mono", "Cascadia Mono", ui-monospace, monospace**.
+- Texture: blueprint hairlines, cobalt focus rings, monochrome diagrams, large numeric counters.
+- Motion: crisp, 170ms, cubic-bezier(.2,.8,.2,1). Always wrap non-essential motion in `@media (prefers-reduced-motion: no-preference)`.
 - Density: airy. Keep body text >= 14px and body contrast >= 4.5:1.
 - Use `--accent-safe` for text and icons on `--bg`; use `--accent` for fills and large shapes.
 
@@ -119,7 +119,7 @@ Risks: sticky column must not hide content on short screens; mobile must not pre
 
 The replacement must satisfy all of these:
 
-1. The source inventory archetype is `terminal-console`; the new skeleton is `split-stage`. Do not fall back to the old shell during implementation.
+1. The source inventory archetype is `sidebar-workspace`; the new skeleton is `split-stage`. Do not fall back to the old shell during implementation.
 2. Do not reuse any original class name, CSS selector, design token name, or original accent family.
 3. Rewrite templates, not only CSS. Every route must visibly use the new skeleton.
 4. Keep every token in `.reskin/content-contract.json`; move it, never rewrite it.
@@ -127,4 +127,4 @@ The replacement must satisfy all of these:
 
 ## Commit statement
 
-Use this sentence in the final report: "The UI was rebuilt around Tidal Sui / Split Stage; the original terminal-console shell and palette were removed while the content contract stayed byte-for-byte intact."
+Use this sentence in the final report: "The UI was rebuilt around Cobalt Blueprint / Split Stage; the original sidebar-workspace shell and palette were removed while the content contract stayed byte-for-byte intact."

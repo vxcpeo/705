@@ -22,94 +22,94 @@ const copy = computed(() => ({ Markets: 'Scan defined-cap series and compare the
 <template>
   <div class="shoal">
     <!-- opening band -->
-    <section class="tide-band tide-band--first shoal-open">
-      <div class="shoal-open-copy">
-        <p class="tide-kicker">{{ brand.network }} / paper market</p>
-        <h1 class="tide-display shoal-display" tabindex="-1">{{ pageTitle }}</h1>
-        <p class="tide-lead">{{ copy }}</p>
+    <section class="bp-band bp-band--first gr-open">
+      <div class="gr-open-copy">
+        <p class="bp-kicker">{{ brand.network }} / paper market</p>
+        <h1 class="bp-display gr-display" tabindex="-1">{{ pageTitle }}</h1>
+        <p class="bp-lead">{{ copy }}</p>
       </div>
-      <a class="tide-btn tide-btn--ghost shoal-back" href="/" @click.prevent="emit('navigate','/')"><ArrowLeft :size="15" /> Markets</a>
+      <a class="bp-btn bp-btn--ghost gr-back" href="/" @click.prevent="emit('navigate','/')"><ArrowLeft :size="15" /> Markets</a>
     </section>
 
     <!-- asset detail -->
-    <section v-if="symbol" class="tide-band shoal-detail">
-      <div class="shoal-detail-head">
-        <h2 class="tide-h2">{{ symbol }} / {{ brand.network }}</h2>
-        <p class="tide-meta">30-day epoch | +5% cap | illustrative values</p>
+    <section v-if="symbol" class="bp-band gr-detail">
+      <div class="gr-detail-head">
+        <h2 class="bp-h2">{{ symbol }} / {{ brand.network }}</h2>
+        <p class="bp-meta">30-day epoch | +5% cap | illustrative values</p>
       </div>
-      <div class="shoal-detail-grid">
-        <div class="shoal-passport">
-          <div class="shoal-spec-top">
-            <span class="shoal-mark" aria-hidden="true">{{ symbol.slice(0, 1) }}</span>
-            <span class="shoal-spec-name"><b>{{ symbol }}</b><small>Example series</small></span>
-            <span class="tide-pill tide-pill--accent"><i aria-hidden="true"></i>Paper only</span>
+      <div class="gr-detail-grid">
+        <div class="gr-passport">
+          <div class="gr-spec-top">
+            <span class="gr-mark" aria-hidden="true">{{ symbol.slice(0, 1) }}</span>
+            <span class="gr-spec-name"><b>{{ symbol }}</b><small>Example series</small></span>
+            <span class="bp-pill bp-pill--bp-cobalt"><i aria-hidden="true"></i>Paper only</span>
           </div>
-          <dl class="shoal-spec-rows">
+          <dl class="gr-spec-rows">
             <div><dt>Reference</dt><dd>{{ symbol === 'SOL' ? '$182.00' : symbol === 'JUP' ? '$1.12' : symbol === 'BONK' ? '$0.000021' : '$1.00' }}</dd></div>
-            <div><dt>Income model</dt><dd class="shoal-inc">+5% cap</dd></div>
+            <div><dt>Income model</dt><dd class="gr-inc">+5% cap</dd></div>
             <div><dt>Settlement</dt><dd>Not live</dd></div>
           </dl>
-          <p class="tide-note">Illustrative values. No live quote, custody, signing or execution.</p>
+          <p class="bp-note">Illustrative values. No live quote, custody, signing or execution.</p>
         </div>
-        <div class="shoal-detail-figure">
+        <div class="gr-detail-figure">
           <PayoffExplorer :spot="symbol === 'SOL' ? 182 : symbol === 'JUP' ? 1.12 : symbol === 'BONK' ? 0.000021 : 1" :asset="symbol" />
         </div>
       </div>
     </section>
 
     <!-- launchpad leaf -->
-    <section v-else-if="pageTitle === 'Launchpad'" class="tide-band shoal-leaf">
-      <div class="shoal-leaf-sheet">
-        <div class="shoal-leaf-head">
-          <h2 class="tide-h2">Suggest a market.</h2>
-          <span class="tide-pill"><i aria-hidden="true"></i>Listing intake</span>
+    <section v-else-if="pageTitle === 'Launchpad'" class="bp-band gr-leaf">
+      <div class="gr-leaf-sheet">
+        <div class="gr-leaf-head">
+          <h2 class="bp-h2">Suggest a market.</h2>
+          <span class="bp-pill"><i aria-hidden="true"></i>Listing intake</span>
         </div>
-        <span class="shoal-leaf-mark"><WalletCards :size="20" /></span>
-        <p class="shoal-leaf-copy">Any SPL market unit with a verified price feed and USDC liquidity path may qualify. This preview records no wallet request or listing transaction.</p>
-        <a class="tide-btn tide-btn--primary" href="/docs#listing" @click.prevent="emit('navigate','/docs#listing')">Read listing notes <ArrowUpRight :size="15" /></a>
+        <span class="gr-leaf-mark"><WalletCards :size="20" /></span>
+        <p class="gr-leaf-copy">Any SPL market unit with a verified price feed and USDC liquidity path may qualify. This preview records no wallet request or listing transaction.</p>
+        <a class="bp-btn bp-btn--primary" href="/docs#listing" @click.prevent="emit('navigate','/docs#listing')">Read listing notes <ArrowUpRight :size="15" /></a>
       </div>
     </section>
 
     <!-- recompose leaf -->
-    <section v-else-if="pageTitle === 'Recompose'" class="tide-band shoal-leaf">
-      <div class="shoal-leaf-sheet">
-        <div class="shoal-leaf-head">
-          <h2 class="tide-h2">One asset again.</h2>
-          <span class="tide-pill"><i aria-hidden="true"></i>Income + Upside</span>
+    <section v-else-if="pageTitle === 'Recompose'" class="bp-band gr-leaf">
+      <div class="gr-leaf-sheet">
+        <div class="gr-leaf-head">
+          <h2 class="bp-h2">One asset again.</h2>
+          <span class="bp-pill"><i aria-hidden="true"></i>Income + Upside</span>
         </div>
-        <span class="shoal-leaf-mark"><TrendingUp :size="20" /></span>
-        <p class="shoal-leaf-copy">Recomposition would require a wallet transaction. The local preview keeps this action visible while execution remains unavailable.</p>
-        <button class="tide-btn" type="button" disabled>Recompose unavailable</button>
+        <span class="gr-leaf-mark"><TrendingUp :size="20" /></span>
+        <p class="gr-leaf-copy">Recomposition would require a wallet transaction. The local preview keeps this action visible while execution remains unavailable.</p>
+        <button class="bp-btn" type="button" disabled>Recompose unavailable</button>
       </div>
     </section>
 
     <!-- board -->
-    <section v-else class="tide-band shoal-board">
-      <div class="shoal-tools">
-        <label class="shoal-search">
+    <section v-else class="bp-band gr-board">
+      <div class="gr-tools">
+        <label class="gr-search">
           <Search :size="15" />
           <span class="visually-hidden">Search markets</span>
-          <input v-model="query" class="tide-input" type="search" placeholder="Search token or market" />
+          <input v-model="query" class="bp-input" type="search" placeholder="Search token or market" />
         </label>
-        <div class="tide-switch shoal-side" aria-label="Position type">
+        <div class="bp-switch gr-side" aria-label="Position type">
           <button v-for="option in ['All','Income','Upside']" :key="option" type="button" :aria-pressed="side === option" :class="{ 'is-on': side === option }" @click="side = option">{{ option }}</button>
         </div>
-        <button class="tide-btn tide-btn--quiet shoal-filter-toggle" type="button" :aria-expanded="showFilters" @click="showFilters = !showFilters"><SlidersHorizontal :size="15" /> Details</button>
+        <button class="bp-btn bp-btn--quiet gr-filter-toggle" type="button" :aria-expanded="showFilters" @click="showFilters = !showFilters"><SlidersHorizontal :size="15" /> Details</button>
       </div>
-      <p v-if="showFilters" class="tide-notice tide-notice--flag shoal-filter-details">All examples use a +5% cap, 30-day epoch and 25% model volatility.</p>
+      <p v-if="showFilters" class="bp-notice bp-notice--flag gr-filter-details">All examples use a +5% cap, 30-day epoch and 25% model volatility.</p>
 
-      <div class="shoal-deck">
-        <div class="shoal-main">
+      <div class="gr-deck">
+        <div class="gr-main">
           <MarketTable :query="query" :side="side" @reset="query = ''" @navigate="to => emit('navigate',to)" />
         </div>
-        <aside class="shoal-rail" aria-label="Market facts">
-          <dl class="shoal-facts">
+        <div class="gr-rail" role="complementary" aria-label="Market facts">
+          <dl class="gr-facts">
             <div><dt>Sheet</dt><dd>{{ pageTitle }}</dd><dd>{{ brand.network }} preview</dd></div>
             <div><dt>Cap default</dt><dd>+5%</dd><dd>30-day epoch</dd></div>
             <div><dt>Feed</dt><dd>Static</dd><dd>Not a live quote</dd></div>
             <div><dt>Unit</dt><dd>{{ brand.asset }}*</dd><dd>Proposed, unissued</dd></div>
           </dl>
-        </aside>
+        </div>
       </div>
     </section>
   </div>
@@ -119,7 +119,7 @@ const copy = computed(() => ({ Markets: 'Scan defined-cap series and compare the
 /* ---------------------------------------------------------------- opening */
 .shoal { display: grid; grid-template-columns: minmax(0, 1fr); }
 .shoal > * { min-width: 0; }
-.shoal-open {
+.gr-open {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -127,13 +127,13 @@ const copy = computed(() => ({ Markets: 'Scan defined-cap series and compare the
   flex-wrap: wrap;
   padding-block-end: clamp(22px, 3vw, 34px);
 }
-.shoal-open-copy { display: grid; gap: 10px; max-width: 46ch; }
-.shoal-display { font-size: clamp(34px, 5vw, 58px); margin-block-start: 4px; }
-.shoal-open-copy .tide-lead { margin-block-start: 0; }
-.shoal-back { flex: none; }
+.gr-open-copy { display: grid; gap: 10px; max-width: 46ch; }
+.gr-display { font-size: clamp(34px, 5vw, 58px); margin-block-start: 4px; }
+.gr-open-copy .bp-lead { margin-block-start: 0; }
+.gr-back { flex: none; }
 
 /* ----------------------------------------------------------------- detail */
-.shoal-detail-head {
+.gr-detail-head {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -141,136 +141,136 @@ const copy = computed(() => ({ Markets: 'Scan defined-cap series and compare the
   flex-wrap: wrap;
   margin-block-end: clamp(16px, 2vw, 24px);
 }
-.shoal-detail-grid {
+.gr-detail-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   gap: clamp(18px, 2.4vw, 30px);
   align-items: start;
 }
-.shoal-passport {
+.gr-passport {
   max-width: 520px;
   display: grid;
   gap: 16px;
   padding: clamp(16px, 2vw, 22px);
-  border: 1px solid var(--line);
-  border-radius: var(--radius-md);
-  background: linear-gradient(170deg, var(--surface), var(--surface-soft));
-  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--bp-line);
+  border-radius: var(--bp-r-md);
+  background: linear-gradient(170deg, var(--bp-paper), var(--bp-paper-3));
+  box-shadow: var(--bp-shadow-soft);
 }
-.shoal-spec-top { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
-.shoal-mark {
+.gr-spec-top { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.gr-mark {
   display: grid;
   place-items: center;
   flex: none;
   width: 46px;
   height: 46px;
   border-radius: 15px;
-  background: var(--accent-safe);
+  background: var(--bp-cobalt-safe);
   color: #fff;
-  font: 600 16px/1 var(--font-mono);
-  box-shadow: 0 10px 24px rgba(13, 113, 227, .28);
+  font: 600 16px/1 var(--bp-font-mono);
+  box-shadow: 0 10px 24px rgba(0, 0, 204, .28);
 }
-.shoal-spec-name { display: grid; gap: 2px; margin-inline-end: auto; }
-.shoal-spec-name b { font: 600 22px/1.1 var(--font-display); letter-spacing: -.02em; }
-.shoal-spec-name small { color: var(--muted); font: 500 10px/1.4 var(--font-mono); letter-spacing: .12em; text-transform: uppercase; }
-.shoal-spec-rows { display: grid; }
-.shoal-spec-rows > div {
+.gr-spec-name { display: grid; gap: 2px; margin-inline-end: auto; }
+.gr-spec-name b { font: 600 22px/1.1 var(--bp-font-display); letter-spacing: -.02em; }
+.gr-spec-name small { color: var(--bp-muted); font: 500 10px/1.4 var(--bp-font-mono); letter-spacing: .12em; text-transform: uppercase; }
+.gr-spec-rows { display: grid; }
+.gr-spec-rows > div {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   gap: 16px;
   padding-block: 11px;
-  border-block-end: 1px solid var(--line);
+  border-block-end: 1px solid var(--bp-line);
 }
-.shoal-spec-rows dt { color: var(--muted); font: 500 10px/1.5 var(--font-mono); letter-spacing: .1em; text-transform: uppercase; }
-.shoal-spec-rows dd { font: 600 13px/1.5 var(--font-mono); }
-.shoal-spec-rows dd.shoal-inc { color: var(--success); }
-.shoal-detail-figure { min-width: 0; }
+.gr-spec-rows dt { color: var(--bp-muted); font: 500 10px/1.5 var(--bp-font-mono); letter-spacing: .1em; text-transform: uppercase; }
+.gr-spec-rows dd { font: 600 13px/1.5 var(--bp-font-mono); }
+.gr-spec-rows dd.gr-inc { color: var(--bp-success); }
+.gr-detail-figure { min-width: 0; }
 
 /* ------------------------------------------------------------------- leaf */
-.shoal-leaf-sheet {
+.gr-leaf-sheet {
   display: grid;
   gap: 16px;
   justify-items: start;
   max-width: 720px;
   padding: clamp(20px, 3vw, 34px);
-  border: 1px solid var(--line);
-  border-radius: var(--radius-lg);
+  border: 1px solid var(--bp-line);
+  border-radius: var(--bp-r-lg);
   background:
-    radial-gradient(480px 240px at 100% 0%, rgba(41, 141, 255, .14), transparent 70%),
-    var(--surface);
-  box-shadow: var(--shadow);
+    radial-gradient(480px 240px at 100% 0%, rgba(0, 0, 255, .14), transparent 70%),
+    var(--bp-paper);
+  box-shadow: var(--bp-shadow);
 }
-.shoal-leaf-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; width: 100%; }
-.shoal-leaf-mark {
+.gr-leaf-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; width: 100%; }
+.gr-leaf-mark {
   display: grid;
   place-items: center;
   width: 48px;
   height: 48px;
   border-radius: 16px;
-  background: var(--surface-alt);
-  color: var(--accent-deep);
-  box-shadow: inset 0 0 0 1px var(--line);
+  background: var(--bp-paper-2);
+  color: var(--bp-cobalt-deep);
+  box-shadow: inset 0 0 0 1px var(--bp-line);
 }
-.shoal-leaf-copy { max-width: 60ch; color: var(--ink-soft); font: 400 14px/1.7 var(--font-body); }
+.gr-leaf-copy { max-width: 60ch; color: var(--bp-ink-2); font: 400 14px/1.7 var(--bp-font-body); }
 
 /* ------------------------------------------------------------------ board */
-.shoal-tools {
+.gr-tools {
   display: flex;
   align-items: center;
   gap: 12px;
   flex-wrap: wrap;
   margin-block-end: 16px;
 }
-.shoal-search {
+.gr-search {
   display: flex;
   align-items: center;
   gap: 9px;
   flex: 1 1 260px;
   max-width: 400px;
-  color: var(--muted);
+  color: var(--bp-muted);
 }
-.shoal-search .tide-input { min-height: 42px; font-family: var(--font-body); font-size: 13px; }
-.shoal-side { flex: none; }
-.shoal-filter-toggle { margin-inline-start: auto; }
-.shoal-filter-details { margin-block-end: 18px; }
+.gr-search .bp-input { min-height: 42px; font-family: var(--bp-font-body); font-size: 13px; }
+.gr-side { flex: none; }
+.gr-filter-toggle { margin-inline-start: auto; }
+.gr-filter-details { margin-block-end: 18px; }
 
-.shoal-deck {
+.gr-deck {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   gap: clamp(14px, 2vw, 20px);
   align-items: start;
 }
-.shoal-main { min-width: 0; }
-.shoal-rail {
+.gr-main { min-width: 0; }
+.gr-rail {
   order: -1;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-md);
-  background: var(--surface-soft);
+  border: 1px solid var(--bp-line);
+  border-radius: var(--bp-r-md);
+  background: var(--bp-paper-3);
   overflow: hidden;
 }
-.shoal-facts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
-.shoal-facts > div {
+.gr-facts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.gr-facts > div {
   display: grid;
   gap: 4px;
   padding: 14px 16px;
-  border-inline-end: 1px solid var(--line);
+  border-inline-end: 1px solid var(--bp-line);
 }
-.shoal-facts > div:last-child { border-inline-end: 0; }
-.shoal-facts dt { color: var(--muted); font: 600 9px/1.4 var(--font-mono); letter-spacing: .12em; text-transform: uppercase; }
-.shoal-facts dd { color: var(--ink); font: 600 15px/1.35 var(--font-display); letter-spacing: -.01em; }
-.shoal-facts dd + dd { color: var(--muted); font: 400 10px/1.5 var(--font-mono); }
+.gr-facts > div:last-child { border-inline-end: 0; }
+.gr-facts dt { color: var(--bp-muted); font: 600 9px/1.4 var(--bp-font-mono); letter-spacing: .12em; text-transform: uppercase; }
+.gr-facts dd { color: var(--bp-ink); font: 600 15px/1.35 var(--bp-font-display); letter-spacing: -.01em; }
+.gr-facts dd + dd { color: var(--bp-muted); font: 400 10px/1.5 var(--bp-font-mono); }
 
 /* -------------------------------------------------------------- responsive */
 @media (max-width: 1180px) {
-  .shoal-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .shoal-facts > div:nth-child(odd) { border-inline-end: 1px solid var(--line); }
-  .shoal-facts > div:nth-child(-n+2) { border-block-end: 1px solid var(--line); }
+  .gr-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .gr-facts > div:nth-child(odd) { border-inline-end: 1px solid var(--bp-line); }
+  .gr-facts > div:nth-child(-n+2) { border-block-end: 1px solid var(--bp-line); }
 }
 @media (max-width: 760px) {
-  .shoal-search { max-width: none; flex: 1 1 100%; }
-  .shoal-filter-toggle { margin-inline-start: 0; }
-  .shoal-facts { grid-template-columns: minmax(0, 1fr); }
-  .shoal-facts > div:nth-child(odd) { border-inline-end: 0; }
+  .gr-search { max-width: none; flex: 1 1 100%; }
+  .gr-filter-toggle { margin-inline-start: 0; }
+  .gr-facts { grid-template-columns: minmax(0, 1fr); }
+  .gr-facts > div:nth-child(odd) { border-inline-end: 0; }
 }
 </style>

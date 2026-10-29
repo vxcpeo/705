@@ -64,26 +64,26 @@ const briefing = [
 <template>
   <div class="reef">
     <!-- opening shoreline -->
-    <section class="tide-band tide-band--first reef-open">
-      <div class="reef-open-copy">
-        <p class="tide-kicker">Sheet {{ brand.asset }} / {{ brand.network }} / preview build</p>
-        <h1 class="tide-display" tabindex="-1">Read the chain.<br />Price the boundary.<br /><em>Keep the record.</em></h1>
+    <section class="bp-band bp-band--first co-open">
+      <div class="co-open-copy">
+        <p class="bp-kicker">Sheet {{ brand.asset }} / {{ brand.network }} / preview build</p>
+        <h1 class="bp-display" tabindex="-1">Read the chain.<br />Price the boundary.<br /><em>Keep the record.</em></h1>
       </div>
-      <div class="reef-open-side">
-        <p class="tide-lead">{{ brand.supportingLine }}</p>
-        <div class="reef-open-actions">
-          <a class="tide-btn tide-btn--primary" href="/app/markets" @click.prevent="emit('navigate', '/app/markets')">
+      <div class="co-open-side">
+        <p class="bp-lead">{{ brand.supportingLine }}</p>
+        <div class="co-open-actions">
+          <a class="bp-btn bp-btn--primary" href="/app/markets" @click.prevent="emit('navigate', '/app/markets')">
             Open the board <ArrowRight :size="15" />
           </a>
-          <button class="tide-btn tide-btn--ghost" type="button" @click="toBoundary">Price a boundary</button>
+          <button class="bp-btn bp-btn--ghost" type="button" @click="toBoundary">Price a boundary</button>
         </div>
-        <p class="tide-note">Sample quotes, a user-priced model and a browser-local journal. Nothing here is live and nothing is signed.</p>
+        <p class="bp-note">Sample quotes, a user-priced model and a browser-local journal. Nothing here is live and nothing is signed.</p>
       </div>
     </section>
 
     <!-- annotated gauge -->
-    <section class="tide-band reef-gauge-band">
-      <dl class="reef-gauge">
+    <section class="bp-band co-gauge-band">
+      <dl class="co-gauge">
         <div><dt>Pairs listed</dt><dd>04</dd></div>
         <div><dt>Cap default</dt><dd>+5%</dd></div>
         <div><dt>Epoch</dt><dd>30d</dd></div>
@@ -94,150 +94,150 @@ const briefing = [
     </section>
 
     <!-- board + sandbox quote -->
-    <section class="tide-band reef-board-band">
-      <div class="reef-board">
-        <div class="reef-board-main">
-          <div class="reef-head">
-            <h2 id="tbl-title" class="tide-h2">The board</h2>
-            <div class="reef-tools">
-              <div class="tide-switch" role="group" aria-label="Position type">
+    <section class="bp-band co-board-band">
+      <div class="co-board">
+        <div class="co-board-main">
+          <div class="co-head">
+            <h2 id="tbl-title" class="bp-h2">The board</h2>
+            <div class="co-tools">
+              <div class="bp-switch" role="group" aria-label="Position type">
                 <button v-for="option in ['All', 'Income', 'Upside']" :key="option" type="button"
                         :class="{ 'is-on': side === option }" :aria-pressed="side === option"
                         @click="side = option">{{ option }}</button>
               </div>
-              <label class="reef-search">
+              <label class="co-search">
                 <span class="visually-hidden">Filter the board</span>
-                <input v-model="query" type="search" class="tide-input" placeholder="Filter by symbol" />
+                <input v-model="query" type="search" class="bp-input" placeholder="Filter by symbol" />
               </label>
             </div>
           </div>
 
-          <div class="tide-table-wrap">
-            <table class="tide-table">
+          <div class="bp-table-wrap">
+            <table class="bp-table">
               <caption class="visually-hidden">Illustrative {{ brand.network }} pairs with modelled unit prices</caption>
               <thead>
                 <tr>
                   <th scope="col">Pair</th>
-                  <th scope="col" class="tide-num">Sample spot</th>
-                  <th scope="col" class="tide-num">Move</th>
-                  <th scope="col" class="tide-num" :class="{ 'tide-loud': side === 'Income' }">Income / unit</th>
-                  <th scope="col" class="tide-num" :class="{ 'tide-loud': side === 'Upside' }">Upside / unit</th>
+                  <th scope="col" class="bp-num">Sample spot</th>
+                  <th scope="col" class="bp-num">Move</th>
+                  <th scope="col" class="bp-num" :class="{ 'bp-loud': side === 'Income' }">Income / unit</th>
+                  <th scope="col" class="bp-num" :class="{ 'bp-loud': side === 'Upside' }">Upside / unit</th>
                   <th scope="col">Open</th>
                 </tr>
               </thead>
               <tbody>
                 <tr v-for="item in filtered" :key="item.symbol" :class="{ 'is-picked': item.symbol === selected }">
                   <th scope="row">
-                    <button class="reef-token" type="button" :aria-pressed="item.symbol === selected" @click="selected = item.symbol">
-                      <span class="reef-token-mark" :class="{ 'is-on': item.symbol === selected }" aria-hidden="true">{{ item.initials }}</span>
-                      <span class="reef-token-name"><b>{{ item.symbol }}</b><small>{{ item.name }}</small></span>
+                    <button class="co-token" type="button" :aria-pressed="item.symbol === selected" @click="selected = item.symbol">
+                      <span class="co-token-mark" :class="{ 'is-on': item.symbol === selected }" aria-hidden="true">{{ item.initials }}</span>
+                      <span class="co-token-name"><b>{{ item.symbol }}</b><small>{{ item.name }}</small></span>
                     </button>
                   </th>
-                  <td class="tide-num">{{ spot(item.spot) }}</td>
-                  <td class="tide-num" :class="item.change >= 0 ? 'is-up' : 'is-down'">{{ pct(item.change) }}</td>
-                  <td class="tide-num">{{ money(item.model.incomePrice) }}</td>
-                  <td class="tide-num">{{ money(item.model.upsidePrice) }}</td>
-                  <td><a class="reef-rowlink" :href="`/app/markets/${item.symbol}`"
+                  <td class="bp-num">{{ spot(item.spot) }}</td>
+                  <td class="bp-num" :class="item.change >= 0 ? 'is-up' : 'is-down'">{{ pct(item.change) }}</td>
+                  <td class="bp-num">{{ money(item.model.incomePrice) }}</td>
+                  <td class="bp-num">{{ money(item.model.upsidePrice) }}</td>
+                  <td><a class="co-rowlink" :href="`/app/markets/${item.symbol}`"
                          :aria-label="`Open the ${item.symbol} sheet`"
                          @click.prevent="emit('navigate', `/app/markets/${item.symbol}`)">Sheet</a></td>
                 </tr>
                 <tr v-if="!filtered.length">
-                  <td class="reef-empty" colspan="6">
+                  <td class="co-empty" colspan="6">
                     Nothing matches “{{ query }}”.
-                    <button class="reef-rowlink" type="button" @click="query = ''">Clear filter</button>
+                    <button class="co-rowlink" type="button" @click="query = ''">Clear filter</button>
                   </td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <p class="tide-note reef-foot-note">* {{ brand.asset }} is a proposed symbol. No token has been issued and no contract address exists.</p>
+          <p class="bp-note co-foot-note">* {{ brand.asset }} is a proposed symbol. No token has been issued and no contract address exists.</p>
         </div>
 
-        <aside class="reef-quote" aria-labelledby="quote-title">
-          <div class="reef-quote-head">
-            <h2 id="quote-title" class="tide-h2">Unit quote</h2>
-            <span class="tide-pill tide-pill--accent"><i aria-hidden="true"></i>Sandbox</span>
+        <section class="co-quote" aria-labelledby="quote-title">
+          <div class="co-quote-head">
+            <h2 id="quote-title" class="bp-h2">Unit quote</h2>
+            <span class="bp-pill bp-pill--bp-cobalt"><i aria-hidden="true"></i>Sandbox</span>
           </div>
-          <p class="reef-quote-line">Example arithmetic only. No live quote is read and no order is placed.</p>
-          <dl class="reef-readout">
+          <p class="co-quote-line">Example arithmetic only. No live quote is read and no order is placed.</p>
+          <dl class="co-readout">
             <div><dt>Sample spot</dt><dd>{{ spot(asset.spot) }}</dd></div>
             <div><dt>Cap price K</dt><dd>{{ money(model.strike) }}</dd></div>
             <div><dt>Model / unit</dt><dd>{{ money(unitPrice) }}</dd></div>
             <div><dt>Leg</dt><dd>{{ side }}</dd></div>
           </dl>
-          <div class="reef-quote-body">
-            <div class="tide-field">
+          <div class="co-quote-body">
+            <div class="bp-field">
               <label for="quote-asset">Pair</label>
-              <select id="quote-asset" v-model="selected" class="tide-input">
+              <select id="quote-asset" v-model="selected" class="bp-input">
                 <option v-for="item in assets" :key="item.symbol" :value="item.symbol">{{ item.symbol }} / {{ item.name }}</option>
               </select>
             </div>
 
-            <div class="tide-field">
-              <span class="tide-field-label">Leg</span>
-              <div class="tide-switch" role="group" aria-label="Position leg">
+            <div class="bp-field">
+              <span class="bp-field-label">Leg</span>
+              <div class="bp-switch" role="group" aria-label="Position leg">
                 <button v-for="option in ['Income', 'Upside']" :key="option" type="button"
                         :class="{ 'is-on': side === option }" :aria-pressed="side === option"
                         @click="side = option">{{ option }}</button>
               </div>
             </div>
 
-            <div class="tide-field">
+            <div class="bp-field">
               <label for="quote-units">Units</label>
-              <span class="reef-combo">
-                <input id="quote-units" v-model.number="units" class="tide-input" type="number" inputmode="decimal"
+              <span class="co-combo">
+                <input id="quote-units" v-model.number="units" class="bp-input" type="number" inputmode="decimal"
                        min="0.01" max="1000000" step="0.01" />
                 <b>{{ selected }}</b>
               </span>
             </div>
 
-            <div class="tide-field">
+            <div class="bp-field">
               <label for="quote-cap">Cap K <output>+{{ cap }}%</output></label>
-              <input id="quote-cap" v-model.number="cap" class="tide-range" type="range" min="0" max="10" step="1" />
-              <span class="tide-scale"><span>0%</span><span>10%</span></span>
+              <input id="quote-cap" v-model.number="cap" class="bp-range" type="range" min="0" max="10" step="1" />
+              <span class="bp-scale"><span>0%</span><span>10%</span></span>
             </div>
 
-            <button class="tide-btn tide-btn--primary tide-btn--wide" type="button" :disabled="!amount" @click="toBoundary">
+            <button class="bp-btn bp-btn--primary bp-btn--wide" type="button" :disabled="!amount" @click="toBoundary">
               See the split <ArrowRight :size="15" />
             </button>
           </div>
-          <p class="reef-total"><span>Modelled value</span><strong>{{ money(unitPrice * amount) }}</strong></p>
-        </aside>
+          <p class="co-total"><span>Modelled value</span><strong>{{ money(unitPrice * amount) }}</strong></p>
+        </section>
       </div>
     </section>
 
     <!-- settlement split -->
-    <section id="cap" class="tide-band reef-split-band">
-      <div class="reef-head">
-        <h2 id="split-title" class="tide-h2">Settlement split</h2>
-        <p class="tide-meta">{{ selected }} / cap +{{ cap }}% / settlement at the sample spot</p>
+    <section id="cap" class="bp-band co-split-band">
+      <div class="co-head">
+        <h2 id="split-title" class="bp-h2">Settlement split</h2>
+        <p class="bp-meta">{{ selected }} / cap +{{ cap }}% / settlement at the sample spot</p>
       </div>
-      <div class="reef-split">
-        <figure class="reef-figure">
+      <div class="co-split">
+        <figure class="co-figure">
           <svg viewBox="0 0 640 300" role="img" :aria-label="`${selected} settlement partition at a ${cap} percent cap`">
             <title>{{ selected }} settlement partition</title>
             <desc>Value below the cap is an income leg priced {{ money(model.incomePrice) }} per unit; value above the cap is an upside leg priced {{ money(model.upsidePrice) }} per unit.</desc>
-            <g class="reef-grid-lines">
+            <g class="co-grid-lines">
               <line v-for="t in 5" :key="`g${t}`" :x1="60" :x2="620" :y1="40 + t * 44" :y2="40 + t * 44" />
             </g>
-            <rect x="60" :y="40" :width="496 * model.incomeShare" height="220" class="reef-band-a" />
-            <rect :x="60 + 496 * model.incomeShare" :y="40" :width="496 * model.upsideShare" height="220" class="reef-band-b" />
-            <line x1="60" y1="40" x2="60" y2="260" class="reef-axis" />
-            <line x1="60" y1="260" x2="620" y2="260" class="reef-axis" />
-            <line :x1="60 + 496 * model.incomeShare" y1="40" :x2="60 + 496 * model.incomeShare" y2="260" class="reef-cap" />
-            <text :x="60 + 496 * model.incomeShare + 8" y="58" class="reef-cap-label">CAP K {{ money(model.strike) }}</text>
-            <text x="72" y="98" class="reef-band-label">INCOME</text>
-            <text :x="620 - 8" y="98" class="reef-band-label is-end" text-anchor="end">UPSIDE</text>
-            <text x="72" y="134" class="reef-value">{{ money(model.incomePrice) }} / unit</text>
-            <text :x="620 - 8" y="134" class="reef-value is-end" text-anchor="end">{{ money(model.upsidePrice) }} / unit</text>
-            <line x1="60" y1="292" x2="620" y2="292" class="reef-axis" />
-            <text x="60" y="288" class="reef-tick">0</text>
-            <text :x="60 + 496 * model.incomeShare" y="288" class="reef-tick" text-anchor="middle">K</text>
-            <text x="620" y="288" class="reef-tick" text-anchor="end">settlement</text>
+            <rect x="60" :y="40" :width="496 * model.incomeShare" height="220" class="co-band-a" />
+            <rect :x="60 + 496 * model.incomeShare" :y="40" :width="496 * model.upsideShare" height="220" class="co-band-b" />
+            <line x1="60" y1="40" x2="60" y2="260" class="co-axis" />
+            <line x1="60" y1="260" x2="620" y2="260" class="co-axis" />
+            <line :x1="60 + 496 * model.incomeShare" y1="40" :x2="60 + 496 * model.incomeShare" y2="260" class="co-cap" />
+            <text :x="60 + 496 * model.incomeShare + 8" y="58" class="co-cap-label">CAP K {{ money(model.strike) }}</text>
+            <text x="72" y="98" class="co-band-label">INCOME</text>
+            <text :x="620 - 8" y="98" class="co-band-label is-end" text-anchor="end">UPSIDE</text>
+            <text x="72" y="134" class="co-value">{{ money(model.incomePrice) }} / unit</text>
+            <text :x="620 - 8" y="134" class="co-value is-end" text-anchor="end">{{ money(model.upsidePrice) }} / unit</text>
+            <line x1="60" y1="292" x2="620" y2="292" class="co-axis" />
+            <text x="60" y="288" class="co-tick">0</text>
+            <text :x="60 + 496 * model.incomeShare" y="288" class="co-tick" text-anchor="middle">K</text>
+            <text x="620" y="288" class="co-tick" text-anchor="end">settlement</text>
           </svg>
           <figcaption>{{ model.incomeShare >= model.upsideShare ? 'Most of the sample value sits below the cap.' : 'Most of the sample value sits above the cap.' }} Example arithmetic.</figcaption>
         </figure>
-        <dl class="reef-split-readout">
+        <dl class="co-split-readout">
           <div><dt>Income share</dt><dd>{{ (model.incomeShare * 100).toFixed(1) }}%</dd></div>
           <div><dt>Upside share</dt><dd>{{ (model.upsideShare * 100).toFixed(1) }}%</dd></div>
           <div><dt>Income at settlement</dt><dd>{{ money(model.incomeSettlement) }}</dd></div>
@@ -251,12 +251,12 @@ const briefing = [
     </section>
 
     <!-- sample tape -->
-    <section class="tide-band reef-tape-band">
-      <div class="reef-head">
-        <h2 id="tape-title" class="tide-h2">Sample tape</h2>
-        <p class="tide-meta">Not a feed</p>
+    <section class="bp-band co-tape-band">
+      <div class="co-head">
+        <h2 id="tape-title" class="bp-h2">Sample tape</h2>
+        <p class="bp-meta">Not a feed</p>
       </div>
-      <ul class="reef-tape">
+      <ul class="co-tape">
         <li v-for="item in tape" :key="item.symbol">
           <button type="button" :aria-pressed="item.symbol === selected"
                   :class="{ 'is-on': item.symbol === selected }" @click="selected = item.symbol">
@@ -270,12 +270,12 @@ const briefing = [
     </section>
 
     <!-- briefing -->
-    <section class="tide-band reef-brief-band">
-      <div class="reef-head">
-        <h2 id="brief-title" class="tide-h2">Briefing</h2>
-        <p class="tide-meta">Four leaves</p>
+    <section class="bp-band co-brief-band">
+      <div class="co-head">
+        <h2 id="brief-title" class="bp-h2">Briefing</h2>
+        <p class="bp-meta">Four leaves</p>
       </div>
-      <ol class="reef-brief">
+      <ol class="co-brief">
         <li v-for="[num, title, body, to] in briefing" :key="num">
           <a :href="to" @click.prevent="to.startsWith('#') ? toBoundary() : emit('navigate', to)">
             <b>{{ num }}</b>
@@ -290,86 +290,86 @@ const briefing = [
     </section>
 
     <!-- limits proof band -->
-    <section class="tide-band reef-limits-band">
-      <div class="reef-limits">
-        <div class="reef-limits-copy">
-          <h2 id="disc-title" class="tide-h2">Limits of this preview</h2>
+    <section class="bp-band co-limits-band">
+      <div class="co-limits">
+        <div class="co-limits-copy">
+          <h2 id="disc-title" class="bp-h2">Limits of this preview</h2>
         </div>
-        <ul class="reef-limits-list">
+        <ul class="co-limits-list">
           <li>Quotes are illustrative samples, not a market feed.</li>
           <li>The payoff model uses values you enter.</li>
           <li>Journal records stay in this browser's storage.</li>
           <li>No custody, no signing, no trade execution.</li>
           <li>No contract address is published or implied.</li>
         </ul>
-        <button class="tide-btn tide-btn--primary" type="button" @click="emit('navigate', '/risk')">Read the limits</button>
+        <button class="bp-btn bp-btn--primary" type="button" @click="emit('navigate', '/risk')">Read the limits</button>
       </div>
     </section>
   </div>
 </template>
 
 <style scoped>
-/* ---------------------------------------------------------------- opening */
-.reef { display: grid; grid-template-columns: minmax(0, 1fr); }
-.reef > * { min-width: 0; }
-.reef-open {
-  display: grid;
-  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
-  gap: clamp(22px, 3.4vw, 48px);
-  align-items: end;
-  padding-block-end: clamp(26px, 3.6vw, 46px);
-}
-.reef-open-copy { min-width: 0; }
-.reef-open-side { display: grid; gap: 16px; padding-block-end: 4px; }
-.reef-open-side .tide-lead { margin-block-start: 0; }
-.reef-open-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+/* Cobalt Blueprint - home stage. Ruled ledger sheets, no ambient gradients. */
+.co-page { display: grid; min-width: 0; }
+.co-page > * { min-width: 0; }
 
-/* ------------------------------------------------------------------ gauge */
-.reef-gauge-band { padding-block: clamp(22px, 3vw, 34px); }
-.reef-gauge {
+/* ------------------------------------------------------------------ opening */
+.co-open {
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  border-block: 1px solid var(--line);
+  grid-template-columns: minmax(0, 7fr) minmax(0, 4fr);
+  gap: clamp(20px, 3vw, 44px);
+  align-items: end;
+  padding-block-end: clamp(24px, 3vw, 40px);
+  border-block-end: 1px solid var(--bp-line-2);
 }
-.reef-gauge > div {
+.co-open-copy { display: grid; gap: 14px; align-content: start; min-width: 0; }
+.co-open-copy .bp-display { font-size: clamp(40px, 5.2vw, 74px); }
+.co-open-side { display: grid; gap: 16px; padding-block-end: 6px; }
+.co-open-side .bp-lead { margin-block-start: 0; }
+.co-open-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+
+/* ------------------------------------------------------------------- gauge */
+.co-gauge-band { padding-block: clamp(18px, 2.2vw, 26px); }
+.co-gauge { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); }
+.co-gauge > div {
   display: grid;
   gap: 6px;
-  padding: 14px 16px;
-  border-inline-start: 1px solid var(--line);
+  padding: 4px 14px;
+  border-inline-start: 1px solid var(--bp-line);
 }
-.reef-gauge > div:first-child { border-inline-start: 0; padding-inline-start: 0; }
-.reef-gauge dt {
-  color: var(--muted);
-  font: 600 9px/1.4 var(--font-mono);
-  letter-spacing: .12em;
+.co-gauge > div:first-child { border-inline-start: 0; padding-inline-start: 0; }
+.co-gauge dt {
+  color: var(--bp-muted);
+  font: 500 9px/1.4 var(--bp-font-mono);
+  letter-spacing: .14em;
   text-transform: uppercase;
 }
-.reef-gauge dd {
-  color: var(--ink);
-  font: 600 clamp(17px, 1.8vw, 22px)/1 var(--font-display);
+.co-gauge dd {
+  color: var(--bp-ink);
+  font: 600 clamp(18px, 1.7vw, 23px)/1 var(--bp-font-display);
   letter-spacing: -.02em;
+  font-variant-numeric: tabular-nums;
 }
 
-/* ------------------------------------------------------------------ board */
-.reef-board {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: clamp(18px, 2.6vw, 32px);
-  align-items: start;
-}
-.reef-board-main { min-width: 0; display: grid; gap: 14px; }
-.reef-head {
+/* ------------------------------------------------------------------- board */
+.co-board-band { padding-block-start: clamp(24px, 3vw, 38px); }
+.co-board { display: grid; gap: clamp(16px, 2vw, 24px); min-width: 0; }
+.co-board > * { min-width: 0; }
+.co-head {
   display: flex;
   align-items: end;
   justify-content: space-between;
   gap: 16px;
   flex-wrap: wrap;
-  margin-block-end: 14px;
+  margin-block-end: 12px;
+  padding-block-end: 10px;
+  border-block-end: 1px solid var(--bp-line-2);
 }
-.reef-tools { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
-.reef-search { display: block; min-width: 200px; }
-.reef-search .tide-input { min-height: 38px; padding-block: 8px; font-family: var(--font-body); font-size: 13px; }
-.reef-token {
+.co-head .bp-h2 { font-size: clamp(22px, 2.4vw, 30px); }
+.co-tools { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.co-search { display: block; min-width: 200px; }
+.co-search .bp-input { min-height: 34px; padding-block: 6px; font-size: 13px; }
+.co-token {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -378,238 +378,229 @@ const briefing = [
   background: none;
   text-align: start;
 }
-.reef-token-mark {
+.co-token-mark {
   display: grid;
   place-items: center;
-  width: 32px;
-  height: 32px;
-  border-radius: 11px;
-  background: var(--surface-alt);
-  color: var(--ink-soft);
-  font: 600 12px/1 var(--font-mono);
-  box-shadow: inset 0 0 0 1px var(--line);
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  background: var(--bp-paper-2);
+  color: var(--bp-ink-2);
+  font: 600 11px/1 var(--bp-font-mono);
+  box-shadow: inset 0 0 0 1px var(--bp-line-2);
 }
-.reef-token-mark.is-on {
-  background: var(--accent-safe);
-  color: #fff;
-  box-shadow: 0 6px 16px rgba(13, 113, 227, .3);
-}
-.reef-token-name { display: grid; gap: 1px; }
-.reef-token-name b { font: 600 12px/1.3 var(--font-mono); letter-spacing: .03em; }
-.reef-token-name small { color: var(--muted); font: 400 11px/1.3 var(--font-body); }
-.tide-table tbody tr.is-picked { background: rgba(41, 141, 255, .07); }
-.is-up { color: var(--success); }
-.is-down { color: var(--danger); }
-.reef-rowlink {
+.co-token-mark.is-on { background: var(--bp-cobalt); color: #fff; box-shadow: inset 0 0 0 1px var(--bp-cobalt); }
+.co-token-name { display: grid; gap: 1px; }
+.co-token-name b { font: 600 12px/1.3 var(--bp-font-mono); letter-spacing: .03em; }
+.co-token-name small { color: var(--bp-muted); font: 400 11px/1.3 var(--bp-font-body); }
+.bp-table tbody tr.is-picked { background: rgba(117, 117, 255, .1); }
+.is-up { color: var(--bp-success); }
+.is-down { color: var(--bp-danger); }
+.co-rowlink {
   border: 0;
-  border-block-end: 1px solid rgba(13, 113, 227, .35);
+  border-block-end: 1px solid rgba(0, 0, 214, .4);
   padding: 0 0 2px;
   background: none;
-  color: var(--accent-deep);
-  font: 600 11px/1.4 var(--font-mono);
-  letter-spacing: .06em;
+  color: var(--bp-cobalt-safe);
+  font: 600 10px/1.4 var(--bp-font-mono);
+  letter-spacing: .08em;
   text-decoration: none;
   text-transform: uppercase;
 }
-.reef-rowlink:hover { border-block-end-color: var(--accent-safe); }
-.reef-empty { padding-block: 22px; color: var(--muted); font: 400 13px/1.7 var(--font-body); }
-.reef-empty .reef-rowlink { margin-inline-start: 10px; }
-.reef-foot-note { padding-block-start: 4px; }
+.co-rowlink:hover { border-block-end-color: var(--bp-cobalt); }
+.co-empty { padding-block: 22px; color: var(--bp-muted); font: 400 13px/1.7 var(--bp-font-body); }
+.co-empty .co-rowlink { margin-inline-start: 10px; }
+.co-foot-note { padding-block-start: 2px; }
 
-/* ------------------------------------------------------------------ quote */
-.reef-quote {
+/* ------------------------------------------------------------------- quote */
+.co-quote {
   display: grid;
   grid-template-columns: minmax(0, 4fr) minmax(0, 6fr);
-  gap: 14px clamp(18px, 2.6vw, 30px);
+  gap: 14px clamp(18px, 2.4vw, 30px);
   align-items: start;
   padding: clamp(18px, 2vw, 24px);
-  border: 1px solid var(--line);
-  border-radius: var(--radius-md);
-  background:
-    radial-gradient(420px 220px at 100% 0%, rgba(41, 141, 255, .12), transparent 70%),
-    var(--surface);
-  box-shadow: var(--shadow);
+  border: 1px solid var(--bp-line-2);
+  border-block-start: 3px solid var(--bp-cobalt);
+  border-radius: 0;
+  background: var(--bp-paper);
 }
-.reef-quote-head { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
-.reef-quote-line { grid-column: 1 / -1; color: var(--muted); font: 400 12px/1.7 var(--font-body); }
-.reef-readout { display: grid; border-block-start: 1px solid var(--line); }
-.reef-readout > div {
+.co-quote-head { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.co-quote-line { grid-column: 1 / -1; color: var(--bp-muted); font: 400 12px/1.7 var(--bp-font-body); }
+.co-readout { display: grid; border-block-start: 1px solid var(--bp-line); }
+.co-readout > div {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   gap: 14px;
   padding-block: 9px;
-  border-block-end: 1px solid var(--line);
+  border-block-end: 1px solid var(--bp-line);
 }
-.reef-readout dt { color: var(--muted); font: 500 10px/1.5 var(--font-mono); letter-spacing: .08em; text-transform: uppercase; }
-.reef-readout dd { color: var(--ink); font: 600 13px/1.5 var(--font-mono); }
-.reef-quote-body {
+.co-readout dt { color: var(--bp-muted); font: 500 10px/1.5 var(--bp-font-mono); letter-spacing: .08em; text-transform: uppercase; }
+.co-readout dd { color: var(--bp-ink); font: 600 13px/1.5 var(--bp-font-mono); font-variant-numeric: tabular-nums; }
+.co-quote-body {
   grid-column: 2;
   grid-row: 3 / span 2;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
 }
-.reef-quote-body > .tide-btn { grid-column: 1 / -1; }
-.reef-combo {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  align-items: center;
-  gap: 10px;
-}
-.reef-combo b { color: var(--muted); font: 600 11px/1 var(--font-mono); letter-spacing: .08em; }
-.reef-total {
+.co-quote-body > .bp-btn { grid-column: 1 / -1; }
+.co-combo { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 10px; }
+.co-combo b { color: var(--bp-muted); font: 600 11px/1 var(--bp-font-mono); letter-spacing: .08em; }
+.co-total {
   grid-column: 1;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   gap: 14px;
   padding-block-start: 12px;
-  border-block-start: 1px solid var(--line-strong);
+  border-block-start: 2px solid var(--bp-ink);
 }
-.reef-total span { color: var(--muted); font: 500 10px/1.4 var(--font-mono); letter-spacing: .12em; text-transform: uppercase; }
-.reef-total strong { color: var(--ink); font: 600 24px/1 var(--font-display); letter-spacing: -.03em; }
+.co-total span { color: var(--bp-muted); font: 500 10px/1.4 var(--bp-font-mono); letter-spacing: .12em; text-transform: uppercase; }
+.co-total strong { color: var(--bp-ink); font: 600 24px/1 var(--bp-font-display); letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
 
-/* ------------------------------------------------------------------ split */
-.reef-split-band { padding-block-start: clamp(26px, 3.6vw, 44px); }
-.reef-split {
+/* ------------------------------------------------------------------- split */
+.co-split-band { padding-block-start: clamp(24px, 3vw, 38px); }
+.co-split > * { min-width: 0; }
+.co-split {
   display: grid;
   grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
-  gap: clamp(18px, 2.6vw, 34px);
-  align-items: center;
+  gap: clamp(18px, 2.4vw, 32px);
+  align-items: start;
 }
-.reef-figure {
+.co-figure {
   display: grid;
   gap: 12px;
-  padding: clamp(14px, 2vw, 22px);
-  border: 1px solid var(--line);
-  border-radius: var(--radius-md);
-  background: linear-gradient(180deg, var(--surface), var(--surface-soft));
+  padding: clamp(14px, 1.8vw, 20px);
+  border: 1px solid var(--bp-line-2);
+  border-radius: 0;
+  background:
+    linear-gradient(90deg, rgba(0, 0, 255, .04) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(0, 0, 255, .04) 1px, transparent 1px),
+    var(--bp-paper);
+  background-size: 32px 32px, 32px 32px, auto;
 }
-.reef-figure figcaption { color: var(--muted); font: 400 11px/1.7 var(--font-mono); }
-.reef-grid-lines line { stroke: var(--line); stroke-width: 1; }
-.reef-band-a { fill: rgba(41, 141, 255, .16); }
-.reef-band-b { fill: rgba(41, 141, 255, .42); }
-.reef-axis { stroke: var(--line-strong); stroke-width: 1.5; }
-.reef-cap { stroke: var(--accent-safe); stroke-width: 2.5; stroke-dasharray: 5 5; }
-.reef-cap-label { fill: var(--accent-deep); font: 600 11px/1 var(--font-mono); }
-.reef-band-label { fill: var(--ink); font: 600 12px/1 var(--font-mono); letter-spacing: .14em; }
-.reef-value { fill: var(--ink-soft); font: 500 13px/1 var(--font-mono); }
-.reef-tick { fill: var(--muted); font: 400 10px/1 var(--font-mono); }
-.reef-split-readout { display: grid; border-block-start: 1px solid var(--line); }
-.reef-split-readout > div {
+.co-figure figcaption { color: var(--bp-muted); font: 400 11px/1.7 var(--bp-font-mono); }
+.co-grid-lines line { stroke: var(--bp-line); stroke-width: 1; }
+.co-band-a { fill: rgba(0, 0, 255, .12); }
+.co-band-b { fill: rgba(0, 0, 255, .34); }
+.co-axis { stroke: var(--bp-line-2); stroke-width: 1.5; }
+.co-cap { stroke: var(--bp-cobalt); stroke-width: 2.5; stroke-dasharray: 5 5; }
+.co-cap-label { fill: var(--bp-cobalt-safe); font: 600 11px/1 var(--bp-font-mono); }
+.co-band-label { fill: var(--bp-ink); font: 600 12px/1 var(--bp-font-mono); letter-spacing: .14em; }
+.co-value { fill: var(--bp-ink-2); font: 500 13px/1 var(--bp-font-mono); }
+.co-tick { fill: var(--bp-muted); font: 400 10px/1 var(--bp-font-mono); }
+.co-split-readout { display: grid; border-block-start: 2px solid var(--bp-ink); }
+.co-split-readout > div {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   gap: 14px;
-  padding-block: 9px;
-  border-block-end: 1px solid var(--line);
+  padding-block: 8px;
+  border-block-end: 1px solid var(--bp-line);
 }
-.reef-split-readout dt { color: var(--muted); font: 500 10px/1.5 var(--font-mono); letter-spacing: .08em; text-transform: uppercase; }
-.reef-split-readout dd { color: var(--ink); font: 600 14px/1.5 var(--font-mono); font-variant-numeric: tabular-nums; }
+.co-split-readout dt { color: var(--bp-muted); font: 500 10px/1.5 var(--bp-font-mono); letter-spacing: .08em; text-transform: uppercase; }
+.co-split-readout dd { color: var(--bp-ink); font: 600 14px/1.5 var(--bp-font-mono); font-variant-numeric: tabular-nums; }
 
-/* ------------------------------------------------------------------- tape */
-.reef-tape { display: flex; gap: 10px; overflow-x: auto; padding-block-end: 4px; scrollbar-width: thin; }
-.reef-tape li { flex: 0 0 auto; }
-.reef-tape button {
+/* -------------------------------------------------------------------- tape */
+.co-tape { display: flex; gap: 8px; overflow-x: auto; padding-block-end: 4px; scrollbar-width: thin; }
+.co-tape li { flex: 0 0 auto; }
+.co-tape button {
   display: grid;
   grid-template-columns: auto minmax(64px, auto) auto;
   align-items: baseline;
-  gap: 4px 12px;
-  min-width: 178px;
-  padding: 12px 16px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-sm);
-  background: var(--surface);
+  gap: 3px 12px;
+  min-width: 172px;
+  padding: 11px 14px;
+  border: 1px solid var(--bp-line-2);
+  border-radius: 3px;
+  background: var(--bp-paper);
   text-align: start;
-  transition: border-color var(--motion-duration) var(--motion-ease), background-color var(--motion-duration) var(--motion-ease);
+  transition: border-color var(--bp-motion-duration) var(--bp-motion-ease), background-color var(--bp-motion-duration) var(--bp-motion-ease);
 }
-.reef-tape button:hover { border-color: var(--accent-2); }
-.reef-tape button.is-on { border-color: var(--accent-safe); background: rgba(41, 141, 255, .08); }
-.reef-tape b { color: var(--ink); font: 600 13px/1.3 var(--font-mono); letter-spacing: .05em; }
-.reef-tape em { color: var(--ink-soft); font: 500 13px/1.3 var(--font-mono); font-style: normal; text-align: end; }
-.reef-tape i { font: 500 11px/1.3 var(--font-mono); font-style: normal; text-align: end; }
-.reef-tape small { grid-column: 1 / -1; color: var(--muted); font: 400 10px/1.4 var(--font-mono); }
+.co-tape button:hover { border-color: var(--bp-cobalt); }
+.co-tape button.is-on { border-color: var(--bp-cobalt); background: rgba(117, 117, 255, .1); }
+.co-tape b { color: var(--bp-ink); font: 600 12px/1.3 var(--bp-font-mono); letter-spacing: .05em; }
+.co-tape em { color: var(--bp-ink-2); font: 500 12px/1.3 var(--bp-font-mono); font-style: normal; text-align: end; }
+.co-tape i { font: 500 11px/1.3 var(--bp-font-mono); font-style: normal; text-align: end; }
+.co-tape small { grid-column: 1 / -1; color: var(--bp-muted); font: 400 10px/1.4 var(--bp-font-mono); }
 
 /* ---------------------------------------------------------------- briefing */
-.reef-brief { display: grid; border-block-start: 1px solid var(--line); }
-.reef-brief li { border-block-end: 1px solid var(--line); }
-.reef-brief a {
+.co-brief { display: grid; border-block-start: 1px solid var(--bp-line-2); }
+.co-brief li { border-block-end: 1px solid var(--bp-line); }
+.co-brief a {
   display: grid;
-  grid-template-columns: 48px minmax(0, 1fr) auto;
+  grid-template-columns: 54px minmax(0, 1fr) auto;
   align-items: start;
   gap: 16px;
-  padding: 16px 4px;
+  padding: 16px 6px;
   color: inherit;
   text-decoration: none;
-  transition: background-color var(--motion-duration) var(--motion-ease);
+  transition: background-color var(--bp-motion-duration) var(--bp-motion-ease);
 }
-.reef-brief a:hover { background: rgba(41, 141, 255, .05); }
-.reef-brief b { color: var(--accent-safe); font: 600 12px/1.6 var(--font-mono); letter-spacing: .1em; }
-.reef-brief span { display: grid; gap: 3px; }
-.reef-brief strong { font: 600 17px/1.35 var(--font-display); letter-spacing: -.02em; }
-.reef-brief em { color: var(--muted); font: 400 13px/1.65 var(--font-body); font-style: normal; }
-.reef-brief svg { color: var(--accent-safe); margin-block-start: 3px; }
+.co-brief a:hover { background: rgba(117, 117, 255, .08); }
+.co-brief b { color: var(--bp-cobalt-safe); font: 500 12px/1.6 var(--bp-font-mono); letter-spacing: .1em; }
+.co-brief span { display: grid; gap: 3px; }
+.co-brief strong { font: 600 17px/1.35 var(--bp-font-display); letter-spacing: -.02em; }
+.co-brief em { color: var(--bp-muted); font: 400 13px/1.65 var(--bp-font-body); font-style: normal; }
+.co-brief svg { color: var(--bp-cobalt-safe); margin-block-start: 3px; }
 
 /* ----------------------------------------------------------------- limits */
-.reef-limits-band { padding-block-end: clamp(30px, 4vw, 52px); }
-.reef-limits {
+.co-limits-band { padding-block-end: clamp(24px, 3vw, 40px); }
+.co-limits {
   display: grid;
   grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
-  gap: clamp(18px, 2.6vw, 34px);
+  gap: clamp(18px, 2.4vw, 32px);
   align-items: start;
-  padding: clamp(20px, 2.6vw, 30px);
-  border: 1px solid var(--line);
-  border-radius: var(--radius-lg);
-  background:
-    radial-gradient(560px 260px at 100% 0%, rgba(41, 141, 255, .13), transparent 70%),
-    var(--surface-soft);
+  padding: clamp(20px, 2.4vw, 30px);
+  border: 1px solid var(--bp-line-2);
+  border-inline-start: 3px solid var(--bp-cobalt);
+  border-radius: 0;
+  background: var(--bp-paper);
 }
-.reef-limits-copy { display: grid; gap: 8px; }
-.reef-limits-list { display: grid; gap: 10px; }
-.reef-limits-list li {
+.co-limits-copy { display: grid; gap: 8px; }
+.co-limits-list { display: grid; gap: 9px; }
+.co-limits-list li {
   position: relative;
   padding-inline-start: 20px;
-  color: var(--ink-soft);
-  font: 400 13px/1.6 var(--font-body);
+  color: var(--bp-ink-2);
+  font: 400 13px/1.6 var(--bp-font-body);
 }
-.reef-limits-list li::before {
+.co-limits-list li::before {
   content: "";
   position: absolute;
   inset-inline-start: 0;
-  inset-block-start: .55em;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  border: 2px solid var(--accent);
+  inset-block-start: .58em;
+  width: 7px;
+  height: 7px;
+  border: 1px solid var(--bp-cobalt);
+  background: var(--bp-paper);
 }
-.reef-limits .tide-btn { grid-column: 1 / -1; justify-self: start; }
+.co-limits .bp-btn { grid-column: 1 / -1; justify-self: start; }
 
-/* ------------------------------------------------------------ responsive */
+/* ------------------------------------------------------------- responsive */
 @media (max-width: 1180px) {
-  .reef-quote { grid-template-columns: minmax(0, 1fr); }
-  .reef-quote-body { grid-column: 1; grid-row: auto; }
-  .reef-gauge { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .reef-gauge > div:nth-child(4) { border-inline-start: 0; padding-inline-start: 0; }
-  .reef-gauge > div:nth-child(-n+3) { border-block-end: 1px solid var(--line); }
+  .co-quote { grid-template-columns: minmax(0, 1fr); }
+  .co-quote-body { grid-column: 1; grid-row: auto; }
+  .co-gauge { grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: 14px; }
+  .co-gauge > div:nth-child(4) { border-inline-start: 0; padding-inline-start: 0; }
 }
 @media (max-width: 900px) {
-  .reef-open { grid-template-columns: minmax(0, 1fr); align-items: start; }
-  .reef-split { grid-template-columns: minmax(0, 1fr); }
-  .reef-limits { grid-template-columns: minmax(0, 1fr); }
-  .reef-limits .tide-btn { justify-self: stretch; }
+  .co-open { grid-template-columns: minmax(0, 1fr); align-items: start; }
+  .co-split > * { min-width: 0; }
+.co-split { grid-template-columns: minmax(0, 1fr); }
+  .co-limits { grid-template-columns: minmax(0, 1fr); }
+  .co-limits .bp-btn { justify-self: stretch; }
 }
 @media (max-width: 620px) {
-  .reef-gauge { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .reef-gauge > div:nth-child(4) { border-inline-start: 1px solid var(--line); padding-inline-start: 16px; }
-  .reef-gauge > div:nth-child(odd) { border-inline-start: 0; padding-inline-start: 0; }
-  .reef-gauge > div:nth-child(even) { border-block-end: 1px solid var(--line); }
-  .reef-gauge > div:nth-child(-n+4) { border-block-end: 1px solid var(--line); }
-  .reef-brief a { grid-template-columns: 34px minmax(0, 1fr); }
-  .reef-brief svg { display: none; }
-  .reef-search { width: 100%; }
-  .reef-tools { width: 100%; }
-  .reef-tools .tide-switch { flex: 1 1 auto; }
-  .reef-tools .tide-switch button { flex: 1 1 auto; }
+  .co-gauge { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .co-gauge > div:nth-child(3) { border-inline-start: 0; padding-inline-start: 0; }
+  .co-gauge > div:nth-child(even) { border-inline-start: 0; }
+  .co-brief a { grid-template-columns: 34px minmax(0, 1fr); }
+  .co-brief svg { display: none; }
+  .co-search { width: 100%; }
+  .co-tools { width: 100%; }
+  .co-tools .bp-switch { flex: 1 1 auto; }
+  .co-tools .bp-switch button { flex: 1 1 auto; }
 }
 </style>

@@ -62,3 +62,35 @@
   VITE v6.4.3  ready in 840 ms
 
   ➜  Local:   http://127.0.0.1:53739/
+
+> tabuline-website@1.0.0 dev
+> vite --host 127.0.0.1 --port 50406 --host 127.0.0.1
+
+
+  VITE v6.4.3  ready in 2679 ms
+
+  ➜  Local:   http://127.0.0.1:50406/
+
+> tabuline-website@1.0.0 dev
+> vite --host 127.0.0.1 --port 50532 --host 127.0.0.1
+
+
+  VITE v6.4.3  ready in 676 ms
+
+  ➜  Local:   http://127.0.0.1:50532/
+
+> tabuline-website@1.0.0 dev
+> vite --host 127.0.0.1 --port 57364 --host 127.0.0.1
+
+
+  VITE v6.4.3  ready in 2664 ms
+
+  ➜  Local:   http://127.0.0.1:57364/
+
+> tabuline-website@1.0.0 dev
+> vite --host 127.0.0.1 --port 57953 --host 127.0.0.1
+
+
+  VITE v6.4.3  ready in 641 ms
+
+  ➜  Local:   http://127.0.0.1:57953/

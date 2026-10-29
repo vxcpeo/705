@@ -73,7 +73,7 @@ test('journal round trip preserves the entered assumptions and review stage', ()
   assert.equal(restored.migrated, false)
   assert.deepEqual(restored.value, original)
   assert.deepEqual(calculateScenario(restored.value), calculateScenario(inputs))
-  assert.equal(original.asset, 'LIBROVA')
+  assert.equal(original.asset, 'TABULINE')
   assert.equal(original.id, 'MK-TEST01')
   assert.equal(original.schemaVersion, SCHEMA_VERSION)
   assert.equal(original.basePrice, 0.0248)
@@ -96,19 +96,19 @@ test('old placeholder journal converts its value into a user-entered assumption'
   assert.equal(restored.valid, true)
   assert.equal(restored.migrated, true)
   assert.equal(restored.value.id, 'MK-OLD01')
-  assert.equal(restored.value.asset, 'LIBROVA')
+  assert.equal(restored.value.asset, 'TABULINE')
   assert.equal(restored.value.basePrice, 0.0248)
   assert.equal('snapshot' in restored.value, false)
   assert.equal(validateJournalRecord(old).valid, false)
 })
 
-test('current-version legacy brand records normalize once into the Librova identity', () => {
-  for (const asset of ['TKVA', 'IVRN', 'FILZA', 'PRETIOLA']) {
+test('current-version legacy brand records normalize once into the Tabuline identity', () => {
+  for (const asset of ['TKVA', 'IVRN', 'FILZA', 'LIBROVA', 'PRETIOLA']) {
     const older = { ...createJournalRecord(inputs, options), asset, id: 'OB-TEST01' }
     const restored = restoreJournalRecord(older)
     assert.equal(restored.valid, true)
     assert.equal(restored.migrated, true)
-    assert.equal(restored.value.asset, 'LIBROVA')
+    assert.equal(restored.value.asset, 'TABULINE')
     assert.equal(restored.value.id, 'MK-TEST01')
     assert.equal(restoreJournalRecord(restored.value).migrated, false)
   }

@@ -1,10 +1,10 @@
 export const brand = Object.freeze({
-  name: 'Librova',
-  slug: 'librova',
-  asset: 'LIBROVA',
+  name: 'Tabuline',
+  slug: 'tabuline',
+  asset: 'TABULINE',
   network: 'Solana',
-  domain: 'librova.xyz',
-  handle: '@librova',
+  domain: 'tabuline.xyz',
+  handle: '@tabuline',
   tagline: 'Read the chain. Price the boundary. Keep the record.',
   supportingLine: 'A Solana market terminal for on-chain watchlists, a user-priced payoff boundary and a browser-local research journal.',
 })
@@ -13,7 +13,7 @@ export const brand = Object.freeze({
    the `Merkova:journal:v1` key, and earlier brands before that; `legacyStorageKeys`
    below lists every retired namespace so ScenarioLab can still migrate from all of
    them. None of those keys may be removed without losing saved user records. */
-export const storageKeys = Object.freeze({ journal: 'Librova:journal:v1' })
+export const storageKeys = Object.freeze({ journal: 'Tabuline:journal:v1' })
 
 export const legacyStorageKeys = Object.freeze([
   'Merkova:journal:v1',
@@ -25,6 +25,7 @@ export const legacyStorageKeys = Object.freeze([
   'Scenarill:journal:v1',
   'Solenzi:journal:v1',
   'Ivorane:journal:v1',
+  'Librova:journal:v1',
   'Filza:journal:v1',
   'Pretiola:journal:v1',
 ])

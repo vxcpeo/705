@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "label": "baseline",
-  "generatedAt": "2026-10-21T12:40:00.441Z",
+  "generatedAt": "2026-10-22T15:10:31.464Z",
   "baseUrl": "http://127.0.0.1:4317/",
   "browser": {
     "executablePath": "C:\\Users\\Administrator\\AppData\\Local\\ms-playwright\\chromium-1247\\chrome-win64\\chrome.exe",
@@ -15,10 +15,10 @@
       "status": 200,
       "desktop": {
         "meta": {
-          "title": "Overview / Librova",
+          "title": "Overview / Tabuline",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 2943,
+          "bodyTextLength": 2953,
           "scrollWidth": 1440,
           "clientWidth": 1440,
           "focusableCount": 45
@@ -441,22 +441,6 @@
             "count": 2
           },
           {
-            "word": "librova",
-            "count": 2
-          },
-          {
-            "word": "Librova",
-            "count": 2
-          },
-          {
-            "word": "LIBROVA",
-            "count": 5
-          },
-          {
-            "word": "librova.xyz",
-            "count": 3
-          },
-          {
             "word": "limits",
             "count": 1
           },
@@ -813,6 +797,22 @@
             "count": 1
           },
           {
+            "word": "tabuline",
+            "count": 2
+          },
+          {
+            "word": "Tabuline",
+            "count": 2
+          },
+          {
+            "word": "TABULINE",
+            "count": 5
+          },
+          {
+            "word": "tabuline.xyz",
+            "count": 3
+          },
+          {
             "word": "tape",
             "count": 2
           },
@@ -971,14 +971,6 @@
         ],
         "attrs": [
           {
-            "key": "aria-label=Build status",
-            "count": 1
-          },
-          {
-            "key": "aria-label=Librova overview",
-            "count": 1
-          },
-          {
             "key": "aria-label=Open the BONK sheet",
             "count": 1
           },
@@ -1008,6 +1000,10 @@
           },
           {
             "key": "aria-label=SOL settlement partition at a 5 percent cap",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Tabuline overview",
             "count": 1
           },
           {
@@ -1095,175 +1091,147 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "deck",
-          "down",
-          "end",
-          "is-hold",
-          "loud",
+          "dock",
+          "dock-trigger",
+          "is-down",
+          "is-end",
+          "is-on",
+          "is-picked",
+          "is-up",
           "lucide",
           "lucide-arrow-right-icon",
           "lucide-wallet-icon",
-          "on",
-          "pag-board",
-          "pag-brief",
-          "pag-brief-scene",
-          "pag-col",
-          "pag-col--main",
-          "pag-col--rail",
-          "pag-deck",
-          "pag-fact-list",
-          "pag-facts",
-          "pag-foot-note",
-          "pag-head",
-          "pag-limits",
-          "pag-limits-cta",
-          "pag-limits-face",
-          "pag-limits-list",
-          "pag-open",
-          "pag-open-actions",
-          "pag-open-copy",
-          "pag-open-in",
-          "pag-open-note",
-          "pag-open-side",
-          "pag-quote",
-          "pag-quote-body",
-          "pag-quote-copy",
-          "pag-quote-face",
-          "pag-quote-in",
-          "pag-quote-line",
-          "pag-quote-tag",
-          "pag-readout",
-          "pag-rowlink",
-          "pag-search",
-          "pag-split",
-          "pag-split-figure",
-          "pag-split-grid",
-          "pag-split-readout",
-          "pag-tape",
-          "pag-tape-scene",
-          "pag-tbl-table",
-          "pag-tbl-wrap",
-          "pag-token",
-          "pag-token-mark",
-          "pag-token-name",
-          "pag-tools",
-          "pag-total",
-          "plot-band-a",
-          "plot-band-b",
-          "plot-band-label",
-          "plot-cap-label",
-          "plot-grid",
-          "plot-tick",
-          "plot-value",
-          "port",
-          "sel",
-          "tty-btn",
-          "tty-btn--accent",
-          "tty-btn--ghost",
-          "tty-btn--primary",
-          "tty-btn--wide",
-          "tty-colophon",
-          "tty-colophon-brand",
-          "tty-colophon-copy",
-          "tty-colophon-in",
-          "tty-colophon-links",
-          "tty-colophon-top",
-          "tty-combo",
-          "tty-command",
-          "tty-command-actions",
-          "tty-command-copy",
-          "tty-command-line",
-          "tty-console",
-          "tty-deck",
-          "tty-display",
-          "tty-face",
-          "tty-face--halo",
-          "tty-face-head",
-          "tty-facts",
-          "tty-field",
-          "tty-field-label",
-          "tty-frame",
-          "tty-h2",
-          "tty-head--row",
-          "tty-hint",
-          "tty-input",
-          "tty-kicker",
-          "tty-lead",
-          "tty-meta",
-          "tty-nav",
-          "tty-nav-link",
-          "tty-note",
-          "tty-num",
-          "tty-pairs",
-          "tty-pill",
-          "tty-pill--accent",
-          "tty-prompt",
-          "tty-range",
-          "tty-scale",
-          "tty-scene",
-          "tty-scene-in",
-          "tty-skip",
-          "tty-stage",
-          "tty-station",
-          "tty-status",
-          "tty-status-brand",
-          "tty-status-cell",
-          "tty-status-cells",
-          "tty-status-tail",
-          "tty-switch",
-          "tty-table",
-          "tty-table-wrap",
-          "tty-tiny",
-          "tty-wallet",
-          "up",
-          "visually-hidden",
-          "wal-trigger"
+          "reef",
+          "reef-band-a",
+          "reef-band-b",
+          "reef-band-label",
+          "reef-board",
+          "reef-board-band",
+          "reef-board-main",
+          "reef-brief",
+          "reef-brief-band",
+          "reef-cap-label",
+          "reef-combo",
+          "reef-figure",
+          "reef-foot-note",
+          "reef-gauge",
+          "reef-gauge-band",
+          "reef-grid-lines",
+          "reef-head",
+          "reef-limits",
+          "reef-limits-band",
+          "reef-limits-copy",
+          "reef-limits-list",
+          "reef-open",
+          "reef-open-actions",
+          "reef-open-copy",
+          "reef-open-side",
+          "reef-quote",
+          "reef-quote-body",
+          "reef-quote-head",
+          "reef-quote-line",
+          "reef-readout",
+          "reef-rowlink",
+          "reef-search",
+          "reef-split",
+          "reef-split-band",
+          "reef-split-readout",
+          "reef-tape",
+          "reef-tape-band",
+          "reef-tick",
+          "reef-token",
+          "reef-token-mark",
+          "reef-token-name",
+          "reef-tools",
+          "reef-total",
+          "reef-value",
+          "tide-band",
+          "tide-band--first",
+          "tide-brand",
+          "tide-btn",
+          "tide-btn--ghost",
+          "tide-btn--primary",
+          "tide-btn--wide",
+          "tide-display",
+          "tide-field",
+          "tide-field-label",
+          "tide-foot-brand",
+          "tide-foot-copy",
+          "tide-foot-links",
+          "tide-h2",
+          "tide-index",
+          "tide-index-link",
+          "tide-input",
+          "tide-instrument",
+          "tide-instrument-row",
+          "tide-kicker",
+          "tide-lead",
+          "tide-loud",
+          "tide-mast",
+          "tide-mast-actions",
+          "tide-mast-foot",
+          "tide-mast-line",
+          "tide-mast-tail",
+          "tide-mast-top",
+          "tide-meta",
+          "tide-note",
+          "tide-num",
+          "tide-pill",
+          "tide-pill--accent",
+          "tide-proof",
+          "tide-range",
+          "tide-scale",
+          "tide-shell",
+          "tide-skip",
+          "tide-stage",
+          "tide-stage-inner",
+          "tide-switch",
+          "tide-table",
+          "tide-table-wrap",
+          "tide-wallet",
+          "visually-hidden"
         ],
         "fingerprint": [
-          "a@13:0",
-          "a@13:1",
-          "a@13:3",
-          "a@18:0",
+          "a@11:1",
+          "a@11:3",
+          "a@16:0",
           "a@4:0",
           "a@7:2",
+          "a@7:3",
           "a@8:0",
-          "a@8:3",
+          "a@9:0",
+          "aside@10:4+",
           "b@12:0",
           "b@14:0",
-          "b@17:0",
-          "b@20:0",
+          "b@18:0",
+          "b@8:0",
           "b@9:0",
-          "button@12:0",
-          "button@13:0",
-          "button@13:4+",
-          "button@15:1",
-          "button@16:0",
-          "button@17:0",
-          "button@18:2",
+          "button@10:0",
+          "button@11:0",
+          "button@11:4+",
+          "button@12:1",
+          "button@14:0",
+          "button@16:2",
           "button@9:1",
-          "caption@15:0",
+          "caption@13:0",
+          "dd@11:0",
+          "dd@12:0",
           "dd@13:0",
-          "dd@14:0",
-          "dd@16:0",
+          "dd@8:1",
           "dd@9:0",
           "div@10:1",
           "div@10:2",
           "div@10:3",
+          "div@11:1",
           "div@11:2",
-          "div@11:3",
-          "div@12:1",
+          "div@11:4+",
           "div@12:2",
           "div@12:3",
-          "div@13:1",
           "div@13:2",
-          "div@13:4+",
-          "div@14:2",
-          "div@14:4+",
-          "div@15:2",
-          "div@15:3",
-          "div@16:2",
+          "div@13:3",
           "div@3:2",
-          "div@4:1",
+          "div@4:2",
+          "div@6:1",
           "div@6:2",
           "div@6:3",
           "div@7:2",
@@ -1271,184 +1239,170 @@
           "div@7:4+",
           "div@8:1",
           "div@8:2",
-          "div@8:4+",
-          "div@9:1",
           "div@9:2",
+          "div@9:3",
+          "dl@10:4+",
           "dl@11:4+",
-          "dl@12:4+",
-          "dl@14:4+",
+          "dl@6:4+",
           "dl@7:4+",
+          "dl@9:4+",
+          "dt@11:0",
+          "dt@12:0",
           "dt@13:0",
-          "dt@14:0",
-          "dt@16:0",
+          "dt@8:0",
           "dt@9:0",
+          "em@11:0",
+          "em@12:0",
           "em@13:0",
-          "em@14:0",
-          "em@15:0",
-          "figcaption@13:0",
-          "figure@12:2",
-          "g@14:4+",
-          "h1@12:3",
+          "figcaption@11:0",
+          "figure@10:2",
+          "g@12:4+",
+          "h1@10:3",
+          "h2@10:0",
+          "h2@11:0",
           "h2@12:0",
-          "h2@13:0",
-          "h2@14:0",
-          "i@14:0",
-          "i@15:0",
-          "i@9:0",
-          "img@12:0",
+          "header@5:4+",
+          "i@12:0",
+          "i@13:0",
           "img@8:0",
-          "input@16:0",
-          "input@17:0",
-          "label@15:2",
-          "label@16:0",
-          "label@16:1",
-          "li@12:1",
-          "li@13:0",
-          "main@5:4+",
-          "nav@7:4+",
-          "ol@11:4+",
-          "output@17:0",
+          "input@13:0",
+          "input@14:0",
+          "label@13:0",
+          "label@13:1",
+          "label@13:2",
+          "li@10:1",
+          "li@11:0",
+          "li@8:1",
+          "main@5:2",
+          "nav@6:4+",
+          "ol@9:4+",
+          "output@14:0",
+          "p@10:0",
           "p@11:0",
-          "p@12:0",
-          "p@13:0",
-          "p@14:0",
-          "p@14:2",
+          "p@11:2",
+          "p@6:0",
+          "p@6:1",
           "p@7:0",
-          "p@8:1",
           "path@11:0",
-          "path@15:0",
-          "path@17:0",
-          "rect@14:0",
-          "section@11:1",
-          "section@9:1",
-          "select@16:4+",
-          "small@14:0",
-          "small@20:0",
-          "small@9:0",
-          "span@14:1",
-          "span@14:2",
-          "span@15:0",
-          "span@16:0",
-          "span@16:2",
+          "path@13:0",
+          "path@14:0",
+          "rect@12:0",
+          "section@8:1",
+          "section@8:2",
+          "select@13:4+",
+          "small@12:0",
+          "small@18:0",
+          "small@8:0",
+          "span@12:0",
+          "span@12:1",
+          "span@12:2",
+          "span@13:0",
+          "span@13:2",
+          "span@14:0",
           "span@17:0",
-          "span@19:0",
-          "span@19:2",
-          "span@7:0",
+          "span@17:2",
           "span@8:0",
-          "span@8:1",
-          "span@8:2",
-          "span@9:0",
-          "strong@15:0",
+          "strong@12:0",
+          "strong@13:0",
           "svg@10:2",
-          "svg@13:4+",
-          "svg@14:2",
-          "svg@16:2",
-          "table@14:3",
-          "tbody@15:4+",
-          "td@17:0",
-          "td@17:1",
-          "text@14:0",
-          "th@17:0",
-          "th@17:1",
-          "thead@15:1",
-          "tr@16:4+",
-          "ul@11:4+",
-          "ul@12:4+"
+          "svg@11:4+",
+          "svg@12:2",
+          "svg@13:2",
+          "table@12:3",
+          "tbody@13:4+",
+          "td@15:0",
+          "td@15:1",
+          "text@12:0",
+          "th@15:0",
+          "th@15:1",
+          "thead@13:1",
+          "tr@14:4+",
+          "ul@10:4+",
+          "ul@7:4+",
+          "ul@9:4+"
         ],
         "landmarks": [
           {
-            "tag": "main",
+            "tag": "header",
             "role": "",
-            "top": -319,
+            "top": 0,
             "left": 0,
-            "width": 1440,
-            "height": 3335
+            "width": 605,
+            "height": 900
           },
           {
             "tag": "nav",
             "role": "",
-            "top": -224,
-            "left": 1,
-            "width": 212,
-            "height": 3143
+            "top": 143,
+            "left": 49,
+            "width": 506,
+            "height": 391
+          },
+          {
+            "tag": "main",
+            "role": "",
+            "top": -28,
+            "left": 605,
+            "width": 835,
+            "height": 3352
+          },
+          {
+            "tag": "aside",
+            "role": "",
+            "top": 1118,
+            "left": 671,
+            "width": 703,
+            "height": 351
           }
         ],
         "colors": [
           {
-            "hex": "#f4f7fa",
-            "count": 221
+            "hex": "#081b2b",
+            "count": 225
           },
           {
-            "hex": "#8698a9",
-            "count": 77
+            "hex": "#5b7185",
+            "count": 69
           },
           {
-            "hex": "#9fb1c1",
-            "count": 48
+            "hex": "#24465f",
+            "count": 37
           },
           {
-            "hex": "#05080c",
+            "hex": "#0d71e3",
+            "count": 22
+          },
+          {
+            "hex": "#ffffff",
             "count": 21
           },
           {
-            "hex": "#d7dde4",
-            "count": 13
-          },
-          {
-            "hex": "#ff5f5f",
-            "count": 13
-          },
-          {
-            "hex": "#ff0000",
-            "count": 9
-          },
-          {
-            "hex": "#050608",
+            "hex": "#0a5bc0",
             "count": 8
           },
           {
-            "hex": "#0a0e14",
+            "hex": "#f4f9ff",
+            "count": 7
+          },
+          {
+            "hex": "#087a55",
+            "count": 6
+          },
+          {
+            "hex": "#e8f3ff",
             "count": 5
           },
           {
-            "hex": "#111a24",
+            "hex": "#298dff",
             "count": 4
           },
           {
-            "hex": "#182533",
-            "count": 4
-          },
-          {
-            "hex": "#1e2a36",
-            "count": 4
-          },
-          {
-            "hex": "#0d141b",
-            "count": 3
-          },
-          {
-            "hex": "#000000",
+            "hex": "#b42318",
             "count": 2
-          },
-          {
-            "hex": "#3b3b3b",
-            "count": 1
-          },
-          {
-            "hex": "#5ce1a0",
-            "count": 1
-          },
-          {
-            "hex": "#ff00c8",
-            "count": 1
-          },
-          {
-            "hex": "#ff8ce6",
-            "count": 1
           }
         ],
         "contrast": [],
-        "contrastChecked": 199,
+        "contrastChecked": 200,
         "headings": [
           {
             "tag": "h1",
@@ -1483,31 +1437,43 @@
           "/",
           "/app/markets",
           "/docs",
+          "/privacy",
           "/risk",
-          "/signal"
+          "/signal",
+          "/terms"
         ],
         "overflow": {
           "documentOverflow": false,
           "offenders": [
             {
-              "selector": "figure.pag-split-figure > svg > rect.plot-band-a",
-              "right": 49501,
-              "width": 49193
+              "selector": "figure.reef-figure > svg > rect.reef-band-a",
+              "right": 27102,
+              "width": 26376
             },
             {
-              "selector": "figure.pag-split-figure > svg > rect.plot-band-b",
-              "right": 50040,
-              "width": 539
+              "selector": "figure.reef-figure > svg > rect.reef-band-b",
+              "right": 27391,
+              "width": 289
             },
             {
-              "selector": "figure.pag-split-figure > svg > text.plot-cap-label",
-              "right": 49588,
-              "width": 79
+              "selector": "figure.reef-figure > svg > text.reef-cap-label",
+              "right": 27149,
+              "width": 44
             },
             {
-              "selector": "figure.pag-split-figure > svg > text.plot-tick",
-              "right": 49504,
-              "width": 6
+              "selector": "figure.reef-figure > svg > text.reef-tick",
+              "right": 27104,
+              "width": 3
+            },
+            {
+              "selector": "section.tide-band.reef-tape-band > ul.reef-tape > li",
+              "right": 1444,
+              "width": 190
+            },
+            {
+              "selector": "ul.reef-tape > li > button",
+              "right": 1444,
+              "width": 190
             }
           ]
         }
@@ -1526,13 +1492,13 @@
       },
       "mobile": {
         "meta": {
-          "title": "Overview / Librova",
+          "title": "Overview / Tabuline",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 2694,
+          "bodyTextLength": 2841,
           "scrollWidth": 390,
           "clientWidth": 390,
-          "focusableCount": 39
+          "focusableCount": 40
         },
         "words": [
           {
@@ -1705,7 +1671,7 @@
           },
           {
             "word": "board",
-            "count": 3
+            "count": 4
           },
           {
             "word": "Board",
@@ -1893,7 +1859,7 @@
           },
           {
             "word": "issued",
-            "count": 1
+            "count": 2
           },
           {
             "word": "it",
@@ -1940,22 +1906,6 @@
             "count": 2
           },
           {
-            "word": "librova",
-            "count": 1
-          },
-          {
-            "word": "Librova",
-            "count": 2
-          },
-          {
-            "word": "LIBROVA",
-            "count": 4
-          },
-          {
-            "word": "librova.xyz",
-            "count": 2
-          },
-          {
             "word": "limits",
             "count": 1
           },
@@ -1972,6 +1922,10 @@
             "count": 3
           },
           {
+            "word": "local",
+            "count": 1
+          },
+          {
             "word": "Local",
             "count": 1
           },
@@ -1981,6 +1935,10 @@
           },
           {
             "word": "maths",
+            "count": 1
+          },
+          {
+            "word": "Mode",
             "count": 1
           },
           {
@@ -2012,6 +1970,10 @@
             "count": 1
           },
           {
+            "word": "Network",
+            "count": 1
+          },
+          {
             "word": "no",
             "count": 5
           },
@@ -2021,7 +1983,7 @@
           },
           {
             "word": "not",
-            "count": 1
+            "count": 3
           },
           {
             "word": "Not",
@@ -2053,11 +2015,11 @@
           },
           {
             "word": "only",
-            "count": 1
+            "count": 2
           },
           {
             "word": "Open",
-            "count": 2
+            "count": 3
           },
           {
             "word": "or",
@@ -2101,7 +2063,7 @@
           },
           {
             "word": "Preview",
-            "count": 1
+            "count": 2
           },
           {
             "word": "price",
@@ -2157,11 +2119,15 @@
           },
           {
             "word": "Records",
-            "count": 1
+            "count": 2
           },
           {
             "word": "Reference",
             "count": 2
+          },
+          {
+            "word": "registered",
+            "count": 1
           },
           {
             "word": "research",
@@ -2241,7 +2207,7 @@
           },
           {
             "word": "Solana",
-            "count": 6
+            "count": 7
           },
           {
             "word": "split",
@@ -2288,6 +2254,22 @@
             "count": 1
           },
           {
+            "word": "tabuline",
+            "count": 2
+          },
+          {
+            "word": "Tabuline",
+            "count": 2
+          },
+          {
+            "word": "TABULINE",
+            "count": 5
+          },
+          {
+            "word": "tabuline.xyz",
+            "count": 3
+          },
+          {
             "word": "tape",
             "count": 1
           },
@@ -2297,7 +2279,7 @@
           },
           {
             "word": "targets",
-            "count": 1
+            "count": 2
           },
           {
             "word": "terminal",
@@ -2313,7 +2295,7 @@
           },
           {
             "word": "the",
-            "count": 16
+            "count": 17
           },
           {
             "word": "The",
@@ -2361,7 +2343,7 @@
           },
           {
             "word": "Unit",
-            "count": 3
+            "count": 4
           },
           {
             "word": "Units",
@@ -2442,10 +2424,6 @@
         ],
         "attrs": [
           {
-            "key": "aria-label=Librova overview",
-            "count": 1
-          },
-          {
             "key": "aria-label=Open navigation",
             "count": 1
           },
@@ -2478,6 +2456,10 @@
             "count": 1
           },
           {
+            "key": "aria-label=Tabuline overview",
+            "count": 1
+          },
+          {
             "key": "placeholder=Filter by symbol",
             "count": 1
           }
@@ -2489,7 +2471,7 @@
           },
           {
             "href": "/app/markets",
-            "count": 3
+            "count": 4
           },
           {
             "href": "/app/markets/BONK",
@@ -2558,337 +2540,309 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "deck",
-          "down",
-          "end",
-          "is-hold",
-          "loud",
+          "dock",
+          "dock-trigger",
+          "is-down",
+          "is-end",
+          "is-on",
+          "is-picked",
+          "is-up",
           "lucide",
-          "lucide-activity-icon",
           "lucide-arrow-right-icon",
+          "lucide-menu-icon",
           "lucide-wallet-icon",
-          "on",
-          "pag-board",
-          "pag-brief",
-          "pag-brief-scene",
-          "pag-col",
-          "pag-col--main",
-          "pag-col--rail",
-          "pag-deck",
-          "pag-fact-list",
-          "pag-facts",
-          "pag-foot-note",
-          "pag-head",
-          "pag-limits",
-          "pag-limits-cta",
-          "pag-limits-face",
-          "pag-limits-list",
-          "pag-open",
-          "pag-open-actions",
-          "pag-open-copy",
-          "pag-open-in",
-          "pag-open-note",
-          "pag-open-side",
-          "pag-quote",
-          "pag-quote-body",
-          "pag-quote-copy",
-          "pag-quote-face",
-          "pag-quote-in",
-          "pag-quote-line",
-          "pag-quote-tag",
-          "pag-readout",
-          "pag-rowlink",
-          "pag-search",
-          "pag-split",
-          "pag-split-figure",
-          "pag-split-grid",
-          "pag-split-readout",
-          "pag-tape",
-          "pag-tape-scene",
-          "pag-tbl-table",
-          "pag-tbl-wrap",
-          "pag-token",
-          "pag-token-mark",
-          "pag-token-name",
-          "pag-tools",
-          "pag-total",
-          "plot-band-a",
-          "plot-band-b",
-          "plot-band-label",
-          "plot-cap-label",
-          "plot-grid",
-          "plot-tick",
-          "plot-value",
-          "port",
-          "sel",
-          "tty-btn",
-          "tty-btn--accent",
-          "tty-btn--ghost",
-          "tty-btn--primary",
-          "tty-btn--wide",
-          "tty-colophon",
-          "tty-colophon-brand",
-          "tty-colophon-copy",
-          "tty-colophon-in",
-          "tty-colophon-links",
-          "tty-colophon-top",
-          "tty-combo",
-          "tty-command",
-          "tty-command-actions",
-          "tty-command-copy",
-          "tty-command-line",
-          "tty-command-more",
-          "tty-console",
-          "tty-deck",
-          "tty-display",
-          "tty-face",
-          "tty-face--halo",
-          "tty-face-head",
-          "tty-facts",
-          "tty-field",
-          "tty-field-label",
-          "tty-frame",
-          "tty-h2",
-          "tty-head--row",
-          "tty-hint",
-          "tty-input",
-          "tty-kicker",
-          "tty-lead",
-          "tty-meta",
-          "tty-note",
-          "tty-num",
-          "tty-pairs",
-          "tty-pill",
-          "tty-pill--accent",
-          "tty-prompt",
-          "tty-range",
-          "tty-scale",
-          "tty-scene",
-          "tty-scene-in",
-          "tty-skip",
-          "tty-stage",
-          "tty-station",
-          "tty-status",
-          "tty-status-brand",
-          "tty-switch",
-          "tty-table",
-          "tty-table-wrap",
-          "tty-tiny",
-          "tty-wallet",
-          "up",
-          "visually-hidden",
-          "wal-trigger"
+          "reef",
+          "reef-band-a",
+          "reef-band-b",
+          "reef-band-label",
+          "reef-board",
+          "reef-board-band",
+          "reef-board-main",
+          "reef-brief",
+          "reef-brief-band",
+          "reef-cap-label",
+          "reef-combo",
+          "reef-figure",
+          "reef-foot-note",
+          "reef-gauge",
+          "reef-gauge-band",
+          "reef-grid-lines",
+          "reef-head",
+          "reef-limits",
+          "reef-limits-band",
+          "reef-limits-copy",
+          "reef-limits-list",
+          "reef-open",
+          "reef-open-actions",
+          "reef-open-copy",
+          "reef-open-side",
+          "reef-quote",
+          "reef-quote-body",
+          "reef-quote-head",
+          "reef-quote-line",
+          "reef-readout",
+          "reef-rowlink",
+          "reef-search",
+          "reef-split",
+          "reef-split-band",
+          "reef-split-readout",
+          "reef-tape",
+          "reef-tape-band",
+          "reef-tick",
+          "reef-token",
+          "reef-token-mark",
+          "reef-token-name",
+          "reef-tools",
+          "reef-total",
+          "reef-value",
+          "tide-band",
+          "tide-band--first",
+          "tide-brand",
+          "tide-btn",
+          "tide-btn--ghost",
+          "tide-btn--primary",
+          "tide-btn--quiet",
+          "tide-btn--wide",
+          "tide-display",
+          "tide-field",
+          "tide-field-label",
+          "tide-foot-brand",
+          "tide-foot-copy",
+          "tide-foot-links",
+          "tide-h2",
+          "tide-index-toggle",
+          "tide-input",
+          "tide-instrument",
+          "tide-instrument-row",
+          "tide-kicker",
+          "tide-lead",
+          "tide-loud",
+          "tide-mast",
+          "tide-mast-actions",
+          "tide-mast-foot",
+          "tide-mast-line",
+          "tide-mast-tail",
+          "tide-mast-top",
+          "tide-meta",
+          "tide-note",
+          "tide-num",
+          "tide-pill",
+          "tide-pill--accent",
+          "tide-proof",
+          "tide-range",
+          "tide-scale",
+          "tide-shell",
+          "tide-skip",
+          "tide-stage",
+          "tide-stage-inner",
+          "tide-switch",
+          "tide-table",
+          "tide-table-wrap",
+          "tide-wallet",
+          "visually-hidden"
         ],
         "fingerprint": [
-          "a@13:0",
-          "a@13:1",
-          "a@13:3",
-          "a@18:0",
+          "a@11:1",
+          "a@11:3",
+          "a@16:0",
           "a@4:0",
           "a@7:2",
+          "a@8:0",
+          "a@9:0",
+          "aside@10:4+",
           "b@12:0",
           "b@14:0",
-          "b@17:0",
-          "b@20:0",
-          "button@12:0",
-          "button@13:0",
-          "button@13:4+",
-          "button@15:1",
-          "button@16:0",
-          "button@17:0",
-          "button@18:2",
+          "b@18:0",
+          "b@8:0",
+          "b@9:0",
+          "button@10:0",
+          "button@11:0",
+          "button@11:4+",
+          "button@12:1",
+          "button@14:0",
+          "button@16:2",
           "button@8:1",
           "button@9:1",
-          "caption@15:0",
+          "caption@13:0",
+          "dd@11:0",
+          "dd@12:0",
           "dd@13:0",
-          "dd@14:0",
-          "dd@16:0",
+          "dd@8:1",
           "dd@9:0",
           "div@10:1",
           "div@10:2",
           "div@10:3",
+          "div@11:1",
           "div@11:2",
-          "div@11:3",
-          "div@12:1",
+          "div@11:4+",
           "div@12:2",
           "div@12:3",
-          "div@13:1",
           "div@13:2",
-          "div@13:4+",
-          "div@14:2",
-          "div@14:4+",
-          "div@15:2",
-          "div@15:3",
-          "div@16:2",
+          "div@13:3",
           "div@3:2",
-          "div@4:1",
+          "div@4:2",
+          "div@6:1",
           "div@6:2",
           "div@6:3",
           "div@7:2",
           "div@7:3",
+          "div@7:4+",
           "div@8:1",
           "div@8:2",
-          "div@8:4+",
-          "div@9:1",
           "div@9:2",
+          "div@9:3",
+          "dl@10:4+",
           "dl@11:4+",
-          "dl@12:4+",
-          "dl@14:4+",
+          "dl@6:4+",
           "dl@7:4+",
+          "dl@9:4+",
+          "dt@11:0",
+          "dt@12:0",
           "dt@13:0",
-          "dt@14:0",
-          "dt@16:0",
+          "dt@8:0",
           "dt@9:0",
+          "em@11:0",
+          "em@12:0",
           "em@13:0",
-          "em@14:0",
-          "em@15:0",
-          "figcaption@13:0",
-          "figure@12:2",
-          "g@14:4+",
-          "h1@12:3",
+          "figcaption@11:0",
+          "figure@10:2",
+          "g@12:4+",
+          "h1@10:3",
+          "h2@10:0",
+          "h2@11:0",
           "h2@12:0",
-          "h2@13:0",
-          "h2@14:0",
-          "i@14:0",
-          "i@15:0",
-          "img@12:0",
+          "header@5:4+",
+          "i@12:0",
+          "i@13:0",
           "img@8:0",
-          "input@16:0",
-          "input@17:0",
-          "label@15:2",
-          "label@16:0",
-          "label@16:1",
-          "li@12:1",
-          "li@13:0",
-          "main@5:4+",
-          "ol@11:4+",
-          "output@17:0",
+          "input@13:0",
+          "input@14:0",
+          "label@13:0",
+          "label@13:1",
+          "label@13:2",
+          "li@10:1",
+          "li@11:0",
+          "li@8:1",
+          "main@5:2",
+          "ol@9:4+",
+          "output@14:0",
+          "p@10:0",
           "p@11:0",
-          "p@12:0",
-          "p@13:0",
-          "p@14:0",
-          "p@14:2",
+          "p@11:2",
+          "p@6:0",
+          "p@6:1",
           "p@7:0",
-          "p@8:1",
-          "path@10:0",
           "path@11:0",
-          "path@15:0",
-          "path@17:0",
-          "rect@14:0",
-          "section@11:1",
-          "section@9:1",
-          "select@16:4+",
-          "small@14:0",
-          "small@20:0",
-          "span@14:1",
-          "span@14:2",
-          "span@15:0",
-          "span@16:0",
-          "span@16:2",
+          "path@13:0",
+          "path@14:0",
+          "rect@12:0",
+          "section@8:1",
+          "section@8:2",
+          "select@13:4+",
+          "small@12:0",
+          "small@18:0",
+          "span@12:0",
+          "span@12:1",
+          "span@12:2",
+          "span@13:0",
+          "span@13:2",
+          "span@14:0",
           "span@17:0",
-          "span@19:0",
-          "span@19:2",
-          "span@8:0",
-          "strong@15:0",
+          "span@17:2",
+          "strong@12:0",
+          "strong@13:0",
           "svg@10:2",
-          "svg@13:4+",
-          "svg@14:2",
-          "svg@16:2",
-          "svg@9:1",
-          "table@14:3",
-          "tbody@15:4+",
-          "td@17:0",
-          "td@17:1",
-          "text@14:0",
-          "th@17:0",
-          "th@17:1",
-          "thead@15:1",
-          "tr@16:4+",
-          "ul@11:4+",
-          "ul@12:4+"
+          "svg@11:4+",
+          "svg@12:2",
+          "svg@13:2",
+          "svg@9:3",
+          "table@12:3",
+          "tbody@13:4+",
+          "td@15:0",
+          "td@15:1",
+          "text@12:0",
+          "th@15:0",
+          "th@15:1",
+          "thead@13:1",
+          "tr@14:4+",
+          "ul@10:4+",
+          "ul@7:4+",
+          "ul@9:4+"
         ],
         "landmarks": [
           {
-            "tag": "main",
+            "tag": "header",
             "role": "",
             "top": 0,
             "left": 0,
             "width": 390,
-            "height": 4695
+            "height": 382
+          },
+          {
+            "tag": "main",
+            "role": "",
+            "top": 382,
+            "left": 0,
+            "width": 390,
+            "height": 3686
+          },
+          {
+            "tag": "aside",
+            "role": "",
+            "top": 1570,
+            "left": 18,
+            "width": 354,
+            "height": 574
           }
         ],
         "colors": [
           {
-            "hex": "#f4f7fa",
-            "count": 217
+            "hex": "#081b2b",
+            "count": 222
           },
           {
-            "hex": "#8698a9",
-            "count": 65
+            "hex": "#5b7185",
+            "count": 59
           },
           {
-            "hex": "#9fb1c1",
-            "count": 32
+            "hex": "#24465f",
+            "count": 26
           },
           {
-            "hex": "#05080c",
+            "hex": "#ffffff",
             "count": 21
           },
           {
-            "hex": "#d7dde4",
-            "count": 12
+            "hex": "#0d71e3",
+            "count": 14
           },
           {
-            "hex": "#ff5f5f",
-            "count": 12
+            "hex": "#0a5bc0",
+            "count": 9
           },
           {
-            "hex": "#050608",
-            "count": 8
+            "hex": "#f4f9ff",
+            "count": 7
           },
           {
-            "hex": "#ff0000",
-            "count": 8
+            "hex": "#087a55",
+            "count": 6
           },
           {
-            "hex": "#0a0e14",
-            "count": 5
+            "hex": "#e8f3ff",
+            "count": 6
           },
           {
-            "hex": "#111a24",
+            "hex": "#298dff",
             "count": 4
           },
           {
-            "hex": "#182533",
-            "count": 4
-          },
-          {
-            "hex": "#1e2a36",
-            "count": 4
-          },
-          {
-            "hex": "#0d141b",
-            "count": 3
-          },
-          {
-            "hex": "#000000",
+            "hex": "#b42318",
             "count": 2
-          },
-          {
-            "hex": "#3b3b3b",
-            "count": 1
-          },
-          {
-            "hex": "#ff00c8",
-            "count": 1
-          },
-          {
-            "hex": "#ff8ce6",
-            "count": 1
           }
         ],
         "contrast": [],
-        "contrastChecked": 171,
+        "contrastChecked": 182,
         "headings": [
           {
             "tag": "h1",
@@ -2919,49 +2873,57 @@
             "text": "Limits of this preview"
           }
         ],
-        "navTargets": [],
+        "navTargets": [
+          "/",
+          "/app/markets",
+          "/docs",
+          "/privacy",
+          "/risk",
+          "/signal",
+          "/terms"
+        ],
         "overflow": {
           "documentOverflow": false,
           "offenders": [
             {
-              "selector": "div.tty-scene-in > div.tty-table-wrap.pag-tbl-wrap > table.tty-table.pag-tbl-table",
-              "right": 734,
-              "width": 720
+              "selector": "div.reef-board-main > div.tide-table-wrap > table.tide-table",
+              "right": 586,
+              "width": 567
             },
             {
-              "selector": "div.tty-table-wrap.pag-tbl-wrap > table.tty-table.pag-tbl-table > thead",
-              "right": 734,
-              "width": 720
+              "selector": "div.tide-table-wrap > table.tide-table > thead",
+              "right": 586,
+              "width": 567
             },
             {
-              "selector": "table.tty-table.pag-tbl-table > thead > tr",
-              "right": 734,
-              "width": 720
+              "selector": "table.tide-table > thead > tr",
+              "right": 586,
+              "width": 567
             },
             {
-              "selector": "thead > tr > th.loud",
-              "right": 512,
-              "width": 147
+              "selector": "thead > tr > th.tide-num.tide-loud",
+              "right": 412,
+              "width": 112
+            },
+            {
+              "selector": "thead > tr > th.tide-num",
+              "right": 524,
+              "width": 112
             },
             {
               "selector": "thead > tr > th",
-              "right": 659,
-              "width": 147
+              "right": 586,
+              "width": 62
             },
             {
-              "selector": "thead > tr > th",
-              "right": 734,
-              "width": 75
+              "selector": "div.tide-table-wrap > table.tide-table > tbody",
+              "right": 586,
+              "width": 567
             },
             {
-              "selector": "div.tty-table-wrap.pag-tbl-wrap > table.tty-table.pag-tbl-table > tbody",
-              "right": 734,
-              "width": 720
-            },
-            {
-              "selector": "table.tty-table.pag-tbl-table > tbody > tr.sel",
-              "right": 734,
-              "width": 720
+              "selector": "table.tide-table > tbody > tr.is-picked",
+              "right": 586,
+              "width": 567
             }
           ]
         }
@@ -2972,15 +2934,15 @@
           "",
           "/",
           "/app/markets",
-          "/app/markets/SOL",
-          "/app/markets/JUP",
-          "/app/markets/BONK",
-          "/app/markets/USDC",
           "/signal",
           "/docs",
           "/risk",
           "/terms",
-          "/privacy"
+          "/privacy",
+          "/app/markets/SOL",
+          "/app/markets/JUP",
+          "/app/markets/BONK",
+          "/app/markets/USDC"
         ],
         "reachable": true
       },
@@ -2988,82 +2950,82 @@
         "samples": [
           {
             "tag": "a",
-            "text": "SKIP TO CONTENT",
+            "text": "Skip to content",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(255, 95, 95)",
+            "outlineColor": "rgb(13, 113, 227)",
             "boxShadow": "none",
-            "borderColor": "rgb(5, 6, 8)",
-            "backgroundColor": "rgb(255, 0, 0)"
+            "borderColor": "rgb(255, 255, 255)",
+            "backgroundColor": "rgb(8, 27, 43)"
           },
           {
             "tag": "a",
-            "text": "Librova overview",
+            "text": "Tabuline overview",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(255, 95, 95)",
+            "outlineColor": "rgb(13, 113, 227)",
             "boxShadow": "none",
-            "borderColor": "rgb(244, 247, 250)",
+            "borderColor": "rgb(8, 27, 43)",
             "backgroundColor": "rgba(0, 0, 0, 0)"
           },
           {
             "tag": "button",
-            "text": "CONNECT WALLET",
+            "text": "Connect wallet",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(255, 95, 95)",
+            "outlineColor": "rgb(13, 113, 227)",
             "boxShadow": "none",
-            "borderColor": "rgb(42, 59, 76)",
+            "borderColor": "rgb(183, 211, 236)",
+            "backgroundColor": "rgb(255, 255, 255)"
+          },
+          {
+            "tag": "a",
+            "text": "Open the board",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(13, 113, 227)",
+            "boxShadow": "rgba(13, 113, 227, 0.24) 0px 10px 24px 0px",
+            "borderColor": "rgba(0, 0, 0, 0)",
+            "backgroundColor": "rgb(13, 113, 227)"
+          },
+          {
+            "tag": "a",
+            "text": "01 Overview tape",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(13, 113, 227)",
+            "boxShadow": "none",
+            "borderColor": "rgb(8, 27, 43) rgb(8, 27, 43) rgb(8, 27, 43) rgb(13, 113, 227)",
             "backgroundColor": "rgba(0, 0, 0, 0)"
           },
           {
             "tag": "a",
-            "text": "OPEN THE BOARD",
+            "text": "02 Board watchlist",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(255, 95, 95)",
+            "outlineColor": "rgb(13, 113, 227)",
             "boxShadow": "none",
-            "borderColor": "rgb(42, 59, 76)",
+            "borderColor": "rgb(36, 70, 95) rgb(36, 70, 95) rgb(36, 70, 95) rgba(0, 0, 0, 0)",
             "backgroundColor": "rgba(0, 0, 0, 0)"
           },
           {
             "tag": "a",
-            "text": "01 Overview TAPE",
+            "text": "03 Journal local",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(255, 95, 95)",
+            "outlineColor": "rgb(13, 113, 227)",
             "boxShadow": "none",
-            "borderColor": "rgb(244, 247, 250) rgb(244, 247, 250) rgb(244, 247, 250) rgb(255, 95, 95)",
-            "backgroundColor": "rgba(255, 0, 0, 0.08)"
-          },
-          {
-            "tag": "a",
-            "text": "02 Board WATCHLIST",
-            "outlineStyle": "solid",
-            "outlineWidth": "2px",
-            "outlineColor": "rgb(255, 95, 95)",
-            "boxShadow": "none",
-            "borderColor": "rgb(159, 177, 193) rgb(159, 177, 193) rgb(159, 177, 193) rgba(0, 0, 0, 0)",
+            "borderColor": "rgb(36, 70, 95) rgb(36, 70, 95) rgb(36, 70, 95) rgba(0, 0, 0, 0)",
             "backgroundColor": "rgba(0, 0, 0, 0)"
           },
           {
             "tag": "a",
-            "text": "03 Journal LOCAL",
+            "text": "04 Reference method",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(255, 95, 95)",
+            "outlineColor": "rgb(13, 113, 227)",
             "boxShadow": "none",
-            "borderColor": "rgb(159, 177, 193) rgb(159, 177, 193) rgb(159, 177, 193) rgba(0, 0, 0, 0)",
-            "backgroundColor": "rgba(0, 0, 0, 0)"
-          },
-          {
-            "tag": "a",
-            "text": "04 Reference METHOD",
-            "outlineStyle": "solid",
-            "outlineWidth": "2px",
-            "outlineColor": "rgb(255, 95, 95)",
-            "boxShadow": "none",
-            "borderColor": "rgb(159, 177, 193) rgb(159, 177, 193) rgb(159, 177, 193) rgba(0, 0, 0, 0)",
+            "borderColor": "rgb(36, 70, 95) rgb(36, 70, 95) rgb(36, 70, 95) rgba(0, 0, 0, 0)",
             "backgroundColor": "rgba(0, 0, 0, 0)"
           }
         ],
@@ -3077,10 +3039,10 @@
       "status": 200,
       "desktop": {
         "meta": {
-          "title": "Markets / Librova",
+          "title": "Markets / Tabuline",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 1677,
+          "bodyTextLength": 1685,
           "scrollWidth": 1440,
           "clientWidth": 1440,
           "focusableCount": 26
@@ -3339,22 +3301,6 @@
             "count": 1
           },
           {
-            "word": "librova",
-            "count": 2
-          },
-          {
-            "word": "Librova",
-            "count": 2
-          },
-          {
-            "word": "LIBROVA",
-            "count": 3
-          },
-          {
-            "word": "librova.xyz",
-            "count": 3
-          },
-          {
             "word": "Limits",
             "count": 2
           },
@@ -3563,6 +3509,22 @@
             "count": 1
           },
           {
+            "word": "tabuline",
+            "count": 2
+          },
+          {
+            "word": "Tabuline",
+            "count": 2
+          },
+          {
+            "word": "TABULINE",
+            "count": 3
+          },
+          {
+            "word": "tabuline.xyz",
+            "count": 3
+          },
+          {
             "word": "tape",
             "count": 1
           },
@@ -3661,11 +3623,7 @@
         ],
         "attrs": [
           {
-            "key": "aria-label=Build status",
-            "count": 1
-          },
-          {
-            "key": "aria-label=Librova overview",
+            "key": "aria-label=Market facts",
             "count": 1
           },
           {
@@ -3694,6 +3652,10 @@
           },
           {
             "key": "aria-label=Primary",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Tabuline overview",
             "count": 1
           },
           {
@@ -3765,290 +3727,260 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "is-hold",
+          "dock",
+          "dock-trigger",
+          "is-on",
           "lucide",
           "lucide-arrow-left-icon",
           "lucide-search-icon",
           "lucide-sliders-horizontal-icon",
           "lucide-wallet-icon",
-          "on",
-          "port",
-          "quay",
-          "tbl-block",
-          "tbl-cap",
-          "tbl-deck",
-          "tbl-dot",
-          "tbl-epoch",
-          "tbl-feed",
-          "tbl-foot",
-          "tbl-grid",
-          "tbl-head",
-          "tbl-preview-badge",
-          "tbl-quote-tag",
-          "tbl-stats",
-          "tbl-stats-grid",
-          "tbl-stats-line",
-          "tbl-stats-note",
-          "tbl-table-wrap",
-          "tbl-token",
-          "tbl-token-mark",
-          "tbl-token-name",
-          "tbl-toolbar",
-          "tbl-value",
-          "tbl-value--income",
-          "tbl-value--upside",
-          "tty-btn",
-          "tty-btn--ghost",
-          "tty-colophon",
-          "tty-colophon-brand",
-          "tty-colophon-copy",
-          "tty-colophon-in",
-          "tty-colophon-links",
-          "tty-colophon-top",
-          "tty-command",
-          "tty-command-actions",
-          "tty-command-copy",
-          "tty-command-line",
-          "tty-console",
-          "tty-deck",
-          "tty-display",
-          "tty-facts",
-          "tty-frame",
-          "tty-h2",
-          "tty-hint",
-          "tty-input",
-          "tty-kicker",
-          "tty-label",
-          "tty-lead",
-          "tty-meta",
-          "tty-nav",
-          "tty-nav-link",
-          "tty-num",
-          "tty-pill",
-          "tty-pill--accent",
-          "tty-prompt",
-          "tty-scene",
-          "tty-scene-in",
-          "tty-skip",
-          "tty-stage",
-          "tty-station",
-          "tty-status",
-          "tty-status-brand",
-          "tty-status-cell",
-          "tty-status-cells",
-          "tty-status-tail",
-          "tty-switch",
-          "tty-table",
-          "tty-table-wrap",
-          "tty-tiny",
-          "tty-wallet",
-          "visually-hidden",
-          "wal-trigger",
-          "wrk-back",
-          "wrk-board",
-          "wrk-deck",
-          "wrk-display",
-          "wrk-facts",
-          "wrk-facts-scene",
-          "wrk-filter-toggle",
-          "wrk-filters",
-          "wrk-main",
-          "wrk-open",
-          "wrk-open-copy",
-          "wrk-open-in",
-          "wrk-rail",
-          "wrk-search",
-          "wrk-side"
+          "shoal",
+          "shoal-back",
+          "shoal-badge",
+          "shoal-board",
+          "shoal-cap",
+          "shoal-deck",
+          "shoal-display",
+          "shoal-epoch",
+          "shoal-facts",
+          "shoal-feed",
+          "shoal-feed-dot",
+          "shoal-filter-toggle",
+          "shoal-foot",
+          "shoal-grid",
+          "shoal-ledger",
+          "shoal-ledger-head",
+          "shoal-main",
+          "shoal-open",
+          "shoal-open-copy",
+          "shoal-rail",
+          "shoal-search",
+          "shoal-side",
+          "shoal-stats",
+          "shoal-stats-grid",
+          "shoal-stats-line",
+          "shoal-stats-note",
+          "shoal-table-wrap",
+          "shoal-tag",
+          "shoal-token",
+          "shoal-token-mark",
+          "shoal-token-name",
+          "shoal-toolbar",
+          "shoal-tools",
+          "shoal-value",
+          "shoal-value--income",
+          "shoal-value--upside",
+          "tide-band",
+          "tide-band--first",
+          "tide-brand",
+          "tide-btn",
+          "tide-btn--ghost",
+          "tide-btn--primary",
+          "tide-btn--quiet",
+          "tide-display",
+          "tide-foot-brand",
+          "tide-foot-copy",
+          "tide-foot-links",
+          "tide-h2",
+          "tide-index",
+          "tide-index-link",
+          "tide-input",
+          "tide-instrument",
+          "tide-instrument-row",
+          "tide-kicker",
+          "tide-label",
+          "tide-lead",
+          "tide-mast",
+          "tide-mast-actions",
+          "tide-mast-foot",
+          "tide-mast-line",
+          "tide-mast-tail",
+          "tide-mast-top",
+          "tide-meta",
+          "tide-num",
+          "tide-pill",
+          "tide-pill--accent",
+          "tide-proof",
+          "tide-shell",
+          "tide-skip",
+          "tide-stage",
+          "tide-stage-inner",
+          "tide-switch",
+          "tide-table",
+          "tide-table-wrap",
+          "tide-wallet",
+          "visually-hidden"
         ],
         "fingerprint": [
-          "a@11:1",
-          "a@13:0",
-          "a@20:2",
+          "a@17:2",
           "a@4:0",
           "a@7:2",
+          "a@7:3",
           "a@8:0",
-          "a@8:3",
-          "b@12:0",
-          "b@22:0",
+          "a@9:0",
+          "a@9:1",
+          "aside@10:1",
+          "b@19:0",
+          "b@8:0",
           "b@9:0",
-          "button@14:1",
-          "button@15:0",
+          "button@10:1",
+          "button@11:0",
           "button@9:1",
-          "caption@17:0",
-          "circle@16:0",
+          "caption@14:0",
+          "circle@12:0",
+          "dd@13:0",
           "dd@15:0",
-          "dd@18:0",
+          "dd@8:1",
           "dd@9:0",
           "div@10:1",
-          "div@10:2",
           "div@10:3",
-          "div@11:2",
-          "div@11:3",
           "div@12:1",
           "div@12:2",
-          "div@13:3",
-          "div@14:2",
+          "div@12:3",
           "div@14:3",
-          "div@14:4+",
-          "div@15:1",
-          "div@15:2",
-          "div@17:3",
           "div@3:2",
-          "div@4:1",
+          "div@4:2",
+          "div@6:1",
           "div@6:2",
           "div@6:3",
           "div@7:2",
           "div@7:3",
-          "div@7:4+",
           "div@8:1",
           "div@8:2",
-          "div@9:1",
           "div@9:2",
+          "div@9:3",
+          "dl@11:4+",
           "dl@13:4+",
-          "dl@16:4+",
+          "dl@6:4+",
           "dl@7:4+",
-          "dt@15:0",
-          "dt@18:1",
+          "dt@13:0",
+          "dt@15:1",
+          "dt@8:0",
           "dt@9:0",
-          "h1@12:0",
-          "h2@15:0",
-          "i@21:0",
-          "i@9:0",
-          "img@12:0",
+          "h1@10:0",
+          "h2@13:0",
+          "header@5:4+",
+          "i@18:0",
           "img@8:0",
-          "input@15:0",
-          "label@14:3",
-          "li@12:1",
-          "main@5:4+",
-          "nav@7:4+",
-          "p@11:0",
-          "p@12:0",
-          "p@15:1",
-          "p@16:0",
-          "p@16:2",
+          "input@11:0",
+          "label@10:3",
+          "li@8:1",
+          "main@5:2",
+          "nav@6:4+",
+          "p@10:0",
+          "p@13:0",
+          "p@13:1",
+          "p@13:2",
+          "p@6:0",
+          "p@6:1",
           "p@7:0",
-          "p@8:1",
           "path@11:0",
-          "path@13:0",
-          "path@16:0",
-          "section@11:1",
-          "section@13:2",
-          "section@9:1",
-          "small@20:0",
-          "small@22:0",
-          "small@9:0",
-          "span@15:0",
+          "path@12:0",
+          "section@11:4+",
+          "section@8:2",
+          "small@17:0",
+          "small@19:0",
+          "small@8:0",
+          "span@11:0",
+          "span@13:0",
+          "span@14:0",
           "span@16:0",
           "span@17:0",
-          "span@19:0",
-          "span@20:0",
-          "span@20:1",
-          "span@21:0",
-          "span@21:2",
-          "span@7:0",
+          "span@17:1",
+          "span@18:0",
+          "span@18:2",
           "span@8:0",
-          "span@8:1",
-          "span@8:2",
-          "span@9:0",
           "svg@10:2",
-          "svg@12:2",
-          "svg@15:2",
-          "svg@15:4+",
-          "table@16:3",
-          "tbody@17:4+",
-          "td@19:1",
-          "td@19:2",
-          "th@19:0",
-          "thead@17:1",
-          "tr@18:4+",
-          "ul@11:4+"
+          "svg@11:2",
+          "svg@11:4+",
+          "table@13:3",
+          "tbody@14:4+",
+          "td@16:1",
+          "td@16:2",
+          "th@16:0",
+          "thead@14:1",
+          "tr@15:4+",
+          "ul@7:4+"
         ],
         "landmarks": [
           {
-            "tag": "main",
+            "tag": "header",
             "role": "",
-            "top": -3,
+            "top": 0,
             "left": 0,
-            "width": 1440,
-            "height": 1293
+            "width": 605,
+            "height": 900
           },
           {
             "tag": "nav",
             "role": "",
-            "top": 92,
-            "left": 1,
-            "width": 212,
-            "height": 1102
+            "top": 143,
+            "left": 49,
+            "width": 506,
+            "height": 391
+          },
+          {
+            "tag": "main",
+            "role": "",
+            "top": -19,
+            "left": 605,
+            "width": 835,
+            "height": 1270
+          },
+          {
+            "tag": "aside",
+            "role": "",
+            "top": 357,
+            "left": 671,
+            "width": 703,
+            "height": 86
           }
         ],
         "colors": [
           {
-            "hex": "#f4f7fa",
-            "count": 122
+            "hex": "#081b2b",
+            "count": 134
           },
           {
-            "hex": "#8698a9",
-            "count": 64
+            "hex": "#5b7185",
+            "count": 68
           },
           {
-            "hex": "#9fb1c1",
-            "count": 45
+            "hex": "#24465f",
+            "count": 40
           },
           {
-            "hex": "#d7dde4",
-            "count": 19
+            "hex": "#0a5bc0",
+            "count": 15
           },
           {
-            "hex": "#182533",
-            "count": 12
+            "hex": "#f4f9ff",
+            "count": 11
           },
           {
-            "hex": "#05080c",
+            "hex": "#298dff",
             "count": 8
           },
           {
-            "hex": "#ff00c8",
-            "count": 8
+            "hex": "#e8f3ff",
+            "count": 6
           },
           {
-            "hex": "#ff5f5f",
-            "count": 8
+            "hex": "#ffffff",
+            "count": 6
           },
           {
-            "hex": "#ff0000",
-            "count": 7
+            "hex": "#087a55",
+            "count": 5
           },
           {
-            "hex": "#111a24",
-            "count": 4
-          },
-          {
-            "hex": "#0d141b",
+            "hex": "#0d71e3",
             "count": 3
-          },
-          {
-            "hex": "#1e2a36",
-            "count": 3
-          },
-          {
-            "hex": "#000000",
-            "count": 2
-          },
-          {
-            "hex": "#0a0e14",
-            "count": 2
-          },
-          {
-            "hex": "#050608",
-            "count": 1
-          },
-          {
-            "hex": "#5ce1a0",
-            "count": 1
           }
         ],
         "contrast": [],
-        "contrastChecked": 132,
+        "contrastChecked": 133,
         "headings": [
           {
             "tag": "h1",
@@ -4063,8 +3995,10 @@
           "/",
           "/app/markets",
           "/docs",
+          "/privacy",
           "/risk",
-          "/signal"
+          "/signal",
+          "/terms"
         ],
         "overflow": {
           "documentOverflow": false,
@@ -4085,13 +4019,13 @@
       },
       "mobile": {
         "meta": {
-          "title": "Markets / Librova",
+          "title": "Markets / Tabuline",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 1261,
+          "bodyTextLength": 1406,
           "scrollWidth": 390,
           "clientWidth": 390,
-          "focusableCount": 20
+          "focusableCount": 21
         },
         "words": [
           {
@@ -4152,6 +4086,10 @@
           },
           {
             "word": "B",
+            "count": 1
+          },
+          {
+            "word": "board",
             "count": 1
           },
           {
@@ -4267,6 +4205,10 @@
             "count": 1
           },
           {
+            "word": "issued",
+            "count": 1
+          },
+          {
             "word": "J",
             "count": 1
           },
@@ -4287,28 +4229,16 @@
             "count": 1
           },
           {
-            "word": "librova",
-            "count": 1
-          },
-          {
-            "word": "Librova",
-            "count": 2
-          },
-          {
-            "word": "LIBROVA",
-            "count": 2
-          },
-          {
-            "word": "librova.xyz",
-            "count": 2
-          },
-          {
             "word": "Limits",
             "count": 1
           },
           {
             "word": "live",
             "count": 5
+          },
+          {
+            "word": "local",
+            "count": 1
           },
           {
             "word": "market",
@@ -4327,12 +4257,20 @@
             "count": 3
           },
           {
+            "word": "Mode",
+            "count": 1
+          },
+          {
             "word": "model",
             "count": 2
           },
           {
             "word": "Model",
             "count": 2
+          },
+          {
+            "word": "Network",
+            "count": 1
           },
           {
             "word": "no",
@@ -4344,7 +4282,7 @@
           },
           {
             "word": "not",
-            "count": 1
+            "count": 3
           },
           {
             "word": "Not",
@@ -4359,8 +4297,12 @@
             "count": 1
           },
           {
-            "word": "Open",
+            "word": "only",
             "count": 1
+          },
+          {
+            "word": "Open",
+            "count": 2
           },
           {
             "word": "or",
@@ -4384,7 +4326,7 @@
           },
           {
             "word": "Preview",
-            "count": 5
+            "count": 6
           },
           {
             "word": "prices",
@@ -4411,7 +4353,15 @@
             "count": 1
           },
           {
+            "word": "Records",
+            "count": 1
+          },
+          {
             "word": "Reference",
+            "count": 1
+          },
+          {
+            "word": "registered",
             "count": 1
           },
           {
@@ -4456,7 +4406,7 @@
           },
           {
             "word": "Solana",
-            "count": 5
+            "count": 6
           },
           {
             "word": "Static",
@@ -4471,12 +4421,28 @@
             "count": 1
           },
           {
+            "word": "tabuline",
+            "count": 2
+          },
+          {
+            "word": "Tabuline",
+            "count": 2
+          },
+          {
+            "word": "TABULINE",
+            "count": 3
+          },
+          {
+            "word": "tabuline.xyz",
+            "count": 3
+          },
+          {
             "word": "Target",
             "count": 1
           },
           {
             "word": "targets",
-            "count": 1
+            "count": 2
           },
           {
             "word": "terminal",
@@ -4488,7 +4454,7 @@
           },
           {
             "word": "the",
-            "count": 1
+            "count": 2
           },
           {
             "word": "This",
@@ -4520,7 +4486,7 @@
           },
           {
             "word": "Unit",
-            "count": 2
+            "count": 3
           },
           {
             "word": "unregistered",
@@ -4561,11 +4527,11 @@
         ],
         "attrs": [
           {
-            "key": "aria-label=Librova overview",
+            "key": "aria-label=Market cards",
             "count": 1
           },
           {
-            "key": "aria-label=Market cards",
+            "key": "aria-label=Market facts",
             "count": 1
           },
           {
@@ -4581,6 +4547,10 @@
             "count": 1
           },
           {
+            "key": "aria-label=Tabuline overview",
+            "count": 1
+          },
+          {
             "key": "placeholder=Search token or market",
             "count": 1
           }
@@ -4592,7 +4562,7 @@
           },
           {
             "href": "/app/markets",
-            "count": 1
+            "count": 2
           },
           {
             "href": "/app/markets/BONK",
@@ -4645,253 +4615,235 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "is-hold",
+          "dock",
+          "dock-trigger",
+          "is-on",
           "lucide",
-          "lucide-activity-icon",
           "lucide-arrow-left-icon",
           "lucide-arrow-right-icon",
+          "lucide-menu-icon",
           "lucide-search-icon",
           "lucide-sliders-horizontal-icon",
           "lucide-wallet-icon",
-          "on",
-          "port",
-          "quay",
-          "tbl-block",
-          "tbl-card",
-          "tbl-card-copy",
-          "tbl-card-values",
-          "tbl-deck",
-          "tbl-dot",
-          "tbl-feed",
-          "tbl-foot",
-          "tbl-head",
-          "tbl-preview-badge",
-          "tbl-rail",
-          "tbl-stats",
-          "tbl-stats-grid",
-          "tbl-stats-line",
-          "tbl-stats-note",
-          "tbl-token-mark",
-          "tbl-toolbar",
-          "tty-btn",
-          "tty-btn--ghost",
-          "tty-colophon",
-          "tty-colophon-brand",
-          "tty-colophon-copy",
-          "tty-colophon-in",
-          "tty-colophon-links",
-          "tty-colophon-top",
-          "tty-command",
-          "tty-command-actions",
-          "tty-command-copy",
-          "tty-command-line",
-          "tty-command-more",
-          "tty-console",
-          "tty-deck",
-          "tty-display",
-          "tty-facts",
-          "tty-frame",
-          "tty-h2",
-          "tty-hint",
-          "tty-input",
-          "tty-kicker",
-          "tty-label",
-          "tty-lead",
-          "tty-meta",
-          "tty-pill",
-          "tty-pill--accent",
-          "tty-prompt",
-          "tty-scene",
-          "tty-scene-in",
-          "tty-skip",
-          "tty-stage",
-          "tty-station",
-          "tty-status",
-          "tty-status-brand",
-          "tty-switch",
-          "tty-tiny",
-          "tty-wallet",
-          "visually-hidden",
-          "wal-trigger",
-          "wrk-back",
-          "wrk-board",
-          "wrk-deck",
-          "wrk-display",
-          "wrk-facts",
-          "wrk-facts-scene",
-          "wrk-filter-toggle",
-          "wrk-filters",
-          "wrk-main",
-          "wrk-open",
-          "wrk-open-copy",
-          "wrk-open-in",
-          "wrk-rail",
-          "wrk-search",
-          "wrk-side"
+          "shoal",
+          "shoal-back",
+          "shoal-badge",
+          "shoal-board",
+          "shoal-card",
+          "shoal-card-copy",
+          "shoal-card-values",
+          "shoal-deck",
+          "shoal-display",
+          "shoal-facts",
+          "shoal-feed",
+          "shoal-feed-dot",
+          "shoal-filter-toggle",
+          "shoal-foot",
+          "shoal-ledger",
+          "shoal-ledger-head",
+          "shoal-main",
+          "shoal-open",
+          "shoal-open-copy",
+          "shoal-rail",
+          "shoal-search",
+          "shoal-side",
+          "shoal-stats",
+          "shoal-stats-grid",
+          "shoal-stats-line",
+          "shoal-stats-note",
+          "shoal-token-mark",
+          "shoal-toolbar",
+          "shoal-tools",
+          "tide-band",
+          "tide-band--first",
+          "tide-brand",
+          "tide-btn",
+          "tide-btn--ghost",
+          "tide-btn--primary",
+          "tide-btn--quiet",
+          "tide-display",
+          "tide-foot-brand",
+          "tide-foot-copy",
+          "tide-foot-links",
+          "tide-h2",
+          "tide-index-toggle",
+          "tide-input",
+          "tide-instrument",
+          "tide-instrument-row",
+          "tide-kicker",
+          "tide-label",
+          "tide-lead",
+          "tide-mast",
+          "tide-mast-actions",
+          "tide-mast-foot",
+          "tide-mast-line",
+          "tide-mast-tail",
+          "tide-mast-top",
+          "tide-meta",
+          "tide-pill",
+          "tide-pill--accent",
+          "tide-proof",
+          "tide-shell",
+          "tide-skip",
+          "tide-stage",
+          "tide-stage-inner",
+          "tide-switch",
+          "tide-wallet",
+          "visually-hidden"
         ],
         "fingerprint": [
-          "a@11:1",
-          "a@13:0",
-          "a@16:3",
+          "a@13:3",
           "a@4:0",
           "a@7:2",
-          "b@12:0",
-          "b@18:0",
-          "b@19:0",
-          "button@14:1",
-          "button@15:0",
+          "a@8:0",
+          "a@9:0",
+          "a@9:1",
+          "aside@10:1",
+          "b@15:0",
+          "b@16:0",
+          "b@8:0",
+          "b@9:0",
+          "button@10:1",
+          "button@11:0",
           "button@8:1",
           "button@9:1",
-          "circle@16:0",
+          "circle@12:0",
+          "dd@13:0",
           "dd@15:0",
-          "dd@18:0",
+          "dd@8:1",
           "dd@9:0",
           "div@10:1",
-          "div@10:2",
           "div@10:3",
-          "div@11:2",
-          "div@11:3",
           "div@12:1",
           "div@12:2",
-          "div@13:3",
-          "div@14:2",
+          "div@12:3",
+          "div@12:4+",
           "div@14:3",
-          "div@14:4+",
-          "div@15:1",
-          "div@15:2",
-          "div@15:4+",
-          "div@17:3",
           "div@3:2",
-          "div@4:1",
+          "div@4:2",
+          "div@6:1",
           "div@6:2",
           "div@6:3",
           "div@7:2",
           "div@7:3",
           "div@8:1",
           "div@8:2",
-          "div@9:1",
           "div@9:2",
+          "div@9:3",
+          "dl@11:4+",
           "dl@13:4+",
-          "dl@16:4+",
+          "dl@6:4+",
           "dl@7:4+",
-          "dt@15:0",
-          "dt@18:1",
+          "dt@13:0",
+          "dt@15:1",
+          "dt@8:0",
           "dt@9:0",
-          "h1@12:0",
-          "h2@15:0",
-          "img@12:0",
+          "h1@10:0",
+          "h2@13:0",
+          "header@5:4+",
           "img@8:0",
-          "input@15:0",
-          "label@14:3",
-          "li@12:1",
-          "main@5:4+",
-          "p@11:0",
-          "p@12:0",
-          "p@15:1",
-          "p@16:0",
-          "p@16:2",
+          "input@11:0",
+          "label@10:3",
+          "li@8:1",
+          "main@5:2",
+          "p@10:0",
+          "p@13:0",
+          "p@13:1",
+          "p@13:2",
+          "p@6:0",
+          "p@6:1",
           "p@7:0",
-          "p@8:1",
-          "path@10:0",
           "path@11:0",
-          "path@13:0",
+          "path@12:0",
           "path@16:0",
-          "path@19:0",
-          "section@11:1",
-          "section@13:2",
-          "section@9:1",
-          "small@18:0",
-          "small@19:0",
-          "span@15:0",
+          "section@11:4+",
+          "section@8:2",
+          "small@15:0",
+          "small@16:0",
+          "span@11:0",
+          "span@13:0",
+          "span@14:0",
+          "span@14:2",
+          "span@14:3",
+          "span@15:2",
           "span@16:0",
-          "span@17:0",
-          "span@17:2",
-          "span@17:3",
-          "span@18:2",
-          "span@19:0",
-          "span@8:0",
           "svg@10:2",
-          "svg@12:2",
+          "svg@11:2",
+          "svg@11:4+",
           "svg@15:2",
-          "svg@15:4+",
-          "svg@18:2",
-          "svg@9:1",
-          "ul@11:4+"
+          "svg@9:3",
+          "ul@7:4+"
         ],
         "landmarks": [
           {
-            "tag": "main",
+            "tag": "header",
             "role": "",
             "top": 0,
             "left": 0,
             "width": 390,
-            "height": 1832
+            "height": 382
+          },
+          {
+            "tag": "main",
+            "role": "",
+            "top": 382,
+            "left": 0,
+            "width": 390,
+            "height": 1625
+          },
+          {
+            "tag": "aside",
+            "role": "",
+            "top": 762,
+            "left": 18,
+            "width": 354,
+            "height": 339
           }
         ],
         "colors": [
           {
-            "hex": "#f4f7fa",
-            "count": 97
+            "hex": "#081b2b",
+            "count": 110
           },
           {
-            "hex": "#8698a9",
-            "count": 54
+            "hex": "#5b7185",
+            "count": 60
           },
           {
-            "hex": "#9fb1c1",
-            "count": 25
+            "hex": "#24465f",
+            "count": 17
           },
           {
-            "hex": "#05080c",
-            "count": 12
+            "hex": "#ffffff",
+            "count": 9
           },
           {
-            "hex": "#d7dde4",
-            "count": 10
-          },
-          {
-            "hex": "#182533",
+            "hex": "#0a5bc0",
             "count": 8
           },
           {
-            "hex": "#ff5f5f",
+            "hex": "#0d71e3",
             "count": 7
           },
           {
-            "hex": "#111a24",
+            "hex": "#e8f3ff",
+            "count": 7
+          },
+          {
+            "hex": "#087a55",
+            "count": 5
+          },
+          {
+            "hex": "#298dff",
             "count": 4
           },
           {
-            "hex": "#ff00c8",
-            "count": 4
-          },
-          {
-            "hex": "#0d141b",
-            "count": 3
-          },
-          {
-            "hex": "#1e2a36",
-            "count": 3
-          },
-          {
-            "hex": "#000000",
-            "count": 2
-          },
-          {
-            "hex": "#0a0e14",
-            "count": 2
-          },
-          {
-            "hex": "#ff0000",
-            "count": 2
-          },
-          {
-            "hex": "#050608",
+            "hex": "#f4f9ff",
             "count": 1
           }
         ],
         "contrast": [],
-        "contrastChecked": 85,
+        "contrastChecked": 96,
         "headings": [
           {
             "tag": "h1",
@@ -4902,7 +4854,15 @@
             "text": "Market quotes"
           }
         ],
-        "navTargets": [],
+        "navTargets": [
+          "/",
+          "/app/markets",
+          "/docs",
+          "/privacy",
+          "/risk",
+          "/signal",
+          "/terms"
+        ],
         "overflow": {
           "documentOverflow": false,
           "offenders": []
@@ -4913,16 +4873,16 @@
         "targets": [
           "",
           "/",
-          "/app/markets/SOL",
-          "/app/markets/JUP",
-          "/app/markets/BONK",
-          "/app/markets/USDC",
           "/app/markets",
           "/signal",
           "/docs",
           "/risk",
           "/terms",
-          "/privacy"
+          "/privacy",
+          "/app/markets/SOL",
+          "/app/markets/JUP",
+          "/app/markets/BONK",
+          "/app/markets/USDC"
         ],
         "reachable": true
       }
@@ -4933,10 +4893,10 @@
       "status": 200,
       "desktop": {
         "meta": {
-          "title": "Reference / Librova",
+          "title": "Reference / Tabuline",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 4464,
+          "bodyTextLength": 4474,
           "scrollWidth": 1440,
           "clientWidth": 1440,
           "focusableCount": 30
@@ -5495,22 +5455,6 @@
             "count": 1
           },
           {
-            "word": "librova",
-            "count": 2
-          },
-          {
-            "word": "Librova",
-            "count": 3
-          },
-          {
-            "word": "LIBROVA",
-            "count": 4
-          },
-          {
-            "word": "librova.xyz",
-            "count": 3
-          },
-          {
             "word": "Limits",
             "count": 2
           },
@@ -6051,6 +5995,22 @@
             "count": 2
           },
           {
+            "word": "tabuline",
+            "count": 2
+          },
+          {
+            "word": "Tabuline",
+            "count": 3
+          },
+          {
+            "word": "TABULINE",
+            "count": 4
+          },
+          {
+            "word": "tabuline.xyz",
+            "count": 3
+          },
+          {
             "word": "tape",
             "count": 1
           },
@@ -6241,10 +6201,6 @@
             "count": 1
           },
           {
-            "key": "aria-label=Build status",
-            "count": 1
-          },
-          {
             "key": "aria-label=Legacy journal anchor",
             "count": 1
           },
@@ -6261,15 +6217,15 @@
             "count": 1
           },
           {
-            "key": "aria-label=Librova overview",
-            "count": 1
-          },
-          {
             "key": "aria-label=On this page",
             "count": 1
           },
           {
             "key": "aria-label=Primary",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Tabuline overview",
             "count": 1
           }
         ],
@@ -6360,262 +6316,231 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "doc-anchor",
-          "doc-body",
-          "doc-card",
-          "doc-card-index",
-          "doc-cards",
-          "doc-console",
-          "doc-display",
-          "doc-doc-link",
-          "doc-figure",
-          "doc-formula",
-          "doc-formula-cells",
-          "doc-formula-label",
-          "doc-index",
-          "doc-index-label",
-          "doc-index-rail",
-          "doc-intro",
-          "doc-leaf",
-          "doc-open",
-          "doc-open-in",
-          "doc-open-note",
-          "doc-prose",
-          "doc-role",
-          "doc-role-label",
-          "doc-role-label--income",
-          "doc-role-label--upside",
-          "doc-roles",
-          "doc-section",
-          "doc-section-head",
-          "doc-split",
-          "doc-split-copy",
-          "doc-step-number",
-          "doc-steps",
-          "is-hold",
-          "leaf",
+          "dock",
+          "dock-trigger",
           "lucide",
           "lucide-arrow-right-icon",
           "lucide-external-link-icon",
           "lucide-wallet-icon",
-          "port",
-          "tty-btn",
-          "tty-btn--ghost",
-          "tty-colophon",
-          "tty-colophon-brand",
-          "tty-colophon-copy",
-          "tty-colophon-in",
-          "tty-colophon-links",
-          "tty-colophon-top",
-          "tty-command",
-          "tty-command-actions",
-          "tty-command-copy",
-          "tty-command-line",
-          "tty-console",
-          "tty-deck",
-          "tty-display",
-          "tty-face",
-          "tty-facts",
-          "tty-facts--stack",
-          "tty-frame",
-          "tty-h2",
-          "tty-h3",
-          "tty-hint",
-          "tty-kicker",
-          "tty-lead",
-          "tty-link",
-          "tty-nav",
-          "tty-nav-link",
-          "tty-note",
-          "tty-prompt",
-          "tty-scene",
-          "tty-scene-in",
-          "tty-skip",
-          "tty-stage",
-          "tty-station",
-          "tty-status",
-          "tty-status-brand",
-          "tty-status-cell",
-          "tty-status-cells",
-          "tty-status-tail",
-          "tty-tiny",
-          "tty-wallet",
-          "wal-trigger"
+          "strand",
+          "strand-anchor",
+          "strand-body",
+          "strand-card",
+          "strand-card-index",
+          "strand-cards",
+          "strand-display",
+          "strand-doc",
+          "strand-figure",
+          "strand-formula",
+          "strand-formula-cells",
+          "strand-formula-label",
+          "strand-index",
+          "strand-index-label",
+          "strand-index-rail",
+          "strand-intro",
+          "strand-leaf",
+          "strand-open",
+          "strand-open-note",
+          "strand-prose",
+          "strand-role",
+          "strand-role-label",
+          "strand-role-label--income",
+          "strand-role-label--upside",
+          "strand-roles",
+          "strand-section",
+          "strand-section-head",
+          "strand-split",
+          "strand-split-copy",
+          "strand-step-number",
+          "strand-steps",
+          "tide-band",
+          "tide-band--first",
+          "tide-brand",
+          "tide-btn",
+          "tide-btn--primary",
+          "tide-display",
+          "tide-foot-brand",
+          "tide-foot-copy",
+          "tide-foot-links",
+          "tide-h2",
+          "tide-h3",
+          "tide-index",
+          "tide-index-link",
+          "tide-instrument",
+          "tide-instrument-row",
+          "tide-kicker",
+          "tide-lead",
+          "tide-link",
+          "tide-mast",
+          "tide-mast-actions",
+          "tide-mast-foot",
+          "tide-mast-line",
+          "tide-mast-tail",
+          "tide-mast-top",
+          "tide-note",
+          "tide-proof",
+          "tide-shell",
+          "tide-skip",
+          "tide-stage",
+          "tide-stage-inner",
+          "tide-wallet"
         ],
         "fingerprint": [
-          "a@12:2",
-          "a@13:0",
-          "a@14:1",
+          "a@11:2",
+          "a@12:1",
           "a@4:0",
           "a@7:2",
+          "a@7:3",
           "a@8:0",
-          "a@8:3",
-          "article@14:3",
+          "a@9:0",
+          "article@12:3",
           "b@12:0",
-          "b@13:0",
+          "b@8:0",
           "b@9:0",
           "button@9:1",
-          "dd@16:0",
+          "dd@14:0",
+          "dd@8:1",
           "dd@9:0",
-          "div@10:1",
+          "div@10:0",
+          "div@10:2",
           "div@10:3",
           "div@10:4+",
           "div@11:2",
+          "div@11:3",
           "div@11:4+",
-          "div@12:0",
-          "div@12:2",
-          "div@12:3",
-          "div@12:4+",
           "div@13:2",
-          "div@13:3",
-          "div@13:4+",
-          "div@15:2",
           "div@3:2",
-          "div@4:1",
+          "div@4:2",
+          "div@6:1",
           "div@6:2",
           "div@6:3",
           "div@7:2",
           "div@7:3",
-          "div@7:4+",
           "div@8:1",
           "div@8:2",
-          "div@9:1",
-          "div@9:2",
-          "dl@14:3",
+          "div@9:4+",
+          "dl@12:3",
+          "dl@6:4+",
           "dl@7:4+",
-          "dt@16:0",
+          "dt@14:0",
+          "dt@8:0",
           "dt@9:0",
-          "figcaption@16:3",
-          "figure@15:2",
-          "h1@11:0",
+          "figcaption@14:3",
+          "figure@13:2",
+          "h1@9:0",
+          "h2@12:0",
           "h2@14:0",
-          "h2@16:0",
+          "h3@13:0",
           "h3@15:0",
-          "h3@17:0",
-          "i@9:0",
-          "img@12:0",
-          "img@16:0",
+          "header@5:4+",
+          "img@14:0",
           "img@8:0",
           "li@12:1",
-          "li@14:1",
-          "li@14:2",
-          "main@5:4+",
-          "nav@10:2",
-          "nav@7:4+",
-          "ol@13:4+",
+          "li@12:2",
+          "li@8:1",
+          "main@5:2",
+          "nav@6:4+",
+          "nav@9:2",
+          "ol@11:4+",
+          "p@10:0",
           "p@11:0",
+          "p@12:0",
           "p@13:0",
           "p@14:0",
           "p@15:0",
-          "p@16:0",
-          "p@17:0",
+          "p@6:0",
+          "p@6:1",
           "p@7:0",
-          "p@8:1",
+          "p@9:0",
           "path@11:0",
-          "path@16:0",
-          "section@9:1",
-          "small@9:0",
+          "path@14:0",
+          "section@8:4+",
+          "small@8:0",
+          "span@12:0",
           "span@13:0",
           "span@15:0",
-          "span@17:0",
-          "span@7:0",
           "span@8:0",
-          "span@8:1",
-          "span@8:2",
-          "span@9:0",
-          "strong@14:0",
+          "strong@12:0",
           "svg@10:2",
-          "svg@15:2",
-          "svg@15:3",
-          "ul@11:4+",
-          "ul@13:3"
+          "svg@13:2",
+          "svg@13:3",
+          "ul@11:3",
+          "ul@7:4+"
         ],
         "landmarks": [
           {
+            "tag": "header",
+            "role": "",
+            "top": 0,
+            "left": 0,
+            "width": 605,
+            "height": 900
+          },
+          {
+            "tag": "nav",
+            "role": "",
+            "top": 143,
+            "left": 49,
+            "width": 506,
+            "height": 391
+          },
+          {
             "tag": "main",
             "role": "",
-            "top": -53,
-            "left": 0,
-            "width": 1440,
-            "height": 3460
+            "top": -129,
+            "left": 605,
+            "width": 835,
+            "height": 4430
           },
           {
             "tag": "nav",
             "role": "",
-            "top": 42,
-            "left": 1,
-            "width": 212,
-            "height": 3269
-          },
-          {
-            "tag": "nav",
-            "role": "",
-            "top": 336,
-            "left": 213,
-            "width": 208,
-            "height": 374
+            "top": 202,
+            "left": 671,
+            "width": 180,
+            "height": 413
           }
         ],
         "colors": [
           {
-            "hex": "#f4f7fa",
-            "count": 115
+            "hex": "#081b2b",
+            "count": 130
           },
           {
-            "hex": "#9fb1c1",
-            "count": 80
+            "hex": "#5b7185",
+            "count": 60
           },
           {
-            "hex": "#8698a9",
-            "count": 35
+            "hex": "#24465f",
+            "count": 54
           },
           {
-            "hex": "#ff5f5f",
-            "count": 35
+            "hex": "#0d71e3",
+            "count": 22
           },
           {
-            "hex": "#05080c",
-            "count": 8
+            "hex": "#ffffff",
+            "count": 17
           },
           {
-            "hex": "#111a24",
+            "hex": "#0a5bc0",
             "count": 4
           },
           {
-            "hex": "#d7dde4",
-            "count": 4
-          },
-          {
-            "hex": "#000000",
+            "hex": "#f4f9ff",
             "count": 2
           },
           {
-            "hex": "#0d141b",
-            "count": 2
-          },
-          {
-            "hex": "#1e2a36",
-            "count": 2
-          },
-          {
-            "hex": "#ff0000",
-            "count": 2
-          },
-          {
-            "hex": "#050608",
-            "count": 1
-          },
-          {
-            "hex": "#5ce1a0",
+            "hex": "#d8e7f5",
             "count": 1
           }
         ],
         "contrast": [],
-        "contrastChecked": 148,
+        "contrastChecked": 149,
         "headings": [
           {
             "tag": "h1",
-            "text": "How Librova works."
+            "text": "How Tabuline works."
           },
           {
             "tag": "h2",
@@ -6683,7 +6608,7 @@
           },
           {
             "tag": "h2",
-            "text": "The proposed LIBROVA symbol is separate."
+            "text": "The proposed TABULINE symbol is separate."
           },
           {
             "tag": "h2",
@@ -6703,8 +6628,10 @@
           "/",
           "/app/markets",
           "/docs",
+          "/privacy",
           "/risk",
-          "/signal"
+          "/signal",
+          "/terms"
         ],
         "overflow": {
           "documentOverflow": false,
@@ -6725,13 +6652,13 @@
       },
       "mobile": {
         "meta": {
-          "title": "Reference / Librova",
+          "title": "Reference / Tabuline",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 4215,
+          "bodyTextLength": 4362,
           "scrollWidth": 390,
           "clientWidth": 390,
-          "focusableCount": 24
+          "focusableCount": 25
         },
         "words": [
           {
@@ -6936,6 +6863,10 @@
           },
           {
             "word": "binding",
+            "count": 1
+          },
+          {
+            "word": "board",
             "count": 1
           },
           {
@@ -7232,7 +7163,7 @@
           },
           {
             "word": "issued",
-            "count": 2
+            "count": 3
           },
           {
             "word": "it",
@@ -7275,22 +7206,6 @@
             "count": 1
           },
           {
-            "word": "librova",
-            "count": 1
-          },
-          {
-            "word": "Librova",
-            "count": 3
-          },
-          {
-            "word": "LIBROVA",
-            "count": 3
-          },
-          {
-            "word": "librova.xyz",
-            "count": 2
-          },
-          {
             "word": "Limits",
             "count": 1
           },
@@ -7312,7 +7227,7 @@
           },
           {
             "word": "local",
-            "count": 2
+            "count": 3
           },
           {
             "word": "locally",
@@ -7351,6 +7266,10 @@
             "count": 2
           },
           {
+            "word": "Mode",
+            "count": 1
+          },
+          {
             "word": "model",
             "count": 3
           },
@@ -7375,6 +7294,10 @@
             "count": 3
           },
           {
+            "word": "Network",
+            "count": 1
+          },
+          {
             "word": "no",
             "count": 4
           },
@@ -7384,7 +7307,7 @@
           },
           {
             "word": "not",
-            "count": 10
+            "count": 12
           },
           {
             "word": "notes",
@@ -7412,11 +7335,11 @@
           },
           {
             "word": "only",
-            "count": 2
+            "count": 3
           },
           {
             "word": "Open",
-            "count": 1
+            "count": 2
           },
           {
             "word": "or",
@@ -7512,7 +7435,7 @@
           },
           {
             "word": "Preview",
-            "count": 1
+            "count": 2
           },
           {
             "word": "price",
@@ -7603,11 +7526,19 @@
             "count": 2
           },
           {
+            "word": "Records",
+            "count": 1
+          },
+          {
             "word": "reference",
             "count": 3
           },
           {
             "word": "Reference",
+            "count": 1
+          },
+          {
+            "word": "registered",
             "count": 1
           },
           {
@@ -7748,7 +7679,7 @@
           },
           {
             "word": "Solana",
-            "count": 5
+            "count": 6
           },
           {
             "word": "source",
@@ -7807,12 +7738,28 @@
             "count": 2
           },
           {
+            "word": "tabuline",
+            "count": 2
+          },
+          {
+            "word": "Tabuline",
+            "count": 3
+          },
+          {
+            "word": "TABULINE",
+            "count": 4
+          },
+          {
+            "word": "tabuline.xyz",
+            "count": 3
+          },
+          {
             "word": "Target",
             "count": 1
           },
           {
             "word": "targets",
-            "count": 1
+            "count": 2
           },
           {
             "word": "term",
@@ -7832,7 +7779,7 @@
           },
           {
             "word": "the",
-            "count": 20
+            "count": 21
           },
           {
             "word": "The",
@@ -7896,7 +7843,7 @@
           },
           {
             "word": "Unit",
-            "count": 1
+            "count": 2
           },
           {
             "word": "unregistered",
@@ -8009,15 +7956,15 @@
             "count": 1
           },
           {
-            "key": "aria-label=Librova overview",
-            "count": 1
-          },
-          {
             "key": "aria-label=On this page",
             "count": 1
           },
           {
             "key": "aria-label=Open navigation",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Tabuline overview",
             "count": 1
           }
         ],
@@ -8028,7 +7975,7 @@
           },
           {
             "href": "/app/markets",
-            "count": 1
+            "count": 2
           },
           {
             "href": "/docs",
@@ -8104,238 +8051,226 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "doc-anchor",
-          "doc-body",
-          "doc-card",
-          "doc-card-index",
-          "doc-cards",
-          "doc-console",
-          "doc-display",
-          "doc-doc-link",
-          "doc-figure",
-          "doc-formula",
-          "doc-formula-cells",
-          "doc-formula-label",
-          "doc-index",
-          "doc-index-label",
-          "doc-index-rail",
-          "doc-intro",
-          "doc-leaf",
-          "doc-open",
-          "doc-open-in",
-          "doc-open-note",
-          "doc-prose",
-          "doc-role",
-          "doc-role-label",
-          "doc-role-label--income",
-          "doc-role-label--upside",
-          "doc-roles",
-          "doc-section",
-          "doc-section-head",
-          "doc-split",
-          "doc-split-copy",
-          "doc-step-number",
-          "doc-steps",
-          "is-hold",
-          "leaf",
+          "dock",
+          "dock-trigger",
           "lucide",
-          "lucide-activity-icon",
           "lucide-arrow-right-icon",
           "lucide-external-link-icon",
+          "lucide-menu-icon",
           "lucide-wallet-icon",
-          "port",
-          "tty-btn",
-          "tty-colophon",
-          "tty-colophon-brand",
-          "tty-colophon-copy",
-          "tty-colophon-in",
-          "tty-colophon-links",
-          "tty-colophon-top",
-          "tty-command",
-          "tty-command-actions",
-          "tty-command-copy",
-          "tty-command-line",
-          "tty-command-more",
-          "tty-console",
-          "tty-deck",
-          "tty-display",
-          "tty-face",
-          "tty-facts",
-          "tty-facts--stack",
-          "tty-frame",
-          "tty-h2",
-          "tty-h3",
-          "tty-hint",
-          "tty-kicker",
-          "tty-lead",
-          "tty-link",
-          "tty-note",
-          "tty-prompt",
-          "tty-scene",
-          "tty-scene-in",
-          "tty-skip",
-          "tty-stage",
-          "tty-station",
-          "tty-status",
-          "tty-status-brand",
-          "tty-tiny",
-          "tty-wallet",
-          "wal-trigger"
+          "strand",
+          "strand-anchor",
+          "strand-body",
+          "strand-card",
+          "strand-card-index",
+          "strand-cards",
+          "strand-display",
+          "strand-doc",
+          "strand-figure",
+          "strand-formula",
+          "strand-formula-cells",
+          "strand-formula-label",
+          "strand-index",
+          "strand-index-label",
+          "strand-index-rail",
+          "strand-intro",
+          "strand-leaf",
+          "strand-open",
+          "strand-open-note",
+          "strand-prose",
+          "strand-role",
+          "strand-role-label",
+          "strand-role-label--income",
+          "strand-role-label--upside",
+          "strand-roles",
+          "strand-section",
+          "strand-section-head",
+          "strand-split",
+          "strand-split-copy",
+          "strand-step-number",
+          "strand-steps",
+          "tide-band",
+          "tide-band--first",
+          "tide-brand",
+          "tide-btn",
+          "tide-btn--primary",
+          "tide-btn--quiet",
+          "tide-display",
+          "tide-foot-brand",
+          "tide-foot-copy",
+          "tide-foot-links",
+          "tide-h2",
+          "tide-h3",
+          "tide-index-toggle",
+          "tide-instrument",
+          "tide-instrument-row",
+          "tide-kicker",
+          "tide-lead",
+          "tide-link",
+          "tide-mast",
+          "tide-mast-actions",
+          "tide-mast-foot",
+          "tide-mast-line",
+          "tide-mast-tail",
+          "tide-mast-top",
+          "tide-note",
+          "tide-proof",
+          "tide-shell",
+          "tide-skip",
+          "tide-stage",
+          "tide-stage-inner",
+          "tide-wallet"
         ],
         "fingerprint": [
-          "a@12:2",
-          "a@13:0",
-          "a@14:1",
+          "a@11:2",
+          "a@12:1",
           "a@4:0",
           "a@7:2",
-          "article@14:3",
+          "a@8:0",
+          "a@9:0",
+          "article@12:3",
           "b@12:0",
-          "b@13:0",
+          "b@8:0",
+          "b@9:0",
           "button@8:1",
           "button@9:1",
-          "dd@16:0",
+          "dd@14:0",
+          "dd@8:1",
           "dd@9:0",
-          "div@10:1",
+          "div@10:0",
+          "div@10:2",
           "div@10:3",
           "div@10:4+",
           "div@11:2",
+          "div@11:3",
           "div@11:4+",
-          "div@12:0",
-          "div@12:2",
-          "div@12:3",
-          "div@12:4+",
           "div@13:2",
-          "div@13:3",
-          "div@13:4+",
-          "div@15:2",
           "div@3:2",
-          "div@4:1",
+          "div@4:2",
+          "div@6:1",
           "div@6:2",
           "div@6:3",
           "div@7:2",
           "div@7:3",
           "div@8:1",
           "div@8:2",
-          "div@9:1",
-          "div@9:2",
-          "dl@14:3",
+          "div@9:4+",
+          "dl@12:3",
+          "dl@6:4+",
           "dl@7:4+",
-          "dt@16:0",
+          "dt@14:0",
+          "dt@8:0",
           "dt@9:0",
-          "figcaption@16:3",
-          "figure@15:2",
-          "h1@11:0",
+          "figcaption@14:3",
+          "figure@13:2",
+          "h1@9:0",
+          "h2@12:0",
           "h2@14:0",
-          "h2@16:0",
+          "h3@13:0",
           "h3@15:0",
-          "h3@17:0",
-          "img@12:0",
-          "img@16:0",
+          "header@5:4+",
+          "img@14:0",
           "img@8:0",
           "li@12:1",
-          "li@14:1",
-          "li@14:2",
-          "main@5:4+",
-          "nav@10:2",
-          "ol@13:4+",
+          "li@12:2",
+          "li@8:1",
+          "main@5:2",
+          "nav@9:2",
+          "ol@11:4+",
+          "p@10:0",
           "p@11:0",
+          "p@12:0",
           "p@13:0",
           "p@14:0",
           "p@15:0",
-          "p@16:0",
-          "p@17:0",
+          "p@6:0",
+          "p@6:1",
           "p@7:0",
-          "p@8:1",
-          "path@10:0",
+          "p@9:0",
           "path@11:0",
-          "path@16:0",
-          "section@9:1",
+          "path@14:0",
+          "section@8:4+",
+          "span@12:0",
           "span@13:0",
           "span@15:0",
-          "span@17:0",
-          "span@8:0",
-          "strong@14:0",
+          "strong@12:0",
           "svg@10:2",
-          "svg@15:2",
-          "svg@15:3",
-          "svg@9:1",
-          "ul@11:4+",
-          "ul@13:3"
+          "svg@13:2",
+          "svg@13:3",
+          "svg@9:3",
+          "ul@11:3",
+          "ul@7:4+"
         ],
         "landmarks": [
           {
-            "tag": "main",
+            "tag": "header",
             "role": "",
             "top": 0,
             "left": 0,
             "width": 390,
-            "height": 5351
+            "height": 382
+          },
+          {
+            "tag": "main",
+            "role": "",
+            "top": 382,
+            "left": 0,
+            "width": 390,
+            "height": 5182
           },
           {
             "tag": "nav",
             "role": "",
-            "top": 329,
-            "left": 0,
-            "width": 390,
-            "height": 111
+            "top": 662,
+            "left": 18,
+            "width": 354,
+            "height": 413
           }
         ],
         "colors": [
           {
-            "hex": "#f4f7fa",
-            "count": 111
+            "hex": "#081b2b",
+            "count": 127
           },
           {
-            "hex": "#9fb1c1",
-            "count": 64
+            "hex": "#5b7185",
+            "count": 50
           },
           {
-            "hex": "#ff5f5f",
-            "count": 34
+            "hex": "#24465f",
+            "count": 43
           },
           {
-            "hex": "#8698a9",
-            "count": 23
+            "hex": "#0d71e3",
+            "count": 22
           },
           {
-            "hex": "#05080c",
-            "count": 8
+            "hex": "#ffffff",
+            "count": 17
           },
           {
-            "hex": "#111a24",
-            "count": 4
+            "hex": "#0a5bc0",
+            "count": 5
           },
           {
-            "hex": "#d7dde4",
-            "count": 3
-          },
-          {
-            "hex": "#000000",
+            "hex": "#f4f9ff",
             "count": 2
           },
           {
-            "hex": "#0d141b",
-            "count": 2
-          },
-          {
-            "hex": "#1e2a36",
-            "count": 2
-          },
-          {
-            "hex": "#050608",
+            "hex": "#d8e7f5",
             "count": 1
           },
           {
-            "hex": "#ff0000",
+            "hex": "#e8f3ff",
             "count": 1
           }
         ],
         "contrast": [],
-        "contrastChecked": 120,
+        "contrastChecked": 131,
         "headings": [
           {
             "tag": "h1",
-            "text": "How Librova works."
+            "text": "How Tabuline works."
           },
           {
             "tag": "h2",
@@ -8403,7 +8338,7 @@
           },
           {
             "tag": "h2",
-            "text": "The proposed LIBROVA symbol is separate."
+            "text": "The proposed TABULINE symbol is separate."
           },
           {
             "tag": "h2",
@@ -8419,7 +8354,14 @@
           }
         ],
         "navTargets": [
-          ""
+          "",
+          "/",
+          "/app/markets",
+          "/docs",
+          "/privacy",
+          "/risk",
+          "/signal",
+          "/terms"
         ],
         "overflow": {
           "documentOverflow": false,
@@ -8431,12 +8373,12 @@
         "targets": [
           "",
           "/",
-          "/signal",
-          "/terms",
-          "/privacy",
           "/app/markets",
+          "/signal",
           "/docs",
-          "/risk"
+          "/risk",
+          "/terms",
+          "/privacy"
         ],
         "reachable": true
       }
@@ -8447,10 +8389,10 @@
       "status": 200,
       "desktop": {
         "meta": {
-          "title": "Privacy / Librova",
+          "title": "Privacy / Tabuline",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 1175,
+          "bodyTextLength": 1182,
           "scrollWidth": 1440,
           "clientWidth": 1440,
           "focusableCount": 18
@@ -8665,22 +8607,6 @@
             "count": 1
           },
           {
-            "word": "librova",
-            "count": 2
-          },
-          {
-            "word": "Librova",
-            "count": 2
-          },
-          {
-            "word": "LIBROVA",
-            "count": 2
-          },
-          {
-            "word": "librova.xyz",
-            "count": 3
-          },
-          {
             "word": "Limits",
             "count": 2
           },
@@ -8893,6 +8819,22 @@
             "count": 1
           },
           {
+            "word": "tabuline",
+            "count": 2
+          },
+          {
+            "word": "Tabuline",
+            "count": 2
+          },
+          {
+            "word": "TABULINE",
+            "count": 2
+          },
+          {
+            "word": "tabuline.xyz",
+            "count": 3
+          },
+          {
             "word": "tape",
             "count": 1
           },
@@ -8991,15 +8933,11 @@
         ],
         "attrs": [
           {
-            "key": "aria-label=Build status",
-            "count": 1
-          },
-          {
-            "key": "aria-label=Librova overview",
-            "count": 1
-          },
-          {
             "key": "aria-label=Primary",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Tabuline overview",
             "count": 1
           }
         ],
@@ -9046,176 +8984,147 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "doc-display",
-          "doc-legal",
-          "doc-legal-actions",
-          "doc-legal-copy",
-          "doc-legal-in",
-          "doc-open",
-          "doc-open-in",
-          "is-hold",
-          "leaf",
+          "dock",
+          "dock-trigger",
           "lucide",
           "lucide-arrow-right-icon",
           "lucide-wallet-icon",
-          "port",
-          "tty-btn",
-          "tty-btn--ghost",
-          "tty-btn--primary",
-          "tty-colophon",
-          "tty-colophon-brand",
-          "tty-colophon-copy",
-          "tty-colophon-in",
-          "tty-colophon-links",
-          "tty-colophon-top",
-          "tty-command",
-          "tty-command-actions",
-          "tty-command-copy",
-          "tty-command-line",
-          "tty-console",
-          "tty-deck",
-          "tty-display",
-          "tty-frame",
-          "tty-hint",
-          "tty-kicker",
-          "tty-lead",
-          "tty-nav",
-          "tty-nav-link",
-          "tty-prompt",
-          "tty-scene",
-          "tty-scene-in",
-          "tty-skip",
-          "tty-stage",
-          "tty-station",
-          "tty-status",
-          "tty-status-brand",
-          "tty-status-cell",
-          "tty-status-cells",
-          "tty-status-tail",
-          "tty-tiny",
-          "tty-wallet",
-          "wal-trigger"
+          "strand",
+          "strand-display",
+          "strand-legal",
+          "strand-legal-actions",
+          "strand-legal-copy",
+          "strand-open",
+          "tide-band",
+          "tide-band--first",
+          "tide-brand",
+          "tide-btn",
+          "tide-btn--ghost",
+          "tide-btn--primary",
+          "tide-display",
+          "tide-foot-brand",
+          "tide-foot-copy",
+          "tide-foot-links",
+          "tide-index",
+          "tide-index-link",
+          "tide-instrument",
+          "tide-instrument-row",
+          "tide-kicker",
+          "tide-lead",
+          "tide-mast",
+          "tide-mast-actions",
+          "tide-mast-foot",
+          "tide-mast-line",
+          "tide-mast-tail",
+          "tide-mast-top",
+          "tide-proof",
+          "tide-shell",
+          "tide-skip",
+          "tide-stage",
+          "tide-stage-inner",
+          "tide-wallet"
         ],
         "fingerprint": [
-          "a@12:1",
-          "a@13:0",
+          "a@10:1",
           "a@4:0",
           "a@7:2",
+          "a@7:3",
           "a@8:0",
-          "a@8:3",
-          "b@12:0",
+          "a@9:0",
+          "b@8:0",
           "b@9:0",
           "button@9:1",
+          "dd@8:1",
           "dd@9:0",
-          "div@10:2",
-          "div@10:3",
-          "div@11:2",
           "div@3:2",
-          "div@4:1",
+          "div@4:2",
+          "div@6:1",
           "div@6:2",
           "div@6:3",
           "div@7:2",
           "div@7:3",
-          "div@7:4+",
           "div@8:1",
           "div@8:2",
-          "div@9:1",
+          "div@9:2",
+          "dl@6:4+",
           "dl@7:4+",
+          "dt@8:0",
           "dt@9:0",
-          "h1@11:0",
-          "i@9:0",
-          "img@12:0",
+          "h1@9:0",
+          "header@5:4+",
           "img@8:0",
-          "li@12:1",
-          "main@5:4+",
-          "nav@7:4+",
-          "p@11:0",
-          "p@12:0",
+          "li@8:1",
+          "main@5:2",
+          "nav@6:4+",
+          "p@10:0",
+          "p@6:0",
+          "p@6:1",
           "p@7:0",
-          "p@8:1",
+          "p@9:0",
           "path@11:0",
-          "path@14:0",
-          "section@9:1",
-          "small@9:0",
-          "span@7:0",
+          "path@12:0",
+          "section@8:2",
+          "section@8:3",
+          "small@8:0",
           "span@8:0",
-          "span@8:1",
-          "span@8:2",
-          "span@9:0",
           "svg@10:2",
-          "svg@13:2",
-          "ul@11:4+"
+          "svg@11:2",
+          "ul@7:4+"
         ],
         "landmarks": [
           {
-            "tag": "main",
+            "tag": "header",
             "role": "",
             "top": 0,
             "left": 0,
-            "width": 1440,
+            "width": 605,
             "height": 900
           },
           {
             "tag": "nav",
             "role": "",
-            "top": 95,
-            "left": 1,
-            "width": 212,
-            "height": 709
+            "top": 143,
+            "left": 49,
+            "width": 506,
+            "height": 391
+          },
+          {
+            "tag": "main",
+            "role": "",
+            "top": 0,
+            "left": 605,
+            "width": 835,
+            "height": 900
           }
         ],
         "colors": [
           {
-            "hex": "#9fb1c1",
-            "count": 39
+            "hex": "#081b2b",
+            "count": 57
           },
           {
-            "hex": "#f4f7fa",
-            "count": 37
+            "hex": "#24465f",
+            "count": 25
           },
           {
-            "hex": "#8698a9",
-            "count": 18
+            "hex": "#5b7185",
+            "count": 22
           },
           {
-            "hex": "#d7dde4",
-            "count": 9
+            "hex": "#ffffff",
+            "count": 6
           },
           {
-            "hex": "#050608",
-            "count": 4
-          },
-          {
-            "hex": "#111a24",
-            "count": 4
-          },
-          {
-            "hex": "#ff0000",
+            "hex": "#0d71e3",
             "count": 3
           },
           {
-            "hex": "#ff5f5f",
-            "count": 3
-          },
-          {
-            "hex": "#000000",
-            "count": 2
-          },
-          {
-            "hex": "#0d141b",
-            "count": 2
-          },
-          {
-            "hex": "#1e2a36",
-            "count": 1
-          },
-          {
-            "hex": "#5ce1a0",
+            "hex": "#0a5bc0",
             "count": 1
           }
         ],
         "contrast": [],
-        "contrastChecked": 56,
+        "contrastChecked": 57,
         "headings": [
           {
             "tag": "h1",
@@ -9226,8 +9135,10 @@
           "/",
           "/app/markets",
           "/docs",
+          "/privacy",
           "/risk",
-          "/signal"
+          "/signal",
+          "/terms"
         ],
         "overflow": {
           "documentOverflow": false,
@@ -9248,13 +9159,13 @@
       },
       "mobile": {
         "meta": {
-          "title": "Privacy / Librova",
+          "title": "Privacy / Tabuline",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 926,
+          "bodyTextLength": 1070,
           "scrollWidth": 390,
           "clientWidth": 390,
-          "focusableCount": 12
+          "focusableCount": 13
         },
         "words": [
           {
@@ -9283,6 +9194,10 @@
           },
           {
             "word": "be",
+            "count": 1
+          },
+          {
+            "word": "board",
             "count": 1
           },
           {
@@ -9398,6 +9313,10 @@
             "count": 1
           },
           {
+            "word": "issued",
+            "count": 1
+          },
+          {
             "word": "it",
             "count": 1
           },
@@ -9426,22 +9345,6 @@
             "count": 1
           },
           {
-            "word": "librova",
-            "count": 1
-          },
-          {
-            "word": "Librova",
-            "count": 2
-          },
-          {
-            "word": "LIBROVA",
-            "count": 1
-          },
-          {
-            "word": "librova.xyz",
-            "count": 2
-          },
-          {
             "word": "Limits",
             "count": 1
           },
@@ -9455,7 +9358,7 @@
           },
           {
             "word": "local",
-            "count": 2
+            "count": 3
           },
           {
             "word": "Local",
@@ -9470,6 +9373,14 @@
             "count": 1
           },
           {
+            "word": "Mode",
+            "count": 1
+          },
+          {
+            "word": "Network",
+            "count": 1
+          },
+          {
             "word": "no",
             "count": 1
           },
@@ -9479,10 +9390,18 @@
           },
           {
             "word": "not",
-            "count": 3
+            "count": 5
           },
           {
             "word": "notice",
+            "count": 1
+          },
+          {
+            "word": "only",
+            "count": 1
+          },
+          {
+            "word": "Open",
             "count": 1
           },
           {
@@ -9523,7 +9442,7 @@
           },
           {
             "word": "Preview",
-            "count": 1
+            "count": 2
           },
           {
             "word": "Privacy",
@@ -9566,7 +9485,15 @@
             "count": 1
           },
           {
+            "word": "Records",
+            "count": 1
+          },
+          {
             "word": "Reference",
+            "count": 1
+          },
+          {
+            "word": "registered",
             "count": 1
           },
           {
@@ -9599,7 +9526,7 @@
           },
           {
             "word": "Solana",
-            "count": 2
+            "count": 3
           },
           {
             "word": "state",
@@ -9618,12 +9545,28 @@
             "count": 1
           },
           {
+            "word": "tabuline",
+            "count": 2
+          },
+          {
+            "word": "Tabuline",
+            "count": 2
+          },
+          {
+            "word": "TABULINE",
+            "count": 2
+          },
+          {
+            "word": "tabuline.xyz",
+            "count": 3
+          },
+          {
             "word": "Target",
             "count": 1
           },
           {
             "word": "targets",
-            "count": 1
+            "count": 2
           },
           {
             "word": "terminal",
@@ -9635,7 +9578,7 @@
           },
           {
             "word": "the",
-            "count": 2
+            "count": 3
           },
           {
             "word": "The",
@@ -9671,7 +9614,7 @@
           },
           {
             "word": "Unit",
-            "count": 1
+            "count": 2
           },
           {
             "word": "unregistered",
@@ -9708,11 +9651,11 @@
         ],
         "attrs": [
           {
-            "key": "aria-label=Librova overview",
+            "key": "aria-label=Open navigation",
             "count": 1
           },
           {
-            "key": "aria-label=Open navigation",
+            "key": "aria-label=Tabuline overview",
             "count": 1
           }
         ],
@@ -9723,7 +9666,7 @@
           },
           {
             "href": "/app/markets",
-            "count": 1
+            "count": 2
           },
           {
             "href": "/docs",
@@ -9755,160 +9698,157 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "doc-display",
-          "doc-legal",
-          "doc-legal-actions",
-          "doc-legal-copy",
-          "doc-legal-in",
-          "doc-open",
-          "doc-open-in",
-          "is-hold",
-          "leaf",
+          "dock",
+          "dock-trigger",
           "lucide",
-          "lucide-activity-icon",
           "lucide-arrow-right-icon",
+          "lucide-menu-icon",
           "lucide-wallet-icon",
-          "port",
-          "tty-btn",
-          "tty-btn--ghost",
-          "tty-btn--primary",
-          "tty-colophon",
-          "tty-colophon-brand",
-          "tty-colophon-copy",
-          "tty-colophon-in",
-          "tty-colophon-links",
-          "tty-colophon-top",
-          "tty-command",
-          "tty-command-actions",
-          "tty-command-copy",
-          "tty-command-line",
-          "tty-command-more",
-          "tty-console",
-          "tty-deck",
-          "tty-display",
-          "tty-frame",
-          "tty-hint",
-          "tty-kicker",
-          "tty-lead",
-          "tty-prompt",
-          "tty-scene",
-          "tty-scene-in",
-          "tty-skip",
-          "tty-stage",
-          "tty-station",
-          "tty-status",
-          "tty-status-brand",
-          "tty-tiny",
-          "tty-wallet",
-          "wal-trigger"
+          "strand",
+          "strand-display",
+          "strand-legal",
+          "strand-legal-actions",
+          "strand-legal-copy",
+          "strand-open",
+          "tide-band",
+          "tide-band--first",
+          "tide-brand",
+          "tide-btn",
+          "tide-btn--ghost",
+          "tide-btn--primary",
+          "tide-btn--quiet",
+          "tide-display",
+          "tide-foot-brand",
+          "tide-foot-copy",
+          "tide-foot-links",
+          "tide-index-toggle",
+          "tide-instrument",
+          "tide-instrument-row",
+          "tide-kicker",
+          "tide-lead",
+          "tide-mast",
+          "tide-mast-actions",
+          "tide-mast-foot",
+          "tide-mast-line",
+          "tide-mast-tail",
+          "tide-mast-top",
+          "tide-proof",
+          "tide-shell",
+          "tide-skip",
+          "tide-stage",
+          "tide-stage-inner",
+          "tide-wallet"
         ],
         "fingerprint": [
-          "a@12:1",
-          "a@13:0",
+          "a@10:1",
           "a@4:0",
           "a@7:2",
-          "b@12:0",
+          "a@8:0",
+          "a@9:0",
+          "b@8:0",
+          "b@9:0",
           "button@8:1",
           "button@9:1",
+          "dd@8:1",
           "dd@9:0",
-          "div@10:2",
-          "div@10:3",
-          "div@11:2",
           "div@3:2",
-          "div@4:1",
+          "div@4:2",
+          "div@6:1",
           "div@6:2",
           "div@6:3",
           "div@7:2",
           "div@7:3",
           "div@8:1",
           "div@8:2",
-          "div@9:1",
+          "div@9:2",
+          "dl@6:4+",
           "dl@7:4+",
+          "dt@8:0",
           "dt@9:0",
-          "h1@11:0",
-          "img@12:0",
+          "h1@9:0",
+          "header@5:4+",
           "img@8:0",
-          "li@12:1",
-          "main@5:4+",
-          "p@11:0",
-          "p@12:0",
+          "li@8:1",
+          "main@5:2",
+          "p@10:0",
+          "p@6:0",
+          "p@6:1",
           "p@7:0",
-          "p@8:1",
-          "path@10:0",
+          "p@9:0",
           "path@11:0",
-          "path@14:0",
-          "section@9:1",
-          "span@8:0",
+          "path@12:0",
+          "section@8:2",
+          "section@8:3",
           "svg@10:2",
-          "svg@13:2",
-          "svg@9:1",
-          "ul@11:4+"
+          "svg@11:2",
+          "svg@9:3",
+          "ul@7:4+"
         ],
         "landmarks": [
           {
-            "tag": "main",
+            "tag": "header",
             "role": "",
             "top": 0,
             "left": 0,
             "width": 390,
-            "height": 1055
+            "height": 382
+          },
+          {
+            "tag": "main",
+            "role": "",
+            "top": 382,
+            "left": 0,
+            "width": 390,
+            "height": 844
           }
         ],
         "colors": [
           {
-            "hex": "#f4f7fa",
-            "count": 33
+            "hex": "#081b2b",
+            "count": 54
           },
           {
-            "hex": "#9fb1c1",
-            "count": 23
+            "hex": "#24465f",
+            "count": 14
           },
           {
-            "hex": "#d7dde4",
-            "count": 8
+            "hex": "#5b7185",
+            "count": 12
           },
           {
-            "hex": "#8698a9",
+            "hex": "#ffffff",
             "count": 6
           },
           {
-            "hex": "#050608",
-            "count": 4
+            "hex": "#0d71e3",
+            "count": 3
           },
           {
-            "hex": "#111a24",
-            "count": 4
-          },
-          {
-            "hex": "#000000",
+            "hex": "#0a5bc0",
             "count": 2
           },
           {
-            "hex": "#0d141b",
-            "count": 2
-          },
-          {
-            "hex": "#ff0000",
-            "count": 2
-          },
-          {
-            "hex": "#ff5f5f",
-            "count": 2
-          },
-          {
-            "hex": "#1e2a36",
+            "hex": "#e8f3ff",
             "count": 1
           }
         ],
         "contrast": [],
-        "contrastChecked": 28,
+        "contrastChecked": 39,
         "headings": [
           {
             "tag": "h1",
             "text": "Privacy notice."
           }
         ],
-        "navTargets": [],
+        "navTargets": [
+          "/",
+          "/app/markets",
+          "/docs",
+          "/privacy",
+          "/risk",
+          "/signal",
+          "/terms"
+        ],
         "overflow": {
           "documentOverflow": false,
           "offenders": []
@@ -9919,9 +9859,9 @@
         "targets": [
           "",
           "/",
-          "/docs",
           "/app/markets",
           "/signal",
+          "/docs",
           "/risk",
           "/terms",
           "/privacy"
@@ -9935,10 +9875,10 @@
       "status": 200,
       "desktop": {
         "meta": {
-          "title": "Journal / Librova",
+          "title": "Journal / Tabuline",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 1344,
+          "bodyTextLength": 1354,
           "scrollWidth": 1440,
           "clientWidth": 1440,
           "focusableCount": 22
@@ -10157,22 +10097,6 @@
             "count": 1
           },
           {
-            "word": "librova",
-            "count": 2
-          },
-          {
-            "word": "Librova",
-            "count": 2
-          },
-          {
-            "word": "LIBROVA",
-            "count": 5
-          },
-          {
-            "word": "librova.xyz",
-            "count": 3
-          },
-          {
             "word": "Limits",
             "count": 2
           },
@@ -10393,6 +10317,22 @@
             "count": 1
           },
           {
+            "word": "tabuline",
+            "count": 2
+          },
+          {
+            "word": "Tabuline",
+            "count": 2
+          },
+          {
+            "word": "TABULINE",
+            "count": 5
+          },
+          {
+            "word": "tabuline.xyz",
+            "count": 3
+          },
+          {
             "word": "tape",
             "count": 1
           },
@@ -10515,15 +10455,11 @@
         ],
         "attrs": [
           {
-            "key": "aria-label=Build status",
-            "count": 1
-          },
-          {
-            "key": "aria-label=Librova overview",
-            "count": 1
-          },
-          {
             "key": "aria-label=Primary",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Tabuline overview",
             "count": 1
           },
           {
@@ -10587,243 +10523,205 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "is-hold",
-          "lab",
-          "log-aside",
-          "log-aside-copy",
-          "log-aside-foot",
-          "log-aside-icon",
-          "log-aside-rows",
-          "log-aside-title",
-          "log-count",
-          "log-display",
-          "log-eyebrow",
-          "log-face-title",
-          "log-fields",
-          "log-form",
-          "log-form-grid",
-          "log-form-scene",
-          "log-open",
-          "log-open-in",
-          "log-pair",
-          "log-range",
-          "log-step",
+          "dock",
+          "dock-trigger",
+          "lagoon",
+          "lagoon-aside",
+          "lagoon-aside-copy",
+          "lagoon-aside-foot",
+          "lagoon-aside-icon",
+          "lagoon-aside-rows",
+          "lagoon-aside-title",
+          "lagoon-count",
+          "lagoon-display",
+          "lagoon-face-title",
+          "lagoon-fields",
+          "lagoon-form",
+          "lagoon-form-band",
+          "lagoon-form-grid",
+          "lagoon-form-head",
+          "lagoon-open",
+          "lagoon-pair",
+          "lagoon-step",
           "lucide",
           "lucide-arrow-up-right-icon",
           "lucide-flask-conical-icon",
           "lucide-shield-check-icon",
           "lucide-wallet-icon",
-          "port",
-          "tty-btn",
-          "tty-btn--ghost",
-          "tty-btn--primary",
-          "tty-btn--wide",
-          "tty-colophon",
-          "tty-colophon-brand",
-          "tty-colophon-copy",
-          "tty-colophon-in",
-          "tty-colophon-links",
-          "tty-colophon-top",
-          "tty-command",
-          "tty-command-actions",
-          "tty-command-copy",
-          "tty-command-line",
-          "tty-console",
-          "tty-deck",
-          "tty-display",
-          "tty-face",
-          "tty-face-head",
-          "tty-field",
-          "tty-frame",
-          "tty-h2",
-          "tty-hint",
-          "tty-input",
-          "tty-kicker",
-          "tty-lead",
-          "tty-nav",
-          "tty-nav-link",
-          "tty-pairs",
-          "tty-pill",
-          "tty-pill--accent",
-          "tty-prompt",
-          "tty-range",
-          "tty-scale",
-          "tty-scene",
-          "tty-scene-in",
-          "tty-skip",
-          "tty-stage",
-          "tty-station",
-          "tty-status",
-          "tty-status-brand",
-          "tty-status-cell",
-          "tty-status-cells",
-          "tty-status-tail",
-          "tty-tiny",
-          "tty-wallet",
-          "wal-trigger"
+          "tide-band",
+          "tide-band--first",
+          "tide-brand",
+          "tide-btn",
+          "tide-btn--primary",
+          "tide-btn--wide",
+          "tide-display",
+          "tide-field",
+          "tide-foot-brand",
+          "tide-foot-copy",
+          "tide-foot-links",
+          "tide-h2",
+          "tide-index",
+          "tide-index-link",
+          "tide-input",
+          "tide-instrument",
+          "tide-instrument-row",
+          "tide-kicker",
+          "tide-lead",
+          "tide-mast",
+          "tide-mast-actions",
+          "tide-mast-foot",
+          "tide-mast-line",
+          "tide-mast-tail",
+          "tide-mast-top",
+          "tide-pill",
+          "tide-pill--accent",
+          "tide-proof",
+          "tide-range",
+          "tide-scale",
+          "tide-shell",
+          "tide-skip",
+          "tide-stage",
+          "tide-stage-inner",
+          "tide-wallet"
         ],
         "fingerprint": [
-          "a@13:0",
           "a@4:0",
           "a@7:2",
+          "a@7:3",
           "a@8:0",
-          "a@8:3",
-          "b@12:0",
+          "a@9:0",
+          "b@8:0",
           "b@9:0",
-          "button@12:1",
+          "button@11:1",
           "button@9:1",
-          "dd@14:0",
+          "dd@13:0",
+          "dd@8:1",
           "dd@9:0",
-          "div@10:2",
-          "div@10:3",
+          "div@10:4+",
+          "div@11:1",
           "div@11:2",
           "div@11:4+",
-          "div@12:1",
           "div@12:2",
-          "div@12:4+",
+          "div@12:3",
           "div@13:2",
           "div@13:3",
-          "div@14:2",
-          "div@14:3",
           "div@3:2",
-          "div@4:1",
+          "div@4:2",
+          "div@6:1",
           "div@6:2",
           "div@6:3",
           "div@7:2",
           "div@7:3",
-          "div@7:4+",
           "div@8:1",
           "div@8:2",
-          "div@9:1",
-          "dl@12:4+",
+          "div@9:2",
+          "dl@11:4+",
+          "dl@6:4+",
           "dl@7:4+",
-          "dt@14:0",
+          "dt@13:0",
+          "dt@8:0",
           "dt@9:0",
-          "form@11:3",
-          "h1@11:1",
-          "h2@12:1",
-          "h2@14:0",
-          "i@9:0",
-          "img@12:0",
+          "form@10:3",
+          "h1@9:1",
+          "h2@11:1",
+          "h2@13:0",
+          "header@5:4+",
           "img@8:0",
+          "input@13:0",
           "input@14:0",
-          "input@15:0",
+          "label@13:1",
           "label@14:1",
-          "label@15:1",
-          "li@12:1",
-          "main@5:4+",
-          "nav@7:4+",
-          "output@15:0",
+          "li@8:1",
+          "main@5:2",
+          "nav@6:4+",
+          "output@14:0",
           "p@11:0",
-          "p@11:1",
-          "p@12:0",
-          "p@14:0",
+          "p@13:0",
+          "p@6:0",
+          "p@6:1",
           "p@7:0",
-          "p@8:1",
+          "p@9:0",
+          "p@9:1",
           "path@11:0",
           "path@13:0",
-          "path@14:0",
-          "section@8:2",
-          "section@9:1",
-          "small@9:0",
+          "section@7:2",
+          "section@8:3",
+          "small@8:0",
+          "span@10:0",
+          "span@11:0",
           "span@12:0",
           "span@13:0",
           "span@14:0",
           "span@15:0",
-          "span@16:0",
-          "span@7:0",
           "span@8:0",
-          "span@8:1",
-          "span@8:2",
-          "span@9:0",
           "svg@10:2",
-          "svg@12:3",
-          "svg@13:2",
-          "textarea@14:0",
-          "ul@11:4+"
+          "svg@10:3",
+          "svg@12:2",
+          "textarea@13:0",
+          "ul@7:4+"
         ],
         "landmarks": [
           {
-            "tag": "main",
+            "tag": "header",
             "role": "",
-            "top": -18,
+            "top": 0,
             "left": 0,
-            "width": 1440,
-            "height": 1215
+            "width": 605,
+            "height": 900
           },
           {
             "tag": "nav",
             "role": "",
-            "top": 77,
-            "left": 1,
-            "width": 212,
-            "height": 1024
+            "top": 143,
+            "left": 49,
+            "width": 506,
+            "height": 391
+          },
+          {
+            "tag": "main",
+            "role": "",
+            "top": -3,
+            "left": 605,
+            "width": 835,
+            "height": 1202
           }
         ],
         "colors": [
           {
-            "hex": "#f4f7fa",
-            "count": 62
+            "hex": "#081b2b",
+            "count": 86
           },
           {
-            "hex": "#9fb1c1",
-            "count": 40
+            "hex": "#5b7185",
+            "count": 36
           },
           {
-            "hex": "#8698a9",
-            "count": 38
+            "hex": "#24465f",
+            "count": 23
           },
           {
-            "hex": "#ff5f5f",
+            "hex": "#ffffff",
             "count": 13
           },
           {
-            "hex": "#050608",
+            "hex": "#0d71e3",
+            "count": 10
+          },
+          {
+            "hex": "#0a5bc0",
             "count": 5
           },
           {
-            "hex": "#0a0e14",
-            "count": 4
-          },
-          {
-            "hex": "#111a24",
-            "count": 4
-          },
-          {
-            "hex": "#d7dde4",
-            "count": 4
-          },
-          {
-            "hex": "#ff0000",
-            "count": 4
-          },
-          {
-            "hex": "#000000",
-            "count": 2
-          },
-          {
-            "hex": "#0d141b",
-            "count": 2
-          },
-          {
-            "hex": "#182533",
+            "hex": "#298dff",
             "count": 1
           },
           {
-            "hex": "#1e2a36",
-            "count": 1
-          },
-          {
-            "hex": "#3b3b3b",
-            "count": 1
-          },
-          {
-            "hex": "#5ce1a0",
+            "hex": "#f4f9ff",
             "count": 1
           }
         ],
         "contrast": [],
-        "contrastChecked": 81,
+        "contrastChecked": 82,
         "headings": [
           {
             "tag": "h1",
@@ -10842,8 +10740,10 @@
           "/",
           "/app/markets",
           "/docs",
+          "/privacy",
           "/risk",
-          "/signal"
+          "/signal",
+          "/terms"
         ],
         "overflow": {
           "documentOverflow": false,
@@ -10864,13 +10764,13 @@
       },
       "mobile": {
         "meta": {
-          "title": "Journal / Librova",
+          "title": "Journal / Tabuline",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 1095,
+          "bodyTextLength": 1242,
           "scrollWidth": 390,
           "clientWidth": 390,
-          "focusableCount": 16
+          "focusableCount": 17
         },
         "words": [
           {
@@ -10931,6 +10831,10 @@
           },
           {
             "word": "behind",
+            "count": 1
+          },
+          {
+            "word": "board",
             "count": 1
           },
           {
@@ -11038,6 +10942,10 @@
             "count": 2
           },
           {
+            "word": "issued",
+            "count": 1
+          },
+          {
             "word": "Journal",
             "count": 1
           },
@@ -11048,22 +10956,6 @@
           {
             "word": "lab",
             "count": 1
-          },
-          {
-            "word": "librova",
-            "count": 1
-          },
-          {
-            "word": "Librova",
-            "count": 2
-          },
-          {
-            "word": "LIBROVA",
-            "count": 4
-          },
-          {
-            "word": "librova.xyz",
-            "count": 2
           },
           {
             "word": "Limits",
@@ -11078,6 +10970,10 @@
             "count": 2
           },
           {
+            "word": "local",
+            "count": 1
+          },
+          {
             "word": "Local",
             "count": 1
           },
@@ -11090,12 +10986,16 @@
             "count": 1
           },
           {
+            "word": "Mode",
+            "count": 1
+          },
+          {
             "word": "move",
             "count": 2
           },
           {
             "word": "Network",
-            "count": 1
+            "count": 2
           },
           {
             "word": "next",
@@ -11111,7 +11011,7 @@
           },
           {
             "word": "not",
-            "count": 1
+            "count": 3
           },
           {
             "word": "Not",
@@ -11127,10 +11027,14 @@
           },
           {
             "word": "only",
-            "count": 1
+            "count": 2
           },
           {
             "word": "ONLY",
+            "count": 1
+          },
+          {
+            "word": "Open",
             "count": 1
           },
           {
@@ -11151,7 +11055,7 @@
           },
           {
             "word": "Preview",
-            "count": 1
+            "count": 2
           },
           {
             "word": "price",
@@ -11190,12 +11094,20 @@
             "count": 1
           },
           {
+            "word": "Records",
+            "count": 1
+          },
+          {
             "word": "reference",
             "count": 1
           },
           {
             "word": "Reference",
             "count": 3
+          },
+          {
+            "word": "registered",
+            "count": 1
           },
           {
             "word": "remaining",
@@ -11235,7 +11147,7 @@
           },
           {
             "word": "Solana",
-            "count": 3
+            "count": 4
           },
           {
             "word": "SPACE",
@@ -11254,12 +11166,28 @@
             "count": 1
           },
           {
+            "word": "tabuline",
+            "count": 2
+          },
+          {
+            "word": "Tabuline",
+            "count": 2
+          },
+          {
+            "word": "TABULINE",
+            "count": 5
+          },
+          {
+            "word": "tabuline.xyz",
+            "count": 3
+          },
+          {
             "word": "Target",
             "count": 1
           },
           {
             "word": "targets",
-            "count": 1
+            "count": 2
           },
           {
             "word": "taxes",
@@ -11271,6 +11199,10 @@
           },
           {
             "word": "Terms",
+            "count": 1
+          },
+          {
+            "word": "the",
             "count": 1
           },
           {
@@ -11311,7 +11243,7 @@
           },
           {
             "word": "Unit",
-            "count": 1
+            "count": 2
           },
           {
             "word": "units",
@@ -11364,11 +11296,11 @@
         ],
         "attrs": [
           {
-            "key": "aria-label=Librova overview",
+            "key": "aria-label=Open navigation",
             "count": 1
           },
           {
-            "key": "aria-label=Open navigation",
+            "key": "aria-label=Tabuline overview",
             "count": 1
           },
           {
@@ -11383,7 +11315,7 @@
           },
           {
             "href": "/app/markets",
-            "count": 1
+            "count": 2
           },
           {
             "href": "/docs",
@@ -11428,219 +11360,200 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "is-hold",
-          "lab",
-          "log-aside",
-          "log-aside-copy",
-          "log-aside-foot",
-          "log-aside-icon",
-          "log-aside-rows",
-          "log-aside-title",
-          "log-count",
-          "log-display",
-          "log-eyebrow",
-          "log-face-title",
-          "log-fields",
-          "log-form",
-          "log-form-grid",
-          "log-form-scene",
-          "log-open",
-          "log-open-in",
-          "log-pair",
-          "log-range",
-          "log-step",
+          "dock",
+          "dock-trigger",
+          "lagoon",
+          "lagoon-aside",
+          "lagoon-aside-copy",
+          "lagoon-aside-foot",
+          "lagoon-aside-icon",
+          "lagoon-aside-rows",
+          "lagoon-aside-title",
+          "lagoon-count",
+          "lagoon-display",
+          "lagoon-face-title",
+          "lagoon-fields",
+          "lagoon-form",
+          "lagoon-form-band",
+          "lagoon-form-grid",
+          "lagoon-form-head",
+          "lagoon-open",
+          "lagoon-pair",
+          "lagoon-step",
           "lucide",
-          "lucide-activity-icon",
           "lucide-arrow-up-right-icon",
           "lucide-flask-conical-icon",
+          "lucide-menu-icon",
           "lucide-shield-check-icon",
           "lucide-wallet-icon",
-          "port",
-          "tty-btn",
-          "tty-btn--primary",
-          "tty-btn--wide",
-          "tty-colophon",
-          "tty-colophon-brand",
-          "tty-colophon-copy",
-          "tty-colophon-in",
-          "tty-colophon-links",
-          "tty-colophon-top",
-          "tty-command",
-          "tty-command-actions",
-          "tty-command-copy",
-          "tty-command-line",
-          "tty-command-more",
-          "tty-console",
-          "tty-deck",
-          "tty-display",
-          "tty-face",
-          "tty-face-head",
-          "tty-field",
-          "tty-frame",
-          "tty-h2",
-          "tty-hint",
-          "tty-input",
-          "tty-kicker",
-          "tty-lead",
-          "tty-pairs",
-          "tty-pill",
-          "tty-pill--accent",
-          "tty-prompt",
-          "tty-range",
-          "tty-scale",
-          "tty-scene",
-          "tty-scene-in",
-          "tty-skip",
-          "tty-stage",
-          "tty-station",
-          "tty-status",
-          "tty-status-brand",
-          "tty-tiny",
-          "tty-wallet",
-          "wal-trigger"
+          "tide-band",
+          "tide-band--first",
+          "tide-brand",
+          "tide-btn",
+          "tide-btn--primary",
+          "tide-btn--quiet",
+          "tide-btn--wide",
+          "tide-display",
+          "tide-field",
+          "tide-foot-brand",
+          "tide-foot-copy",
+          "tide-foot-links",
+          "tide-h2",
+          "tide-index-toggle",
+          "tide-input",
+          "tide-instrument",
+          "tide-instrument-row",
+          "tide-kicker",
+          "tide-lead",
+          "tide-mast",
+          "tide-mast-actions",
+          "tide-mast-foot",
+          "tide-mast-line",
+          "tide-mast-tail",
+          "tide-mast-top",
+          "tide-pill",
+          "tide-pill--accent",
+          "tide-proof",
+          "tide-range",
+          "tide-scale",
+          "tide-shell",
+          "tide-skip",
+          "tide-stage",
+          "tide-stage-inner",
+          "tide-wallet"
         ],
         "fingerprint": [
-          "a@13:0",
           "a@4:0",
           "a@7:2",
-          "b@12:0",
-          "button@12:1",
+          "a@8:0",
+          "a@9:0",
+          "b@8:0",
+          "b@9:0",
+          "button@11:1",
           "button@8:1",
           "button@9:1",
-          "dd@14:0",
+          "dd@13:0",
+          "dd@8:1",
           "dd@9:0",
-          "div@10:2",
-          "div@10:3",
+          "div@10:4+",
+          "div@11:1",
           "div@11:2",
           "div@11:4+",
-          "div@12:1",
           "div@12:2",
-          "div@12:4+",
+          "div@12:3",
           "div@13:2",
           "div@13:3",
-          "div@14:2",
-          "div@14:3",
           "div@3:2",
-          "div@4:1",
+          "div@4:2",
+          "div@6:1",
           "div@6:2",
           "div@6:3",
           "div@7:2",
           "div@7:3",
           "div@8:1",
           "div@8:2",
-          "div@9:1",
-          "dl@12:4+",
+          "div@9:2",
+          "dl@11:4+",
+          "dl@6:4+",
           "dl@7:4+",
-          "dt@14:0",
+          "dt@13:0",
+          "dt@8:0",
           "dt@9:0",
-          "form@11:3",
-          "h1@11:1",
-          "h2@12:1",
-          "h2@14:0",
-          "img@12:0",
+          "form@10:3",
+          "h1@9:1",
+          "h2@11:1",
+          "h2@13:0",
+          "header@5:4+",
           "img@8:0",
+          "input@13:0",
           "input@14:0",
-          "input@15:0",
+          "label@13:1",
           "label@14:1",
-          "label@15:1",
-          "li@12:1",
-          "main@5:4+",
-          "output@15:0",
+          "li@8:1",
+          "main@5:2",
+          "output@14:0",
           "p@11:0",
-          "p@11:1",
-          "p@12:0",
-          "p@14:0",
+          "p@13:0",
+          "p@6:0",
+          "p@6:1",
           "p@7:0",
-          "p@8:1",
-          "path@10:0",
+          "p@9:0",
+          "p@9:1",
           "path@11:0",
           "path@13:0",
-          "path@14:0",
-          "section@8:2",
-          "section@9:1",
+          "section@7:2",
+          "section@8:3",
+          "span@10:0",
+          "span@11:0",
           "span@12:0",
           "span@13:0",
           "span@14:0",
           "span@15:0",
-          "span@16:0",
-          "span@8:0",
           "svg@10:2",
-          "svg@12:3",
-          "svg@13:2",
-          "svg@9:1",
-          "textarea@14:0",
-          "ul@11:4+"
+          "svg@10:3",
+          "svg@12:2",
+          "svg@9:3",
+          "textarea@13:0",
+          "ul@7:4+"
         ],
         "landmarks": [
           {
-            "tag": "main",
+            "tag": "header",
             "role": "",
             "top": 0,
             "left": 0,
             "width": 390,
-            "height": 1850
+            "height": 382
+          },
+          {
+            "tag": "main",
+            "role": "",
+            "top": 382,
+            "left": 0,
+            "width": 390,
+            "height": 1583
           }
         ],
         "colors": [
           {
-            "hex": "#f4f7fa",
-            "count": 58
+            "hex": "#081b2b",
+            "count": 83
           },
           {
-            "hex": "#8698a9",
+            "hex": "#5b7185",
             "count": 26
           },
           {
-            "hex": "#9fb1c1",
-            "count": 24
+            "hex": "#ffffff",
+            "count": 13
           },
           {
-            "hex": "#ff5f5f",
+            "hex": "#24465f",
             "count": 12
           },
           {
-            "hex": "#050608",
-            "count": 5
+            "hex": "#0d71e3",
+            "count": 10
           },
           {
-            "hex": "#0a0e14",
-            "count": 4
+            "hex": "#0a5bc0",
+            "count": 6
           },
           {
-            "hex": "#111a24",
-            "count": 4
-          },
-          {
-            "hex": "#d7dde4",
-            "count": 3
-          },
-          {
-            "hex": "#ff0000",
-            "count": 3
-          },
-          {
-            "hex": "#000000",
-            "count": 2
-          },
-          {
-            "hex": "#0d141b",
-            "count": 2
-          },
-          {
-            "hex": "#182533",
+            "hex": "#298dff",
             "count": 1
           },
           {
-            "hex": "#1e2a36",
+            "hex": "#e8f3ff",
             "count": 1
           },
           {
-            "hex": "#3b3b3b",
+            "hex": "#f4f9ff",
             "count": 1
           }
         ],
         "contrast": [],
-        "contrastChecked": 53,
+        "contrastChecked": 64,
         "headings": [
           {
             "tag": "h1",
@@ -11655,7 +11568,15 @@
             "text": "Your idea. Your assumptions."
           }
         ],
-        "navTargets": [],
+        "navTargets": [
+          "/",
+          "/app/markets",
+          "/docs",
+          "/privacy",
+          "/risk",
+          "/signal",
+          "/terms"
+        ],
         "overflow": {
           "documentOverflow": false,
           "offenders": []
@@ -11682,10 +11603,10 @@
       "status": 200,
       "desktop": {
         "meta": {
-          "title": "Terms / Librova",
+          "title": "Terms / Tabuline",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 1217,
+          "bodyTextLength": 1225,
           "scrollWidth": 1440,
           "clientWidth": 1440,
           "focusableCount": 18
@@ -11880,22 +11801,6 @@
             "count": 1
           },
           {
-            "word": "librova",
-            "count": 2
-          },
-          {
-            "word": "Librova",
-            "count": 3
-          },
-          {
-            "word": "LIBROVA",
-            "count": 2
-          },
-          {
-            "word": "librova.xyz",
-            "count": 3
-          },
-          {
             "word": "Limits",
             "count": 2
           },
@@ -12088,6 +11993,22 @@
             "count": 1
           },
           {
+            "word": "tabuline",
+            "count": 2
+          },
+          {
+            "word": "Tabuline",
+            "count": 3
+          },
+          {
+            "word": "TABULINE",
+            "count": 2
+          },
+          {
+            "word": "tabuline.xyz",
+            "count": 3
+          },
+          {
             "word": "tape",
             "count": 1
           },
@@ -12178,15 +12099,11 @@
         ],
         "attrs": [
           {
-            "key": "aria-label=Build status",
-            "count": 1
-          },
-          {
-            "key": "aria-label=Librova overview",
-            "count": 1
-          },
-          {
             "key": "aria-label=Primary",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Tabuline overview",
             "count": 1
           }
         ],
@@ -12233,176 +12150,147 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "doc-display",
-          "doc-legal",
-          "doc-legal-actions",
-          "doc-legal-copy",
-          "doc-legal-in",
-          "doc-open",
-          "doc-open-in",
-          "is-hold",
-          "leaf",
+          "dock",
+          "dock-trigger",
           "lucide",
           "lucide-arrow-right-icon",
           "lucide-wallet-icon",
-          "port",
-          "tty-btn",
-          "tty-btn--ghost",
-          "tty-btn--primary",
-          "tty-colophon",
-          "tty-colophon-brand",
-          "tty-colophon-copy",
-          "tty-colophon-in",
-          "tty-colophon-links",
-          "tty-colophon-top",
-          "tty-command",
-          "tty-command-actions",
-          "tty-command-copy",
-          "tty-command-line",
-          "tty-console",
-          "tty-deck",
-          "tty-display",
-          "tty-frame",
-          "tty-hint",
-          "tty-kicker",
-          "tty-lead",
-          "tty-nav",
-          "tty-nav-link",
-          "tty-prompt",
-          "tty-scene",
-          "tty-scene-in",
-          "tty-skip",
-          "tty-stage",
-          "tty-station",
-          "tty-status",
-          "tty-status-brand",
-          "tty-status-cell",
-          "tty-status-cells",
-          "tty-status-tail",
-          "tty-tiny",
-          "tty-wallet",
-          "wal-trigger"
+          "strand",
+          "strand-display",
+          "strand-legal",
+          "strand-legal-actions",
+          "strand-legal-copy",
+          "strand-open",
+          "tide-band",
+          "tide-band--first",
+          "tide-brand",
+          "tide-btn",
+          "tide-btn--ghost",
+          "tide-btn--primary",
+          "tide-display",
+          "tide-foot-brand",
+          "tide-foot-copy",
+          "tide-foot-links",
+          "tide-index",
+          "tide-index-link",
+          "tide-instrument",
+          "tide-instrument-row",
+          "tide-kicker",
+          "tide-lead",
+          "tide-mast",
+          "tide-mast-actions",
+          "tide-mast-foot",
+          "tide-mast-line",
+          "tide-mast-tail",
+          "tide-mast-top",
+          "tide-proof",
+          "tide-shell",
+          "tide-skip",
+          "tide-stage",
+          "tide-stage-inner",
+          "tide-wallet"
         ],
         "fingerprint": [
-          "a@12:1",
-          "a@13:0",
+          "a@10:1",
           "a@4:0",
           "a@7:2",
+          "a@7:3",
           "a@8:0",
-          "a@8:3",
-          "b@12:0",
+          "a@9:0",
+          "b@8:0",
           "b@9:0",
           "button@9:1",
+          "dd@8:1",
           "dd@9:0",
-          "div@10:2",
-          "div@10:3",
-          "div@11:2",
           "div@3:2",
-          "div@4:1",
+          "div@4:2",
+          "div@6:1",
           "div@6:2",
           "div@6:3",
           "div@7:2",
           "div@7:3",
-          "div@7:4+",
           "div@8:1",
           "div@8:2",
-          "div@9:1",
+          "div@9:2",
+          "dl@6:4+",
           "dl@7:4+",
+          "dt@8:0",
           "dt@9:0",
-          "h1@11:0",
-          "i@9:0",
-          "img@12:0",
+          "h1@9:0",
+          "header@5:4+",
           "img@8:0",
-          "li@12:1",
-          "main@5:4+",
-          "nav@7:4+",
-          "p@11:0",
-          "p@12:0",
+          "li@8:1",
+          "main@5:2",
+          "nav@6:4+",
+          "p@10:0",
+          "p@6:0",
+          "p@6:1",
           "p@7:0",
-          "p@8:1",
+          "p@9:0",
           "path@11:0",
-          "path@14:0",
-          "section@9:1",
-          "small@9:0",
-          "span@7:0",
+          "path@12:0",
+          "section@8:2",
+          "section@8:3",
+          "small@8:0",
           "span@8:0",
-          "span@8:1",
-          "span@8:2",
-          "span@9:0",
           "svg@10:2",
-          "svg@13:2",
-          "ul@11:4+"
+          "svg@11:2",
+          "ul@7:4+"
         ],
         "landmarks": [
           {
-            "tag": "main",
+            "tag": "header",
             "role": "",
             "top": 0,
             "left": 0,
-            "width": 1440,
+            "width": 605,
             "height": 900
           },
           {
             "tag": "nav",
             "role": "",
-            "top": 95,
-            "left": 1,
-            "width": 212,
-            "height": 709
+            "top": 143,
+            "left": 49,
+            "width": 506,
+            "height": 391
+          },
+          {
+            "tag": "main",
+            "role": "",
+            "top": 0,
+            "left": 605,
+            "width": 835,
+            "height": 900
           }
         ],
         "colors": [
           {
-            "hex": "#9fb1c1",
-            "count": 39
+            "hex": "#081b2b",
+            "count": 57
           },
           {
-            "hex": "#f4f7fa",
-            "count": 37
+            "hex": "#24465f",
+            "count": 25
           },
           {
-            "hex": "#8698a9",
-            "count": 18
+            "hex": "#5b7185",
+            "count": 22
           },
           {
-            "hex": "#d7dde4",
-            "count": 9
+            "hex": "#ffffff",
+            "count": 6
           },
           {
-            "hex": "#050608",
-            "count": 4
-          },
-          {
-            "hex": "#111a24",
-            "count": 4
-          },
-          {
-            "hex": "#ff0000",
+            "hex": "#0d71e3",
             "count": 3
           },
           {
-            "hex": "#ff5f5f",
-            "count": 3
-          },
-          {
-            "hex": "#000000",
-            "count": 2
-          },
-          {
-            "hex": "#0d141b",
-            "count": 2
-          },
-          {
-            "hex": "#1e2a36",
-            "count": 1
-          },
-          {
-            "hex": "#5ce1a0",
+            "hex": "#0a5bc0",
             "count": 1
           }
         ],
         "contrast": [],
-        "contrastChecked": 56,
+        "contrastChecked": 57,
         "headings": [
           {
             "tag": "h1",
@@ -12413,8 +12301,10 @@
           "/",
           "/app/markets",
           "/docs",
+          "/privacy",
           "/risk",
-          "/signal"
+          "/signal",
+          "/terms"
         ],
         "overflow": {
           "documentOverflow": false,
@@ -12435,13 +12325,13 @@
       },
       "mobile": {
         "meta": {
-          "title": "Terms / Librova",
+          "title": "Terms / Tabuline",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 968,
+          "bodyTextLength": 1113,
           "scrollWidth": 390,
           "clientWidth": 390,
-          "focusableCount": 12
+          "focusableCount": 13
         },
         "words": [
           {
@@ -12474,6 +12364,10 @@
           },
           {
             "word": "be",
+            "count": 1
+          },
+          {
+            "word": "board",
             "count": 1
           },
           {
@@ -12573,6 +12467,10 @@
             "count": 2
           },
           {
+            "word": "issued",
+            "count": 1
+          },
+          {
             "word": "it",
             "count": 1
           },
@@ -12593,22 +12491,6 @@
             "count": 1
           },
           {
-            "word": "librova",
-            "count": 1
-          },
-          {
-            "word": "Librova",
-            "count": 3
-          },
-          {
-            "word": "LIBROVA",
-            "count": 1
-          },
-          {
-            "word": "librova.xyz",
-            "count": 2
-          },
-          {
             "word": "Limits",
             "count": 1
           },
@@ -12618,7 +12500,7 @@
           },
           {
             "word": "local",
-            "count": 2
+            "count": 3
           },
           {
             "word": "Local",
@@ -12633,6 +12515,14 @@
             "count": 2
           },
           {
+            "word": "Mode",
+            "count": 1
+          },
+          {
+            "word": "Network",
+            "count": 1
+          },
+          {
             "word": "no",
             "count": 1
           },
@@ -12642,11 +12532,19 @@
           },
           {
             "word": "not",
-            "count": 2
+            "count": 4
           },
           {
             "word": "of",
             "count": 2
+          },
+          {
+            "word": "only",
+            "count": 1
+          },
+          {
+            "word": "Open",
+            "count": 1
           },
           {
             "word": "or",
@@ -12674,7 +12572,7 @@
           },
           {
             "word": "Preview",
-            "count": 1
+            "count": 2
           },
           {
             "word": "Prices",
@@ -12717,12 +12615,20 @@
             "count": 1
           },
           {
+            "word": "Records",
+            "count": 1
+          },
+          {
             "word": "Reference",
             "count": 1
           },
           {
             "word": "references",
             "count": 2
+          },
+          {
+            "word": "registered",
+            "count": 1
           },
           {
             "word": "relationship",
@@ -12754,7 +12660,7 @@
           },
           {
             "word": "Solana",
-            "count": 2
+            "count": 3
           },
           {
             "word": "Static",
@@ -12765,12 +12671,28 @@
             "count": 1
           },
           {
+            "word": "tabuline",
+            "count": 2
+          },
+          {
+            "word": "Tabuline",
+            "count": 3
+          },
+          {
+            "word": "TABULINE",
+            "count": 2
+          },
+          {
+            "word": "tabuline.xyz",
+            "count": 3
+          },
+          {
             "word": "Target",
             "count": 1
           },
           {
             "word": "targets",
-            "count": 1
+            "count": 2
           },
           {
             "word": "terminal",
@@ -12782,7 +12704,7 @@
           },
           {
             "word": "the",
-            "count": 1
+            "count": 2
           },
           {
             "word": "this",
@@ -12806,7 +12728,7 @@
           },
           {
             "word": "Unit",
-            "count": 1
+            "count": 2
           },
           {
             "word": "unless",
@@ -12847,11 +12769,11 @@
         ],
         "attrs": [
           {
-            "key": "aria-label=Librova overview",
+            "key": "aria-label=Open navigation",
             "count": 1
           },
           {
-            "key": "aria-label=Open navigation",
+            "key": "aria-label=Tabuline overview",
             "count": 1
           }
         ],
@@ -12862,7 +12784,7 @@
           },
           {
             "href": "/app/markets",
-            "count": 1
+            "count": 2
           },
           {
             "href": "/docs",
@@ -12894,160 +12816,157 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "doc-display",
-          "doc-legal",
-          "doc-legal-actions",
-          "doc-legal-copy",
-          "doc-legal-in",
-          "doc-open",
-          "doc-open-in",
-          "is-hold",
-          "leaf",
+          "dock",
+          "dock-trigger",
           "lucide",
-          "lucide-activity-icon",
           "lucide-arrow-right-icon",
+          "lucide-menu-icon",
           "lucide-wallet-icon",
-          "port",
-          "tty-btn",
-          "tty-btn--ghost",
-          "tty-btn--primary",
-          "tty-colophon",
-          "tty-colophon-brand",
-          "tty-colophon-copy",
-          "tty-colophon-in",
-          "tty-colophon-links",
-          "tty-colophon-top",
-          "tty-command",
-          "tty-command-actions",
-          "tty-command-copy",
-          "tty-command-line",
-          "tty-command-more",
-          "tty-console",
-          "tty-deck",
-          "tty-display",
-          "tty-frame",
-          "tty-hint",
-          "tty-kicker",
-          "tty-lead",
-          "tty-prompt",
-          "tty-scene",
-          "tty-scene-in",
-          "tty-skip",
-          "tty-stage",
-          "tty-station",
-          "tty-status",
-          "tty-status-brand",
-          "tty-tiny",
-          "tty-wallet",
-          "wal-trigger"
+          "strand",
+          "strand-display",
+          "strand-legal",
+          "strand-legal-actions",
+          "strand-legal-copy",
+          "strand-open",
+          "tide-band",
+          "tide-band--first",
+          "tide-brand",
+          "tide-btn",
+          "tide-btn--ghost",
+          "tide-btn--primary",
+          "tide-btn--quiet",
+          "tide-display",
+          "tide-foot-brand",
+          "tide-foot-copy",
+          "tide-foot-links",
+          "tide-index-toggle",
+          "tide-instrument",
+          "tide-instrument-row",
+          "tide-kicker",
+          "tide-lead",
+          "tide-mast",
+          "tide-mast-actions",
+          "tide-mast-foot",
+          "tide-mast-line",
+          "tide-mast-tail",
+          "tide-mast-top",
+          "tide-proof",
+          "tide-shell",
+          "tide-skip",
+          "tide-stage",
+          "tide-stage-inner",
+          "tide-wallet"
         ],
         "fingerprint": [
-          "a@12:1",
-          "a@13:0",
+          "a@10:1",
           "a@4:0",
           "a@7:2",
-          "b@12:0",
+          "a@8:0",
+          "a@9:0",
+          "b@8:0",
+          "b@9:0",
           "button@8:1",
           "button@9:1",
+          "dd@8:1",
           "dd@9:0",
-          "div@10:2",
-          "div@10:3",
-          "div@11:2",
           "div@3:2",
-          "div@4:1",
+          "div@4:2",
+          "div@6:1",
           "div@6:2",
           "div@6:3",
           "div@7:2",
           "div@7:3",
           "div@8:1",
           "div@8:2",
-          "div@9:1",
+          "div@9:2",
+          "dl@6:4+",
           "dl@7:4+",
+          "dt@8:0",
           "dt@9:0",
-          "h1@11:0",
-          "img@12:0",
+          "h1@9:0",
+          "header@5:4+",
           "img@8:0",
-          "li@12:1",
-          "main@5:4+",
-          "p@11:0",
-          "p@12:0",
+          "li@8:1",
+          "main@5:2",
+          "p@10:0",
+          "p@6:0",
+          "p@6:1",
           "p@7:0",
-          "p@8:1",
-          "path@10:0",
+          "p@9:0",
           "path@11:0",
-          "path@14:0",
-          "section@9:1",
-          "span@8:0",
+          "path@12:0",
+          "section@8:2",
+          "section@8:3",
           "svg@10:2",
-          "svg@13:2",
-          "svg@9:1",
-          "ul@11:4+"
+          "svg@11:2",
+          "svg@9:3",
+          "ul@7:4+"
         ],
         "landmarks": [
           {
-            "tag": "main",
+            "tag": "header",
             "role": "",
             "top": 0,
             "left": 0,
             "width": 390,
-            "height": 1083
+            "height": 382
+          },
+          {
+            "tag": "main",
+            "role": "",
+            "top": 382,
+            "left": 0,
+            "width": 390,
+            "height": 844
           }
         ],
         "colors": [
           {
-            "hex": "#f4f7fa",
-            "count": 33
+            "hex": "#081b2b",
+            "count": 54
           },
           {
-            "hex": "#9fb1c1",
-            "count": 23
+            "hex": "#24465f",
+            "count": 14
           },
           {
-            "hex": "#d7dde4",
-            "count": 8
+            "hex": "#5b7185",
+            "count": 12
           },
           {
-            "hex": "#8698a9",
+            "hex": "#ffffff",
             "count": 6
           },
           {
-            "hex": "#050608",
-            "count": 4
+            "hex": "#0d71e3",
+            "count": 3
           },
           {
-            "hex": "#111a24",
-            "count": 4
-          },
-          {
-            "hex": "#000000",
+            "hex": "#0a5bc0",
             "count": 2
           },
           {
-            "hex": "#0d141b",
-            "count": 2
-          },
-          {
-            "hex": "#ff0000",
-            "count": 2
-          },
-          {
-            "hex": "#ff5f5f",
-            "count": 2
-          },
-          {
-            "hex": "#1e2a36",
+            "hex": "#e8f3ff",
             "count": 1
           }
         ],
         "contrast": [],
-        "contrastChecked": 28,
+        "contrastChecked": 39,
         "headings": [
           {
             "tag": "h1",
             "text": "Terms of this demo."
           }
         ],
-        "navTargets": [],
+        "navTargets": [
+          "/",
+          "/app/markets",
+          "/docs",
+          "/privacy",
+          "/risk",
+          "/signal",
+          "/terms"
+        ],
         "overflow": {
           "documentOverflow": false,
           "offenders": []
@@ -13058,9 +12977,9 @@
         "targets": [
           "",
           "/",
-          "/docs",
           "/app/markets",
           "/signal",
+          "/docs",
           "/risk",
           "/terms",
           "/privacy"
@@ -13069,5 +12988,5 @@
       }
     }
   },
-  "inventoryHash": "3d00ded2cdd47802617906eea285edc387a2bb8d4e6c483f87aba609740953d5"
+  "inventoryHash": "4812d08e7b124142ed96829d176fc1f1426b0c0bc169ca94907e1c9cefdbeed7"
 }

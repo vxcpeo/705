@@ -1,4 +1,4 @@
-/** Librova payoff model: illustrative, zero-interest Black–Scholes; auction prices can differ. */
+/** Tabuline payoff model: illustrative, zero-interest Black–Scholes; auction prices can differ. */
 export const PAYOFF_DEFAULTS = Object.freeze({
   spot: 250,
   capPercent: 5,

@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import './tide.css'
+import './blueprint.css'
 
 createApp(App).mount('#app')

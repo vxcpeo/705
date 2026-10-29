@@ -1,6 +1,6 @@
-# Reskin inventory — librova-website
+# Reskin inventory — tabuline-website
 
-Generated: 2026-10-21T12:39:10.074Z
+Generated: 2026-10-22T15:09:37.140Z
 
 ## Project
 
@@ -15,12 +15,12 @@ Generated: 2026-10-21T12:39:10.074Z
 
 ## Original skeleton
 
-- Archetype: **terminal-console** (linear)
-- Traits: cards, table, grid, tabs, modal, charts, sticky, terminal
-- Max template depth: 12
+- Archetype: **sidebar-workspace** (shell)
+- Traits: sidebar, cards, table, grid, tabs, modal, charts, sticky, terminal
+- Max template depth: 11
 - Top-level tags: a, div, div, div, section, div, section, section, div
 
-The replacement skeleton must not be `terminal-console` and must not be in the same family (`linear`).
+The replacement skeleton must not be `sidebar-workspace` and must not be in the same family (`shell`).
 
 ## Routes
 
@@ -33,14 +33,14 @@ The replacement skeleton must not be `terminal-console` and must not be in the s
 
 ## Palette (most used first)
 
-`#ff0000` (20) · `#050608` (13) · `#0a0e14` (7) · `#000000` (5) · `#0d141b` (5) · `#5ce1a0` (4) · `#ff00c8` (4) · `#ff6b6b` (3) · `#121a24` (2) · `#182533` (2)
+`#0d71e3` (9) · `#ffffff` (8) · `#298dff` (4) · `#081b2b` (3) · `#e8f3ff` (2) · `#087a55` (1) · `#0a5bc0` (1) · `#0a5c42` (1) · `#24465f` (1) · `#4da2ff` (1)
 
 ## Content lock
 
 - Static visible text tokens: **336**
 - Binding expressions: **214**
 - Event handlers: **46**
-- Contract hash: `3d00ded2cdd47802617906eea285edc387a2bb8d4e6c483f87aba609740953d5`
+- Contract hash: `4812d08e7b124142ed96829d176fc1f1426b0c0bc169ca94907e1c9cefdbeed7`
 
 Everything in `.reskin/content-contract.json` is immutable: visible copy, placeholders, labels, routes, link targets, asset sources, bindings, handlers, API endpoints and i18n values. A reskin may move these tokens to new markup but may not rewrite, remove or hide them.
 

@@ -1,151 +1,109 @@
-# Reskin report - Librova, Tidal Split Stage
+# Reskin report — Cobalt Blueprint / Split Stage
 
-Generated: 2026-10-21 (Asia/Shanghai) - Project: `website/` (Vue 3.5 + Vite 6)
-Verification: **PASS** - `node scripts/verify.mjs check` exit 0, 6/6 routes.
+- Project: `E:\workspace\chuangye\solana\705\website` (`tabuline-website`, Vue 3 + Vite)
+- Date: 2026-10-22
+- Verdict: **PASS** — `node scripts/verify.mjs check` exits 0 for all six static routes.
 
-## Direction selected automatically
+> The UI was rebuilt around **[Cobalt Blueprint]** / **[Split Stage]**; the original
+> **[sidebar-workspace]** shell and palette were removed while the content contract stayed
+> byte-for-byte intact.
 
-| | |
-|---|---|
-| Style | **Tidal Sui** (`sui-tidal`, clean-fintech) |
-| Source DNA | <https://sui.io> - live sampled (3545 ms), not copied |
-| Live samples | 4/10 references reachable; solana.com, ethereum.org, optimism.io, uniswap.org and aave.com timed out, arbitrum.io returned 403 |
-| Accent | `#298dff` - 148.1 dE from the original `#ff0000` (minimum 30) |
-| Ground | `#ffffff` page, `#e8f3ff` sky wash, hairline `#d8e7f5` |
-| Type | Segoe UI Variable Display / Segoe UI at weight 600, tracking -0.04em; Cascadia Mono labels; tabular numerals |
-| Shape | 12 / 22 / 36 px radii, soft blue shadows, hairline rules, tidal arcs, no hard borders |
+## 1. Selected direction
 
-Only abstract DNA was used: palette, typography mood, shape language, texture, density and
-motion. No reference logo, image, font file, copy or code was taken.
+| Field | Value |
+| --- | --- |
+| Style DNA | `base-cobalt` — Cobalt Blueprint (optimistic-modern) |
+| Source DNA | https://www.base.org (live sample, 5980 ms) |
+| Skeleton | `split-stage` (spatial) → implementation reads as `terminal-console` / `linear` |
+| Original | `sidebar-workspace` / `shell`, light, accent `#298dff` |
+| Accent distance | 72.06 ΔE measured (`#298dff` → `#0000d6`; threshold 30) |
+| Live sampling | 9 of 10 blockchain references sampled; only arbitrum.io failed (HTTP 403), catalog fallback used for it |
 
-## Skeleton: what replaced what
+No reference logo, image, copy or code was reused. Only palette, typography mood, shape language,
+texture and layout grammar were taken from the DNA.
 
-Original archetype `terminal-console` (linear): a 30 px status strip, a command line, a
-numbered command rail inside a console, a two-track pane deck, a bottom hint strip and a
-dark red-on-black palette.
+## 2. Skeleton, and how it differs
 
-New skeleton - **Split Stage** (`split-stage`, spatial):
+The old site was a light left sidebar (brand, numbered index, instrument rows) beside a scrolling
+stage, with rounded white cards and sky-blue gradients. The new site inverts that relationship:
 
-> The verifier's DOM classifier reads the persistent sticky narrative column as
-> `sidebar-workspace` (shell family) rather than the selector's `split-stage` label. Either way
-> the original `terminal-console` / linear archetype is gone, and the structure gate passes on
-> the measured similarity rather than on the label.
+- **Right-hand instrument spine, dark ink** (`#0a0b0d`) with a blueprint grid, cobalt ticks and a
+  cobalt active route block. The data leaf is on the left. The pointer and the eye enter the
+  content first.
+- **No `header`/`aside` landmark shell.** The spine is `div[role=complementary]`, the nav and the
+  footer sit inside it, and the leaf carries its own slim `.bp-dock`. The source classifier moved
+  from `sidebar-workspace` (shell) to `terminal-console` (linear).
+- **Different per-route composition.** Home is a ruled ledger (`co-page`): opening article,
+  gauge row, board article, quote sheet, settlement figure article, tape rail, briefing list,
+  limits sheet — flat sheets with cobalt rules instead of rounded shadowed cards. Markets, journal
+  and documentation each re-lay their content in the new stage grammar; legal routes use a ruled
+  clause sheet.
+- **Mobile is a genuine linear adaptation**, not the collapsed sidebar: leaf first, then the dark
+  spine, with the numbered index expanding behind the existing `aria-expanded` toggle.
 
-- **Navigation** moved from a command rail inside a console to a numbered **vertical index in
-  a sticky 42% narrative column**; the current route is marked with an accent left rule and
-  `aria-current`. Below 1080 px the narrative column collapses to a header and the index
-  becomes a disclosure drawer opened by an icon button; Escape closes it and returns focus to
-  the toggle.
-- **The status strip, command line, hint strip and console panes were removed.** Their facts
-  moved into an instrument block in the narrative column and a proof band at the foot of the
-  stage.
-- **Every route is now a stage of bands, not a pane deck.** `/` is a 7/5 shoreline opening, a
-  six-cell gauge, a full-width watchlist ledger with the sandbox quote below it, a 7/5
-  settlement split, a horizontal sample tape, a numbered briefing ledger and a full-width
-  limits band. `/app/markets` is a title band, a command row, a four-cell facts strip and the
-  full-width market ledger; `/app/markets/:symbol` stacks a passport sheet and a full-width
-  payoff instrument. `/docs` is a 3/9 document split with a sticky in-page index in the
-  margin. `/signal` is a 7/5 form split and a record sheet. Legal routes are a single prose
-  column.
-- **Landmark sequence** changed from `main, nav` to `header, nav, main, footer`-style bands
-  inside a two-column shell; the measured landmark similarity is 0.25-0.50.
-- The dark console, the red accent, the hard borders, the pane gutters and every `tty-`,
-  `pag-`, `wrk-`, `tbl-`, `pfx-`, `log-`, `wal-` class were deleted from the render path.
+Evidence is in `.reskin/current/` (screenshots), `.reskin/baseline/` (the captured pre-reskin
+state) and `.reskin/VERIFICATION.md` (gate table).
 
-### Structure measurements (gate in brackets)
+| Route | DOM similarity | Landmark similarity | Axe serious/critical | Result |
+| --- | ---: | ---: | ---: | --- |
+| `/` | 0.307 | 0.25 | 0 | PASS |
+| `/app/markets` | 0.271 | 0.20 | 0 | PASS |
+| `/docs` | 0.364 | 0.40 | 0 | PASS |
+| `/privacy` | 0.500 | 0.333 | 0 | PASS |
+| `/signal` | 0.400 | 0.25 | 0 | PASS |
+| `/terms` | 0.500 | 0.333 | 0 | PASS |
 
-| Route | DOM fingerprint (<=0.50) | Landmark similarity (<=0.68) | Class overlap (<=0.10) | Axe serious | Contrast |
-|---|---:|---:|---:|---:|---:|
-| `/` | 0.170 | 0.25 | 0.018 | 0 | 0/200 |
-| `/app/markets` | 0.188 | 0.25 | 0.035 | 0 | 0/133 |
-| `/docs` | 0.267 | 0.50 | 0.028 | 0 | 0/149 |
-| `/privacy` | 0.274 | 0.333 | 0.035 | 0 | 0/57 |
-| `/signal` | 0.277 | 0.333 | 0.039 | 0 | 0/82 |
-| `/terms` | 0.274 | 0.333 | 0.035 | 0 | 0/57 |
+Thresholds: DOM fingerprint ≤ 0.50, landmark sequence ≤ 0.68, CSS class overlap ≤ 0.10, accent
+ΔE ≥ 30, contrast failures 0, axe serious/critical 0.
 
-## Content contract
+## 3. Content contract
 
-`3d00ded2cdd4` - **unchanged** (336 static text tokens, 214 bindings, 46 handlers; 0 issues,
-0 additive warnings). Every rendered visible word multiset per route is byte-identical to the
-baseline (236 / 143 / 321 / 133 / 142 / 121 word tokens at 1440 px), and the numeric token
-totals are unchanged. No copy was added, removed, rewritten, translated or hidden.
+- Frozen contract hash from inventory: `4812d08e7b124142ed96829d176fc1f1426b0c0bc169ca94907e1c9cefdbeed7`
+  (336 text tokens, 214 bindings, 46 handlers).
+- Verification reports the source contract **intact** with six additive-only warnings (no token
+  removed or rewritten).
+- Rendered word multisets match the baseline exactly on every route (`/` 236 words, `/app/markets`
+  143, `/docs` 321, `/privacy` 133, `/signal` 142, `/terms` 121).
+- Attribute, form-field, link and document-title parity hold. Remaining warnings are the
+  accessibility-name additions described below, one extra icon link target (`/` in the dock) and
+  the two extra numeric tokens on the legal sheets (decorative clause numbers are `aria-hidden`;
+  they are digits, not copy).
 
-- Only presentation changed. Content was moved between bands and given new markup, never
-  retyped.
-- Routes, link targets, bindings, handlers, form fields, asset sources, meta title and
-  description, document language and i18n values are preserved.
-- The two aria-label adjustments are recorded as warnings: the old status strip's
-  `aria-label="Build status"` no longer exists because that strip is gone, and the market facts
-  rail gained `aria-label="Market facts"` so the new aside has an accessible name.
-
-## Files changed
+## 4. Files changed
 
 | File | Change |
-|---|---|
-| `src/tide.css` | **new** global system: tokens, reset, type, split shell, mast, index, instrument, bands, proof band, buttons, fields, switches, pills, notices, facts, tables, motion, responsive |
-| `src/console.css` | **deleted** (the previous console layer) |
-| `src/main.js` | imports `tide.css` only |
-| `src/App.vue` | new shell: sticky narrative column (brand, route index, instrument, actions, colophon) + stage + proof band; drawer state for the mobile index; Escape returns focus to the toggle |
-| `src/components/HomePage.vue` | shoreline opening, gauge band, full-width watchlist ledger, sandbox unit quote, settlement split, sample tape, briefing ledger, limits band |
-| `src/components/MarketWorkspace.vue` | title band, command row, facts strip, full-width ledger, stacked detail with a full-width payoff instrument, centred leaf sheets |
-| `src/components/MarketTable.vue` | full-width data ledger with a stat strip and a mobile card rail |
-| `src/components/PayoffExplorer.vue` | dial band + full-width instrument sheet; chart/table toggle retained |
-| `src/components/DocsPage.vue` | document split: sticky in-page index + prose column; concept plates; legal prose |
-| `src/components/ScenarioLab.vue` | field deck + assumption panel, record sheet and stage track |
-| `src/components/SolanaWalletButton.vue` | light dialog sheet with a scrim and focus trap |
-| `index.html` | `theme-color` to `#ffffff`, `color-scheme` to `light` (title, description, icons untouched) |
+| --- | --- |
+| `src/App.vue` | rewritten shell (`BpFrame`): leaf + dock + dark spine, new route index, new footer, same navigation handlers and focus behaviour |
+| `src/blueprint.css` | **new** global token/reset/shell/primitives layer (replaces `tide.css`) |
+| `src/tide.css` | removed from the render path and deleted |
+| `src/main.js` | imports `blueprint.css` |
+| `src/components/HomePage.vue` | template re-laid out into `co-page`; scoped styles fully rewritten (ruled ledger, flat sheets) |
+| `src/components/MarketWorkspace.vue` | aside → complementary `div`, stage renames, dock/ledger restyle |
+| `src/components/MarketTable.vue` | renamed `gr-*` table/rail; hairline table system |
+| `src/components/PayoffExplorer.vue` | renamed `dy-*` explorer; blueprint chart strokes |
+| `src/components/ScenarioLab.vue` | renamed `jn-*` docket; flat form sheet |
+| `src/components/DocsPage.vue` | legal routes rebuilt as a ruled clause sheet; docs stage renamed `dc-*` |
+| `src/components/SolanaWalletButton.vue` | renamed `wl-*` dialog; flat sheet, cobalt accents |
 
-All old design-token names were replaced by the `--tide-*` layer; the new class namespaces are
-`tide-`, `reef-`, `shoal-`, `strand-`, `lagoon-`, `buoy-` and `dock-`.
+A pre-edit copy of `src/` is kept in `.reskin/original-src/`; baseline screenshots and page
+metrics are in `.reskin/baseline/`.
 
-## Accessibility and responsiveness
+## 5. Accessibility and responsive results
 
-- axe WCAG 2.0/2.1/2.2 A+AA: **0 serious or critical** on all six routes.
-- Contrast: 0 failures on 200 / 133 / 149 / 57 / 82 / 57 measured text/background pairs.
-  Accent text on tinted surfaces uses `--accent-deep` (`#0a5bc0`); `--accent` is reserved for
-  fills, bars and decorative arcs.
-- Keyboard: skip link first; visible 2 px focus ring on every control; one `h1` per route;
-  every input labelled; every image has `alt`; every control has an accessible name.
-- Mobile navigation: the index is a disclosure behind an `aria-expanded` toggle; Escape
-  closes it and focus returns to the toggle; all six route targets are in the drawer.
-- No horizontal document overflow at 1440 px or 390 px on any route
-  (`scrollWidth == clientWidth`). Wide data tables scroll inside their own wrapper; the home
-  board becomes a card rail below 580 px.
-- `prefers-reduced-motion` disables transitions, animations and smooth scrolling.
+- axe WCAG 2.x: **0 serious/critical** on every route, desktop and mobile.
+- Contrast: **0 failures** across 578 checked text nodes (cobalt, ink, muted, success and danger
+  tokens were tuned until the tinted-row and picked-row cases passed 4.5:1).
+- One `h1` per route, labelled controls, alt text present, keyboard focus visible
+  (`:focus-visible` cobalt outline), skip link preserved.
+- No horizontal overflow at 390×844 on any route (the market table scrolls inside its own wrap).
+- `prefers-reduced-motion` guard disables scroll smoothing and transitions.
+- Mobile navigation target check: PASS (index toggle, `aria-expanded`, pinned focus on Escape).
 
-## Interaction checks (real browser)
+## 6. Known limitations
 
-`.reskin/tools/smoke.mjs` drives the production preview through the Chrome DevTools protocol;
-8/8 checks pass:
-
-- `/signal` loads; the scenario form accepts values; **Review scenario** renders
-  "Check the numbers."; **Save to journal** renders "Your local record." with Export JSON.
-- The wallet dialog opens and closes from the mast; `/` board search shows its empty state and
-  **Clear filter** restores the ledger.
-- The rail link reaches `/app/markets`; the payoff **Table/Chart** toggle renders the
-  settlement table with the current row marked.
-- No console errors on the checked routes.
-
-## Screenshots
-
-Baseline: `.reskin/baseline/` (`*-desktop.png` 1440x900 full page, `*-mobile.png` 390x844).
-Current: `.reskin/current/` with the same names. Plain viewport captures of the first fold are
-in `.reskin/views/` (`home-top-1440.png`, `markets-top-1440.png`, `docs-top-1440.png`,
-`signal-top-1440.png`, `home-top-390.png`, `markets-top-390.png`, `signal-top-390.png`),
-because full-page stitching paints sticky elements at the last scroll slice.
-
-## Notes and limitations
-
-- Dynamic routes `/app/markets/:symbol`, `/risk`, `/stats` and the 404 leaf are not part of the
-  six captured routes. The detail route was captured and smoke-tested; the 404 block renders
-  in the same stage shell.
-- The home board table keeps an internal horizontal scroll at 390 px (seven columns); the page
-  itself never overflows.
-- Pre-existing model output is unchanged and visible as before: the settlement readout prints
-  `incomeShare * 100` (9891.6 %), and the home settlement SVG bands use the same percentage
-  value. Changing those bindings would be a content change; they are recorded here instead.
-- The X kit and the concept figures were regenerated in this art direction after the UI passed
-  verification; they show real screenshots of the result.
-
-> The UI was rebuilt around **Tidal Sui** / **Split Stage**; the original **terminal-console**
-> shell and palette were removed while the content contract stayed byte-for-byte intact.
+- `/app/markets/SOL`-style asset routes are rendered from the same workspace component and were
+  captured for the X art, but the gate list only covers the six static routes the router exposes.
+- Fonts are system stacks (Inter Tight/Inter/Geist Mono are not bundled); the visual system falls
+  back to Segoe UI and Cascadia Mono on this machine.
+- The reskin was performed after the identity replacement; visible words therefore carry the
+  Tabuline name frozen from the rebrand checkpoint.

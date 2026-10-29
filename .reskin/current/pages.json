@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "label": "current",
-  "generatedAt": "2026-10-21T13:29:36.507Z",
+  "generatedAt": "2026-10-22T15:40:15.250Z",
   "baseUrl": "http://127.0.0.1:4317/",
   "browser": {
     "executablePath": "C:\\Users\\Administrator\\AppData\\Local\\ms-playwright\\chromium-1247\\chrome-win64\\chrome.exe",
@@ -15,13 +15,13 @@
       "status": 200,
       "desktop": {
         "meta": {
-          "title": "Overview / Librova",
+          "title": "Overview / Tabuline",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 2941,
+          "bodyTextLength": 2953,
           "scrollWidth": 1440,
           "clientWidth": 1440,
-          "focusableCount": 45
+          "focusableCount": 46
         },
         "words": [
           {
@@ -441,22 +441,6 @@
             "count": 2
           },
           {
-            "word": "librova",
-            "count": 2
-          },
-          {
-            "word": "Librova",
-            "count": 2
-          },
-          {
-            "word": "LIBROVA",
-            "count": 5
-          },
-          {
-            "word": "librova.xyz",
-            "count": 3
-          },
-          {
             "word": "limits",
             "count": 1
           },
@@ -813,6 +797,22 @@
             "count": 1
           },
           {
+            "word": "tabuline",
+            "count": 2
+          },
+          {
+            "word": "Tabuline",
+            "count": 2
+          },
+          {
+            "word": "TABULINE",
+            "count": 5
+          },
+          {
+            "word": "tabuline.xyz",
+            "count": 3
+          },
+          {
             "word": "tape",
             "count": 2
           },
@@ -971,10 +971,6 @@
         ],
         "attrs": [
           {
-            "key": "aria-label=Librova overview",
-            "count": 1
-          },
-          {
             "key": "aria-label=Open the BONK sheet",
             "count": 1
           },
@@ -1007,6 +1003,14 @@
             "count": 1
           },
           {
+            "key": "aria-label=Tabuline overview",
+            "count": 2
+          },
+          {
+            "key": "aria-label=Terminal index",
+            "count": 1
+          },
+          {
             "key": "placeholder=Filter by symbol",
             "count": 1
           }
@@ -1014,7 +1018,7 @@
         "links": [
           {
             "href": "/",
-            "count": 2
+            "count": 3
           },
           {
             "href": "/#cap",
@@ -1091,8 +1095,101 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
+          "bp-band",
+          "bp-band--first",
+          "bp-btn",
+          "bp-btn--ghost",
+          "bp-btn--primary",
+          "bp-btn--solid",
+          "bp-btn--wide",
+          "bp-display",
+          "bp-dock",
+          "bp-dock-actions",
+          "bp-dock-brand",
+          "bp-dock-rule",
+          "bp-field",
+          "bp-field-label",
+          "bp-foot",
+          "bp-foot-brand",
+          "bp-foot-copy",
+          "bp-foot-links",
+          "bp-frame",
+          "bp-h2",
+          "bp-index",
+          "bp-index-link",
+          "bp-input",
+          "bp-instrument",
+          "bp-instrument-row",
+          "bp-kicker",
+          "bp-lead",
+          "bp-leaf",
+          "bp-leaf-body",
+          "bp-lockup",
+          "bp-loud",
+          "bp-meta",
+          "bp-note",
+          "bp-num",
+          "bp-pill",
+          "bp-pill--bp-cobalt",
+          "bp-proof",
+          "bp-proof-grid",
+          "bp-proof-note",
+          "bp-range",
+          "bp-route",
+          "bp-scale",
+          "bp-skip",
+          "bp-spine",
+          "bp-spine-brand",
+          "bp-spine-target",
+          "bp-spine-thesis",
+          "bp-switch",
+          "bp-table",
+          "bp-table-wrap",
+          "bp-wallet",
+          "co-band-a",
+          "co-band-b",
+          "co-band-label",
+          "co-board",
+          "co-board-band",
+          "co-board-main",
+          "co-brief",
+          "co-brief-band",
+          "co-cap-label",
+          "co-combo",
+          "co-figure",
+          "co-foot-note",
+          "co-gauge",
+          "co-gauge-band",
+          "co-grid-lines",
+          "co-head",
+          "co-limits",
+          "co-limits-band",
+          "co-limits-copy",
+          "co-limits-list",
+          "co-open",
+          "co-open-actions",
+          "co-open-copy",
+          "co-open-side",
+          "co-quote",
+          "co-quote-body",
+          "co-quote-head",
+          "co-quote-line",
+          "co-readout",
+          "co-rowlink",
+          "co-search",
+          "co-split",
+          "co-split-band",
+          "co-split-readout",
+          "co-tape",
+          "co-tape-band",
+          "co-tick",
+          "co-token",
+          "co-token-mark",
+          "co-token-name",
+          "co-tools",
+          "co-total",
+          "co-value",
           "dock",
-          "dock-trigger",
           "is-down",
           "is-end",
           "is-on",
@@ -1102,303 +1199,237 @@
           "lucide-arrow-right-icon",
           "lucide-wallet-icon",
           "reef",
-          "reef-band-a",
-          "reef-band-b",
-          "reef-band-label",
-          "reef-board",
-          "reef-board-band",
-          "reef-board-main",
-          "reef-brief",
-          "reef-brief-band",
-          "reef-cap-label",
-          "reef-combo",
-          "reef-figure",
-          "reef-foot-note",
-          "reef-gauge",
-          "reef-gauge-band",
-          "reef-grid-lines",
-          "reef-head",
-          "reef-limits",
-          "reef-limits-band",
-          "reef-limits-copy",
-          "reef-limits-list",
-          "reef-open",
-          "reef-open-actions",
-          "reef-open-copy",
-          "reef-open-side",
-          "reef-quote",
-          "reef-quote-body",
-          "reef-quote-head",
-          "reef-quote-line",
-          "reef-readout",
-          "reef-rowlink",
-          "reef-search",
-          "reef-split",
-          "reef-split-band",
-          "reef-split-readout",
-          "reef-tape",
-          "reef-tape-band",
-          "reef-tick",
-          "reef-token",
-          "reef-token-mark",
-          "reef-token-name",
-          "reef-tools",
-          "reef-total",
-          "reef-value",
-          "tide-band",
-          "tide-band--first",
-          "tide-brand",
-          "tide-btn",
-          "tide-btn--ghost",
-          "tide-btn--primary",
-          "tide-btn--wide",
-          "tide-display",
-          "tide-field",
-          "tide-field-label",
-          "tide-foot-brand",
-          "tide-foot-copy",
-          "tide-foot-links",
-          "tide-h2",
-          "tide-index",
-          "tide-index-link",
-          "tide-input",
-          "tide-instrument",
-          "tide-instrument-row",
-          "tide-kicker",
-          "tide-lead",
-          "tide-loud",
-          "tide-mast",
-          "tide-mast-actions",
-          "tide-mast-foot",
-          "tide-mast-line",
-          "tide-mast-tail",
-          "tide-mast-top",
-          "tide-meta",
-          "tide-note",
-          "tide-num",
-          "tide-pill",
-          "tide-pill--accent",
-          "tide-proof",
-          "tide-range",
-          "tide-scale",
-          "tide-shell",
-          "tide-skip",
-          "tide-stage",
-          "tide-stage-inner",
-          "tide-switch",
-          "tide-table",
-          "tide-table-wrap",
-          "tide-wallet",
-          "visually-hidden"
+          "visually-hidden",
+          "wl-trigger"
         ],
         "fingerprint": [
-          "a@11:1",
-          "a@11:3",
-          "a@16:0",
+          "a@12:1",
+          "a@12:3",
+          "a@17:0",
           "a@4:0",
+          "a@7:1",
           "a@7:2",
           "a@7:3",
           "a@8:0",
           "a@9:0",
-          "aside@10:4+",
-          "b@12:0",
-          "b@14:0",
-          "b@18:0",
+          "b@13:0",
+          "b@15:0",
+          "b@19:0",
           "b@8:0",
           "b@9:0",
-          "button@10:0",
           "button@11:0",
-          "button@11:4+",
-          "button@12:1",
-          "button@14:0",
-          "button@16:2",
+          "button@12:0",
+          "button@12:4+",
+          "button@13:1",
+          "button@15:0",
+          "button@17:2",
           "button@9:1",
-          "caption@13:0",
-          "dd@11:0",
+          "caption@14:0",
           "dd@12:0",
           "dd@13:0",
+          "dd@14:0",
           "dd@8:1",
           "dd@9:0",
-          "div@10:1",
           "div@10:2",
           "div@10:3",
           "div@11:1",
           "div@11:2",
-          "div@11:4+",
+          "div@11:3",
+          "div@12:1",
           "div@12:2",
-          "div@12:3",
+          "div@12:4+",
           "div@13:2",
           "div@13:3",
+          "div@14:2",
+          "div@14:3",
           "div@3:2",
           "div@4:2",
+          "div@5:4+",
           "div@6:1",
           "div@6:2",
           "div@6:3",
+          "div@7:1",
           "div@7:2",
           "div@7:3",
-          "div@7:4+",
           "div@8:1",
           "div@8:2",
-          "div@9:2",
-          "div@9:3",
+          "div@8:4+",
           "dl@10:4+",
           "dl@11:4+",
+          "dl@12:4+",
           "dl@6:4+",
           "dl@7:4+",
-          "dl@9:4+",
-          "dt@11:0",
           "dt@12:0",
           "dt@13:0",
+          "dt@14:0",
           "dt@8:0",
           "dt@9:0",
-          "em@11:0",
           "em@12:0",
           "em@13:0",
-          "figcaption@11:0",
-          "figure@10:2",
-          "g@12:4+",
-          "h1@10:3",
-          "h2@10:0",
+          "em@14:0",
+          "figcaption@12:0",
+          "figure@11:2",
+          "footer@6:3",
+          "g@13:4+",
+          "h1@11:3",
           "h2@11:0",
           "h2@12:0",
-          "header@5:4+",
-          "i@12:0",
+          "h2@13:0",
           "i@13:0",
+          "i@14:0",
           "img@8:0",
-          "input@13:0",
           "input@14:0",
-          "label@13:0",
-          "label@13:1",
-          "label@13:2",
-          "li@10:1",
-          "li@11:0",
+          "input@15:0",
+          "label@14:0",
+          "label@14:1",
+          "label@14:2",
+          "li@11:1",
+          "li@12:0",
           "li@8:1",
-          "main@5:2",
+          "main@5:3",
           "nav@6:4+",
-          "ol@9:4+",
-          "output@14:0",
-          "p@10:0",
+          "ol@10:4+",
+          "output@15:0",
           "p@11:0",
-          "p@11:2",
+          "p@12:0",
+          "p@12:2",
           "p@6:0",
-          "p@6:1",
           "p@7:0",
+          "p@7:1",
           "path@11:0",
-          "path@13:0",
           "path@14:0",
-          "rect@12:0",
-          "section@8:1",
-          "section@8:2",
-          "select@13:4+",
-          "small@12:0",
-          "small@18:0",
+          "path@15:0",
+          "rect@13:0",
+          "section@11:4+",
+          "section@9:1",
+          "section@9:2",
+          "select@14:4+",
+          "small@13:0",
+          "small@19:0",
           "small@8:0",
-          "span@12:0",
-          "span@12:1",
-          "span@12:2",
           "span@13:0",
+          "span@13:1",
           "span@13:2",
           "span@14:0",
-          "span@17:0",
-          "span@17:2",
+          "span@14:2",
+          "span@15:0",
+          "span@18:0",
+          "span@18:2",
+          "span@7:0",
           "span@8:0",
-          "strong@12:0",
           "strong@13:0",
+          "strong@14:0",
           "svg@10:2",
-          "svg@11:4+",
-          "svg@12:2",
+          "svg@12:4+",
           "svg@13:2",
-          "table@12:3",
-          "tbody@13:4+",
-          "td@15:0",
-          "td@15:1",
-          "text@12:0",
-          "th@15:0",
-          "th@15:1",
-          "thead@13:1",
-          "tr@14:4+",
+          "svg@14:2",
+          "table@13:3",
+          "tbody@14:4+",
+          "td@16:0",
+          "td@16:1",
+          "text@13:0",
+          "th@16:0",
+          "th@16:1",
+          "thead@14:1",
+          "tr@15:4+",
           "ul@10:4+",
-          "ul@7:4+",
-          "ul@9:4+"
+          "ul@11:4+",
+          "ul@7:4+"
         ],
         "landmarks": [
           {
-            "tag": "header",
+            "tag": "main",
             "role": "",
+            "top": -24,
+            "left": 1,
+            "width": 863,
+            "height": 3142
+          },
+          {
+            "tag": "div",
+            "role": "complementary",
             "top": 0,
-            "left": 0,
-            "width": 605,
+            "left": 864,
+            "width": 575,
             "height": 900
           },
           {
             "tag": "nav",
             "role": "",
-            "top": 143,
-            "left": 49,
+            "top": 139,
+            "left": 898,
             "width": 506,
-            "height": 391
+            "height": 409
           },
           {
-            "tag": "main",
+            "tag": "footer",
             "role": "",
-            "top": -27,
-            "left": 605,
-            "width": 835,
-            "height": 3352
-          },
-          {
-            "tag": "aside",
-            "role": "",
-            "top": 1119,
-            "left": 671,
-            "width": 703,
-            "height": 351
+            "top": 748,
+            "left": 898,
+            "width": 506,
+            "height": 115
           }
         ],
         "colors": [
           {
-            "hex": "#081b2b",
-            "count": 225
+            "hex": "#0a0b0d",
+            "count": 199
           },
           {
-            "hex": "#5b7185",
-            "count": 69
+            "hex": "#4c4f55",
+            "count": 59
           },
           {
-            "hex": "#24465f",
-            "count": 37
-          },
-          {
-            "hex": "#0d71e3",
-            "count": 22
+            "hex": "#f3f4ef",
+            "count": 48
           },
           {
             "hex": "#ffffff",
+            "count": 27
+          },
+          {
+            "hex": "#0000d6",
             "count": 21
           },
           {
-            "hex": "#0a5bc0",
+            "hex": "#14161a",
+            "count": 15
+          },
+          {
+            "hex": "#9ba0a8",
+            "count": 12
+          },
+          {
+            "hex": "#0000ff",
             "count": 8
           },
           {
-            "hex": "#f4f9ff",
+            "hex": "#7575ff",
             "count": 7
           },
           {
-            "hex": "#087a55",
+            "hex": "#005f3f",
             "count": 6
           },
           {
-            "hex": "#e8f3ff",
+            "hex": "#f1f2ee",
             "count": 5
           },
           {
-            "hex": "#298dff",
-            "count": 4
+            "hex": "#a92a07",
+            "count": 2
           },
           {
-            "hex": "#b42318",
+            "hex": "#b9bcb4",
             "count": 2
+          },
+          {
+            "hex": "#dde3e9",
+            "count": 1
+          },
+          {
+            "hex": "#f7f8f5",
+            "count": 1
           }
         ],
         "contrast": [],
@@ -1446,34 +1477,24 @@
           "documentOverflow": false,
           "offenders": [
             {
-              "selector": "figure.reef-figure > svg > rect.reef-band-a",
-              "right": 27102,
-              "width": 26376
+              "selector": "figure.co-figure > svg > rect.co-band-a",
+              "right": 29613,
+              "width": 29506
             },
             {
-              "selector": "figure.reef-figure > svg > rect.reef-band-b",
-              "right": 27391,
-              "width": 289
+              "selector": "figure.co-figure > svg > rect.co-band-b",
+              "right": 29936,
+              "width": 323
             },
             {
-              "selector": "figure.reef-figure > svg > text.reef-cap-label",
-              "right": 27149,
-              "width": 44
+              "selector": "figure.co-figure > svg > text.co-cap-label",
+              "right": 29665,
+              "width": 48
             },
             {
-              "selector": "figure.reef-figure > svg > text.reef-tick",
-              "right": 27104,
-              "width": 3
-            },
-            {
-              "selector": "section.tide-band.reef-tape-band > ul.reef-tape > li",
-              "right": 1444,
-              "width": 190
-            },
-            {
-              "selector": "ul.reef-tape > li > button",
-              "right": 1444,
-              "width": 190
+              "selector": "figure.co-figure > svg > text.co-tick",
+              "right": 29615,
+              "width": 4
             }
           ]
         }
@@ -1492,13 +1513,13 @@
       },
       "mobile": {
         "meta": {
-          "title": "Overview / Librova",
+          "title": "Overview / Tabuline",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 2829,
+          "bodyTextLength": 2841,
           "scrollWidth": 390,
           "clientWidth": 390,
-          "focusableCount": 40
+          "focusableCount": 41
         },
         "words": [
           {
@@ -1906,22 +1927,6 @@
             "count": 2
           },
           {
-            "word": "librova",
-            "count": 2
-          },
-          {
-            "word": "Librova",
-            "count": 2
-          },
-          {
-            "word": "LIBROVA",
-            "count": 5
-          },
-          {
-            "word": "librova.xyz",
-            "count": 3
-          },
-          {
             "word": "limits",
             "count": 1
           },
@@ -2270,6 +2275,22 @@
             "count": 1
           },
           {
+            "word": "tabuline",
+            "count": 2
+          },
+          {
+            "word": "Tabuline",
+            "count": 2
+          },
+          {
+            "word": "TABULINE",
+            "count": 5
+          },
+          {
+            "word": "tabuline.xyz",
+            "count": 3
+          },
+          {
             "word": "tape",
             "count": 1
           },
@@ -2424,10 +2445,6 @@
         ],
         "attrs": [
           {
-            "key": "aria-label=Librova overview",
-            "count": 1
-          },
-          {
             "key": "aria-label=Open navigation",
             "count": 1
           },
@@ -2460,6 +2477,14 @@
             "count": 1
           },
           {
+            "key": "aria-label=Tabuline overview",
+            "count": 2
+          },
+          {
+            "key": "aria-label=Terminal index",
+            "count": 1
+          },
+          {
             "key": "placeholder=Filter by symbol",
             "count": 1
           }
@@ -2467,7 +2492,7 @@
         "links": [
           {
             "href": "/",
-            "count": 1
+            "count": 2
           },
           {
             "href": "/app/markets",
@@ -2540,8 +2565,100 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
+          "bp-band",
+          "bp-band--first",
+          "bp-btn",
+          "bp-btn--ghost",
+          "bp-btn--line",
+          "bp-btn--primary",
+          "bp-btn--solid",
+          "bp-btn--wide",
+          "bp-display",
+          "bp-dock",
+          "bp-dock-actions",
+          "bp-dock-brand",
+          "bp-field",
+          "bp-field-label",
+          "bp-foot",
+          "bp-foot-brand",
+          "bp-foot-copy",
+          "bp-foot-links",
+          "bp-frame",
+          "bp-h2",
+          "bp-input",
+          "bp-instrument",
+          "bp-instrument-row",
+          "bp-kicker",
+          "bp-lead",
+          "bp-leaf",
+          "bp-leaf-body",
+          "bp-lockup",
+          "bp-loud",
+          "bp-meta",
+          "bp-nav-toggle",
+          "bp-note",
+          "bp-num",
+          "bp-pill",
+          "bp-pill--bp-cobalt",
+          "bp-proof",
+          "bp-proof-grid",
+          "bp-proof-note",
+          "bp-range",
+          "bp-route",
+          "bp-scale",
+          "bp-skip",
+          "bp-spine",
+          "bp-spine-brand",
+          "bp-spine-target",
+          "bp-spine-thesis",
+          "bp-switch",
+          "bp-table",
+          "bp-table-wrap",
+          "bp-wallet",
+          "co-band-a",
+          "co-band-b",
+          "co-band-label",
+          "co-board",
+          "co-board-band",
+          "co-board-main",
+          "co-brief",
+          "co-brief-band",
+          "co-cap-label",
+          "co-combo",
+          "co-figure",
+          "co-foot-note",
+          "co-gauge",
+          "co-gauge-band",
+          "co-grid-lines",
+          "co-head",
+          "co-limits",
+          "co-limits-band",
+          "co-limits-copy",
+          "co-limits-list",
+          "co-open",
+          "co-open-actions",
+          "co-open-copy",
+          "co-open-side",
+          "co-quote",
+          "co-quote-body",
+          "co-quote-head",
+          "co-quote-line",
+          "co-readout",
+          "co-rowlink",
+          "co-search",
+          "co-split",
+          "co-split-band",
+          "co-split-readout",
+          "co-tape",
+          "co-tape-band",
+          "co-tick",
+          "co-token",
+          "co-token-mark",
+          "co-token-name",
+          "co-tools",
+          "co-total",
+          "co-value",
           "dock",
-          "dock-trigger",
           "is-down",
           "is-end",
           "is-on",
@@ -2552,293 +2669,226 @@
           "lucide-menu-icon",
           "lucide-wallet-icon",
           "reef",
-          "reef-band-a",
-          "reef-band-b",
-          "reef-band-label",
-          "reef-board",
-          "reef-board-band",
-          "reef-board-main",
-          "reef-brief",
-          "reef-brief-band",
-          "reef-cap-label",
-          "reef-combo",
-          "reef-figure",
-          "reef-foot-note",
-          "reef-gauge",
-          "reef-gauge-band",
-          "reef-grid-lines",
-          "reef-head",
-          "reef-limits",
-          "reef-limits-band",
-          "reef-limits-copy",
-          "reef-limits-list",
-          "reef-open",
-          "reef-open-actions",
-          "reef-open-copy",
-          "reef-open-side",
-          "reef-quote",
-          "reef-quote-body",
-          "reef-quote-head",
-          "reef-quote-line",
-          "reef-readout",
-          "reef-rowlink",
-          "reef-search",
-          "reef-split",
-          "reef-split-band",
-          "reef-split-readout",
-          "reef-tape",
-          "reef-tape-band",
-          "reef-tick",
-          "reef-token",
-          "reef-token-mark",
-          "reef-token-name",
-          "reef-tools",
-          "reef-total",
-          "reef-value",
-          "tide-band",
-          "tide-band--first",
-          "tide-brand",
-          "tide-btn",
-          "tide-btn--ghost",
-          "tide-btn--primary",
-          "tide-btn--quiet",
-          "tide-btn--wide",
-          "tide-display",
-          "tide-field",
-          "tide-field-label",
-          "tide-foot-brand",
-          "tide-foot-copy",
-          "tide-foot-links",
-          "tide-h2",
-          "tide-index-toggle",
-          "tide-input",
-          "tide-instrument",
-          "tide-instrument-row",
-          "tide-kicker",
-          "tide-lead",
-          "tide-loud",
-          "tide-mast",
-          "tide-mast-actions",
-          "tide-mast-foot",
-          "tide-mast-line",
-          "tide-mast-tail",
-          "tide-mast-top",
-          "tide-meta",
-          "tide-note",
-          "tide-num",
-          "tide-pill",
-          "tide-pill--accent",
-          "tide-proof",
-          "tide-range",
-          "tide-scale",
-          "tide-shell",
-          "tide-skip",
-          "tide-stage",
-          "tide-stage-inner",
-          "tide-switch",
-          "tide-table",
-          "tide-table-wrap",
-          "tide-wallet",
-          "visually-hidden"
+          "visually-hidden",
+          "wl-trigger"
         ],
         "fingerprint": [
-          "a@11:1",
-          "a@11:3",
-          "a@16:0",
+          "a@12:1",
+          "a@12:3",
+          "a@17:0",
           "a@4:0",
+          "a@7:1",
           "a@7:2",
           "a@8:0",
           "a@9:0",
-          "aside@10:4+",
-          "b@12:0",
-          "b@14:0",
-          "b@18:0",
+          "b@13:0",
+          "b@15:0",
+          "b@19:0",
           "b@8:0",
           "b@9:0",
-          "button@10:0",
           "button@11:0",
-          "button@11:4+",
-          "button@12:1",
-          "button@14:0",
-          "button@16:2",
+          "button@12:0",
+          "button@12:4+",
+          "button@13:1",
+          "button@15:0",
+          "button@17:2",
           "button@8:1",
           "button@9:1",
-          "caption@13:0",
-          "dd@11:0",
+          "caption@14:0",
           "dd@12:0",
           "dd@13:0",
+          "dd@14:0",
           "dd@8:1",
           "dd@9:0",
-          "div@10:1",
           "div@10:2",
           "div@10:3",
           "div@11:1",
           "div@11:2",
-          "div@11:4+",
+          "div@11:3",
+          "div@12:1",
           "div@12:2",
-          "div@12:3",
+          "div@12:4+",
           "div@13:2",
           "div@13:3",
+          "div@14:2",
+          "div@14:3",
           "div@3:2",
           "div@4:2",
+          "div@5:4+",
           "div@6:1",
           "div@6:2",
           "div@6:3",
+          "div@7:1",
           "div@7:2",
           "div@7:3",
-          "div@7:4+",
           "div@8:1",
           "div@8:2",
-          "div@9:2",
-          "div@9:3",
+          "div@8:4+",
           "dl@10:4+",
           "dl@11:4+",
+          "dl@12:4+",
           "dl@6:4+",
           "dl@7:4+",
-          "dl@9:4+",
-          "dt@11:0",
           "dt@12:0",
           "dt@13:0",
+          "dt@14:0",
           "dt@8:0",
           "dt@9:0",
-          "em@11:0",
           "em@12:0",
           "em@13:0",
-          "figcaption@11:0",
-          "figure@10:2",
-          "g@12:4+",
-          "h1@10:3",
-          "h2@10:0",
+          "em@14:0",
+          "figcaption@12:0",
+          "figure@11:2",
+          "footer@6:3",
+          "g@13:4+",
+          "h1@11:3",
           "h2@11:0",
           "h2@12:0",
-          "header@5:4+",
-          "i@12:0",
+          "h2@13:0",
           "i@13:0",
+          "i@14:0",
           "img@8:0",
-          "input@13:0",
           "input@14:0",
-          "label@13:0",
-          "label@13:1",
-          "label@13:2",
-          "li@10:1",
-          "li@11:0",
+          "input@15:0",
+          "label@14:0",
+          "label@14:1",
+          "label@14:2",
+          "li@11:1",
+          "li@12:0",
           "li@8:1",
-          "main@5:2",
-          "ol@9:4+",
-          "output@14:0",
-          "p@10:0",
+          "main@5:3",
+          "ol@10:4+",
+          "output@15:0",
           "p@11:0",
-          "p@11:2",
+          "p@12:0",
+          "p@12:2",
           "p@6:0",
-          "p@6:1",
           "p@7:0",
+          "p@7:1",
           "path@11:0",
-          "path@13:0",
           "path@14:0",
-          "rect@12:0",
-          "section@8:1",
-          "section@8:2",
-          "select@13:4+",
-          "small@12:0",
-          "small@18:0",
-          "span@12:0",
-          "span@12:1",
-          "span@12:2",
+          "path@15:0",
+          "rect@13:0",
+          "section@11:4+",
+          "section@9:1",
+          "section@9:2",
+          "select@14:4+",
+          "small@13:0",
+          "small@19:0",
           "span@13:0",
+          "span@13:1",
           "span@13:2",
           "span@14:0",
-          "span@17:0",
-          "span@17:2",
-          "strong@12:0",
+          "span@14:2",
+          "span@15:0",
+          "span@18:0",
+          "span@18:2",
           "strong@13:0",
+          "strong@14:0",
           "svg@10:2",
-          "svg@11:4+",
-          "svg@12:2",
+          "svg@12:4+",
           "svg@13:2",
+          "svg@14:2",
           "svg@9:3",
-          "table@12:3",
-          "tbody@13:4+",
-          "td@15:0",
-          "td@15:1",
-          "text@12:0",
-          "th@15:0",
-          "th@15:1",
-          "thead@13:1",
-          "tr@14:4+",
+          "table@13:3",
+          "tbody@14:4+",
+          "td@16:0",
+          "td@16:1",
+          "text@13:0",
+          "th@16:0",
+          "th@16:1",
+          "thead@14:1",
+          "tr@15:4+",
           "ul@10:4+",
-          "ul@7:4+",
-          "ul@9:4+"
+          "ul@11:4+",
+          "ul@7:4+"
         ],
         "landmarks": [
           {
-            "tag": "header",
+            "tag": "main",
             "role": "",
             "top": 0,
             "left": 0,
             "width": 390,
-            "height": 382
+            "height": 3740
           },
           {
-            "tag": "main",
-            "role": "",
-            "top": 382,
+            "tag": "div",
+            "role": "complementary",
+            "top": 3740,
             "left": 0,
             "width": 390,
-            "height": 3686
+            "height": 438
           },
           {
-            "tag": "aside",
+            "tag": "footer",
             "role": "",
-            "top": 1570,
+            "top": 4039,
             "left": 18,
             "width": 354,
-            "height": 574
+            "height": 115
           }
         ],
         "colors": [
           {
-            "hex": "#081b2b",
-            "count": 222
+            "hex": "#0a0b0d",
+            "count": 200
           },
           {
-            "hex": "#5b7185",
+            "hex": "#4c4f55",
             "count": 59
           },
           {
-            "hex": "#24465f",
-            "count": 26
+            "hex": "#f3f4ef",
+            "count": 35
           },
           {
             "hex": "#ffffff",
-            "count": 21
+            "count": 25
           },
           {
-            "hex": "#0d71e3",
-            "count": 14
+            "hex": "#14161a",
+            "count": 15
           },
           {
-            "hex": "#0a5bc0",
-            "count": 9
+            "hex": "#0000d6",
+            "count": 13
           },
           {
-            "hex": "#f4f9ff",
+            "hex": "#0000ff",
             "count": 7
           },
           {
-            "hex": "#087a55",
+            "hex": "#9ba0a8",
+            "count": 7
+          },
+          {
+            "hex": "#005f3f",
             "count": 6
           },
           {
-            "hex": "#e8f3ff",
-            "count": 6
+            "hex": "#f1f2ee",
+            "count": 5
           },
           {
-            "hex": "#298dff",
-            "count": 4
-          },
-          {
-            "hex": "#b42318",
+            "hex": "#7575ff",
             "count": 2
+          },
+          {
+            "hex": "#a92a07",
+            "count": 2
+          },
+          {
+            "hex": "#b9bcb4",
+            "count": 1
+          },
+          {
+            "hex": "#dde3e9",
+            "count": 1
+          },
+          {
+            "hex": "#f7f8f5",
+            "count": 1
           }
         ],
         "contrast": [],
@@ -2874,7 +2924,6 @@
           }
         ],
         "navTargets": [
-          "/",
           "/app/markets",
           "/docs",
           "/privacy",
@@ -2886,44 +2935,44 @@
           "documentOverflow": false,
           "offenders": [
             {
-              "selector": "div.reef-board-main > div.tide-table-wrap > table.tide-table",
-              "right": 586,
-              "width": 567
+              "selector": "div.co-board-main > div.bp-table-wrap > table.bp-table",
+              "right": 522,
+              "width": 504
             },
             {
-              "selector": "div.tide-table-wrap > table.tide-table > thead",
-              "right": 586,
-              "width": 567
+              "selector": "div.bp-table-wrap > table.bp-table > thead",
+              "right": 522,
+              "width": 504
             },
             {
-              "selector": "table.tide-table > thead > tr",
-              "right": 586,
-              "width": 567
+              "selector": "table.bp-table > thead > tr",
+              "right": 522,
+              "width": 504
             },
             {
-              "selector": "thead > tr > th.tide-num.tide-loud",
-              "right": 412,
-              "width": 112
-            },
-            {
-              "selector": "thead > tr > th.tide-num",
-              "right": 524,
-              "width": 112
+              "selector": "thead > tr > th.bp-num",
+              "right": 470,
+              "width": 101
             },
             {
               "selector": "thead > tr > th",
-              "right": 586,
-              "width": 62
+              "right": 522,
+              "width": 52
             },
             {
-              "selector": "div.tide-table-wrap > table.tide-table > tbody",
-              "right": 586,
-              "width": 567
+              "selector": "div.bp-table-wrap > table.bp-table > tbody",
+              "right": 522,
+              "width": 504
             },
             {
-              "selector": "table.tide-table > tbody > tr.is-picked",
-              "right": 586,
-              "width": 567
+              "selector": "table.bp-table > tbody > tr.is-picked",
+              "right": 522,
+              "width": 504
+            },
+            {
+              "selector": "tbody > tr.is-picked > td.bp-num",
+              "right": 470,
+              "width": 101
             }
           ]
         }
@@ -2934,15 +2983,15 @@
           "",
           "/",
           "/app/markets",
+          "/app/markets/SOL",
+          "/app/markets/JUP",
+          "/app/markets/BONK",
+          "/app/markets/USDC",
           "/signal",
           "/docs",
           "/risk",
           "/terms",
-          "/privacy",
-          "/app/markets/SOL",
-          "/app/markets/JUP",
-          "/app/markets/BONK",
-          "/app/markets/USDC"
+          "/privacy"
         ],
         "reachable": true
       },
@@ -2953,80 +3002,80 @@
             "text": "Skip to content",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(13, 113, 227)",
+            "outlineColor": "rgb(0, 0, 255)",
             "boxShadow": "none",
             "borderColor": "rgb(255, 255, 255)",
-            "backgroundColor": "rgb(8, 27, 43)"
+            "backgroundColor": "rgb(0, 0, 255)"
           },
           {
             "tag": "a",
-            "text": "Librova overview",
+            "text": "Tabuline overview",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(13, 113, 227)",
+            "outlineColor": "rgb(0, 0, 255)",
             "boxShadow": "none",
-            "borderColor": "rgb(8, 27, 43)",
+            "borderColor": "rgb(10, 11, 13)",
             "backgroundColor": "rgba(0, 0, 0, 0)"
           },
           {
             "tag": "button",
-            "text": "Connect wallet",
+            "text": "CONNECT WALLET",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(13, 113, 227)",
+            "outlineColor": "rgb(0, 0, 255)",
             "boxShadow": "none",
-            "borderColor": "rgb(183, 211, 236)",
+            "borderColor": "rgb(185, 188, 180)",
             "backgroundColor": "rgb(255, 255, 255)"
           },
           {
             "tag": "a",
-            "text": "Open the board",
+            "text": "OPEN THE BOARD",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(13, 113, 227)",
-            "boxShadow": "rgba(13, 113, 227, 0.24) 0px 10px 24px 0px",
-            "borderColor": "rgba(0, 0, 0, 0)",
-            "backgroundColor": "rgb(13, 113, 227)"
+            "outlineColor": "rgb(0, 0, 255)",
+            "boxShadow": "none",
+            "borderColor": "rgb(0, 0, 255)",
+            "backgroundColor": "rgb(0, 0, 255)"
           },
           {
             "tag": "a",
-            "text": "01 Overview tape",
+            "text": "OPEN THE BOARD",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(13, 113, 227)",
+            "outlineColor": "rgb(0, 0, 255)",
             "boxShadow": "none",
-            "borderColor": "rgb(8, 27, 43) rgb(8, 27, 43) rgb(8, 27, 43) rgb(13, 113, 227)",
+            "borderColor": "rgb(0, 0, 255)",
+            "backgroundColor": "rgb(0, 0, 255)"
+          },
+          {
+            "tag": "button",
+            "text": "PRICE A BOUNDARY",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(0, 0, 255)",
+            "boxShadow": "none",
+            "borderColor": "rgb(185, 188, 180)",
             "backgroundColor": "rgba(0, 0, 0, 0)"
           },
           {
-            "tag": "a",
-            "text": "02 Board watchlist",
+            "tag": "button",
+            "text": "ALL",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(13, 113, 227)",
+            "outlineColor": "rgb(0, 0, 255)",
             "boxShadow": "none",
-            "borderColor": "rgb(36, 70, 95) rgb(36, 70, 95) rgb(36, 70, 95) rgba(0, 0, 0, 0)",
+            "borderColor": "rgb(76, 79, 85)",
             "backgroundColor": "rgba(0, 0, 0, 0)"
           },
           {
-            "tag": "a",
-            "text": "03 Journal local",
+            "tag": "button",
+            "text": "INCOME",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(13, 113, 227)",
-            "boxShadow": "none",
-            "borderColor": "rgb(36, 70, 95) rgb(36, 70, 95) rgb(36, 70, 95) rgba(0, 0, 0, 0)",
-            "backgroundColor": "rgba(0, 0, 0, 0)"
-          },
-          {
-            "tag": "a",
-            "text": "04 Reference method",
-            "outlineStyle": "solid",
-            "outlineWidth": "2px",
-            "outlineColor": "rgb(13, 113, 227)",
-            "boxShadow": "none",
-            "borderColor": "rgb(36, 70, 95) rgb(36, 70, 95) rgb(36, 70, 95) rgba(0, 0, 0, 0)",
-            "backgroundColor": "rgba(0, 0, 0, 0)"
+            "outlineColor": "rgb(0, 0, 255)",
+            "boxShadow": "rgba(10, 11, 13, 0.14) 0px 2px 8px 0px",
+            "borderColor": "rgb(0, 0, 214)",
+            "backgroundColor": "rgb(255, 255, 255)"
           }
         ],
         "visibleCount": 8,
@@ -3039,13 +3088,13 @@
       "status": 200,
       "desktop": {
         "meta": {
-          "title": "Markets / Librova",
+          "title": "Markets / Tabuline",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 1675,
+          "bodyTextLength": 1685,
           "scrollWidth": 1440,
           "clientWidth": 1440,
-          "focusableCount": 26
+          "focusableCount": 27
         },
         "words": [
           {
@@ -3301,22 +3350,6 @@
             "count": 1
           },
           {
-            "word": "librova",
-            "count": 2
-          },
-          {
-            "word": "Librova",
-            "count": 2
-          },
-          {
-            "word": "LIBROVA",
-            "count": 3
-          },
-          {
-            "word": "librova.xyz",
-            "count": 3
-          },
-          {
             "word": "Limits",
             "count": 2
           },
@@ -3525,6 +3558,22 @@
             "count": 1
           },
           {
+            "word": "tabuline",
+            "count": 2
+          },
+          {
+            "word": "Tabuline",
+            "count": 2
+          },
+          {
+            "word": "TABULINE",
+            "count": 3
+          },
+          {
+            "word": "tabuline.xyz",
+            "count": 3
+          },
+          {
             "word": "tape",
             "count": 1
           },
@@ -3623,10 +3672,6 @@
         ],
         "attrs": [
           {
-            "key": "aria-label=Librova overview",
-            "count": 1
-          },
-          {
             "key": "aria-label=Market facts",
             "count": 1
           },
@@ -3659,6 +3704,14 @@
             "count": 1
           },
           {
+            "key": "aria-label=Tabuline overview",
+            "count": 2
+          },
+          {
+            "key": "aria-label=Terminal index",
+            "count": 1
+          },
+          {
             "key": "placeholder=Search token or market",
             "count": 1
           }
@@ -3666,7 +3719,7 @@
         "links": [
           {
             "href": "/",
-            "count": 3
+            "count": 4
           },
           {
             "href": "/#cap",
@@ -3727,8 +3780,87 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
+          "bp-band",
+          "bp-band--first",
+          "bp-btn",
+          "bp-btn--ghost",
+          "bp-btn--quiet",
+          "bp-btn--solid",
+          "bp-display",
+          "bp-dock",
+          "bp-dock-actions",
+          "bp-dock-brand",
+          "bp-dock-rule",
+          "bp-foot",
+          "bp-foot-brand",
+          "bp-foot-copy",
+          "bp-foot-links",
+          "bp-frame",
+          "bp-h2",
+          "bp-index",
+          "bp-index-link",
+          "bp-input",
+          "bp-instrument",
+          "bp-instrument-row",
+          "bp-kicker",
+          "bp-label",
+          "bp-lead",
+          "bp-leaf",
+          "bp-leaf-body",
+          "bp-lockup",
+          "bp-meta",
+          "bp-num",
+          "bp-pill",
+          "bp-pill--bp-cobalt",
+          "bp-proof",
+          "bp-proof-grid",
+          "bp-proof-note",
+          "bp-route",
+          "bp-skip",
+          "bp-spine",
+          "bp-spine-brand",
+          "bp-spine-target",
+          "bp-spine-thesis",
+          "bp-switch",
+          "bp-table",
+          "bp-table-wrap",
+          "bp-wallet",
           "dock",
-          "dock-trigger",
+          "gr-back",
+          "gr-badge",
+          "gr-board",
+          "gr-cap",
+          "gr-deck",
+          "gr-display",
+          "gr-epoch",
+          "gr-facts",
+          "gr-feed",
+          "gr-feed-dot",
+          "gr-filter-toggle",
+          "gr-foot",
+          "gr-grid",
+          "gr-ledger",
+          "gr-ledger-head",
+          "gr-main",
+          "gr-open",
+          "gr-open-copy",
+          "gr-rail",
+          "gr-search",
+          "gr-side",
+          "gr-stats",
+          "gr-stats-grid",
+          "gr-stats-line",
+          "gr-stats-note",
+          "gr-table-wrap",
+          "gr-tag",
+          "gr-token",
+          "gr-token-mark",
+          "gr-token-name",
+          "gr-toolbar",
+          "gr-tools",
+          "gr-value",
+          "gr-value--income",
+          "gr-value--upside",
           "is-on",
           "lucide",
           "lucide-arrow-left-icon",
@@ -3736,247 +3868,207 @@
           "lucide-sliders-horizontal-icon",
           "lucide-wallet-icon",
           "shoal",
-          "shoal-back",
-          "shoal-badge",
-          "shoal-board",
-          "shoal-cap",
-          "shoal-deck",
-          "shoal-display",
-          "shoal-epoch",
-          "shoal-facts",
-          "shoal-feed",
-          "shoal-feed-dot",
-          "shoal-filter-toggle",
-          "shoal-foot",
-          "shoal-grid",
-          "shoal-ledger",
-          "shoal-ledger-head",
-          "shoal-main",
-          "shoal-open",
-          "shoal-open-copy",
-          "shoal-rail",
-          "shoal-search",
-          "shoal-side",
-          "shoal-stats",
-          "shoal-stats-grid",
-          "shoal-stats-line",
-          "shoal-stats-note",
-          "shoal-table-wrap",
-          "shoal-tag",
-          "shoal-token",
-          "shoal-token-mark",
-          "shoal-token-name",
-          "shoal-toolbar",
-          "shoal-tools",
-          "shoal-value",
-          "shoal-value--income",
-          "shoal-value--upside",
-          "tide-band",
-          "tide-band--first",
-          "tide-brand",
-          "tide-btn",
-          "tide-btn--ghost",
-          "tide-btn--primary",
-          "tide-btn--quiet",
-          "tide-display",
-          "tide-foot-brand",
-          "tide-foot-copy",
-          "tide-foot-links",
-          "tide-h2",
-          "tide-index",
-          "tide-index-link",
-          "tide-input",
-          "tide-instrument",
-          "tide-instrument-row",
-          "tide-kicker",
-          "tide-label",
-          "tide-lead",
-          "tide-mast",
-          "tide-mast-actions",
-          "tide-mast-foot",
-          "tide-mast-line",
-          "tide-mast-tail",
-          "tide-mast-top",
-          "tide-meta",
-          "tide-num",
-          "tide-pill",
-          "tide-pill--accent",
-          "tide-proof",
-          "tide-shell",
-          "tide-skip",
-          "tide-stage",
-          "tide-stage-inner",
-          "tide-switch",
-          "tide-table",
-          "tide-table-wrap",
-          "tide-wallet",
-          "visually-hidden"
+          "visually-hidden",
+          "wl-trigger"
         ],
         "fingerprint": [
-          "a@17:2",
+          "a@10:1",
+          "a@18:2",
           "a@4:0",
+          "a@7:1",
           "a@7:2",
           "a@7:3",
           "a@8:0",
           "a@9:0",
-          "a@9:1",
-          "aside@10:1",
-          "b@19:0",
+          "b@20:0",
           "b@8:0",
           "b@9:0",
-          "button@10:1",
-          "button@11:0",
+          "button@11:1",
+          "button@12:0",
           "button@9:1",
-          "caption@14:0",
-          "circle@12:0",
-          "dd@13:0",
-          "dd@15:0",
+          "caption@15:0",
+          "circle@13:0",
+          "dd@14:0",
+          "dd@16:0",
           "dd@8:1",
           "dd@9:0",
-          "div@10:1",
+          "div@10:2",
           "div@10:3",
-          "div@12:1",
-          "div@12:2",
-          "div@12:3",
-          "div@14:3",
+          "div@11:1",
+          "div@11:3",
+          "div@13:1",
+          "div@13:2",
+          "div@13:3",
+          "div@15:3",
           "div@3:2",
           "div@4:2",
+          "div@5:4+",
           "div@6:1",
           "div@6:2",
           "div@6:3",
+          "div@7:1",
           "div@7:2",
           "div@7:3",
           "div@8:1",
           "div@8:2",
-          "div@9:2",
-          "div@9:3",
-          "dl@11:4+",
-          "dl@13:4+",
+          "dl@12:4+",
+          "dl@14:4+",
           "dl@6:4+",
           "dl@7:4+",
-          "dt@13:0",
-          "dt@15:1",
+          "dt@14:0",
+          "dt@16:1",
           "dt@8:0",
           "dt@9:0",
-          "h1@10:0",
-          "h2@13:0",
-          "header@5:4+",
-          "i@18:0",
+          "footer@6:3",
+          "h1@11:0",
+          "h2@14:0",
+          "i@19:0",
           "img@8:0",
-          "input@11:0",
-          "label@10:3",
+          "input@12:0",
+          "label@11:3",
           "li@8:1",
-          "main@5:2",
+          "main@5:3",
           "nav@6:4+",
-          "p@10:0",
-          "p@13:0",
-          "p@13:1",
-          "p@13:2",
+          "p@11:0",
+          "p@14:0",
+          "p@14:1",
+          "p@14:2",
           "p@6:0",
-          "p@6:1",
           "p@7:0",
+          "p@7:1",
           "path@11:0",
           "path@12:0",
-          "section@11:4+",
-          "section@8:2",
-          "small@17:0",
-          "small@19:0",
+          "path@13:0",
+          "section@12:4+",
+          "section@9:2",
+          "small@18:0",
+          "small@20:0",
           "small@8:0",
-          "span@11:0",
-          "span@13:0",
+          "span@12:0",
           "span@14:0",
-          "span@16:0",
+          "span@15:0",
           "span@17:0",
-          "span@17:1",
           "span@18:0",
-          "span@18:2",
+          "span@18:1",
+          "span@19:0",
+          "span@19:2",
+          "span@7:0",
           "span@8:0",
           "svg@10:2",
           "svg@11:2",
-          "svg@11:4+",
-          "table@13:3",
-          "tbody@14:4+",
-          "td@16:1",
-          "td@16:2",
-          "th@16:0",
-          "thead@14:1",
-          "tr@15:4+",
+          "svg@12:2",
+          "svg@12:4+",
+          "table@14:3",
+          "tbody@15:4+",
+          "td@17:1",
+          "td@17:2",
+          "th@17:0",
+          "thead@15:1",
+          "tr@16:4+",
           "ul@7:4+"
         ],
         "landmarks": [
           {
-            "tag": "header",
+            "tag": "main",
             "role": "",
+            "top": -4,
+            "left": 1,
+            "width": 863,
+            "height": 1249
+          },
+          {
+            "tag": "div",
+            "role": "complementary",
+            "top": 393,
+            "left": 50,
+            "width": 764,
+            "height": 86
+          },
+          {
+            "tag": "div",
+            "role": "complementary",
             "top": 0,
-            "left": 0,
-            "width": 605,
+            "left": 864,
+            "width": 575,
             "height": 900
           },
           {
             "tag": "nav",
             "role": "",
-            "top": 143,
-            "left": 49,
+            "top": 139,
+            "left": 898,
             "width": 506,
-            "height": 391
+            "height": 409
           },
           {
-            "tag": "main",
+            "tag": "footer",
             "role": "",
-            "top": -4,
-            "left": 605,
-            "width": 835,
-            "height": 1270
-          },
-          {
-            "tag": "aside",
-            "role": "",
-            "top": 372,
-            "left": 671,
-            "width": 703,
-            "height": 86
+            "top": 748,
+            "left": 898,
+            "width": 506,
+            "height": 115
           }
         ],
         "colors": [
           {
-            "hex": "#081b2b",
-            "count": 134
+            "hex": "#0a0b0d",
+            "count": 112
           },
           {
-            "hex": "#5b7185",
-            "count": 68
+            "hex": "#4c4f55",
+            "count": 53
           },
           {
-            "hex": "#24465f",
-            "count": 40
+            "hex": "#f3f4ef",
+            "count": 48
           },
           {
-            "hex": "#0a5bc0",
-            "count": 15
-          },
-          {
-            "hex": "#f4f9ff",
-            "count": 11
-          },
-          {
-            "hex": "#298dff",
-            "count": 8
-          },
-          {
-            "hex": "#e8f3ff",
-            "count": 6
+            "hex": "#14161a",
+            "count": 23
           },
           {
             "hex": "#ffffff",
+            "count": 16
+          },
+          {
+            "hex": "#9ba0a8",
+            "count": 12
+          },
+          {
+            "hex": "#0000b3",
+            "count": 8
+          },
+          {
+            "hex": "#f1f2ee",
             "count": 6
           },
           {
-            "hex": "#087a55",
+            "hex": "#005f3f",
             "count": 5
           },
           {
-            "hex": "#0d71e3",
+            "hex": "#7575ff",
+            "count": 5
+          },
+          {
+            "hex": "#b9bcb4",
+            "count": 5
+          },
+          {
+            "hex": "#0000ff",
             "count": 3
+          },
+          {
+            "hex": "#0000d6",
+            "count": 2
+          },
+          {
+            "hex": "#f7f8f5",
+            "count": 2
+          },
+          {
+            "hex": "#dde3e9",
+            "count": 1
           }
         ],
         "contrast": [],
@@ -4019,13 +4111,13 @@
       },
       "mobile": {
         "meta": {
-          "title": "Markets / Librova",
+          "title": "Markets / Tabuline",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 1396,
+          "bodyTextLength": 1406,
           "scrollWidth": 390,
           "clientWidth": 390,
-          "focusableCount": 21
+          "focusableCount": 22
         },
         "words": [
           {
@@ -4229,22 +4321,6 @@
             "count": 1
           },
           {
-            "word": "librova",
-            "count": 2
-          },
-          {
-            "word": "Librova",
-            "count": 2
-          },
-          {
-            "word": "LIBROVA",
-            "count": 3
-          },
-          {
-            "word": "librova.xyz",
-            "count": 3
-          },
-          {
             "word": "Limits",
             "count": 1
           },
@@ -4437,6 +4513,22 @@
             "count": 1
           },
           {
+            "word": "tabuline",
+            "count": 2
+          },
+          {
+            "word": "Tabuline",
+            "count": 2
+          },
+          {
+            "word": "TABULINE",
+            "count": 3
+          },
+          {
+            "word": "tabuline.xyz",
+            "count": 3
+          },
+          {
             "word": "Target",
             "count": 1
           },
@@ -4527,10 +4619,6 @@
         ],
         "attrs": [
           {
-            "key": "aria-label=Librova overview",
-            "count": 1
-          },
-          {
             "key": "aria-label=Market cards",
             "count": 1
           },
@@ -4551,6 +4639,14 @@
             "count": 1
           },
           {
+            "key": "aria-label=Tabuline overview",
+            "count": 2
+          },
+          {
+            "key": "aria-label=Terminal index",
+            "count": 1
+          },
+          {
             "key": "placeholder=Search token or market",
             "count": 1
           }
@@ -4558,7 +4654,7 @@
         "links": [
           {
             "href": "/",
-            "count": 2
+            "count": 3
           },
           {
             "href": "/app/markets",
@@ -4615,8 +4711,76 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
+          "bp-band",
+          "bp-band--first",
+          "bp-btn",
+          "bp-btn--ghost",
+          "bp-btn--line",
+          "bp-btn--quiet",
+          "bp-btn--solid",
+          "bp-display",
+          "bp-dock",
+          "bp-dock-actions",
+          "bp-dock-brand",
+          "bp-foot",
+          "bp-foot-brand",
+          "bp-foot-copy",
+          "bp-foot-links",
+          "bp-frame",
+          "bp-h2",
+          "bp-input",
+          "bp-instrument",
+          "bp-instrument-row",
+          "bp-kicker",
+          "bp-label",
+          "bp-lead",
+          "bp-leaf",
+          "bp-leaf-body",
+          "bp-lockup",
+          "bp-meta",
+          "bp-nav-toggle",
+          "bp-pill",
+          "bp-pill--bp-cobalt",
+          "bp-proof",
+          "bp-proof-grid",
+          "bp-proof-note",
+          "bp-route",
+          "bp-skip",
+          "bp-spine",
+          "bp-spine-brand",
+          "bp-spine-target",
+          "bp-spine-thesis",
+          "bp-switch",
+          "bp-wallet",
           "dock",
-          "dock-trigger",
+          "gr-back",
+          "gr-badge",
+          "gr-board",
+          "gr-card",
+          "gr-card-copy",
+          "gr-card-values",
+          "gr-deck",
+          "gr-display",
+          "gr-facts",
+          "gr-feed",
+          "gr-feed-dot",
+          "gr-filter-toggle",
+          "gr-foot",
+          "gr-ledger",
+          "gr-ledger-head",
+          "gr-main",
+          "gr-open",
+          "gr-open-copy",
+          "gr-rail",
+          "gr-search",
+          "gr-side",
+          "gr-stats",
+          "gr-stats-grid",
+          "gr-stats-line",
+          "gr-stats-note",
+          "gr-token-mark",
+          "gr-toolbar",
+          "gr-tools",
           "is-on",
           "lucide",
           "lucide-arrow-left-icon",
@@ -4626,219 +4790,177 @@
           "lucide-sliders-horizontal-icon",
           "lucide-wallet-icon",
           "shoal",
-          "shoal-back",
-          "shoal-badge",
-          "shoal-board",
-          "shoal-card",
-          "shoal-card-copy",
-          "shoal-card-values",
-          "shoal-deck",
-          "shoal-display",
-          "shoal-facts",
-          "shoal-feed",
-          "shoal-feed-dot",
-          "shoal-filter-toggle",
-          "shoal-foot",
-          "shoal-ledger",
-          "shoal-ledger-head",
-          "shoal-main",
-          "shoal-open",
-          "shoal-open-copy",
-          "shoal-rail",
-          "shoal-search",
-          "shoal-side",
-          "shoal-stats",
-          "shoal-stats-grid",
-          "shoal-stats-line",
-          "shoal-stats-note",
-          "shoal-token-mark",
-          "shoal-toolbar",
-          "shoal-tools",
-          "tide-band",
-          "tide-band--first",
-          "tide-brand",
-          "tide-btn",
-          "tide-btn--ghost",
-          "tide-btn--primary",
-          "tide-btn--quiet",
-          "tide-display",
-          "tide-foot-brand",
-          "tide-foot-copy",
-          "tide-foot-links",
-          "tide-h2",
-          "tide-index-toggle",
-          "tide-input",
-          "tide-instrument",
-          "tide-instrument-row",
-          "tide-kicker",
-          "tide-label",
-          "tide-lead",
-          "tide-mast",
-          "tide-mast-actions",
-          "tide-mast-foot",
-          "tide-mast-line",
-          "tide-mast-tail",
-          "tide-mast-top",
-          "tide-meta",
-          "tide-pill",
-          "tide-pill--accent",
-          "tide-proof",
-          "tide-shell",
-          "tide-skip",
-          "tide-stage",
-          "tide-stage-inner",
-          "tide-switch",
-          "tide-wallet",
-          "visually-hidden"
+          "visually-hidden",
+          "wl-trigger"
         ],
         "fingerprint": [
-          "a@13:3",
+          "a@10:1",
+          "a@14:3",
           "a@4:0",
+          "a@7:1",
           "a@7:2",
           "a@8:0",
           "a@9:0",
-          "a@9:1",
-          "aside@10:1",
-          "b@15:0",
           "b@16:0",
+          "b@17:0",
           "b@8:0",
           "b@9:0",
-          "button@10:1",
-          "button@11:0",
+          "button@11:1",
+          "button@12:0",
           "button@8:1",
           "button@9:1",
-          "circle@12:0",
-          "dd@13:0",
-          "dd@15:0",
+          "circle@13:0",
+          "dd@14:0",
+          "dd@16:0",
           "dd@8:1",
           "dd@9:0",
-          "div@10:1",
+          "div@10:2",
           "div@10:3",
-          "div@12:1",
-          "div@12:2",
-          "div@12:3",
-          "div@12:4+",
-          "div@14:3",
+          "div@11:1",
+          "div@11:3",
+          "div@13:1",
+          "div@13:2",
+          "div@13:3",
+          "div@13:4+",
+          "div@15:3",
           "div@3:2",
           "div@4:2",
+          "div@5:4+",
           "div@6:1",
           "div@6:2",
           "div@6:3",
+          "div@7:1",
           "div@7:2",
           "div@7:3",
           "div@8:1",
           "div@8:2",
-          "div@9:2",
-          "div@9:3",
-          "dl@11:4+",
-          "dl@13:4+",
+          "dl@12:4+",
+          "dl@14:4+",
           "dl@6:4+",
           "dl@7:4+",
-          "dt@13:0",
-          "dt@15:1",
+          "dt@14:0",
+          "dt@16:1",
           "dt@8:0",
           "dt@9:0",
-          "h1@10:0",
-          "h2@13:0",
-          "header@5:4+",
+          "footer@6:3",
+          "h1@11:0",
+          "h2@14:0",
           "img@8:0",
-          "input@11:0",
-          "label@10:3",
+          "input@12:0",
+          "label@11:3",
           "li@8:1",
-          "main@5:2",
-          "p@10:0",
-          "p@13:0",
-          "p@13:1",
-          "p@13:2",
+          "main@5:3",
+          "p@11:0",
+          "p@14:0",
+          "p@14:1",
+          "p@14:2",
           "p@6:0",
-          "p@6:1",
           "p@7:0",
+          "p@7:1",
           "path@11:0",
           "path@12:0",
-          "path@16:0",
-          "section@11:4+",
-          "section@8:2",
-          "small@15:0",
+          "path@13:0",
+          "path@17:0",
+          "section@12:4+",
+          "section@9:2",
           "small@16:0",
-          "span@11:0",
-          "span@13:0",
+          "small@17:0",
+          "span@12:0",
           "span@14:0",
-          "span@14:2",
-          "span@14:3",
+          "span@15:0",
           "span@15:2",
-          "span@16:0",
+          "span@15:3",
+          "span@16:2",
+          "span@17:0",
           "svg@10:2",
           "svg@11:2",
-          "svg@11:4+",
-          "svg@15:2",
+          "svg@12:2",
+          "svg@12:4+",
+          "svg@16:2",
           "svg@9:3",
           "ul@7:4+"
         ],
         "landmarks": [
           {
-            "tag": "header",
+            "tag": "main",
             "role": "",
             "top": 0,
             "left": 0,
             "width": 390,
-            "height": 382
+            "height": 1811
           },
           {
-            "tag": "main",
-            "role": "",
-            "top": 382,
-            "left": 0,
-            "width": 390,
-            "height": 1625
-          },
-          {
-            "tag": "aside",
-            "role": "",
-            "top": 762,
+            "tag": "div",
+            "role": "complementary",
+            "top": 467,
             "left": 18,
             "width": 354,
             "height": 339
+          },
+          {
+            "tag": "div",
+            "role": "complementary",
+            "top": 1811,
+            "left": 0,
+            "width": 390,
+            "height": 438
+          },
+          {
+            "tag": "footer",
+            "role": "",
+            "top": 2109,
+            "left": 18,
+            "width": 354,
+            "height": 115
           }
         ],
         "colors": [
           {
-            "hex": "#081b2b",
-            "count": 110
+            "hex": "#0a0b0d",
+            "count": 92
           },
           {
-            "hex": "#5b7185",
-            "count": 60
+            "hex": "#4c4f55",
+            "count": 55
           },
           {
-            "hex": "#24465f",
-            "count": 17
+            "hex": "#f3f4ef",
+            "count": 35
           },
           {
             "hex": "#ffffff",
-            "count": 9
+            "count": 14
           },
           {
-            "hex": "#0a5bc0",
-            "count": 8
+            "hex": "#14161a",
+            "count": 11
           },
           {
-            "hex": "#0d71e3",
+            "hex": "#9ba0a8",
             "count": 7
           },
           {
-            "hex": "#e8f3ff",
-            "count": 7
+            "hex": "#0000d6",
+            "count": 6
           },
           {
-            "hex": "#087a55",
+            "hex": "#f1f2ee",
+            "count": 6
+          },
+          {
+            "hex": "#005f3f",
             "count": 5
           },
           {
-            "hex": "#298dff",
-            "count": 4
+            "hex": "#0000ff",
+            "count": 2
           },
           {
-            "hex": "#f4f9ff",
+            "hex": "#f7f8f5",
+            "count": 2
+          },
+          {
+            "hex": "#dde3e9",
             "count": 1
           }
         ],
@@ -4855,7 +4977,6 @@
           }
         ],
         "navTargets": [
-          "/",
           "/app/markets",
           "/docs",
           "/privacy",
@@ -4874,15 +4995,15 @@
           "",
           "/",
           "/app/markets",
+          "/app/markets/SOL",
+          "/app/markets/JUP",
+          "/app/markets/BONK",
+          "/app/markets/USDC",
           "/signal",
           "/docs",
           "/risk",
           "/terms",
-          "/privacy",
-          "/app/markets/SOL",
-          "/app/markets/JUP",
-          "/app/markets/BONK",
-          "/app/markets/USDC"
+          "/privacy"
         ],
         "reachable": true
       }
@@ -4893,13 +5014,13 @@
       "status": 200,
       "desktop": {
         "meta": {
-          "title": "Reference / Librova",
+          "title": "Reference / Tabuline",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 4462,
+          "bodyTextLength": 4474,
           "scrollWidth": 1440,
           "clientWidth": 1440,
-          "focusableCount": 30
+          "focusableCount": 31
         },
         "words": [
           {
@@ -5455,22 +5576,6 @@
             "count": 1
           },
           {
-            "word": "librova",
-            "count": 2
-          },
-          {
-            "word": "Librova",
-            "count": 3
-          },
-          {
-            "word": "LIBROVA",
-            "count": 4
-          },
-          {
-            "word": "librova.xyz",
-            "count": 3
-          },
-          {
             "word": "Limits",
             "count": 2
           },
@@ -6011,6 +6116,22 @@
             "count": 2
           },
           {
+            "word": "tabuline",
+            "count": 2
+          },
+          {
+            "word": "Tabuline",
+            "count": 3
+          },
+          {
+            "word": "TABULINE",
+            "count": 4
+          },
+          {
+            "word": "tabuline.xyz",
+            "count": 3
+          },
+          {
             "word": "tape",
             "count": 1
           },
@@ -6217,22 +6338,26 @@
             "count": 1
           },
           {
-            "key": "aria-label=Librova overview",
-            "count": 1
-          },
-          {
             "key": "aria-label=On this page",
             "count": 1
           },
           {
             "key": "aria-label=Primary",
             "count": 1
+          },
+          {
+            "key": "aria-label=Tabuline overview",
+            "count": 2
+          },
+          {
+            "key": "aria-label=Terminal index",
+            "count": 1
           }
         ],
         "links": [
           {
             "href": "/",
-            "count": 2
+            "count": 3
           },
           {
             "href": "/#cap",
@@ -6316,222 +6441,265 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
+          "bp-band",
+          "bp-band--first",
+          "bp-btn",
+          "bp-btn--solid",
+          "bp-display",
+          "bp-dock",
+          "bp-dock-actions",
+          "bp-dock-brand",
+          "bp-dock-rule",
+          "bp-foot",
+          "bp-foot-brand",
+          "bp-foot-copy",
+          "bp-foot-links",
+          "bp-frame",
+          "bp-h2",
+          "bp-h3",
+          "bp-index",
+          "bp-index-link",
+          "bp-instrument",
+          "bp-instrument-row",
+          "bp-kicker",
+          "bp-lead",
+          "bp-leaf",
+          "bp-leaf-body",
+          "bp-link",
+          "bp-lockup",
+          "bp-note",
+          "bp-proof",
+          "bp-proof-grid",
+          "bp-proof-note",
+          "bp-route",
+          "bp-skip",
+          "bp-spine",
+          "bp-spine-brand",
+          "bp-spine-target",
+          "bp-spine-thesis",
+          "bp-wallet",
+          "dc-anchor",
+          "dc-body",
+          "dc-card",
+          "dc-card-index",
+          "dc-cards",
+          "dc-display",
+          "dc-doc",
+          "dc-figure",
+          "dc-formula",
+          "dc-formula-cells",
+          "dc-formula-label",
+          "dc-index",
+          "dc-index-label",
+          "dc-index-rail",
+          "dc-intro",
+          "dc-leaf",
+          "dc-open",
+          "dc-open-note",
+          "dc-prose",
+          "dc-role",
+          "dc-role-label",
+          "dc-role-label--income",
+          "dc-role-label--upside",
+          "dc-roles",
+          "dc-section",
+          "dc-section-head",
+          "dc-split",
+          "dc-split-copy",
+          "dc-step-number",
+          "dc-steps",
           "dock",
-          "dock-trigger",
           "lucide",
           "lucide-arrow-right-icon",
           "lucide-external-link-icon",
           "lucide-wallet-icon",
           "strand",
-          "strand-anchor",
-          "strand-body",
-          "strand-card",
-          "strand-card-index",
-          "strand-cards",
-          "strand-display",
-          "strand-doc",
-          "strand-figure",
-          "strand-formula",
-          "strand-formula-cells",
-          "strand-formula-label",
-          "strand-index",
-          "strand-index-label",
-          "strand-index-rail",
-          "strand-intro",
-          "strand-leaf",
-          "strand-open",
-          "strand-open-note",
-          "strand-prose",
-          "strand-role",
-          "strand-role-label",
-          "strand-role-label--income",
-          "strand-role-label--upside",
-          "strand-roles",
-          "strand-section",
-          "strand-section-head",
-          "strand-split",
-          "strand-split-copy",
-          "strand-step-number",
-          "strand-steps",
-          "tide-band",
-          "tide-band--first",
-          "tide-brand",
-          "tide-btn",
-          "tide-btn--primary",
-          "tide-display",
-          "tide-foot-brand",
-          "tide-foot-copy",
-          "tide-foot-links",
-          "tide-h2",
-          "tide-h3",
-          "tide-index",
-          "tide-index-link",
-          "tide-instrument",
-          "tide-instrument-row",
-          "tide-kicker",
-          "tide-lead",
-          "tide-link",
-          "tide-mast",
-          "tide-mast-actions",
-          "tide-mast-foot",
-          "tide-mast-line",
-          "tide-mast-tail",
-          "tide-mast-top",
-          "tide-note",
-          "tide-proof",
-          "tide-shell",
-          "tide-skip",
-          "tide-stage",
-          "tide-stage-inner",
-          "tide-wallet"
+          "wl-trigger"
         ],
         "fingerprint": [
-          "a@11:2",
-          "a@12:1",
+          "a@12:2",
+          "a@13:1",
           "a@4:0",
+          "a@7:1",
           "a@7:2",
           "a@7:3",
           "a@8:0",
           "a@9:0",
-          "article@12:3",
-          "b@12:0",
+          "article@13:3",
+          "b@13:0",
           "b@8:0",
           "b@9:0",
           "button@9:1",
-          "dd@14:0",
+          "dd@15:0",
           "dd@8:1",
           "dd@9:0",
-          "div@10:0",
-          "div@10:2",
-          "div@10:3",
           "div@10:4+",
+          "div@11:0",
           "div@11:2",
           "div@11:3",
           "div@11:4+",
-          "div@13:2",
+          "div@12:2",
+          "div@12:3",
+          "div@12:4+",
+          "div@14:2",
           "div@3:2",
           "div@4:2",
+          "div@5:4+",
           "div@6:1",
           "div@6:2",
           "div@6:3",
+          "div@7:1",
           "div@7:2",
           "div@7:3",
           "div@8:1",
           "div@8:2",
-          "div@9:4+",
-          "dl@12:3",
+          "div@9:2",
+          "dl@13:3",
           "dl@6:4+",
           "dl@7:4+",
-          "dt@14:0",
+          "dt@15:0",
           "dt@8:0",
           "dt@9:0",
-          "figcaption@14:3",
-          "figure@13:2",
-          "h1@9:0",
-          "h2@12:0",
-          "h2@14:0",
-          "h3@13:0",
-          "h3@15:0",
-          "header@5:4+",
-          "img@14:0",
+          "figcaption@15:3",
+          "figure@14:2",
+          "footer@6:3",
+          "h1@10:0",
+          "h2@13:0",
+          "h2@15:0",
+          "h3@14:0",
+          "h3@16:0",
+          "img@15:0",
           "img@8:0",
-          "li@12:1",
-          "li@12:2",
+          "li@13:1",
+          "li@13:2",
           "li@8:1",
-          "main@5:2",
+          "main@5:3",
+          "nav@10:2",
           "nav@6:4+",
-          "nav@9:2",
-          "ol@11:4+",
+          "ol@12:4+",
           "p@10:0",
           "p@11:0",
           "p@12:0",
           "p@13:0",
           "p@14:0",
           "p@15:0",
+          "p@16:0",
           "p@6:0",
-          "p@6:1",
           "p@7:0",
-          "p@9:0",
+          "p@7:1",
           "path@11:0",
-          "path@14:0",
-          "section@8:4+",
+          "path@15:0",
+          "section@9:4+",
           "small@8:0",
-          "span@12:0",
           "span@13:0",
-          "span@15:0",
+          "span@14:0",
+          "span@16:0",
+          "span@7:0",
           "span@8:0",
-          "strong@12:0",
+          "strong@13:0",
           "svg@10:2",
-          "svg@13:2",
-          "svg@13:3",
-          "ul@11:3",
+          "svg@14:2",
+          "svg@14:3",
+          "ul@12:3",
           "ul@7:4+"
         ],
         "landmarks": [
           {
-            "tag": "header",
+            "tag": "main",
             "role": "",
+            "top": -87,
+            "left": 1,
+            "width": 863,
+            "height": 4484
+          },
+          {
+            "tag": "nav",
+            "role": "",
+            "top": 253,
+            "left": 50,
+            "width": 181,
+            "height": 413
+          },
+          {
+            "tag": "div",
+            "role": "complementary",
             "top": 0,
-            "left": 0,
-            "width": 605,
+            "left": 864,
+            "width": 575,
             "height": 900
           },
           {
             "tag": "nav",
             "role": "",
-            "top": 143,
-            "left": 49,
+            "top": 139,
+            "left": 898,
             "width": 506,
-            "height": 391
+            "height": 409
           },
           {
-            "tag": "main",
+            "tag": "footer",
             "role": "",
-            "top": -103,
-            "left": 605,
-            "width": 835,
-            "height": 4430
-          },
-          {
-            "tag": "nav",
-            "role": "",
-            "top": 228,
-            "left": 671,
-            "width": 180,
-            "height": 413
+            "top": 748,
+            "left": 898,
+            "width": 506,
+            "height": 115
           }
         ],
         "colors": [
           {
-            "hex": "#081b2b",
-            "count": 130
+            "hex": "#0a0b0d",
+            "count": 108
           },
           {
-            "hex": "#5b7185",
-            "count": 60
+            "hex": "#f3f4ef",
+            "count": 48
           },
           {
-            "hex": "#24465f",
-            "count": 54
+            "hex": "#4c4f55",
+            "count": 43
           },
           {
-            "hex": "#0d71e3",
-            "count": 22
+            "hex": "#14161a",
+            "count": 33
+          },
+          {
+            "hex": "#0000d6",
+            "count": 21
           },
           {
             "hex": "#ffffff",
-            "count": 17
+            "count": 20
           },
           {
-            "hex": "#0a5bc0",
-            "count": 4
+            "hex": "#9ba0a8",
+            "count": 12
           },
           {
-            "hex": "#f4f9ff",
-            "count": 2
+            "hex": "#7575ff",
+            "count": 5
           },
           {
-            "hex": "#d8e7f5",
+            "hex": "#0000b3",
+            "count": 3
+          },
+          {
+            "hex": "#0000ff",
+            "count": 3
+          },
+          {
+            "hex": "#f7f8f5",
+            "count": 3
+          },
+          {
+            "hex": "#b9bcb4",
+            "count": 1
+          },
+          {
+            "hex": "#d7d9d3",
+            "count": 1
+          },
+          {
+            "hex": "#dde3e9",
             "count": 1
           }
         ],
@@ -6540,7 +6708,7 @@
         "headings": [
           {
             "tag": "h1",
-            "text": "How Librova works."
+            "text": "How Tabuline works."
           },
           {
             "tag": "h2",
@@ -6608,7 +6776,7 @@
           },
           {
             "tag": "h2",
-            "text": "The proposed LIBROVA symbol is separate."
+            "text": "The proposed TABULINE symbol is separate."
           },
           {
             "tag": "h2",
@@ -6652,13 +6820,13 @@
       },
       "mobile": {
         "meta": {
-          "title": "Reference / Librova",
+          "title": "Reference / Tabuline",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 4350,
+          "bodyTextLength": 4362,
           "scrollWidth": 390,
           "clientWidth": 390,
-          "focusableCount": 25
+          "focusableCount": 26
         },
         "words": [
           {
@@ -7206,22 +7374,6 @@
             "count": 1
           },
           {
-            "word": "librova",
-            "count": 2
-          },
-          {
-            "word": "Librova",
-            "count": 3
-          },
-          {
-            "word": "LIBROVA",
-            "count": 4
-          },
-          {
-            "word": "librova.xyz",
-            "count": 3
-          },
-          {
             "word": "Limits",
             "count": 1
           },
@@ -7754,6 +7906,22 @@
             "count": 2
           },
           {
+            "word": "tabuline",
+            "count": 2
+          },
+          {
+            "word": "Tabuline",
+            "count": 3
+          },
+          {
+            "word": "TABULINE",
+            "count": 4
+          },
+          {
+            "word": "tabuline.xyz",
+            "count": 3
+          },
+          {
             "word": "Target",
             "count": 1
           },
@@ -7956,22 +8124,26 @@
             "count": 1
           },
           {
-            "key": "aria-label=Librova overview",
-            "count": 1
-          },
-          {
             "key": "aria-label=On this page",
             "count": 1
           },
           {
             "key": "aria-label=Open navigation",
             "count": 1
+          },
+          {
+            "key": "aria-label=Tabuline overview",
+            "count": 2
+          },
+          {
+            "key": "aria-label=Terminal index",
+            "count": 1
           }
         ],
         "links": [
           {
             "href": "/",
-            "count": 1
+            "count": 2
           },
           {
             "href": "/app/markets",
@@ -8051,217 +8223,246 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
+          "bp-band",
+          "bp-band--first",
+          "bp-btn",
+          "bp-btn--line",
+          "bp-btn--solid",
+          "bp-display",
+          "bp-dock",
+          "bp-dock-actions",
+          "bp-dock-brand",
+          "bp-foot",
+          "bp-foot-brand",
+          "bp-foot-copy",
+          "bp-foot-links",
+          "bp-frame",
+          "bp-h2",
+          "bp-h3",
+          "bp-instrument",
+          "bp-instrument-row",
+          "bp-kicker",
+          "bp-lead",
+          "bp-leaf",
+          "bp-leaf-body",
+          "bp-link",
+          "bp-lockup",
+          "bp-nav-toggle",
+          "bp-note",
+          "bp-proof",
+          "bp-proof-grid",
+          "bp-proof-note",
+          "bp-route",
+          "bp-skip",
+          "bp-spine",
+          "bp-spine-brand",
+          "bp-spine-target",
+          "bp-spine-thesis",
+          "bp-wallet",
+          "dc-anchor",
+          "dc-body",
+          "dc-card",
+          "dc-card-index",
+          "dc-cards",
+          "dc-display",
+          "dc-doc",
+          "dc-figure",
+          "dc-formula",
+          "dc-formula-cells",
+          "dc-formula-label",
+          "dc-index",
+          "dc-index-label",
+          "dc-index-rail",
+          "dc-intro",
+          "dc-leaf",
+          "dc-open",
+          "dc-open-note",
+          "dc-prose",
+          "dc-role",
+          "dc-role-label",
+          "dc-role-label--income",
+          "dc-role-label--upside",
+          "dc-roles",
+          "dc-section",
+          "dc-section-head",
+          "dc-split",
+          "dc-split-copy",
+          "dc-step-number",
+          "dc-steps",
           "dock",
-          "dock-trigger",
           "lucide",
           "lucide-arrow-right-icon",
           "lucide-external-link-icon",
           "lucide-menu-icon",
           "lucide-wallet-icon",
           "strand",
-          "strand-anchor",
-          "strand-body",
-          "strand-card",
-          "strand-card-index",
-          "strand-cards",
-          "strand-display",
-          "strand-doc",
-          "strand-figure",
-          "strand-formula",
-          "strand-formula-cells",
-          "strand-formula-label",
-          "strand-index",
-          "strand-index-label",
-          "strand-index-rail",
-          "strand-intro",
-          "strand-leaf",
-          "strand-open",
-          "strand-open-note",
-          "strand-prose",
-          "strand-role",
-          "strand-role-label",
-          "strand-role-label--income",
-          "strand-role-label--upside",
-          "strand-roles",
-          "strand-section",
-          "strand-section-head",
-          "strand-split",
-          "strand-split-copy",
-          "strand-step-number",
-          "strand-steps",
-          "tide-band",
-          "tide-band--first",
-          "tide-brand",
-          "tide-btn",
-          "tide-btn--primary",
-          "tide-btn--quiet",
-          "tide-display",
-          "tide-foot-brand",
-          "tide-foot-copy",
-          "tide-foot-links",
-          "tide-h2",
-          "tide-h3",
-          "tide-index-toggle",
-          "tide-instrument",
-          "tide-instrument-row",
-          "tide-kicker",
-          "tide-lead",
-          "tide-link",
-          "tide-mast",
-          "tide-mast-actions",
-          "tide-mast-foot",
-          "tide-mast-line",
-          "tide-mast-tail",
-          "tide-mast-top",
-          "tide-note",
-          "tide-proof",
-          "tide-shell",
-          "tide-skip",
-          "tide-stage",
-          "tide-stage-inner",
-          "tide-wallet"
+          "wl-trigger"
         ],
         "fingerprint": [
-          "a@11:2",
-          "a@12:1",
+          "a@12:2",
+          "a@13:1",
           "a@4:0",
+          "a@7:1",
           "a@7:2",
           "a@8:0",
           "a@9:0",
-          "article@12:3",
-          "b@12:0",
+          "article@13:3",
+          "b@13:0",
           "b@8:0",
           "b@9:0",
           "button@8:1",
           "button@9:1",
-          "dd@14:0",
+          "dd@15:0",
           "dd@8:1",
           "dd@9:0",
-          "div@10:0",
-          "div@10:2",
-          "div@10:3",
           "div@10:4+",
+          "div@11:0",
           "div@11:2",
           "div@11:3",
           "div@11:4+",
-          "div@13:2",
+          "div@12:2",
+          "div@12:3",
+          "div@12:4+",
+          "div@14:2",
           "div@3:2",
           "div@4:2",
+          "div@5:4+",
           "div@6:1",
           "div@6:2",
           "div@6:3",
+          "div@7:1",
           "div@7:2",
           "div@7:3",
           "div@8:1",
           "div@8:2",
-          "div@9:4+",
-          "dl@12:3",
+          "div@9:2",
+          "dl@13:3",
           "dl@6:4+",
           "dl@7:4+",
-          "dt@14:0",
+          "dt@15:0",
           "dt@8:0",
           "dt@9:0",
-          "figcaption@14:3",
-          "figure@13:2",
-          "h1@9:0",
-          "h2@12:0",
-          "h2@14:0",
-          "h3@13:0",
-          "h3@15:0",
-          "header@5:4+",
-          "img@14:0",
+          "figcaption@15:3",
+          "figure@14:2",
+          "footer@6:3",
+          "h1@10:0",
+          "h2@13:0",
+          "h2@15:0",
+          "h3@14:0",
+          "h3@16:0",
+          "img@15:0",
           "img@8:0",
-          "li@12:1",
-          "li@12:2",
+          "li@13:1",
+          "li@13:2",
           "li@8:1",
-          "main@5:2",
-          "nav@9:2",
-          "ol@11:4+",
+          "main@5:3",
+          "nav@10:2",
+          "ol@12:4+",
           "p@10:0",
           "p@11:0",
           "p@12:0",
           "p@13:0",
           "p@14:0",
           "p@15:0",
+          "p@16:0",
           "p@6:0",
-          "p@6:1",
           "p@7:0",
-          "p@9:0",
+          "p@7:1",
           "path@11:0",
-          "path@14:0",
-          "section@8:4+",
-          "span@12:0",
+          "path@15:0",
+          "section@9:4+",
           "span@13:0",
-          "span@15:0",
-          "strong@12:0",
+          "span@14:0",
+          "span@16:0",
+          "strong@13:0",
           "svg@10:2",
-          "svg@13:2",
-          "svg@13:3",
+          "svg@14:2",
+          "svg@14:3",
           "svg@9:3",
-          "ul@11:3",
+          "ul@12:3",
           "ul@7:4+"
         ],
         "landmarks": [
           {
-            "tag": "header",
+            "tag": "main",
             "role": "",
             "top": 0,
             "left": 0,
             "width": 390,
-            "height": 382
-          },
-          {
-            "tag": "main",
-            "role": "",
-            "top": 382,
-            "left": 0,
-            "width": 390,
-            "height": 5182
+            "height": 5546
           },
           {
             "tag": "nav",
             "role": "",
-            "top": 662,
+            "top": 355,
             "left": 18,
             "width": 354,
             "height": 413
+          },
+          {
+            "tag": "div",
+            "role": "complementary",
+            "top": 5546,
+            "left": 0,
+            "width": 390,
+            "height": 438
+          },
+          {
+            "tag": "footer",
+            "role": "",
+            "top": 5844,
+            "left": 18,
+            "width": 354,
+            "height": 115
           }
         ],
         "colors": [
           {
-            "hex": "#081b2b",
-            "count": 127
+            "hex": "#0a0b0d",
+            "count": 109
           },
           {
-            "hex": "#5b7185",
-            "count": 50
-          },
-          {
-            "hex": "#24465f",
+            "hex": "#4c4f55",
             "count": 43
           },
           {
-            "hex": "#0d71e3",
-            "count": 22
+            "hex": "#f3f4ef",
+            "count": 35
+          },
+          {
+            "hex": "#14161a",
+            "count": 33
+          },
+          {
+            "hex": "#0000d6",
+            "count": 21
           },
           {
             "hex": "#ffffff",
-            "count": 17
+            "count": 18
           },
           {
-            "hex": "#0a5bc0",
-            "count": 5
+            "hex": "#9ba0a8",
+            "count": 7
           },
           {
-            "hex": "#f4f9ff",
+            "hex": "#0000b3",
+            "count": 3
+          },
+          {
+            "hex": "#f7f8f5",
+            "count": 3
+          },
+          {
+            "hex": "#0000ff",
             "count": 2
           },
           {
-            "hex": "#d8e7f5",
+            "hex": "#d7d9d3",
             "count": 1
           },
           {
-            "hex": "#e8f3ff",
+            "hex": "#dde3e9",
             "count": 1
           }
         ],
@@ -8270,7 +8471,7 @@
         "headings": [
           {
             "tag": "h1",
-            "text": "How Librova works."
+            "text": "How Tabuline works."
           },
           {
             "tag": "h2",
@@ -8338,7 +8539,7 @@
           },
           {
             "tag": "h2",
-            "text": "The proposed LIBROVA symbol is separate."
+            "text": "The proposed TABULINE symbol is separate."
           },
           {
             "tag": "h2",
@@ -8355,7 +8556,6 @@
         ],
         "navTargets": [
           "",
-          "/",
           "/app/markets",
           "/docs",
           "/privacy",
@@ -8375,10 +8575,10 @@
           "/",
           "/app/markets",
           "/signal",
-          "/docs",
-          "/risk",
           "/terms",
-          "/privacy"
+          "/privacy",
+          "/docs",
+          "/risk"
         ],
         "reachable": true
       }
@@ -8389,22 +8589,22 @@
       "status": 200,
       "desktop": {
         "meta": {
-          "title": "Privacy / Librova",
+          "title": "Privacy / Tabuline",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 1173,
+          "bodyTextLength": 1188,
           "scrollWidth": 1440,
           "clientWidth": 1440,
-          "focusableCount": 18
+          "focusableCount": 19
         },
         "words": [
           {
             "word": "01",
-            "count": 1
+            "count": 2
           },
           {
             "word": "02",
-            "count": 1
+            "count": 2
           },
           {
             "word": "03",
@@ -8605,22 +8805,6 @@
           {
             "word": "legal",
             "count": 1
-          },
-          {
-            "word": "librova",
-            "count": 2
-          },
-          {
-            "word": "Librova",
-            "count": 2
-          },
-          {
-            "word": "LIBROVA",
-            "count": 2
-          },
-          {
-            "word": "librova.xyz",
-            "count": 3
           },
           {
             "word": "Limits",
@@ -8835,6 +9019,22 @@
             "count": 1
           },
           {
+            "word": "tabuline",
+            "count": 2
+          },
+          {
+            "word": "Tabuline",
+            "count": 2
+          },
+          {
+            "word": "TABULINE",
+            "count": 2
+          },
+          {
+            "word": "tabuline.xyz",
+            "count": 3
+          },
+          {
             "word": "tape",
             "count": 1
           },
@@ -8933,18 +9133,22 @@
         ],
         "attrs": [
           {
-            "key": "aria-label=Librova overview",
+            "key": "aria-label=Primary",
             "count": 1
           },
           {
-            "key": "aria-label=Primary",
+            "key": "aria-label=Tabuline overview",
+            "count": 2
+          },
+          {
+            "key": "aria-label=Terminal index",
             "count": 1
           }
         ],
         "links": [
           {
             "href": "/",
-            "count": 3
+            "count": 4
           },
           {
             "href": "/#cap",
@@ -8984,142 +9188,208 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
+          "bp-btn",
+          "bp-btn--ghost",
+          "bp-btn--primary",
+          "bp-btn--solid",
+          "bp-display",
+          "bp-dock",
+          "bp-dock-actions",
+          "bp-dock-brand",
+          "bp-dock-rule",
+          "bp-foot",
+          "bp-foot-brand",
+          "bp-foot-copy",
+          "bp-foot-links",
+          "bp-frame",
+          "bp-index",
+          "bp-index-link",
+          "bp-instrument",
+          "bp-instrument-row",
+          "bp-kicker",
+          "bp-lead",
+          "bp-leaf",
+          "bp-leaf-body",
+          "bp-lockup",
+          "bp-proof",
+          "bp-proof-grid",
+          "bp-proof-note",
+          "bp-route",
+          "bp-skip",
+          "bp-spine",
+          "bp-spine-brand",
+          "bp-spine-target",
+          "bp-spine-thesis",
+          "bp-wallet",
+          "dc-display",
+          "dc-legal-actions",
+          "dc-legal-body",
+          "dc-legal-clause",
+          "dc-legal-clauses",
+          "dc-legal-head",
+          "dc-legal-inner",
+          "dc-legal-num",
+          "dc-legal-sheet",
           "dock",
-          "dock-trigger",
           "lucide",
           "lucide-arrow-right-icon",
           "lucide-wallet-icon",
           "strand",
-          "strand-display",
-          "strand-legal",
-          "strand-legal-actions",
-          "strand-legal-copy",
-          "strand-open",
-          "tide-band",
-          "tide-band--first",
-          "tide-brand",
-          "tide-btn",
-          "tide-btn--ghost",
-          "tide-btn--primary",
-          "tide-display",
-          "tide-foot-brand",
-          "tide-foot-copy",
-          "tide-foot-links",
-          "tide-index",
-          "tide-index-link",
-          "tide-instrument",
-          "tide-instrument-row",
-          "tide-kicker",
-          "tide-lead",
-          "tide-mast",
-          "tide-mast-actions",
-          "tide-mast-foot",
-          "tide-mast-line",
-          "tide-mast-tail",
-          "tide-mast-top",
-          "tide-proof",
-          "tide-shell",
-          "tide-skip",
-          "tide-stage",
-          "tide-stage-inner",
-          "tide-wallet"
+          "wl-trigger"
         ],
         "fingerprint": [
-          "a@10:1",
+          "a@13:1",
           "a@4:0",
+          "a@7:1",
           "a@7:2",
           "a@7:3",
           "a@8:0",
           "a@9:0",
+          "article@9:1",
           "b@8:0",
           "b@9:0",
           "button@9:1",
           "dd@8:1",
           "dd@9:0",
+          "div@10:2",
+          "div@11:2",
           "div@3:2",
           "div@4:2",
+          "div@5:4+",
           "div@6:1",
           "div@6:2",
           "div@6:3",
+          "div@7:1",
           "div@7:2",
           "div@7:3",
           "div@8:1",
           "div@8:2",
-          "div@9:2",
           "dl@6:4+",
           "dl@7:4+",
           "dt@8:0",
           "dt@9:0",
-          "h1@9:0",
-          "header@5:4+",
+          "footer@12:2",
+          "footer@6:3",
+          "h1@12:0",
+          "header@11:3",
           "img@8:0",
+          "li@13:2",
           "li@8:1",
-          "main@5:2",
+          "main@5:3",
           "nav@6:4+",
-          "p@10:0",
+          "ol@12:2",
+          "p@12:0",
+          "p@14:0",
           "p@6:0",
-          "p@6:1",
           "p@7:0",
-          "p@9:0",
+          "p@7:1",
           "path@11:0",
-          "path@12:0",
-          "section@8:2",
-          "section@8:3",
+          "path@15:0",
           "small@8:0",
+          "span@14:0",
+          "span@7:0",
           "span@8:0",
           "svg@10:2",
-          "svg@11:2",
+          "svg@14:2",
           "ul@7:4+"
         ],
         "landmarks": [
           {
-            "tag": "header",
+            "tag": "main",
             "role": "",
             "top": 0,
-            "left": 0,
-            "width": 605,
+            "left": 1,
+            "width": 863,
+            "height": 900
+          },
+          {
+            "tag": "header",
+            "role": "",
+            "top": 101,
+            "left": 51,
+            "width": 762,
+            "height": 230
+          },
+          {
+            "tag": "footer",
+            "role": "",
+            "top": 578,
+            "left": 91,
+            "width": 682,
+            "height": 57
+          },
+          {
+            "tag": "div",
+            "role": "complementary",
+            "top": 0,
+            "left": 864,
+            "width": 575,
             "height": 900
           },
           {
             "tag": "nav",
             "role": "",
-            "top": 143,
-            "left": 49,
+            "top": 139,
+            "left": 898,
             "width": 506,
-            "height": 391
+            "height": 409
           },
           {
-            "tag": "main",
+            "tag": "footer",
             "role": "",
-            "top": 0,
-            "left": 605,
-            "width": 835,
-            "height": 900
+            "top": 748,
+            "left": 898,
+            "width": 506,
+            "height": 115
           }
         ],
         "colors": [
           {
-            "hex": "#081b2b",
-            "count": 57
+            "hex": "#f3f4ef",
+            "count": 48
           },
           {
-            "hex": "#24465f",
-            "count": 25
+            "hex": "#0a0b0d",
+            "count": 40
           },
           {
-            "hex": "#5b7185",
-            "count": 22
+            "hex": "#9ba0a8",
+            "count": 12
           },
           {
             "hex": "#ffffff",
-            "count": 6
+            "count": 11
           },
           {
-            "hex": "#0d71e3",
+            "hex": "#4c4f55",
+            "count": 5
+          },
+          {
+            "hex": "#7575ff",
+            "count": 5
+          },
+          {
+            "hex": "#0000ff",
+            "count": 4
+          },
+          {
+            "hex": "#0000d6",
             "count": 3
           },
           {
-            "hex": "#0a5bc0",
+            "hex": "#14161a",
+            "count": 3
+          },
+          {
+            "hex": "#b9bcb4",
+            "count": 1
+          },
+          {
+            "hex": "#dde3e9",
+            "count": 1
+          },
+          {
+            "hex": "#f7f8f5",
             "count": 1
           }
         ],
@@ -9159,15 +9429,23 @@
       },
       "mobile": {
         "meta": {
-          "title": "Privacy / Librova",
+          "title": "Privacy / Tabuline",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 1061,
+          "bodyTextLength": 1076,
           "scrollWidth": 390,
           "clientWidth": 390,
-          "focusableCount": 13
+          "focusableCount": 14
         },
         "words": [
+          {
+            "word": "01",
+            "count": 1
+          },
+          {
+            "word": "02",
+            "count": 1
+          },
           {
             "word": "a",
             "count": 3
@@ -9343,22 +9621,6 @@
           {
             "word": "legal",
             "count": 1
-          },
-          {
-            "word": "librova",
-            "count": 2
-          },
-          {
-            "word": "Librova",
-            "count": 2
-          },
-          {
-            "word": "LIBROVA",
-            "count": 2
-          },
-          {
-            "word": "librova.xyz",
-            "count": 3
           },
           {
             "word": "Limits",
@@ -9561,6 +9823,22 @@
             "count": 1
           },
           {
+            "word": "tabuline",
+            "count": 2
+          },
+          {
+            "word": "Tabuline",
+            "count": 2
+          },
+          {
+            "word": "TABULINE",
+            "count": 2
+          },
+          {
+            "word": "tabuline.xyz",
+            "count": 3
+          },
+          {
             "word": "Target",
             "count": 1
           },
@@ -9651,18 +9929,22 @@
         ],
         "attrs": [
           {
-            "key": "aria-label=Librova overview",
+            "key": "aria-label=Open navigation",
             "count": 1
           },
           {
-            "key": "aria-label=Open navigation",
+            "key": "aria-label=Tabuline overview",
+            "count": 2
+          },
+          {
+            "key": "aria-label=Terminal index",
             "count": 1
           }
         ],
         "links": [
           {
             "href": "/",
-            "count": 2
+            "count": 3
           },
           {
             "href": "/app/markets",
@@ -9698,137 +9980,189 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
+          "bp-btn",
+          "bp-btn--ghost",
+          "bp-btn--line",
+          "bp-btn--primary",
+          "bp-btn--solid",
+          "bp-display",
+          "bp-dock",
+          "bp-dock-actions",
+          "bp-dock-brand",
+          "bp-foot",
+          "bp-foot-brand",
+          "bp-foot-copy",
+          "bp-foot-links",
+          "bp-frame",
+          "bp-instrument",
+          "bp-instrument-row",
+          "bp-kicker",
+          "bp-lead",
+          "bp-leaf",
+          "bp-leaf-body",
+          "bp-lockup",
+          "bp-nav-toggle",
+          "bp-proof",
+          "bp-proof-grid",
+          "bp-proof-note",
+          "bp-route",
+          "bp-skip",
+          "bp-spine",
+          "bp-spine-brand",
+          "bp-spine-target",
+          "bp-spine-thesis",
+          "bp-wallet",
+          "dc-display",
+          "dc-legal-actions",
+          "dc-legal-body",
+          "dc-legal-clause",
+          "dc-legal-clauses",
+          "dc-legal-head",
+          "dc-legal-inner",
+          "dc-legal-num",
+          "dc-legal-sheet",
           "dock",
-          "dock-trigger",
           "lucide",
           "lucide-arrow-right-icon",
           "lucide-menu-icon",
           "lucide-wallet-icon",
           "strand",
-          "strand-display",
-          "strand-legal",
-          "strand-legal-actions",
-          "strand-legal-copy",
-          "strand-open",
-          "tide-band",
-          "tide-band--first",
-          "tide-brand",
-          "tide-btn",
-          "tide-btn--ghost",
-          "tide-btn--primary",
-          "tide-btn--quiet",
-          "tide-display",
-          "tide-foot-brand",
-          "tide-foot-copy",
-          "tide-foot-links",
-          "tide-index-toggle",
-          "tide-instrument",
-          "tide-instrument-row",
-          "tide-kicker",
-          "tide-lead",
-          "tide-mast",
-          "tide-mast-actions",
-          "tide-mast-foot",
-          "tide-mast-line",
-          "tide-mast-tail",
-          "tide-mast-top",
-          "tide-proof",
-          "tide-shell",
-          "tide-skip",
-          "tide-stage",
-          "tide-stage-inner",
-          "tide-wallet"
+          "wl-trigger"
         ],
         "fingerprint": [
-          "a@10:1",
+          "a@13:1",
           "a@4:0",
+          "a@7:1",
           "a@7:2",
           "a@8:0",
           "a@9:0",
+          "article@9:1",
           "b@8:0",
           "b@9:0",
           "button@8:1",
           "button@9:1",
           "dd@8:1",
           "dd@9:0",
+          "div@10:2",
+          "div@11:2",
           "div@3:2",
           "div@4:2",
+          "div@5:4+",
           "div@6:1",
           "div@6:2",
           "div@6:3",
+          "div@7:1",
           "div@7:2",
           "div@7:3",
           "div@8:1",
           "div@8:2",
-          "div@9:2",
           "dl@6:4+",
           "dl@7:4+",
           "dt@8:0",
           "dt@9:0",
-          "h1@9:0",
-          "header@5:4+",
+          "footer@12:2",
+          "footer@6:3",
+          "h1@12:0",
+          "header@11:3",
           "img@8:0",
+          "li@13:2",
           "li@8:1",
-          "main@5:2",
-          "p@10:0",
+          "main@5:3",
+          "ol@12:2",
+          "p@12:0",
+          "p@14:0",
           "p@6:0",
-          "p@6:1",
           "p@7:0",
-          "p@9:0",
+          "p@7:1",
           "path@11:0",
-          "path@12:0",
-          "section@8:2",
-          "section@8:3",
+          "path@15:0",
+          "span@14:0",
           "svg@10:2",
-          "svg@11:2",
+          "svg@14:2",
           "svg@9:3",
           "ul@7:4+"
         ],
         "landmarks": [
           {
-            "tag": "header",
+            "tag": "main",
             "role": "",
             "top": 0,
             "left": 0,
             "width": 390,
-            "height": 382
+            "height": 1139
           },
           {
-            "tag": "main",
+            "tag": "header",
             "role": "",
-            "top": 382,
+            "top": 124,
+            "left": 19,
+            "width": 352,
+            "height": 210
+          },
+          {
+            "tag": "footer",
+            "role": "",
+            "top": 719,
+            "left": 41,
+            "width": 308,
+            "height": 105
+          },
+          {
+            "tag": "div",
+            "role": "complementary",
+            "top": 1139,
             "left": 0,
             "width": 390,
-            "height": 844
+            "height": 438
+          },
+          {
+            "tag": "footer",
+            "role": "",
+            "top": 1437,
+            "left": 18,
+            "width": 354,
+            "height": 115
           }
         ],
         "colors": [
           {
-            "hex": "#081b2b",
-            "count": 54
+            "hex": "#0a0b0d",
+            "count": 41
           },
           {
-            "hex": "#24465f",
-            "count": 14
-          },
-          {
-            "hex": "#5b7185",
-            "count": 12
+            "hex": "#f3f4ef",
+            "count": 35
           },
           {
             "hex": "#ffffff",
-            "count": 6
+            "count": 9
           },
           {
-            "hex": "#0d71e3",
+            "hex": "#9ba0a8",
+            "count": 7
+          },
+          {
+            "hex": "#4c4f55",
+            "count": 5
+          },
+          {
+            "hex": "#0000d6",
             "count": 3
           },
           {
-            "hex": "#0a5bc0",
-            "count": 2
+            "hex": "#0000ff",
+            "count": 3
           },
           {
-            "hex": "#e8f3ff",
+            "hex": "#14161a",
+            "count": 3
+          },
+          {
+            "hex": "#dde3e9",
+            "count": 1
+          },
+          {
+            "hex": "#f7f8f5",
             "count": 1
           }
         ],
@@ -9860,8 +10194,8 @@
           "",
           "/",
           "/app/markets",
-          "/signal",
           "/docs",
+          "/signal",
           "/risk",
           "/terms",
           "/privacy"
@@ -9875,13 +10209,13 @@
       "status": 200,
       "desktop": {
         "meta": {
-          "title": "Journal / Librova",
+          "title": "Journal / Tabuline",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 1342,
+          "bodyTextLength": 1354,
           "scrollWidth": 1440,
           "clientWidth": 1440,
-          "focusableCount": 22
+          "focusableCount": 23
         },
         "words": [
           {
@@ -10095,22 +10429,6 @@
           {
             "word": "lab",
             "count": 1
-          },
-          {
-            "word": "librova",
-            "count": 2
-          },
-          {
-            "word": "Librova",
-            "count": 2
-          },
-          {
-            "word": "LIBROVA",
-            "count": 5
-          },
-          {
-            "word": "librova.xyz",
-            "count": 3
           },
           {
             "word": "Limits",
@@ -10333,6 +10651,22 @@
             "count": 1
           },
           {
+            "word": "tabuline",
+            "count": 2
+          },
+          {
+            "word": "Tabuline",
+            "count": 2
+          },
+          {
+            "word": "TABULINE",
+            "count": 5
+          },
+          {
+            "word": "tabuline.xyz",
+            "count": 3
+          },
+          {
             "word": "tape",
             "count": 1
           },
@@ -10455,11 +10789,15 @@
         ],
         "attrs": [
           {
-            "key": "aria-label=Librova overview",
+            "key": "aria-label=Primary",
             "count": 1
           },
           {
-            "key": "aria-label=Primary",
+            "key": "aria-label=Tabuline overview",
+            "count": 2
+          },
+          {
+            "key": "aria-label=Terminal index",
             "count": 1
           },
           {
@@ -10470,7 +10808,7 @@
         "links": [
           {
             "href": "/",
-            "count": 2
+            "count": 3
           },
           {
             "href": "/#cap",
@@ -10523,200 +10861,241 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
+          "bp-band",
+          "bp-band--first",
+          "bp-btn",
+          "bp-btn--primary",
+          "bp-btn--solid",
+          "bp-btn--wide",
+          "bp-display",
+          "bp-dock",
+          "bp-dock-actions",
+          "bp-dock-brand",
+          "bp-dock-rule",
+          "bp-field",
+          "bp-foot",
+          "bp-foot-brand",
+          "bp-foot-copy",
+          "bp-foot-links",
+          "bp-frame",
+          "bp-h2",
+          "bp-index",
+          "bp-index-link",
+          "bp-input",
+          "bp-instrument",
+          "bp-instrument-row",
+          "bp-kicker",
+          "bp-lead",
+          "bp-leaf",
+          "bp-leaf-body",
+          "bp-lockup",
+          "bp-pill",
+          "bp-pill--bp-cobalt",
+          "bp-proof",
+          "bp-proof-grid",
+          "bp-proof-note",
+          "bp-range",
+          "bp-route",
+          "bp-scale",
+          "bp-skip",
+          "bp-spine",
+          "bp-spine-brand",
+          "bp-spine-target",
+          "bp-spine-thesis",
+          "bp-wallet",
           "dock",
-          "dock-trigger",
+          "jn-aside",
+          "jn-aside-copy",
+          "jn-aside-foot",
+          "jn-aside-icon",
+          "jn-aside-rows",
+          "jn-aside-title",
+          "jn-count",
+          "jn-display",
+          "jn-face-title",
+          "jn-fields",
+          "jn-form",
+          "jn-form-band",
+          "jn-form-grid",
+          "jn-form-head",
+          "jn-open",
+          "jn-pair",
+          "jn-step",
           "lagoon",
-          "lagoon-aside",
-          "lagoon-aside-copy",
-          "lagoon-aside-foot",
-          "lagoon-aside-icon",
-          "lagoon-aside-rows",
-          "lagoon-aside-title",
-          "lagoon-count",
-          "lagoon-display",
-          "lagoon-face-title",
-          "lagoon-fields",
-          "lagoon-form",
-          "lagoon-form-band",
-          "lagoon-form-grid",
-          "lagoon-form-head",
-          "lagoon-open",
-          "lagoon-pair",
-          "lagoon-step",
           "lucide",
           "lucide-arrow-up-right-icon",
           "lucide-flask-conical-icon",
           "lucide-shield-check-icon",
           "lucide-wallet-icon",
-          "tide-band",
-          "tide-band--first",
-          "tide-brand",
-          "tide-btn",
-          "tide-btn--primary",
-          "tide-btn--wide",
-          "tide-display",
-          "tide-field",
-          "tide-foot-brand",
-          "tide-foot-copy",
-          "tide-foot-links",
-          "tide-h2",
-          "tide-index",
-          "tide-index-link",
-          "tide-input",
-          "tide-instrument",
-          "tide-instrument-row",
-          "tide-kicker",
-          "tide-lead",
-          "tide-mast",
-          "tide-mast-actions",
-          "tide-mast-foot",
-          "tide-mast-line",
-          "tide-mast-tail",
-          "tide-mast-top",
-          "tide-pill",
-          "tide-pill--accent",
-          "tide-proof",
-          "tide-range",
-          "tide-scale",
-          "tide-shell",
-          "tide-skip",
-          "tide-stage",
-          "tide-stage-inner",
-          "tide-wallet"
+          "wl-trigger"
         ],
         "fingerprint": [
           "a@4:0",
+          "a@7:1",
           "a@7:2",
           "a@7:3",
           "a@8:0",
           "a@9:0",
           "b@8:0",
           "b@9:0",
-          "button@11:1",
+          "button@12:1",
           "button@9:1",
-          "dd@13:0",
+          "dd@14:0",
           "dd@8:1",
           "dd@9:0",
-          "div@10:4+",
-          "div@11:1",
-          "div@11:2",
+          "div@10:2",
           "div@11:4+",
+          "div@12:1",
           "div@12:2",
-          "div@12:3",
+          "div@12:4+",
           "div@13:2",
           "div@13:3",
+          "div@14:2",
+          "div@14:3",
           "div@3:2",
           "div@4:2",
+          "div@5:4+",
           "div@6:1",
           "div@6:2",
           "div@6:3",
+          "div@7:1",
           "div@7:2",
           "div@7:3",
           "div@8:1",
           "div@8:2",
-          "div@9:2",
-          "dl@11:4+",
+          "div@9:1",
+          "dl@12:4+",
           "dl@6:4+",
           "dl@7:4+",
-          "dt@13:0",
+          "dt@14:0",
           "dt@8:0",
           "dt@9:0",
-          "form@10:3",
-          "h1@9:1",
-          "h2@11:1",
-          "h2@13:0",
-          "header@5:4+",
+          "footer@6:3",
+          "form@11:3",
+          "h1@10:1",
+          "h2@12:1",
+          "h2@14:0",
           "img@8:0",
-          "input@13:0",
           "input@14:0",
-          "label@13:1",
+          "input@15:0",
           "label@14:1",
+          "label@15:1",
           "li@8:1",
-          "main@5:2",
+          "main@5:3",
           "nav@6:4+",
-          "output@14:0",
-          "p@11:0",
-          "p@13:0",
+          "output@15:0",
+          "p@10:0",
+          "p@10:1",
+          "p@12:0",
+          "p@14:0",
           "p@6:0",
-          "p@6:1",
           "p@7:0",
-          "p@9:0",
-          "p@9:1",
+          "p@7:1",
           "path@11:0",
-          "path@13:0",
-          "section@7:2",
-          "section@8:3",
+          "path@12:0",
+          "path@14:0",
+          "section@8:2",
+          "section@9:3",
           "small@8:0",
-          "span@10:0",
           "span@11:0",
           "span@12:0",
           "span@13:0",
           "span@14:0",
           "span@15:0",
+          "span@16:0",
+          "span@7:0",
           "span@8:0",
           "svg@10:2",
-          "svg@10:3",
-          "svg@12:2",
-          "textarea@13:0",
+          "svg@11:3",
+          "svg@13:2",
+          "textarea@14:0",
           "ul@7:4+"
         ],
         "landmarks": [
           {
-            "tag": "header",
+            "tag": "main",
             "role": "",
+            "top": -14,
+            "left": 1,
+            "width": 863,
+            "height": 1132
+          },
+          {
+            "tag": "div",
+            "role": "complementary",
             "top": 0,
-            "left": 0,
-            "width": 605,
+            "left": 864,
+            "width": 575,
             "height": 900
           },
           {
             "tag": "nav",
             "role": "",
-            "top": 143,
-            "left": 49,
+            "top": 139,
+            "left": 898,
             "width": 506,
-            "height": 391
+            "height": 409
           },
           {
-            "tag": "main",
+            "tag": "footer",
             "role": "",
-            "top": -17,
-            "left": 605,
-            "width": 835,
-            "height": 1202
+            "top": 748,
+            "left": 898,
+            "width": 506,
+            "height": 115
           }
         ],
         "colors": [
           {
-            "hex": "#081b2b",
-            "count": 86
+            "hex": "#0a0b0d",
+            "count": 59
           },
           {
-            "hex": "#5b7185",
-            "count": 36
+            "hex": "#f3f4ef",
+            "count": 48
           },
           {
-            "hex": "#24465f",
-            "count": 23
+            "hex": "#4c4f55",
+            "count": 24
           },
           {
             "hex": "#ffffff",
-            "count": 13
+            "count": 18
           },
           {
-            "hex": "#0d71e3",
-            "count": 10
+            "hex": "#9ba0a8",
+            "count": 12
           },
           {
-            "hex": "#0a5bc0",
+            "hex": "#0000d6",
+            "count": 8
+          },
+          {
+            "hex": "#7575ff",
             "count": 5
           },
           {
-            "hex": "#298dff",
+            "hex": "#0000ff",
+            "count": 4
+          },
+          {
+            "hex": "#0000b3",
+            "count": 3
+          },
+          {
+            "hex": "#14161a",
+            "count": 3
+          },
+          {
+            "hex": "#f7f8f5",
+            "count": 2
+          },
+          {
+            "hex": "#b9bcb4",
             "count": 1
           },
           {
-            "hex": "#f4f9ff",
+            "hex": "#dde3e9",
             "count": 1
           }
         ],
@@ -10764,13 +11143,13 @@
       },
       "mobile": {
         "meta": {
-          "title": "Journal / Librova",
+          "title": "Journal / Tabuline",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 1230,
+          "bodyTextLength": 1242,
           "scrollWidth": 390,
           "clientWidth": 390,
-          "focusableCount": 17
+          "focusableCount": 18
         },
         "words": [
           {
@@ -10956,22 +11335,6 @@
           {
             "word": "lab",
             "count": 1
-          },
-          {
-            "word": "librova",
-            "count": 2
-          },
-          {
-            "word": "Librova",
-            "count": 2
-          },
-          {
-            "word": "LIBROVA",
-            "count": 5
-          },
-          {
-            "word": "librova.xyz",
-            "count": 3
           },
           {
             "word": "Limits",
@@ -11182,6 +11545,22 @@
             "count": 1
           },
           {
+            "word": "tabuline",
+            "count": 2
+          },
+          {
+            "word": "Tabuline",
+            "count": 2
+          },
+          {
+            "word": "TABULINE",
+            "count": 5
+          },
+          {
+            "word": "tabuline.xyz",
+            "count": 3
+          },
+          {
             "word": "Target",
             "count": 1
           },
@@ -11296,11 +11675,15 @@
         ],
         "attrs": [
           {
-            "key": "aria-label=Librova overview",
+            "key": "aria-label=Open navigation",
             "count": 1
           },
           {
-            "key": "aria-label=Open navigation",
+            "key": "aria-label=Tabuline overview",
+            "count": 2
+          },
+          {
+            "key": "aria-label=Terminal index",
             "count": 1
           },
           {
@@ -11311,7 +11694,7 @@
         "links": [
           {
             "href": "/",
-            "count": 1
+            "count": 2
           },
           {
             "href": "/app/markets",
@@ -11360,195 +11743,222 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
+          "bp-band",
+          "bp-band--first",
+          "bp-btn",
+          "bp-btn--line",
+          "bp-btn--primary",
+          "bp-btn--solid",
+          "bp-btn--wide",
+          "bp-display",
+          "bp-dock",
+          "bp-dock-actions",
+          "bp-dock-brand",
+          "bp-field",
+          "bp-foot",
+          "bp-foot-brand",
+          "bp-foot-copy",
+          "bp-foot-links",
+          "bp-frame",
+          "bp-h2",
+          "bp-input",
+          "bp-instrument",
+          "bp-instrument-row",
+          "bp-kicker",
+          "bp-lead",
+          "bp-leaf",
+          "bp-leaf-body",
+          "bp-lockup",
+          "bp-nav-toggle",
+          "bp-pill",
+          "bp-pill--bp-cobalt",
+          "bp-proof",
+          "bp-proof-grid",
+          "bp-proof-note",
+          "bp-range",
+          "bp-route",
+          "bp-scale",
+          "bp-skip",
+          "bp-spine",
+          "bp-spine-brand",
+          "bp-spine-target",
+          "bp-spine-thesis",
+          "bp-wallet",
           "dock",
-          "dock-trigger",
+          "jn-aside",
+          "jn-aside-copy",
+          "jn-aside-foot",
+          "jn-aside-icon",
+          "jn-aside-rows",
+          "jn-aside-title",
+          "jn-count",
+          "jn-display",
+          "jn-face-title",
+          "jn-fields",
+          "jn-form",
+          "jn-form-band",
+          "jn-form-grid",
+          "jn-form-head",
+          "jn-open",
+          "jn-pair",
+          "jn-step",
           "lagoon",
-          "lagoon-aside",
-          "lagoon-aside-copy",
-          "lagoon-aside-foot",
-          "lagoon-aside-icon",
-          "lagoon-aside-rows",
-          "lagoon-aside-title",
-          "lagoon-count",
-          "lagoon-display",
-          "lagoon-face-title",
-          "lagoon-fields",
-          "lagoon-form",
-          "lagoon-form-band",
-          "lagoon-form-grid",
-          "lagoon-form-head",
-          "lagoon-open",
-          "lagoon-pair",
-          "lagoon-step",
           "lucide",
           "lucide-arrow-up-right-icon",
           "lucide-flask-conical-icon",
           "lucide-menu-icon",
           "lucide-shield-check-icon",
           "lucide-wallet-icon",
-          "tide-band",
-          "tide-band--first",
-          "tide-brand",
-          "tide-btn",
-          "tide-btn--primary",
-          "tide-btn--quiet",
-          "tide-btn--wide",
-          "tide-display",
-          "tide-field",
-          "tide-foot-brand",
-          "tide-foot-copy",
-          "tide-foot-links",
-          "tide-h2",
-          "tide-index-toggle",
-          "tide-input",
-          "tide-instrument",
-          "tide-instrument-row",
-          "tide-kicker",
-          "tide-lead",
-          "tide-mast",
-          "tide-mast-actions",
-          "tide-mast-foot",
-          "tide-mast-line",
-          "tide-mast-tail",
-          "tide-mast-top",
-          "tide-pill",
-          "tide-pill--accent",
-          "tide-proof",
-          "tide-range",
-          "tide-scale",
-          "tide-shell",
-          "tide-skip",
-          "tide-stage",
-          "tide-stage-inner",
-          "tide-wallet"
+          "wl-trigger"
         ],
         "fingerprint": [
           "a@4:0",
+          "a@7:1",
           "a@7:2",
           "a@8:0",
           "a@9:0",
           "b@8:0",
           "b@9:0",
-          "button@11:1",
+          "button@12:1",
           "button@8:1",
           "button@9:1",
-          "dd@13:0",
+          "dd@14:0",
           "dd@8:1",
           "dd@9:0",
-          "div@10:4+",
-          "div@11:1",
-          "div@11:2",
+          "div@10:2",
           "div@11:4+",
+          "div@12:1",
           "div@12:2",
-          "div@12:3",
+          "div@12:4+",
           "div@13:2",
           "div@13:3",
+          "div@14:2",
+          "div@14:3",
           "div@3:2",
           "div@4:2",
+          "div@5:4+",
           "div@6:1",
           "div@6:2",
           "div@6:3",
+          "div@7:1",
           "div@7:2",
           "div@7:3",
           "div@8:1",
           "div@8:2",
-          "div@9:2",
-          "dl@11:4+",
+          "div@9:1",
+          "dl@12:4+",
           "dl@6:4+",
           "dl@7:4+",
-          "dt@13:0",
+          "dt@14:0",
           "dt@8:0",
           "dt@9:0",
-          "form@10:3",
-          "h1@9:1",
-          "h2@11:1",
-          "h2@13:0",
-          "header@5:4+",
+          "footer@6:3",
+          "form@11:3",
+          "h1@10:1",
+          "h2@12:1",
+          "h2@14:0",
           "img@8:0",
-          "input@13:0",
           "input@14:0",
-          "label@13:1",
+          "input@15:0",
           "label@14:1",
+          "label@15:1",
           "li@8:1",
-          "main@5:2",
-          "output@14:0",
-          "p@11:0",
-          "p@13:0",
+          "main@5:3",
+          "output@15:0",
+          "p@10:0",
+          "p@10:1",
+          "p@12:0",
+          "p@14:0",
           "p@6:0",
-          "p@6:1",
           "p@7:0",
-          "p@9:0",
-          "p@9:1",
+          "p@7:1",
           "path@11:0",
-          "path@13:0",
-          "section@7:2",
-          "section@8:3",
-          "span@10:0",
+          "path@12:0",
+          "path@14:0",
+          "section@8:2",
+          "section@9:3",
           "span@11:0",
           "span@12:0",
           "span@13:0",
           "span@14:0",
           "span@15:0",
+          "span@16:0",
           "svg@10:2",
-          "svg@10:3",
-          "svg@12:2",
+          "svg@11:3",
+          "svg@13:2",
           "svg@9:3",
-          "textarea@13:0",
+          "textarea@14:0",
           "ul@7:4+"
         ],
         "landmarks": [
           {
-            "tag": "header",
+            "tag": "main",
             "role": "",
             "top": 0,
             "left": 0,
             "width": 390,
-            "height": 382
+            "height": 1708
           },
           {
-            "tag": "main",
-            "role": "",
-            "top": 382,
+            "tag": "div",
+            "role": "complementary",
+            "top": 1708,
             "left": 0,
             "width": 390,
-            "height": 1583
+            "height": 438
+          },
+          {
+            "tag": "footer",
+            "role": "",
+            "top": 2007,
+            "left": 18,
+            "width": 354,
+            "height": 115
           }
         ],
         "colors": [
           {
-            "hex": "#081b2b",
-            "count": 83
+            "hex": "#0a0b0d",
+            "count": 60
           },
           {
-            "hex": "#5b7185",
-            "count": 26
+            "hex": "#f3f4ef",
+            "count": 35
+          },
+          {
+            "hex": "#4c4f55",
+            "count": 24
           },
           {
             "hex": "#ffffff",
-            "count": 13
+            "count": 16
           },
           {
-            "hex": "#24465f",
-            "count": 12
+            "hex": "#0000d6",
+            "count": 8
           },
           {
-            "hex": "#0d71e3",
-            "count": 10
+            "hex": "#9ba0a8",
+            "count": 7
           },
           {
-            "hex": "#0a5bc0",
-            "count": 6
+            "hex": "#0000b3",
+            "count": 3
           },
           {
-            "hex": "#298dff",
-            "count": 1
+            "hex": "#0000ff",
+            "count": 3
           },
           {
-            "hex": "#e8f3ff",
-            "count": 1
+            "hex": "#14161a",
+            "count": 3
           },
           {
-            "hex": "#f4f9ff",
+            "hex": "#f7f8f5",
+            "count": 2
+          },
+          {
+            "hex": "#dde3e9",
             "count": 1
           }
         ],
@@ -11569,7 +11979,6 @@
           }
         ],
         "navTargets": [
-          "/",
           "/app/markets",
           "/docs",
           "/privacy",
@@ -11603,22 +12012,22 @@
       "status": 200,
       "desktop": {
         "meta": {
-          "title": "Terms / Librova",
+          "title": "Terms / Tabuline",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 1215,
+          "bodyTextLength": 1231,
           "scrollWidth": 1440,
           "clientWidth": 1440,
-          "focusableCount": 18
+          "focusableCount": 19
         },
         "words": [
           {
             "word": "01",
-            "count": 1
+            "count": 2
           },
           {
             "word": "02",
-            "count": 1
+            "count": 2
           },
           {
             "word": "03",
@@ -11799,22 +12208,6 @@
           {
             "word": "legal",
             "count": 1
-          },
-          {
-            "word": "librova",
-            "count": 2
-          },
-          {
-            "word": "Librova",
-            "count": 3
-          },
-          {
-            "word": "LIBROVA",
-            "count": 2
-          },
-          {
-            "word": "librova.xyz",
-            "count": 3
           },
           {
             "word": "Limits",
@@ -12009,6 +12402,22 @@
             "count": 1
           },
           {
+            "word": "tabuline",
+            "count": 2
+          },
+          {
+            "word": "Tabuline",
+            "count": 3
+          },
+          {
+            "word": "TABULINE",
+            "count": 2
+          },
+          {
+            "word": "tabuline.xyz",
+            "count": 3
+          },
+          {
             "word": "tape",
             "count": 1
           },
@@ -12099,18 +12508,22 @@
         ],
         "attrs": [
           {
-            "key": "aria-label=Librova overview",
+            "key": "aria-label=Primary",
             "count": 1
           },
           {
-            "key": "aria-label=Primary",
+            "key": "aria-label=Tabuline overview",
+            "count": 2
+          },
+          {
+            "key": "aria-label=Terminal index",
             "count": 1
           }
         ],
         "links": [
           {
             "href": "/",
-            "count": 3
+            "count": 4
           },
           {
             "href": "/#cap",
@@ -12150,142 +12563,208 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
+          "bp-btn",
+          "bp-btn--ghost",
+          "bp-btn--primary",
+          "bp-btn--solid",
+          "bp-display",
+          "bp-dock",
+          "bp-dock-actions",
+          "bp-dock-brand",
+          "bp-dock-rule",
+          "bp-foot",
+          "bp-foot-brand",
+          "bp-foot-copy",
+          "bp-foot-links",
+          "bp-frame",
+          "bp-index",
+          "bp-index-link",
+          "bp-instrument",
+          "bp-instrument-row",
+          "bp-kicker",
+          "bp-lead",
+          "bp-leaf",
+          "bp-leaf-body",
+          "bp-lockup",
+          "bp-proof",
+          "bp-proof-grid",
+          "bp-proof-note",
+          "bp-route",
+          "bp-skip",
+          "bp-spine",
+          "bp-spine-brand",
+          "bp-spine-target",
+          "bp-spine-thesis",
+          "bp-wallet",
+          "dc-display",
+          "dc-legal-actions",
+          "dc-legal-body",
+          "dc-legal-clause",
+          "dc-legal-clauses",
+          "dc-legal-head",
+          "dc-legal-inner",
+          "dc-legal-num",
+          "dc-legal-sheet",
           "dock",
-          "dock-trigger",
           "lucide",
           "lucide-arrow-right-icon",
           "lucide-wallet-icon",
           "strand",
-          "strand-display",
-          "strand-legal",
-          "strand-legal-actions",
-          "strand-legal-copy",
-          "strand-open",
-          "tide-band",
-          "tide-band--first",
-          "tide-brand",
-          "tide-btn",
-          "tide-btn--ghost",
-          "tide-btn--primary",
-          "tide-display",
-          "tide-foot-brand",
-          "tide-foot-copy",
-          "tide-foot-links",
-          "tide-index",
-          "tide-index-link",
-          "tide-instrument",
-          "tide-instrument-row",
-          "tide-kicker",
-          "tide-lead",
-          "tide-mast",
-          "tide-mast-actions",
-          "tide-mast-foot",
-          "tide-mast-line",
-          "tide-mast-tail",
-          "tide-mast-top",
-          "tide-proof",
-          "tide-shell",
-          "tide-skip",
-          "tide-stage",
-          "tide-stage-inner",
-          "tide-wallet"
+          "wl-trigger"
         ],
         "fingerprint": [
-          "a@10:1",
+          "a@13:1",
           "a@4:0",
+          "a@7:1",
           "a@7:2",
           "a@7:3",
           "a@8:0",
           "a@9:0",
+          "article@9:1",
           "b@8:0",
           "b@9:0",
           "button@9:1",
           "dd@8:1",
           "dd@9:0",
+          "div@10:2",
+          "div@11:2",
           "div@3:2",
           "div@4:2",
+          "div@5:4+",
           "div@6:1",
           "div@6:2",
           "div@6:3",
+          "div@7:1",
           "div@7:2",
           "div@7:3",
           "div@8:1",
           "div@8:2",
-          "div@9:2",
           "dl@6:4+",
           "dl@7:4+",
           "dt@8:0",
           "dt@9:0",
-          "h1@9:0",
-          "header@5:4+",
+          "footer@12:2",
+          "footer@6:3",
+          "h1@12:0",
+          "header@11:3",
           "img@8:0",
+          "li@13:2",
           "li@8:1",
-          "main@5:2",
+          "main@5:3",
           "nav@6:4+",
-          "p@10:0",
+          "ol@12:2",
+          "p@12:0",
+          "p@14:0",
           "p@6:0",
-          "p@6:1",
           "p@7:0",
-          "p@9:0",
+          "p@7:1",
           "path@11:0",
-          "path@12:0",
-          "section@8:2",
-          "section@8:3",
+          "path@15:0",
           "small@8:0",
+          "span@14:0",
+          "span@7:0",
           "span@8:0",
           "svg@10:2",
-          "svg@11:2",
+          "svg@14:2",
           "ul@7:4+"
         ],
         "landmarks": [
           {
-            "tag": "header",
+            "tag": "main",
             "role": "",
             "top": 0,
-            "left": 0,
-            "width": 605,
+            "left": 1,
+            "width": 863,
+            "height": 900
+          },
+          {
+            "tag": "header",
+            "role": "",
+            "top": 101,
+            "left": 51,
+            "width": 762,
+            "height": 230
+          },
+          {
+            "tag": "footer",
+            "role": "",
+            "top": 630,
+            "left": 91,
+            "width": 682,
+            "height": 57
+          },
+          {
+            "tag": "div",
+            "role": "complementary",
+            "top": 0,
+            "left": 864,
+            "width": 575,
             "height": 900
           },
           {
             "tag": "nav",
             "role": "",
-            "top": 143,
-            "left": 49,
+            "top": 139,
+            "left": 898,
             "width": 506,
-            "height": 391
+            "height": 409
           },
           {
-            "tag": "main",
+            "tag": "footer",
             "role": "",
-            "top": 0,
-            "left": 605,
-            "width": 835,
-            "height": 900
+            "top": 748,
+            "left": 898,
+            "width": 506,
+            "height": 115
           }
         ],
         "colors": [
           {
-            "hex": "#081b2b",
-            "count": 57
+            "hex": "#f3f4ef",
+            "count": 48
           },
           {
-            "hex": "#24465f",
-            "count": 25
+            "hex": "#0a0b0d",
+            "count": 40
           },
           {
-            "hex": "#5b7185",
-            "count": 22
+            "hex": "#9ba0a8",
+            "count": 12
           },
           {
             "hex": "#ffffff",
-            "count": 6
+            "count": 11
           },
           {
-            "hex": "#0d71e3",
+            "hex": "#4c4f55",
+            "count": 5
+          },
+          {
+            "hex": "#7575ff",
+            "count": 5
+          },
+          {
+            "hex": "#0000ff",
+            "count": 4
+          },
+          {
+            "hex": "#0000d6",
             "count": 3
           },
           {
-            "hex": "#0a5bc0",
+            "hex": "#14161a",
+            "count": 3
+          },
+          {
+            "hex": "#b9bcb4",
+            "count": 1
+          },
+          {
+            "hex": "#dde3e9",
+            "count": 1
+          },
+          {
+            "hex": "#f7f8f5",
             "count": 1
           }
         ],
@@ -12325,15 +12804,23 @@
       },
       "mobile": {
         "meta": {
-          "title": "Terms / Librova",
+          "title": "Terms / Tabuline",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 1103,
+          "bodyTextLength": 1119,
           "scrollWidth": 390,
           "clientWidth": 390,
-          "focusableCount": 13
+          "focusableCount": 14
         },
         "words": [
+          {
+            "word": "01",
+            "count": 1
+          },
+          {
+            "word": "02",
+            "count": 1
+          },
           {
             "word": "a",
             "count": 3
@@ -12489,22 +12976,6 @@
           {
             "word": "legal",
             "count": 1
-          },
-          {
-            "word": "librova",
-            "count": 2
-          },
-          {
-            "word": "Librova",
-            "count": 3
-          },
-          {
-            "word": "LIBROVA",
-            "count": 2
-          },
-          {
-            "word": "librova.xyz",
-            "count": 3
           },
           {
             "word": "Limits",
@@ -12687,6 +13158,22 @@
             "count": 1
           },
           {
+            "word": "tabuline",
+            "count": 2
+          },
+          {
+            "word": "Tabuline",
+            "count": 3
+          },
+          {
+            "word": "TABULINE",
+            "count": 2
+          },
+          {
+            "word": "tabuline.xyz",
+            "count": 3
+          },
+          {
             "word": "Target",
             "count": 1
           },
@@ -12769,18 +13256,22 @@
         ],
         "attrs": [
           {
-            "key": "aria-label=Librova overview",
+            "key": "aria-label=Open navigation",
             "count": 1
           },
           {
-            "key": "aria-label=Open navigation",
+            "key": "aria-label=Tabuline overview",
+            "count": 2
+          },
+          {
+            "key": "aria-label=Terminal index",
             "count": 1
           }
         ],
         "links": [
           {
             "href": "/",
-            "count": 2
+            "count": 3
           },
           {
             "href": "/app/markets",
@@ -12816,137 +13307,189 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
+          "bp-btn",
+          "bp-btn--ghost",
+          "bp-btn--line",
+          "bp-btn--primary",
+          "bp-btn--solid",
+          "bp-display",
+          "bp-dock",
+          "bp-dock-actions",
+          "bp-dock-brand",
+          "bp-foot",
+          "bp-foot-brand",
+          "bp-foot-copy",
+          "bp-foot-links",
+          "bp-frame",
+          "bp-instrument",
+          "bp-instrument-row",
+          "bp-kicker",
+          "bp-lead",
+          "bp-leaf",
+          "bp-leaf-body",
+          "bp-lockup",
+          "bp-nav-toggle",
+          "bp-proof",
+          "bp-proof-grid",
+          "bp-proof-note",
+          "bp-route",
+          "bp-skip",
+          "bp-spine",
+          "bp-spine-brand",
+          "bp-spine-target",
+          "bp-spine-thesis",
+          "bp-wallet",
+          "dc-display",
+          "dc-legal-actions",
+          "dc-legal-body",
+          "dc-legal-clause",
+          "dc-legal-clauses",
+          "dc-legal-head",
+          "dc-legal-inner",
+          "dc-legal-num",
+          "dc-legal-sheet",
           "dock",
-          "dock-trigger",
           "lucide",
           "lucide-arrow-right-icon",
           "lucide-menu-icon",
           "lucide-wallet-icon",
           "strand",
-          "strand-display",
-          "strand-legal",
-          "strand-legal-actions",
-          "strand-legal-copy",
-          "strand-open",
-          "tide-band",
-          "tide-band--first",
-          "tide-brand",
-          "tide-btn",
-          "tide-btn--ghost",
-          "tide-btn--primary",
-          "tide-btn--quiet",
-          "tide-display",
-          "tide-foot-brand",
-          "tide-foot-copy",
-          "tide-foot-links",
-          "tide-index-toggle",
-          "tide-instrument",
-          "tide-instrument-row",
-          "tide-kicker",
-          "tide-lead",
-          "tide-mast",
-          "tide-mast-actions",
-          "tide-mast-foot",
-          "tide-mast-line",
-          "tide-mast-tail",
-          "tide-mast-top",
-          "tide-proof",
-          "tide-shell",
-          "tide-skip",
-          "tide-stage",
-          "tide-stage-inner",
-          "tide-wallet"
+          "wl-trigger"
         ],
         "fingerprint": [
-          "a@10:1",
+          "a@13:1",
           "a@4:0",
+          "a@7:1",
           "a@7:2",
           "a@8:0",
           "a@9:0",
+          "article@9:1",
           "b@8:0",
           "b@9:0",
           "button@8:1",
           "button@9:1",
           "dd@8:1",
           "dd@9:0",
+          "div@10:2",
+          "div@11:2",
           "div@3:2",
           "div@4:2",
+          "div@5:4+",
           "div@6:1",
           "div@6:2",
           "div@6:3",
+          "div@7:1",
           "div@7:2",
           "div@7:3",
           "div@8:1",
           "div@8:2",
-          "div@9:2",
           "dl@6:4+",
           "dl@7:4+",
           "dt@8:0",
           "dt@9:0",
-          "h1@9:0",
-          "header@5:4+",
+          "footer@12:2",
+          "footer@6:3",
+          "h1@12:0",
+          "header@11:3",
           "img@8:0",
+          "li@13:2",
           "li@8:1",
-          "main@5:2",
-          "p@10:0",
+          "main@5:3",
+          "ol@12:2",
+          "p@12:0",
+          "p@14:0",
           "p@6:0",
-          "p@6:1",
           "p@7:0",
-          "p@9:0",
+          "p@7:1",
           "path@11:0",
-          "path@12:0",
-          "section@8:2",
-          "section@8:3",
+          "path@15:0",
+          "span@14:0",
           "svg@10:2",
-          "svg@11:2",
+          "svg@14:2",
           "svg@9:3",
           "ul@7:4+"
         ],
         "landmarks": [
           {
-            "tag": "header",
+            "tag": "main",
             "role": "",
             "top": 0,
             "left": 0,
             "width": 390,
-            "height": 382
+            "height": 1165
           },
           {
-            "tag": "main",
+            "tag": "header",
             "role": "",
-            "top": 382,
+            "top": 124,
+            "left": 19,
+            "width": 352,
+            "height": 210
+          },
+          {
+            "tag": "footer",
+            "role": "",
+            "top": 745,
+            "left": 41,
+            "width": 308,
+            "height": 105
+          },
+          {
+            "tag": "div",
+            "role": "complementary",
+            "top": 1165,
             "left": 0,
             "width": 390,
-            "height": 844
+            "height": 438
+          },
+          {
+            "tag": "footer",
+            "role": "",
+            "top": 1464,
+            "left": 18,
+            "width": 354,
+            "height": 115
           }
         ],
         "colors": [
           {
-            "hex": "#081b2b",
-            "count": 54
+            "hex": "#0a0b0d",
+            "count": 41
           },
           {
-            "hex": "#24465f",
-            "count": 14
-          },
-          {
-            "hex": "#5b7185",
-            "count": 12
+            "hex": "#f3f4ef",
+            "count": 35
           },
           {
             "hex": "#ffffff",
-            "count": 6
+            "count": 9
           },
           {
-            "hex": "#0d71e3",
+            "hex": "#9ba0a8",
+            "count": 7
+          },
+          {
+            "hex": "#4c4f55",
+            "count": 5
+          },
+          {
+            "hex": "#0000d6",
             "count": 3
           },
           {
-            "hex": "#0a5bc0",
-            "count": 2
+            "hex": "#0000ff",
+            "count": 3
           },
           {
-            "hex": "#e8f3ff",
+            "hex": "#14161a",
+            "count": 3
+          },
+          {
+            "hex": "#dde3e9",
+            "count": 1
+          },
+          {
+            "hex": "#f7f8f5",
             "count": 1
           }
         ],
@@ -12978,8 +13521,8 @@
           "",
           "/",
           "/app/markets",
-          "/signal",
           "/docs",
+          "/signal",
           "/risk",
           "/terms",
           "/privacy"

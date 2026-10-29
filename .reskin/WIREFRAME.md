@@ -1,65 +1,55 @@
-# Wireframe — Tidal Sui / Split Stage
+# Wiring plan — Cobalt Blueprint / Split Stage
 
-Project: `website/` (Vue 3.5 + Vite 6). Baseline archetype: `terminal-console` (linear).
-New archetype: `split-stage` (spatial). No persistent status strip, no command rail, no
-two-track console panes, no hint bar pinned under a console.
+The reskin selector chose **Cobalt Blueprint** (`base-cobalt`, sampled from base.org) with the
+**Split Stage** skeleton. The original DOM archetype was `sidebar-workspace` (family `shell`).
+This plan was written before the presentation layer was rebuilt and is the commitment the
+implementation follows.
 
-## New shell — `src/App.vue` (class namespace `tide-`)
+## 1. New shell
 
-Desktop (>= 1080 px): a single asymmetric split, `grid-template-columns: minmax(320px, 42fr) minmax(0, 58fr)`.
+- `src/App.vue` becomes `BpFrame`: a two-column frame with the **data leaf on the left** and the
+  **instrument spine on the right**. The spine is the sticky column; it is dark ink with a
+  blueprint grid, not a light sidebar.
+- Landmarks: `main` (leaf) → `div[role=complementary]` (spine) → `nav` → `footer`. No `header`
+  landmark and no `<aside>` element, so the source classifier no longer sees a sidebar shell.
+- Top actions live in a slim `.bp-dock` inside the leaf (icon-only home link, wallet, primary
+  action, mobile index toggle). The wordmark and the numbered index live in the spine.
+- Mobile: single column. The leaf comes first; the spine follows as a dark block; the index is
+  collapsed behind the existing `aria-expanded` toggle and expands in place.
 
-| Region | Holds |
-| --- | --- |
-| `header.tide-mast` (sticky, 100vh, left column) | brand lockup (`icon.svg` + `{{ brand.name }}`), build line, vertical route index (`nav`), instrument block (Mode / Network / Unit / Records + handle-domain tail), actions (wallet, "Open the board"), colophon + footer links |
-| `main.tide-stage` (right column) | the route component, then a full-width proof band carrying the Feed / Unit / Stores / Target facts and the disclaimer |
-
-Mobile (< 1080 px): the mast becomes a compact header (brand + actions + index disclosure
-button with `aria-expanded`); the index becomes a horizontally scrollable strip under the
-header; the instrument block and colophon move below the stage content. The split is not
-preserved. The sticky column is only sticky at >= 1080 px and has its own scroll if short.
-
-Navigation pattern: vertical index in the narrative column, numbered 01–06, each line carrying
-the route label and its existing note; the current route is marked with a filled accent bar and
-`aria-current`. No horizontal top bar on desktop. On mobile the same index becomes a strip
-behind the disclosure.
-
-## Route compositions (`main` content)
+## 2. Route → composition
 
 | Route | Composition |
 | --- | --- |
-| `/` HomePage | 8/4 shoreline opening (headline left, supporting copy + actions right), annotated six-cell gauge band, then a 7/5 board band (watchlist ledger left, sandbox unit quote right), a settlement split figure + readout, a horizontal sample tape, a numbered briefing ledger, and a full-bleed limits band |
-| `/app/markets` (+ detail, launchpad, auctions, recompose) | opening band with a large page title and back link; filters as a command row; board as a 8/4 split (data table left, annotated facts rail right); asset detail as 5/7 (passport left, payoff instrument right); leaf routes as a single centred sheet |
-| `/docs` | opening thesis; then a 3/9 document split: sticky in-page index in the margin, prose column right; concept figures as full-width annotated plates |
-| `/signal` ScenarioLab | opening thesis; 7/5 form split (field deck left, assumption panel right); review and journal steps as a single record sheet with the step track |
-| `/terms`, `/privacy`, `/risk` | opening thesis; prose column with an actions row, no nested split |
-| 404 | single centred sheet |
+| `/` | `co-page`: opening article (h1 + supporting column) → gauge row → board article (heading row, filter rail, ruled table) → quote sheet → settlement figure article → tape rail → briefing list → limits sheet. |
+| `/app/markets` | `gr` stage: title block → fact strip → ledger table → market facts; asset route: passport sheet beside the payoff explorer. |
+| `/signal` | `jn` docket: heading, numbered form steps, side assumption sheet. |
+| `/docs` | `dc` document: title block → sticky on-page index → article sections; legal routes use a ruled clause sheet with numbered clauses. |
+| 404 | `nf-sheet` inside `.bp-void`. |
 
-## Component mapping
+## 3. Components
 
-- `src/console.css` → **deleted**; replaced by `src/tide.css` (tokens, reset, shell split, type,
-  primitives: buttons, inputs, tables, notices, facts, pills, figures, reduced motion).
-- New shell: `App.vue` (mast + stage + proof band). Old status strip, command line, command
-  rail, hint strip and two-track console deck removed.
-- Kept as content-only children (script blocks unchanged): `HomePage.vue`, `MarketWorkspace.vue`,
-  `MarketTable.vue`, `PayoffExplorer.vue`, `ScenarioLab.vue`, `DocsPage.vue`,
-  `SolanaWalletButton.vue`. Each template is re-laid-out; each scoped stylesheet is replaced.
-- `index.html`: `theme-color` and `color-scheme` switch to the light Tidal tokens; title,
-  description, icons and social metadata untouched.
+- Kept as content-only children with rewritten templates and renamed classes: `HomePage`,
+  `MarketWorkspace`, `MarketTable`, `PayoffExplorer`, `ScenarioLab`, `DocsPage`,
+  `SolanaWalletButton`.
+- Deleted from the render path: `src/tide.css` (the previous global system). Replaced by
+  `src/blueprint.css`, which owns tokens, reset, shell and shared primitives.
+- Every original class token was renamed (`tide-→bp-`, `reef-→co-`, `shoal-→gr-`, `buoy-→dy-`,
+  `dock-→wl-`, `lagoon-→jn-`, `strand-→dc-`, `wave-→nf-`) and every design variable moved to a
+  `--bp-*` name.
 
-## Tokens and breakpoints
+## 4. Tokens and breakpoints
 
-`src/tide.css` defines `--tide-*` custom properties from STYLE.md (`--bg`, `--surface`,
-`--ink`, `--muted`, `--accent`, `--accent-safe`, `--accent-2`, `--line`, `--radius-*`,
-`--shadow`, `--motion-*`), typography from the Sui direction, and the shell grid.
+- Ground `#dde3e9`, paper `#ffffff`, ink `#0a0b0d`, cobalt `#0000ff` (safe text `#0000d6`),
+  secondary `#7575ff`, hairline `#d7d9d3`, panel `#0a0b0d`.
+- Type: Inter Tight / Segoe UI display at weight 640 and -0.038em, Inter / Segoe UI body,
+  Geist Mono / Cascadia Mono for labels and numerals.
+- Shape: 4/8/14/22 px radii, 1 px rules, flat sheets; shadows only on overlay money surfaces.
+- Breakpoints: 1180 px (frame proportions), 980 px (split collapses, spine follows the leaf),
+  680/620 px (dense single column).
 
-Breakpoints: 1180 px (split ratio tightens), 1080 px (split becomes one column, mast becomes
-header, index becomes strip), 760 px (bands stack, tables become labelled rows), 520 px (form
-pairs single column, gauges two columns). Every route must render without horizontal overflow
-at 390 px.
+## 5. Content lock
 
-## Content protection
-
-Every static string, binding, handler, route, source, form signature and link target comes from
-the existing templates and is moved verbatim. Script blocks are not edited except for the one
-presentational selector in `App.vue` (`onKeydown` focus target), which keeps the same focus
-behaviour. No new visible copy.
+Every token in `.reskin/content-contract.json` is moved, never rewritten. New visible copy is
+forbidden, so route-index headers, decorative numbers and shell headings use only existing words
+or `aria-label`/`aria-hidden` support.

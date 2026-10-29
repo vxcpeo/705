@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-21T13:29:53.311Z",
+  "generatedAt": "2026-10-22T15:40:28.643Z",
   "project": {
     "root": "E:/workspace/chuangye/solana/705/website",
-    "name": "librova-website",
+    "name": "tabuline-website",
     "baseUrl": "http://127.0.0.1:4317/"
   },
   "passed": true,
@@ -19,33 +19,19 @@
     "sourceContract": {
       "passed": true,
       "issues": [],
-      "warnings": [],
-      "hash": "3d00ded2cdd47802617906eea285edc387a2bb8d4e6c483f87aba609740953d5"
+      "warnings": [
+        "attributes: \"href=/\" count increased 4 -> 5",
+        "attributes: \"src=/icon.svg\" count increased 2 -> 3",
+        "bindings: \"interpolation:String(index + 1).padStart(2, '0')\" count increased 2 -> 3",
+        "events: \"click:navigate('/')\" count increased 2 -> 3",
+        "links: \"href:/\" count increased 4 -> 5",
+        "assets: \"src:/icon.svg\" count increased 2 -> 3"
+      ],
+      "hash": "9889e37ce44bc7fe109a2822667fa6fcebbfe56f9b8da2b69d0f1155ca5e7ad2"
     },
     "skeleton": {
       "passed": true,
       "original": {
-        "id": "terminal-console",
-        "family": "linear",
-        "traits": {
-          "sidebar": false,
-          "topbar": false,
-          "cards": true,
-          "hero": false,
-          "table": true,
-          "grid": true,
-          "tabs": true,
-          "modal": true,
-          "charts": true,
-          "sticky": true,
-          "orbital": false,
-          "terminal": true,
-          "bento": false,
-          "ticker": false,
-          "gallery": false
-        }
-      },
-      "current": {
         "id": "sidebar-workspace",
         "family": "shell",
         "traits": {
@@ -66,10 +52,31 @@
           "gallery": false
         }
       },
+      "current": {
+        "id": "terminal-console",
+        "family": "linear",
+        "traits": {
+          "sidebar": false,
+          "topbar": false,
+          "cards": true,
+          "hero": false,
+          "table": true,
+          "grid": true,
+          "tabs": true,
+          "modal": true,
+          "charts": true,
+          "sticky": true,
+          "orbital": false,
+          "terminal": true,
+          "bento": false,
+          "ticker": false,
+          "gallery": false
+        }
+      },
       "accent": {
-        "original": "#ff0000",
-        "current": "#298dff",
-        "deltaE": 148.1,
+        "original": "#298dff",
+        "current": "#0000d6",
+        "deltaE": 72.06,
         "min": 30
       }
     },
@@ -80,12 +87,14 @@
         "skipped": false,
         "failures": [],
         "warnings": [
-          "aria attribute changed/removed: aria-label=Build status"
+          "aria attribute added: aria-label=Tabuline overview",
+          "aria attribute added: aria-label=Terminal index",
+          "link target added: /"
         ],
         "structure": {
-          "fingerprintSimilarity": 0.17,
+          "fingerprintSimilarity": 0.307,
           "landmarkSimilarity": 0.25,
-          "classOverlap": 0.018
+          "classOverlap": 0.057
         },
         "content": {
           "missing": [],
@@ -121,13 +130,14 @@
         "skipped": false,
         "failures": [],
         "warnings": [
-          "aria attribute changed/removed: aria-label=Build status",
-          "aria attribute added: aria-label=Market facts"
+          "aria attribute added: aria-label=Tabuline overview",
+          "aria attribute added: aria-label=Terminal index",
+          "link target added: /"
         ],
         "structure": {
-          "fingerprintSimilarity": 0.188,
-          "landmarkSimilarity": 0.25,
-          "classOverlap": 0.035
+          "fingerprintSimilarity": 0.271,
+          "landmarkSimilarity": 0.2,
+          "classOverlap": 0.055
         },
         "content": {
           "missing": [],
@@ -163,12 +173,14 @@
         "skipped": false,
         "failures": [],
         "warnings": [
-          "aria attribute changed/removed: aria-label=Build status"
+          "aria attribute added: aria-label=Tabuline overview",
+          "aria attribute added: aria-label=Terminal index",
+          "link target added: /"
         ],
         "structure": {
-          "fingerprintSimilarity": 0.267,
-          "landmarkSimilarity": 0.5,
-          "classOverlap": 0.028
+          "fingerprintSimilarity": 0.364,
+          "landmarkSimilarity": 0.4,
+          "classOverlap": 0.044
         },
         "content": {
           "missing": [],
@@ -204,12 +216,15 @@
         "skipped": false,
         "failures": [],
         "warnings": [
-          "aria attribute changed/removed: aria-label=Build status"
+          "numeric token count changed: 6 -> 8 (dynamic values may differ)",
+          "aria attribute added: aria-label=Tabuline overview",
+          "aria attribute added: aria-label=Terminal index",
+          "link target added: /"
         ],
         "structure": {
-          "fingerprintSimilarity": 0.274,
+          "fingerprintSimilarity": 0.5,
           "landmarkSimilarity": 0.333,
-          "classOverlap": 0.035
+          "classOverlap": 0.061
         },
         "content": {
           "missing": [],
@@ -221,7 +236,7 @@
             },
             "current": {
               "tokens": 6,
-              "total": 6
+              "total": 8
             }
           }
         },
@@ -245,12 +260,14 @@
         "skipped": false,
         "failures": [],
         "warnings": [
-          "aria attribute changed/removed: aria-label=Build status"
+          "aria attribute added: aria-label=Tabuline overview",
+          "aria attribute added: aria-label=Terminal index",
+          "link target added: /"
         ],
         "structure": {
-          "fingerprintSimilarity": 0.277,
-          "landmarkSimilarity": 0.333,
-          "classOverlap": 0.039
+          "fingerprintSimilarity": 0.4,
+          "landmarkSimilarity": 0.25,
+          "classOverlap": 0.058
         },
         "content": {
           "missing": [],
@@ -286,12 +303,15 @@
         "skipped": false,
         "failures": [],
         "warnings": [
-          "aria attribute changed/removed: aria-label=Build status"
+          "numeric token count changed: 6 -> 8 (dynamic values may differ)",
+          "aria attribute added: aria-label=Tabuline overview",
+          "aria attribute added: aria-label=Terminal index",
+          "link target added: /"
         ],
         "structure": {
-          "fingerprintSimilarity": 0.274,
+          "fingerprintSimilarity": 0.5,
           "landmarkSimilarity": 0.333,
-          "classOverlap": 0.035
+          "classOverlap": 0.061
         },
         "content": {
           "missing": [],
@@ -303,7 +323,7 @@
             },
             "current": {
               "tokens": 6,
-              "total": 6
+              "total": 8
             }
           }
         },
@@ -325,16 +345,35 @@
   },
   "failures": [],
   "warnings": [
-    "/: aria attribute changed/removed: aria-label=Build status",
-    "/app/markets: aria attribute changed/removed: aria-label=Build status",
-    "/app/markets: aria attribute added: aria-label=Market facts",
-    "/docs: aria attribute changed/removed: aria-label=Build status",
-    "/privacy: aria attribute changed/removed: aria-label=Build status",
-    "/signal: aria attribute changed/removed: aria-label=Build status",
-    "/terms: aria attribute changed/removed: aria-label=Build status"
+    "attributes: \"href=/\" count increased 4 -> 5",
+    "attributes: \"src=/icon.svg\" count increased 2 -> 3",
+    "bindings: \"interpolation:String(index + 1).padStart(2, '0')\" count increased 2 -> 3",
+    "events: \"click:navigate('/')\" count increased 2 -> 3",
+    "links: \"href:/\" count increased 4 -> 5",
+    "assets: \"src:/icon.svg\" count increased 2 -> 3",
+    "/: aria attribute added: aria-label=Tabuline overview",
+    "/: aria attribute added: aria-label=Terminal index",
+    "/: link target added: /",
+    "/app/markets: aria attribute added: aria-label=Tabuline overview",
+    "/app/markets: aria attribute added: aria-label=Terminal index",
+    "/app/markets: link target added: /",
+    "/docs: aria attribute added: aria-label=Tabuline overview",
+    "/docs: aria attribute added: aria-label=Terminal index",
+    "/docs: link target added: /",
+    "/privacy: numeric token count changed: 6 -> 8 (dynamic values may differ)",
+    "/privacy: aria attribute added: aria-label=Tabuline overview",
+    "/privacy: aria attribute added: aria-label=Terminal index",
+    "/privacy: link target added: /",
+    "/signal: aria attribute added: aria-label=Tabuline overview",
+    "/signal: aria attribute added: aria-label=Terminal index",
+    "/signal: link target added: /",
+    "/terms: numeric token count changed: 6 -> 8 (dynamic values may differ)",
+    "/terms: aria attribute added: aria-label=Tabuline overview",
+    "/terms: aria attribute added: aria-label=Terminal index",
+    "/terms: link target added: /"
   ],
   "baseline": {
-    "generatedAt": "2026-10-21T12:40:00.441Z",
+    "generatedAt": "2026-10-22T15:10:31.464Z",
     "routes": [
       "/",
       "/app/markets",

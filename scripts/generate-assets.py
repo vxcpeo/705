@@ -1,4 +1,4 @@
-"""Generate Librova's website identity artwork and concept figures.
+"""Generate Tabuline's website identity artwork and concept figures.
 
 The palette, the mark geometry and the dual PNG/SVG writer all come from
 ``twitter/brandkit.py``; this module only composes scenes, so the site art and
@@ -79,17 +79,15 @@ def save_raster(scene: Scene, path: Path) -> Path:
 
 
 def ground(s: Scene) -> None:
-    s.vgrad(0, 0, s.w, s.h, "#f7fbff", "#ffffff")
-    s.vgrad(0, 0, s.w, int(s.h * 0.34), SKY, "#ffffff", opacity=0.9)
-    for i, d in enumerate((1000, 760, 520)):
-        s.ring(s.w * 0.96, s.h * 0.94, d, ACCENT_PALE, 2, 0.45 - i * 0.1)
+    s.vgrad(0, 0, s.w, s.h, "#f8f9f6", "#eceee9")
+    s.grid(0, 0, s.w, s.h, step=48, color="#e1e4dd")
 
 
 # ------------------------------------------------------------------ identity
 def icon() -> Path:
     s = Scene(64, 64, f"{BRAND} mark",
-              "The Librova corner - an L struck from rounded ledger bars with a pale "
-              "pip - reversed out of a blue gradient tile.")
+              "The Tabuline line - a header rule, a column stem and a pale node - "
+              "reversed out of a blue gradient tile.")
     s.tile_mark(0, 0, 64, r=15)
     return save_vector(s, PUBLIC / "icon.svg")
 
@@ -152,7 +150,7 @@ def concept_backing() -> Scene:
         "A watchlist with sample prices beside a sandbox unit quote.",
         f"{BRAND} watchlist figure",
         "A light watchlist panel lists three sample rows: SOL at $182.40, JUP at "
-        "$1.12 and LIBROVA, proposed and not issued, at $1.00, with a delta and a "
+        f"$1.12 and {TICKER}, proposed and not issued, at $1.00, with a delta and a "
         "state column and a SAMPLE DATA flag. Illustrative rows only; no live quote.")
     x, y, w, h = 56, 300, 700, 360
     head = panel(s, x, y, w, h, "WATCHLIST / EXAMPLE", chip=SAMPLE_FLAG)
@@ -345,8 +343,8 @@ def og_image() -> Scene:
     s.text(56, 288, "Price the boundary.", 44, INK, "display")
     s.text(56, 358, "Keep the record.", 42, ACCENT_DEEP, "display")
     s.text(58, 404, "Watchlists / payoff boundary / browser-local journal", 15, MUTED)
-    s.browser(UI / "home-top-1440.png", 648, 156, 496, 300, r=16,
-              crop=(0, 0, 1440, 870), chrome=True, url="librova.xyz")
+    s.browser(UI / "home-top-1440.png", 648, 156, 496, 300, r=8,
+              crop=(0, 0, 1440, 870), chrome=True, url=DOMAIN)
     s.line([(56, 546), (1144, 546)], LINE, 1)
     s.text(56, 582, DOMAIN, 12, MUTED, "mono")
     s.text(600, 582, f"{TICKER} / PROPOSED, NOT ISSUED", 12, MUTED, "mono", "center")

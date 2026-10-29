@@ -1,4 +1,4 @@
-// Librova / illustrative mechanics for the Solana market model.
+// Tabuline / illustrative mechanics for the Solana market model.
 export const concepts = [
   {
     id: 'backing',
