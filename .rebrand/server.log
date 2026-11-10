@@ -94,3 +94,27 @@
   VITE v6.4.3  ready in 641 ms
 
   ➜  Local:   http://127.0.0.1:57953/
+
+> tallyria-website@1.0.0 dev
+> vite --host 127.0.0.1 --port 63690 --host 127.0.0.1
+
+
+  VITE v6.4.3  ready in 647 ms
+
+  ➜  Local:   http://127.0.0.1:63690/
+
+> tallyria-website@1.0.0 dev
+> vite --host 127.0.0.1 --port 64037 --host 127.0.0.1
+
+
+  VITE v6.4.3  ready in 644 ms
+
+  ➜  Local:   http://127.0.0.1:64037/
+
+> tallyria-website@1.0.0 dev
+> vite --host 127.0.0.1 --port 64303 --host 127.0.0.1
+
+
+  VITE v6.4.3  ready in 641 ms
+
+  ➜  Local:   http://127.0.0.1:64303/

@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-22T15:40:28.643Z",
+  "generatedAt": "2026-11-09T18:27:34.770Z",
   "project": {
     "root": "E:/workspace/chuangye/solana/705/website",
-    "name": "tabuline-website",
+    "name": "tallyria-website",
     "baseUrl": "http://127.0.0.1:4317/"
   },
   "passed": true,
@@ -19,40 +19,12 @@
     "sourceContract": {
       "passed": true,
       "issues": [],
-      "warnings": [
-        "attributes: \"href=/\" count increased 4 -> 5",
-        "attributes: \"src=/icon.svg\" count increased 2 -> 3",
-        "bindings: \"interpolation:String(index + 1).padStart(2, '0')\" count increased 2 -> 3",
-        "events: \"click:navigate('/')\" count increased 2 -> 3",
-        "links: \"href:/\" count increased 4 -> 5",
-        "assets: \"src:/icon.svg\" count increased 2 -> 3"
-      ],
-      "hash": "9889e37ce44bc7fe109a2822667fa6fcebbfe56f9b8da2b69d0f1155ca5e7ad2"
+      "warnings": [],
+      "hash": "9a6611056f8484ff8d2b274e27d7e61586c165f050998d5ac33619eaeaeaeea3"
     },
     "skeleton": {
       "passed": true,
       "original": {
-        "id": "sidebar-workspace",
-        "family": "shell",
-        "traits": {
-          "sidebar": true,
-          "topbar": false,
-          "cards": true,
-          "hero": false,
-          "table": true,
-          "grid": true,
-          "tabs": true,
-          "modal": true,
-          "charts": true,
-          "sticky": true,
-          "orbital": false,
-          "terminal": true,
-          "bento": false,
-          "ticker": false,
-          "gallery": false
-        }
-      },
-      "current": {
         "id": "terminal-console",
         "family": "linear",
         "traits": {
@@ -73,10 +45,31 @@
           "gallery": false
         }
       },
+      "current": {
+        "id": "bento-canvas",
+        "family": "spatial",
+        "traits": {
+          "sidebar": false,
+          "topbar": false,
+          "cards": true,
+          "hero": false,
+          "table": true,
+          "grid": true,
+          "tabs": true,
+          "modal": true,
+          "charts": true,
+          "sticky": true,
+          "orbital": false,
+          "terminal": true,
+          "bento": true,
+          "ticker": false,
+          "gallery": false
+        }
+      },
       "accent": {
-        "original": "#298dff",
-        "current": "#0000d6",
-        "deltaE": 72.06,
+        "original": "#0000d6",
+        "current": "#e6006f",
+        "deltaE": 103.43,
         "min": 30
       }
     },
@@ -87,14 +80,13 @@
         "skipped": false,
         "failures": [],
         "warnings": [
-          "aria attribute added: aria-label=Tabuline overview",
-          "aria attribute added: aria-label=Terminal index",
-          "link target added: /"
+          "aria attribute changed/removed: aria-label=Tallyria overview",
+          "aria attribute changed/removed: aria-label=Terminal index"
         ],
         "structure": {
-          "fingerprintSimilarity": 0.307,
-          "landmarkSimilarity": 0.25,
-          "classOverlap": 0.057
+          "fingerprintSimilarity": 0.19,
+          "landmarkSimilarity": 0.5,
+          "classOverlap": 0.023
         },
         "content": {
           "missing": [],
@@ -130,14 +122,13 @@
         "skipped": false,
         "failures": [],
         "warnings": [
-          "aria attribute added: aria-label=Tabuline overview",
-          "aria attribute added: aria-label=Terminal index",
-          "link target added: /"
+          "aria attribute changed/removed: aria-label=Tallyria overview",
+          "aria attribute changed/removed: aria-label=Terminal index"
         ],
         "structure": {
-          "fingerprintSimilarity": 0.271,
-          "landmarkSimilarity": 0.2,
-          "classOverlap": 0.055
+          "fingerprintSimilarity": 0.283,
+          "landmarkSimilarity": 0.4,
+          "classOverlap": 0.033
         },
         "content": {
           "missing": [],
@@ -173,14 +164,17 @@
         "skipped": false,
         "failures": [],
         "warnings": [
-          "aria attribute added: aria-label=Tabuline overview",
-          "aria attribute added: aria-label=Terminal index",
-          "link target added: /"
+          "aria attribute changed/removed: aria-label=Legacy journal anchor",
+          "aria attribute changed/removed: aria-label=Legacy limits anchor",
+          "aria attribute changed/removed: aria-label=Legacy overview anchor",
+          "aria attribute changed/removed: aria-label=Legacy scenario anchor",
+          "aria attribute changed/removed: aria-label=Tallyria overview",
+          "aria attribute changed/removed: aria-label=Terminal index"
         ],
         "structure": {
-          "fingerprintSimilarity": 0.364,
-          "landmarkSimilarity": 0.4,
-          "classOverlap": 0.044
+          "fingerprintSimilarity": 0.222,
+          "landmarkSimilarity": 0.6,
+          "classOverlap": 0.026
         },
         "content": {
           "missing": [],
@@ -216,15 +210,13 @@
         "skipped": false,
         "failures": [],
         "warnings": [
-          "numeric token count changed: 6 -> 8 (dynamic values may differ)",
-          "aria attribute added: aria-label=Tabuline overview",
-          "aria attribute added: aria-label=Terminal index",
-          "link target added: /"
+          "aria attribute changed/removed: aria-label=Tallyria overview",
+          "aria attribute changed/removed: aria-label=Terminal index"
         ],
         "structure": {
-          "fingerprintSimilarity": 0.5,
-          "landmarkSimilarity": 0.333,
-          "classOverlap": 0.061
+          "fingerprintSimilarity": 0.213,
+          "landmarkSimilarity": 0.5,
+          "classOverlap": 0.031
         },
         "content": {
           "missing": [],
@@ -232,7 +224,7 @@
           "numeric": {
             "baseline": {
               "tokens": 6,
-              "total": 6
+              "total": 8
             },
             "current": {
               "tokens": 6,
@@ -260,14 +252,13 @@
         "skipped": false,
         "failures": [],
         "warnings": [
-          "aria attribute added: aria-label=Tabuline overview",
-          "aria attribute added: aria-label=Terminal index",
-          "link target added: /"
+          "aria attribute changed/removed: aria-label=Tallyria overview",
+          "aria attribute changed/removed: aria-label=Terminal index"
         ],
         "structure": {
-          "fingerprintSimilarity": 0.4,
-          "landmarkSimilarity": 0.25,
-          "classOverlap": 0.058
+          "fingerprintSimilarity": 0.176,
+          "landmarkSimilarity": 0.5,
+          "classOverlap": 0.036
         },
         "content": {
           "missing": [],
@@ -303,15 +294,13 @@
         "skipped": false,
         "failures": [],
         "warnings": [
-          "numeric token count changed: 6 -> 8 (dynamic values may differ)",
-          "aria attribute added: aria-label=Tabuline overview",
-          "aria attribute added: aria-label=Terminal index",
-          "link target added: /"
+          "aria attribute changed/removed: aria-label=Tallyria overview",
+          "aria attribute changed/removed: aria-label=Terminal index"
         ],
         "structure": {
-          "fingerprintSimilarity": 0.5,
-          "landmarkSimilarity": 0.333,
-          "classOverlap": 0.061
+          "fingerprintSimilarity": 0.213,
+          "landmarkSimilarity": 0.5,
+          "classOverlap": 0.031
         },
         "content": {
           "missing": [],
@@ -319,7 +308,7 @@
           "numeric": {
             "baseline": {
               "tokens": 6,
-              "total": 6
+              "total": 8
             },
             "current": {
               "tokens": 6,
@@ -345,35 +334,25 @@
   },
   "failures": [],
   "warnings": [
-    "attributes: \"href=/\" count increased 4 -> 5",
-    "attributes: \"src=/icon.svg\" count increased 2 -> 3",
-    "bindings: \"interpolation:String(index + 1).padStart(2, '0')\" count increased 2 -> 3",
-    "events: \"click:navigate('/')\" count increased 2 -> 3",
-    "links: \"href:/\" count increased 4 -> 5",
-    "assets: \"src:/icon.svg\" count increased 2 -> 3",
-    "/: aria attribute added: aria-label=Tabuline overview",
-    "/: aria attribute added: aria-label=Terminal index",
-    "/: link target added: /",
-    "/app/markets: aria attribute added: aria-label=Tabuline overview",
-    "/app/markets: aria attribute added: aria-label=Terminal index",
-    "/app/markets: link target added: /",
-    "/docs: aria attribute added: aria-label=Tabuline overview",
-    "/docs: aria attribute added: aria-label=Terminal index",
-    "/docs: link target added: /",
-    "/privacy: numeric token count changed: 6 -> 8 (dynamic values may differ)",
-    "/privacy: aria attribute added: aria-label=Tabuline overview",
-    "/privacy: aria attribute added: aria-label=Terminal index",
-    "/privacy: link target added: /",
-    "/signal: aria attribute added: aria-label=Tabuline overview",
-    "/signal: aria attribute added: aria-label=Terminal index",
-    "/signal: link target added: /",
-    "/terms: numeric token count changed: 6 -> 8 (dynamic values may differ)",
-    "/terms: aria attribute added: aria-label=Tabuline overview",
-    "/terms: aria attribute added: aria-label=Terminal index",
-    "/terms: link target added: /"
+    "/: aria attribute changed/removed: aria-label=Tallyria overview",
+    "/: aria attribute changed/removed: aria-label=Terminal index",
+    "/app/markets: aria attribute changed/removed: aria-label=Tallyria overview",
+    "/app/markets: aria attribute changed/removed: aria-label=Terminal index",
+    "/docs: aria attribute changed/removed: aria-label=Legacy journal anchor",
+    "/docs: aria attribute changed/removed: aria-label=Legacy limits anchor",
+    "/docs: aria attribute changed/removed: aria-label=Legacy overview anchor",
+    "/docs: aria attribute changed/removed: aria-label=Legacy scenario anchor",
+    "/docs: aria attribute changed/removed: aria-label=Tallyria overview",
+    "/docs: aria attribute changed/removed: aria-label=Terminal index",
+    "/privacy: aria attribute changed/removed: aria-label=Tallyria overview",
+    "/privacy: aria attribute changed/removed: aria-label=Terminal index",
+    "/signal: aria attribute changed/removed: aria-label=Tallyria overview",
+    "/signal: aria attribute changed/removed: aria-label=Terminal index",
+    "/terms: aria attribute changed/removed: aria-label=Tallyria overview",
+    "/terms: aria attribute changed/removed: aria-label=Terminal index"
   ],
   "baseline": {
-    "generatedAt": "2026-10-22T15:10:31.464Z",
+    "generatedAt": "2026-11-09T18:05:39.632Z",
     "routes": [
       "/",
       "/app/markets",

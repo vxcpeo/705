@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "status": "preview",
-  "brand": "Tabuline",
+  "brand": "Tallyria",
   "network": "Solana",
   "token": {
-    "symbol": "TABULINE",
+    "symbol": "TALLYRIA",
     "status": "proposed-unissued",
     "contractAddress": null,
     "quote": null
@@ -32,10 +32,11 @@
     }
   ],
   "resources": {
-    "domain": "tabuline.xyz",
-    "handle": "@tabuline",
-    "status": "targets from a point-in-time availability screen; neither is registered, reserved or owned by this work"
+    "domain": "tallyria.top",
+    "handle": "@tallyria_top",
+    "x_url": "https://x.com/tallyria_top",
+    "status": "final domain and X handle for this preview build; neither resource is registered or reserved by this work"
   },
   "note": "No market data provider or Solana program integration is configured. Visible prices and markets are local model examples, not live listings.",
-  "disclaimer": "Tabuline / TABULINE is a product preview on Solana. Illustrative values only: no live feed, no wallet action, no custody and no execution. There is no contract address; nothing here is an offer or a solicitation."
+  "disclaimer": "Tallyria / TALLYRIA is a product preview on Solana. Illustrative values only: no live feed, no wallet action, no custody and no execution. There is no contract address; nothing here is an offer or a solicitation."
 }

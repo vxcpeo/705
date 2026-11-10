@@ -20,257 +20,200 @@ const copy = computed(() => ({ Markets: 'Scan defined-cap series and compare the
 </script>
 
 <template>
-  <div class="shoal">
-    <!-- opening band -->
-    <section class="bp-band bp-band--first gr-open">
-      <div class="gr-open-copy">
-        <p class="bp-kicker">{{ brand.network }} / paper market</p>
-        <h1 class="bp-display gr-display" tabindex="-1">{{ pageTitle }}</h1>
-        <p class="bp-lead">{{ copy }}</p>
-      </div>
-      <a class="bp-btn bp-btn--ghost gr-back" href="/" @click.prevent="emit('navigate','/')"><ArrowLeft :size="15" /> Markets</a>
-    </section>
+  <div class="bl-page bl-mkt">
+    <div class="bl-bento">
+      <!-- anchor tile: page identity -->
+      <section class="bl-tile bl-tile--tint bl-span-7 bl-mkt-open">
+        <div class="bl-mkt-open-copy">
+          <p class="bl-kicker">{{ brand.network }} / paper market</p>
+          <h1 class="bl-display bl-mkt-title" tabindex="-1">{{ pageTitle }}</h1>
+          <p class="bl-lead">{{ copy }}</p>
+        </div>
+        <a class="bl-btn bl-mkt-back" href="/" @click.prevent="emit('navigate','/')"><ArrowLeft :size="15" /> Markets</a>
+      </section>
 
-    <!-- asset detail -->
-    <section v-if="symbol" class="bp-band gr-detail">
-      <div class="gr-detail-head">
-        <h2 class="bp-h2">{{ symbol }} / {{ brand.network }}</h2>
-        <p class="bp-meta">30-day epoch | +5% cap | illustrative values</p>
+      <!-- series passport -->
+      <section v-if="symbol" class="bl-tile bl-tile--plum bl-span-5 bl-mkt-passport">
+        <div class="bl-tile-head">
+          <h2 class="bl-h2">{{ symbol }} / {{ brand.network }}</h2>
+          <p class="bl-meta">30-day epoch | +5% cap | illustrative values</p>
+        </div>
+        <div class="bl-spec-top">
+          <span class="bl-mark" aria-hidden="true">{{ symbol.slice(0, 1) }}</span>
+          <span class="bl-spec-name"><b>{{ symbol }}</b><small>Example series</small></span>
+          <span class="bl-chip"><i aria-hidden="true"></i>Paper only</span>
+        </div>
+        <dl class="bl-spec-rows">
+          <div><dt>Reference</dt><dd>{{ symbol === 'SOL' ? '$182.00' : symbol === 'JUP' ? '$1.12' : symbol === 'BONK' ? '$0.000021' : '$1.00' }}</dd></div>
+          <div><dt>Income model</dt><dd class="bl-inc">+5% cap</dd></div>
+          <div><dt>Settlement</dt><dd>Not live</dd></div>
+        </dl>
+        <p class="bl-note">Illustrative values. No live quote, custody, signing or execution.</p>
+      </section>
+
+      <!-- launchpad intake -->
+      <section v-else-if="pageTitle === 'Launchpad'" class="bl-tile bl-span-5 bl-mkt-leaf">
+        <div class="bl-tile-head">
+          <span class="bl-chip bl-chip--accent"><i aria-hidden="true"></i>Listing intake</span>
+          <span class="bl-leaf-mark"><WalletCards :size="20" /></span>
+        </div>
+        <h2 class="bl-h2">Suggest a market.</h2>
+        <p class="bl-mkt-leaf-copy">Any SPL market unit with a verified price feed and USDC liquidity path may qualify. This preview records no wallet request or listing transaction.</p>
+        <a class="bl-btn bl-btn--primary" href="/docs#listing" @click.prevent="emit('navigate','/docs#listing')">Read listing notes <ArrowUpRight :size="15" /></a>
+      </section>
+
+      <!-- recompose note -->
+      <section v-else-if="pageTitle === 'Recompose'" class="bl-tile bl-span-5 bl-mkt-leaf">
+        <div class="bl-tile-head">
+          <span class="bl-chip"><i aria-hidden="true"></i>Income + Upside</span>
+          <span class="bl-leaf-mark"><TrendingUp :size="20" /></span>
+        </div>
+        <h2 class="bl-h2">One asset again.</h2>
+        <p class="bl-mkt-leaf-copy">Recomposition would require a wallet transaction. The local preview keeps this action visible while execution remains unavailable.</p>
+        <button class="bl-btn" type="button" disabled>Recompose unavailable</button>
+      </section>
+
+      <!-- facts, as four small tiles -->
+      <section v-if="!symbol && !['Launchpad','Recompose'].includes(pageTitle)" class="bl-span-5 bl-mkt-facts" role="group" aria-label="Market facts">
+        <dl class="bl-fact-tiles">
+          <div class="bl-fact-tile"><dt>Sheet</dt><dd>{{ pageTitle }}</dd><dd>{{ brand.network }} preview</dd></div>
+          <div class="bl-fact-tile"><dt>Cap default</dt><dd>+5%</dd><dd>30-day epoch</dd></div>
+          <div class="bl-fact-tile"><dt>Feed</dt><dd>Static</dd><dd>Not a live quote</dd></div>
+          <div class="bl-fact-tile"><dt>Unit</dt><dd>{{ brand.asset }}*</dd><dd>Proposed, unissued</dd></div>
+        </dl>
+      </section>
+
+      <!-- payoff explorer: full band -->
+      <div v-if="symbol" class="bl-span-12 bl-mkt-explore">
+        <PayoffExplorer :spot="symbol === 'SOL' ? 182 : symbol === 'JUP' ? 1.12 : symbol === 'BONK' ? 0.000021 : 1" :asset="symbol" />
       </div>
-      <div class="gr-detail-grid">
-        <div class="gr-passport">
-          <div class="gr-spec-top">
-            <span class="gr-mark" aria-hidden="true">{{ symbol.slice(0, 1) }}</span>
-            <span class="gr-spec-name"><b>{{ symbol }}</b><small>Example series</small></span>
-            <span class="bp-pill bp-pill--bp-cobalt"><i aria-hidden="true"></i>Paper only</span>
+
+      <!-- board: full band -->
+      <section v-else-if="!['Launchpad','Recompose'].includes(pageTitle)" class="bl-tile bl-span-12 bl-mkt-board">
+        <div class="bl-mkt-tools">
+          <label class="bl-search">
+            <Search :size="15" />
+            <span class="visually-hidden">Search markets</span>
+            <input v-model="query" class="bl-input" type="search" placeholder="Search token or market" />
+          </label>
+          <div class="bl-switch bl-mkt-side" aria-label="Position type">
+            <button v-for="option in ['All','Income','Upside']" :key="option" type="button" :aria-pressed="side === option" :class="{ 'is-live': side === option }" @click="side = option">{{ option }}</button>
           </div>
-          <dl class="gr-spec-rows">
-            <div><dt>Reference</dt><dd>{{ symbol === 'SOL' ? '$182.00' : symbol === 'JUP' ? '$1.12' : symbol === 'BONK' ? '$0.000021' : '$1.00' }}</dd></div>
-            <div><dt>Income model</dt><dd class="gr-inc">+5% cap</dd></div>
-            <div><dt>Settlement</dt><dd>Not live</dd></div>
-          </dl>
-          <p class="bp-note">Illustrative values. No live quote, custody, signing or execution.</p>
+          <button class="bl-btn bl-btn--quiet bl-mkt-filter" type="button" :aria-expanded="showFilters" @click="showFilters = !showFilters"><SlidersHorizontal :size="15" /> Details</button>
         </div>
-        <div class="gr-detail-figure">
-          <PayoffExplorer :spot="symbol === 'SOL' ? 182 : symbol === 'JUP' ? 1.12 : symbol === 'BONK' ? 0.000021 : 1" :asset="symbol" />
-        </div>
-      </div>
-    </section>
+        <p v-if="showFilters" class="bl-notice bl-notice--flag bl-mkt-details">All examples use a +5% cap, 30-day epoch and 25% model volatility.</p>
 
-    <!-- launchpad leaf -->
-    <section v-else-if="pageTitle === 'Launchpad'" class="bp-band gr-leaf">
-      <div class="gr-leaf-sheet">
-        <div class="gr-leaf-head">
-          <h2 class="bp-h2">Suggest a market.</h2>
-          <span class="bp-pill"><i aria-hidden="true"></i>Listing intake</span>
-        </div>
-        <span class="gr-leaf-mark"><WalletCards :size="20" /></span>
-        <p class="gr-leaf-copy">Any SPL market unit with a verified price feed and USDC liquidity path may qualify. This preview records no wallet request or listing transaction.</p>
-        <a class="bp-btn bp-btn--primary" href="/docs#listing" @click.prevent="emit('navigate','/docs#listing')">Read listing notes <ArrowUpRight :size="15" /></a>
-      </div>
-    </section>
-
-    <!-- recompose leaf -->
-    <section v-else-if="pageTitle === 'Recompose'" class="bp-band gr-leaf">
-      <div class="gr-leaf-sheet">
-        <div class="gr-leaf-head">
-          <h2 class="bp-h2">One asset again.</h2>
-          <span class="bp-pill"><i aria-hidden="true"></i>Income + Upside</span>
-        </div>
-        <span class="gr-leaf-mark"><TrendingUp :size="20" /></span>
-        <p class="gr-leaf-copy">Recomposition would require a wallet transaction. The local preview keeps this action visible while execution remains unavailable.</p>
-        <button class="bp-btn" type="button" disabled>Recompose unavailable</button>
-      </div>
-    </section>
-
-    <!-- board -->
-    <section v-else class="bp-band gr-board">
-      <div class="gr-tools">
-        <label class="gr-search">
-          <Search :size="15" />
-          <span class="visually-hidden">Search markets</span>
-          <input v-model="query" class="bp-input" type="search" placeholder="Search token or market" />
-        </label>
-        <div class="bp-switch gr-side" aria-label="Position type">
-          <button v-for="option in ['All','Income','Upside']" :key="option" type="button" :aria-pressed="side === option" :class="{ 'is-on': side === option }" @click="side = option">{{ option }}</button>
-        </div>
-        <button class="bp-btn bp-btn--quiet gr-filter-toggle" type="button" :aria-expanded="showFilters" @click="showFilters = !showFilters"><SlidersHorizontal :size="15" /> Details</button>
-      </div>
-      <p v-if="showFilters" class="bp-notice bp-notice--flag gr-filter-details">All examples use a +5% cap, 30-day epoch and 25% model volatility.</p>
-
-      <div class="gr-deck">
-        <div class="gr-main">
-          <MarketTable :query="query" :side="side" @reset="query = ''" @navigate="to => emit('navigate',to)" />
-        </div>
-        <div class="gr-rail" role="complementary" aria-label="Market facts">
-          <dl class="gr-facts">
-            <div><dt>Sheet</dt><dd>{{ pageTitle }}</dd><dd>{{ brand.network }} preview</dd></div>
-            <div><dt>Cap default</dt><dd>+5%</dd><dd>30-day epoch</dd></div>
-            <div><dt>Feed</dt><dd>Static</dd><dd>Not a live quote</dd></div>
-            <div><dt>Unit</dt><dd>{{ brand.asset }}*</dd><dd>Proposed, unissued</dd></div>
-          </dl>
-        </div>
-      </div>
-    </section>
+        <MarketTable :query="query" :side="side" @reset="query = ''" @navigate="to => emit('navigate',to)" />
+      </section>
+    </div>
   </div>
 </template>
 
 <style scoped>
-/* ---------------------------------------------------------------- opening */
-.shoal { display: grid; grid-template-columns: minmax(0, 1fr); }
-.shoal > * { min-width: 0; }
-.gr-open {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 24px;
-  flex-wrap: wrap;
-  padding-block-end: clamp(22px, 3vw, 34px);
-}
-.gr-open-copy { display: grid; gap: 10px; max-width: 46ch; }
-.gr-display { font-size: clamp(34px, 5vw, 58px); margin-block-start: 4px; }
-.gr-open-copy .bp-lead { margin-block-start: 0; }
-.gr-back { flex: none; }
+.bl-mkt { gap: var(--bl-gap); }
 
-/* ----------------------------------------------------------------- detail */
-.gr-detail-head {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 18px;
-  flex-wrap: wrap;
-  margin-block-end: clamp(16px, 2vw, 24px);
-}
-.gr-detail-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: clamp(18px, 2.4vw, 30px);
-  align-items: start;
-}
-.gr-passport {
-  max-width: 520px;
-  display: grid;
-  gap: 16px;
-  padding: clamp(16px, 2vw, 22px);
-  border: 1px solid var(--bp-line);
-  border-radius: var(--bp-r-md);
-  background: linear-gradient(170deg, var(--bp-paper), var(--bp-paper-3));
-  box-shadow: var(--bp-shadow-soft);
-}
-.gr-spec-top { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
-.gr-mark {
+/* ------------------------------------------------------------------ opening */
+.bl-mkt-open { align-content: space-between; gap: 20px; }
+.bl-mkt-open-copy { display: grid; gap: 12px; align-content: start; }
+.bl-mkt-title { font-size: clamp(36px, 4.4vw, 56px); }
+.bl-mkt-back { justify-self: start; }
+.bl-mkt-open .bl-lead { max-width: 46ch; }
+
+/* ---------------------------------------------------------------- passport */
+.bl-mkt-passport { gap: 16px; }
+.bl-mkt-passport .bl-h2 { color: var(--bl-plum-text); }
+.bl-mkt-passport .bl-meta { color: var(--bl-plum-muted); }
+.bl-mkt-passport .bl-note { color: var(--bl-plum-muted); }
+.bl-spec-top { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.bl-mark {
   display: grid;
   place-items: center;
   flex: none;
   width: 46px;
   height: 46px;
   border-radius: 15px;
-  background: var(--bp-cobalt-safe);
+  background: linear-gradient(150deg, var(--bl-accent), var(--bl-accent-safe));
   color: #fff;
-  font: 600 16px/1 var(--bp-font-mono);
-  box-shadow: 0 10px 24px rgba(0, 0, 204, .28);
+  font: 600 16px/1 var(--bl-font-mono);
 }
-.gr-spec-name { display: grid; gap: 2px; margin-inline-end: auto; }
-.gr-spec-name b { font: 600 22px/1.1 var(--bp-font-display); letter-spacing: -.02em; }
-.gr-spec-name small { color: var(--bp-muted); font: 500 10px/1.4 var(--bp-font-mono); letter-spacing: .12em; text-transform: uppercase; }
-.gr-spec-rows { display: grid; }
-.gr-spec-rows > div {
+.bl-spec-name { display: grid; gap: 2px; margin-inline-end: auto; }
+.bl-spec-name b { color: var(--bl-plum-text); font: 600 22px/1.1 var(--bl-font-display); letter-spacing: -.02em; }
+.bl-spec-name small {
+  color: var(--bl-plum-muted);
+  font: 600 9.5px/1.4 var(--bl-font-mono);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.bl-spec-rows { display: grid; }
+.bl-spec-rows > div {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   gap: 16px;
-  padding-block: 11px;
-  border-block-end: 1px solid var(--bp-line);
+  padding-block: 10px;
+  border-block-end: 1px solid var(--bl-plum-line);
 }
-.gr-spec-rows dt { color: var(--bp-muted); font: 500 10px/1.5 var(--bp-font-mono); letter-spacing: .1em; text-transform: uppercase; }
-.gr-spec-rows dd { font: 600 13px/1.5 var(--bp-font-mono); }
-.gr-spec-rows dd.gr-inc { color: var(--bp-success); }
-.gr-detail-figure { min-width: 0; }
+.bl-spec-rows > div:last-child { border-block-end: 0; }
+.bl-spec-rows dt { color: var(--bl-plum-muted); font: 600 10px/1.5 var(--bl-font-mono); letter-spacing: .08em; text-transform: uppercase; }
+.bl-spec-rows dd { color: var(--bl-plum-text); font: 600 13px/1.5 var(--bl-font-mono); }
+.bl-spec-rows dd.bl-inc { color: #7fe0b0; }
 
-/* ------------------------------------------------------------------- leaf */
-.gr-leaf-sheet {
-  display: grid;
-  gap: 16px;
-  justify-items: start;
-  max-width: 720px;
-  padding: clamp(20px, 3vw, 34px);
-  border: 1px solid var(--bp-line);
-  border-radius: var(--bp-r-lg);
-  background:
-    radial-gradient(480px 240px at 100% 0%, rgba(0, 0, 255, .14), transparent 70%),
-    var(--bp-paper);
-  box-shadow: var(--bp-shadow);
-}
-.gr-leaf-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; width: 100%; }
-.gr-leaf-mark {
+/* -------------------------------------------------------------------- leaf */
+.bl-mkt-leaf { gap: 14px; align-content: start; }
+.bl-mkt-leaf .bl-h2 { margin-block-start: 2px; }
+.bl-leaf-mark {
   display: grid;
   place-items: center;
-  width: 48px;
-  height: 48px;
-  border-radius: 16px;
-  background: var(--bp-paper-2);
-  color: var(--bp-cobalt-deep);
-  box-shadow: inset 0 0 0 1px var(--bp-line);
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background: var(--bl-tint);
+  color: var(--bl-accent-safe);
 }
-.gr-leaf-copy { max-width: 60ch; color: var(--bp-ink-2); font: 400 14px/1.7 var(--bp-font-body); }
+.bl-mkt-leaf-copy { max-width: 58ch; color: var(--bl-ink-soft); font: 400 14px/1.7 var(--bl-font-body); }
 
-/* ------------------------------------------------------------------ board */
-.gr-tools {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-block-end: 16px;
+/* ------------------------------------------------------------------- facts */
+.bl-fact-tiles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--bl-gap); }
+.bl-fact-tile {
+  display: grid;
+  gap: 4px;
+  align-content: start;
+  padding: 14px 16px;
+  border: 1px solid var(--bl-line);
+  border-radius: var(--bl-r-md);
+  background: var(--bl-surface);
 }
-.gr-search {
+.bl-fact-tile dt {
+  color: var(--bl-muted);
+  font: 600 9.5px/1.4 var(--bl-font-mono);
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.bl-fact-tile dd { color: var(--bl-ink); font: var(--bl-display-weight) 15px/1.35 var(--bl-font-display); letter-spacing: -.01em; }
+.bl-fact-tile dd + dd { color: var(--bl-muted); font: 400 10.5px/1.5 var(--bl-font-mono); }
+
+/* ------------------------------------------------------------------- board */
+.bl-mkt-board { gap: 16px; }
+.bl-mkt-tools { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.bl-search {
   display: flex;
   align-items: center;
   gap: 9px;
   flex: 1 1 260px;
   max-width: 400px;
-  color: var(--bp-muted);
+  color: var(--bl-muted);
 }
-.gr-search .bp-input { min-height: 42px; font-family: var(--bp-font-body); font-size: 13px; }
-.gr-side { flex: none; }
-.gr-filter-toggle { margin-inline-start: auto; }
-.gr-filter-details { margin-block-end: 18px; }
+.bl-search .bl-input { min-height: 42px; font-size: 13px; }
+.bl-mkt-side { flex: none; }
+.bl-mkt-filter { margin-inline-start: auto; }
+.bl-mkt-details { margin-block-start: -2px; }
+.bl-mkt-explore { min-width: 0; }
 
-.gr-deck {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: clamp(14px, 2vw, 20px);
-  align-items: start;
+@media (max-width: 900px) {
+  .bl-search { max-width: none; flex: 1 1 100%; }
+  .bl-mkt-filter { margin-inline-start: 0; }
 }
-.gr-main { min-width: 0; }
-.gr-rail {
-  order: -1;
-  border: 1px solid var(--bp-line);
-  border-radius: var(--bp-r-md);
-  background: var(--bp-paper-3);
-  overflow: hidden;
-}
-.gr-facts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
-.gr-facts > div {
-  display: grid;
-  gap: 4px;
-  padding: 14px 16px;
-  border-inline-end: 1px solid var(--bp-line);
-}
-.gr-facts > div:last-child { border-inline-end: 0; }
-.gr-facts dt { color: var(--bp-muted); font: 600 9px/1.4 var(--bp-font-mono); letter-spacing: .12em; text-transform: uppercase; }
-.gr-facts dd { color: var(--bp-ink); font: 600 15px/1.35 var(--bp-font-display); letter-spacing: -.01em; }
-.gr-facts dd + dd { color: var(--bp-muted); font: 400 10px/1.5 var(--bp-font-mono); }
-
-/* -------------------------------------------------------------- responsive */
-@media (max-width: 1180px) {
-  .gr-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .gr-facts > div:nth-child(odd) { border-inline-end: 1px solid var(--bp-line); }
-  .gr-facts > div:nth-child(-n+2) { border-block-end: 1px solid var(--bp-line); }
-}
-@media (max-width: 760px) {
-  .gr-search { max-width: none; flex: 1 1 100%; }
-  .gr-filter-toggle { margin-inline-start: 0; }
-  .gr-facts { grid-template-columns: minmax(0, 1fr); }
-  .gr-facts > div:nth-child(odd) { border-inline-end: 0; }
+@media (max-width: 560px) {
+  .bl-fact-tiles { grid-template-columns: minmax(0, 1fr); }
 }
 </style>

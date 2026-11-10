@@ -1,4 +1,4 @@
-// Tabuline / illustrative mechanics for the Solana market model.
+// Tallyria / illustrative mechanics for the Solana market model.
 export const concepts = [
   {
     id: 'backing',

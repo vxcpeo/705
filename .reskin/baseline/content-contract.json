@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "meta": {
-    "projectName": "tabuline-website",
-    "title": "tabuline-website",
+    "projectName": "tallyria-website",
+    "title": "tallyria-website",
     "lang": "en"
   },
   "routes": [
@@ -1181,7 +1181,7 @@
     {
       "name": "href",
       "value": "/",
-      "count": 4
+      "count": 5
     },
     {
       "name": "href",
@@ -1251,7 +1251,7 @@
     {
       "name": "src",
       "value": "/icon.svg",
-      "count": 2
+      "count": 3
     },
     {
       "name": "to",
@@ -1803,7 +1803,7 @@
     {
       "kind": "interpolation",
       "expr": "String(index + 1).padStart(2, '0')",
-      "count": 2
+      "count": 3
     },
     {
       "kind": "interpolation",
@@ -1980,7 +1980,7 @@
     {
       "event": "click",
       "handler": "navigate('/')",
-      "count": 2
+      "count": 3
     },
     {
       "event": "click",
@@ -2087,7 +2087,7 @@
     {
       "kind": "href",
       "target": "/",
-      "count": 4
+      "count": 5
     },
     {
       "kind": "href",
@@ -2149,7 +2149,7 @@
     {
       "kind": "src",
       "value": "/icon.svg",
-      "count": 2
+      "count": 3
     }
   ],
   "forms": [

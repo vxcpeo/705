@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import './blueprint.css'
+import './styles/bloom.css'
 
 createApp(App).mount('#app')

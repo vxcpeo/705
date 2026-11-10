@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-labelledby="t d">
-<title id="t">Tabuline mark</title>
-<defs><linearGradient id="d1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0000b3"/><stop offset="1" stop-color="#0000ff"/></linearGradient></defs>
-<desc id="d">The Tabuline line - a header rule, a column stem and a pale node - reversed out of a blue gradient tile.</desc>
-<rect width="64" height="64" fill="#f4f5f2"/>
+<title id="t">Tallyria mark</title>
+<defs><linearGradient id="d1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9c004a"/><stop offset="1" stop-color="#e6006f"/></linearGradient></defs>
+<desc id="d">The Tallyria line - a header rule, a column stem and a pale node - reversed out of a pink gradient tile.</desc>
+<rect width="64" height="64" fill="#fbf6f9"/>
 <rect x="0.00" y="0.00" width="64.00" height="64.00" rx="15.00" fill="url(#d1)"/>
 <rect x="12.16" y="12.16" width="39.68" height="7.94" rx="3.97" fill="#ffffff" stroke="none"/>
 <rect x="28.03" y="12.16" width="7.94" height="26.98" rx="3.97" fill="#ffffff" stroke="none"/>
-<circle cx="32.00" cy="46.68" r="5.16" fill="#c9c9ff"/>
+<circle cx="32.00" cy="46.68" r="5.16" fill="#ffd3e4"/>
 </svg>

@@ -1,12 +1,13 @@
-"""Generate Tabuline's website identity artwork and concept figures.
+"""Generate Tallyria's website identity artwork and concept figures.
 
 The palette, the mark geometry and the dual PNG/SVG writer all come from
 ``twitter/brandkit.py``; this module only composes scenes, so the site art and
 the X art cannot drift apart. Nothing here re-draws the mark or hardcodes a
 brand colour.
 
-Design language: sky-white ground, soft blue gradients, rounded panels, hairline
-rules and tidal arcs. Product screenshots come from ``twitter/ui/``.
+Design language: warm white ground washed with pink, hairline grid, rounded
+tiles, pill chips and one hot-pink accent. Product screenshots come from
+``twitter/ui/``.
 
 Writes into ``website/public/``:
 
@@ -43,7 +44,7 @@ if not (TWITTER / "brandkit.py").is_file():
 sys.path.insert(0, str(TWITTER))
 
 from brandkit import (ACCENT, ACCENT_DEEP, ACCENT_PALE, BG, BRAND, DOMAIN,  # noqa: E402
-                      HANDLE, INK, INK_SOFT, LINE, LINE_STRONG, MUTED, NETWORK,
+                      HANDLE, X_URL, INK, INK_SOFT, LINE, LINE_STRONG, MUTED, NETWORK,
                       SKY, SUCCESS, SUPPORTING, TAGLINE, TICKER, Scene, mark_parts)
 
 # --------------------------------------------------------------- sample data
@@ -79,15 +80,15 @@ def save_raster(scene: Scene, path: Path) -> Path:
 
 
 def ground(s: Scene) -> None:
-    s.vgrad(0, 0, s.w, s.h, "#f8f9f6", "#eceee9")
-    s.grid(0, 0, s.w, s.h, step=48, color="#e1e4dd")
+    s.vgrad(0, 0, s.w, s.h, "#fdfafc", "#f6edf3")
+    s.grid(0, 0, s.w, s.h, step=48, color="#f3e6ee")
 
 
 # ------------------------------------------------------------------ identity
 def icon() -> Path:
     s = Scene(64, 64, f"{BRAND} mark",
-              "The Tabuline line - a header rule, a column stem and a pale node - "
-              "reversed out of a blue gradient tile.")
+              "The Tallyria line - a header rule, a column stem and a pale node - "
+              "reversed out of a pink gradient tile.")
     s.tile_mark(0, 0, 64, r=15)
     return save_vector(s, PUBLIC / "icon.svg")
 
@@ -122,12 +123,12 @@ def figure_foot(s: Scene, note: str) -> None:
 def panel(s: Scene, x: float, y: float, w: float, h: float, label: str,
           right: str | None = None, chip: str | None = None) -> float:
     s.rect(x, y, w, h, fill="#ffffff", stroke=LINE, r=18)
-    s.vgrad(x, y, w, 54, "#f4f9ff", "#ffffff", r=18)
+    s.vgrad(x, y, w, 54, "#fff6fa", "#ffffff", r=18)
     s.line([(x, y + 54), (x + w, y + 54)], LINE, 1)
     s.text(x + 24, y + 33, label, 11, MUTED, "mono")
     if chip:
         cw = s.text_width(chip, 10, "mono-bold") + 26
-        s.rect(x + w - 24 - cw, y + 15, cw, 26, fill="#eef7ff", stroke=LINE, r=13)
+        s.rect(x + w - 24 - cw, y + 15, cw, 26, fill="#fff1f7", stroke=LINE, r=13)
         s.circle(x + w - 24 - cw + 13, y + 28, 6, ACCENT)
         s.text(x + w - 24 - cw + 22, y + 32, chip, 10, ACCENT_DEEP, "mono-bold")
     elif right:
@@ -169,10 +170,10 @@ def concept_backing() -> Scene:
         ry = header + i * 78
         marked = sym == TICKER
         if marked:
-            s.rect(x + 1, ry, w - 2, 78, fill="#f4f9ff", r=0)
+            s.rect(x + 1, ry, w - 2, 78, fill="#fff4f9", r=0)
             s.rect(x + 1, ry, 4, 78, fill=ACCENT)
         s.line([(x, ry + 78), (x + w, ry + 78)], LINE, 1)
-        s.circle(88, ry + 32, 22, ACCENT if marked else "#e8f3ff")
+        s.circle(88, ry + 32, 22, ACCENT if marked else "#ffe9f2")
         s.text(88, ry + 38, sym[0], 11, "#ffffff" if marked else INK_SOFT,
                "mono-bold", "center")
         s.text(112, ry + 50, sym, 17, INK, "mono-bold")
@@ -224,7 +225,7 @@ def concept_cap() -> Scene:
 
     y_k, y_s, y_spot = axis_y(262.5), axis_y(280.0), axis_y(250.0)
 
-    s.vgrad(axis_x, y_k, right - axis_x, plot_bottom - y_k, "#f4f9ff", "#e8f3ff", opacity=0.9)
+    s.vgrad(axis_x, y_k, right - axis_x, plot_bottom - y_k, "#fff6fa", "#ffe9f2", opacity=0.9)
     s.rect(axis_x, y_k, 4, plot_bottom - y_k, fill=SUCCESS)
     s.rect(axis_x, y_s, 4, y_k - y_s, fill=ACCENT)
 
@@ -303,7 +304,7 @@ def concept_settlement() -> Scene:
     panel(s, mx, my, mw, mh, "SHARE METER / PER UNIT", right="OF SPOT")
     bar_x, bar_y, bar_w, bar_h = 754, 404, 360, 46
     income_w = round(bar_w - 4, 4) * (float(INCOME_SHARE) / 100.0)
-    s.rect(bar_x, bar_y, bar_w, bar_h, fill="#eef7ff", stroke=LINE, r=23)
+    s.rect(bar_x, bar_y, bar_w, bar_h, fill="#fff1f7", stroke=LINE, r=23)
     s.rect(bar_x + 2, bar_y + 2, max(28, income_w), bar_h - 4, fill=SUCCESS, r=21)
     s.circle(bar_x + 2 + max(28, income_w) + 4, bar_y + bar_h / 2, 18, ACCENT)
 
@@ -375,8 +376,9 @@ def snapshot() -> Path:
         "resources": {
             "domain": DOMAIN,
             "handle": HANDLE,
-            "status": ("targets from a point-in-time availability screen; neither is "
-                       "registered, reserved or owned by this work"),
+            "x_url": X_URL,
+            "status": ("final domain and X handle for this preview build; neither "
+                       "resource is registered or reserved by this work"),
         },
         "note": ("No market data provider or Solana program integration is configured. "
                  "Visible prices and markets are local model examples, not live listings."),

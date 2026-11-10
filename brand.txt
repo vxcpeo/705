@@ -28,6 +28,7 @@ history: Ivorane
 history: Filza
 history: Pretiola
 history: Librova
+history: Tabuline
 
 # Current brand (exactly one)
-current: Tabuline
+current: Tallyria

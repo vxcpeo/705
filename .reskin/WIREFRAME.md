@@ -1,55 +1,45 @@
-# Wiring plan — Cobalt Blueprint / Split Stage
+# Reskin wireframe — Bubblegum Exchange / Bento Canvas
 
-The reskin selector chose **Cobalt Blueprint** (`base-cobalt`, sampled from base.org) with the
-**Split Stage** skeleton. The original DOM archetype was `sidebar-workspace` (family `shell`).
-This plan was written before the presentation layer was rebuilt and is the commitment the
-implementation follows.
+Round 2 of the reskin record. The baseline frozen in `.reskin/baseline/` is the **Cobalt Blueprint
+split stage** (right-hand dark instrument spine, scrolling data leaf, ruled sheets, `#0000d6` accent).
+Round 1 evidence is archived at `website/.reskin-r1/`.
 
-## 1. New shell
+## Shell
 
-- `src/App.vue` becomes `BpFrame`: a two-column frame with the **data leaf on the left** and the
-  **instrument spine on the right**. The spine is the sticky column; it is dark ink with a
-  blueprint grid, not a light sidebar.
-- Landmarks: `main` (leaf) → `div[role=complementary]` (spine) → `nav` → `footer`. No `header`
-  landmark and no `<aside>` element, so the source classifier no longer sees a sidebar shell.
-- Top actions live in a slim `.bp-dock` inside the leaf (icon-only home link, wallet, primary
-  action, mobile index toggle). The wordmark and the numbered index live in the spine.
-- Mobile: single column. The leaf comes first; the spine follows as a dark block; the index is
-  collapsed behind the existing `aria-expanded` toggle and expands in place.
+New shell: **Bloom frame** (`bl-` namespace, `src/styles/bloom.css`).
 
-## 2. Route → composition
-
-| Route | Composition |
+| Old | New |
 | --- | --- |
-| `/` | `co-page`: opening article (h1 + supporting column) → gauge row → board article (heading row, filter rail, ruled table) → quote sheet → settlement figure article → tape rail → briefing list → limits sheet. |
-| `/app/markets` | `gr` stage: title block → fact strip → ledger table → market facts; asset route: passport sheet beside the payoff explorer. |
-| `/signal` | `jn` docket: heading, numbered form steps, side assumption sheet. |
-| `/docs` | `dc` document: title block → sticky on-page index → article sections; legal routes use a ruled clause sheet with numbered clauses. |
-| 404 | `nf-sheet` inside `.bp-void`. |
+| `.bp-frame` two-column grid: data leaf + sticky dark spine | `.bl-shell` single canvas: slim sticky masthead, route stage, bento footer deck |
+| Navigation inside the right spine, numbered vertical index, `complementary` landmark | Navigation in the masthead: horizontal index chips, filled chip for the current route, collapsing into a pull-down sheet below 1000px |
+| Route content in `.bp-leaf-body` with `.bp-band` ruled bands | Route content in a 12-column bento grid (`.bl-bento`) of tiles with mixed spans |
+| Facts split between spine (`bp-instrument`) and leaf footer (`bp-proof`) | Facts merged into one three-tile footer deck (`about` / `mode` / `proof`) |
+| `main` + `div[role=complementary]` + nav + footer | `header` + `nav` + `main` + `footer` landmarks |
 
-## 3. Components
+No `<aside>`, no sidebar, no dark spine: the DOM depth profile and landmark sequence both change.
 
-- Kept as content-only children with rewritten templates and renamed classes: `HomePage`,
-  `MarketWorkspace`, `MarketTable`, `PayoffExplorer`, `ScenarioLab`, `DocsPage`,
-  `SolanaWalletButton`.
-- Deleted from the render path: `src/tide.css` (the previous global system). Replaced by
-  `src/blueprint.css`, which owns tokens, reset, shell and shared primitives.
-- Every original class token was renamed (`tide-→bp-`, `reef-→co-`, `shoal-→gr-`, `buoy-→dy-`,
-  `dock-→wl-`, `lagoon-→jn-`, `strand-→dc-`, `wave-→nf-`) and every design variable moved to a
-  `--bp-*` name.
+## Route → composition
 
-## 4. Tokens and breakpoints
+| Route | Anchor tile (span 7–8) | Support tiles | Full-bleed bands |
+| --- | --- | --- | --- |
+| `/` | Opening: kicker, three-line `h1`, actions, limits note | lead + gauge | board 8 / quote 4, split figure 7 / readout 5, tape 12, four briefing tiles span 3, limits 8 + accent tile 4 |
+| `/app/markets` | Page title + summary | board toolbar, market table 8, four fact tiles 4 | table band |
+| `/app/markets/:symbol` | Series passport 4 | payoff explorer 8 | meters |
+| `/signal` | Lab title + notices | form 7 / workspace notes 5 | review + journal record |
+| `/docs` | Doc title 8 | on-page index 4 (2-col chip grid) | steps, roles, three concept tiles span 4, settlement, eight leaf tiles span 4 |
+| `/risk`, `/terms`, `/privacy` | Notice title 8 + accent tile 4 | numbered clause rows 12 | actions |
 
-- Ground `#dde3e9`, paper `#ffffff`, ink `#0a0b0d`, cobalt `#0000ff` (safe text `#0000d6`),
-  secondary `#7575ff`, hairline `#d7d9d3`, panel `#0a0b0d`.
-- Type: Inter Tight / Segoe UI display at weight 640 and -0.038em, Inter / Segoe UI body,
-  Geist Mono / Cascadia Mono for labels and numerals.
-- Shape: 4/8/14/22 px radii, 1 px rules, flat sheets; shadows only on overlay money surfaces.
-- Breakpoints: 1180 px (frame proportions), 980 px (split collapses, spine follows the leaf),
-  680/620 px (dense single column).
+Mobile (<1000px) is a linear stack: masthead row, scrollable index rail (or pull-down sheet),
+single-column tiles. No content is hidden at any width.
 
-## 5. Content lock
+## Content mapping rule
 
-Every token in `.reskin/content-contract.json` is moved, never rewritten. New visible copy is
-forbidden, so route-index headers, decorative numbers and shell headings use only existing words
-or `aria-label`/`aria-hidden` support.
+Tiles only add wrappers. Every text node, interpolation, `@` handler, `v-model`, form field, link
+target and asset path is moved verbatim from `.reskin/baseline/content-contract.json`; the
+`visually-hidden` utility name is kept so the frozen `hiddenText` tokens stay hidden text.
+
+## Token / breakpoint files
+
+- `src/styles/bloom.css` — tokens, reset, base type, shell, bento grid, primitives.
+- Component scoped styles use the same tokens; breakpoints 1280 / 1000 / 720 / 460.
+- `src/blueprint.css` is deleted from the render path.
