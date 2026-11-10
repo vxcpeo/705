@@ -57,6 +57,7 @@ for (const route of ROUTES) {
 await page.goto(BASE + '/', { waitUntil: 'networkidle' })
 const meta = await page.evaluate(() => ({
   canonical: document.querySelector('link[rel="canonical"]')?.href,
+  relMe: document.querySelector('link[rel="me"]')?.href,
   ogUrl: document.querySelector('meta[property="og:url"]')?.content,
   ogImage: document.querySelector('meta[property="og:image"]')?.content,
   twitterSite: document.querySelector('meta[name="twitter:site"]')?.content,
@@ -97,6 +98,7 @@ for (const { route, found, stale } of results) {
   check(stale.head.length === 0, `${route}: no stale targets in head ${stale.head.join(', ')}`)
 }
 check(meta.canonical === 'https://tallyria.top/', `canonical ${meta.canonical}`)
+check(meta.relMe === EXPECTED.href, `rel=me ${meta.relMe}`)
 check(meta.ogUrl === 'https://tallyria.top/', `og:url ${meta.ogUrl}`)
 check(meta.ogImage === 'https://tallyria.top/og-image.jpg', `og:image ${meta.ogImage}`)
 check(meta.twitterSite === EXPECTED.site, `twitter:site ${meta.twitterSite}`)
